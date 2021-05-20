@@ -1,4 +1,4 @@
-baseURL = "www.docs.spaceone.org"
+baseURL = "www.docs.dev.spaceone.dev"
 languageCode = "en-us"
 title = "SpaceONE"
 theme = "docsy"
