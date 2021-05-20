@@ -1,0 +1,27 @@
+{{ $approach := site.Data.approach -}}
+<style> 
+    .c-approach{
+        margin: 3rem 0 0 -9rem
+    }
+    .approach-image{
+        margin: 3rem 0 0 -9rem
+    }
+</style>
+<div class="ml-4 mr-2 row c-approach">
+{{- range $approach -}}
+  {{ $img   := printf "img/approach/%s" .image | relURL -}}
+  {{ $quote := .quote | markdownify -}}
+  {{ $name := .name}}
+
+  <div class="col-12 col-sm-6 col-lg-5  c-testimonials__testimonial">
+        <h4>{{ $name }}</h4>
+    
+     <img class="mt-2 approach-img" src="{{ $img }}"  width = "300" height="300">
+    
+    <p class="font-italic">
+      {{- $quote -}}
+    </p>
+    
+  </div>
+{{ end -}}
+</div>

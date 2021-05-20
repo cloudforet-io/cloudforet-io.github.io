@@ -1,0 +1,28 @@
+- name: Manage Cloud Resource
+  date: 2021-05-10
+  image: img_slide1.png
+  quote: >
+    ##### **Quick and Easy Visualisation** of Multi-Cloud resources
+
+- name: Project-Based Management
+  date: 2021-05-10
+  image: img_slide2.png
+  quote: >
+    ##### Manage All Resources with **Own Role and the Project** over All Clouds
+   
+- name: Consolidated Billing              
+  date: 2021-05-10
+  image: img_slide3.png
+  quote: >
+    ##### Easy View on **Resource Expenses and Cost Optimization** with the Most Efficiency
+- name: Real-Time Monitoring
+  date: 2021-05-10
+  image: img_slide4.png
+  quote: >
+    ##### Support **Vatious Mornitoring System:** Cloudwatch, Stackdriver, Azure monitor.
+   
+- name: Core Resource Automation Process
+  date: 2021-05-10
+  image: img_slide5.png
+  quote: >
+    ##### **Power Scheduling lets you** Set Pesource and control Expenses

@@ -1,0 +1,218 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SpaceONE"
+theme = "docsy"
+
+# Will give values to .Lastmod etc.
+enableGitInfo = true
+
+# Language settings
+contentDir = "content/en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+
+# Highlighting config
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+# Use the new Chroma Go highlighter in Hugo.
+pygmentsUseClassic = false
+#pygmentsOptions = "linenos=table"
+# See https://help.farbox.com/pygments.html
+pygmentsStyle = "tango"
+
+[languages]
+	[languages.en]
+		title = ""
+		description = "blog of spaceone"
+		languageName ="English"
+		contentDir = "content/en"
+		time_format_default = "02.01.2006"
+		time_format_blog = "02.01.2006"
+                # Weight used for sorting.
+		weight = 1
+	[languages.ko]
+		title = ""
+		languageName ="Korean"
+		description = "스페이스원 레퍼런스 사이트입니다."
+		contentDir = "content/ko"
+		time_format_default = "2006.01.02"
+		time_format_blog = "2006.01.02"
+		weight = 2
+
+
+
+
+[outputs]
+home = [ "HTML" ]
+page = [ "HTML" ]
+section = [ "HTML", "print"]
+
+
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+angledQuotes = false
+latexDashes = true
+
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+# Additional menu items
+#[[menu.main]]
+    #name = "Project Site"
+    #url = "https://www.spaceone.org/"
+    #pre = "<i class='fas fa-laptop-code'></i>"
+
+
+
+
+# Configure how URLs look like per section.
+[permalinks]
+blog = "/:section/:year/:month/:day/:slug/"
+
+# Options to using html inline markdown  
+[markup]
+  [markup.goldmark]
+  [markup.goldmark.extensions]
+     definitionList = true
+     table = true
+     typographer = false
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "emacs"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[frontmatter]
+date = ["date", ":filename", "publishDate", "lastmod"]
+
+
+
+
+
+
+[params]
+
+version_menu = "Versions"
+
+copyright = "SpaceOne Team"
+privacy_policy = "https://policies.google.com/privacy"
+
+#latest = "v1.21"
+#archived_version = true
+
+# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
+github_repo = "https://github.com/spaceone-dev/docs"
+# An optional link to a related project repo. For example, the sibling repository where your product code lives.
+#github_project_repo = "https://github.com/spaceone-dev/docs"
+
+body_classes = "georgia bg-near-white"
+navbar_logo = true
+sidebar_search_disable = false
+# Enable Algolia DocSearch
+algolia_docsearch = false
+# Enable Lunr.js offline search
+offlineSearch = true
+
+description = "Opensource multicloud operation tool"
+showedit = true
+
+# Enable syntax highlighting and copy buttons on code blocks with Prism
+prism_syntax_highlighting = false
+
+# Configure url of latest version
+# url_latest_version = ""
+
+[params.fonts]
+name = "Open Sans"
+sizes = [300, 400, 600, 700]
+type = "sans_serif"
+
+
+# User interface configuration
+[params.ui]
+# Enable to show the side bar menu in its compact state.
+sidebar_menu_compact = false
+#  Set to true to disable breadcrumb navigation.
+breadcrumb_disable = false
+#  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
+sidebar_search_disable = false
+#  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
+navbar_logo = true
+# Set to true to disable the About link in the site footer
+footer_about_disable = false
+
+[params.ui.feedback]
+enable = true
+# The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
+yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+
+[params.ui.readingtime]
+enable = false
+
+
+
+[[params.versions]]
+fullversion = "v1.21.0"
+version = "v1.21"
+githubbranch = "v1.21.0"
+docsbranch = "master"
+# Set master version url
+url = ""
+
+[[params.versions]]
+fullversion = "v1.17.17"
+version = "v1.17"
+githubbranch = "v1.17.17"
+docsbranch = "release-1.17"
+# Set release version url 
+url = ""
+
+[params.links]
+# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[params.links.user]]
+	name ="GitHub"
+	url = "https://github.com/spaceone-dev"
+	icon = "fab fa-github"
+        desc = "Discussion and help from your fellow users"
+
+
+# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+[[params.links.developer]]
+	name = "GitHub"
+	url = "https://github.com/spaceone-dev"
+	icon = "fab fa-github"
+        desc = "Development takes place here!"
+
+[[params.links.developer]]
+	name = "HomePage"
+	url = "https://www.spaceone.org/"
+	icon = "fas fa-user-astronaut"
+        desc = "SpaceONE main page"
+# [[params.links.developer]]
+	# name = "Developer mailing list"
+	# url = "https://example.org/mail"
+	# icon = "fa fa-envelope"
+        # desc = "Discuss development issues around the project"

@@ -1,0 +1,11 @@
+{{ $isRedirected := findRE "^(|../|/docs/(languages|platforms)/.+?/)(api|daily-builds)(/.*)?(\\?.*)?$" .Destination -}}
+{{ $isExternal := or (hasPrefix .Destination "http") $isRedirected -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $isExternal }} target="_blank" rel="noopener"{{ end -}}
+>
+  {{- .Text | safeHTML -}}
+  {{ if $isExternal -}}
+  <i class="fas fa-external-link-alt"></i>
+  {{- end -}}
+</a>
