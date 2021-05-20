@@ -3,13 +3,16 @@
 ###############################
 enabled: true
 developer: false
-name: docs
+grpc: true
+scheduler: false
+worker: false
+rest: false
+name: inventory
 replicas: 1
 image:
-    repository: pyengine
-    name: docs
+    name: spaceone/docs
     version: latest
-imagePullPolicy: Always
+imagePullPolicy: IfNotPresent
 
 # Service
 #
@@ -39,6 +42,6 @@ ingress:
         alb.ingress.kubernetes.io/target-type: instance 
         alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-northeast-2:257706363616:certificate/8f002c6f-ba91-4b61-9bf9-0e672cf2d4ff"
 
-endpoint: www.spaceone.org
+endpoint: docs.spaceone.org
 global:
-    namespace: project-site
+    namespace: docs
