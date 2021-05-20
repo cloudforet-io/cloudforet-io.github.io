@@ -11,7 +11,7 @@ metadata:
   labels:
 {{ include "spaceone.labels" . | indent 4 }}
     spaceone.service: ingress
-  name: alb-ingress-project-site
+  name: alb-ingress-docs
   namespace: {{ .Values.global.namespace | default .Release.Namespace }}
 
 spec:
@@ -23,21 +23,15 @@ spec:
               serviceName: ssl-redirect
               servicePort: use-annotation
 
-    - host: www.spaceone.org
+    - host: {{ .Values.endpoint }}
       http:
         paths:
           - backend:
-              serviceName: project-site
+              serviceName: docs
               servicePort: 80
             path: /*
 
-    - host: spaceone.org
-      http:
-        paths:
-          - backend:
-              serviceName: project-site
-              servicePort: 80
-            path: /*
+  
 
 
 {{- end }}
