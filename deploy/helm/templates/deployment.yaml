@@ -1,0 +1,48 @@
+{{- if .Values.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+{{ include "spaceone.labels" . | indent 4 }}
+    spaceone.service: {{ .Values.name }}
+  name: {{ .Values.name }}
+  namespace: {{ .Values.global.namespace | default .Release.Namespace }}
+spec:
+  replicas: {{ .Values.replicas }}
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      spaceone.service: {{ .Values.name }}
+  template:
+    metadata:
+      annotations:
+        spaceone.deployment.tool: helm
+      labels:
+{{ include "spaceone.labels" . | indent 8 }}
+        spaceone.service: {{ .Values.name }}
+    spec:
+      terminationGracePeriodSeconds: {{ .Values.gracePeriod }}
+      containers:
+        - name: nextjs
+          image: {{ .Values.image.name }}:{{ .Values.image.version }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          command: ['yarn', 'run', 'start']
+          ports:
+            - containerPort: 3000
+        - name: nginx
+          image: nginx:alpine
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          command: ['nginx', '-g', 'daemon off;']
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: nginx-conf
+              mountPath: /etc/nginx/conf.d/default.conf
+              subPath: default.conf
+              readOnly: true
+      volumes:
+        - name: nginx-conf
+          configMap:
+            name: nginx-conf
+
+{{- end }}

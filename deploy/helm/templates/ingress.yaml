@@ -1,0 +1,43 @@
+{{- if .Values.enabled }}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+  {{- range $key, $value := .Values.ingress.annotations }}
+    {{- if not (eq $key "nil") }}
+    {{ $key }}: {{ $value | quote }}
+    {{- end }}
+  {{- end }}
+  labels:
+{{ include "spaceone.labels" . | indent 4 }}
+    spaceone.service: ingress
+  name: alb-ingress-project-site
+  namespace: {{ .Values.global.namespace | default .Release.Namespace }}
+
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: ssl-redirect
+              servicePort: use-annotation
+
+    - host: www.spaceone.org
+      http:
+        paths:
+          - backend:
+              serviceName: project-site
+              servicePort: 80
+            path: /*
+
+    - host: spaceone.org
+      http:
+        paths:
+          - backend:
+              serviceName: project-site
+              servicePort: 80
+            path: /*
+
+
+{{- end }}

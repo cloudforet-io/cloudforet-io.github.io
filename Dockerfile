@@ -14,9 +14,6 @@ COPY ./package.json ./package-lock.json ./
 RUN apk add --no-cache \
     curl \
     git \
-    openssh-client \
-    rsync \
-    build-base \
     libc6-compat \
     npm && \
     npm install --no-optional -D --save && \
@@ -30,8 +27,9 @@ RUN hugo --minify
 FROM nginx:alpine
 COPY --from=build /site/public /usr/share/nginx/html
 
-#EXPOSE 1313
-#CMD ["/bin/sh", "-c", "sed -i 's/listen  .*/listen 1313;/g' /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]
+#RUN sed -i'' -r -e "/listen 80;/a\error_page 404 /404.html;/" /etc/nginx/conf.d/default.conf
+
 CMD ["/bin/sh", "-c", "sed -i 's/listen  .*/listen 80;/g' /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]
+
 EXPOSE 80 
 WORKDIR /usr/share/nginx/html
