@@ -28,6 +28,7 @@ jobs:
         id: job1
         run: |
           echo "::set-output name=VERSION::$(cat src/VERSION | cut -c 2-).${{ env.TIME }}"
+
   docker:
     if: github.repository_owner == 'spaceone-dev'
     needs: versioning
