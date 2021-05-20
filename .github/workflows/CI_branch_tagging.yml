@@ -95,8 +95,6 @@ jobs:
           \git tag -f ${{ env.VERSION }} 
           git push && \git push -f origin "${{ env.VERSION }}"
 
-      - name: Checkout submodules
-        run: git submodule update --init --recursive --depth 1
   # pypi:
   #   if: github.repository_owner == 'spaceone-dev'
   #   needs: [condition_check, update_local_version_file]
