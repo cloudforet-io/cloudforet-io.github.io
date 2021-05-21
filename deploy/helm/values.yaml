@@ -3,7 +3,6 @@
 ###############################
 enabled: true
 developer: false
-
 name: docs
 replicas: 1
 image:
@@ -39,6 +38,7 @@ ingress:
         alb.ingress.kubernetes.io/target-type: instance 
         alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:ap-northeast-2:257706363616:certificate/3ee00cdd-04af-4c0a-a65a-e2fa771e74f0"
         external-dns.alpha.kubernetes.io/hostname:  docs.spaceone.org
+
 
 endpoint: docs.spaceone.org
 global:
