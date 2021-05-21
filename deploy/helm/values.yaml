@@ -3,11 +3,8 @@
 ###############################
 enabled: true
 developer: false
-grpc: true
-scheduler: false
-worker: false
-rest: false
-name: inventory
+
+name: docs
 replicas: 1
 image:
     name: spaceone/docs
