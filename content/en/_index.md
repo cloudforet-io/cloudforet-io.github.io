@@ -1,6 +1,6 @@
 ---
-title: "SpaceOne API"
-linkTitle: "SpaceOne API"
+title: "SpaceONE Docs"
+linkTitle: "SpaceONE Docs"
 url_use_grpc: https://www.spaceone.org/
 
 features:
