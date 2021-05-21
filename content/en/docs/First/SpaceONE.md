@@ -33,7 +33,7 @@ description: >
 
 Our feature is expanding all areas to build a SpaceONE universe to fulfill requirements for cloud operation/management based on the inventory data, automation, analysis, and many more for Multi Clouds.  
   
-
+hihi jiyoon
 
 ![](../.gitbook/assets/2020-07-31-11.19.50.png)
 
