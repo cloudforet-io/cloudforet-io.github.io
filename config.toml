@@ -6,6 +6,10 @@ theme = "docsy"
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
+# Enable Emoji emoticons support for page content 
+# See https://www.webfx.com/tools/emoji-cheat-sheet/
+enableEmoji = true
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -28,7 +32,7 @@ pygmentsStyle = "tango"
 [languages]
 	[languages.en]
 		title = ""
-		description = "blog of spaceone"
+		description = "SpaceONE Documentation"
 		languageName ="English"
 		contentDir = "content/en"
 		time_format_default = "02.01.2006"
@@ -135,7 +139,7 @@ algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = true
 
-description = "Opensource multicloud operation tool"
+description = "OpenSource multicloud operation tool"
 showedit = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
