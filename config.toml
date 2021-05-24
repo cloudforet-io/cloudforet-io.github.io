@@ -179,20 +179,20 @@ enable = false
 
 
 [[params.versions]]
-fullversion = "v1.21.0"
-version = "v1.21"
-githubbranch = "v1.21.0"
+fullversion = "v1.7.2"
+version = "v1.7.2"
+githubbranch = "release-1.7.2"
 docsbranch = "master"
 # Set master version url
 url = ""
 
-[[params.versions]]
-fullversion = "v1.17.17"
-version = "v1.17"
-githubbranch = "v1.17.17"
-docsbranch = "release-1.17"
-# Set release version url 
-url = ""
+#[[params.versions]]
+#fullversion = "v1.17.17"
+#version = "v1.17"
+#githubbranch = "v1.17.17"
+#docsbranch = "release-1.17"
+## Set release version url 
+#url = ""
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
