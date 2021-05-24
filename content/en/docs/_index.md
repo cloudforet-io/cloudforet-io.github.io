@@ -1,5 +1,5 @@
 ---
-title: "Welcome to SpaceOne API"
+title: "Welcome to SpaceOne"
 linkTitle: "Documentation"
 url_dash_board: /docs/first/
 menu:
