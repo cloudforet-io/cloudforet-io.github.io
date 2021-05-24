@@ -17,6 +17,7 @@ features:
 ---
 
 
+
 {{< blocks/cover title="Manage All Cloud Resources in One Platform" image_anchor="top" height="sm" color="purple" >}}
 
 <div class="mx-auto">
