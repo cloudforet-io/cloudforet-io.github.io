@@ -1,7 +1,7 @@
 ---
 title: "SpaceONE"
 linkTitle: "SpaceONE"
-weight: 2
+weight: 3
 date: 2021-05-10
 description: >
   One cloud management platform for any cloud
