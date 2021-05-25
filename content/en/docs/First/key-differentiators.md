@@ -1,7 +1,7 @@
 ---
 title: "Key Differentiators"
 linkTitle: "Key Differentiators"
-weight: 3
+weight: 4
 date: 2021-05-10
 description: >
   Core technology of SpaceONE.
