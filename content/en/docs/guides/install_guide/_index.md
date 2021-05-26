@@ -8,8 +8,7 @@ description: >
     Install Guide of SpaceONE
 ---
 
-
-# Install Kubernetes
+## Install Kubernetes
 
 SpaceONE provides various EKS installation guides.
 
@@ -23,7 +22,7 @@ This example shows the Option 1.
 
 https://github.com/spaceone-dev/launchpad.git
 
-## Configure environments
+### Configure environments
 
 Prepare your AWS credentials. Put your ~/.aws/credentials
 
@@ -52,7 +51,7 @@ map_users = [
 
 ~~~
 
-## Execute terraform
+### Execute terraform
 
 If you don't have terraform binary, see [Reference](#Reference)
 ~~~
@@ -61,7 +60,7 @@ terraform plan
 terraform apply
 ~~~
 
-## Configure kubernetes
+### Configure kubernetes
 
 After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes.
 
@@ -78,7 +77,7 @@ After installation of EKS, we highly recommend to install [AWS Load Balancer Con
 
 
 
-# Install SpaceONE with Helm Chart
+## Install SpaceONE with Helm Chart
 
 ~~~
 kubectl create ns spaceone
@@ -88,7 +87,7 @@ alias kcd='kubectl config set-context $(kubectl config current-context) --namesp
 kcd spaceone
 ~~~
 
-## Helm repo
+### Helm repo
 
 ~~~
 helm repo add spaceone https://spaceone-dev.github.io/charts
@@ -96,7 +95,7 @@ helm repo update
 helm search repo
 ~~~
 
-## Pre-condition
+### Pre-condition
 
 read pre-condition/README.md
 
@@ -107,7 +106,7 @@ apply pre-condition
 kubectl create -f shared.yaml
 ~~~
 
-## Install
+### Install
 
 * update values.yaml
 * update database.yaml 
@@ -125,10 +124,10 @@ helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/
 
 ~~~
 
-# SpaceONE Configuration
+## SpaceONE Configuration
 
 
-# Reference
+## Reference
 
 [How to install terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
@@ -139,6 +138,4 @@ helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/
 [How to install AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
 
 [How to install External DNS](https://github.com/spaceone-dev/launchpad/tree/master/spaceone/external-dns)
-
-
 
