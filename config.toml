@@ -126,7 +126,7 @@ privacy_policy = "https://policies.google.com/privacy"
 #archived_version = true
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-#github_repo = "https://github.com/spaceone-dev/docs"
+github_repo = "https://github.com/spaceone-dev/docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 #github_project_repo = "https://github.com/spaceone-dev/docs"
 
