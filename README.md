@@ -17,7 +17,7 @@ Before we start, install the dependencies, Clone the repository and navigate to 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/spaceone-dev/docs
 
-cd blog
+cd docs
 
 ```
 
