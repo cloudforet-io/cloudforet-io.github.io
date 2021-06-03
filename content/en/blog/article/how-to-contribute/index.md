@@ -107,7 +107,10 @@ description: >
 
 Rather than writing all site page from scratch, Hugo lets you define and use shortcodes. These are reusable snippets of content that you can include in pages, often using HTML to create effects that are difficult or impossible to do in simple Markdown. 
 
-In your content files, a shortcode can be called by calling `{{% shortcodename parameters %}}` . Shortcode parameters are space delimited, and parameters with internal spaces can be quoted. 
+In your content files, a shortcode can be called by calling 
+`{{%/* shortcodename parameters */%}}`
+
+Shortcode parameters are space delimited, and parameters with internal spaces can be quoted. 
 
 The first word in the shortcode declaration is always the name of the shortcode. Parameters follow the name. Depending upon how the shortcode is defined, the parameters may be named, positional, or both, although you can't mix parameter types in a single call. The format for named parameters models that of HTML with the format `name="value"`. 
 
@@ -116,17 +119,14 @@ Some shortcodes use or require closing shortcides. Again like HTML, the opening 
 
 Here are two examples of paired shortcodes : 
 
-```
-{{% mdshortcode %}}Stuff to `process` in the *center*.{{% /mdshortcode %}}
-```
 
 ```
-{{< highlight go >}} A bunch of code here {{< /highlight >}}
+{{%/* mdshortcode */%}}Stuff to `process` in the *center*.{{%/* /mdshortcode */%}}
 ```
 
-
-
-
+```
+{{</* highlight go */>}} A bunch of code here {{</* /highlight */>}}
+```
 
 
 
