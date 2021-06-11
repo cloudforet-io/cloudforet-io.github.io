@@ -90,15 +90,15 @@ Look up tasks and how to perform them using step by step guide.
 
 Learn about SpaceONE and its fundamental concepts
 
-* \*\*\*\*[**SpaceONE**](introduction-to-spaceone/spaceone.md)\*\*\*\*
-* \*\*\*\*[**Key Differentiators**](introduction-to-spaceone/key-differentiators.md)\*\*\*\*
+* [**SpaceONE**](introduction-to-spaceone/spaceone.md)
+* [**Key Differentiators**](introduction-to-spaceone/key-differentiators.md)
 
 ##### **Try SpaceONE**
 
 Step by step guide for each user to user SpaceONE environment.
 
-* \*\*\*\*[**Basic Setup**](general-user.md)\*\*\*\*
-* \*\*\*\*[**Power Scheduler Quick Start**](power-scheduler-quick-start.md)\*\*\*\*
+* [**Basic Setup**](general-user.md)
+* [**Power Scheduler Quick Start**](power-scheduler-quick-start.md)
 
 
 
