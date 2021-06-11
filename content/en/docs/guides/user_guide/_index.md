@@ -22,7 +22,7 @@ Visualize your all cloud resources in one view.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="{{< param url_dash_board >}}"
+    href="/docs/guides/user_guide/project/_index"
     target="_blank"
     rel="noopener"
     >Domain Dashboard</a>
