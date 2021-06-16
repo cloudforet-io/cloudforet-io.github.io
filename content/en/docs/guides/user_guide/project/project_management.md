@@ -18,13 +18,13 @@ description: >
 * **View project details** : View summary, member and tags.
 * **Project Dashboard** : Overall usage of the project.
 
-![Project Management Overview](/img/doc/guides/project_management/2020-08-05-2.26.10.png)
+![Project Management Overview](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-2.26.10.png)
 
 ---
 
 **Usage by resource classification**
 
-![](/img/doc/guides/project_management/2020-08-05-2.54.31.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-2.54.31.png)
 
 * You can check cloud resources by classification. Click each icon to go to the detailed information page.
 
@@ -36,7 +36,7 @@ description: >
 
 **Region**
 
-![](/img/doc/guides/project_management/2020-08-05-2.59.08.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-2.59.08.png)
 
 Check the Cloud Resource status distributed by region.
 
@@ -52,7 +52,7 @@ Check the Cloud Resource status distributed by region.
 
 ### Service Accounts
 
-![](/img/doc/guides/project_management/2020-08-05-3.02.22.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-3.02.22.png)
 
 You can check the resource usage by `Service Account` that belong to the project. Also, you can check the amount of **`Credential`** registered.
 
@@ -62,7 +62,7 @@ You can check the resource usage by `Service Account` that belong to the project
 
 ### 
 
-![](/img/doc/guides/project_management/2020-08-05-2.57.10.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-2.57.10.png)
 
 #### 
 
@@ -74,19 +74,19 @@ You can check the resource usage by `Service Account` that belong to the project
 
 Register **or** delete users who can view and manage the project. The users should be registered as a **`Project Admin`** in advance.
 
-![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/img/doc/guides/project_management/2020-08-05-3.48.21.png)
+![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-3.48.21.png)
 
 ### Add member
 
 When you click the **`Add`** button, you can see to the **`Add User`** page. You can add multiple users at once.
 
-![Add users to project](/img/doc/guides/project_management/2020-08-05-3.44.14.png)
+![Add users to project](//docs/guides/user_guide/project/project_management_ficture/2020-08-05-3.44.14.png)
 
 ### Delete member
 
 Select the user and click the **`Delete`** button to delete member.
 
-![Delete member](/img/doc/guides/project_management/2020-08-05-5.38.47.png)
+![Delete member](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-5.38.47.png)
 
 
 

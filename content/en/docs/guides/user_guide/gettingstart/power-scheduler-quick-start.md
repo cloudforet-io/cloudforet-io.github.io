@@ -10,7 +10,7 @@ description: >
 
 # Power Scheduler Quick Start
 
-![](/img/doc/guides/power/ps1.png)
+![](/docs/guides/user_guide/gettingstart/power/ps1.png)
 
 ## How to Set up
 
@@ -38,29 +38,29 @@ Please, assign corresponding access policies to SpaceONE from each provider's co
 **STEP 1:** Select `Automation` &gt; `Power Scheduler` on top header menu 
 
 
-![Select Power Scheduler on menu](/img/doc/guides/power/ps2.png)
+![Select Power Scheduler on menu](/docs/guides/user_guide/gettingstart/power/ps2.png)
 
 
 
 **STEP 2:** Select a project to set up Power Scheduler on the dashboard. 
 
-![Select a Project on Dashboard](/img/doc/guides/power/ps3.png)
+![Select a Project on Dashboard](/docs/guides/user_guide/gettingstart/power/ps3.png)
 
 
 
 **STEP 3:**  Click `+ New Scheduler`  button at the top left corner. It is automatically changed to the creation mode if there is no previously created scheduler in the project.
 
-![](/img/doc/guides/power/ps4.png)
+![](/docs/guides/user_guide/gettingstart/power/ps4.png)
 
 
 
 **STEP 4:**  Set the scheduler's name to create a scheduler. You can enter a string including letters and  `-` . Scheduler name is required and blank spaces are not allowed.
 
-![](/img/doc/guides/power/ps5.png)
+![](/docs/guides/user_guide/gettingstart/power/ps5.png)
 
 ## Configure scheduler runtime
 
-![](/img/doc/guides/power/ps6.png)
+![](/docs/guides/user_guide/gettingstart/power/ps6.png)
 
 
 Set the time for applying a scheduler.   
@@ -75,15 +75,15 @@ There are three types of scheduler mode.
 
 |  Mode | State | Description | Color |
 | :---: | :---: | :--- | :---: |
-| Repeated Schedule |  | Timer repeated by every week. Selected area became On, Otherwise\(Non selected\) became Off. | ![](/img/doc/guides/power/ps7.png) |
-| One Time Schedule | ON | Created specified time range. Resource became On selected area. | ![](/img/doc/guides/power/ps8.png) |
-|  | OFF | Created specified time range. Resource became Off selected area. | ![](/img/doc/guides/power/ps9.png) |
+| Repeated Schedule |  | Timer repeated by every week. Selected area became On, Otherwise\(Non selected\) became Off. | ![](/docs/guides/user_guide/gettingstart/power/ps7.png) |
+| One Time Schedule | ON | Created specified time range. Resource became On selected area. | ![](/docs/guides/user_guide/gettingstart/power/ps8.png) |
+|  | OFF | Created specified time range. Resource became Off selected area. | ![](/docs/guides/user_guide/gettingstart/power/ps9.png) |
 
 
 
 **STEP 1:** Click&drag to select certain time segments to set time for the scheduler to run.
 
-![](/img/doc/guides/power/ps10.png)
+![](/docs/guides/user_guide/gettingstart/power/ps10.png)
 
 > **Please, be advised**   
 > Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All` which causes all resource to stop working immediately.
@@ -92,11 +92,11 @@ There are three types of scheduler mode.
 
 Set the resource group for applying defined schedule  
 
-![](/img/doc/guides/power/ps11.png)
+![](/docs/guides/user_guide/gettingstart/power/ps11.png)
 
 By clicking **`+ Add Resource Group`**, user can move to **Create a resource group** page. 
 
-![](/img/doc/guides/power/ps12.png)
+![](/docs/guides/user_guide/gettingstart/power/ps12.png)
 
 The Naming Rules of Resource Group is below.
 
@@ -108,7 +108,7 @@ The Naming Rules of Resource Group is below.
 
 Select resource type
 
-![](/img/doc/guides/power/ps13.png)
+![](/docs/guides/user_guide/gettingstart/power/ps13.png)
 
 
 
@@ -118,23 +118,23 @@ Enter search keyword to grouping resources. By clicking search bar available sea
 
 Supported search filter is listed here. Usually name or tag filter is preferred.
 
-![](/img/doc/guides/power/ps14.png)
+![](/docs/guides/user_guide/gettingstart/power/ps14.png)
 
 To apply search filter, You need to press _**Enter**_. Then filtered resources will be appeared. 
 
-![](/img/doc/guides/power/ps15.png)
+![](/docs/guides/user_guide/gettingstart/power/ps15.png)
 
 Enter all information, then click the save button below. 
 
-![](/img/doc/guides/power/ps16.png)
+![](/docs/guides/user_guide/gettingstart/power/ps16.png)
 
 Get _**creating success**_ message pops up when all creation process is done successfully. 
 
 
 
-![](/img/doc/guides/power/ps17.png)
+![](/docs/guides/user_guide/gettingstart/power/ps17.png)
 
-![](/img/doc/guides/power/ps18.png)
+![](/docs/guides/user_guide/gettingstart/power//ps18.png)
 
 ## Limitation & Restriction
 

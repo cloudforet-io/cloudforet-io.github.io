@@ -16,7 +16,7 @@ You can integrate server resources scattered by various regions or projects
 
 Through this page, Users can easily check detail status of servers without login to cloud console repeatedly nor connect to terminal.
 
-![](/img/doc/guides/server/2020-08-05-5.50.33-.png)
+![](/docs/guides/user_guide/invetory/server_ficture/2020-08-05-5.50.33-.png)
 
 Server page is consist of several functions.
 
@@ -28,7 +28,7 @@ Server page is consist of several functions.
 
 Server information collected based on multi clouds
 
-![](/img/doc/guides/server/2020-08-05-5.50.33-2.png)
+![](/docs/guides/user_guide/invetory/server_ficture/2020-08-05-5.50.33-2.png)
 
 List of supported information
 
@@ -109,7 +109,7 @@ List of supported information
 
 Clicking _**action**_ button after selection of server, you can manage server status
 
-![Action &#xB9AC;&#xC2A4;&#xD2B8;](/img/doc/guides/server/2020-08-06-4.13.08.png)
+![Action &#xB9AC;&#xC2A4;&#xD2B8;](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-4.13.08.png)
 
 * Delete : Removes from server list. Server will not be deleted physically. They will be added after re-collected by collectors.
 * Set In-Service/Maintenance/Close : Changing server status.
@@ -120,7 +120,7 @@ Clicking _**action**_ button after selection of server, you can manage server st
 
 All information within tables will be exported excel format.
 
-![Excel Export](/img/doc/guides/server/2020-08-06-4.11.27-.png)
+![Excel Export](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-4.11.27-.png)
 
 
 
@@ -130,14 +130,14 @@ Provides detailed information about the server. They are consists of tabs below
 
 * Details : Additional information provided\(Machine image, Security group, etc..\)
 
-![Details tab](/img/doc/guides/server/2020-08-06-5.09.53.png)
+![Details tab](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-5.09.53.png)
 
 * Tag : Grouping server by tagging.
 * Member : List of server managers
 * History : Chang management of server.
 * Monitoring : Monitoring metric informations provided by external monitoring sources\(CloudWatch, Azure Monitor, StackDriver..\)
 
-![Monitoring tab](/img/doc/guides/server/2020-08-06-5.11.19.png)
+![Monitoring tab](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-5.11.19.png)
 
 ## Search Bar
 
@@ -145,9 +145,9 @@ User can query server easily by suggested keywords.
 
 SpaceONE classify automatically based on major keywords. This allows users to conveniently search through the collected information 
 
-![Server search bar](/img/doc/guides/server/2020-08-06-5.12.57-.png)
+![Server search bar](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-5.12.57-.png)
 
 Supported keywords contains all parameters defined for server
 
-![searching keyword list](/img/doc/guides/server/2020-08-06-5.16.04.png)
+![searching keyword list](/docs/guides/user_guide/invetory/server_ficture/2020-08-06-5.16.04.png)
 

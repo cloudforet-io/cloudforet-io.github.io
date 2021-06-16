@@ -13,15 +13,16 @@ description: >
 
 **STEP 1:** Drive to the domain of **SpaceONE** on the browser and type the given ID and Password.
 
-![](/img/doc/guides/setup/setup1.png)
+![](/docs/guides/user_guide/gettingstart/setup1.png)
 
 
 
 ## Create My Project Group and Project
 
-{% hint style="info" %}
+{{% alert title="Note" color="info" %}}
 **General User** has a permission to control only the project group/project which they belong to. 
-{% endhint %}
+{{% /alert %}}
+
 
 **STEP 1:** Drive to menu **`Project`** at top bar and click **`+ Create`** button as below.
 

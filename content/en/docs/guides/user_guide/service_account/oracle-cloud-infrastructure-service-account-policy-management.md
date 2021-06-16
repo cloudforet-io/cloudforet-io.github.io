@@ -28,19 +28,19 @@ Otherwise, you can add more restrictions per resources or actions. One of the us
 
 Go to Identity &gt; Users and Click   `CREATE USER`
 
-![](/img/doc/guides/service_account/oracle/create_user_button.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/create_user_button.png)
 
 #### STEP 2. Set IAM User details
 
 Click  `IAM User`and Enter  _**User name**_ and _**Description**_ 
 
-![](/img/doc/guides/service_account/oracle/create_iam_user.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/create_iam_user.png)
 
 #### STEP 3. Set API Keys to IAM User 
 
 Go to Identity &gt; Users &gt; User &gt; Details &gt; API Keys. Click  `Add API Key`  and add or Generate API Key. 
 
-![](/img/doc/guides/service_account/oracle/add_or_generate_api_key.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/add_or_generate_api_key.png)
 
 
 
@@ -48,19 +48,19 @@ Go to Identity &gt; Users &gt; User &gt; Details &gt; API Keys. Click  `Add API 
 
 Go to Identity &gt; Groups and Click   `Create Group` Button. Enter _**Name**_ and _**Description**_.
 
-![](/img/doc/guides/service_account/oracle/create_group.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/create_group.png)
 
 #### STEP 5. Add IAM User to Group
 
 Go to Group that you made and Click  `Add User to Group`  Button and add IAM User. 
 
-![](/img/doc/guides/service_account/oracle/add_user_to_group.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/add_user_to_group.png)
 
 #### STEP 6. Set Policies to Group
 
 Go to Identity &gt; Policies and Click  `Create Policy` Button.
 
-![](/img/doc/guides/service_account/oracle/move_to_policies.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/move_to_policies.png)
 
 
 
@@ -75,7 +75,7 @@ Allow group {group_name} to inspect compartments in tenancy
 Allow group {group_name} to inspect tenancies in tenancy
 ```
 
-![](/img/doc/guides/service_account/oracle/create_policies.png)
+![](/docs/guides/user_guide/service_account/service_account_ficture/oracle/create_policies.png)
 
 
 

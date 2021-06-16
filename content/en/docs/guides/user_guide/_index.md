@@ -23,7 +23,7 @@ Visualize your all cloud resources in one view.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="/docs/guides/user_guide/project/_index"
+    href="/docs/guides/user_guide/dashboard/domain_dashboard/"
     target="_blank"
     rel="noopener"
     >Domain Dashboard</a>
@@ -35,7 +35,7 @@ Consolidate your multi cloud resources by projects.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="{{< param url_dash_board >}}"
+    href="/docs/guides/user_guide/project/"
     target="_blank"
     rel="noopener"
     >Project</a>
@@ -47,7 +47,7 @@ Discover & Classify your all cloud resources conveniently.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="{{< param url_dash_board >}}"
+    href="/docs/guides/user_guide/invetory/"
     target="_blank"
     rel="noopener"
     >Cloud Resources</a>
@@ -59,7 +59,7 @@ Managing credentials for cloud provider accounts.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="{{< param url_dash_board >}}"
+    href="/docs/guides/user_guide/service_account/"
     target="_blank"
     rel="noopener"
     >Inventory</a>
@@ -72,7 +72,7 @@ Automate repetitive operational tasks, Optimize cloud resource costs.
 
 <div class="my-4">
 <a class="btn btn-secondary"
-    href="{{< param url_dash_board >}}"
+    href="/docs/guides/user_guide/automation/power-scheduler/"
     target="_blank"
     rel="noopener"
     >Service Account</a>
