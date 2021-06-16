@@ -37,6 +37,6 @@ Our feature is expanding all areas to build a SpaceONE universe to fulfill requi
   
 
 
-![](/img/doc/guides/aboutspaceone/spaceone/2020-07-31-11.19.50.png)
+![](/docs/guides/user_guide/about_spaceone/2020-07-31-11.19.50.png)
 
 

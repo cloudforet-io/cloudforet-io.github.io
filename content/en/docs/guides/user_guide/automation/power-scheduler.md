@@ -44,7 +44,7 @@ Before creating Power Scheduler modify your existing policy, For detailed proces
 
 ## Power Scheduler Dashboard
 
-![](/img/doc/guides/automation/power-scheduler/image(89).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(89).png)
 
 **Scheduler list by Projects**
 
@@ -58,7 +58,7 @@ User can search status of power scheduling by project name.
 
 Items of power scheduler information for each projects are below.
 
-![](/img/doc/guides/automation/power-scheduler/image(89).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(89).png)
 
 <table>
   <thead>
@@ -102,9 +102,9 @@ Items of power scheduler information for each projects are below.
 >
 > The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below
 
-> <img src="/img/doc/guides/automation/power-scheduler/image(58).png">    Scheduled time is between 0 ~ 12 hours
+> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/image(58).png">    Scheduled time is between 0 ~ 12 hours
 
-> <img src="/img/doc/guides/automation/power-scheduler/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
+> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
 
 ## Scheduler Management
 
@@ -116,7 +116,7 @@ In scheduler Calendar, User can manage this functions
 
 #### Scheduling Time
 
-![](/img/doc/guides/automation/power-scheduler/image(83).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(83).png)
 
 User can see scheduler timetable. x-axis is date, y-axis is time to be controlled. By clicking _**This weeks**_ jump to power scheduling plan for this weeks.
 
@@ -128,7 +128,7 @@ Move to next/previous weeks by  `< >` buttons right upper side of table.
 
 **• Priority by Resource Group**
 
-![](/img/doc/guides/automation/power-scheduler/image(87).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(87).png)
 
 Scheduler is consist of several resource group. Each resource group has step defined by priority.
 
@@ -138,7 +138,7 @@ Create/Deleting _**Resource Group**_ is done by clicking _**Edit button &gt; + A
 
 **Resource Groups In Same Priority**
 
-![](/img/doc/guides/automation/power-scheduler/11-power-scheduler-resource-group-01.png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/11-power-scheduler-resource-group-01.png)
 
 There is sequence of changing status between resource groups in same priority.
 
@@ -148,7 +148,7 @@ Upper position resource group changes first, and Lower position goes second.
 
 _**Details of Resource Group**_
 
-![](/img/doc/guides/automation/power-scheduler/11-power-scheduler-resource-group-wizard.png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/11-power-scheduler-resource-group-wizard.png)
 
 Detailed status resource group is done by clicking _**Name of Resource Group.**_
 
@@ -162,7 +162,7 @@ Detailed status resource group is done by clicking _**Name of Resource Group.**_
 
 ### Creating New Scheduler
 
-![](/img/doc/guides/automation/power-scheduler/power-scheduler-creating.png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/power-scheduler-creating.png)
 
 By Clicking _**Creating New Scheduler**_ button, New scheduler editing screen appears. 
 
@@ -189,8 +189,8 @@ Schedule has two mode.
 | Scheduled mode | State | Description | color |
 | :--- | :--- | :--- | :--- |
 | Repeated Schedule |  | Repeated by every weeks. Within selected area, Resources are On, Otherwise\(Non selected\) resources became Off. | <img src="/img/doc/guides/automation/power-scheduler/repeated-schedule.png" alt="drawing" width="200"/> |
-| One time | ON | Event time for specific date. At the selected area, resources became on.  | <img src="/img/doc/guides/automation/power-scheduler/one-time-on.png" alt="drawing" width="200"/>|
-| One time | OFF | Event time for specific date. At the selected area, resources became off. | <img src="/img/doc/guides/automation/power-scheduler/one-time-off.png" alt="drawing" width="200"/>|
+| One time | ON | Event time for specific date. At the selected area, resources became on.  | <img src="//docs/guides/user_guide/automation/power-scheduler-ficture/one-time-on.png" alt="drawing" width="200"/>|
+| One time | OFF | Event time for specific date. At the selected area, resources became off. | <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/one-time-off.png" alt="drawing" width="200"/>|
 
 
 
@@ -244,13 +244,13 @@ Confirm the input information, then click _**save**_ button.
 
 ### Schedule Deletion
 
-![](/img/doc/guides/automation/power-scheduler/image(90).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(90).png)
 
 By clicking _**Trash Can**_ button, Scheduler can be deleted.
 
 ### Scheduler Edit
 
-![](/img/doc/guides/automation/power-scheduler/image(92).png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/image(92).png)
 
 <table>
   <thead>
@@ -329,7 +329,7 @@ Cloud resources has a such a condition that does not support within power schedu
 
 * Action Cycle & status  
 
-![](/img/doc/guides/automation/power-scheduler/screen-shot-2021-04-26-at-20.59.27.png)
+![](/docs/guides/user_guide/automation/power-scheduler-ficture/screen-shot-2021-04-26-at-20.59.27.png)
 
 
 
