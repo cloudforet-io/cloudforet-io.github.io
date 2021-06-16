@@ -2,6 +2,8 @@
 title: "SpaceONE documentation"
 linkTitle: "Home"
 noedit: true
+main_menu: true
+hide_feedback: true
 cid: docsHome
 weight: 1
 ---
