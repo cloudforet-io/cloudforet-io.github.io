@@ -147,7 +147,7 @@ description = "OpenSource multicloud operation tool"
 showedit = true
 
 docsbranch = "master"
-#currentUrl = "https://docs.spaceone.org/docs/home"
+currentUrl = "https://docs.spaceone.org/docs/home/"
 
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
