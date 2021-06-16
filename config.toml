@@ -111,7 +111,12 @@ blog = "/:section/:year/:month/:day/:slug/"
 date = ["date", ":filename", "publishDate", "lastmod"]
 
 
-
+[menu]
+    [[menu.main]]
+    name = "Documentation"
+    pre = "<i class='fas fa-book'></i>"
+    weight = 10
+    url = "/docs/home"
 
 
 
@@ -119,8 +124,8 @@ date = ["date", ":filename", "publishDate", "lastmod"]
 
 version_menu = "Versions"
 
-copyright = "SpaceOne Team"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "SpaceONE Team"
+#privacy_policy = "https://policies.google.com/privacy"
 
 latest = "v1.7.2"
 #archived_version = true
@@ -140,6 +145,10 @@ offlineSearch = true
 
 description = "OpenSource multicloud operation tool"
 showedit = true
+
+docsbranch = "master"
+currentUrl = "https://docs.spaceone.org/docs/home"
+
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
