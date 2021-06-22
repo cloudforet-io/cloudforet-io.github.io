@@ -80,7 +80,7 @@ Register **or** delete users who can view and manage the project. The users shou
 
 When you click the **`Add`** button, you can see to the **`Add User`** page. You can add multiple users at once.
 
-![Add users to project](//docs/guides/user_guide/project/project_management_ficture/2020-08-05-3.44.14.png)
+![Add users to project](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-3.44.14.png)
 
 ### Delete member
 
@@ -98,10 +98,10 @@ Select the user and click the **`Delete`** button to delete member.
 
 You can **`add`** or **`delete`** Tags in your project.
 
-![](/img/doc/guides/project_management/2020-08-05-5.40.40.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-5.40.40.png)
 
 Click the _**`Edit`**_button to delete or add Tags, and Click **`Save`**  button. 
 
-![](/img/doc/guides/project_management/2020-08-05-5.43.10.png)
+![](/docs/guides/user_guide/project/project_management_ficture/2020-08-05-5.43.10.png)
 
 

@@ -76,7 +76,7 @@ If you want to edit or delete the Project group, Click the  **`⚙`** button at 
 
 To delete a project group, you must delete all of the projects in the target group in advance.
 
-![Delete Project Group](/img/doc/guides/project_group_management/2020-08-05-11.18.21.png)
+![Delete Project Group](/docs/guides/user_guide/project/project_group_management_ficture/2020-08-05-11.18.21.png)
 
 
 
@@ -84,13 +84,13 @@ To delete a project group, you must delete all of the projects in the target gro
 
 To see details of the project, select the project group.
 
-![Project List](/img/doc/guides/project_group_management/2020-08-05-11.25.03.png)
+![Project List](/docs/guides/user_guide/project/project_group_management_ficture/2020-08-05-11.25.03.png)
 
 
 
 You can see briefly how many **`Server / Cloud services`** each project has. You can also check your Cloud **`Service Account Type`**. 
 
-![](/img/doc/guides/project_group_management/2020-08-05-11.27.30.png)
+![](/docs/guides/user_guide/project/project_group_management_ficture/2020-08-05-11.27.30.png)
 
 
 
@@ -98,7 +98,7 @@ You can see briefly how many **`Server / Cloud services`** each project has. You
 
 **`Search Bar`** enables quick movement to **`Project Group / Project.`**
 
-![Project Search Bar](/img/doc/guides/project_group_management/2020-08-05-11.29.35.png)
+![Project Search Bar](/docs/guides/user_guide/project/project_group_management_ficture/2020-08-05-11.29.35.png)
 
 **`Search bar`** enables you the following actions:  
 
