@@ -1,6 +1,6 @@
 ---
 date: 2021-06-01
-title: "Contribute to SpaceONE Documentation "
+title: "Contribute to SpaceONE Documentation"
 linkTitle: "Contribute SpaceONE Documentation"
 description: "Find out how to contribute to and fill out the SpaceOne document."
 author: Seungho Jeong ([Linkedin](https://www.linkedin.com/in/seungho-jeong-79684b210/))
