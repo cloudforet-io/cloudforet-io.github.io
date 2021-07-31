@@ -9,7 +9,7 @@ weight: 1
 ---
 
 <section id="users">
-    <h5>SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. The open source project is hosted by MEGAZONE Cloud.</h5>
+    <h5>SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. </h5>
     <div class="col-container">
       <div class="col-nav">
         <center>
