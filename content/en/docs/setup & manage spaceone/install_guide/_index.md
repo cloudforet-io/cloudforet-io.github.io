@@ -1,9 +1,9 @@
 ---
 title: "Install Guide"
 linkTitle: "Install Guide"
-weight: 5
+weight: 1
 url_dash_board: "/docs/guides/install_guide" 
-date: 2021-05-11
+date: 2021-07-31
 description: >
     Install Guide of SpaceONE
 ---

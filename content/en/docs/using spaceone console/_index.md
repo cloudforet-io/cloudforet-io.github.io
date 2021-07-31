@@ -1,15 +1,11 @@
 ---
-title: "Guides"
-linkTitle: "Guides"
-weight: 5
-url_dash_board: /docs/guides/
-date: 2021-05-11
+title: "Using SpaceONE Console"
+linkTitle: "Using SpaceONE Console"
+weight: 3
+date: 2021-07-31
 description: >
-    Userguide of SpaceONE
-menu:
-  main:
-    weight: 20
-    pre: <i class='fas fa-binoculars'></i>
+    Guide to use SpaceONE Console
+
 ---
 
 <section id="users">
@@ -18,7 +14,7 @@ menu:
       <div class="col-nav">
         <center>
           <h5>
-            <b>SpaceONE User Guide</b>
+            <b>User Guide</b>
           </h5>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br><br>
@@ -28,17 +24,7 @@ menu:
       <div class="col-nav">
         <center>
           <h5>
-            <b>SpaceONE Administrator Guide</b>
-          </h5>
-	  <br>SpaceONE supports multi-tenancy for managing enterprise-grade cloud resources with various plugins.
-          <br><br><br>
-          <a href="/docs/guides/admin_guide" class="button">See Admin Guide</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h5>
-            <b>SpaceONE Installation Guide</b>
+            <b>Admin Guide</b>
           </h5>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
