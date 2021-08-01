@@ -116,7 +116,7 @@ date = ["date", ":filename", "publishDate", "lastmod"]
     name = "Documentation"
     pre = "<i class='fas fa-book'></i>"
     weight = 10
-    url = "/docs/home"
+    url = "/docs"
 
 
 
