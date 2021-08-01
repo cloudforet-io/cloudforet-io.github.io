@@ -1,8 +1,7 @@
 ---
 title: "SpaceONE"
 linkTitle: "SpaceONE"
-weight: 5
-url_dash_board: "" 
+weight: 5 
 date: 2021-06-10
 description: >
     One cloud management platform for any cloud
@@ -38,6 +37,6 @@ Our feature is expanding all areas to build a SpaceONE universe to fulfill requi
   
 
 
-![](/docs/guides/user_guide/about_spaceone/2020-07-31-11.19.50.png)
+![](/docs/using_spaceone_console/user_guide/about_spaceone/2020-07-31-11.19.50.png)
 
 

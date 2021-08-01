@@ -2,11 +2,10 @@
 title: "User Guide"
 linkTitle: "User Guide"
 weight: 1
-url_dash_board: "/docs/guides/user_guide/" 
+#url_dash_board: "/docs/guides/user_guide/" 
 date: 2021-05-11
 description: >
     User Guide of SpaceONE
-#no_list: true
 ---
 
 # Welcome aboard to SpaceONE

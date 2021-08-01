@@ -2,7 +2,6 @@
 title: "Admin Guide"
 linkTitle: "Admin Guide"
 weight: 2
-url_dash_board: "/docs/first/" 
 date: 2021-05-11
 description: >
     Admin Guide of SpaceONE
@@ -13,7 +12,7 @@ description: >
 **SpaceONE,** our mission is accelerate the **Multi-Cloud** Native Technology for sustainable Ecosystem;   
 Cloud management platform that enables integrating all **Multi-Clouds** regardless of the platforms which boosts and maximizes your operational efficiency in management.
 
-![](img/admin_guide_main_01.png)
+![](/docs/using_spaceone_console/admin_guide/img/admin_guide_main_01.png)
 
 
 ### **Contents**
