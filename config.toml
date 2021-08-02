@@ -37,7 +37,7 @@ pygmentsStyle = "tango"
 		contentDir = "content/en"
 		time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
-                # Weight used for sorting.
+        # Weight used for sorting.
 		weight = 1
 	[languages.ko]
 		title = ""
@@ -54,7 +54,7 @@ pygmentsStyle = "tango"
 [outputs]
 home = [ "HTML" ]
 page = [ "HTML" ]
-section = [ "HTML", "print"]
+section = [ "HTML"]
 
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
@@ -116,7 +116,7 @@ date = ["date", ":filename", "publishDate", "lastmod"]
     name = "Documentation"
     pre = "<i class='fas fa-book'></i>"
     weight = 10
-    url = "/docs/home"
+    url = "/docs"
 
 
 
@@ -127,7 +127,7 @@ version_menu = "Versions"
 copyright = "SpaceONE Team"
 #privacy_policy = "https://policies.google.com/privacy"
 
-latest = "v1.7.2"
+latest = "v1.7.4"
 #archived_version = true
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
@@ -187,9 +187,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 [[params.versions]]
-fullversion = "v1.7.2"
-version = "v1.7.2"
-githubbranch = "release-1.7.2"
+fullversion = "v1.7.4"
+version = "v1.7.4"
+githubbranch = "release-1.7.4"
 docsbranch = "master"
 # Set master version url
 url = "https://docs.spaceone.org/"
