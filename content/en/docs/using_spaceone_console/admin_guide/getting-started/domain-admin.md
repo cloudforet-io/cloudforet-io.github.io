@@ -20,7 +20,7 @@ description: >
 
 **STEP 1: `Domain Admin`Role 이 부여된 User로 Log-in 합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-04-at-14.39.08.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 ## 프로젝트 그룹 생성
 
@@ -36,23 +36,24 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 
 **STEP 1: 상단 Navigation에서 Project 선택 후, `Landing Zone`라는 이름으로 `Project Group`을 생성합니다.** 
 
-![](../.gitbook/assets/create_top_project_group.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_02.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_03.png)
 
 **STEP 2: `Services` 라는 이름으로 `Project Group`을 생성합니다.**
 
-![](../.gitbook/assets/create_project_group_landingzone.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_04.png)
 
 **STEP 3: `Business Support System` 이라는 `Project Group`을 생성합니다.** 
 
-![](../.gitbook/assets/create_project_group_services.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_05.png)
 
 **STEP 4: SpaceONE console의 좌측 navigation 에서 생성된 `Project Group`을 확인할 수 있습니다.**
 
-![](../.gitbook/assets/create_project_group_businesssupportsystems.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_06.png)
 
 **STEP 5: User Management 화면에서 Role과 Authorization Type이 매핑된 것을 확인할 수 있습니다.**
 
-![](../.gitbook/assets/show_project_page.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 ## Create User
 
@@ -64,24 +65,24 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 
 **STEP 1: 상단 네비게이션에 `Identity > User`** 로 이동합니다.
 
-![](../.gitbook/assets/screen-shot-2021-02-04-at-14.16.22%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_07.png)
 
   
 **STEP 2: `Add` 버튼을 클릭합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-04-at-14.18.45%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 3: Project Admin 사용자 정보를 입력 한  추가합니다.** 
 
-![](../.gitbook/assets/create_user1-1-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 4: User를 Services 프로젝트 그룹에 매핑합니다.**
 
-![](../.gitbook/assets/add_user2_to_project_group.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 5: User Management** 화면에서 **Role과 Authorization Type**이 매핑된 것을 확인할 수 있습니다.
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-10.17.46.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 ## Cloud Resource Collectors
 
@@ -93,7 +94,7 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 
 SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Create`** 버튼을 클릭해 Collector를 생성합니다.
 
-![](../.gitbook/assets/create_collector.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 
 
@@ -103,11 +104,11 @@ SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Cr
 
 \*\*\*\*
 
-![](../.gitbook/assets/select_aws_ec2_plugin.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 2: AWS EC2 `collector` 를 생성합니다.**
 
-![](../.gitbook/assets/create_aws_personal_health_dashboard_collector.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 
 
@@ -115,12 +116,12 @@ SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Cr
 
 **STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
-![](../.gitbook/assets/select_aws_cloud_services_plugin-1-%20%282%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
   
 **STEP 2: AWS Cloud Service Collector 를 생성합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-13.46.13.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 \*\*\*\*
 
@@ -128,11 +129,11 @@ SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Cr
 
 **STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-13.53.03%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 2: AWS trusted advisor `collector`를 생성합니다.** 
 
-![](../.gitbook/assets/create_aws_trusted_advisor_collector.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 \*\*\*\*
 
@@ -140,11 +141,11 @@ SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Cr
 
 **STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
-![](../.gitbook/assets/select_aws_cloud_services_plugin-1-%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 2: AWS Personal Health Dashboard `collector`를 생성합니다.** 
 
-![](../.gitbook/assets/create_aws_personal_health_dashboard_collector%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 \*\*\*\*
 
@@ -152,15 +153,15 @@ SpaceONE 상단 navigation의 **`Plugin` -`Collector`** 를 선택한 후, **`Cr
 
 **STEP 1: Market-place 에서 `aws-cloud-services` 플러그인을 선택합니다.**
 
-![](../.gitbook/assets/select_aws_cloud_services_plugin-1-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 2: Spaceone-Monitoring Metric `Collector`를 생성합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-13.46.13%20%281%29.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 생성된 전체 **`collector`** 목록을 확인합니다.
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-13.53.03.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 ## Update Schedule
 
@@ -170,11 +171,11 @@ Schedule 설정을 통해, 생성된 **`Collector`** 들의 수집주기를 설�
 
 **STEP 1: Schedule을 설정하고 싶은 `Collector`를 선택한 뒤, 하단 `Schedule` 탭의 `Add` 버튼을 클릭합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-05-at-14.02.50.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
 **STEP 2: 매 4시간 마다 수집하는 `Collector`를 생성합니다.**
 
-![](../.gitbook/assets/add_schedule_to_collector.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
-![](../.gitbook/assets/list_collector_schedules.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/domain-admin_img/Domain-Admin_image_01.png)
 
