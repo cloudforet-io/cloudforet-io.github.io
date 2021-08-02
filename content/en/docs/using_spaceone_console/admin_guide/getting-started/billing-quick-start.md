@@ -28,8 +28,9 @@ Billing information can be provided by various vendor like AWS, Google Cloud, Az
 
 To enable billing service, contact your domain administrator of SpaceONE.
 
-> **In the Version 1.5.3, Hyperbilling backend is enabled by default.**
-
+{{% pageinfo color="info" %}}
+**In the Version 1.5.3, Hyperbilling backend is enabled by default.**
+{{% /pageinfo %}}
 
 <br>
 The supported billing backends are
