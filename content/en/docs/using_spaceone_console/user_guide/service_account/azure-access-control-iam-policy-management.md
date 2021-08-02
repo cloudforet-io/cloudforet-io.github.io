@@ -45,11 +45,11 @@ If you want to know more about Azure's access control policies, visit the link b
 
 Select the resource group for which the collector will collect resources.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image(104).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(104).png)
 
 **STEP 2. Click `Access control (IAM)` Navigation tab, and click `+Add` button.**
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image(102).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(102).png)
 
 
 
@@ -57,7 +57,7 @@ Select the resource group for which the collector will collect resources.
 
 
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image(103).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(103).png)
 
 ## Troubleshooting
 
@@ -75,16 +75,16 @@ The client `client_id` with object id `object_id` does not have authorization to
 
 **STEP 1: Log in Azure Portal and Drive to &gt; Subscriptions** 
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/screen-shot-2021-04-15-at-18.55.14.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-15-at-18.55.14.png)
 
   
 **STEP 2: Click the subscription name where resources are located.**
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image(114).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(114).png)
 
 **STEP 3: Click `+Add role assignment` button.**
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image-2-.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-2-.png)
 
 ---
 
@@ -98,7 +98,7 @@ The client `client_id` with object id `object_id` does not have authorization to
   * `App that has registered on Active directory` **at &gt; Azure ActiveDirectory &gt; Registered App**  
 
 
-    ![](/docs/guides/user_guide/service_account/service_account_ficture/azure/image-azure-subscription.png)
+    ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
 
 
 
@@ -110,5 +110,5 @@ Please, Select Registered App as below \(Different Icons\).
 
 
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/azure/screen-shot-2021-04-16-at-12.38.16.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-16-at-12.38.16.png)
 
