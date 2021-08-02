@@ -40,7 +40,7 @@ When **`All Project`** is selected, the list of all projects are shown at once. 
 
 
 
-![Project Group &amp;gt; All Project](/docs/guides/user_guide/project/project_group_management_img/2020-08-05-10.55.13.png)
+![Project Group &amp;gt; All Project](/docs/using_spaceone_console/user_guide/project/project_group_management_img/2020-08-05-10.55.13.png)
 
 
 
