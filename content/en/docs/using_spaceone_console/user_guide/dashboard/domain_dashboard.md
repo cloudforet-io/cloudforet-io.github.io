@@ -19,13 +19,13 @@ Dashboard allows you to view the status of the entire service being used by doma
 
 When you click an item, you can navigate to the corresponding service.
 
-![Dashboard v1.6.2](/docs/guides/user_guide/dashboard/dashboard_ficture/dashboard-v1.5.2-1280x720.png)
+![Dashboard v1.6.2](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard-v1.5.2-1280x720.png)
 
 
 
 You can use the navigation bar at the top of the screen to quickly navigate to each page.
 
-![Navigation Bar](/docs/guides/user_guide/dashboard/dashboard_ficture/screen-shot-2021-02-17-at-5.14.34-pm.png)
+![Navigation Bar](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/screen-shot-2021-02-17-at-5.14.34-pm.png)
 
 
 
@@ -33,7 +33,7 @@ You can use the navigation bar at the top of the screen to quickly navigate to e
 
 You can see the status of projects that use **`Server`**/**`Database`** service the most. When you click on each  **`Project group / Project`**, you will be taken to the corresponding page.
 
-![](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-07-31-3.08.33.png)
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-07-31-3.08.33.png)
 
 
 
@@ -51,7 +51,7 @@ You can see the number of **`Service Accounts`** registered in the domain. Follo
 
 
 
-![Service Account](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-08-03-5.05.53.png)
+![Service Account](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.05.53.png)
 
 Also, you can view the current number of Service Accounts registered for each cloud.
 
@@ -63,13 +63,13 @@ You can view the changed number of servers and cloud services from midnight to t
 
 
 
-![Daily updates](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-08-03-5.31.12.png)
+![Daily updates](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.31.12.png)
 
 
 
 ## Cloud Services
 
-![](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-07-31-3.18.09.png)
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-07-31-3.18.09.png)
 
 You can see the number and type of cloud service resources collected at a glance. When you click **`More`**, you go to the **`Cloud Service`** page.
 
@@ -81,7 +81,7 @@ You can inquire the history of **`Collector`** execution and the status of the *
 
 **`Collector history`** shows the collection success/failure history for a week.
 
-![](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-08-03-5.36.44.png)
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.36.44.png)
 
 ### 
 
@@ -89,4 +89,4 @@ You can inquire the history of **`Collector`** execution and the status of the *
 
 You can view the list of currently running collectors.  **`More`** button links you to the **`Collector history`** page.
 
-![](/docs/guides/user_guide/dashboard/dashboard_ficture/2020-08-03-5.37.46.png)
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.37.46.png)

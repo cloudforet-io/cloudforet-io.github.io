@@ -45,7 +45,7 @@ In order to experience powerful function of SpaceONE collectors. Use the managed
 
 Go to IAM &gt; Users &gt; Add user
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_policy_iam_add_user.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_policy_iam_add_user.png)
 
 ---
 
@@ -53,7 +53,7 @@ Go to IAM &gt; Users &gt; Add user
 
 Enter _**User name**_, Set access type to _**Programmatic access**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_set_user_details.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_set_user_details.png)
 
 
 
@@ -65,7 +65,7 @@ Click _**Attach existing policies directly**_ . Enter _**readonly**_ keyword in 
 
 Select _**ReadOnlyAccess**_ managed policy as below.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_set_permissions.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_set_permissions.png)
 
 ---
 
@@ -75,7 +75,7 @@ _**You can skip this process**_ and move to next.
 
 SpaceONE collector does not related to tags in IAM. 
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_add_tag.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_tag.png)
 
 
 
@@ -85,7 +85,7 @@ _**Step 5. Review**_
 
 Check the details you added. Then click _**Create users**_ right down of page
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_review.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_review.png)
 
 _**Step 6. Copy Key Pair**_
 
@@ -93,7 +93,7 @@ IAM key pair created, _**Be sure to copy the Access key ID/Secret access key and
 
 If you skip to copy, there is no chance to have it again\(Do from step 1 again\).
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_add_user_copy_keypair.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
 
 
@@ -109,7 +109,7 @@ Suggested IAM policy for each cloud provider to use _**SpaceONE Power Scheduler*
 
 Go to IAM &gt; Policies &gt; Create policy
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_power_scheduler_create_policy.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_power_scheduler_create_policy.png)
 
 ---
 
@@ -150,13 +150,13 @@ Move to JSON tab, attach policy definition below. Then click _**Review policy**_
 
 Enter policy name and description, Then click _**Create policy**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_powerscheduler_review_policy.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_powerscheduler_review_policy.png)
 
 **Step 4. Log in AWS Console &gt; IAM** 
 
 Go to IAM &gt; Users &gt; Add user
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_policy_iam_add_user.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_policy_iam_add_user.png)
 
 
 
@@ -164,7 +164,7 @@ Go to IAM &gt; Users &gt; Add user
 
 Enter _**User name**_, Set access type to _**Programmatic access**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_set_user_details.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_set_user_details.png)
 
 ---
 
@@ -178,7 +178,7 @@ Enter _**User name**_, Set access type to _**Programmatic access**_
 * AutoScalingReadOnlyAccess
 * **Policy created in step 3**
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_powerscheduler_set_api_permission.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_powerscheduler_set_api_permission.png)
 
 
 
@@ -186,7 +186,7 @@ Enter _**User name**_, Set access type to _**Programmatic access**_
 
 Make sure all the permission from Step 4. included, Then click _**Create user**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_powerscheduler_review.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_powerscheduler_review.png)
 
 
 
@@ -196,7 +196,7 @@ IAM key pair created, _**Be sure to copy the Access key ID/Secret access key and
 
 If you skip to copy, there is no chance to have it again\(Do from step 1 again\).
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_add_user_copy_keypair.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
 
 
@@ -216,7 +216,7 @@ User account support level should be over _**business**_ and additional IAM poli
 
 Go to IAM &gt; Policies &gt; Create policy
 
-![](//docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_power_scheduler_create_policy.png)
+![](//docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_power_scheduler_create_policy.png)
 
 ---
 
@@ -224,7 +224,7 @@ Go to IAM &gt; Policies &gt; Create policy
 
 Move to JSON tab, attach policy definition below. Then click _**Review policy**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/2021-02-09-6.44.48.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/2021-02-09-6.44.48.png)
 
 ```text
 {
@@ -257,7 +257,7 @@ Move to JSON tab, attach policy definition below. Then click _**Review policy**_
 
 Enter name and description. Then click _**Create policy.**_ 
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/2021-02-09-6.46.08.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/2021-02-09-6.46.08.png)
 
  
 
@@ -265,7 +265,7 @@ Enter name and description. Then click _**Create policy.**_
 
 Go to IAM &gt; Users &gt; Add user
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_policy_iam_add_user.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_policy_iam_add_user.png)
 
 
 
@@ -273,7 +273,7 @@ Go to IAM &gt; Users &gt; Add user
 
 Enter _**User name**_, Set access type to _**Programmatic access**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_set_user_details.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_set_user_details.png)
 
 ---
 
@@ -281,7 +281,7 @@ Enter _**User name**_, Set access type to _**Programmatic access**_
 
  Add all policies below. They should included to guarantee successful action.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_phd_set_api_permission.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_phd_set_api_permission.png)
 
 ---
 
@@ -289,7 +289,7 @@ Enter _**User name**_, Set access type to _**Programmatic access**_
 
 Make sure all the permission from Step 4. included, Then click _**Create user**_
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_powerscheduler_review.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_powerscheduler_review.png)
 
 
 
@@ -299,7 +299,7 @@ IAM key pair created, _**Be sure to copy the Access key ID/Secret access key and
 
 If you skip to copy, there is no chance to have it again\(Do from step 1 again\).
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/aws/aws_service_account_iam_add_user_copy_keypair.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
 
 
