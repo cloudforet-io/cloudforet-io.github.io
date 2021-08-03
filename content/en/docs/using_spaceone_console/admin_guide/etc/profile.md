@@ -15,9 +15,9 @@ User can view & modify via profile menu.
 
 User can check clicking right upper side of the console.
 
-![](../.gitbook/assets/2020-08-07-7.12.29-.png)
+![](/docs/using_spaceone_console/admin_guide/etc/profile_img/profile_img_01.png)
 
-![](../.gitbook/assets/2020-08-07-7.15.34.png)
+![](/docs/using_spaceone_console/admin_guide/etc/profile_img/profile_img_02.png)
 
 * Role : User role\(Domain Admin/Project Admin\). 
 * Time Zone : User time zone\(UTC/Seoul/Tokyo\). 
@@ -31,9 +31,9 @@ User can check clicking right upper side of the console.
 
 By clicking profile button, User information windows pops up.
 
-![](../.gitbook/assets/2020-02-16-2.37.55.png)
+![](/docs/using_spaceone_console/admin_guide/etc/profile_img/profile_img_03.png)
 
 Besides ID, all the information can be changed. After changing information then click Confirm Success message will be popped up.
 
-![](../.gitbook/assets/2020-02-16-2.40.21-1-.png)
+![](/docs/using_spaceone_console/admin_guide/etc/profile_img/profile_img_04.png)
 
