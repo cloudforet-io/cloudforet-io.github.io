@@ -39,16 +39,14 @@ SpaceONE의 Service Account 등록은 **Identity** &gt; **Service Account** 에�
 
 Service Provider를 선택한 후, **+Add** 버튼을 클릭 하세요.
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric_collector_image_01.png)
-
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
 아래의 절차를 통핸 SpaceONE Service Account를 등록할 수 있습니다.  
 
 1. Service Account 이름
 2. 사용자 ID 입력
 3. Credential 입력 \(API Key 정보\)
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric_collector_image_02.png)
-
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
   
 Service Account 이름과 사용자 ID를 입력한 후에는 도메인 관리자로부터 얻은 Credential을 설정 합니다.‌
 
@@ -60,7 +58,7 @@ Credential 입력 값은 아래와 같습니다.‌
 
 모든 값은 필수 입력 항목입니다.
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric_collector_image_03.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
 
 {% hint style="info" %}
 Monitoring Metric collector Service에서는 Project를 할당하지 않아야 합니다. 
@@ -74,11 +72,11 @@ Monitoring Metric collector Service에서는 Project를 할당하지 않아야 �
 
 **참고:  Monitoring-metric-collector 의 수집은 하루에 1회를 권장 합니다.** 
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric_collector_image_04.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
 
 Collector Job이 완료된 후에는 Monitoring metric 이 업데이트 됩니다. 
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric_collector_image_05.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
 
 실제 수집된 데이터는 **Data -&gt; Monitoring**의 **"Raw Data"** 탭에서 확인 가능합니다. 
 
