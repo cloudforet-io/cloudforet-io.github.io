@@ -10,7 +10,8 @@ description: >
 
 # Billing Quick Start
 
-![](../.gitbook/assets/billing_img.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_01.png)
+
 
 ## How to Set up
 
@@ -27,9 +28,7 @@ Billing information can be provided by various vendor like AWS, Google Cloud, Az
 
 To enable billing service, contact your domain administrator of SpaceONE.
 
-{% hint style="info" %}
 In the Version 1.5.3, Hyperbilling backend is enabled by default.
-{% endhint %}
 
 The supported billing backends are
 
@@ -53,11 +52,10 @@ To register billing service account, you can do in Identity &gt; Service Account
 
 Select **Hyper Billing** Service Provider, then click **Add**
 
-![Register billing service account](../.gitbook/assets/image-77-%20%281%29.png)
+![Register billing service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_02.png)
 
-{% hint style="info" %}
+
 **If you have no "Hyper Billing" in the Service Providers, contact Domain Administrator of SpaceONE.**
-{% endhint %}
 
 Register Billing Service Account like following steps,
 
@@ -65,21 +63,19 @@ Register Billing Service Account like following steps,
 2. Put Credentials \(API Key\)
 3. Select Project
 
-![Name of service account](../.gitbook/assets/image-79-.png)
+![Name of service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
 
 After set name of service account, you have to configure Credentials which is received from Billing Service Provider. In this example you can get Credentials from Megazone Hyperbilling team.
 
 They will give you Credentials which are consisted with "Account", "Email" and "Key". Put the information correctly.
 
-![](../.gitbook/assets/image-74-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
 
-{% hint style="info" %}
 Assigning Project is mandatory for Billing Service.
 
 DO NOT SKIP THIS STEP.
-{% endhint %}
 
-![](../.gitbook/assets/image-75-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
 
 If you have multiple billing account, repeat "Register Billing Service Account".
 
@@ -89,9 +85,9 @@ Everything is done. You can see billing information in the main dashboard and pr
 
 Consolidated Billing information in the main Dashboard. This is a summation-integral of all billing accounts. 
 
-![](../.gitbook/assets/image-78-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_06.png)
 
 Each project page provides its own billing information if you register billing service account.
 
-![](../.gitbook/assets/image-73-.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_07.png)
 

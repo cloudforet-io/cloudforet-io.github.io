@@ -16,9 +16,9 @@ User can view & modify via profile menu.
 
 User can check clicking right upper side of the console.
 
-![User Profile](/docs/guides/user_guide/etc/profile_ficture/2020-08-07-7.12.29-.png)
+![User Profile](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-08-07-7.12.29-.png)
 
-![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xBCF4; &#xC870;&#xD68C;](/docs/guides/user_guide/etc/profile_ficture/2020-08-07-7.15.34.png)
+![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xBCF4; &#xC870;&#xD68C;](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-08-07-7.15.34.png)
 
 * Role : User role\(Domain Admin/Project Admin\).
 * Time Zone : User time zone\(UTC/Seoul/Tokyo\).
@@ -30,15 +30,15 @@ User can check clicking right upper side of the console.
 
 ### Profile
 
-By clicking profile button, User information windows pops up.
+By clicking the profile button, the User information window will pop up.
 
-![Profile](/docs/guides/user_guide/etc/profile_ficture/2020-02-16-2.37.55.png)
+![Profile](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-02-16-2.37.55.png)
 
-Besides ID, all the information can be changed. After changing information then click _**Confirm**_ 
+Besides ID, all the information can be changed. After changing the information click _**Confirm**_ 
 
-Success message will be popped up.
+A Success message will appear.
 
-![](/docs/guides/user_guide/etc/profile_ficture/2020-02-16-2.40.21.png)
+![](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-02-16-2.40.21.png)
 
 
 
