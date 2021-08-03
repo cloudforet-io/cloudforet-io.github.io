@@ -5,103 +5,148 @@ weight: 10
 url_dash_board: "" 
 date: 2021-06-10
 description: >
-    Overall status of each projects, Navigating to detailed cloud resources
+    View overall status of each projects and Navigate to detailed cloud resources.
 ---
 
 # Project Management
 
 ## Overview 
 
-**`Project`** page allows you the following actions:
+The **`Project`** page allows you the following features:
 
 * **View and edit projects.** 
-* **View project details** : View summary, member and tags.
-* **Project Dashboard** : Overall usage of the project.
+* **View project details** : View Summary, Member, Alert, Notifications, Maintenance Window, and Tags.
+* **Project Dashboard** : View overall usage of projects.
 
-![Project Management Overview](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-2.26.10.png)
+![Project Management Overview](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_01.png)
 
----
+<br/>
 
-**Usage by resource classification**
+* **Usage by resource classification**
+: You can check cloud resources by classification. Click on each icon to see the detailed information page.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-2.54.31.png)
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_02.png)
 
-* You can check cloud resources by classification. Click each icon to go to the detailed information page.
+<br/>
+
+## Summary
 
 ### General
 
-**Compute Type**
+Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`**.
 
----
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_03.png)
 
-**Region**
+<br/>
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-2.59.08.png)
+### Alert
 
-Check the Cloud Resource status distributed by region.
+You can easily check on **`Alerts`** by their statuses. 
 
-### **Billing**
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_10.png)
 
-**Trend**
+<br/>
 
----
+### Billing
+
+You can easily check **`Billing Trends`**. Click on each service names to see details.
+
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_09.png)
+
+<br/>
 
 ### Personal Health Dashboard
 
-### 
+You can check **`Open Issues`** **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`** .
+
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_04.png)
+
+<br/>
 
 ### Service Accounts
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-3.02.22.png)
+You can check resource usages from **`Service Account`** within the project. You can also check the amount of **`Credential`** registered.
 
-You can check the resource usage by `Service Account` that belong to the project. Also, you can check the amount of **`Credential`** registered.
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_05.png)
+
+<br/>
 
 ### Daily Updates
 
-**`Daily update`** shows the history of changes in your cloud resources so far. Click to go to the detailed status page.
+**`Daily update`** shows the history of changes in your cloud resources so far. Click on each update to go to the detailed status page.
 
-### 
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_06.png)
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-2.57.10.png)
+<br/>
 
-#### 
+### Cloud services
 
-#### Cloud services
+You can check the major services from the **`Cloud Service`** . To see further details you can click on each services or **more >** .
 
-#### Trusted Advisor
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_07.png)
+
+<br/>
+
+### Trusted Advisor
+
+You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **`Security`** , **`Fault Tolerance`** , and **`Service Limits`** from the **`Trusted Advisor`** .
+
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_08.png)
+
+<br/>
 
 ## Member
 
-Register **or** delete users who can view and manage the project. The users should be registered as a **`Project Admin`** in advance.
+**`Add`** or **`Delete`** users who can view and manage the project. To do so, the users should be registered as a **`Project Admin`** in advance.
 
-![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-3.48.21.png)
+![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_11.png)
 
 ### Add member
 
-When you click the **`Add`** button, you can see to the **`Add User`** page. You can add multiple users at once.
+When you click the **`Add`** button, you can see the **`Add User`** pop up. You can add multiple users at once.
 
-![Add users to project](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-3.44.14.png)
+![Add users to project](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_12.png)
 
 ### Delete member
 
-Select the user and click the **`Delete`** button to delete member.
+Select users you want to delete and click **`Action`** > **`Delete`**.
 
-![Delete member](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-5.38.47.png)
+![Delete member](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_13.png)
 
+<br/>
 
+## Alert
 
+**`Create`**, **`Acknowledge`**, **`Resolve`**, **`Delete`** Alerts and Webhooks. 
 
+You can also manage Rules and Escalation Policies from **`Settings`**.
 
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_14.png)
 
+<br/>
+
+## Notifications
+
+Add notification channels such as, **`Slack Protocol`** **`Megazone Voice Call Protocol`** **`Megazone SMS Protocol`** **`SpaceONE User Channel`**.
+
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_15.png)
+
+<br/>
+
+## Maintenance Window
+
+During maintenances you can create or close a **`Maintenance Window`** to prevent new alerts on a project. 
+
+Click **`Create Maintenance Window`** and select a schedule.
+
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_16.png)
+
+<br/>
 
 ## Tag
 
-You can **`add`** or **`delete`** Tags in your project.
+You can **`add`** or **`delete`** Tags in your project. Click the **`Edit`** button to do so.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-5.40.40.png)
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_17.png)
 
-Click the _**`Edit`**_button to delete or add Tags, and Click **`Save`**  button. 
-
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/2020-08-05-5.43.10.png)
-
-
+![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_18.png)
