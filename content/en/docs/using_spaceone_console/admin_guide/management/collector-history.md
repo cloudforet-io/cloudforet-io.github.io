@@ -70,7 +70,7 @@ At the bottom of the page, a list of tasks is shown according to Job status. The
 
 | item | Description |
 | :--- | :--- |
-| No | task 순번 |
+| No | task order |
 | Service account | Service Account assingned to task |
 | Project | project that task belongs |
 | Status | performance status of task |
