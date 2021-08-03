@@ -33,7 +33,7 @@ Otherwise, you can add more restrictions per resources or actions. One of the us
 4. Specify the _**Logon Name**_ and _**Display Name**_ parameters.
 5. Click **`OK`** and return to _Create User screen_.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/alibaba/image(110).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(110).png)
 
 **STEP 2. Create AccessKey pairs for RAM users**
 
@@ -47,7 +47,7 @@ You need AccessKey pairs to enter Alibaba Cloud Credentials in the SpaceOne. If 
    * The AccessKey Secret is displayed only once when you first create it. You cannot retrieve the AccessKey Secret if you forget it. We recommend that you save the AccessKey Secret for subsequent use.
    * If the AccessKey pair is disclosed or lost, you must create a new one. Currently, you can create a maximum of two AccessKey pairs.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/alibaba/image(105).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(105).png)
 
 **STEP 3-1: Authorize RAM users to access data as read-only. \(via console\)**
 
@@ -60,7 +60,7 @@ You need AccessKey pairs to enter Alibaba Cloud Credentials in the SpaceOne. If 
 6. Click `Complete`.
 7. You will return to _Create User screen_, and can check you _**AccessKey ID**_ and _**AccessKey Secret**_. Alibaba Cloud generates AccessKey Pair by default when you create a user. Click **`Copy`** to copy your authentication information. Go to step 5 if you miss this step.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/alibaba/image(108).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(108).png)
 
 **STEP 3-2: Authorize RAM users to access data as read-only. \(via API call\)**
 
@@ -77,9 +77,9 @@ Go to [RAM Console](https://ram.console.aliyun.com/) &gt; Identities &gt; Users 
 
 Click **`Create AccessKey`** in the _Authentication_ tap.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/alibaba/image(106).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(106).png)
 
 You will receive _Create AccessKey popup_, and click **`Copy`** below the blue box to copy your _**AccessKey Pair**_ information. Click **`Close`** to close the popup window.
 
-![](/docs/guides/user_guide/service_account/service_account_ficture/alibaba/image(109).png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(109).png)
 
