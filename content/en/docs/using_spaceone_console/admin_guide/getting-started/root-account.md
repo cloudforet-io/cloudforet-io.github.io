@@ -15,15 +15,15 @@ description: >
 
 **STEP 1: SpaceONE 에 접속한  , `Sign in for Root Account`  로 Sign-in 합니다.**
 
-![](../.gitbook/assets/login.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_01.png)
 
-![](../.gitbook/assets/domain_owner_login.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_02.png)
 
 \*\*\*\*
 
 **STEP 2: SpaceONE console 의 우측 상단의 `SpaceShip` 아이콘을 클릭해 적용된 admin role을 확인합니다.**
 
-![](../.gitbook/assets/domain_owner_check.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_03.png)
 
 \*\*\*\*
 
@@ -33,18 +33,18 @@ description: >
 
 **STEP 1: 상단 navigation의 `Identity` - `User` 를 클릭합니다.** 
 
-![](../.gitbook/assets/screen-shot-2021-02-04-at-14.16.22.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_04.png)
 
   
 **STEP 2:  `+Add` 버튼을 클릭해 Domain Admin 사용자를 추가합니다.**
 
-![](../.gitbook/assets/screen-shot-2021-02-04-at-14.18.45.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_05.png)
 
 **STEP 3: `Domain Admin` 사용자 정보를 추가한 후,`Confirm` 버튼을 눌러 저장합니다.** 
 
-![](../.gitbook/assets/create_user1.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_06.png)
 
 **STEP 4: 상단의`Identity` - `User` 에서  적용된 내용을 확인할 수 있습니다.**
 
-![](../.gitbook/assets/list_user1.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_07.png)
 
