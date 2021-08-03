@@ -13,7 +13,9 @@ description: >
 
 Using service account page, Users can manage credentials easily for each  cloud providers. Multi cloud resources are collected based on this credentials
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-4.34.53-2.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_01.png)
+
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_02.png)
 
 
 * Adding _**Service Account**_
