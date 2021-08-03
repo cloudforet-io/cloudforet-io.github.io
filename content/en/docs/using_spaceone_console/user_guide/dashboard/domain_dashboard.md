@@ -15,78 +15,94 @@ description: >
 The Dashboard is the first screen you will see when connecting to **`SpaceONE`** service.
 
   
-Dashboard allows you to view the status of the entire service being used by domain. 
+It allows you to look through the status of the entire service being used by domain. 
 
 When you click an item, you can navigate to the corresponding service.
 
-![Dashboard v1.6.2](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard-v1.5.2-1280x720.png)
+![Dashboard v1.6.2](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_01.png)
 
 
+You can use the navigation bar at the top left corner of the screen to quickly navigate to each page.
 
-You can use the navigation bar at the top of the screen to quickly navigate to each page.
-
-![Navigation Bar](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/screen-shot-2021-02-17-at-5.14.34-pm.png)
+![Navigation Bar](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_02.png)
 
 
 
 ## Top Resource Managing Projects
 
-You can see the status of projects that use **`Server`**/**`Database`** service the most. When you click on each  **`Project group / Project`**, you will be taken to the corresponding page.
+You can see the status of projects that use **`Resources`** the most. 
 
-![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-07-31-3.08.33.png)
+If you click on each  **`Project group / Project`**, you will be taken to the corresponding page.
+
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_03.png)
 
 
 
 ## Service Accounts
 
-You can see the number of **`Service Accounts`** registered in the domain. Following Services providers are currently available: 
+You can see the number of **`Service Accounts`** registered in the domain. 
 
+Following **`Service Providers`** are currently available: 
+
+* Alibaba Cloud
 * AWS
+* Azure
+* Google
+* Hyper Billing
+* Oracle Cloud
+* SpaceONE
+
+<!-- * AWS
 * Azure
 * GCP
 * Megazone Hyper Billing
-* Megazone
+* Megazone -->
+
+Also, you can see the current number of Service Accounts registered for each cloud.
+
+![Service Account](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_04.png)
 
 
-
-
-
-![Service Account](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.05.53.png)
-
-Also, you can view the current number of Service Accounts registered for each cloud.
 
 ## Daily Updates
 
-It displays information about increasing/decreasing resources on a daily basis. **`Daily updates`** shows the history of changes from **0** to the **present**. 
+It displays information about increasing/decreasing resources on a daily basis. 
 
-You can view the changed number of servers and cloud services from midnight to the present.
+**`Daily Updates`** shows the history of changes from **0** to the **present**. 
 
 
-
-![Daily updates](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.31.12.png)
+![Daily updates](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_05.png)
 
 
 
 ## Cloud Services
 
-![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-07-31-3.18.09.png)
+You can see the number and type of cloud service resources collected at a glance. 
 
-You can see the number and type of cloud service resources collected at a glance. When you click **`More`**, you go to the **`Cloud Service`** page.
+If you click the **`more`** button, you will be taken to the **`Cloud Service`** page.
+
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_06.png)
 
 ## Collection
 
-You can inquire the history of **`Collector`** execution and the status of the **`Collector`** which currently runs.
+You can explore the history of **`collector`** execution and the status of **`collectors`** which currently run.
+
+### Collector Jobs
+
+**`Collecting jobs`** shows jobs that are currently being collected. 
+
+The **`more`** button links you to the **`Collector history`** page.
+
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_07.png)
 
 ### Collector History
 
-**`Collector history`** shows the collection success/failure history for a week.
+**`Collector history`** shows the completed/failed history of collectors on a monthly basis.
 
-![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.36.44.png)
-
-### 
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_08.png)
 
 ### Collecting Progress
 
-You can view the list of currently running collectors.  **`More`** button links you to the **`Collector history`** page.
+ You can also check a list of in-progess, completed, and failed collectors.
 
-![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/2020-08-03-5.37.46.png)
+![](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_09.png)
