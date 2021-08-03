@@ -62,6 +62,10 @@ plainIDAnchors = true
 hrefTargetBlank = true
 angledQuotes = false
 latexDashes = true
+extensions = [
+  "laxHtmlBlocks", 
+  "hardLineBreak", # newlines result in line breaks
+]
 
 # Image processing configuration.
 [imaging]
