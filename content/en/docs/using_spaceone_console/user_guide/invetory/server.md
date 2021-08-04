@@ -16,7 +16,7 @@ You can integrate server resources scattered by various regions or projects
 
 Through this page, Users can easily check detail status of servers without login to cloud console repeatedly nor connect to terminal.
 
-![](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-05-5.50.33-.png)
+![](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_01.png)
 
 Server page is consist of several functions.
 
@@ -28,7 +28,7 @@ Server page is consist of several functions.
 
 Server information collected based on multi clouds
 
-![](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-05-5.50.33-2.png)
+![](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_02.png)
 
 List of supported information
 
@@ -109,7 +109,7 @@ List of supported information
 
 Clicking _**action**_ button after selection of server, you can manage server status
 
-![Action &#xB9AC;&#xC2A4;&#xD2B8;](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-4.13.08.png)
+![Action &#xB9AC;&#xC2A4;&#xD2B8;](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_03.png)
 
 * Delete : Removes from server list. Server will not be deleted physically. They will be added after re-collected by collectors.
 * Set In-Service/Maintenance/Close : Changing server status.
@@ -120,7 +120,7 @@ Clicking _**action**_ button after selection of server, you can manage server st
 
 All information within tables will be exported excel format.
 
-![Excel Export](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-4.11.27-.png)
+![Excel Export](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_04.png)
 
 
 
@@ -130,14 +130,14 @@ Provides detailed information about the server. They are consists of tabs below
 
 * Details : Additional information provided\(Machine image, Security group, etc..\)
 
-![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-5.09.53.png)
+![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_05.png)
 
 * Tag : Grouping server by tagging.
 * Member : List of server managers
 * History : Chang management of server.
 * Monitoring : Monitoring metric informations provided by external monitoring sources\(CloudWatch, Azure Monitor, StackDriver..\)
 
-![Monitoring tab](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-5.11.19.png)
+![Monitoring tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_06.png)
 
 ## Search Bar
 
@@ -145,9 +145,9 @@ User can query server easily by suggested keywords.
 
 SpaceONE classify automatically based on major keywords. This allows users to conveniently search through the collected information 
 
-![Server search bar](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-5.12.57-.png)
+![Server search bar](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_07.png)
 
 Supported keywords contains all parameters defined for server
 
-![searching keyword list](/docs/using_spaceone_console/user_guide/invetory/server_img/2020-08-06-5.16.04.png)
+![searching keyword list](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_08.png)
 
