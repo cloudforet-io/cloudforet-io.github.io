@@ -37,5 +37,3 @@ Besides ID, all the information can be changed. After changing the information c
 A Success message will appear.
 
 ![](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-02-16-2.40.21.png)
-
-###
