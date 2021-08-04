@@ -11,7 +11,7 @@ description: >
 
 ## Service Account Policy
 
-**SpaceONE** highly recommends on setting appropriate permissions to **Service Accounts** for each purposes. 
+**SpaceONE** highly recommends, setting appropriate permissions to **Service Accounts** for each purpose. 
 
 * **General Collector** 
   : \(Retrieve Google Cloud Resources into **SpaceONE** Inventory\)
@@ -39,7 +39,7 @@ description: >
 
 ## General Collector 
 
-Collector requires appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
+Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
 {{% pageinfo color="300" %}}
 **STEP 1. Log in Google Cloud Console > IAM** 
