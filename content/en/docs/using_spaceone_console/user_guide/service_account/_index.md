@@ -11,72 +11,72 @@ description: >
 
 ## Overall
 
-Using service account page, Users can manage credentials easily for each  cloud providers. Multi cloud resources are collected based on this credentials
+On the service account page, users can easily manage credentials for each service provider. Multi cloud resources are collected based on these credentials.
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_01.png)
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_02.png)
 
 
-* Adding _**Service Account**_
-* Deletion of _**Service Account**_ /Changing _**project**_
-* Link to AWS Console
+1. A list of **Service Providers**
+2. Adding  **Service Account**
+3. Deleting **Service Account** /Changing **Project**/Connecting to **Console**
+4. **Details**, **Tag**/**Credentials** Management, **Member**
 
-SpaceONE supports providers belows. 
+SpaceONE supports the following service providers:
 
+* Alibaba Cloud
 * AWS
-* Google Cloud
-* Microsoft Azure
-* MEGAZONE
+* Azure
+* Google 
+* Hyper Billing
+* Oracle Cloud
 * SpaceONE
 
 ## Adding Service Account
 
-Users can add _**Service Account**_ by select cloud provider and clicking _**+ Add**_ button
+Users can add a **Service Account** simply by selecting a service provider and clicking the **+ Add** button.
 
-In the user guide, we will focus on AWS\`s IAM
+For the upcoming steps, we will focus on AWS\`s IAM.
 
-_**Service Account**_ will be easily added by fill out items marked with \*.
+To add a **Service Account**, users need to fill in the **Name** and **Account ID** fields first.
 
 ### Base Information
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-5.44.58.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_03.png)
 
-* Name : Name of Service Account
-* Account ID : Root Account ID.\(12-digits\)
-* Tag : Additional _**Service Account**_\`s tag
+* Name : Name of **Service Account**
+* Account ID : Root Account ID \(12-digits\)
+* Tags : Additional **Service Account**\`s tag
 
 ### Credentials
 
-Two types of Service Accounts are available. \(aws\_access\_key, aws\_assume\_role\)
-
-Input parameters for each types. 
+Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_role\.
 
 #### aws\_access\_key  
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-5.48.28.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_04.png)
 
-* Region\(Option\) : Target regions to be collected. Empty will be considered all regions \(Collectors will scan all regions resources\).
-* AWS Access Key\(Required\) : Access Key from IAM. Read Only policy is strongly recommended.
-* AWS Secret Key\(Required\) : Secret key from IAM.
+* AWS Access Key \(Required\) : Access Key from IAM (Read Only policy is strongly recommended.)
+* AWS Secret Key \(Required\) : Secret key from IAM
 
 #### aws\_assume\_role
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-5.53.33.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_05.png)
 
-* Region\(Option\) : Target regions to be collected. Empty will be considered all regions \(Collectors will scan all regions resources\).
-* AWS Access Key\(Required\) : Access key from IAM to be assumed.
-* AWS Secret Key\(Required\) : Secret key from IAM to be assumed.
-* Role ARN\(Required\) : Role ARN of assume role from IAM.
+* AWS Access Key \(Required\) : Access key from IAM to assume a role
+* AWS Secret Key \(Required\) : Secret key from IAM to assume a role
+* Role ARN \(Required\) : Role ARN of an assumed role from IAM
 
 ### Selecting Project
 
-Select the project to which the _**Service Account**_ will be placed. Collected resources from that _**Service Account**_ will be belongs to the projects automatically
+Select the project in which a **Service Account** will be placed. Collected resources from the **Service Account** will be included to the project automatically.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.02.19.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_06.png)
 
-* To create _**Project**_. By clicking _**+ Create Project ,**_ new tab will be opened to create project. 
-* To check detailed process about creating project, refer to following link.
+* To create a **Project**, click the **+ Create Project** button.
+
+* For a more detailed process on creating a project, refer to the link below.
 
 <div class="my-4">
 <a class="btn btn-secondary"
@@ -86,54 +86,64 @@ Select the project to which the _**Service Account**_ will be placed. Collected 
     >Project Group Management</a>
 </div>
 
-* Select projects you need then click _**Save**_ button.
+* Select a project you need, then click the **Save** button.
 
-## Deletion of Service Account /Changing Project 
+## Deleting Service Account/Changing Project 
 
-User can delete Service Account or change project that was linked.
+Users can delete a **Service Account** or change a **Project** linked to a certain **Service Account**.
 
-Select target _**Service Account**_, then click _**Action &gt; Delete/Change Project**_
+Select the target **Service Account**, then click **Action &gt; Delete/Change Project**.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.17.37.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_07.png)
 
-#### Deletion of Service Account
+### Deleting Service Account
 
-Enter name of Service Account, then click _**Confirm**_
+Enter the name of the **Service Account** you want to delete, then click the **Confirm** button.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.21.27.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_08.png)
 
-#### Changing Project
+### Changing Project
 
-Like picture below, Select project to be changed then click _**Confirm.**_
+Select the project you want to newly link a **Service Account**, then click the **Confirm** button.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.22.47.png)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_09.png)
 
 ## Link to AWS Console
 
-Select target Service Account then, click _**Action &gt; Console.**_
+Select the target **Service Account**, then click **Action &gt; Connect to Console**.
 
-User can move to AWS Console. User need to login to AWS Console previously\(AWS Console SSO is not available\)
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_10.png)
 
-## Detailed Status Tab
+To access AWS console, users must be logged into AWS console in advance. \(AWS Console SSO is not available.\)
 
-Using detailed status tab, Checking detailed parameter of _**Service Account**_ or managing members are available.
+## Status Tab
 
-#### Detail 
+Using the **Status** tab, users can browse details of a **Service Account**.
 
-Detailed parameter of _**Service Account**_.
+### Details 
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.33.27.png)
+Users can see detailed information of a **Service Account** on the **Details** tab. 
 
-#### Tag
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_11.png)
 
-By clicking _**Edit**_ button, Tag for Service Accounts will be added or deleted.
+### Tag
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/2020-08-07-6.54.13.png)
+By clicking the **Edit** button, **Tags** for a **Service Account** can be added or deleted.
 
-#### Credentials
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_12.png)
 
-Credentials that contains key information can be added/removed
+Afer clicking the **+ Add Tags** button, fill in the **Key** and **Value** fields, then click the **Save** button. 
 
-####  
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_13.png)
 
+### Credentials
 
+**Credentials** that contain key information can be added or deleted.
+
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_14.png)
+
+### Member
+
+On the **Member** tab, users can see who is participating in the project.
+
+![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_15.png)

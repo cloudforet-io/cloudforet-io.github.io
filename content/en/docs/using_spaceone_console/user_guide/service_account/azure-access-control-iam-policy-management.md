@@ -10,105 +10,121 @@ description: >
 
 # \(Azure\) Access Control \(IAM\) Policy Management
 
-## **Access Control** Policy
+## Access Control Policy
 
-**SpaceONE** highly recommends to set appropriate permissions to Resource groups for each purpose. 
+**SpaceONE** highly recommends, setting appropriate permissions to Resource groups for each purpose. 
 
-Please, Set service account, To Create API for each use case:
+Please, Set service accounts, to Create APIs for each Use Case:
 
 * [General Collector](#general-collector)
 
+<br/>
+
 ## General Collector 
 
-Collector requires appropriate authorities to collect cloud resources. We strongly recommend to limit collector's service account its permission to **read only access**. 
+Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
-Otherwise, you can add more restrictions per resource groups or actions. One of the useful example is to restrict its rights within resource groups.
+<br/>
 
----
+### Prerequisites
 
-**Prerequisite**
+This user guide tutorial assumes that a **`subscription id`** is already created. Assuming that the **`subscription id`** is created, you now need to allow permission from Azure Resources so SpaceONE can collect them.
 
-This user guide tutorial assumes that a `subscription id` is already created.
+There are two options to do so.
 
-There are two options for giving permission to Azure resources which SpaceONE is going to collect.
+* **Grant _Reader role_ to Resource Groups**
+  * Grant **`Reader role`** to Resource Groups where the resources are located. If you give a role to the resource group, _SpaceONE_ will only collect resources located in this resource group.
 
-* Grant `Reader role` to **resource group** where resources are located. If you give a role to resource group, _SpaceONE_ can only collect resources located in this resource group.
-* Grant `Reader role` to **subscription** where resources are located. If you give a role to the subscription, SpaceONE can collect resources in all resource groups in this subscription.
+<br/>
 
-If you want to know more about Azure's access control policies, visit the link below.
+* **Grant _Reader role_ to Subscriptions**
+  * Grant **`Reader role`** to Subscriptions where resources are located. If you give a role to the subscription, _SpaceONE_ will collect resources from all the resource groups in this subscription.
 
-[https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal)
+<br/>
 
-**Grant Roles to resource groups**
+If you want to know more about Azure's access control policies, visit this [link](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) .
 
-**STEP 1. Log in Azure Portal &gt; Resource groups** 
+<br/>
 
-Select the resource group for which the collector will collect resources.
+### Granting Roles
+
+**Grant Roles to Resource Groups**
+
+{{% pageinfo color="300" %}}
+**STEP 1. Log in Azure Portal > Resource groups** 
+
+Select a Resource Group for which the Collector will collect resources from.
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(104).png)
 
-**STEP 2. Click `Access control (IAM)` Navigation tab, and click `+Add` button.**
+{{% pageinfo color="300" %}}
+**STEP 2. Add Access Control (IAM)**
+
+Click `Access control (IAM)` from the Navigation tab, and then select the `+Add` button.
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(102).png)
 
 
+{{% pageinfo color="300" %}}
+**STEP 3: Assign `Reader role`**
 
-**STEP 3: Assign the `Reader role`  to the account. The account should  have an access permission in this resource group.**
-
-
+Assign the **Reader Role** to the account. The account should have access permission in this resource group.
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(103).png)
 
+<br/>
+
 ## Troubleshooting
 
+If you face Error messages when following the steps above, please follow this TroubleShooting Guide.
+
 ### Authorization
-
-Please, follow the steps on troubleshooting guide below if you face any of error messages above.
-
-#### 1. \(AuthorizationFailed\) Client does not have authorization 
-
-
+#### **1.** \(AuthorizationFailed\) Client does not have authorization 
 
 {{% alert title="" color="warning" %}}
-The client `client_id` with object id `object_id` does not have authorization to perform action Microsoft.Resources/subscriptions/resourcegroups/read over scope `subscription_id` or the scope is invalid. If access was recently granted, please refresh your credentials
+The client \(`client_id`\) with object id \(`object_id`\) does not have authorization to perform action 'Microsoft.Resources/subscriptions/resourcegroups/read' over scope \(`subscription_id`\), or the scope is invalid. If access was recently granted, please try refreshing your credentials.
 {{% /alert %}}
 
-**STEP 1: Log in Azure Portal and Drive to &gt; Subscriptions** 
+{{% pageinfo color="300" %}}
+**STEP 1: Log into Azure Portal and move to Subscriptions** 
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-15-at-18.55.14.png)
 
-  
-**STEP 2: Click the subscription name where resources are located.**
+{{% pageinfo color="300" %}}
+**STEP 2: Click on the subscription Name where the resources are located.**
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(114).png)
 
-**STEP 3: Click `+Add role assignment` button.**
+{{% pageinfo color="300" %}}
+**STEP 3: Click the `+Add role assignment` button.**
+{{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-2-.png)
 
----
+{{% pageinfo color="300" %}}
+**STEP 4: Add role assignments**
 
-**STEP 4: Add role assignment for followings as below**
+Add the Role Assignments like the following description and image.
 
 * **Role**
   * `Reader`
 * **Assign access to**
   * `User, group, or service principal`
 * **Select**
-  * `App that has registered on Active directory` **at &gt; Azure ActiveDirectory &gt; Registered App**  
-
-
-    ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
-
-
+  * `App that has registered on Active directory` at **Azure ActiveDirectory > Registered App**  
+{{% /pageinfo %}}
+  
+  ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
 
 {{% alert title="Note" color="info" %}}
-  Service Account name and Registered App name may be confused.   
-Please, Select Registered App as below \(Different Icons\).  
-****
+  'Service Account names' and 'Registered App names' are easily confused.   
+  Please, Select Registered App as shown below \(Check the Icon Differences\).  
 {{% /alert %}}
-
-
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-16-at-12.38.16.png)
 
