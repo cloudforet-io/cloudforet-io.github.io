@@ -13,9 +13,9 @@ description: >
     <div class="col-container">
       <div class="col-nav">
         <center>
-          <h5>
+          <h4>
             <b>User Guide</b>
-          </h5>
+          </h4>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br><br>
           <a href="/docs/guides/user_guide" class="button">See User Guide</a>
@@ -23,12 +23,22 @@ description: >
       </div>
       <div class="col-nav">
         <center>
-          <h5>
+          <h4>
             <b>Admin Guide</b>
-          </h5>
+          </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
-          <a href="/docs/guides/install_guide" class="button">See Install Guide</a>
+          <a href="/docs/guides/install_guide" class="button">See Admin Guide</a>
+        </center>
+      </div>
+      <div class="col-nav">
+        <center>
+          <h4>
+            <b>Advanced Topics</b>
+          </h4>
+          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
+          <br><br><br>
+          <a href="/docs/guides/install_guide" class="button">Advanced Topics</a>
         </center>
       </div>
     </div>
@@ -37,3 +47,4 @@ description: >
 <style>
     {{< include "partner-style.css" >}}
 </style>
+

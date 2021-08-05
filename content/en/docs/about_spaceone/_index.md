@@ -1,17 +1,19 @@
 ---
-title: "SpaceONE"
-linkTitle: "SpaceONE"
-weight: 2
-date: 2021-07-31
+title: "About SpaceONE"
+linkTitle: "About SpaceONE"
+weight: 1
+date: 2021-08-05
 description: >
-    One cloud management platform for any cloud
+    Introducing SpaceONE Project
+
 ---
+
 
 # SpaceONE
 
 ## Main Features
 
-#### 1. Multi-Cloud Management 
+#### 1. Multi-Cloud Management
 
 * **IaaS Infra-integration:** Auto-discovery and sorting infrastructure information that scattered across various platform
 * **Resource Search:** Quick search that reflected on relevance over resources
@@ -20,7 +22,7 @@ description: >
 #### 2. Cloud Orchestration
 
 * **Infrastructure as Code:** Code-based infrastructure configuration management
-* **Remote Command:** Batch command execution over multiple remote servers 
+* **Remote Command:** Batch command execution over multiple remote servers
 * **Application Catalog:** Supports easy installation on applications such as Database and Middleware
 
 #### **3. Infra. Analysis**
@@ -33,5 +35,5 @@ description: >
 
 Our feature is expanding all areas to build a SpaceONE universe to fulfill requirements for cloud operation/management based on the inventory data, automation, analysis, and many more for Multi Clouds.
 
-![](/docs/using_spaceone_console/admin_guide/about_spaceone/img/2020-07-31-11.19.50.png)
+![](/docs/about_spaceone/img/2020-07-31-11.19.50.png)
 
