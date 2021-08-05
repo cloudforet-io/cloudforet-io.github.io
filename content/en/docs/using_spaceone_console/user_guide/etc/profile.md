@@ -26,9 +26,7 @@ User can check clicking right upper side of the console.
 * Profile : Modify user information.
 * Log Out : Log out and return to console login.
 
-
-
-### Profile
+## Profile
 
 By clicking the profile button, the User information window will pop up.
 
@@ -40,8 +38,4 @@ A Success message will appear.
 
 ![](/docs/using_spaceone_console/user_guide/etc/profile_img/2020-02-16-2.40.21.png)
 
-
-
-
-
-
+###
