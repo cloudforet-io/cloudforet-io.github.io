@@ -4,14 +4,14 @@ linkTitle: "Metric Collector Quick Start"
 weight: 4
 date: 2021-07-31
 description: >
-    Domain Admin은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 Collector를 설정합니다.
+    Quick Guide for user to set up Monitoring Metric Collectors for Servers over Clouds.
 ---
 
 # Metric Collector Quick Start
 
 ## How to Set up
 
-아래와 같은 절차를 통해 Monitoring metric 정보를 수집 할 수 있습니다. 
+Collect monitoring metric data through the following steps:
 
 * [Prerequisites](metric-collector-quick-start.md#prerequisites)
 * [Get API Key for SpaceONE Service Account](metric-collector-quick-start.md#get-api-key-for-spaceone-service-account)
@@ -19,21 +19,19 @@ description: >
 * [Monitoring Metric Information](metric-collector-quick-start.md#monitoring-metric-information) 
 * [Collecting Monitoring Metric Type](metric-collector-quick-start.md#collecting-monitoring-metric-type)
 
-## 사전 준비
+## PREPARATION
 
 SpaceONE의 Metric Collector를 사용하기 위해서는 Provider에서 제공하는 SpaceONE Service Account를 필요로 합니다. 등록 절차는 아래를 참고해 주세요.
 
 
-
-## Service Account를 위한 API Key 얻기
-
+## Get API Key for Service Account
 Service Account \(SpaceONE\)를 추가하기 전에, SpaceONE Service Provider용 API Key가 필요 합니다. 
 
 {% hint style="info" %}
 API-Key는 시스템 관리자를 통해 제공되고 있습니다. SpaceONE Service Account 용도의 API-Key가 없을 경우 도메인 관리자에게 문의 하거나 support@spaceone.dev 로 이메일 문의가 필요 합니다. 
 {% endhint %}
 
-## SpaceOne Service Account 등록 \(Ex. Metric Collector\)
+## Assingn SpaceOne Service Account \(Ex. Metric Collector\)
 
 SpaceONE의 Service Account 등록은 **Identity** &gt; **Service Account** 에서 가능 합니다. 
 
@@ -66,7 +64,7 @@ Monitoring Metric collector Service에서는 Project를 할당하지 않아야 �
 해당 절차는 skip 할 수 있습니다.
 {% endhint %}
 
-## Monitoring Metric 정보 확인
+## Monitoring Metric Information
 
 **Inventory** &gt; **Server** 에서 수집된 Monitoring Metric 정보를 확인할 수 있습니다. 
 
@@ -80,7 +78,7 @@ Collector Job이 완료된 후에는 Monitoring metric 이 업데이트 됩니�
 
 실제 수집된 데이터는 **Data -&gt; Monitoring**의 **"Raw Data"** 탭에서 확인 가능합니다. 
 
-## Monitoring 수집 Metric 항목
+## Metric items \(Monitoring Collection\)
 
 {% hint style="info" %}
 기본 metric type은 version 1.5.3 이후로 지원 됩니다.   
@@ -150,4 +148,3 @@ Collector Job이 완료된 후에는 Monitoring metric 이 업데이트 됩니�
     </tr>
   </tbody>
 </table>
-
