@@ -14,6 +14,8 @@ description: >
 
 <br/>
 
+
+
 ## How to Set up
 
 You can view and use the **`Billing Service`** after completing the following steps:
@@ -24,6 +26,8 @@ You can view and use the **`Billing Service`** after completing the following st
 * [Veiwing Billing Informations](#billing-information)
 
 <br/>
+
+
 
 ## Prerequisites
 
@@ -45,6 +49,8 @@ Supported billing backends are :
 
 <br/>
 
+
+
 ## Getting API Key from the Billing Service Provider
 
 Before adding a Billing Service Account, you need the API Key. 
@@ -61,6 +67,8 @@ The contact point of billing backends are :
 
 <br/>
 
+
+
 ## Registering the Billing Service Account
 
 ### How to Register
@@ -73,6 +81,8 @@ Register **Billing Service Accounts** by following the next steps :
 4. [Assigning Projects](#4-assigning-projects)
 
 <br/>
+
+
 
 #### 1. Hyper Billing
 
@@ -88,12 +98,16 @@ Select your **Hyper Billing** Service Provider, then click **Add**.
 
 <br/>
 
+
+
 #### 2. Base Information
 Fill in Base Informations, like 'Name' and 'tags'.
 
 ![Name of service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
 
 <br/>
+
+
 
 #### 3. Credentials \(API Key\)
 
@@ -108,6 +122,8 @@ The Credentials given by Billing Service Provider, will be consisted with **"Acc
 ![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
 
 <br/>
+
+
 
 #### 4. Assigning Projects
 
@@ -130,6 +146,8 @@ When you're done please **`Save`**.
 {{% /alert %}}
 
 <br/>
+
+
 
 ## Billing Information
 
