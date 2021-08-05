@@ -7,10 +7,6 @@ description: >
     Core technology of SpaceONE.
 ---
 
----
-description: 
----
-
 # Key Differentiators
 
 ## Open Platform

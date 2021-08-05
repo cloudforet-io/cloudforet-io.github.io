@@ -13,8 +13,6 @@ description: >
 
 
 
-
-
 ## Pre-defined Roles
 
 SpaceONE supports pre-defined roles for user to use role easily.
