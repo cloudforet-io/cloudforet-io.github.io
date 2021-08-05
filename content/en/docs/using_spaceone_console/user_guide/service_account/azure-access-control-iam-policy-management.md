@@ -20,11 +20,15 @@ Please, Set service accounts, to Create APIs for each Use Case:
 
 <br/>
 
+
+
 ## General Collector 
 
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
 <br/>
+
+
 
 ### Prerequisites
 
@@ -45,6 +49,8 @@ There are two options to do so.
 If you want to know more about Azure's access control policies, visit this [link](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) .
 
 <br/>
+
+
 
 ### Granting Roles
 
@@ -76,10 +82,14 @@ Assign the **Reader Role** to the account. The account should have access permis
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(103).png)
 
 <br/>
+<br/>
+
 
 ## Troubleshooting
 
 If you face Error messages when following the steps above, please follow this TroubleShooting Guide.
+
+<br/>
 
 ### Authorization
 #### **1.** \(AuthorizationFailed\) Client does not have authorization 

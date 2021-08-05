@@ -37,6 +37,8 @@ description: >
 
 <br/>
 
+
+
 ## General Collector 
 
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
@@ -101,6 +103,8 @@ After step 5, you'll be able to see the Key ID on the list and also its service 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.07.16.png)
 
 <br/>
+
+
 
 ### Special Roles
 
@@ -183,6 +187,8 @@ When you are done, click the **`Save`** button.
 
 <br/>
 
+
+
 ## Power Controller
 
 _**SpaceONE**_'s _**Power Scheduler**_ requires editing permissions to update the following Cloud Services: 
@@ -245,6 +251,8 @@ After finishing the edit click the **`Save`** button.
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.05.26.png)
 
 <br/>
+
+
 
 ## Register Your Service Account into SpaceONE
 
