@@ -4,17 +4,16 @@ linkTitle: "Domain Admin"
 weight: 2
 date: 2021-07-31
 description: >
-    Domain Admin은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 Collector를 설정합니다.
+    The role of Domain Admin creates the top-level project group, creates users, and sets the main collector.
 ---
-
 
 # Domain Admin
 
 ## Sign-in
 
-**`Domain Admin`** 은 일반 Log-in 페이지를 통해 Log-in 합니다. **`Root Account`**에게서 받은 이메일에 ID/Password 또는 Google Oauth2와 같은 Single-Sign-On 방식의 접속정보가 명시되어 있습니다.
+**`Domain Admin`** log-in through the normal login page. E-mail received from the **`Root Account`** has stated detailed the connection methods such as Single Sign On, ID/PW, or Google Oauth2.
 
-**`Domain Admin`** 은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 **`Collector`**를 설정합니다.
+**`Domain Admin`** 은 최상위 프로젝트 그룹을 만들고, 사용자를 생성하며, 주요 **`Collector`** 를 설정합니다.
 
 
 
@@ -24,14 +23,11 @@ description: >
 
 ## 프로젝트 그룹 생성
 
-SpaceONE의 모든 자원은 특정 **`Project`**에 소속되어 있습니다. 또한,  **`Project Group`**은 **`Project`**를 그룹화합니다. 
+SpaceONE의 모든 자원은 특정 **`Project`** 에 소속되어 있습니다. 또한,  **`Project Group`** 은 **`Project`** 를 그룹화합니다. 
 
-Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`**을 생성합니다. 
+Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`** 을 생성합니다. 
 
-{% hint style="info" %}
-**`Project`** 생성 권한은 **`Project Admin`**으로 지정된 **`General User`** 에게 있습니다. 
-{% endhint %}
-
+**`Project`** 생성 권한은 **`Project Admin`** 으로 지정된 **`General User`** 에게 있습니다. 
 
 
 **STEP 1: 상단 Navigation에서 Project 선택 후, `Landing Zone`라는 이름으로 `Project Group`을 생성합니다.** 
@@ -50,10 +46,6 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 **STEP 4: SpaceONE console의 좌측 navigation 에서 생성된 `Project Group`을 확인할 수 있습니다.**
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_06.png)
-
-**STEP 5: User Management 화면에서 Role과 Authorization Type이 매핑된 것을 확인할 수 있습니다.**
-
-![]()
 
 ## Create User
 
@@ -80,9 +72,10 @@ Domain Admin은 회사의 관리 정책에 따라서 최상위 **`Project Group`
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_10.png)
 
-**STEP 5: User Management** 화면에서 **Role과 Authorization Type**이 매핑된 것을 확인할 수 있습니다.
+**STEP 5: User Management 화면에서 Role과 Authorization Type이 매핑된 것을 확인할 수 있습니다.**
 
-![]()
+![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_user_role.png)
+
 
 ## Cloud Resource Collectors
 

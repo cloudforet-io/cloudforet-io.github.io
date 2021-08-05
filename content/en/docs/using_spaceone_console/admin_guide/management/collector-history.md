@@ -30,7 +30,7 @@ You can move the month through `< >` at the top right of the graph.
 
  You can check list of successful and unsuccessful jobs respectively in 3 status. 
 
-Using the search bar, You can search Job ID, Status, Start Time for Job collected through Collector History.
+Using the search bar, You can search Job ID, Status, Collector, Created Time for Job collected through Collector History.
 
 ![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_03.png)
 
