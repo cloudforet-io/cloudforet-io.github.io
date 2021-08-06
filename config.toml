@@ -54,7 +54,7 @@ pygmentsStyle = "tango"
 [outputs]
 home = [ "HTML" ]
 page = [ "HTML" ]
-section = [ "HTML"]
+section = [ "HTML", "print" ]
 
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
@@ -233,4 +233,6 @@ url = "https://docs.spaceone.org/"
 	# icon = "fa fa-envelope"
         # desc = "Discuss development issues around the project"
 
-
+# Disable table of contents in the printable view
+[params.print]
+disable_toc = true
