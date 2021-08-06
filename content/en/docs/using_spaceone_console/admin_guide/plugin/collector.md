@@ -13,7 +13,9 @@ description: >
 
 Using _**Collector Plugins**_ in the SpaceONE marketplace, users can easily collect Cloud resources from various cloud providers.
 
-Plugins are offered on both _Private Repositories_ and the _Official SpaceONE Marketplace_.
+Plugins are offered by both choices below : 
+* _Private Repositories_ 
+* _Official SpaceONE Marketplace_
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_01.png)
 
@@ -33,7 +35,7 @@ Select a plugin you want to install, then click the **`+ Create`** button. This 
 
 <br/>
 
-Fill out the 'Name', 'Priority' for the collector and choose a version of the plugin. 
+Fill out the 'Name' and 'Priority' for the collector and choose a version of the plugin. 
 
 Latest Versions of plugins are normally recommended.
 
@@ -49,11 +51,11 @@ This step will be done automatically, so simply confirm all the information that
 
 <br/>
 
-User can add Tags on a collector. (This step is optional.) 
+Users can add **Tags** on a collector. (This step is optional.) 
 
 Tags can be added by clicking the **`+ Add`** button.
 
-If there are exsisting Tags, there's no need to delete them. \(For system use.\)
+If there are exsisting Tags, there's no need to delete them. \(They are for system uses.\)
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_05.png)
 
@@ -144,7 +146,7 @@ From the list of Collectors, you can check Collector informations and statuses.
 * **Plugin** : Plugin type for the Collector.
 * **Version** : Plugin Version.
 * **Collector History** : Click  **`View detail >`** to see the Collector History page. (Details of all collecting jobs.)
-* **Last Collected** : Last timestamp of collector action
+* **Last Collected** : Timestamp of the latest collecting job.
 
 <br/>
 
@@ -183,7 +185,7 @@ Veiw the Credentials used by collectors.
 
 These Credentials are linked to the **Service Accounts** from SpaceONE.
 
-Click **`Collector Data`** and confirm the Collecter. By clicking the **`Confirm`** button, users can start collecting resources for the target account immediately.
+Click **`Collect Data`** and confirm the pop up. By clicking the **`Confirm`** button, users can start collecting resources for the target account immediately.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_16.png)
 
@@ -194,9 +196,9 @@ Click **`Collector Data`** and confirm the Collecter. By clicking the **`Confirm
 
 ### Schedules
 
-Schedule the Collectors to collect resources.
+Set the Collectors to collect resources on your schedule.
 
-By setting a Schedule, users can set Collectors to perform _Cloud Resource Collection_ at a specified time, daily.
+By setting a **Schedule**, users can set Collectors to perform _Cloud Resource Collection_ at a specified time, daily.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_18.png)
 
@@ -206,7 +208,7 @@ By setting a Schedule, users can set Collectors to perform _Cloud Resource Colle
 
 When clicking the **`+ Add`** button, the **`Add Schedule`** appears.
 
-User can select the _**Name / Timezone / Collection Time**_ for Collectors.
+Users can select the _**Name / Timezone / Collection Time**_ for Collectors.
 
 The scheduled collecting time can be set _Hourly_ on a 24-hour base.
 
@@ -241,7 +243,7 @@ Or Users can delete selected schedules.
 
 By using the **Collector**, collecting cloud resources are available at any time. 
 
-User can _Collect Resources_ from each cloud, immediately or according to schedules.
+Users can _Collect Resources_ from each cloud, immediately or according to schedules.
 
 <br/>
 
@@ -254,7 +256,7 @@ Choose a Collector and click the menu, **`Action > Collect Data`**.
 
 <br/>
 
-A confirmation pop up will appear, check and proceeds by clicking the **`Confirm`** button.
+A confirmation pop up will appear, check and proceed by clicking the **`Confirm`** button.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_22.png)
 
