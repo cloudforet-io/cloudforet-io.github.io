@@ -232,7 +232,3 @@ url = "https://docs.spaceone.org/"
 	# url = "https://example.org/mail"
 	# icon = "fa fa-envelope"
         # desc = "Discuss development issues around the project"
-
-# Disable table of contents in the printable view
-[params.print]
-disable_toc = true
