@@ -21,69 +21,65 @@ Collect monitoring metric data through the following steps:
 
 ## PREPARATION
 
-SpaceONE의 Metric Collector를 사용하기 위해서는 Provider에서 제공하는 SpaceONE Service Account를 필요로 합니다. 등록 절차는 아래를 참고해 주세요.
-
+To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.
 
 ## Get API Key for Service Account
-Service Account \(SpaceONE\)를 추가하기 전에, SpaceONE Service Provider용 API Key가 필요 합니다. 
+Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider
 
-{% hint style="info" %}
-API-Key는 시스템 관리자를 통해 제공되고 있습니다. SpaceONE Service Account 용도의 API-Key가 없을 경우 도메인 관리자에게 문의 하거나 support@spaceone.dev 로 이메일 문의가 필요 합니다. 
-{% endhint %}
+<!-- {% hint style="info" %} -->
+API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
+<!-- {% endhint %} -->
 
 ## Assingn SpaceOne Service Account \(Ex. Metric Collector\)
-
-SpaceONE의 Service Account 등록은 **Identity** &gt; **Service Account** 에서 가능 합니다. 
-
-Service Provider를 선택한 후, **+Add** 버튼을 클릭 하세요.
+ 
+You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
+Select Service Provider, Click **+Add** button.
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
-아래의 절차를 통핸 SpaceONE Service Account를 등록할 수 있습니다.  
 
-1. Service Account 이름
-2. 사용자 ID 입력
-3. Credential 입력 \(API Key 정보\)
+You can register SpaceONE Service Account following the procedure below.
+1. Service Account name
+2. Fill out User ID
+3. Fill out Credential \(API Key information\)
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
-  
-Service Account 이름과 사용자 ID를 입력한 후에는 도메인 관리자로부터 얻은 Credential을 설정 합니다.‌
 
-Credential 입력 값은 아래와 같습니다.‌
+After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌
+
+Credential input values are shown below.‌
 
 1. _API Key_
 2. _API Key ID_
 3. _Identity Endpoint_
 
-모든 값은 필수 입력 항목입니다.
+All values are required.
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
 
-{% hint style="info" %}
-Monitoring Metric collector Service에서는 Project를 할당하지 않아야 합니다. 
+<!-- {% hint style="info" %} -->
+The Monitoring Metric collector service should not assign a project.
 
-해당 절차는 skip 할 수 있습니다.
-{% endhint %}
+You can skip this procedure.
+<!-- {% endhint %} -->
 
 ## Monitoring Metric Information
 
-**Inventory** &gt; **Server** 에서 수집된 Monitoring Metric 정보를 확인할 수 있습니다. 
-
-**참고:  Monitoring-metric-collector 의 수집은 하루에 1회를 권장 합니다.** 
+You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
+**Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
-
-Collector Job이 완료된 후에는 Monitoring metric 이 업데이트 됩니다. 
+ 
+After the Collector Job is complete, the Monitoring metric is updated.
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
 
-실제 수집된 데이터는 **Data -&gt; Monitoring**의 **"Raw Data"** 탭에서 확인 가능합니다. 
-
+You can check collected data on the **"Raw Data"** tab of **Data -&gt; Monitoring**.
 ## Metric items \(Monitoring Collection\)
 
-{% hint style="info" %}
-기본 metric type은 version 1.5.3 이후로 지원 됩니다.   
-**참고: Monitoring Metric 항목은 지속 업데이트 됩니다.**
-{% endhint %}
+<!-- {% hint style="info" %} -->
+The default metric type is supported after version 1.5.3.
+**Note: Monitoring Metric entries are continuously updated.**
+<!-- {% endhint %} -->
 
 ### Default Metric Stat
 
