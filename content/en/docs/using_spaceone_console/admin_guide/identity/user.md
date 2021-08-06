@@ -11,64 +11,64 @@ description: >
 
 ## Overview
 
-You can add/modify/delete users in _**User Management**_ page.
+You can add, modify, delete, and enable/disable users on the _**User Management**_ page.
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_01.png)
 
  
 
-## User Create
+## Creating Users
 
-Domain user can be created by Clicking _**+ Create**_ button
+Click the _**+ Add**_ button, then create a _**Domain User**_. 
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_02.png)
 
- \* items are required.
+Enter your user ID, then click the _**Check ID**_ button to check availability.
 
-After entering user ID, click _**check user id**_  to check availability.
-
-Fill the items required, Then click _**confirm**_ button.
+Fill in the items required, then click the _**Confirm**_ button.
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_03.png)
 
-Created users can be seen after page reloading\(or click reload button\)
+Created users can be seen after reloading the page \(or clicking the reload button\).
 
-## User Edit/Deletion
+## Editing/Deleting Users
 
-Selecting target user and through dropdown _**Action**_ menu, editing/deleting user is available.
+Select the target user. On the dropdown _**Action**_ menu, editing/deleting options are available.
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_04.png)
 
-Possible Actions are Update/Delete/Enable/Disable.
-
-If you click update menu, user modification screen appears below. To apply setting click _**Confirm**_ button
+If you click the update option, the user modification screen will pop up as shown below. To apply modifications you have made, click the _**Confirm**_ button.
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_05.png)
 
-By Delete menu, delete confirmation screen appears, Process with _**Confirm**_ button.
+If you click the delete option, the delete confirmation screen will pop up as shown below. Process with the _**Confirm**_ button.
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_06.png)
 
-To control availability of user login, Use _**Enable/Disable**_ button
+## Enabling/Disabling Users
 
-* Enable : User can login to spaceone console.
-* Disable : Login disabled.
+To control user login, use the _**Enable/Disable**_ options.
+
+* Enable : Users are allowed to log into the SpaceONE console.
+* Disable : Users are NOT allowed to log into the SpaceONE console. 
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_07.png)
 
-## User Details
-
-Detail tab shows user detailed parameter
-
-They have ID, Name, Email, Language, Status, etc...
-
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_08.png)
 
-## Searching User
-
-User can be searched by ID or name in searching bar.
-
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_09.png)
+
+## User Details
+
+The detail tab shows detailed information on users, including ID, name, e-mail, state, language, etc.
+
+![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_10.png)
+
+## Searching Users
+
+Users can be searched by several properties in the searching bar.
+
+![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_11.png)
 
 
 

@@ -168,7 +168,7 @@ Enter _**User name**_, and set _**Access type**_ to _**Programmatic access**_.
 {{% pageinfo color=“300” %}}
 **Step 6. Set API Permission**
 
- Add all policies below. They should be included to guarantee successful operations.
+ Add all policies below. They should be included to guarantee successful actions.
 
 * AmazonDynamoDBReadOnlyAccess 
 * AmazonEC2ReadOnlyAccess 
@@ -275,7 +275,7 @@ Enter _**User name**_, set _**Access type**_ to _**Programmatic access**_.
 {{% pageinfo color=“300” %}}
 **Step 6. Set API Permission**
 
- Add all policies below. They should be included to guarantee successful operations.
+ Add all policies below. They should be included to guarantee successful actions.
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_phd_set_api_permission.png)
 
