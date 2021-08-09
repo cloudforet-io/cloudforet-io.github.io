@@ -5,7 +5,7 @@ weight: 10
 url_dash_board: "" 
 date: 2021-06-10
 description: >
-    View overall status of each projects and Navigate to detailed cloud resources.
+    View overall status of each project and Navigate to detailed cloud resources.
 ---
 
 # Project Management
@@ -54,7 +54,7 @@ You can easily check **`Billing Trends`**. Click on each service names to see de
 
 ### Personal Health Dashboard
 
-You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`** .
+You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`**.
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_04.png)
 
@@ -78,11 +78,11 @@ Click on each update to go to the detailed status page.
 
 <br/>
 
-### Cloud services
+### Cloud Services
 
-You can check the major services from the **`Cloud Services`** . 
+You can check the major services from the **`Cloud Services`**. 
 
-To see further details you can click on each services or **more >** .
+To see further details you can click on each service or the **`more >`** button.
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_07.png)
 
@@ -90,7 +90,7 @@ To see further details you can click on each services or **more >** .
 
 ### Trusted Advisor
 
-You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **`Security`** , **`Fault Tolerance`** , and **`Service Limits`** from the **`Trusted Advisor`** .
+You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **`Security`** , **`Fault Tolerance`** , and **`Service Limits`** from the **`Trusted Advisor`**.
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_08.png)
 

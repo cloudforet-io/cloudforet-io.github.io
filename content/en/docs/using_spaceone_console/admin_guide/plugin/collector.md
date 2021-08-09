@@ -142,7 +142,7 @@ From the list of Collectors, you can check Collector informations and statuses.
 * **State** : Availability of Collection. (Enable/Disable).
 * **Priority** : Determination priority of duplicated parameters from the multi collector. 
 <br/>
-(Lower numbers will get higher priorities.)
+(Lower numbers will have higher priorities.)
 * **Plugin** : Plugin type for the Collector.
 * **Version** : Plugin Version.
 * **Collector History** : Click  **`View detail >`** to see the Collector History page. (Details of all collecting jobs.)
@@ -185,11 +185,9 @@ Veiw the Credentials used by collectors.
 
 These Credentials are linked to the **Service Accounts** from SpaceONE.
 
-Click **`Collect Data`** and confirm the pop up. By clicking the **`Confirm`** button, users can start collecting resources for the target account immediately.
+Select Collectors of which you'd like to see the details, then click **`Credentials`**.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_16.png)
-
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_17.png)
 
 <br/>
 

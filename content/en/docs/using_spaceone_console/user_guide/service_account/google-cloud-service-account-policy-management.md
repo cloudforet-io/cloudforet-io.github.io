@@ -44,9 +44,9 @@ description: >
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
 {{% pageinfo color="300" %}}
-**STEP 1. Log in Google Cloud Console > IAM** 
+**STEP 1. Sign in to Google Cloud Console > IAM** 
 
-Go to IAM >  Service Account and Click **`+ CREATE SERVICE ACCOUNT`**.
+Go to **IAM >  Service Account** and click **`+ CREATE SERVICE ACCOUNT`**.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.00.20.png)
@@ -62,7 +62,7 @@ Enter _**Service account name**_, and _**Service account description**_.
 {{% pageinfo color="300" %}}
 **STEP 3: Grant Service account to Project**
 
-Set Permission to Viewer \(Role\): Read Access to All Resources, and Click **`CONTINUE`**.
+Set Permission to Viewer \(Role\): Read Access to All Resources, and click **`CONTINUE`**.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.27.10.png)
@@ -72,7 +72,7 @@ Set Permission to Viewer \(Role\): Read Access to All Resources, and Click **`CO
 
 _**You can skip this process**_ and move to the next.
 
-Set Service account users role and Service account admin role.
+Set _Service account users role_ and _Service account admin role_.
 
 Click **`DONE`** when everything is finished.
 {{% /pageinfo %}}
@@ -86,7 +86,7 @@ Find the Service account that you created in the previous step.
 
 Click the Action button and Select **`Create Key`**.
 
-Select a Key Type and Click the **`CREATE`** button. We recommend type JSON.
+Select a Key Type and click the **`CREATE`** button. We recommend type JSON.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.44.34.png)
@@ -131,7 +131,7 @@ _**SpaceONE**_'s _**General Collector**_ requires permission to access the follo
 {{% pageinfo color="300" %}}
 **Step 1. Create Role**
 
-Go to IAM &gt; Role &gt; **`+ Create Role`**.
+Go to **IAM > Role >** **`+ Create Role`**.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-04-07-at-18.09.05.png)
@@ -139,7 +139,7 @@ Go to IAM &gt; Role &gt; **`+ Create Role`**.
 {{% pageinfo color="300" %}}
 **Step 2. Add Permissions to Role**
 
-**Please, find an appropriate permission within the cloud services.**
+**Please, find an appropriate permission within the cloud service.**
 
 * storage.buckets.get
 * storage.buckets.getIamPolicy
@@ -165,7 +165,7 @@ Review the permissions once you've created a role.
 {{% pageinfo color="300" %}}
 **STEP 4: Set Created Role into the Service Account** 
 
-Move to Menu IAM > IAM. 
+Move to menu **IAM > IAM**. 
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.02.52.png)
@@ -200,7 +200,7 @@ _**SpaceONE**_'s _**Power Scheduler**_ requires editing permissions to update th
 {{% pageinfo color="300" %}}
 **Step 1. Create Role**
 
-Go to IAM > Role > **`+ Create Role`**.
+Go to **IAM > Role >** **`+ Create Role`**.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-18.09.00.png)
@@ -235,7 +235,7 @@ Review the permissions in the role you've created.
 {{% pageinfo color="300" %}}
 **STEP 4: Set Created Role into the Service Account** 
 
-Drive to Menu IAM > IAM. 
+Drive to menu **IAM > IAM**. 
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.02.52.png)
@@ -273,7 +273,7 @@ Follow **`Identity`** > **`Service Account`** from the Top Menu bar.
 {{% pageinfo color="300" %}}
 **Step 3: Select Provider and Add Service Account**
 
-Google > Click the **`+ Add`** Button
+Select Google for the Service Provider and then click the **`+ Add`** Button
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/google_04.png)
@@ -302,7 +302,7 @@ Then click the **`Save`** button.
 {{% pageinfo color="300" %}}
 **Step 6: Confrim your Registration**
 
-Check the Service Account's **Google Account List** to confirm your registration.
+Finally check the Service Account's **Google Account List** to confirm your registration.
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/google/screen-shot-2021-04-16-at-16.14.44.png)
