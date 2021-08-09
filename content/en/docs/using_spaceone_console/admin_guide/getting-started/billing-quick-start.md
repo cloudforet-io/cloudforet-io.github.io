@@ -101,7 +101,7 @@ Select your **Hyper Billing** Service Provider, then click **Add**.
 
 
 #### 2. Base Information
-Fill in Base Informations, like 'Name' and 'tags'.
+Fill in Base Informations, like 'Name' and 'Tags'.
 
 ![Name of service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
 

@@ -97,7 +97,7 @@ To see a summary of the projects included in a group, select a **Project Group**
 
 You can see a brief summary on how many **`Servers / Cloud services`** each project has. 
 
-You can also check your Cloud **`Service Account Type`**. 
+You can also check your **Cloud `Service Account` Type**. 
 
 ![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_13.png)  
 
@@ -113,8 +113,8 @@ The **`Search Bar`** helps you move quickly through **`Project Groups / Projects
 The **`Search bar`** enables the following actions:  
 
 * Search **`Project Group / Project`** by simple keywords.
-* Link to the project page 
-* Show all projects if you click the **`more`** button.
+* Provides links to project pages 
+* Shows all projects when clicking the **`more`** button.
 
 
 

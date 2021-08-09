@@ -14,7 +14,7 @@ description: >
 
 **SpaceONE** highly recommends, setting appropriate permissions to Resource groups for each purpose. 
 
-Please, Set service accounts, to Create APIs for each Use Case:
+Please set service accounts to Create APIs for each Use Case:
 
 * [General Collector](#general-collector)
 
@@ -34,7 +34,7 @@ Collectors require appropriate authorities to collect cloud resources. We strong
 
 This user guide tutorial assumes that a **`subscription id`** is already created. Assuming that the **`subscription id`** is created, you now need to allow permission from Azure Resources so SpaceONE can collect them.
 
-There are two options to do so.
+There are two ways to do so.
 
 * **Grant _Reader role_ to Resource Groups**
   * Grant **`Reader role`** to Resource Groups where the resources are located. If you give a role to the resource group, _SpaceONE_ will only collect resources located in this resource group.
@@ -57,7 +57,7 @@ If you want to know more about Azure's access control policies, visit this [link
 **Grant Roles to Resource Groups**
 
 {{% pageinfo color="300" %}}
-**STEP 1. Log in Azure Portal > Resource groups** 
+**STEP 1. Sign in and move to Azure Portal > Resource groups** 
 
 Select a Resource Group for which the Collector will collect resources from.
 {{% /pageinfo %}}
@@ -99,7 +99,7 @@ The client \(`client_id`\) with object id \(`object_id`\) does not have authoriz
 {{% /alert %}}
 
 {{% pageinfo color="300" %}}
-**STEP 1: Log into Azure Portal and move to Subscriptions** 
+**STEP 1: Log in to the Azure Portal and move to Subscriptions** 
 {{% /pageinfo %}}
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-15-at-18.55.14.png)
