@@ -4,171 +4,283 @@ linkTitle: "Collector"
 weight: 1
 date: 2021-07-31
 description: >
-    Creating Collector. Collecting Cloud Resources.
+    Creating Collectors. Collecting Cloud Resources.
 ---
-
 
 # Collector
 
 ## Overview
 
-With _**Collector Plugins**_ in SpaceONE marketplace, Cloud resources from various cloud providers can be collected easily.
+Using _**Collector Plugins**_ in the SpaceONE marketplace, users can easily collect Cloud resources from various cloud providers.
 
-Plugins are offered by both SpaceONE Official marketplace and private repository.
+Plugins are offered by both choices below : 
+* _Private Repositories_ 
+* _Official SpaceONE Marketplace_
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_01.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_01.png)
+
+<br/>
 
 
-## Create Collector
 
-Available plugin list is printed by select _**Official Marketplace.**_
+## Creating Collectors
 
-Select plugin to install, Click _**+ Create**_ button will starts collector creation wizard.
+Users can reach the available plugin list by selecting **`+ Create`** > **`Official Marketplace`**.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_02.png)
+Select a plugin you want to install, then click the **`+ Create`** button. This will start the _Collector Creation Wizard_.
 
-Fill out name of collector and choose version of plugin. Higher plugin version is generally suggested.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_02_1.png)
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_03.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_02.png)
 
-Selecting credentials information for collector. This step will be done automatically.
+<br/>
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_04.png)
+Fill out the 'Name' and 'Priority' for the collector and choose a version of the plugin. 
 
-User can add tags for collector. Tags can be added by clicking _**+ Add**_ button
+Latest Versions of plugins are normally recommended.
 
-You don\`t need to delete existing tags\(For system use\)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_03.png)
+
+<br/>
+
+Confirm credential informations for the collector. 
+
+This step will be done automatically, so simply confirm all the information that has been filled out.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_04.png)
+
+<br/>
+
+Users can add **Tags** on a collector. (This step is optional.) 
+
+Tags can be added by clicking the **`+ Add`** button.
+
+If there are exsisting Tags, there's no need to delete them. \(They are for system uses.\)
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_05.png)
 
-If creation is not proceeds, Check red marked steps in _**Collector creation wizards**_
+<br/>
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_06.png)
+{{% alert title="" color="warning" %}}
+**If you've failed to create a Collector, please check for steps that are _marked red_.**
+{{% /alert %}}
+
+For example, if you try to give identical names to collectors the **Collector Creation Wizard** will mark this process and ask you to try a different name. 
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_06.png)
+
+<br/>
 
 
-## Collector Update/Delete/Enable/Disable
+## Editing Collectors
 
-Controlling _**Collector**_ can be done by _**Action**_ list menu. 
+Editing and Controling _**Collectors**_ can be done by the **`Action`** list menu. 
 
-Select _**Collector**_ then click _**Action button**_. Available list of actions will be shown.
+(This is located next to the **`+ Create`** button.)
 
+Select a _**Collector**_ you want to edit, then click **`Action`**. A list of available actions will be shown.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_07_1.png)
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_07.png)
-#### Update 
 
-Change items to be updated, then click _**Confirm**_ button. 
-
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_08.png)
-#### Delete 
-
-Deletion pop up will be printed, Proceeds through _**Confirm**_ button
-
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_09.png)
-
-#### Enable
-
-Changing Collector status from _**DISABLE**_ status to _**ENABLE**_. This allows collecting job with _**collector.**_
-
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_10.png)
+<br/>
 
 
-#### DISABLE 
+### Update 
 
-Changing _**ENABLE**_ to _**DISABLE**_. This will block collecting job with _**collector**_.
+Select a Collector you want to **update**, then click **`Action > Update`**.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_11.png)
+You can update the 'Name', 'Priority', and 'Version' of the Collector. 
+
+After you've made your changes click **`Confirm`** to save the changes.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_08.png)
+
+<br/>
 
 
-## Collector Listing
+### Delete 
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_12.png)
+Select a Collector you want to **delete**, then click **`Action > Delete`**.
 
-In Collector list, Collector informations and status can be checked.
+Confirm the collector you've selected through the pop up, and delete by clicking the **`Confirm`** button.
 
-* Name : Name of Collector
-* State : Availability of collection\(_**Enable**_/_**Disable**_\).
-* Priority : Determination priority of duplicated parameters from multi collector. Lower number gets higher priority.
-* Last Collected : Last timestamp of collector action
-* Created : Timestamp of collector creation.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_09.png)
 
+<br/>
+
+
+### Enable
+
+Change your Collectors' status from **`DISABLE`** to **`ENABLE`**. 
+
+This allows the Collectors to collect resources.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_10.png)
+
+<br/>
+
+
+### Disable
+
+Change your Collectors' status from **`ENABLE`** to **`DISABLE`**.
+
+This will block the Collector from collecting resources.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_11.png)
+
+<br/>
+
+
+## Collector List
+
+From the list of Collectors, you can check Collector informations and statuses.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_12.png)
+
+* **Name** : Name of Collector.
+* **State** : Availability of Collection. (Enable/Disable).
+* **Priority** : Determination priority of duplicated parameters from the multi collector. 
+<br/>
+(Lower numbers will get higher priorities.)
+* **Plugin** : Plugin type for the Collector.
+* **Version** : Plugin Version.
+* **Collector History** : Click  **`View detail >`** to see the Collector History page. (Details of all collecting jobs.)
+* **Last Collected** : Timestamp of the latest collecting job.
+
+<br/>
 
 
 ### Detail
 
-Detailed information of each collector
+By selecting a Collector you can veiw the **`Details`**.
 
-Tables of items collected by _**Collector**_.
+Tables of items collected by the **Collector** are shown like the following image.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_13.png)
+
+<br/>
+
+
 ### Tag
 
-Managing Collector tags. Modification through _**Edit**_ button.
+Managing Collector tags with the **`Edit`** button.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_14.png)
 
-User can add/delete item using _**Add Tag**_ button and _**x**_ button. After editing page click _**Save**_ button right down of page.
+<br/>
+
+Users can Add / Delete items by using the **`+ Add Tag`** button and the **`x`** button. 
+
+After editing the tags, click **`Save`** at the bottom right corner of the page.
 
 ![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_15.png)
+
+<br/>
 
 
 ### Credentials
 
-Lists of credentials used by collectors. This credentials are linked to _**Service Account**_ of SpaceONE.
+Veiw the Credentials used by collectors. 
 
-By clicking _**Collector Data**_ button, User can start collecting job for target account immediately.
+These Credentials are linked to the **Service Accounts** from SpaceONE.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_16.png)
+Click **`Collect Data`** and confirm the pop up. By clicking the **`Confirm`** button, users can start collecting resources for the target account immediately.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_17.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_16.png)
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_17.png)
+
+<br/>
+
 
 ### Schedules
 
-Specifies the frequency of data collection.
+Set the Collectors to collect resources on your schedule.
 
-When a schedule is specified, Cloud Resource collection is performed through Collector at a specified time every day.
+By setting a **Schedule**, users can set Collectors to perform _Cloud Resource Collection_ at a specified time, daily.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_18.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_18.png)
 
-**Add** 
+<br/>
 
-By clicking _**+ Add**_ button. _**Add Schedule**_ appears
+#### Add Schedules 
 
-User can select _**Name/Timezone/Collection Time**_
+When clicking the **`+ Add`** button, the **`Add Schedule`** appears.
 
-Collecting Time can be set by 24-hour base. Can be selected in 1-hour increments
+Users can select the _**Name / Timezone / Collection Time**_ for Collectors.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_19.png)
+The scheduled collecting time can be set _Hourly_ on a 24-hour base.
 
-#### Update/Delete Schedule 
+Select **`Confirm`** to save your schedule.
 
-After setting schedule, Schedule modification or deleting is available using _**Action**_ **&gt; Update/Delete** button.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_18_1.png)
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_20.png)
+<br/>
 
 
+#### Update/Delete Schedules 
 
-## Collecting Cloud Resource
+After the schedules have been created, they can be modified or deleted by the menu **`Action`** > **`Update/Delete`**.
 
-With Collector, Collection of cloud resource is available any time. User can get update to date status of each cloud resources in various ways.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_20_2.png)
+
+<br/>
+
+Users can update informations and confirm.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_20.png)
+
+Or Users can delete selected schedules.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_20_1.png)
+
+
+<br/>
+
+
+## Collecting Cloud Resources
+
+By using the **Collector**, collecting cloud resources are available at any time. 
+
+Users can _Collect Resources_ from each cloud, immediately or according to schedules.
+
+<br/>
+
 
 ### Collecting Immediately
 
-Select collector click  _**Action &gt; Collect Data.**_
+Choose a Collector and click the menu, **`Action > Collect Data`**.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_21.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_21.png)
 
-Collector Data confirmation screen appears, Proceeds with _**Confirm**_ button.
+<br/>
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_22.png)
+A confirmation pop up will appear, check and proceed by clicking the **`Confirm`** button.
 
-Status of collecting can be checked in _**Main Dashboard**_.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_22.png)
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_23.png)
+<br/>
 
-### Collecting Schedule
+After you've started collecting, the Status of **Collecting Jobs** can be checked at the bottom right corner of the **Main Dashboard**.
 
-With the schedule registered in the _**schedule**_ above, Cloud Resource collection is automatically performed by SpaceONE.
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_23.png)
 
-Final collected timestamp can be checked through collector list.
+Click **`More >`** to see the detailed history.
 
-![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_img_24.png)
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_23_1.png)
 
+<br/>
+
+
+### Collecting by Schedule
+
+By adding a **Schedule** (If you need help adding Schedules follow this [link](#add-schedules).)
+
+the Collectors automatically perform Cloud Resource Collection through SpaceONE.
+
+You can also check the _timestamps_ of the _latest collection job_ from the collector list.
+
+![](/docs/using_spaceone_console/admin_guide/plugin/collector_img/collector_24.png)
+
+<br/>

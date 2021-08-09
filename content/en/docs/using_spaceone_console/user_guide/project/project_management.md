@@ -15,17 +15,14 @@ description: >
 The **`Project`** page allows you the following features:
 
 * **View and edit projects.** 
-* **View project details** : View Summary, Member, Alert, Notifications, Maintenance Window, and Tags.
-* **Project Dashboard** : View overall usage of projects.
+* **View project details** 
+    * View Summary, Member, Alert, Notifications, Maintenance Window, and Tags.
+* **Project Dashboard** 
+    * View overall usage of projects.
+    Users can check usage by resource classifications. Click on each classification icon to see the detailed informations.
+
 
 ![Project Management Overview](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_01.png)
-
-<br/>
-
-* **Usage by resource classification**
-: You can check cloud resources by classification. Click on each icon to see the detailed information page.
-
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_02.png)
 
 <br/>
 
@@ -57,7 +54,7 @@ You can easily check **`Billing Trends`**. Click on each service names to see de
 
 ### Personal Health Dashboard
 
-You can check **`Open Issues`** **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`** .
+You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`** .
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_04.png)
 
@@ -65,7 +62,7 @@ You can check **`Open Issues`** **`Scheduled Changes`** and **`Other Notificatio
 
 ### Service Accounts
 
-You can check resource usages from **`Service Account`** within the project. You can also check the amount of **`Credential`** registered.
+You can check resource usages from **`Service Accounts`** within the project. You can also check the amount of resources registered.
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_05.png)
 
@@ -73,7 +70,9 @@ You can check resource usages from **`Service Account`** within the project. You
 
 ### Daily Updates
 
-**`Daily update`** shows the history of changes in your cloud resources so far. Click on each update to go to the detailed status page.
+**`Daily updates`** shows the history of changes in your cloud resources. 
+
+Click on each update to go to the detailed status page.
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_06.png)
 
@@ -81,7 +80,9 @@ You can check resource usages from **`Service Account`** within the project. You
 
 ### Cloud services
 
-You can check the major services from the **`Cloud Service`** . To see further details you can click on each services or **more >** .
+You can check the major services from the **`Cloud Services`** . 
+
+To see further details you can click on each services or **more >** .
 
 ![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_07.png)
 
@@ -97,7 +98,9 @@ You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **
 
 ## Member
 
-**`Add`** or **`Delete`** users who can view and manage the project. To do so, the users should be registered as a **`Project Admin`** in advance.
+**`Add`** or **`Delete`** users who can view and manage the project. 
+
+To do so, the users should be registered as a **`Project Admin`** in advance.
 
 ![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_11.png)
 
