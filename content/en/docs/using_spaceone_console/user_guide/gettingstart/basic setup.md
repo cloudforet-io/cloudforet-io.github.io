@@ -1,12 +1,13 @@
 ---
 title: "Basic Setup"
 linkTitle: "Basic Setup"
-weight: 6
+weight: 1
 url_dash_board: "" 
 date: 2021-05-11
 description: >
     General user can manage resources by creating a project under the project group and registering a cloud account(service account) to created project.
 ---
+
 # Basic Setup
 
 ## Sign-in
