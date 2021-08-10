@@ -17,7 +17,7 @@ You can add, modify, delete, and enable/disable users on the _**User Management*
 
  
 
-## Creating Users
+## Create Users
 
 Click the _**+ Add**_ button, then create a _**Domain User**_. 
 
@@ -31,7 +31,7 @@ Fill in the items required, then click the _**Confirm**_ button.
 
 Created users can be seen after reloading the page \(or clicking the reload button\).
 
-## Editing/Deleting Users
+## Edit/Delete Users
 
 Select the target user. On the dropdown _**Action**_ menu, editing/deleting options are available.
 
@@ -45,7 +45,7 @@ If you click the delete option, the delete confirmation screen will pop up as sh
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_06.png)
 
-## Enabling/Disabling Users
+## Enable/Disable Users
 
 To control user login, use the _**Enable/Disable**_ options.
 
@@ -64,7 +64,7 @@ The detail tab shows detailed information on users, including ID, name, e-mail, 
 
 ![](/docs/using_spaceone_console/admin_guide/identity/user_img/user_img_10.png)
 
-## Searching Users
+## Search Users
 
 Users can be searched by several properties in the searching bar.
 

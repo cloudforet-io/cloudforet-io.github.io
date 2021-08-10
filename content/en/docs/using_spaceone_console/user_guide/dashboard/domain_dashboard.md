@@ -12,10 +12,10 @@ description: >
 
 ## Overview
 
-The Dashboard is the first screen you will see when connecting to **`SpaceONE`** service.
+The Dashboard is the first screen you will see when connecting to the **`SpaceONE`** service.
 
   
-It allows you to look through the status of the entire service being used by domain. 
+It allows you to look through the status of the entire service being used by the domain. 
 
 When you click an item, you can navigate to the corresponding service.
 
@@ -58,7 +58,7 @@ Following **`Service Providers`** are currently available:
 * Megazone Hyper Billing
 * Megazone -->
 
-Also, you can see the current number of Service Accounts registered for each cloud.
+Also, you can see the current number of **`Service Accounts`** registered for each cloud.
 
 ![Service Account](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_04.png)
 
@@ -66,9 +66,9 @@ Also, you can see the current number of Service Accounts registered for each clo
 
 ## Daily Updates
 
-It displays information about increasing/decreasing resources on a daily basis. 
+It shows details about increased/decreased resources on a daily basis. 
 
-**`Daily Updates`** shows the history of changes from **0** to the **present**. 
+You can browse the history of changes from **0** to the **present**. 
 
 
 ![Daily updates](/docs/using_spaceone_console/user_guide/dashboard/dashboard_img/dashboard_img_05.png)
@@ -77,7 +77,7 @@ It displays information about increasing/decreasing resources on a daily basis.
 
 ## Cloud Services
 
-You can see the number and type of cloud service resources collected at a glance. 
+You can see the number and type of collected cloud service resources at a glance. 
 
 If you click the **`more`** button, you will be taken to the **`Cloud Service`** page.
 

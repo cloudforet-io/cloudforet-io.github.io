@@ -14,7 +14,7 @@ description: >
 
 ## Service Account Policy
 
-Before creating a **Service Account**, users can modify their existing API policies.
+Before creating a **Service Account**, you can modify your existing API policies.
 
 This will guarantee that your resources are isolated from other non power-scheduled items. It can also prevent malfunctions caused by misconfigurations of power scheduling.
 
@@ -33,11 +33,11 @@ In case of internal regulations, create the policy below and attach it when crea
 
 ## General Collector 
 
-Collectors do not require any types of permissions, except for the read permission. So we strongly recommend users to restrict permissions to **read-only access**. 
+Collectors do not require any types of permissions, except for the read permission. So we strongly recommend you to restrict permissions to **read-only access**. 
 
-Otherwise, users can add more restrictions based on regions and resources. One of the useful examples is to restrict permissions within regions.
+Or, you can add more restrictions based on regions and resources. One of the useful examples is to restrict permissions within regions.
 
-In order to experience more powerful functions of SpaceONE collectors, using managed **read-only policies** is preferred. 
+In order to experience more powerful functions of SpaceONE collectors, we highly recommend using managed **read-only policies**. 
 
 
 {{% pageinfo color=“300” %}}
@@ -301,7 +301,7 @@ If you forget to copy them, there is no way to get them back \(you have to start
 
 ## Overall IAM Policy Superset
 
-If users want to use a managed policy, they can refer to the policy below. 
+If you want to use a managed policy, you can refer to the policy below. 
 
 _**Region Code**_ in resource parameters needs to be changed. _**AWS Region Code**_ or _**\***_  character is available.
 
