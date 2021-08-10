@@ -5,14 +5,16 @@ no_list: true
 main_menu: true
 ---
 
+# Documentation
 
 <div class="spaceonedocumentmainbanner">
 <div class="banner1">
   <img src="/docs/main_img/main_banner_01.png" alt="SpaceONE Main Banner" style="width:100%;padding-left:0px" class="desktop">
 </div>
 
+<br><br>
 SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis.
-
+<br><br>
 
 <section id="users">
     <div class="col-container">

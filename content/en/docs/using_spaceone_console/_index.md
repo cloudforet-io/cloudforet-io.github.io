@@ -1,6 +1,6 @@
 ---
-title: "Using SpaceONE Console"
-linkTitle: "Using SpaceONE Console"
+title: "To Use SpaceONE Console"
+linkTitle: "To Use SpaceONE Console"
 weight: 3
 date: 2021-07-31
 description: >
