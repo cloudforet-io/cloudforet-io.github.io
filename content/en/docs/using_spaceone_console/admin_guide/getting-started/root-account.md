@@ -31,7 +31,7 @@ description: >
 
 ## Create Domain Admin
 
-**Root Account** allows you to create a **`Domain Admin`** administrator user, and gives you a **`Domain Admin Role`** so that you can access as an administrator.
+**Root Account** allows you to create a **`Domain Admin`** user, and gives you a **`Domain Admin Role`** so that you can access as a domain administrator.
 {{% pageinfo color=“300” %}}
 **STEP 1: Click `Identity` - `User` in the top navigation bar.** 
 {{% /pageinfo %}}
@@ -47,13 +47,13 @@ description: >
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_05.png)
 {{% pageinfo color=“300” %}}
-**STEP 3: After filling out the `Domain Admin` user information, click the `Confirm` button to save.**
+**STEP 3: Fill out `Domain Admin` user information, then click the `Confirm` button to save.**
 {{% /pageinfo %}}
 <!-- **STEP 3: `Domain Admin` 사용자 정보를 추가한 후,`Confirm` 버튼을 눌러 저장합니다.**  -->
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_06.png)
 {{% pageinfo color=“300” %}}
-**STEP 4: You can see the details of the `Domain Admin user` on the `User Management` page.**
+**STEP 4: You can see the details of the `Domain Admin` user on the `User Management` page.**
 {{% /pageinfo %}}
 <!-- **STEP 4: 상단의`Identity` - `User` 에서  적용된 내용을 확인할 수 있습니다.** -->
 ![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_07.png)
