@@ -106,7 +106,7 @@ To do so, the users should be registered as a **`Project Admin`** in advance.
 
 ### Add member
 
-When you click the **`Add`** button, you can see the **`Add User`** pop up. You can add multiple users at once.
+When you click the **`Add`** button, you can see the **`Add Member`** pop up. You can add multiple users at once.
 
 ![Add users to project](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_12.png)
 
