@@ -81,7 +81,7 @@ Before you register SpaceONE domains, you should verify ownership in advance. Th
 
 
 {{% pageinfo color=“300” %}}
-**STEP 4: To complete verifying domain ownership of SpaceONE, Click the `Confirm` button as shown below.** 
+**STEP 4: To complete verifying domain ownership of SpaceONE, click the `Confirm` button as shown below.** 
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_09.png)
 
