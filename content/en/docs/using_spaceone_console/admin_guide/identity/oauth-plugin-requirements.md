@@ -14,8 +14,8 @@ description: >
 
 For companies using **Google Workspace**, `SpaceONE's OAuth plug-in` helps simplify the user sign-in process. To explore `SpaceONE's OAuth plug-in`, you need to complete the following steps in advance.
 
-* [Create OAuth Client ID](oauth-plugin-requirements.md#create-oauth-client-id)
-* [Domain Verification](oauth-plugin-requirements.md#domain-verification)
+* [Create OAuth Client ID](#create-oauth-client-id)
+* [Domain Verification](#domain-verification)
 
 ## Create OAuth Client ID
 
