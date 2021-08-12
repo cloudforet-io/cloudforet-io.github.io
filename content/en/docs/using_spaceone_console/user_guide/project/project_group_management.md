@@ -73,6 +73,14 @@ click the **`+`** button like the following image :
 
 <br/>
 
+### Edit Directory
+
+From the **`Project Groups`** side bar, you can edit the directory of your **Project Groups and Projects**. Simply _**drag and drop**_ projects and groups to change the tree structure. After changing the directory please click **`Done`** to save.
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_15.png)  
+
+<br/>
+
 
 ### Edit / Delete Project Group
 
@@ -87,6 +95,38 @@ To delete a **Project Group**, you must delete all of the projects that are incl
 ![Delete Project Group](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_11.png)  
 
 <br/>
+
+
+### Set Project Group Roles
+
+At SpaceONE users can not only set **`Roles`** for individual projects/users but also **`Project Groups`**.
+
+Select a **`Project Group`** and click on the **`Manage Project Group Member`** icon.
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_16.png) 
+
+From the **`Manage Project Group Member`** page select **`+ Add`**. Then select user IDs that you'd like to give **Project Admin** roles to.
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_17.png)
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_18.png) 
+
+After filling out the information select **`Confirm`** and check the success pop up message and list to see newly added role users. 
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_19.png) 
+
+You can also **Upate** and **Delete** these Roles through the **`Action`** list menu.
+
+![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_20.png) 
+
+{{% alert title="" color="info" %}}
+During this process you can only grant users **Project Admin** roles. 
+
+However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/using_spaceone_console/advanced_topics/user-role).
+{{% /alert %}}
+
+<br/>
+
 
 ## View Project 
 
