@@ -1,6 +1,6 @@
 ---
-title: "Profile"
-linkTitle: "Profile"
+title: "Account & Profile"
+linkTitle: "Account & Profile"
 weight: 10
 url_dash_board: "" 
 date: 2021-06-11
@@ -8,7 +8,7 @@ description: >
     User Informations.
 ---
 
-# Profile
+# Account & Profile
 
 ## User Profile
 
