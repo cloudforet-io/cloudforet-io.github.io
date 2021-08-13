@@ -1,7 +1,7 @@
 ---
 title: "Notifications"
 linkTitle: "Notifications"
-weight: 3
+weight: 12
 date: 2021-08-12
 description: >
     Managing Notifications
@@ -13,7 +13,7 @@ description: >
 
 On the notification page, you can easily manage notification settings for SMS, voicecall, and Slack protocol channels.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_01.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_01.png)
 
 ## SMS Protocol Channel
 
@@ -23,32 +23,38 @@ If you create an SMS protocol channel, you will be notified by text messages.
 
 Click **+ Add Megazone SMS Protocol Channel**.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_02.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_02.png)
+
 
 #### Base Information
 Enter an SMS protocol **channel name** and your **phone number**.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_03.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_03.png)
+
 
 #### Schedule
 You can set the schedule to **All Time**.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_04.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_04.png)
+
 
 Or select **Custom** to customize the schedule as you want. You can choose days and time as shown below. 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_05.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_05.png)
 
 
 #### Topic 
 You can choose to receive all notifications regardless of topics.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_06.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_06.png)
+
 
 Or you can receive notifications based on selected topics only.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_07.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_07.png)
+
 
 #### Save
 Click the **save** button at the bottom right corner.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_08.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_08.png)
+
 
 ## Voicecall Protocol Channel
 
@@ -58,10 +64,12 @@ If you create a voicecall protocol channel, you will be notified by voice calls.
 
 Click **+ Add Megazone Voicecall Protocol Channel**.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_09.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_09.png)
+
 
 Fill in base information and select schedule and topic setting modes. Then, click the save button.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_10.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_10.png)
+
 
 ## Slack Protocol Channel
 
@@ -71,35 +79,42 @@ If you create a Slack protocol channel, you will be notified from the correspond
 
 Click **+ Add Slack Protocol Channel**.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_11.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_11.png)
+
 
 Fill in base information and select schedule and topic setting modes. Then, click the save button.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_12.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_12.png)
+
 
 ## Edit/Delete Channel
 
 #### Edit
 
 To edit a channel, click the **Edit** button on the right. 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_13.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_13.png)
+
 
 Make changes you want and click the **Save Changes** button.
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_14.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_14.png)
+
 
 #### Delete
 
 To delete a channel, click the **trash can icon** on the right.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_15.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_15.png)
+
 
 Then the delete confirmation screen will pop up as shown below. Click the **Confirm** button.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_16.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_16.png)
+
 
 ## Enable/Disable Channel
 
 To enable or disable a channel, simply flip the toggle switch button.
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_17.png)
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_17.png)
 
-![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_18.png)
+
+![](/docs/using_spaceone_console/user_guide/etc/notifications_img/notifications_img_18.png)
