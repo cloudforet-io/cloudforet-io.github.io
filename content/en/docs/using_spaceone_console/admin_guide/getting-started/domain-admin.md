@@ -171,6 +171,7 @@ Through the Schedule setting, set the collection time so that the **`Collector`*
 **STEP 1: Select the `Collector` you want to set up, and then click the `Add` button on the bottom `Schedule` tab**.
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_26.png)
+
 {{% pageinfo color=“300” %}}
 **STEP 2: Create `Collector` that collects every 4 hours.**
 {{% /pageinfo %}}
