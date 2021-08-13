@@ -58,7 +58,7 @@ The information of the job can be viewed on the Collector history page is as fol
 | Created | Job start time |
 | Duration | Job running time |
 
-## Job Detail
+### Job Detail
 
 ![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_07.png)
 
@@ -67,13 +67,13 @@ When you click an individual job in the job list on the Collector history page, 
 At the top of the page, you will see the collector and cloud provider that collected the job.
 
 
-### Task Search
+#### Task Search
 
 You can search service account, project, status for job's task collected by Collector History.
 
 ![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_08.png)
 
-### Task List Search
+#### Task List Search
 
 At the bottom of the page, a list of tasks is shown according to Job status. The information of Task that you can see on this page is as follows.
 
