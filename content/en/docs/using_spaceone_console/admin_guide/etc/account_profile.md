@@ -1,13 +1,13 @@
 ---
-title: "Profile"
-linkTitle: "Profile"
+title: "Account & Profile"
+linkTitle: "Account & Profile"
 weight: 1
 date: 2021-07-31
 description: >
     User Information
 ---
 
-# Profile
+# Account & Profile
 
 ## User Profile
 
