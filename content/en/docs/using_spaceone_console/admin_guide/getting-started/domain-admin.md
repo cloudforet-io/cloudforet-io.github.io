@@ -79,9 +79,15 @@ General users can access only the **`Project Group`** to which they are belonged
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_10.png)
 
 {{% pageinfo color=“300” %}}
-**STEP 5: On the User Management page, you can check that the Role and Authorization Type are mapped.**
+**STEP 5: Add members to Project Group.**
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_user_role.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_11.png)
+![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_12.png)
+
+{{% pageinfo color=“300” %}}
+**STEP 6: On the User Management page, you can check that the Role and Authorization Type are mapped.**
+{{% /pageinfo %}}
+![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_13.png)
 
 
 ## Cloud Resource Collectors
@@ -106,7 +112,7 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_15.png)
 {{% pageinfo color=“300” %}}
-**STEP 2: Create AWS EC2 `collector`.**
+**STEP 2: Create AWS EC2 `Collector`.**
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_16.png)
 
@@ -119,19 +125,19 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_17.png)
 
 {{% pageinfo color=“300” %}}  
-**STEP 2: Create AWS Cloud Service Collector** 
+**STEP 2: Create AWS Cloud Service `Collector`** 
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_18.png)
 
 \*\*\*\*
 
-### **Create AWS Cloud Service Collector**
+### **Create AWS Trusted Advisor**
 {{% pageinfo color=“300” %}}
-**STEP 1: Select `aws-cloud-services` plug-in from market place.**
+**STEP 1: Select `aws-trusted-advisor` plug-in from market place.**
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_19.png)
 {{% pageinfo color=“300” %}}
-**STEP 2: Create AWS trusted advisor `collector`.** 
+**STEP 2: Create AWS trusted advisor `Collector`.** 
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_20.png)
 
@@ -139,19 +145,25 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 
 ### **Create AWS Health Dashboard Collector**
 {{% pageinfo color=“300” %}}
-**STEP 1: Select `aws-cloud-services` plugin from market place.**
+**STEP 1: Select `aws-health-dashboard` plugin from market place.**
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_21.png)
 {{% pageinfo color=“300” %}}
-**STEP 2: Create AWS Personal Health Dashboard `collector`** 
+**STEP 2: Create AWS Personal Health Dashboard `Collector`** 
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_22.png)
 
 \*\*\*\*
 
 ### **Create AWS Metric Collector**
+
+#### Preparation
+
+Before using metric collector, you need Service Account first. <br>
+Please refer to the link. <a href ="/docs/using_spaceone_console/admin_guide/getting-started/metric-collector-quick-start">metric collector service account</a> 
+
 {{% pageinfo color=“300” %}}
-**STEP 1: Select `aws-cloud-services` plugin from market place.**
+**STEP 1: Select `monitoring-metric-collector` plugin from market place.**
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_23.png)
 {{% pageinfo color=“300” %}}
@@ -159,7 +171,7 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_24.png)
 
-Check the complete **`collector`** list generated.
+Check the complete **`Collector`** list generated.
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_25.png)
 

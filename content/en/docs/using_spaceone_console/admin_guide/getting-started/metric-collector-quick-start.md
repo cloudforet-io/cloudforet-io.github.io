@@ -30,7 +30,7 @@ Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service P
 API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
 <!-- {% endhint %} -->
 
-## Assingn SpaceOne Service Account \(Ex. Metric Collector\)
+## Assign SpaceOne Service Account \(Ex. Metric Collector\)
  
 You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
 Select Service Provider, Click **+Add** button.
