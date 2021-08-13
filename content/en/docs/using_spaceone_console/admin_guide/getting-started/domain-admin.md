@@ -160,7 +160,7 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 #### Preparation
 
 Before using metric collector, you need Service Account first. <br>
-Please refer to the link. <a href ="/docs/using_spaceone_console/admin_guide/getting-started/metric-collector-quick-start">metric collector service account</a> 
+Please refer to the link. <a href ="/docs/using_spaceone_console/admin_guide/getting-started/metric-collector-quick-start">Metric Collector Service Account</a> 
 
 {{% pageinfo color=“300” %}}
 **STEP 1: Select `monitoring-metric-collector` plugin from market place.**
