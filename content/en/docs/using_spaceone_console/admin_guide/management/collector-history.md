@@ -24,32 +24,43 @@ Main Graph shows the status of the number of jobs collected. The number of succe
 
 You can move the month through `< >` at the top right of the graph.
 
-#### Collector History Detail
+### Collector History Detail
 
+#### Status
+
+You can check list of jobs respectively in 4 status(All, In-Progress, Completed, Failed).
+
+**ALL**
 ![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_02.png)
 
- You can check list of successful and unsuccessful jobs respectively in 3 status. 
+**In-Progress**
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_03.png)
 
+**Completed**
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_04.png)
+
+**Failed**
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_05.png)
+
+#### Search Bar
 Using the search bar, You can search Job ID, Status, Collector, Created Time for Job collected through Collector History.
 
-![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_03.png)
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_06.png)
 
 The information of the job can be viewed on the Collector history page is as follows.
 
 | Title | Description |
 | :--- | :--- |
 | Job ID | Id of Job |
-| Collector Name | Name of the Collector which performed the job |
-| Status | Status showing the job performance results of the Collector  |
-| Task \(completed / total\) | Number of the tasks completed among the whole tasks |
-| Start Time | Job start time |
+| Collector | Name of the Collector which performed the job |
+| Plugin | Name of the Plugin which performed the job  |
+| Status \(completed / Error\) | Number of the tasks completed among the whole tasks |
+| Created | Job start time |
 | Duration | Job running time |
 
+### Job Detail
 
-
-## Job Detail
-
-![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_04.png)
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_07.png)
 
 When you click an individual job in the job list on the Collector history page, you can check the details on the Job Management page.
 
@@ -60,9 +71,7 @@ At the top of the page, you will see the collector and cloud provider that colle
 
 You can search service account, project, status for job's task collected by Collector History.
 
-![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_05.png)
-
-#### 
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_08.png)
 
 #### Task List Search
 
@@ -70,19 +79,17 @@ At the bottom of the page, a list of tasks is shown according to Job status. The
 
 | item | Description |
 | :--- | :--- |
-| No | task order |
 | Service account | Service Account assingned to task |
 | Project | project that task belongs |
 | Status | performance status of task |
-| Created | number of resource created |
-| Updated | number of resource updated |
-| Error | cause of task failure |
-| Start time | task start time  |
+| Errors | cause of task failure |
+| Created Count | number of resource created |
+| Updated Count | number of resource updated |
+| Disconnected Count | number of resource disconnected |
+| Deleted Count | number of resource deleted |
+| Started | task start time  |
 | Duration | task running time |
 
 When the status of job is failure, you can see the cause of task failure in the Error list at the bottom.
 
-![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_06.png)
-
-
-
+![](/docs/using_spaceone_console/admin_guide/management/collector-history_img/collector-history_image_09.png)

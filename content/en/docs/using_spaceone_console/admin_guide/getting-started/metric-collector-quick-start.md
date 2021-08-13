@@ -24,13 +24,16 @@ Collect monitoring metric data through the following steps:
 To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.
 
 ## Get API Key for Service Account
-Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider
+
+Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
+
+![](/docs/using_spaceone_console/admin_guide/getting-started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
 API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
 <!-- {% endhint %} -->
 
-## Assingn SpaceOne Service Account \(Ex. Metric Collector\)
+## Assign SpaceOne Service Account \(Ex. Metric Collector\)
  
 You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
 Select Service Provider, Click **+Add** button.
