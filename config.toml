@@ -30,23 +30,23 @@ pygmentsUseClassic = false
 pygmentsStyle = "tango"
 
 [languages]
-	[languages.en]
-		title = ""
-		description = "SpaceONE Documentation"
-		languageName ="English"
-		contentDir = "content/en"
-		time_format_default = "02.01.2006"
+[languages.en]
+    title = ""
+    description = "SpaceONE Documentation"
+    languageName ="English"
+    contentDir = "content/en"
+    time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
-        # Weight used for sorting.
-		weight = 1
-	[languages.ko]
-		title = ""
-		languageName ="Korean"
-		description = "스페이스원 레퍼런스 사이트입니다."
-		contentDir = "content/ko"
-		time_format_default = "2006.01.02"
-		time_format_blog = "2006.01.02"
-		weight = 2
+    # Weight used for sorting.
+    weight = 1
+#	[languages.ko]
+#		title = ""
+#		languageName ="Korean"
+#		description = "스페이스원 레퍼런스 사이트입니다."
+#		contentDir = "content/ko"
+#		time_format_default = "2006.01.02"
+#		time_format_blog = "2006.01.02"
+#		weight = 2
 
 
 

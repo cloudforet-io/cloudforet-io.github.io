@@ -43,6 +43,23 @@ $black: #000 !default;
 
 $code-color: darken($secondary, 20%) !default;
 
+// docs portal theme
+$black: #000;
+$white: #fff;
+$green: #65CBA0;
+$pink: #CF88A0;
+$teal: #5CA2B1;
+$primary100: #F8F8FC;
+$primary200: #EBEAF6;
+$primary300: #A8A5CE;
+$primary400: #8C81D1;
+$blue200: #E9F4FF;
+$gray100: #F7F7F7;
+$gray200: #CED0D6;
+$gray300: #A7A9B2;
+$gray400: #5F616D;
+
+
 // UI element colors
 
 $border-color: $gray-300 !default;
@@ -61,16 +78,12 @@ $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: none !default;
 
 // Fonts
-
-// $google_font_name: "Open Sans" !default;
-// $google_font_family: "Open+Sans:300,300i,400,400i,700,700i" !default;
-// $google_font_name: "Nanum Gothic" !default;
-// $google_font_family: "Nanum+Gothic:300,300i,400,400i,700,700i" !default;
 $google_font_name: "Roboto" !default;
 $google_font_family: "Roboto:300,300i,400,400i,700,700i" !default;
 $web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
 
-$td-fonts-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//$td-fonts-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$td-fonts-serif: Arial, sans-serif;
 
 @if $td-enable-google-fonts {
     $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
