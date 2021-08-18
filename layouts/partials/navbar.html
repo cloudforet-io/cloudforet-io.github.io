@@ -1,0 +1,28 @@
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+    <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+        {{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+    </a>
+    <ul class="navbar-nav" id="main_navbar">
+        {{ $p := . }}
+        {{ $sections := slice "docs" "community" }}
+        {{ range $sections }}
+        {{ with site.GetPage "section" . }}
+        <li class="nav-item">
+            {{ $active := eq .Section $.Section }}
+            <a class="nav-link{{if $active }} active{{end}}" href="{{ .RelPermalink }}" >{{ .Title }}</span></a>
+        </li>
+        {{ end }}
+        {{ end }}
+        {{ if  (gt (len .Site.Home.Translations) 0) }}
+        <li class="nav-item dropdown">
+            {{ partial "navbar-lang-selector.html" . }}
+        </li>
+        {{ end }}
+    </ul>
+    {{ if  .Site.Params.versions }}
+    <div class="nav-dropdown d-none d-lg-block">
+        {{ partial "navbar-version-selector.html" . }}
+    </div>
+    {{ end }}
+    <div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
+</nav>
