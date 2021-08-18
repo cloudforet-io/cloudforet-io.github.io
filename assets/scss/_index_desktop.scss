@@ -1,0 +1,16 @@
+@media screen and (min-width: 1024px) {
+  .only-desktop {
+    display: inline-block;
+  }
+  .only-tablet {
+    display: none !important;
+  }
+  .only-mobile {
+    display: none !important;
+  }
+  .td-home {
+    .inner {
+      padding-top: 12.5rem;
+    }
+  }
+}
