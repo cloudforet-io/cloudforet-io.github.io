@@ -1,5 +1,5 @@
 ---
-title: "Welcome to SpaceOne API"
+title: "Documentation"
 linkTitle: "Documentation"
 menu:
   main:
