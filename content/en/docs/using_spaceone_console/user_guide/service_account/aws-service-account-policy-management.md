@@ -89,7 +89,7 @@ _**Step 6. Copy Key Pair**_
 
 After the IAM key pair is created, _**make sure to copy the Access key ID/Secret access key and keep them safely**_.
 
-If you forget to copy them, there is no way to get them back \(you have to start over from step 1\).
+If you forget to copy them, there is no way to have them again \(you have to start over from step 1\).
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
@@ -192,7 +192,7 @@ _**Step 8. Copy Key Pair**_
 
 After the IAM key pair is created, _**make sure to copy the Access key ID/Secret access key and keep them safely**_.
 
-If you forget to copy them, there is no way to get them back \(you have to start over from step 1\).
+If you forget to copy them, there is no way to have them again \(you have to start over from step 1\).
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
@@ -293,7 +293,7 @@ _**Step 8. Copy Key Pair**_
 
 After the IAM key pair is created, _**make sure to copy the Access key ID/Secret access key and keep them safely**_.
 
-If you forget to copy them, there is no way to get them back \(you have to start over from step 1\).
+If you forget to copy them, there is no way to have them again \(you have to start over from step 1\).
 {{% /pageinfo %}}
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 

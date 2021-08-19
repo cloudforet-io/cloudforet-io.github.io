@@ -50,12 +50,12 @@ Select the target user. On the dropdown _**Action**_ menu, editing/deleting opti
 ![](/docs/using_spaceone_console/admin_guide/etc/user_management_img/user_management_img_06.png)
 
 
-If you click the update option, the user modification screen will pop up as shown below. To apply modifications you have made, click the _**Confirm**_ button.
+If you click the update option, the user modification message will pop up as shown below. To apply modifications you have made, click the _**Confirm**_ button.
 
 ![](/docs/using_spaceone_console/admin_guide/etc/user_management_img/user_management_img_07.png)
 
 
-If you click the delete option, the delete confirmation screen will pop up as shown below. Click the _**Confirm**_ button.
+If you click the delete option, the delete confirmation message will pop up as shown below. Click the _**Confirm**_ button.
 
 ![](/docs/using_spaceone_console/admin_guide/etc/user_management_img/user_management_img_08.png)
 

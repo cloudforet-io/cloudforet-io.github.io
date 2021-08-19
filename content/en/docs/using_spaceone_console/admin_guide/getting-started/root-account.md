@@ -47,7 +47,7 @@ description: >
 
 ![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_05.png)
 {{% pageinfo color=“300” %}}
-**STEP 3: Fill out `Domain Admin` user information, then click the `Confirm` button to save.**
+**STEP 3: Fill in `Domain Admin` user information, then click the `Confirm` button to save.**
 {{% /pageinfo %}}
 <!-- **STEP 3: `Domain Admin` 사용자 정보를 추가한 후,`Confirm` 버튼을 눌러 저장합니다.**  -->
 

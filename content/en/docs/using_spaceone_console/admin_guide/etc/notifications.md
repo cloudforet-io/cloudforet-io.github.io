@@ -92,7 +92,7 @@ To delete a channel, click the **trash can icon** on the right.
 
 ![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_15.png)
 
-Then the delete confirmation screen will pop up as shown below. Click the **Confirm** button.
+Then the delete confirmation message will pop up as shown below. Click the **Confirm** button.
 
 ![](/docs/using_spaceone_console/admin_guide/etc/notifications_img/notifications_img_16.png)
 
