@@ -1,8 +1,10 @@
 <nav class="navbar td-navbar">
-    <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-        {{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
-    </a>
-    <ul class="nav-list" id="main_navbar">
+    <h1>
+        <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+            {{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
+        </a>
+    </h1>
+    <ul class="nav-list nav-list1">
         {{ $p := . }}
         {{ $sections := slice "docs" "community" }}
         {{ range $sections }}
@@ -14,7 +16,7 @@
         {{ end }}
         {{ end }}
     </ul>
-    <ul class="nav-list" >
+    <ul class="nav-list nav-list2">
         {{ if  .Site.Params.versions }}
         <li class="nav-dropdown">
             {{ partial "navbar-version-selector.html" . }}

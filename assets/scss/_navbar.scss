@@ -4,6 +4,7 @@
   padding: 0 1.875rem;
   background-color: #001B33;
   color: $white;
+
   .navbar-brand {
     width: 11.6875rem;
     flex-shrink: 0;
@@ -14,6 +15,11 @@
       margin: 0;
     }
   }
+
+  .nav-list {
+    display: flex;
+  }
+
   .nav-link {
     position: relative;
     display: flex;
@@ -22,14 +28,33 @@
     padding: 0;
     font-size: 1.125rem;
     color: $white;
-    font-weight: 400;
+    font-weight: 500;
+    transition: color .2s;
+    &:not(.active):hover {
+      color: $navy300;
+      transition: color .2s;
+    }
+  }
+
+  .nav-dropdown {
+    position: relative;
+    .nav-link {
+      margin-right: 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+    .dropdown-toggle::after {
+      margin-left: 0.25rem;
+      content:"\f078";
+      font-family: 'Font Awesome 5 Free';
+      font-size: 0.6rem;
+      line-height: 1;
+      border: none;
+    }
   }
 }
-.nav-list {
-  display: flex;
-}
 
-#main_navbar {
+.nav-list1 {
   margin-right: auto;
   margin-left: 3.75rem;
   .nav-item {
@@ -39,53 +64,31 @@
     }
   }
   .nav-link {
-    @extend .nav-link;
-    &::after {
+    &.active::after {
       content: '';
       display: inline-block;
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 0;
+      width: 100%;
       height: 0.25rem;
       background-color: $white;
-      transition: width .2s;
     }
-    &:hover::after {
-      width: 100%;
-      transition: width .2s;
-    }
-    &.active::after {
-      width: 100%;
-    }
-  }
-}
-
-.nav-dropdown {
-  position: relative;
-  .nav-link {
-    @extend .nav-link;
-    margin-right: 1.875rem;
-  }
-  .dropdown-toggle::after {
-    content:"\f078";
-    font-family: 'Font Awesome 5 Free';
-    font-size: 0.6rem;
-    line-height: 1;
-    border: none;
   }
 }
 
 .nav-search {
+  width: 12.5rem;
+  margin-left: 0.625rem;
   .td-search-input {
     max-width: 100%;
     height: 2rem;
     background-color: $white;
-    border: solid 1px $white;
-    border-radius: 2px;
-    font-size: 0.875rem;
+    border: solid 0.0625rem $white;
+    border-radius: 0.125rem;
+    font-size: 1rem;
     &::placeholder {
-      color: $gray200;
+      color: $navy100;
     }
   }
 }
@@ -96,7 +99,7 @@
     .navbar-brand {
       padding: .5rem 0;
     }
-    #main_navbar {
+    .nav-list1 {
       flex-basis: 100%;
       margin: 0;
     }
