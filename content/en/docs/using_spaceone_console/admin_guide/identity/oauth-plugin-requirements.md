@@ -12,18 +12,13 @@ description: >
 
 ## Overall Process
 
-For companies using **Google Workspace**, `SpaceONE's OAuth plug-in` helps simplify the user sign-in process. To explore `SpaceONE's OAuth plug-in`, you need to complete the following steps in advance.
-
+For companies using **Google Workspace**, `SpaceONE's OAuth plug-in` helps simplify the user sign-in process. To explore `SpaceONE's OAuth plug-in`, you need to complete the following steps in advance.  
 * [Create OAuth Client ID](#create-oauth-client-id)
 * [Domain Verification](#domain-verification)
 
 ## Create OAuth Client ID
 
-SpaceONE requires an OAuth Client ID for you to access you company's **Google Workspace**. To do this, you need to add the followings to your **Google Workspace** in advance.
-
-* Create OAuth Client ID
-* Add JavaScript Origin
-* Add Redirect URL
+SpaceONE requires an OAuth Client ID for you to access your company's **Google Workspace**. For this access, you need to create an **OAuth Client ID**, and add **JavaScript Origin** and **Redirect URL** to your **Google Workspace**.
 
 {{% pageinfo color=“300” %}}
 **STEP 1: Log into Google Cloud Console &gt; API**.
