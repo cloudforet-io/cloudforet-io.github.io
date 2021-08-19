@@ -5,7 +5,7 @@ weight: 2
 url_dash_board: "" 
 date: 2021-06-11
 description: >
-   Creating and Managing API Keys.
+   Creating and Managing API Keys
 ---
 
 # API Key
