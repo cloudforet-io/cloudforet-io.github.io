@@ -42,10 +42,10 @@ By clicking the **`Profile`** menu, you can move to the User information window.
 
 Users can change all information, except _**ID**_ and _**Role**_. 
 
-After changing any information, click **`Save Changes`** to finish. 
+After changing any information, click **`Save Changes`**.
 
 A Success message will appear to confirm.
 
 ![](/docs/using_spaceone_console/user_guide/etc/profile_img/profile_04.png)
 
-###
+### 

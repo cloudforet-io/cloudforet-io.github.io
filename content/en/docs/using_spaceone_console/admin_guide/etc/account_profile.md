@@ -6,7 +6,6 @@ date: 2021-07-31
 description: >
     User Information
 ---
-
 # Account & Profile
 
 ## User Profile
@@ -41,7 +40,7 @@ By clicking the **`Profile`** menu, you can move to the User information window.
 
 Users can change all information, except _**ID**_ and _**Role**_. 
 
-After changing any information, click **`Save Changes`** to save. 
+After changing any information, click **`Save Changes`**.
 
 A Success message will appear to confirm.
 
