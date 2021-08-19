@@ -18,8 +18,7 @@ Container 빌드는 Dockerfile 을 활용해 docker build 를 수행 한 후,
 
 
 이미지를 저장소에 업로드 하였다면, Microservice 중 Repository 서비스에 해당 이미지를 등록해야 한다.   
-등록 API 는 Repository.plugin.register 를 사용하도록 한다.  
-(https://spaceone-dev.gitbook.io/spaceone-apis/repository/v1/plugin#register)
+등록 API 는 Repository.plugin.register 를 사용하도록 한다. ([SpaceONE API - (Repository) Plugin.Register](https://spaceone-dev.gitbook.io/spaceone-apis/repository/v1/plugin#register))
 
 ![](/docs/plugins/developer_guide/developer_guide_img/repository_plugin_register.png)
 
@@ -48,6 +47,26 @@ template: {}
 ~~~bash
 > spacectl exec register repository.Plugin -f plugin_slack_notification_protocol.yml
 ~~~
+
+이미지가 Repository 에 등록 완료되면 아래와 같이 확인 가능하다.
+
+~~~bash
+> spacectl list repository.Plugin -p repository_id=<REPOSITORY_ID>  -c plugin_id,name
+plugin_id                              | name
+----------------------------------------+------------------------------------------
+ plugin-aws-sns-monitoring-webhook      | AWS SNS Webhook
+ plugin-amorepacific-monitoring-webhook | Amore Pacific Webhook
+ plugin-email-notification-protocol     | Email Notification Protocol
+ plugin-grafana-monitoring-webhook      | Grafana Webhook
+ plugin-keycloak-oidc                   | Keycloak OIDC Auth Plugin
+ plugin-sms-notification-protocol       | SMS Notification Protocol
+ plugin-voicecall-notification-protocol | Voicecall Notification Protocol
+ plugin-slack-notification-protocol     | Slack Notification Protocol
+ plugin-telegram-notification-protocol  | Telegram Notification Protocol
+ 
+ Count: 9 / 9
+~~~
+
 
 spacectl 의 자세한 사용 방법은 해당 페이지에서 확인 가능하다.  
 [Spacectl CLI Tool](/docs/spaceone_cli_tool) 
