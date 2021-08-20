@@ -130,6 +130,8 @@ Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:80
 | ID | user1@example.com |
 | PASSWORD | User1234! |
 
+![](/docs/setup_manage_spaceone/install_guide/Quick_Install/Quick_Install_img/quick_install_image_04.png)
+
 ### Initial Setup
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
