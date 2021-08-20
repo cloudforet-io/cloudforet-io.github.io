@@ -33,8 +33,7 @@ When clicking the **`+ Create API Key`**, an API Key Creation Success message wi
 From this window you can **`Download JSON`** or **`Download YAML`**. 
 
 {{% alert title="" color="warning" %}}
-**It's essential that users _Download their JSON / Config files_ before they move on.
-Once you confirm and close this window(pop-up) you will NOT be able to download the same files again.**
+**It's essential that users _Download their JSON / Config files_ before they move on. Once you confirm and close this window(pop-up) you will NOT be able to download the same files again.**
 {{% /alert %}}
 
 ![](/docs/using_spaceone_console/user_guide/etc/api_key_img/api_02.png)
@@ -52,7 +51,7 @@ Change of status will be shown on the column **`State`**.
 ![](/docs/using_spaceone_console/user_guide/etc/api_key_img/api_03.png)
 
 {{% alert title="" color="info" %}}
-** Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
+**Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 
 <br/>
@@ -64,7 +63,7 @@ To delete API Keys select and use the **`Action`** list menu > **`Delete`** .
 ![](/docs/using_spaceone_console/user_guide/etc/api_key_img/api_04.png)
 
 {{% alert title="" color="info" %}}
-** Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
+**Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 
 <br/>
@@ -73,7 +72,9 @@ To delete API Keys select and use the **`Action`** list menu > **`Delete`** .
 
 Users can also check the EndPoints for the API Keys.
 
-Currently SpaceONE provides Endpoints of the following features :
+Currently SpaceONE provides Endpoints of the following features:
+
+<br/>
 
 * Cloud Services
 * Cloud Service Types
@@ -83,5 +84,6 @@ Currently SpaceONE provides Endpoints of the following features :
 * Regions    
 * Resource Groups
 * Servers
+
 
 ![](/docs/using_spaceone_console/user_guide/etc/api_key_img/api_05.png)
