@@ -19,10 +19,10 @@ Before you install SpaceONE, you need minikube, helm.
 Refer to the link below and proceed with the installation.
 
 <ul>
-<li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">Install Minikube</a></li>
-<li><a href="https://helm.sh/docs/intro/install/" target="_blank">Install Helm</a></li>
+    <li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">Install Minikube</a></li>
+    <li><a href="https://helm.sh/docs/intro/install/" target="_blank">Install Helm</a></li>
 </ul>
-minikube and kubectl recommend below v1.20.0<br><br>
+Using v.1.20.0 or below is recommended for minikube and kubectl.<br><br>
 
 **Check your version.**
 {{% pageinfo color=“300” %}}
@@ -133,3 +133,4 @@ Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:80
 ### Initial Setup
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
