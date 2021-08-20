@@ -18,13 +18,13 @@ On the service account page, you can easily manage credentials for each service 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_02.png)
 
 
-1. A list of **Service Providers**
-2. Adding  **Service Account**
-3. Deleting **Service Account** /Changing **Project**/Connecting to **Console**
-4. **Details**, **Tag**/**Credentials** Management, **Member**
-
-SpaceONE supports the following service providers:
-
+**1.** A list of **Service Providers**  
+**2.** Adding  **Service Account**  
+**3.** Deleting **Service Account** /Changing **Project**/Connecting to **Console**  
+**4.** **Details**, **Tag**/**Credentials** Management, **Member**  
+<br>
+**SpaceONE** supports the following service providers:  
+<br>
 * Alibaba Cloud
 * AWS
 * Azure
@@ -57,7 +57,7 @@ Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_04.png)
 
-* AWS Access Key \(Required\) : Access Key from IAM (Read Only policy is strongly recommended.)
+* AWS Access Key \(Required\) : Access Key from IAM (Read Only policy is strongly recommended).
 * AWS Secret Key \(Required\) : Secret key from IAM
 
 #### aws\_assume\_role
@@ -98,13 +98,13 @@ Select the target **Service Account**, then click **Action &gt; Delete/Change Pr
 
 ### Delete Service Account
 
-Enter the name of the **Service Account** you want to delete, then click the **Confirm** button.
+Enter a name of a **Service Account** you want to delete, then click the **Confirm** button.
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_08.png)
 
 ### Change Project
 
-Select the project you want to newly link a **Service Account**, then click the **Confirm** button.
+Select a project you want to newly link a **Service Account**, then click the **Confirm** button.
 
 ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_09.png)
 
