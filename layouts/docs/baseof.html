@@ -7,22 +7,20 @@
 <header>
     {{ partial "navbar.html" . }}
 </header>
-<div class="container-fluid td-outer">
+<div class="flex td-outer">
     <div class="td-main">
-        <div class="row flex-xl-nowrap">
-            <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-                {{ partial "sidebar.html" . }}
-            </aside>
-            <aside class="d-none d-xl-flex td-sidebar-toc d-print-none">
-                {{ partial "toc.html" . }}
-                {{ partial "page-meta-links.html" . }}
-            </aside>
-            <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-                {{ partial "version-banner.html" . }}
-                {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
-                {{ block "main" . }}{{ end }}
-            </main>
-        </div>
+        <aside class="td-sidebar d-print-none">
+            {{ partial "sidebar.html" . }}
+        </aside>
+        <aside class="d-none d-xl-flex td-sidebar-toc d-print-none">
+            {{ partial "toc.html" . }}
+            {{ partial "page-meta-links.html" . }}
+        </aside>
+        <main role="main">
+            {{ partial "version-banner.html" . }}
+            {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+            {{ block "main" . }}{{ end }}
+        </main>
     </div>
     {{ partial "footer.html" . }}
 </div>
