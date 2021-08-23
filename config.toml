@@ -107,7 +107,7 @@ blog = "/:section/:year/:month/:day/:slug/"
     style = "emacs"
     tabWidth = 4
   [markup.tableOfContents]
-    endLevel = 3
+    endLevel = 2
     ordered = false
     startLevel = 2
 
@@ -141,7 +141,6 @@ github_repo = "https://github.com/spaceone-dev/docs"
 
 body_classes = "georgia bg-near-white"
 navbar_logo = true
-sidebar_search_disable = false
 # Enable Algolia DocSearch
 algolia_docsearch = false
 # Enable Lunr.js offline search
