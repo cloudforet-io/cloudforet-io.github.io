@@ -32,7 +32,7 @@ pygmentsStyle = "tango"
 [languages]
 [languages.en]
     title = ""
-    description = "SpaceONE Documentation"
+    description = "SpaceONE Project"
     languageName ="English"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
@@ -42,7 +42,7 @@ pygmentsStyle = "tango"
 	[languages.ko]
 		title = ""
 		languageName ="Korean"
-		description = "스페이스원 사이트입니다."
+		description = "SpaceONE 프로젝트 입니다."
 		contentDir = "content/ko"
 		time_format_default = "2006.01.02"
 		time_format_blog = "2006.01.02"
@@ -131,7 +131,7 @@ version_menu = "Versions"
 copyright = "SpaceONE Team"
 #privacy_policy = "https://policies.google.com/privacy"
 
-latest = "v1.7.4"
+latest = "v1.8.2"
 #archived_version = true
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
@@ -190,9 +190,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 [[params.versions]]
-fullversion = "v1.7.4"
-version = "v1.7.4"
-githubbranch = "release-1.7.4"
+fullversion = "v1.8.2"
+version = "v1.8.2"
+githubbranch = "release-1.8.2"
 docsbranch = "master"
 # Set master version url
 url = "https://docs.spaceone.org/"
