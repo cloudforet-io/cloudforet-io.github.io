@@ -1,0 +1,261 @@
+//
+// Main navbar
+//
+
+.td-navbar-cover {
+
+  @include media-breakpoint-up(md) {
+    background: transparent !important;
+
+    .nav-link {
+      text-shadow: 1px 1px 2px $dark;
+    }
+
+  }
+
+  &.navbar-bg-onscroll .nav-link {
+    text-shadow: none;
+  }
+}
+
+.navbar-bg-onscroll {
+  background: $primary !important;
+  opacity: inherit;
+}
+
+.td-navbar {
+  min-height: 4rem;
+  margin: 0;
+  z-index: 32;
+
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    text-transform: none;
+    text-align: middle;
+
+    .nav-link {
+      display: inline-block;
+      margin-right: -30px;
+    }
+
+    svg {
+      display: inline-block;
+      margin: 0 10px;
+      height: 30px;
+    }
+  }
+
+  .nav-link {
+    text-transform: none;
+    font-weight: $font-weight-bold;
+  }
+
+  .td-search-input {
+    border: none;
+
+    @include placeholder {
+      color: $navbar-dark-color;
+    }
+  }
+
+  .dropdown {
+    min-width: 100px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-right: .5rem;
+    padding-left: .75rem;
+
+    .td-navbar-nav-scroll {
+      max-width: 100%;
+      height: 2.5rem;
+      margin-top: .25rem;
+      overflow: hidden;
+      font-size: .875rem;
+
+      .nav-link {
+        padding-right: .25rem;
+        padding-left: 0;
+      }
+
+      .navbar-nav {
+        padding-bottom: 2rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+
+      }
+    }
+  }
+}
+
+// Icons
+#main_navbar {
+  li i {
+    padding-right: 0.5em;
+
+    &::before {
+      display: inline-block;
+      text-align: center;
+      min-width: 1em;
+    }
+  }
+  .alert {
+    background-color: inherit;
+    padding:0;
+    color: $secondary;
+    border: 0;
+    font-weight: inherit;
+
+    &::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0d9";
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+  }
+}
+
+// Foldable sidebar menu
+nav.foldable-nav {
+
+  &#td-section-nav {
+    position: relative;
+  }
+
+  &#td-section-nav label {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .td-sidebar-nav__section, .with-child ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.foldable {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+
+  input:checked ~ ul.foldable {
+    max-height: 100vmax;
+    transition: max-height 1s ease-in-out;
+  }
+
+  input[type=checkbox] { display: none; }
+
+  .with-child, .without-child {
+    position: relative;
+    padding-left: 1rem;
+
+    a {
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      font-size: 0.8125rem;
+      line-height: 1.2;
+    }
+  }
+
+  .ul-0 > li {
+    padding-left: 0;
+  }
+
+  .ul-0 > li a:hover,
+  .ul-0 li > input:not(:checked) ~ label:hover::before,
+  .ul-0 li > input:not(:checked) ~ label:hover a  {
+    color: $navy500;
+    transition: color 0.5s;
+  }
+
+  .ul-1 > li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    > label > a {
+      font-size: 1.125rem;
+      padding-top: 0.9375rem;
+      padding-bottom: 0.9375rem;
+    }
+
+    &.with-child > label::before {
+      position: absolute;
+      top: 0.9rem;
+      right: 1rem;
+      font-family: "Font Awesome 5 Free";
+      content: "\f078";
+      color: $navy300;
+      font-size: 1rem;
+      transition: transform 0.5s;
+      cursor: pointer;
+    }
+
+    &.with-child > input:checked ~ label::before {
+      color: $blue100;
+      transform: rotate(180deg);
+      transition: transform 0.5s;
+    }
+
+    &.with-child > input:checked ~ label a {
+      color: $blue100;
+    }
+  }
+
+  .ul-2 .with-child {
+
+     > label::before {
+      display: inline-block;
+      position: absolute;
+      top: 0.3rem;
+      left: 0.125rem;
+      font-style: normal;
+      font-family: "Font Awesome 5 Free";
+      content: "\f0da";
+      font-size: 1rem;
+      color: $navy300;
+      font-size: 1rem;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+
+    > input:checked ~ label::before {
+      color: $blue100;
+      transform: rotate(90deg);
+      transition: transform 0.5s;
+    }
+
+    > input:checked ~ label a {
+      color: $blue100;
+    }
+
+  }
+
+  .ul-2 > li > label  > a {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .ul-3 > li > label > a {
+    padding-top: 0.5625rem;
+    padding-bottom: 0.5625rem;
+    font-size: 0.875rem;
+  }
+
+  .ul-4 > .with-child > label::before {
+    top: 0.08rem;
+  }
+}
