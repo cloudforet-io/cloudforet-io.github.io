@@ -1,44 +1,35 @@
 ---
-title: "Guides"
-linkTitle: "Guides"
-weight: 3
-date: 2021-07-31
+title: "Contribute"
+linkTitle: "Contribute"
+weight: 5
+date: 2021-08-04
 description: >
-    Guide to use SpaceONE
+    SpaceONE Development Guide
 
 ---
+
 
 <section id="users">
     <h5>SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. The open source project is hosted by MEGAZONE Cloud.</h5>
     <div class="col-container">
       <div class="col-nav">
         <center>
-          <h4>
-            <b>User Guide</b>
-          </h4>
+          <h5>
+            <b>About Plugin</b>
+          </h5>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br><br>
-          <a href="/docs/guides/user_guide" class="button">See User Guide</a>
+          <a href="/docs/plugins/about_plugin" class="button">See Plugin</a>
         </center>
       </div>
       <div class="col-nav">
         <center>
-          <h4>
-            <b>Admin Guide</b>
-          </h4>
+          <h5>
+            <b>Developer Guide</b>
+          </h5>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
-          <a href="/docs/guides/install_guide" class="button">See Admin Guide</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Advanced Topics</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br><br>
-          <a href="/docs/guides/install_guide" class="button">Advanced Topics</a>
+          <a href="/docs/plugins/developer_guide" class="button">See Developer Guide</a>
         </center>
       </div>
     </div>
@@ -47,4 +38,3 @@ description: >
 <style>
     {{< include "partner-style.css" >}}
 </style>
-
