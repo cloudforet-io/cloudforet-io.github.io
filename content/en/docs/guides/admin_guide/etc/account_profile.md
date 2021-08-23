@@ -36,7 +36,7 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 
 By clicking the **`Profile`** menu, you can move to the User information window.
 
-![Profile](/docs/guides/user_guide/etc/profile_img/profile_03.png)
+![Profile](/docs/guides/admin_guide/etc/profile_img/profile_03.png)
 
 Users can change all information, except _**ID**_ and _**Role**_. 
 
@@ -44,6 +44,6 @@ After changing any information, click **`Save Changes`**.
 
 A Success message will appear to confirm.
 
-![](/docs/guides/user_guide/etc/profile_img/profile_04.png)
+![](/docs/guides/admin_guide/etc/profile_img/profile_04.png)
 
 ### 
