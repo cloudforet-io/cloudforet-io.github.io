@@ -24,7 +24,7 @@ When you enter the first page of **`Project`**, you can see the entire project l
 
 <br/>
 
-![Project Management page Overview](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_01.png)
+![Project Management page Overview](/docs/guides/user_guide/project/project_group_management_img/pmg_01.png)
 
 
 <br/>
@@ -35,7 +35,7 @@ The search bar on the left allows you to search and move through **`Project Grou
 
 The search field, helps you easily search / create / edit the **`Project Group Tree`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_03.png)
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_03.png)
 
 <br/>
 
@@ -45,12 +45,12 @@ The search field, helps you easily search / create / edit the **`Project Group T
 
 You can also select a target project to navigate to the **`Project Dashboard`**.
 
-![Project Group &amp;gt; All Project](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_04.png)
+![Project Group &amp;gt; All Project](/docs/guides/user_guide/project/project_group_management_img/pmg_04.png)
 
 
 When you select a **`Project group`**, you can see all the projects that belong to the group at once.
 
-![Project Group&#xC744; &#xC120;&#xD0DD;&#xD55C; &#xACBD;&#xC6B0;](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_05.png)
+![Project Group&#xC744; &#xC120;&#xD0DD;&#xD55C; &#xACBD;&#xC6B0;](/docs/guides/user_guide/project/project_group_management_img/pmg_05.png)
 
 <br/>
 
@@ -59,8 +59,8 @@ When you select a **`Project group`**, you can see all the projects that belong 
 
 You can create **`Project Groups`** through the **`Create`** button. 
 
-![Project Group Create &#xBC84;&#xD2BC;](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_06.png)
-![Create Project Group](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_07.png)  
+![Project Group Create &#xBC84;&#xD2BC;](/docs/guides/user_guide/project/project_group_management_img/pmg_06.png)
+![Create Project Group](/docs/guides/user_guide/project/project_group_management_img/pmg_07.png)  
 
 
 **`Project Groups`** can have hierarchical relationships.  
@@ -69,7 +69,7 @@ If you want to create a **`Sub Project Group`** under a parent **`Project Group`
 
 click the **`+`** button like the following image : 
 
-![Sub Project Group &#xC785;&#xB825; &#xD654;&#xBA74;](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_08.png)  
+![Sub Project Group &#xC785;&#xB825; &#xD654;&#xBA74;](/docs/guides/user_guide/project/project_group_management_img/pmg_08.png)  
 
 <br/>
 
@@ -77,7 +77,7 @@ click the **`+`** button like the following image :
 
 From the **`Project Groups`** side bar, you can edit the directory of your **Project Groups and Projects**. Simply _**drag and drop**_ projects and groups to change the tree structure. After changing the directory please click **`Done`** to save.
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_15.png)  
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_15.png)  
 
 <br/>
 
@@ -86,13 +86,13 @@ From the **`Project Groups`** side bar, you can edit the directory of your **Pro
 
 If you want to edit / delete **Project Groups**, Click the  **`⚙`** button at the top right corner of the page.
 
-![Project Group &#xBCC0;&#xACBD;/&#xC0AD;&#xC81C;](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_09.png)  
+![Project Group &#xBCC0;&#xACBD;/&#xC0AD;&#xC81C;](/docs/guides/user_guide/project/project_group_management_img/pmg_09.png)  
 
-![Update Project Group](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_10.png)  
+![Update Project Group](/docs/guides/user_guide/project/project_group_management_img/pmg_10.png)  
 
 To delete a **Project Group**, you must delete all of the projects that are included in the target group in advance.
 
-![Delete Project Group](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_11.png)  
+![Delete Project Group](/docs/guides/user_guide/project/project_group_management_img/pmg_11.png)  
 
 <br/>
 
@@ -103,26 +103,26 @@ At SpaceONE users can not only set **`Roles`** for individual projects/users but
 
 Select a **`Project Group`** and click on the **`Manage Project Group Member`** icon.
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_16.png) 
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_16.png) 
 
 From the **`Manage Project Group Member`** page select **`+ Add`**. Then select user IDs that you'd like to give **Project Admin** roles to.
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_17.png)
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_17.png)
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_18.png) 
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_18.png) 
 
 After filling out the information select **`Confirm`** and check the success pop up message and list to see newly added role users. 
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_19.png) 
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_19.png) 
 
 You can also **Upate** and **Delete** these Roles through the **`Action`** list menu.
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_20.png) 
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_20.png) 
 
 {{% alert title="" color="info" %}}
 During this process you can only grant users **Project Admin** roles. 
 
-However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/using_spaceone_console/advanced_topics/user-role).
+However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/guides/advanced_topics/user-role).
 {{% /alert %}}
 
 <br/>
@@ -132,14 +132,14 @@ However if you would like to see further details about different **Users Role ty
 
 To see a summary of the projects included in a group, select a **Project Group**.
 
-![Project List](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_12.png)  
+![Project List](/docs/guides/user_guide/project/project_group_management_img/pmg_12.png)  
 
 
 You can see a brief summary on how many **`Servers / Cloud services`** each project has. 
 
 You can also check your **Cloud `Service Account` Type**. 
 
-![](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_13.png)  
+![](/docs/guides/user_guide/project/project_group_management_img/pmg_13.png)  
 
 <br/>
 
@@ -148,7 +148,7 @@ You can also check your **Cloud `Service Account` Type**.
 
 The **`Search Bar`** helps you move quickly through **`Project Groups / Projects.`**
 
-![Project Search Bar](/docs/using_spaceone_console/user_guide/project/project_group_management_img/pmg_14.png)  
+![Project Search Bar](/docs/guides/user_guide/project/project_group_management_img/pmg_14.png)  
 
 The **`Search bar`** enables the following actions:  
 

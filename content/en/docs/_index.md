@@ -36,8 +36,8 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
           </h4>
 	  <br>SpaceONE supports multi-tenancy for managing enterprise-grade cloud resources with various plugins.
           <br><br>
-          <a href="/docs/using_spaceone_console/admin_guide" >Getting Started Admin</a> <br>
-          <a href="/docs/using_spaceone_console/user_guide" >Getting Started User</a> <br>
+          <a href="/docs/guides/admin_guide" >Getting Started Admin</a> <br>
+          <a href="/docs/guides/user_guide" >Getting Started User</a> <br>
           <a href="/docs/spaceone_cli" >Getting Started spacectl</a> <br><br>
           <a href="/docs/references/admin_guide" class="button">Getting Started Guide</a>
         </center>

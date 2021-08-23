@@ -22,7 +22,7 @@ The **`Project`** page allows you the following features:
     Users can check usage by resource classifications. Click on each classification icon to see the detailed informations.
 
 
-![Project Management Overview](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_01.png)
+![Project Management Overview](/docs/guides/user_guide/project/project_management_img/pm_01.png)
 
 <br/>
 
@@ -32,7 +32,7 @@ The **`Project`** page allows you the following features:
 
 Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_03.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_03.png)
 
 <br/>
 
@@ -40,7 +40,7 @@ Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`
 
 You can easily check on **`Alerts`** by their statuses. 
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_10.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_10.png)
 
 <br/>
 
@@ -48,7 +48,7 @@ You can easily check on **`Alerts`** by their statuses.
 
 You can easily check **`Billing Trends`**. Click on each service names to see details.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_09.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_09.png)
 
 <br/>
 
@@ -56,7 +56,7 @@ You can easily check **`Billing Trends`**. Click on each service names to see de
 
 You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_04.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_04.png)
 
 <br/>
 
@@ -64,7 +64,7 @@ You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notificati
 
 You can check resource usages from **`Service Accounts`** within the project. You can also check the amount of resources registered.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_05.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_05.png)
 
 <br/>
 
@@ -74,7 +74,7 @@ You can check resource usages from **`Service Accounts`** within the project. Yo
 
 Click on each update to go to the detailed status page.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_06.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_06.png)
 
 <br/>
 
@@ -84,7 +84,7 @@ You can check the major services from the **`Cloud Services`**.
 
 To see further details you can click on each service or the **`more >`** button.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_07.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_07.png)
 
 <br/>
 
@@ -92,7 +92,7 @@ To see further details you can click on each service or the **`more >`** button.
 
 You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **`Security`** , **`Fault Tolerance`** , and **`Service Limits`** from the **`Trusted Advisor`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_08.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_08.png)
 
 <br/>
 
@@ -102,19 +102,19 @@ You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **
 
 To do so, the users should be registered as a **`Project Admin`** in advance.
 
-![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_11.png)
+![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/guides/user_guide/project/project_management_img/pm_11.png)
 
 ### Add member
 
 When you click the **`Add`** button, you can see the **`Add Member`** pop up. You can add multiple users at once.
 
-![Add users to project](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_12.png)
+![Add users to project](/docs/guides/user_guide/project/project_management_img/pm_12.png)
 
 ### Delete member
 
 Select users you want to delete and click **`Action`** > **`Delete`**.
 
-![Delete member](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_13.png)
+![Delete member](/docs/guides/user_guide/project/project_management_img/pm_13.png)
 
 <br/>
 
@@ -124,7 +124,7 @@ Select users you want to delete and click **`Action`** > **`Delete`**.
 
 You can also manage Rules and Escalation Policies from **`Settings`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_14.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_14.png)
 
 <br/>
 
@@ -132,7 +132,7 @@ You can also manage Rules and Escalation Policies from **`Settings`**.
 
 Add notification channels such as, **`Slack Protocol`** **`Megazone Voice Call Protocol`** **`Megazone SMS Protocol`** **`SpaceONE User Channel`**.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_15.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_15.png)
 
 <br/>
 
@@ -142,7 +142,7 @@ During maintenances you can create or close a **`Maintenance Window`** to preven
 
 Click **`Create Maintenance Window`** and select a schedule.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_16.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_16.png)
 
 <br/>
 
@@ -150,6 +150,6 @@ Click **`Create Maintenance Window`** and select a schedule.
 
 You can **`add`** or **`delete`** Tags in your project. Click the **`Edit`** button to do so.
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_17.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_17.png)
 
-![](/docs/using_spaceone_console/user_guide/project/project_management_img/pm_18.png)
+![](/docs/guides/user_guide/project/project_management_img/pm_18.png)

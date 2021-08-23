@@ -25,8 +25,8 @@ Slack App-Level token gives you the ability to handle things that relate to your
 1. Visit [here](https://api.slack.com/apps) and create a new slack app. Fill out your App Name and select the development workspace where you'll play around and build your app.
 
 2. `App-Level-Token` section shows the information of tokens which allow your slack app to use features that apply to SpaceONE notification events. Click `Generate Token and Scopes`. Copy the Token information in somewhere. <br>
-![slack_generate_app_level_token.png](/docs/using_spaceone_console/user_guide/notification/notification_img/slack_generate_app_level_token.png) <br>
-![slack_copy.png](/docs/content/en/docs/using_spaceone_console/user_guide/notification/notification_img/slack_copy_app_token.png)
+![slack_generate_app_level_token.png](/docs/guides/user_guide/notification/notification_img/slack_generate_app_level_token.png) <br>
+![slack_copy.png](/docs/content/en/docs/guides/user_guide/notification/notification_img/slack_copy_app_token.png)
 
 <br>
 3. Go to `Basic Information` section, you can install your app by click on `Install to Workspace` button.  
@@ -49,11 +49,11 @@ Bot users are automated user accounts you can message with directly. You can eve
 ## Add Slack Channel to your Project / User in SpaceONE 
 Go to `SpaceONE Console` > `Project` which you want to get alerts through Slack. 
 <br>
-![telegram_spaceone_console.png](/docs/using_spaceone_console/user_guide/notification/notification_img/telegram_spaceone_consol.png) <br>
+![telegram_spaceone_console.png](/docs/guides/user_guide/notification/notification_img/telegram_spaceone_consol.png) <br>
 <br>
 Set information above.
 <br>
-![slack_add_info.png](/docs/using_spaceone_console/user_guide/notification/notification_img/slack_add_info.png)
+![slack_add_info.png](/docs/guides/user_guide/notification/notification_img/slack_add_info.png)
 
 Save and Test, now you are ready for SpaceONE Journey with Slack notification channel.
 

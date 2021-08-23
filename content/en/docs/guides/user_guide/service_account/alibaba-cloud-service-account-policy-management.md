@@ -37,7 +37,7 @@ Otherwise, you can add more restrictions per resources or actions. One of the us
 
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(110).png)
+![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(110).png)
 
 {{% pageinfo color=“300” %}}
 
@@ -54,7 +54,7 @@ You need AccessKey pairs to enter Alibaba Cloud Credentials in the SpaceOne. If 
    * If the AccessKey pair is disclosed or lost, you must create a new one. Currently, you can create a maximum of two AccessKey pairs.
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(105).png)
+![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(105).png)
 
 {{% pageinfo color=“300” %}}
 
@@ -71,7 +71,7 @@ You need AccessKey pairs to enter Alibaba Cloud Credentials in the SpaceOne. If 
 
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(108).png)
+![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(108).png)
 
 {{% pageinfo color=“300” %}}
 
@@ -95,12 +95,12 @@ Click **`Create AccessKey`** in the _Authentication_ tap.
 
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(106).png)
+![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(106).png)
 
 {{% pageinfo color=“300” %}}
 You will receive _Create AccessKey popup_, and click **`Copy`** below the blue box to copy your _**AccessKey Pair**_ information. Click **`Close`** to close the popup window.
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/alibaba/image(109).png)
+![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(109).png)
 
 ### 

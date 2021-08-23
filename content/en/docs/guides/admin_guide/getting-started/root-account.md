@@ -19,15 +19,15 @@ description: >
 
 **STEP 1: SpaceONE 에 접속한  , `Sign in for Root Account`  로 Sign-in 합니다.** -->
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_01.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_01.png)
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_02.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_02.png)
 {{% pageinfo color=“300” %}}
 **STEP 2: Click the `SpaceShip` icon at the top right corner of the SpaceONE console to check the applied admin role.**
 {{% /pageinfo %}}
 <!-- **STEP 2: SpaceONE console 의 우측 상단의 `SpaceShip` 아이콘을 클릭해 적용된 admin role을 확인합니다.** -->
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_03.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_03.png)
 
 ## Create Domain Admin
 
@@ -39,22 +39,22 @@ description: >
 
 **STEP 1: 상단 navigation의 `Identity` - `User` 를 클릭합니다.**  -->
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_04.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_04.png)
 {{% pageinfo color=“300” %}}
 **STEP 2: Click the `+Add` button to add a Domain Admin user.**
 {{% /pageinfo %}}
 <!-- **STEP 2:  `+Add` 버튼을 클릭해 Domain Admin 사용자를 추가합니다.** -->
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_05.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_05.png)
 {{% pageinfo color=“300” %}}
 **STEP 3: Fill in `Domain Admin` user information, then click the `Confirm` button to save.**
 {{% /pageinfo %}}
 <!-- **STEP 3: `Domain Admin` 사용자 정보를 추가한 후,`Confirm` 버튼을 눌러 저장합니다.**  -->
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_06.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_06.png)
 {{% pageinfo color=“300” %}}
 **STEP 4: You can see the details of the `Domain Admin` user on the `User Management` page.**
 {{% /pageinfo %}}
 <!-- **STEP 4: 상단의`Identity` - `User` 에서  적용된 내용을 확인할 수 있습니다.** -->
-![](/docs/using_spaceone_console/admin_guide/getting-started/root-account_img/root-account_img_07.png)
+![](/docs/guides/admin_guide/getting-started/root-account_img/root-account_img_07.png)
 

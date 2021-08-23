@@ -10,7 +10,7 @@ description: >
 
 # Billing Quick Start
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_01.png)
+![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_01.png)
 
 <br/>
 
@@ -94,7 +94,7 @@ Select your **Hyper Billing** Service Provider, then click **Add**.
 **If _`Hyper Billing` does not appear_ in your Service Providers List, please contact the SpaceONE Domain Administrator.**
 {{% /alert %}}
 
-![Register billing service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_02.png)
+![Register billing service account](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_02.png)
 
 <br/>
 
@@ -103,7 +103,7 @@ Select your **Hyper Billing** Service Provider, then click **Add**.
 #### 2. Base Information
 Fill in Base Informations, like 'Name' and 'Tags'.
 
-![Name of service account](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
+![Name of service account](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
 
 <br/>
 
@@ -119,7 +119,7 @@ The **`Credentials`** can be received from the Billing Service Provider.
 
 The Credentials given by Billing Service Provider, will be consisted with **"Account", "Email" and "Key"** informations. Fill out those informations correctly.
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
+![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
 
 <br/>
 
@@ -137,7 +137,7 @@ Select one of your projects that match the service account, and billing service.
 
 When you're done please **`Save`**. 
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
+![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
 
 {{% alert title="" color="info" %}}
 **If you have several billing accounts, simply repeat the steps from :**
@@ -158,12 +158,12 @@ you will be able to see the **`Billing Information`** from the **main dashboard*
 * **Main Dashboard** > Overall Billing information
     * An integrated summation of all the billing accounts will be shown on the main dashboard.
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_06.png)
+![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_06.png)
 
 <br/>
 
 * **Seperate Project Pages** > Project Billing information
     * Each project page will provides its own billing information after you've registered a billing service account and assigned it to a project.
 
-![](/docs/using_spaceone_console/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_07.png)
+![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_07.png)
 

@@ -13,7 +13,7 @@ At **SpaceONE**, our mission is to accelerate the **Multi-Cloud** Native Technol
 <br/>
 We are a Cloud management platform that enables integrating all **Multi-Clouds** regardless of the platforms, in order to boost and maximize your operational efficiency in management.
 
-![](/docs/using_spaceone_console/admin_guide/img/admin_guide_main_01.png)
+![](/docs/guides/admin_guide/img/admin_guide_main_01.png)
 
 <br/>
 

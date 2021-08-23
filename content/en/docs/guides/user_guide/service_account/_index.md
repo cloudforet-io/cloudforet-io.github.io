@@ -13,9 +13,9 @@ description: >
 
 On the service account page, you can easily manage credentials for each service provider. Multi cloud resources are collected based on these credentials.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_01.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_01.png)
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_02.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_02.png)
 
 
 **1.** A list of **Service Providers**  
@@ -43,7 +43,7 @@ To add a **Service Account**, you need to enter a **Name** and an **Account ID**
 
 ### Base Information
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_03.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_03.png)
 
 * Name : Name of **Service Account**
 * Account ID : Root Account ID \(12-digits\)
@@ -55,14 +55,14 @@ Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_
 
 #### aws\_access\_key  
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_04.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_04.png)
 
 * AWS Access Key \(Required\) : Access Key from IAM (Read Only policy is strongly recommended).
 * AWS Secret Key \(Required\) : Secret key from IAM
 
 #### aws\_assume\_role
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_05.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_05.png)
 
 * AWS Access Key \(Required\) : Access key from IAM to assume a role
 * AWS Secret Key \(Required\) : Secret key from IAM to assume a role
@@ -72,7 +72,7 @@ Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_
 
 Select a project in which a **Service Account** will be placed. Collected resources from the **Service Account** will be included to the project automatically.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_06.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_06.png)
 
 * To create a **Project**, click the **+ Create Project** button.
 
@@ -94,25 +94,25 @@ You can delete a **Service Account** or change a **Project** linked to a certain
 
 Select the target **Service Account**, then click **Action &gt; Delete/Change Project**.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_07.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_07.png)
 
 ### Delete Service Account
 
 Enter a name of a **Service Account** you want to delete, then click the **Confirm** button.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_08.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_08.png)
 
 ### Change Project
 
 Select a project you want to newly link a **Service Account**, then click the **Confirm** button.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_09.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_09.png)
 
 ## Link to AWS Console
 
 Select the target **Service Account**, then click **Action &gt; Connect to Console**.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_10.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_10.png)
 
 To access AWS console, you must be logged into AWS console in advance. \(AWS Console SSO is not available.\)
 
@@ -124,26 +124,26 @@ Using the **Status** tab, you can browse details of a **Service Account**.
 
 You can see detailed information of a **Service Account** on the **Details** tab. 
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_11.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_11.png)
 
 ### Tag
 
 By clicking the **Edit** button, **Tags** for a **Service Account** can be added or deleted.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_12.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_12.png)
 
 Afer clicking the **+ Add Tags** button, enter a **Key** and a **Value**, then click the **Save** button. 
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_13.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_13.png)
 
 ### Credentials
 
 **Credentials** that contain key information can be added or deleted.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_14.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_14.png)
 
 ### Member
 
 On the **Member** tab, you can see who is participating in the project.
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/service_account_img_15.png)
+![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_15.png)

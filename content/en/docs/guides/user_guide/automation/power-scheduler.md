@@ -44,7 +44,7 @@ Before creating Power Scheduler modify your existing policy, For detailed proces
 
 ## Power Scheduler Dashboard
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(89).png)
+![](/docs/guides/user_guide/automation/automation_img/image(89).png)
 
 **Scheduler list by Projects**
 
@@ -58,7 +58,7 @@ User can search status of power scheduling by project name.
 
 Items of power scheduler information for each projects are below.
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(89).png)
+![](/docs/guides/user_guide/automation/automation_img/image(89).png)
 
 <table>
   <thead>
@@ -116,7 +116,7 @@ In scheduler Calendar, User can manage this functions
 
 #### Scheduling Time
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(83).png)
+![](/docs/guides/user_guide/automation/automation_img/image(83).png)
 
 User can see scheduler timetable. x-axis is date, y-axis is time to be controlled. By clicking _**This weeks**_ jump to power scheduling plan for this weeks.
 
@@ -128,7 +128,7 @@ Move to next/previous weeks by  `< >` buttons right upper side of table.
 
 **• Priority by Resource Group**
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(87).png)
+![](/docs/guides/user_guide/automation/automation_img/image(87).png)
 
 Scheduler is consist of several resource group. Each resource group has step defined by priority.
 
@@ -138,7 +138,7 @@ Create/Deleting _**Resource Group**_ is done by clicking _**Edit button &gt; + A
 
 **Resource Groups In Same Priority**
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/11-power-scheduler-resource-group-01.png)
+![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-01.png)
 
 There is sequence of changing status between resource groups in same priority.
 
@@ -148,7 +148,7 @@ Upper position resource group changes first, and Lower position goes second.
 
 _**Details of Resource Group**_
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/11-power-scheduler-resource-group-wizard.png)
+![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-wizard.png)
 
 Detailed status resource group is done by clicking _**Name of Resource Group.**_
 
@@ -162,7 +162,7 @@ Detailed status resource group is done by clicking _**Name of Resource Group.**_
 
 ### Creating New Scheduler
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/power-scheduler-creating.png)
+![](/docs/guides/user_guide/automation/automation_img/power-scheduler-creating.png)
 
 By Clicking _**Creating New Scheduler**_ button, New scheduler editing screen appears. 
 
@@ -244,13 +244,13 @@ Confirm the input information, then click _**save**_ button.
 
 ### Schedule Deletion
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(90).png)
+![](/docs/guides/user_guide/automation/automation_img/image(90).png)
 
 By clicking _**Trash Can**_ button, Scheduler can be deleted.
 
 ### Scheduler Edit
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/image(92).png)
+![](/docs/guides/user_guide/automation/automation_img/image(92).png)
 
 <table>
   <thead>
@@ -329,7 +329,7 @@ Cloud resources has a such a condition that does not support within power schedu
 
 * Action Cycle & status  
 
-![](/docs/using_spaceone_console/user_guide/automation/automation_img/screen-shot-2021-04-26-at-20.59.27.png)
+![](/docs/guides/user_guide/automation/automation_img/screen-shot-2021-04-26-at-20.59.27.png)
 
 
 

@@ -16,8 +16,8 @@ You can integrate server resources scattered by various regions or projects.
 
 Through this page, Users can easily check detail status of servers without login to cloud console repeatedly nor connect to terminal.
 
-![Server List](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_01.png)
-![Server Detail](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_02.png)
+![Server List](/docs/guides/user_guide/invetory/server_img/server_image_01.png)
+![Server Detail](/docs/guides/user_guide/invetory/server_img/server_image_02.png)
 
 Server page is consist of several functions.
 
@@ -31,17 +31,17 @@ User can query server easily by suggested keywords.
 
 SpaceONE classify automatically based on major keywords. This allows users to conveniently search through the collected information.
 
-![Server search bar](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_03.png)
+![Server search bar](/docs/guides/user_guide/invetory/server_img/server_image_03.png)
 
 Supported keywords contains all parameters defined for server.
 
-![searching keyword list](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_04.png)
+![searching keyword list](/docs/guides/user_guide/invetory/server_img/server_image_04.png)
 
 ## Server list
 
 Server information collected based on multi clouds.
 
-![Server Example](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_05.png)
+![Server Example](/docs/guides/user_guide/invetory/server_img/server_image_05.png)
 
 List of supported information is as follows.
 
@@ -126,7 +126,7 @@ List of supported information is as follows.
 
 By clicking _**Action**_ button after selection of server, you can manage server status.
 
-![Action](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_06.png)
+![Action](/docs/guides/user_guide/invetory/server_img/server_image_06.png)
 
 * Delete : Remove from server list. Server will not be deleted physically. They will be added after re-collected by collectors.
 * Change Project : Change project which server is belong to. 
@@ -136,15 +136,15 @@ By clicking _**Action**_ button after selection of server, you can manage server
 
 All information within tables will be exported (Excel format).
 
-![Excel Export](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_07.png)
+![Excel Export](/docs/guides/user_guide/invetory/server_img/server_image_07.png)
 
 ### Custom Table
 
 You can personalize the fields that you want to display in the Resource List table.
 
-![](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_08.png)
+![](/docs/guides/user_guide/invetory/server_img/server_image_08.png)
 
-You can check details of Cumstom Table here. <a href ="/docs/using_spaceone_console/advanced_topics/custom-table">Custom Table Details.</a>
+You can check details of Cumstom Table here. <a href ="/docs/guides/advanced_topics/custom-table">Custom Table Details.</a>
 
 ## Tab
 
@@ -153,25 +153,25 @@ Provides detailed information about the server. They are consists of tabs below.
 ### Details
 Additional information provided\(Machine image, Security group, etc..\)
 
-![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_09.png)
+![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_09.png)
 
 ### Tag
 Grouping servers by tagging.
 
-![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_10.png)
+![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_10.png)
 
 ### Member
 List of server managers.
 
-![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_11.png)
+![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_11.png)
 
 ### History
 History of resources collected.
 
-![Details tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_12.png)
+![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_12.png)
 
 ### Monitoring
 Monitoring metric informations provided by external monitoring sources\(CloudWatch, Azure Monitor, StackDriver..\).
 
-![Monitoring tab](/docs/using_spaceone_console/user_guide/invetory/server_img/server_image_13.png)
+![Monitoring tab](/docs/guides/user_guide/invetory/server_img/server_image_13.png)
 

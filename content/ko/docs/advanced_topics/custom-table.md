@@ -18,7 +18,7 @@ After setting up, it will be shown based on the set field when the resources in 
 ### Set Field
 
 Click the 'Settings' button at the top right of the table where you want to change the field to display **Field Personalization Modal**.
-![](/docs/using_spaceone_console/advanced_topics/img/01_server_page.png)
+![](/docs/guides/advanced_topics/img/01_server_page.png)
 
 <!-- {% hint style="info" %} -->
 The tables currently supported for field personalization are as follows.
@@ -33,29 +33,29 @@ The tables currently supported for field personalization are as follows.
 The 'Field Properties' on the left side of the Field Personalization Modal shows a list of default fields.<br>
 The currently selected fields are displayed as selected. you can select any field.
 
-![](/docs/using_spaceone_console/advanced_topics/img/02_field_select.png)
+![](/docs/guides/advanced_topics/img/02_field_select.png)
 
 #### Add tag Field
 
 If you select a tag on the right, the selected tag is added as a field.
-![](/docs/using_spaceone_console/advanced_topics/img/03_add_tag_field.png)
+![](/docs/guides/advanced_topics/img/03_add_tag_field.png)
 
 #### Delete tag Field
 
 Added tag fields can be deleted by clicking the individual Delete button on the right, or the entire tag field can be deleted via the Clear All button on the top right. Or you can uncheck and delete it from the list of 'field properties' on the left.
 
-![](/docs/using_spaceone_console/advanced_topics/img/04_delete_tag_field.png)
+![](/docs/guides/advanced_topics/img/04_delete_tag_field.png)
 
 #### Search Field
 
 If you have a large list of fields that are difficult to scroll to find, you can search and find them.
 
-![](/docs/using_spaceone_console/advanced_topics/img/05_field_search.png)
+![](/docs/guides/advanced_topics/img/05_field_search.png)
 
 #### Change Field order
 
 You can change the order by drag & drop.
-![](/docs/using_spaceone_console/advanced_topics/img/06_field_drag.png)
+![](/docs/guides/advanced_topics/img/06_field_drag.png)
 
 #### Return to default Field\(recommended Field\)
 
@@ -68,5 +68,5 @@ Before you change the field, you must select at least one field
 
 ### Check a list of resources with personalized Field
 
-![](/docs/using_spaceone_console/advanced_topics/img/07_server_page_after_custom.png)
+![](/docs/guides/advanced_topics/img/07_server_page_after_custom.png)
 

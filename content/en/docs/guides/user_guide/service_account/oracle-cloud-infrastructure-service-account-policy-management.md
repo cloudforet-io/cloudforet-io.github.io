@@ -31,7 +31,7 @@ Go to Identity &gt; Users and Click   `CREATE USER`
 
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/create_user_button.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/create_user_button.png)
 
 {{% pageinfo color=“300” %}}
 
@@ -40,7 +40,7 @@ Go to Identity &gt; Users and Click   `CREATE USER`
 Click  `IAM User`and Enter  _**User name**_ and _**Description**_ 
 
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/create_iam_user.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/create_iam_user.png)
 
 {{% pageinfo color=“300” %}}
 
@@ -49,7 +49,7 @@ Click  `IAM User`and Enter  _**User name**_ and _**Description**_
 Go to Identity &gt; Users &gt; User &gt; Details &gt; API Keys. Click  `Add API Key`  and add or Generate API Key. 
 
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/add_or_generate_api_key.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/add_or_generate_api_key.png)
 
 
 {{% pageinfo color=“300” %}}
@@ -59,7 +59,7 @@ Go to Identity &gt; Users &gt; User &gt; Details &gt; API Keys. Click  `Add API 
 Go to Identity &gt; Groups and Click   `Create Group` Button. Enter _**Name**_ and _**Description**_.
 
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/create_group.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/create_group.png)
 
 {{% pageinfo color=“300” %}}
 
@@ -68,7 +68,7 @@ Go to Identity &gt; Groups and Click   `Create Group` Button. Enter _**Name**_ a
 Go to Group that you made and Click  `Add User to Group`  Button and add IAM User. 
 
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/add_user_to_group.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/add_user_to_group.png)
 
 {{% pageinfo color=“300” %}}
 
@@ -77,7 +77,7 @@ Go to Group that you made and Click  `Add User to Group`  Button and add IAM Use
 Go to Identity &gt; Policies and Click  `Create Policy` Button.
 
 {{% /pageinfo %}}
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/move_to_policies.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/move_to_policies.png)
 
 
 {{% pageinfo color=“300” %}}
@@ -93,6 +93,6 @@ Allow group {group_name} to inspect compartments in tenancy
 Allow group {group_name} to inspect tenancies in tenancy
 ```
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/oracle/create_policies.png)
+![](/docs/guides/user_guide/service_account/service_account_img/oracle/create_policies.png)
 
 ### 

@@ -62,7 +62,7 @@ If you want to know more about Azure's access control policies, visit this [link
 Select a Resource Group for which the Collector will collect resources from.
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(104).png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/image(104).png)
 
 {{% pageinfo color="300" %}}
 **STEP 2. Add Access Control (IAM)**
@@ -70,7 +70,7 @@ Select a Resource Group for which the Collector will collect resources from.
 Click `Access control (IAM)` from the Navigation tab, and then select the `+Add` button.
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(102).png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/image(102).png)
 
 
 {{% pageinfo color="300" %}}
@@ -79,7 +79,7 @@ Click `Access control (IAM)` from the Navigation tab, and then select the `+Add`
 Assign the **Reader Role** to the account. The account should have access permission in this resource group.
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(103).png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/image(103).png)
 
 <br/>
 <br/>
@@ -102,19 +102,19 @@ The client \(`client_id`\) with object id \(`object_id`\) does not have authoriz
 **STEP 1: Log in to the Azure Portal and move to Subscriptions** 
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-15-at-18.55.14.png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-15-at-18.55.14.png)
 
 {{% pageinfo color="300" %}}
 **STEP 2: Click on the subscription Name where the resources are located.**
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image(114).png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/image(114).png)
 
 {{% pageinfo color="300" %}}
 **STEP 3: Click the `+Add role assignment` button.**
 {{% /pageinfo %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-2-.png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/image-2-.png)
 
 {{% pageinfo color="300" %}}
 **STEP 4: Add role assignments**
@@ -129,12 +129,12 @@ Add the Role Assignments like the following description and image.
   * `App that has registered on Active directory` at **Azure ActiveDirectory > Registered App**  
 {{% /pageinfo %}}
   
-  ![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
+  ![](/docs/guides/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
 
 {{% alert title="Note" color="info" %}}
   'Service Account names' and 'Registered App names' are easily confused.   
   Please, Select Registered App as shown below \(Check the Icon Differences\).  
 {{% /alert %}}
 
-![](/docs/using_spaceone_console/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-16-at-12.38.16.png)
+![](/docs/guides/user_guide/service_account/service_account_img/azure/screen-shot-2021-04-16-at-12.38.16.png)
 
