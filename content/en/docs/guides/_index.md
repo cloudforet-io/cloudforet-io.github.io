@@ -18,7 +18,7 @@ description: >
           </h4>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br><br>
-          <a href="/docs/guides/user_guide" class="button">See User Guide</a>
+          <a href="/docs/guides/user_guide" class="button">User Guide</a>
         </center>
       </div>
       <div class="col-nav">
@@ -28,7 +28,7 @@ description: >
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
-          <a href="/docs/guides/install_guide" class="button">See Admin Guide</a>
+          <a href="/docs/guides/admin_guide" class="button">Admin Guide</a>
         </center>
       </div>
       <div class="col-nav">
@@ -38,7 +38,17 @@ description: >
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
-          <a href="/docs/guides/install_guide" class="button">Advanced Topics</a>
+          <a href="/docs/guides/advanced_topics" class="button">Advanced Topics</a>
+        </center>
+      </div>
+      <div class="col-nav">
+        <center>
+          <h4>
+            <b>Spacectl CLI</b>
+          </h4>
+          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
+          <br><br><br>
+          <a href="/docs/guides/spaceone_cli" class="button">Spacectl</a>
         </center>
       </div>
     </div>
