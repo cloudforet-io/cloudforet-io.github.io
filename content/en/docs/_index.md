@@ -19,38 +19,38 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
       <div class="col-nav">
         <center>
           <h4>
-            <b>Before Begin</b>
+            <b>Concepts</b>
           </h4>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >About SpaceONE</a> <br>
-          <a href="/docs/using_spaceone_console/user_guide" >Understanding Roles</a> <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" class="button">See User Guide</a>
+          <a href="/docs/concepts" >About SpaceONE</a> <br>
+          <a href="/docs/concepts/key-differentiators" >Key Differentiators</a> <br>
+          <a href="/docs/references/supported_technologies" >Supported Technologies</a> <br><br>
+          <a href="/docs/concepts" class="button">See Concepts</a>
         </center>
       </div>
       <div class="col-nav">
         <center>
           <h4>
-            <b>How To Use</b>
+            <b>Guides</b>
           </h4>
 	  <br>SpaceONE supports multi-tenancy for managing enterprise-grade cloud resources with various plugins.
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >Getting Started Admin</a> <br>
+          <a href="/docs/using_spaceone_console/admin_guide" >Getting Started Admin</a> <br>
           <a href="/docs/using_spaceone_console/user_guide" >Getting Started User</a> <br>
-          <a href="/docs/using_spaceone_console/user_guide" >Spacectl</a> <br>
-          <a href="/docs/using_spaceone_console/user_guide" >SpaceONE APIs</a> <br><br>
-          <a href="/docs/using_spaceone_console/admin_guide" class="button">See Admin User Guide</a>
+          <a href="/docs/spaceone_cli" >Getting Started spacectl</a> <br><br>
+          <a href="/docs/references/admin_guide" class="button">Getting Started Guide</a>
         </center>
       </div>
       <div class="col-nav">
         <center>
           <h4>
-            <b>Setup SpaceONE</b>
+            <b>Setup</b>
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >Install Guide</a> <br><br>
-          <a href="/docs/spaceone_cli_tool/" class="button">See Install Guide</a>
+          <a href="/docs/setup_manage_spaceone/install_guide" >Install Guide</a> <br><br>
+          <a href="/docs/spaceone_cli_tool/" class="button">Install Guide</a>
         </center>
       </div>
     </div>
@@ -58,12 +58,15 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
       <div class="col-nav">
         <center>
           <h4>
-            <b>Explore Universe</b>
+            <b>Integration</b>
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >Supported Technologies</a> <br><br>
-          <a href="/docs/setup_manage_spaceone/" class="button">Explore</a>
+          <a href="/docs/references/apis" >API Guides</a> <br>
+          <a href="/docs/references/integration/core_services" >Core Services</a> <br>
+          <a href="/docs/references/integration/design_system" >Design System</a> <br>
+          <a href="/docs/references/integration/dynamic_layout" >Dynamic Layout</a> <br><br>
+          <a href="/docs/references/integration/" class="button">Integration Guide</a>
         </center>
       </div>
       <div class="col-nav">
@@ -73,20 +76,20 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >Core Concepts</a> <br>
-          <a href="/docs/using_spaceone_console/user_guide" >Plugin Development Guide</a> <br><br>
-          <a href="/docs/apis/" class="button">View Details</a>
+          <a href="/docs/plugins/about_plugin" >About plugins</a> <br>
+          <a href="/docs/plugins/developer_guide" >Developer guide</a> <br><br>
+          <a href="/docs/plugins/" class="button">Plugin Dev Guide</a>
         </center>
       </div>  
       <div class="col-nav">
         <center>
           <h4>
-            <b>Release Notes</b>
+            <b>References</b>
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/using_spaceone_console/user_guide" >See Release Notes</a> <br><br>
-          <a href="/docs/core_concepts/" class="button">View Latests</a>
+          <a href="/docs/references/release_notes" >Release Notes</a> <br><br>
+          <a href="/docs/references/release_notes" class="button">References</a>
         </center>
       </div>
     </div>
