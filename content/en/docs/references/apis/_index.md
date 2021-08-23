@@ -1,7 +1,7 @@
 ---
 title: "APIs"
 linkTitle: "APIs"
-weight: 5
+weight: 2
 date: 2021-07-31
 description: >
     SpaceONE API References

@@ -1,6 +1,6 @@
 ---
-title: "About SpaceONE"
-linkTitle: "About SpaceONE"
+title: "Concepts"
+linkTitle: "Concepts"
 weight: 1
 date: 2021-08-05
 description: >
