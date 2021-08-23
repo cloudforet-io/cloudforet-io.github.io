@@ -19,7 +19,7 @@ description: >
           </h5>
           <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
           <br><br><br>
-          <a href="/docs/plugins/about_plugin" class="button">See Plugin</a>
+          <a href="/docs/contribute/plugins/about_plugin" class="button">See Plugin</a>
         </center>
       </div>
       <div class="col-nav">
@@ -29,7 +29,7 @@ description: >
           </h5>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br><br>
-          <a href="/docs/plugins/developer_guide" class="button">See Developer Guide</a>
+          <a href="/docs/contribute/plugins/developer_guide" class="button">See Developer Guide</a>
         </center>
       </div>
     </div>

@@ -15,7 +15,7 @@ interface 는 각각의 서비스 마다 구조가 다르다. 이에 대한 gRPC
 이때, Auth Plugin 의 Interface 정보를 확인해 보면 아래와 같다. ([SpaceONE API - Identity Auth](https://spaceone-dev.gitbook.io/spaceone-apis/identity/plugin/auth ))
 <br><br><br><br>
 
-![](/docs/plugins/developer_guide/developer_guide_img/identity_auth_api.png)
+![](/docs/contribute/plugins/developer_guide/developer_guide_img/identity_auth_api.png)
 
 <br><br>
 Identity 의 Auth Plugin 개발을 위해서는 총 4개의 API interface 를 구현해야 한다.  
