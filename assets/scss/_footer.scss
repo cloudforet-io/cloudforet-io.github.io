@@ -1,0 +1,45 @@
+footer {
+  //position: relative;
+  //z-index: 100;
+  //border: solid 1px red;
+  //background-color: $navy000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: calc(100vw - 16.3125rem - 16.3125rem);
+  border-top: solid 0.0625rem $navy100;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: $navy400;
+
+  .license {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.3;
+  }
+
+  .external-link {
+    display: flex;
+
+    a {
+      display: inline-block;
+      padding-right: 0.3rem;
+      padding-left: 0.3rem;
+      color: currentColor;
+    }
+
+    i {
+      color: currentColor;
+      font-size: 2.0625rem;
+
+      &.fa-comment-dots {
+        padding-right: 0.2rem;
+        font-size: 2rem;
+      }
+    }
+
+  }
+}

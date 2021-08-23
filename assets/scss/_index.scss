@@ -30,6 +30,20 @@ html {
 //}
 
 // common
+// theme color for home
+$primary100: #F8F8FC;
+$primary200: #EBEAF6;
+$primary300: #A8A5CE;
+$primary400: #8C81D1;
+$gray100: #F7F7F7;
+$gray200: #CED0D6;
+$gray300: #A7A9B2;
+$gray400: #5F616D;
+
+body {
+  background-color: $navy000;
+}
+
 .td-home {
   background-color: #090a0f;
   font-family: "Work Sans";
@@ -45,7 +59,7 @@ html {
     padding-top: 12.5rem;
   }
   h3 {
-    color: $pink;
+    color: $pink100;
     font-weight: 600;
     opacity: 0.8;
     font-size: 1.625rem;
@@ -275,7 +289,7 @@ html {
       background-color: $gray300;
       border-radius: 50%;
       &.active {
-        background-color: $green;
+        background-color: $green100;
       }
     }
   }
