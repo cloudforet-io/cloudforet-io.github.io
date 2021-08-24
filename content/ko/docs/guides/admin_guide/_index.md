@@ -20,6 +20,7 @@ We are a Cloud management platform that enables integrating all **Multi-Clouds**
 ### **Contents**
 
 * **Getting started with the Role you assigned -** _SpaceONE has different roles by the authority._
+  
     * [**Domain Admin**](getting-started/domain-admin)
     * [**Root Account**](getting-started/root-account)
     * [**Billing Quick Start**](getting-started/billing-quick-start)
