@@ -4,12 +4,12 @@ linkTitle: "Alert"
 weight: 2
 date: 2021-08-10
 description: >
-    Monitoring Service
+    Managing alert message for whole domain
 ---
 
 # Overview
-수신된 모든 Alert을 관할 수 있습니다. 각기 할당된 Role에 따라 관리 가능한 Alert이 구분됩니다.
-Project Admin Role인 경우, 소속된 Proejct에서 발생한 Alert List를 관리할 수 있습니다.
+수신된 모든 Alert을 관리할 수 있습니다. 각기 할당된 Role에 따라 관리 가능한 Alert이 구분됩니다.
+Project Admin Role인 경우, 소속된 Project에서 발생한 Alert List를 관리할 수 있습니다.
 Domain Admin 이상의 Role인 경우, 도메인 내에서 발생한 모든 Alert를 관리할 수 있습니다.
 
 ![Alert list_main]()
