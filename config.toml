@@ -226,8 +226,4 @@ url = "https://docs.spaceone.org/"
 	url = "https://www.spaceone.org/"
 	icon = "fas fa-user-astronaut"
         desc = "SpaceONE main page"
-# [[params.links.developer]]
-	# name = "Developer mailing list"
-	# url = "https://example.org/mail"
-	# icon = "fa fa-envelope"
-        # desc = "Discuss development issues around the project"
+
