@@ -4,7 +4,7 @@ linkTitle: "Slack Protocol"
 weight: 1
 date: 2021-08-13
 description: >
-    Slack Protocol Service
+    Notification plugin slack protocol configuration guide
 ---
 
 # Create Slack Bot Alert Channel
