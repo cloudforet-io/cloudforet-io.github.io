@@ -28,7 +28,6 @@ Refer to the link below and proceed with the installation.<br><br>
 &emsp;
 <a href="https://helm.sh/docs/intro/install/" target="_blank">https://helm.sh/docs/intro/install/</a><br><br>
 
-
 Using v1.20.0 or below is recommended for minikube and kubectl.
 
 Check your version.
@@ -146,5 +145,3 @@ Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:80
 ### Initial Setup
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
