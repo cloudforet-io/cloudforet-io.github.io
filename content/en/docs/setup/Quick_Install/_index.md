@@ -8,7 +8,7 @@ description: >
 
 ---
 
-# Overview
+## Overview
 
 Quick install guide for SpaceONE with minikube.
 
@@ -16,15 +16,22 @@ Quick install guide for SpaceONE with minikube.
 
 Before you install SpaceONE, you need minikube, helm.
 
-Refer to the link below and proceed with the installation.
+Refer to the link below and proceed with the installation.<br><br>
 
-<ul>
-    <li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">Install Minikube</a></li>
-    <li><a href="https://helm.sh/docs/intro/install/" target="_blank">Install Helm</a></li>
-</ul>
-Using v.1.20.0 or below is recommended for minikube and kubectl.<br><br>
+**Minikube Install**
 
-**Check your version.**
+&emsp;
+<a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">https://minikube.sigs.k8s.io/docs/start/</a>
+
+**Helm Install**
+
+&emsp;
+<a href="https://helm.sh/docs/intro/install/" target="_blank">https://helm.sh/docs/intro/install/</a><br><br>
+
+
+Using v1.20.0 or below is recommended for minikube and kubectl.
+
+Check your version.
 {{% pageinfo color=“300” %}}
 **minikube version**
 
@@ -32,10 +39,6 @@ Using v.1.20.0 or below is recommended for minikube and kubectl.<br><br>
 {{% /pageinfo %}}
 
 ## Start Minikube
- 
-{{% pageinfo color=“300” %}}
-**cd ~/.kube**
-{{% /pageinfo %}}
 
 {{% pageinfo color=“300” %}}
 **minikube start --driver=docker**
@@ -44,9 +47,9 @@ Using v.1.20.0 or below is recommended for minikube and kubectl.<br><br>
 ## Install SpaceONE
 
 ### Namespace
-Create namespace for SpaceONE
+Create namespace for SpaceONE.
 
-SpaceONE needs two namespaces, **spaceone** and **root-supervisor**
+SpaceONE needs two namespaces, **spaceone** and **root-supervisor**.
 
 {{% pageinfo color=“300” %}}
 **kubectl create ns spaceone**
@@ -54,18 +57,19 @@ SpaceONE needs two namespaces, **spaceone** and **root-supervisor**
 **kubectl create ns root-supervisor**
 {{% /pageinfo %}}
 
-You can check namespace list.
+Check namespace list.
 
 {{% pageinfo color=“300” %}}
 **kubectl get ns**
 {{% /pageinfo %}}
+
+### Helm Chart
+
 I highly recommend changing kubenetes namespace to spaceone.
 
 {{% pageinfo color=“300” %}}
 **kubectl config set-context $(kubectl config current-context) --namespace spaceone**
 {{% /pageinfo %}}
-
-### Helm Chart
 
 Register helm chart for SpaceONE.
 
@@ -82,7 +86,7 @@ Register helm chart for SpaceONE.
 {{% pageinfo color=“300” %}}
 **git clone https://github.com/spaceone-dev/charts.git**
 
-**cd charts/examples/v1.8.1**
+**cd charts/examples/v1.7.4**
 
 **helm install spaceone -f minikube.yaml spaceone/spaceone --devel**
 {{% /pageinfo %}}
@@ -93,7 +97,8 @@ You need to check status of pods.
 
 {{% /pageinfo %}}
 
-![](/docs/setup_manage_spaceone/install_guide/Quick_Install/Quick_Install_img/quick_install_image_01.png)
+<img src="/docs/setup/Quick_Install/Quick_Install_img/quick_install_image_01.png" width="800" height="500">
+<br><br>
 
 Check STATUS **Completed** or **Running**.
 
@@ -102,37 +107,44 @@ It will take some time, so please wait.
 ## Port-forwarding
 
 Since you have installed SpaceONE in your minikube, you don’t have any ingress like ALB or NGINX ingress controller.
-We use **kubectl port-forward**
+We use **kubectl port-forward**.
 
 {{% pageinfo color=“300” %}}
 **kubectl port-forward -n spaceone svc/console 8080:80**
 
 **kubectl port-forward -n spaceone svc/console-api 8081:80**
+
 {{% /pageinfo %}}
 
 Open two terminal then run at separate terminal.
-<br>
-![](/docs/setup_manage_spaceone/install_guide/Quick_Install/Quick_Install_img/quick_install_image_02.png)
 
-**Tips**
+<img src="/docs/setup/Quick_Install/Quick_Install_img/quick_install_image_02.png" width="800" height="100">
 
+### Tips
 You can run in the background by adding & at the end.
-<br>
-![](/docs/setup_manage_spaceone/install_guide/Quick_Install/Quick_Install_img/quick_install_image_03.png)
 
+{{% pageinfo color=“300” %}}
+**kubectl port-forward -n spaceone svc/console 8080:80 &**
 
-## Enjoy
+**kubectl port-forward -n spaceone svc/console-api 8081:80 &**
+
+{{% /pageinfo %}}
+
+## Start SpaceONE
+
+### Log-In
 
 Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:8080</a>)
 
-| Key | Value |
+| | |
 |---   | ---   |
 | ID | user1@example.com |
 | PASSWORD | User1234! |
 
-![](/docs/setup_manage_spaceone/install_guide/Quick_Install/Quick_Install_img/quick_install_image_04.png)
+<img src="/docs/setup/Quick_Install/Quick_Install_img/quick_install_image_03.png" width="800" height="500">
 
 ### Initial Setup
 
-<iframe width="750" height="400" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="500" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
