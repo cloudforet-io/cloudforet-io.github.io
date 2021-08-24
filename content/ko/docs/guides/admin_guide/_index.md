@@ -27,7 +27,7 @@ We are a Cloud management platform that enables integrating all **Multi-Clouds**
     * [**Metric Collector Quick Start**](getting-started/metric-collector-quick-start)
 * **Set up IAM & manage users**
     * [**User**](identity/user)
-    * [**Profile**](etc/profile)
+    * [**Profile**](my_account/profile)
 * **Managing Plugin**
     * [**Collector**](plugin/collector)
     * [**Collector History**](management/collector-history)
