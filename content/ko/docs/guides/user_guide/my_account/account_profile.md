@@ -18,9 +18,9 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 
 <br/>
 
-![User Profile](/docs/guides/user_guide/etc/profile_img/profile_01.png)
+![User Profile](/ko/docs/guides/user_guide/my_account/profile_img/profile_01.png)
 
-![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xBCF4; &#xC870;&#xD68C;](/docs/guides/user_guide/etc/profile_img/profile_02.png)
+![사용자 정보 조회](/ko/docs/guides/user_guide/my_account/profile_img/profile_02.png)
 
 
 {{% pageinfo color="300" %}}
@@ -38,7 +38,7 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 
 By clicking the **`Profile`** menu, you can move to the User information window.
 
-![Profile](/docs/guides/user_guide/etc/profile_img/profile_03.png)
+![Profile](/ko/docs/guides/user_guide/my_account/profile_img/profile_03.png)
 
 Users can change all information, except _**ID**_ and _**Role**_. 
 
@@ -46,6 +46,6 @@ After changing any information, click **`Save Changes`**.
 
 A Success message will appear to confirm.
 
-![](/docs/guides/user_guide/etc/profile_img/profile_04.png)
+![](/ko/docs/guides/user_guide/my_account/profile_img/profile_04.png)
 
 ### 

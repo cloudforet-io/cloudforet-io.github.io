@@ -9,33 +9,29 @@ description: >
 
 
 
-#List Alert
+# List Alert
 
 
-###All Alerts
+### All Alerts
 
 
-###Assigned to me
+### Assigned to me
 
 
-###Using Filters
+### Using Filters
 
 
-#Processing Alert Message
+# Processing Alert Message
 
-##Acknowledge
+## Acknowledge
 
-##Resolve
+## Resolve
 
-##Delete
+## Delete
 
-##Create Alert Manually
-
-
-#Alert Details
+## Create Alert Manually
 
 
-
-
+# Alert Details
 
 
