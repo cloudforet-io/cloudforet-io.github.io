@@ -1,6 +1,6 @@
 ---
 title: "Documentation"
-linkTitle: "SpaceONE Documentation"
+linkTitle: "Documentaion Home"
 no_list: true
 main_menu: true
 ---

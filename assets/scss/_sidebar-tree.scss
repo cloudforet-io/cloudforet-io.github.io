@@ -1,0 +1,125 @@
+//
+// Left side navigation
+//
+
+#td-sidebar-menu {
+  overflow: auto;
+  height: 100%;
+}
+
+.td-sidebar-nav {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  @include media-breakpoint-up(md) {
+    display: block !important;
+  }
+
+  &__section {
+    li {
+      list-style: none;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    padding-left: 0;
+  }
+
+  &__section-title {
+    display: block;
+
+    .active {
+      color: $blue100 !important;
+    }
+
+    a {
+      color: $navy300;
+    }
+  }
+
+  .td-sidebar-link {
+    display: block;
+  }
+
+  a:not(.active):hover {
+    //color: $navy500;
+    text-decoration: none;
+  }
+
+  //&.with-child > input ~ label:hover::before {
+  //  color: $navy500;
+  //}
+
+  .dropdown {
+    a {
+      color: $gray-700;
+    }
+
+    .nav-link {
+      padding: 0 0 1rem;
+    }
+  }
+
+  & > .td-sidebar-nav__section {
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+  }
+
+  li i { // Layout of icons
+    padding-right: 0.5em;
+    &:before{
+      display: inline-block;
+      text-align: center;
+      min-width: 1em;
+    }
+  }
+
+  .td-sidebar-link.tree-root {
+    margin-top: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    color: $navy300;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+}
+
+.td-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $td-sidebar-height;
+  height: 100vh;
+  padding-top: $navbar-height;
+  background-color: $white;
+  box-shadow: 0.125rem 0px 0.125rem rgba(0, 27, 51, 0.1);
+
+  &__search {
+    padding: 1rem;
+    background-color: #001B33;
+  }
+
+  &__toggle {
+    color: $white !important;
+  }
+
+  #content-desktop {display: block;}
+  #content-mobile {display: none;}
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding-top: 0;
+    padding-bottom: 0;
+
+
+    #content-desktop {display: none;}
+    #content-mobile {display: block;}
+  }
+}

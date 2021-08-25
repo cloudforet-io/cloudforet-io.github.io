@@ -5,15 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  top: $navbar-height;
+  top: 0;
   right: 0;
   z-index: 5;
   width: 15.3125rem;
-  height: calc(100vh - #{$navbar-height});
-  padding-top: 1.5rem;
+  height: 100vh;
+  padding-top: $navbar-height;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
   vertical-align: top;
   background-color: $navy000;
   order: 2;
@@ -23,6 +22,7 @@
 
   overflow: auto;
   flex-shrink: 1;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 
   .label {

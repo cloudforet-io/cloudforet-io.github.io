@@ -1,9 +1,4 @@
-footer {
-  //position: relative;
-  //z-index: 100;
-  //border: solid 1px red;
-  //background-color: $navy000;
-
+footer:not(.footer-home) {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -11,6 +6,7 @@ footer {
   border-top: solid 0.0625rem $navy100;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
+  margin-top: auto;
   margin-right: auto;
   margin-left: auto;
   color: $navy400;
@@ -41,5 +37,10 @@ footer {
       }
     }
 
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100vw;
+    padding: 1rem;
   }
 }

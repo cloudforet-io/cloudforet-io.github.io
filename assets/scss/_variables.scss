@@ -66,6 +66,7 @@ $border-color: $gray-300 !default;
 $td-sidebar-tree-root-color: $primary !default;
 $td-sidebar-bg-color: rgba($primary, 0.03) !default;
 $td-sidebar-border-color: $border-color !default;
+$td-sidebar-height: 15.3125rem;
 
 // Background colors for the sections on home page etc. It is a paint by number system, starting at 0, where the number is taken from the shortcode's ordinal
 // if not provided by the user.
