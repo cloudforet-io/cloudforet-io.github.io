@@ -88,15 +88,21 @@ blog = "/:section/:year/:month/:day/:slug/"
 
 # Options to using html inline markdown  
 [markup]
-  [markup.goldmark]
-  [markup.goldmark.extensions]
-     definitionList = true
-     table = true
-     typographer = false
-    [markup.goldmark.renderer]
-      unsafe = true
+defaultMarkdownHandler = 'goldmark'
 
-  [markup.highlight]
+[markup.goldmark]
+[markup.goldmark.extensions]
+    footnote = true
+    definitionList = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = false
+[markup.goldmark.renderer]
+    unsafe = true
+
+[markup.highlight]
     codeFences = true
     guessSyntax = false
     hl_Lines = ""
@@ -106,8 +112,9 @@ blog = "/:section/:year/:month/:day/:slug/"
     noClasses = true
     style = "emacs"
     tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 2
+
+[markup.tableOfContents]
+    endLevel = 3
     ordered = false
     startLevel = 2
 
