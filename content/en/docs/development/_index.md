@@ -48,7 +48,7 @@ description: >
 </section>
 
 
-## Front End Integration
+## UI/UX Integration
 
 <section id="developmentlanding2">
     <div class="col-container">
