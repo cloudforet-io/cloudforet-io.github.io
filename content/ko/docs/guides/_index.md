@@ -8,7 +8,7 @@ description: >
 
 ---
 
-<section id="users">
+<section id="userguidelanding1">
     <h5>SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. The open source project is hosted by MEGAZONE Cloud.</h5>
     <div class="col-container">
       <div class="col-nav">
@@ -31,6 +31,10 @@ description: >
           <a href="/docs/guides/admin_guide" class="button">Admin Guide</a>
         </center>
       </div>
+    </div>
+</section>
+<section id="userguidelanding2">
+    <div class="col-container">
       <div class="col-nav">
         <center>
           <h4>
