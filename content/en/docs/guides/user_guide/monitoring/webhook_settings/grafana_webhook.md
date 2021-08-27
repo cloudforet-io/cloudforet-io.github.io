@@ -19,19 +19,19 @@ Please, Set Alerting Channel for following Steps
 
 **Step 1. Drive to Grafana on Browser**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.02.35.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_01.png)
 
 **Step 2. Drive to Notification Channel on Browser**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.03.36.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_02.png)
 
 **Step 3. Click `New Channel`**  **button**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.08.49.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_03.png)
 
 **Step 4. Type name,** [**Webhook URL\(from SapceONE\)**](./#webhook-list) **and Select Type of Channel as webhook**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.23.34.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_04.png)
 
 {% hint style="info" %}
 **Grafana** Webhook URL accepts only **HTTP** Protocol**.**  
@@ -42,9 +42,9 @@ Please,** type ****URL ****as **HTTP  like`http://monitoring-webhook.dev.spaceon
 
 **Step 5. Please, Test URL by clicking Test button and then you will see pop up message that says Test Notification Sent.**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.34.10.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_05.png)
 
 **Step 5. Click Save button and Check Notification Channel has successfully created.**
 
-![](../../../.gitbook/assets/screen-shot-2021-06-29-at-15.36.35.png)
+![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_06.png)
 
