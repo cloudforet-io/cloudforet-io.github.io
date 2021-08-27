@@ -38,7 +38,8 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
           <br><br>
           <a href="/docs/guides/admin_guide" >Getting Started Admin</a> <br>
           <a href="/docs/guides/user_guide" >Getting Started User</a> <br>
-          <a href="/docs/spaceone_cli" >Getting Started spacectl</a> <br><br>
+          <a href="/docs/guides/advanced_topics" >Advanced Topics</a> <br>
+          <a href="/docs/guides/spaceone_cli" >Getting Started spacectl</a> <br><br>
           <a href="/docs/references/admin_guide" class="button">Getting Started Guide</a>
         </center>
       </div>
@@ -49,8 +50,8 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/setup_manage_spaceone/install_guide" >Install Guide</a> <br><br>
-          <a href="/docs/spaceone_cli_tool/" class="button">Install Guide</a>
+          <a href="/docs/setup/quick_install/" >Install Guide</a> <br><br>
+          <a href="/docs/setup/" class="button">Install Guide</a>
         </center>
       </div>
     </div>
@@ -58,15 +59,16 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
       <div class="col-nav">
         <center>
           <h4>
-            <b>Integration</b>
+            <b>Development</b>
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/references/apis" >API Guides</a> <br>
-          <a href="/docs/references/integration/core_services" >Core Services</a> <br>
-          <a href="/docs/references/integration/design_system" >Design System</a> <br>
-          <a href="/docs/references/integration/dynamic_layout" >Dynamic Layout</a> <br><br>
-          <a href="/docs/references/integration/" class="button">Integration Guide</a>
+          <a href="/docs/development/apis" >API Guides</a> <br>
+          <a href="/docs/development/core_services" >Core Services</a> <br>
+          <a href="/docs/development/design_system" >Design System</a> <br>
+          <a href="/docs/development/dynamic_layout" >Dynamic Layout</a> <br>
+          <a href="/docs/development/plugins/about_plugin" >About plugins</a> <br><br>
+          <a href="/docs/development/" class="button">Integration Guide</a>
         </center>
       </div>
       <div class="col-nav">
@@ -76,9 +78,7 @@ SpaceONE is open source Multi Cloud Management Platform for resource monitoring,
           </h4>
           <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
           <br><br>
-          <a href="/docs/plugins/about_plugin" >About plugins</a> <br>
-          <a href="/docs/plugins/developer_guide" >Developer guide</a> <br><br>
-          <a href="/docs/plugins/" class="button">Plugin Dev Guide</a>
+          <a href="/docs/contribute/" class="button">Contribution Guide</a>
         </center>
       </div>  
       <div class="col-nav">
