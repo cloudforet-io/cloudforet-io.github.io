@@ -14,7 +14,7 @@ description: >
 
 **SpaceONE,** our mission is accelerate the **Cloud Native** Technology for sustainable Ecosystem.  **SpaceONE** is the Cloud management platform that enables integrating all **Multi-Clouds** regardless of the platforms which boosts and maximizes your operational efficiency in management.
 
-![](/img/doc/docimg1.png)
+![](/docs/guides/user_guide/img/docimg1.png)
 
 #### 1. **Dashboard**
 
