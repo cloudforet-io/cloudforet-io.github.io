@@ -8,9 +8,6 @@ description: >
     Quick and easy guide to Exporting data from SpaceONE to Excel.
 ---
 
-
-# Excel Export
-
 ## Overview
 
 <!-- Excel export 기능을 이용해 손쉽게 SpaceONE내부의 데이터를 추출할 수 있습니다. -->

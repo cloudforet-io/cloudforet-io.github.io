@@ -7,8 +7,6 @@ description: >
     Quick Guide for user to set up Monitoring Metric Collectors for Servers over Clouds.
 ---
 
-# Metric Collector Quick Start
-
 ## How to Set up
 
 Collect monitoring metric data through the following steps:

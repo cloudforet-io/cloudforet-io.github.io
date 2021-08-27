@@ -7,8 +7,6 @@ description: >
     The role of Domain Admin creates the top-level project group, creates users, and sets the main collector.
 ---
 
-# Domain Admin
-
 ## Sign-in
 
 **`Domain Admin`** log-in through the normal login page. E-mail received from the **`Root Account`** has stated detailed the connection methods such as Single Sign On, ID/PW, or Google Oauth2.

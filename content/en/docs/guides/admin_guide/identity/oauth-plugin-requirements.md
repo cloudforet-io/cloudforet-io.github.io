@@ -7,9 +7,6 @@ description: >
   Quick Guide for user to set up the environment settings guide to link with google oAuth plugin
 ---
 
-
-# OAuth Plugin Requirements
-
 ## Overall Process
 
 For companies using **Google Workspace**, `SpaceONE's OAuth plug-in` helps simplify the user sign-in process. To explore `SpaceONE's OAuth plug-in`, you need to complete the following steps in advance.  

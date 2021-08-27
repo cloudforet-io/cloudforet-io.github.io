@@ -8,8 +8,6 @@ description: >
     Managing Power Status of Cloud Resources in projects
 ---
 
-# Power Scheduler
-
 ## Overall
 
 In Power Scheduler page, User can schedule power status of target cloud resources. 

@@ -8,8 +8,6 @@ description: >
     View and manage Project Groups.
 ---
 
-# Project Group Management
-
 ## Overview  
 
 The **`Project`** menu, allows users to manage **`Project groups`** and **`Projects`**.

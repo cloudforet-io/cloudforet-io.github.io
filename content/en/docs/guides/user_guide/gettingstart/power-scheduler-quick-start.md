@@ -8,8 +8,6 @@ description: >
     Quick Guide for user easier to set up Power Scheduler
 ---
 
-# Power Scheduler Quick Start
-
 ![](/docs/guides/user_guide/gettingstart/power/ps1.png)
 
 ## How to Set up

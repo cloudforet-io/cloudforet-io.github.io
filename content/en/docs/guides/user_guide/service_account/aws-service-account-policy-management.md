@@ -8,10 +8,6 @@ description: >
     Details of API Security policy to use SpaceONE plugin
 ---
 
-
-
-# \(AWS\) Service Account Policy Management
-
 ## Service Account Policy
 
 Before creating a **Service Account**, you can modify your existing API policies.

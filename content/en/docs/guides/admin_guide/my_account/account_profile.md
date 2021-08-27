@@ -6,7 +6,6 @@ date: 2021-07-31
 description: >
     User Information
 ---
-# Account & Profile
 
 ## User Profile
 

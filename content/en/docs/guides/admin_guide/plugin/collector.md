@@ -7,8 +7,6 @@ description: >
     Creating Collectors. Collecting Cloud Resources.
 ---
 
-# Collector
-
 ## Overview
 
 Using _**Collector Plugins**_ in the SpaceONE marketplace, users can easily collect Cloud resources from various cloud providers.

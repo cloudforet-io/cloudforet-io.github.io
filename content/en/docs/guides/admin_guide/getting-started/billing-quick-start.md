@@ -7,9 +7,6 @@ description: >
     Quick Guide to help Users easily set up Billing Services
 ---
 
-
-# Billing Quick Start
-
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_01.png)
 
 <br/>

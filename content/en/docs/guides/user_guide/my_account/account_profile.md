@@ -8,8 +8,6 @@ description: >
     User Information
 ---
 
-# Account & Profile
-
 ## User Profile
 
 Users can view and modify their profile information through the **`Profile`** menu.

@@ -7,8 +7,6 @@ description: >
     Look up and manage the monthly change history of the collector.
 ---
 
-# Collector History
-
 ## Overview
 
 On the Collector History page, you can check the monthly changes of the various resources collected

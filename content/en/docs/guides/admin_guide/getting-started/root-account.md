@@ -7,8 +7,6 @@ description: >
     Root Account is the top level administrator for the entire system.
 ---
 
-# Root Account
-
 ## Sign-in
 
 **Root Account** is the top level administrator of the entire system and can be accessed on the **Sign in for Root Account login** page.

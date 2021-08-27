@@ -7,8 +7,6 @@ description: >
     Managing Notifications
 ---
 
-# Notifications
-
 ## Overview
 
 On the notification page, you can easily manage notification settings for SMS, voicecall, and Slack protocol channels.

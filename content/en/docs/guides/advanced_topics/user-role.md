@@ -7,8 +7,6 @@ description: >
     SpaceONE RBAC(Role Based Access Control)
 ---
 
-# User Role
-
 ## Overview
 
 

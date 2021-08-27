@@ -8,8 +8,6 @@ description: >
    Creating and Managing API Keys
 ---
 
-# API Key
-
 ## Creating API Keys
 
 Users can create and manage **API Keys** from the **`My Account`** side bar > **`API Keys`**.

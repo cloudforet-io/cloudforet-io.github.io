@@ -8,8 +8,6 @@ description: >
     Managing server resources
 ---
 
-# Server
-
 ## Overview  
 
 You can integrate server resources scattered by various regions or projects.

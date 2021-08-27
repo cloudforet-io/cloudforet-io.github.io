@@ -8,8 +8,6 @@ description: >
     View overall status of each project and Navigate to detailed cloud resources.
 ---
 
-# Project Management
-
 ## Overview 
 
 The **`Project`** page allows you the following features:

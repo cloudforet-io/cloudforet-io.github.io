@@ -7,7 +7,6 @@ date: 2021-06-10
 description: >
     Details of API Security policy to use SpaceONE plugin
 ---
-# \(Oracle Cloud Infrastructrue\) Identity and Access Management\(IAM\) Policy Management
 
 ## IAM Policy
 

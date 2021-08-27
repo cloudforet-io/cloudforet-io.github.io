@@ -8,8 +8,6 @@ description: >
     Overall cloud resources
 ---
 
-# CloudService
-
 ## Overview  
 
 Using various plugins in SpaceONE marketplace, Many cloud resources can be managed conveniently.

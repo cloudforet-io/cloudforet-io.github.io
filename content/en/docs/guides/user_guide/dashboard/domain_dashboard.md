@@ -8,8 +8,6 @@ description: >
     Domain Dashboard provides the full status of the Cloud Resources in your domain.
 ---
 
-# Domain Dashboard
-
 ## Overview
 
 The Dashboard is the first screen you will see when connecting to the **`SpaceONE`** service.

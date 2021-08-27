@@ -7,8 +7,6 @@ description: >
     Manage the fileds in the table you want to display.
 ---
 
-# Custom Table
-
 ## Overview
 
 You can personalize the fields that you want to display in the Resource List table.

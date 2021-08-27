@@ -7,8 +7,6 @@ description: >
     Managing Users
 ---
 
-# User Management
-
 ## Overview
 
 You can add, modify, delete, and enable/disable users on the _**User Management**_ page.
