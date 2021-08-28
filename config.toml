@@ -100,7 +100,7 @@ defaultMarkdownHandler = 'goldmark'
     taskList = true
     typographer = false
 [markup.goldmark.renderer]
-    unsafe = true
+    unsafe = false
 
 [markup.highlight]
     codeFences = true

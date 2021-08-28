@@ -7,34 +7,23 @@ description: >
     Notification Service
 ---
 
-# Overview
+## About Notification
 
 
 
 
-# Create Notification Channel
+## How It Works
 
 
 
-## Managing Subscription
+## 용어 정의
 
-
-
-### Channel Name
-
-
-### Subscribers
-
-
-### Notification Level
-
-
-### Schedule
-
-
-### Topics
-
-
+|용어|설명|
+|:--:|:--:|
+|Alarm||
+|Subscriber||
+|Channel||
+|Topic||
 
 
 

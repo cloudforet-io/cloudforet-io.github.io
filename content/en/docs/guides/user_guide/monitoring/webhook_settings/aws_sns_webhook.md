@@ -7,8 +7,6 @@ description: >
     Set up a Topic and Subscription at AWS SNS Service
 ---
 
-# AWS SNS
-
 ## Set up a SNS topic and Subscription
 
 To ****Connect **SpaceONE's Alert Manager,** Set up AWS SNS's Topic and its Subscriptions
