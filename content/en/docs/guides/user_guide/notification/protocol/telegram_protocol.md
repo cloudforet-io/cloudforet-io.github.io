@@ -1,10 +1,10 @@
 ---
 title: "Telegram Protocol"
 linkTitle: "Telegram Protocol"
-weight: 2
+weight: 5
 date: 2021-08-12
 description: >
-    Telegram Protocol Service
+    Notification Plugin Telegram Protocol Configuration Guide
 ---
 
 # Create Telegram Bot Alert Channel
