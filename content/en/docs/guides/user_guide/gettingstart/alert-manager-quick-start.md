@@ -140,11 +140,3 @@ _**Create New Policy**_ 버튼을 클릭 합니다.
 Escalation Policy의 상세 설명은  [Escalation Policy 상세 설정 가이드](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)를 참고 해주세요.
 {{% /alert %}}
 
-## Alert Test
-
-
-
-
-
-
-

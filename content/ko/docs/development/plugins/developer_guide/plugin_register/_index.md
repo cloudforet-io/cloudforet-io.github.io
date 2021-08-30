@@ -28,7 +28,7 @@ image 값에는 이전에 빌드된 이미지 주소를 넣어준다.
 ~~~yaml
 name: Slack Notification Protocol
 service_type: notification.Protocol
-image: pyengine/plugin-slack-notification-protocol
+image: pyengine/plugin-slack-notification-protocol_settings
 capability:
   supported_schema:
   - slack_webhook
@@ -56,13 +56,13 @@ plugin_id                              | name
 ----------------------------------------+------------------------------------------
  plugin-aws-sns-monitoring-webhook      | AWS SNS Webhook
  plugin-amorepacific-monitoring-webhook | Amore Pacific Webhook
- plugin-email-notification-protocol     | Email Notification Protocol
+ plugin-email-notification-protocol_settings     | Email Notification Protocol
  plugin-grafana-monitoring-webhook      | Grafana Webhook
  plugin-keycloak-oidc                   | Keycloak OIDC Auth Plugin
- plugin-sms-notification-protocol       | SMS Notification Protocol
- plugin-voicecall-notification-protocol | Voicecall Notification Protocol
- plugin-slack-notification-protocol     | Slack Notification Protocol
- plugin-telegram-notification-protocol  | Telegram Notification Protocol
+ plugin-sms-notification-protocol_settings       | SMS Notification Protocol
+ plugin-voicecall-notification-protocol_settings | Voicecall Notification Protocol
+ plugin-slack-notification-protocol_settings     | Slack Notification Protocol
+ plugin-telegram-notification-protocol_settings  | Telegram Notification Protocol
  
  Count: 9 / 9
 ~~~

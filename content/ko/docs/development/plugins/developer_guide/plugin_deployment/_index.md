@@ -19,7 +19,7 @@ description:
 ---
 name: Slack Protocol
 plugin_info:
-  plugin_id: plugin-slack-notification-protocol
+  plugin_id: plugin-slack-notification-protocol_settings
   version: "1.0"
   options: {}
   schema: slack_webhook
@@ -44,7 +44,7 @@ version 에는 Dockerhub 와 같은 이미지 저장소에 실제 이미지 업�
 ~~~bash
 > k get po
 NAME                                                              READY   STATUS    RESTARTS   AGE
-plugin-slack-notification-protocol-zljrhvigwujiqfmn-bf6kgtqz   1/1     Running   0          1m
+plugin-slack-notification-protocol_settings-zljrhvigwujiqfmn-bf6kgtqz   1/1     Running   0          1m
 ~~~
 
 
