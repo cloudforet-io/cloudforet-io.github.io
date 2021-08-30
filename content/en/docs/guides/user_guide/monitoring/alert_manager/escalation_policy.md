@@ -13,7 +13,7 @@ description: >
 
 ![Escalation Policy Main](/docs/guides/user_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_img_01.png)
 
-관리자 설정으로 상세 내용은 Admin Guide의 [Escalation Policy](/ko/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/) 를 참고 하세요.
+설정으로 상세 내용은 Admin Guide의 [Escalation Policy](/ko/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/) 를 참고 하세요.
 
 
 

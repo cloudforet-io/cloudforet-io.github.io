@@ -131,14 +131,14 @@ Escalation Policy적용 되어 타 Project의 Member에도 알람이 전파 됩�
 _**`Alert Detail`**_ 을 통하지 않고 수신된 Alert의 상태를 간편하게 변경할 수 있습니다.
 여러개의 Alert를 복수로 지정하여 한번에 상태 변경도 가능 합니다.
 
-![Alert Status Change](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_06.png)
+![Alert Status Change](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_04.png)
 
 
 ### Acknowledge
 복수의 선택된 Alert을 _**Acknowledge**_ 상태로 전환할 수 있습니다. 
 상태 전환과 동시에 담당자를 지정할 수 있습니다.  
 
-![Alert Status Acknowledge](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_05.png)
+![Alert Status Acknowledge](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_06.png)
 
 ### Resolve
 복수의 선택된 Alert을 _**Resolve**_ 상태로 전환할 수 있습니다.
