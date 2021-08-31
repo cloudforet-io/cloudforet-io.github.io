@@ -8,4 +8,4 @@ description: >
 
 ---
 
-## [API References](https://spaceone-dev.gitbook.io/spaceone-apis/)
+[API References](https://spaceone-dev.gitbook.io/spaceone-apis/)

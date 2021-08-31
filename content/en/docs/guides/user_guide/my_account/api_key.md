@@ -20,6 +20,8 @@ To create an API Key simply click **`+ Create API Key`**.
 
 For further information you can read the _Handbook_ SpaceONE provides at the top right corner of the page. 
 
+<br>
+
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_01.png)
 
 <br/>
@@ -34,6 +36,8 @@ From this window you can **`Download JSON`** or **`Download YAML`**.
 **It's essential that users _Download their JSON / Config files_ before they move on. Once you confirm and close this window(pop-up) you will NOT be able to download the same files again.**
 {{% /alert %}}
 
+<br>
+
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_02.png)
 
 <br/>
@@ -46,6 +50,8 @@ To Enable or Disable keys, users can select and then use the **`Action`** list m
 
 Change of status will be shown on the column **`State`**.
 
+<br>
+
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_03.png)
 
 {{% alert title="" color="info" %}}
@@ -57,6 +63,8 @@ Change of status will be shown on the column **`State`**.
 ## Delete API Keys
 
 To delete API Keys select and use the **`Action`** list menu > **`Delete`** .
+
+<br>
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_04.png)
 
@@ -83,5 +91,7 @@ Currently SpaceONE provides Endpoints of the following features:
 * Resource Groups
 * Servers
 
+
+<br>
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_05.png)

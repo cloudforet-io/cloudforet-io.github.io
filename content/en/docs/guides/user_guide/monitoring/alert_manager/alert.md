@@ -12,6 +12,8 @@ description: >
 Project Admin Role인 경우, 소속된 Project에서 발생한 Alert List를 관리할 수 있습니다.
 Domain Admin 이상의 Role인 경우, 도메인 내에서 발생한 모든 Alert를 관리할 수 있습니다.
 
+<br>
+
 ![Alert list_main](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_01.png)
 
 
@@ -23,6 +25,8 @@ Alert 리스트를 다양한 필터를 사용하여 조회할 수 있습니다.
 기본적으로 프로젝트에 수신된 모든 Alert List를 조회할 수 있습니다.  
 담당자가 _**나**_ 로 직접 지정된 경우, 해당 Alert만 조회 할 수 있습니다.
 
+<br>
+
 ![Alert_assign_to_me](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_02.png)
 
 
@@ -30,6 +34,8 @@ Alert 리스트를 다양한 필터를 사용하여 조회할 수 있습니다.
 Alert에 다양한 필터를 적용하여, 효율적인 조회가 가능 합니다.
 
 설정가능한 Filter는 _**`State`**_ _**`Urgency`**_ 두 종류 입니다.
+
+<br>
 
 ![Alert State](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_03.png)
 
@@ -54,6 +60,8 @@ Urgency는 _**All**_, _**High**_, _**Low**_ 로 구분 됩니다.
 ## Alert Details
 수신된 Alert의 상세 상태를 조회하고 처리 이력을 관리할 수 있습니다.
 
+<br>
+
 ![Alert Details](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_07.png)
 
 각 상세 항목에 대한 설명은 아래와 같습니다.
@@ -74,6 +82,8 @@ Urgency는 _**All**_, _**High**_, _**Low**_ 로 구분 됩니다.
 
 ### Changing Details
 Alert의 담당자는 할당받은 Alert의 상태를 변경하고, 처리 이력을 정리할 수 있습니다.
+
+<br>
 
 ![Alert Changing Status](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_10.png)
 
@@ -98,10 +108,14 @@ Alert 처리 단계별 진행상황 혹은 변화된 상태가 있는 경우 상
 ### Pushed Event
 같은 Event가 중복으로 수신된 경우, Pushed Event에서 시간대별 상세 수신 이력을 확인할 수 있습니다.
 
+<br>
+
 ![Alert Pushed Event](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_11.png)
 
 #### Details
 수신된 Event의 원문을 확인할 수 있습니다.
+
+<br>
 
 ![Alert Event Details](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_12.png)
 
@@ -109,6 +123,8 @@ Alert 처리 단계별 진행상황 혹은 변화된 상태가 있는 경우 상
 
 Alarm을 수신받는 대상을 확인하고, 추가 대상자가 있는 경우 등록 합니다.
 기본적으로 Project에 연결된 Escalation Policy에 정의된 Subscriber에게 전달 됩니다.
+
+<br>
 
 ![Alert Responder](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_08.png)
 
@@ -124,6 +140,8 @@ Alert에 대해 구성원들이 Comment를 남겨 처리 중 문의사항과 이
 Project간 Dependency 설정이 가능합니다. 이러한 경우, Project A로 수신된 Alert를 다른 Project에서도 조회 및 처리가 가능합니다.
 Escalation Policy적용 되어 타 Project의 Member에도 알람이 전파 됩니다.
 
+<br>
+
 ![Alert Project Dependency](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_09.png)
 
 
@@ -131,12 +149,16 @@ Escalation Policy적용 되어 타 Project의 Member에도 알람이 전파 됩�
 _**`Alert Detail`**_ 을 통하지 않고 수신된 Alert의 상태를 간편하게 변경할 수 있습니다.
 여러개의 Alert를 복수로 지정하여 한번에 상태 변경도 가능 합니다.
 
+<br>
+
 ![Alert Status Change](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_04.png)
 
 
 ### Acknowledge
 복수의 선택된 Alert을 _**Acknowledge**_ 상태로 전환할 수 있습니다. 
 상태 전환과 동시에 담당자를 지정할 수 있습니다.  
+
+<br>
 
 ![Alert Status Acknowledge](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_06.png)
 
@@ -150,6 +172,8 @@ _**`Alert Detail`**_ 을 통하지 않고 수신된 Alert의 상태를 간편하
 ### Manual Create Alert 
 시스템 외부에서 발생된 Alert 이외에 Console에서도 직접 Alert을 발생 시킬 수 있습니다.
 관리자가 자체 기준에 의해 Alert를 등록하여 처리할 수 있도록 합니다.
+
+<br>
 
 ![Alert Manual Create](/docs/guides/user_guide/monitoring/alert_manager/alert_img/alert_manager_alert_img_05.png)
 

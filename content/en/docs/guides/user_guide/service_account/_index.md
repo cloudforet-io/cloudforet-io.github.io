@@ -12,6 +12,8 @@ description: >
 
 On the service account page, you can easily manage credentials for each service provider. Multi cloud resources are collected based on these credentials.
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_01.png)
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_02.png)
@@ -42,6 +44,8 @@ To add a **Service Account**, you need to enter a **Name** and an **Account ID**
 
 ### Base Information
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_03.png)
 
 * Name : Name of **Service Account**
@@ -54,12 +58,16 @@ Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_
 
 #### aws\_access\_key  
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_04.png)
 
 * AWS Access Key \(Required\) : Access Key from IAM (Read Only policy is strongly recommended).
 * AWS Secret Key \(Required\) : Secret key from IAM
 
 #### aws\_assume\_role
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_05.png)
 
@@ -70,6 +78,8 @@ Two types of **Service Accounts** are available: aws\_access\_key, aws\_assume\_
 ### Select Project
 
 Select a project in which a **Service Account** will be placed. Collected resources from the **Service Account** will be included to the project automatically.
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_06.png)
 
@@ -93,11 +103,15 @@ You can delete a **Service Account** or change a **Project** linked to a certain
 
 Select the target **Service Account**, then click **Action &gt; Delete/Change Project**.
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_07.png)
 
 ### Delete Service Account
 
 Enter a name of a **Service Account** you want to delete, then click the **Confirm** button.
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_08.png)
 
@@ -105,11 +119,15 @@ Enter a name of a **Service Account** you want to delete, then click the **Confi
 
 Select a project you want to newly link a **Service Account**, then click the **Confirm** button.
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_09.png)
 
 ## Link to AWS Console
 
 Select the target **Service Account**, then click **Action &gt; Connect to Console**.
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_10.png)
 
@@ -123,15 +141,21 @@ Using the **Status** tab, you can browse details of a **Service Account**.
 
 You can see detailed information of a **Service Account** on the **Details** tab. 
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_11.png)
 
 ### Tag
 
 By clicking the **Edit** button, **Tags** for a **Service Account** can be added or deleted.
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_12.png)
 
 Afer clicking the **+ Add Tags** button, enter a **Key** and a **Value**, then click the **Save** button. 
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_13.png)
 
@@ -139,10 +163,14 @@ Afer clicking the **+ Add Tags** button, enter a **Key** and a **Value**, then c
 
 **Credentials** that contain key information can be added or deleted.
 
+<br/>
+
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_14.png)
 
 ### Member
 
 On the **Member** tab, you can see who is participating in the project.
+
+<br/>
 
 ![](/docs/guides/user_guide/service_account/service_account_img/service_account_img_15.png)

@@ -31,17 +31,17 @@ Refer to the link below and proceed with the installation.<br><br>
 Using v1.20.0 or below is recommended for minikube and kubectl.
 
 Check your version.
-{{% pageinfo color=“300” %}}
-**minikube version**
 
-**kubectl version**
-{{% /pageinfo %}}
+~~~bash
+minikube version
+kubectl version
+~~~
 
 ## Start Minikube
 
-{{% pageinfo color=“300” %}}
-**minikube start --driver=docker**
-{{% /pageinfo %}}
+~~~bash
+minikube start --driver=docker
+~~~
 
 ## Install SpaceONE
 
@@ -50,45 +50,40 @@ Create namespace for SpaceONE.
 
 SpaceONE needs two namespaces, **spaceone** and **root-supervisor**.
 
-{{% pageinfo color=“300” %}}
-**kubectl create ns spaceone**
-
-**kubectl create ns root-supervisor**
-{{% /pageinfo %}}
+~~~bash
+kubectl create ns spaceone
+kubectl create ns root-supervisor
+~~~
 
 Check namespace list.
 
-{{% pageinfo color=“300” %}}
-**kubectl get ns**
-{{% /pageinfo %}}
+~~~bash
+kubectl get ns
+~~~
 
 ### Helm Chart
 
 I highly recommend changing kubenetes namespace to spaceone.
 
-{{% pageinfo color=“300” %}}
-**kubectl config set-context $(kubectl config current-context) --namespace spaceone**
-{{% /pageinfo %}}
+~~~bash
+kubectl config set-context $(kubectl config current-context) --namespace spaceone
+~~~
 
 Register helm chart for SpaceONE.
 
-{{% pageinfo color=“300” %}}
-**helm repo add spaceone https://spaceone-dev.github.io/charts**
-
-**helm repo list**
-
-**helm repo update**
-{{% /pageinfo %}}
+~~~bash
+helm repo add spaceone https://spaceone-dev.github.io/charts
+helm repo list
+helm repo update
+~~~
 
 ### Install SpaceONE with helm chart
 
-{{% pageinfo color=“300” %}}
-**git clone https://github.com/spaceone-dev/charts.git**
-
-**cd charts/examples/v1.7.4**
-
-**helm install spaceone -f minikube.yaml spaceone/spaceone --devel**
-{{% /pageinfo %}}
+~~~bash
+git clone https://github.com/spaceone-dev/charts.git
+cd charts/examples/v1.7.4
+helm install spaceone -f minikube.yaml spaceone/spaceone --devel
+~~~
 
 You need to check status of pods.
 {{% pageinfo color=“300” %}}
@@ -108,12 +103,10 @@ It will take some time, so please wait.
 Since you have installed SpaceONE in your minikube, you don’t have any ingress like ALB or NGINX ingress controller.
 We use **kubectl port-forward**.
 
-{{% pageinfo color=“300” %}}
-**kubectl port-forward -n spaceone svc/console 8080:80**
-
-**kubectl port-forward -n spaceone svc/console-api 8081:80**
-
-{{% /pageinfo %}}
+~~~bash
+kubectl port-forward -n spaceone svc/console 8080:80
+kubectl port-forward -n spaceone svc/console-api 8081:80
+~~~
 
 Open two terminal then run at separate terminal.
 
@@ -122,12 +115,10 @@ Open two terminal then run at separate terminal.
 ### Tips
 You can run in the background by adding & at the end.
 
-{{% pageinfo color=“300” %}}
-**kubectl port-forward -n spaceone svc/console 8080:80 &**
-
-**kubectl port-forward -n spaceone svc/console-api 8081:80 &**
-
-{{% /pageinfo %}}
+~~~bash
+kubectl port-forward -n spaceone svc/console 8080:80 &
+kubectl port-forward -n spaceone svc/console-api 8081:80 &
+~~~
 
 ## Start SpaceONE
 

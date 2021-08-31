@@ -102,9 +102,9 @@ Items of power scheduler information for each projects are below.
 >
 > The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below
 
-> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/image(58).png">    Scheduled time is between 0 ~ 12 hours
+![](/docs/guides/user_guide/automation/automation_img/image(58).png)    Scheduled time is between 0 ~ 12 hours
+![](/docs/guides/user_guide/automation/automation_img/power-scheduler-12h.png)    Scheduled time is between 12~24 hours
 
-> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
 
 ## Scheduler Management
 

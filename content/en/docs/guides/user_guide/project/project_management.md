@@ -19,6 +19,7 @@ The **`Project`** page allows you the following features:
     * View overall usage of projects.
     Users can check usage by resource classifications. Click on each classification icon to see the detailed informations.
 
+<br >
 
 ![Project Management Overview](/docs/guides/user_guide/project/project_management_img/pm_01.png)
 
@@ -30,6 +31,8 @@ The **`Project`** page allows you the following features:
 
 Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`**.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_03.png)
 
 <br/>
@@ -37,6 +40,8 @@ Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`
 ### Alert
 
 You can easily check on **`Alerts`** by their statuses. 
+
+<br >
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_10.png)
 
@@ -46,6 +51,8 @@ You can easily check on **`Alerts`** by their statuses.
 
 You can easily check **`Billing Trends`**. Click on each service names to see details.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_09.png)
 
 <br/>
@@ -54,6 +61,8 @@ You can easily check **`Billing Trends`**. Click on each service names to see de
 
 You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notifications`** on the **`Personal Health Dashboard`**.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_04.png)
 
 <br/>
@@ -61,6 +70,8 @@ You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notificati
 ### Service Accounts
 
 You can check resource usages from **`Service Accounts`** within the project. You can also check the amount of resources registered.
+
+<br >
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_05.png)
 
@@ -72,6 +83,8 @@ You can check resource usages from **`Service Accounts`** within the project. Yo
 
 Click on each update to go to the detailed status page.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_06.png)
 
 <br/>
@@ -82,6 +95,8 @@ You can check the major services from the **`Cloud Services`**.
 
 To see further details you can click on each service or the **`more >`** button.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_07.png)
 
 <br/>
@@ -89,6 +104,8 @@ To see further details you can click on each service or the **`more >`** button.
 ### Trusted Advisor
 
 You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **`Security`** , **`Fault Tolerance`** , and **`Service Limits`** from the **`Trusted Advisor`**.
+
+<br >
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_08.png)
 
@@ -100,17 +117,23 @@ You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **
 
 To do so, the users should be registered as a **`Project Admin`** in advance.
 
+<br >
+
 ![Project Member &#xAD00;&#xB9AC;&#xD654;&#xBA74;](/docs/guides/user_guide/project/project_management_img/pm_11.png)
 
 ### Add member
 
 When you click the **`Add`** button, you can see the **`Add Member`** pop up. You can add multiple users at once.
 
+<br >
+
 ![Add users to project](/docs/guides/user_guide/project/project_management_img/pm_12.png)
 
 ### Delete member
 
 Select users you want to delete and click **`Action`** > **`Delete`**.
+
+<br >
 
 ![Delete member](/docs/guides/user_guide/project/project_management_img/pm_13.png)
 
@@ -122,6 +145,8 @@ Select users you want to delete and click **`Action`** > **`Delete`**.
 
 You can also manage Rules and Escalation Policies from **`Settings`**.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_14.png)
 
 <br/>
@@ -129,6 +154,8 @@ You can also manage Rules and Escalation Policies from **`Settings`**.
 ## Notifications
 
 Add notification channels such as, **`Slack Protocol`** **`Megazone Voice Call Protocol`** **`Megazone SMS Protocol`** **`SpaceONE User Channel`**.
+
+<br >
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_15.png)
 
@@ -140,6 +167,8 @@ During maintenances you can create or close a **`Maintenance Window`** to preven
 
 Click **`Create Maintenance Window`** and select a schedule.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_16.png)
 
 <br/>
@@ -148,6 +177,10 @@ Click **`Create Maintenance Window`** and select a schedule.
 
 You can **`add`** or **`delete`** Tags in your project. Click the **`Edit`** button to do so.
 
+<br >
+
 ![](/docs/guides/user_guide/project/project_management_img/pm_17.png)
+
+<br >
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_18.png)

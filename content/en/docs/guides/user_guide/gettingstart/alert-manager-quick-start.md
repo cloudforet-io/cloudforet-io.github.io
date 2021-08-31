@@ -69,6 +69,8 @@ Alert를 수신하고자 하는 Project를 선택하여 _**`Project Dashboard > 
 
 _**Activate Alert**_ 를 클릭하여 Project내의 Alert을 활성화 합니다. 
 
+<br>
+
 ![Alert Manager Enable](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_01.png)
 
 ### Configure Webhook Plugin
@@ -76,13 +78,19 @@ _**`Project Dashboard > Alert > Webhook`**_ 탭을 클릭 합니다.
 
 _**Add**_ 버튼을 클릭합니다. 
 
+<br>
+
 ![Alert Manager Webhook Add](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_02.png)
 
 Event를 수신받고자 하는 Monitoring Tool을 선택 하고 _**Name**_ 과 _**Version**_ 을 입력 후, _**Confirm**_ 버튼을 클릭 합니다.  
 
+<br>
+
 ![Alert Manager Webhook Plugin Select](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_03.png)
 
 아래와 같이 _**Webhook List**_ 에 정상적으로 추가 되었다면, Monitoring Tool에서 생성한 Plugin으로 Event를 보낼 수 있도록 설정이 필요합니다.
+
+<br>
 
 ![Alert Manager Webhook Plugin List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_06.png)
 
@@ -103,12 +111,20 @@ _**`Project Dashboard < Notifications`**_ 로 이동합니다.
 
 추가 하고자 하는 Channel 을 선택 합니다. 
 
+<br>
+
 ![Notification Channel Select](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_05.png)
 
 각 입력 항목의 내용을 입력 후 _**`Save`**_ 버튼을 클릭 하여 생성을 완료 합니다.
+
+<br>
+
 ![Notification Channel Save](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_07.png)
 
 아래와 같이 추가된 _**Notification Channel**_ 을 확인할 수 있습니다.  
+
+<br>
+
 ![Notification Channel List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_08.png)
 
 
@@ -124,19 +140,24 @@ _**`Project Dashboard > Alert > Settings`**_ 로 이동합니다.
 
 _**Escalation Policy**_ 의 _**Change**_ 버튼을 클릭 합니다. 
 
+<br>
+
 ![Notification Escalation Policy Change](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_04.png)
 
 _**Create New Policy**_ 버튼을 클릭 합니다. 
 
 아래와 같이 _**Name**_ , _**Finish Condition**_ , _**Escalation Rules**_ 을 선택한 뒤 _**Confirm**_ 을 클릭 하여 완료 합니다. 
 
+<br>
+
 ![Notification Escalation Policy Create](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_09.png)
 
 적용된 Policy를 확인 합니다. 
+
+<br>
 
 ![Notification Escalation Policy List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_10.png)
 
 {{% alert title="Escalation Policy Details" color="info" %}}
 Escalation Policy의 상세 설명은  [Escalation Policy 상세 설정 가이드](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)를 참고 해주세요.
 {{% /alert %}}
-
