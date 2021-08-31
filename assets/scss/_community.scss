@@ -1,0 +1,159 @@
+@mixin border-bottom {
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 6.875rem;
+    width: calc(100% - 6.875rem * 2);
+    height: 0.0625rem;
+    background-color: $navy200;
+    content:'';
+  }
+}
+
+.community {
+  padding-top: $navbar-height;
+
+  section {
+    position: relative;
+    min-height: 30rem;
+    width: 100%;
+    padding: 0 6.875rem;
+  }
+
+  h3 {
+    flex-shrink: 0;
+    width: 22.5rem;
+    margin-bottom: 0;
+    color: $navy500;
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+
+  .top {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .about-spaceone {
+    @include border-bottom;
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .vod-list {
+    @include border-bottom;
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    ul {
+      display: grid;
+      gap: 1rem;
+      grid-template-rows: repeat(3, 7.5rem);
+    }
+
+    li {
+      display: flex;
+    }
+
+    a {
+      color: $navy500;
+      line-height: 1.3;
+    }
+
+    .vod {
+      position: relative;
+      width: 12.5rem;
+      flex-shrink: 0;
+
+      .vod-inner {
+        width: 100%;
+        padding-top: 56.25%;
+        height: 0;
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info {
+      padding-top: 0.75rem;
+      padding-left: 1.25rem;
+
+      strong {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        padding-bottom: 0.25rem;
+        font-size: 1.375rem;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2; /* 라인수 */
+        -webkit-box-orient: vertical;
+        word-wrap:break-word;
+        font-size: 1rem;
+        color: $navy400;
+      }
+    }
+  }
+
+  .community-list {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+    h3 {
+      width: auto;
+      text-align: center;
+      font-size: 1.375rem;
+      font-weight: 400;
+    }
+
+    ul {
+      display: grid;
+      gap: 5.3125rem;
+      grid-template-columns: auto auto auto;
+      margin-top: 1.5rem;
+      padding-right: 8.125rem;
+      padding-left: 8.125rem;
+      text-align: center;
+
+      strong {
+        display: block;
+        margin: 1rem 0 0.6875rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: 500;
+        color: currentColor;
+      }
+
+      .description {
+        color: $navy500;
+        font-size: 0.875rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
