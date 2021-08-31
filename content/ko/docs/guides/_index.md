@@ -5,60 +5,14 @@ weight: 3
 date: 2021-07-31
 description: >
     Guide to use SpaceONE
-
+no_list: true
 ---
 
-<section id="userguidelanding1">
-    <h5>SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. The open source project is hosted by MEGAZONE Cloud.</h5>
-    <div class="col-container">
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>User Guide</b>
-          </h4>
-          <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
-          <br><br><br>
-          <a href="/docs/guides/user_guide" class="button">User Guide</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Admin Guide</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br><br>
-          <a href="/docs/guides/admin_guide" class="button">Admin Guide</a>
-        </center>
-      </div>
-    </div>
-</section>
-<section id="userguidelanding2">
-    <div class="col-container">
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Advanced Topics</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br><br>
-          <a href="/docs/guides/advanced_topics" class="button">Advanced Topics</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Spacectl CLI</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br><br>
-          <a href="/docs/guides/spaceone_cli" class="button">Spacectl</a>
-        </center>
-      </div>
-    </div>
-</section>
+{{< pane_entry_wrap >}}
+{{< pane_entry title="User Guide" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/guides/user_guide" buttonTxt="User Guide" />}}
+{{< pane_entry title="Admin Guide" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/guides/admin_guide" buttonTxt="Admin Guide" />}}
+{{< pane_entry title="Advanced Topics" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/guides/advanced_topics" buttonTxt="Advanced Topics" />}}
+{{< pane_entry title="Spacectl CLI" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/guides/spaceone_cli" buttonTxt="Spacectl" />}}
+{{< /pane_entry_wrap >}}
 
-<style>
-    {{< include "partner-style.css" >}}
-</style>
 

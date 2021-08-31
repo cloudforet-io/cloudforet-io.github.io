@@ -127,7 +127,6 @@ Select **`Plugin`-`Collector`** on the navigation at the top of SpaceONE, then c
 {{% /pageinfo %}}
 ![](/docs/guides/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_18.png)
 
-\*\*\*\*
 
 ### **Create AWS Trusted Advisor**
 {{% pageinfo color=“300” %}}
@@ -168,6 +167,8 @@ Please refer to the link. <a href ="/docs/guides/admin_guide/getting-started/met
 **STEP 2: Create Spaceone-Monitoring Metric `Collector`** 
 {{% /pageinfo %}}
 ![](/docs/guides/admin_guide/getting-started/Domain-Admin_img/Domain-Admin_image_24.png)
+
+<br>
 
 Check the complete **`Collector`** list generated.
 

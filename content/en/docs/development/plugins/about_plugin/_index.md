@@ -25,5 +25,3 @@ The Plugin architecture pattern consists of two types of architecture components
 * We want to become a platform that can contain various infrastructure technologies.
 
 * It is difficult to predict the future direction of technology, but we want to be a flexible platform that can coexist in any direction.
-
-* 

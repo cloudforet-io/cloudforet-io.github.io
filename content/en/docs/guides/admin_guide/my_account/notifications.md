@@ -11,6 +11,8 @@ description: >
 
 On the notification page, you can easily manage notification settings for SMS, voicecall, and Slack protocol channels.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_01.png)
 
 ## SMS Protocol Channel
@@ -21,30 +23,48 @@ If you create an SMS protocol channel, you will be notified by text messages.
 
 Click **+ Add Megazone SMS Protocol Channel**.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_02.png)
 
 #### Base Information
 Enter an SMS protocol **channel name** and your **phone number**.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_03.png)
 
 #### Schedule
 You can set the schedule to **All Time**.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_04.png)
 
-Or select **Custom** to customize the schedule as you want. You can choose days and time as shown below. 
+Or select **Custom** to customize the schedule as you want. You can choose days and time as shown below.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_05.png)
 
 
 #### Topic 
 You can choose to receive all notifications regardless of topics.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_06.png)
 
 Or you can receive notifications based on selected topics only.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_07.png)
 
 #### Save
 Click the **save** button at the bottom right corner.
+
+<br>
 
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_08.png)
 
@@ -56,9 +76,14 @@ If you create a voicecall protocol channel, you will be notified by voice calls.
 
 Click **+ Add Megazone Voicecall Protocol Channel**.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_09.png)
 
 Fill in base information and select schedule and topic setting modes. Then, click the save button.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_10.png)
 
 ## Slack Protocol Channel
@@ -69,9 +94,14 @@ If you create a Slack protocol channel, you will be notified from the correspond
 
 Click **+ Add Slack Protocol Channel**.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_11.png)
 
 Fill in base information and select schedule and topic setting modes. Then, click the save button.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_12.png)
 
 ## Edit/Delete Channel
@@ -79,24 +109,36 @@ Fill in base information and select schedule and topic setting modes. Then, clic
 #### Edit
 
 To edit a channel, click the **Edit** button on the right. 
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_13.png)
 
 Make changes you want and click the **Save Changes** button.
+
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_14.png)
 
 #### Delete
 
 To delete a channel, click the **trash can icon** on the right.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_15.png)
 
 Then the delete confirmation message will pop up as shown below. Click the **Confirm** button.
+
+<br>
 
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_16.png)
 
 ## Enable/Disable Channel
 
 To enable or disable a channel, simply flip the toggle switch button.
+
+<br>
 
 ![](/ko/docs/guides/admin_guide/my_account/notifications_img/notifications_img_17.png)
 

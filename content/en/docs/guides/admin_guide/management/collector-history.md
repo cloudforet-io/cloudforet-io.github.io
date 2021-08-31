@@ -16,6 +16,8 @@ through the Collector Plugin on SpaceONE.
 
 You can check the monthly job status collected by the Collector. Job is the result of performing according to the schedule that you set up the actions for the Collector.
 
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_01.png)
 
 Main Graph shows the status of the number of jobs collected. The number of successful and unsuccessful jobs is shown on graph. When you click a point, job list details are shown in the form of the table below.
@@ -29,19 +31,33 @@ You can move the month through `< >` at the top right of the graph.
 You can check list of jobs respectively in 4 status(All, In-Progress, Completed, Failed).
 
 **ALL**
+
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_02.png)
 
 **In-Progress**
+
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_03.png)
 
 **Completed**
+
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_04.png)
 
 **Failed**
+
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_05.png)
 
 #### Search Bar
 Using the search bar, You can search Job ID, Status, Collector, Created Time for Job collected through Collector History.
+
+<br>
 
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_06.png)
 
@@ -58,6 +74,8 @@ The information of the job can be viewed on the Collector history page is as fol
 
 ### Job Detail
 
+<br>
+
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_07.png)
 
 When you click an individual job in the job list on the Collector history page, you can check the details on the Job Management page.
@@ -68,6 +86,8 @@ At the top of the page, you will see the collector and cloud provider that colle
 #### Task Search
 
 You can search service account, project, status for job's task collected by Collector History.
+
+<br>
 
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_08.png)
 
@@ -89,5 +109,7 @@ At the bottom of the page, a list of tasks is shown according to Job status. The
 | Duration | task running time |
 
 When the status of job is failure, you can see the cause of task failure in the Error list at the bottom.
+
+<br>
 
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_09.png)

@@ -25,6 +25,8 @@ To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provid
 
 Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
 
+<br>
+
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
@@ -36,12 +38,16 @@ API-Key is provided through the system administrator. If you don't have an API-K
 You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
 Select Service Provider, Click **+Add** button.
 
+<br>
+
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
 
 You can register SpaceONE Service Account following the procedure below.
 1. Service Account name
 2. Fill out User ID
 3. Fill out Credential \(API Key information\)
+
+<br>
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
 
@@ -54,6 +60,8 @@ Credential input values are shown below.‌
 3. _Identity Endpoint_
 
 All values are required.
+
+<br>
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
 
@@ -68,9 +76,13 @@ You can skip this procedure.
 You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
 **Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
 
+<br>
+
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
  
 After the Collector Job is complete, the Monitoring metric is updated.
+
+<br>
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
 

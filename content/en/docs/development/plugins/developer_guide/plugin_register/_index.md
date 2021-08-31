@@ -13,14 +13,17 @@ Container 빌드는 Dockerfile 을 활용해 docker build 를 수행 한 후,
 결과물인 Image 는 Docker hub 와 같은 이미지 저장소에 업로드하도록 한다.  
 이때, 이미지 저장소는 SpaceONE 의 Microservice 인 Repository 서비스에서 관리하는 저장소에 업로드하도록 한다. 
 
+<br/>
 
-![](/docs/contribute/plugins/developer_guide/developer_guide_img/plugin_container_build.png)
+![](/docs/development/plugins/developer_guide/developer_guide_img/plugin_container_build.png)
 
 
 이미지를 저장소에 업로드 하였다면, Microservice 중 Repository 서비스에 해당 이미지를 등록해야 한다.   
 등록 API 는 Repository.plugin.register 를 사용하도록 한다. ([SpaceONE API - (Repository) Plugin.Register](https://spaceone-dev.gitbook.io/spaceone-apis/repository/v1/plugin#register))
 
-![](/docs/contribute/plugins/developer_guide/developer_guide_img/repository_plugin_register.png)
+<br/>
+
+![](/docs/development/plugins/developer_guide/developer_guide_img/repository_plugin_register.png)
 
 
 아래 예제는 Notification 의 Protocol Plugin 등록시 전달된 Parameter 내용이다. 

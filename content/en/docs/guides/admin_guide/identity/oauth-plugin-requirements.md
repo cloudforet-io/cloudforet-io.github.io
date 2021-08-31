@@ -36,15 +36,21 @@ Go to **Credentials** and click the **`+CREATE CREDENTIALS`** button.
 {{% /pageinfo %}}
 This step is for requests from your browser with a **SpaceONE URI**. Enter your company's own **SpaceONE URI** received from the **SpaceONE admin**. The URI is likely to be in the following format: `https://xxx.console.spaceone.dev`.
 
+<br>
+
 ![](/docs/guides/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_03.png)
 {{% pageinfo color=“300” %}}
 **STEP 4 : Add Authorized redirect URIs.**
 {{% /pageinfo %}}
 This step is for redirecting from your browser to the **SpaceONE sign-in** page. Enter your company's own **SpaceONE sign-in URI**. The URI is likely to be in the following format: `https://xxx.console.spaceone.dev/sign-in`.
 
+<br>
+
 ![](/docs/guides/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_04.png)
 
 After creating your OAuth client, you will get your client ID and client Secret. 
+
+<br>
 
 ![](/docs/guides/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_05.png)
 
@@ -62,12 +68,16 @@ Domain verification is required to allow API requests from **`spaceone.dev`** do
 {{% /pageinfo %}}
 You should allow webhook notifications for **SpaceONE Domain** console URIs. Enter your company's own **SpaceONE URI** received from the **SpaceONE admin**. The URI is likely to be in the following format: `https://xxx.console.spaceone.dev`.
 
+<br>
+
 ![](/docs/guides/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_07.png)
 
 {{% pageinfo color=“300” %}}
 **STEP 3: Verify Ownership.** 
 {{% /pageinfo %}}
 Before you register SpaceONE domains, you should verify ownership in advance. The process can be done in **Google Search Console**. Click `TAKE ME THERE`.
+
+<br>
 
 ![](/docs/guides/admin_guide/identity/oauth-plugin-requirements_img/oauth-plugin-requirements_img_08.png)
 

@@ -100,6 +100,8 @@ Select your **Hyper Billing** Service Provider, then click **Add**.
 #### 2. Base Information
 Fill in Base Informations, like 'Name' and 'Tags'.
 
+<br/>
+
 ![Name of service account](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
 
 <br/>
@@ -115,6 +117,8 @@ The **`Credentials`** can be received from the Billing Service Provider.
 (In this example, the Credentials were given by the Megazone Hyperbilling team.)
 
 The Credentials given by Billing Service Provider, will be consisted with **"Account", "Email" and "Key"** informations. Fill out those informations correctly.
+
+<br/> 
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
 
@@ -133,6 +137,8 @@ Assigning a Project is **mandatory** when using the Billing Service.
 Select one of your projects that match the service account, and billing service. 
 
 When you're done please **`Save`**. 
+
+<br>
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
 
@@ -155,12 +161,16 @@ you will be able to see the **`Billing Information`** from the **main dashboard*
 * **Main Dashboard** > Overall Billing information
     * An integrated summation of all the billing accounts will be shown on the main dashboard.
 
+<br>
+
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_06.png)
 
 <br/>
 
 * **Seperate Project Pages** > Project Billing information
     * Each project page will provides its own billing information after you've registered a billing service account and assigned it to a project.
+
+<br>
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_07.png)
 

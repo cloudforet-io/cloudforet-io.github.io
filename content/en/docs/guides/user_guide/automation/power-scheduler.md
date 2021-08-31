@@ -56,6 +56,8 @@ User can search status of power scheduling by project name.
 
 Items of power scheduler information for each projects are below.
 
+<br>
+
 ![](/docs/guides/user_guide/automation/automation_img/image(89).png)
 
 <table>
@@ -99,20 +101,18 @@ Items of power scheduler information for each projects are below.
 > **Scheduling Meat Map**
 >
 > The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below
-
-> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/image(58).png">    Scheduled time is between 0 ~ 12 hours
-
-> <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
+> 
+> <img src="/docs/guides/user_guide/automation/automation_img/image(58).png"> Scheduled time is between 0 ~ 12 hours
+> <img src="/docs/guides/user_guide/automation/automation_img/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
 
 ## Scheduler Management
 
 ### Scheduler Calendar
-
 In scheduler Calendar, User can manage this functions
 
-
-
 #### Scheduling Time
+
+<br>
 
 ![](/docs/guides/user_guide/automation/automation_img/image(83).png)
 
@@ -126,6 +126,8 @@ Move to next/previous weeks by  `< >` buttons right upper side of table.
 
 **• Priority by Resource Group**
 
+<br>
+
 ![](/docs/guides/user_guide/automation/automation_img/image(87).png)
 
 Scheduler is consist of several resource group. Each resource group has step defined by priority.
@@ -136,6 +138,8 @@ Create/Deleting _**Resource Group**_ is done by clicking _**Edit button &gt; + A
 
 **Resource Groups In Same Priority**
 
+<br>
+
 ![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-01.png)
 
 There is sequence of changing status between resource groups in same priority.
@@ -145,6 +149,8 @@ Upper position resource group changes first, and Lower position goes second.
 
 
 _**Details of Resource Group**_
+
+<br>
 
 ![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-wizard.png)
 
