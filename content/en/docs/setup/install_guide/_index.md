@@ -26,6 +26,8 @@ https://github.com/spaceone-dev/launchpad.git
 
 Prepare your AWS credentials. Put your ~/.aws/credentials
 
+<br>
+
 ~~~
 git clone https://github.com/spaceone-dev/launchpad.git
 cd launchpad/spaceone/eks/terraform
@@ -38,6 +40,8 @@ This is your environment variables.
 * ***region*** is aws region name for installation.
 * ***userarn*** is your IAM arn for installation.
 
+<br>
+
 ~~~
 region = "us-east-1"
 
@@ -48,12 +52,11 @@ map_users = [
       groups   = ["system:masters"]
     }
 ]
-
 ~~~
 
 ### Execute terraform
 
-If you don't have terraform binary, see [Reference](#Reference)
+If you don't have terraform binary, see [Reference](#reference)
 ~~~
 terraform init
 terraform plan
@@ -64,13 +67,16 @@ terraform apply
 
 After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes.
 
-If you don't have kubectl, see [Reference](#Reference)
-You may also install aws-iam-authenticator, see [Reference](#Reference)
+If you don't have kubectl, see [Reference](#reference)
+You may also install aws-iam-authenticator, see [Reference](#reference)
+
+<br>
+
 ~~~
 cp kubecconfig_spaceone-prd-eks ~/.kube/config
 ~~~
 
-After installation of EKS, we highly recommend to install [AWS Load Balancer Controller](#Reference) and [External-DNS](#Reference).
+After installation of EKS, we highly recommend to install [AWS Load Balancer Controller](#reference) and [External-DNS](#reference).
 
 
 
@@ -102,6 +108,7 @@ read pre-condition/README.md
 update values in pre-conditon
 apply pre-condition
 
+<br>
 ~~~
 kubectl create -f shared.yaml
 ~~~
@@ -117,11 +124,12 @@ If you use mongodb cluster,
 host is "localhost" in database.yaml
 Use TYPE 2. global varable in values.yaml
 
+<br>
+
 ~~~
 kcd spaceone
 
 helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/spaceone
-
 ~~~
 
 ## SpaceONE Configuration
