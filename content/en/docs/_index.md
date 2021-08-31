@@ -38,4 +38,3 @@ description: SpaceONE is open source Multi Cloud Management Platform for resourc
 <a href="/docs/references/release_notes" >Release Notes</a>
 {{< /pane_entry >}}
 {{< /pane_entry_wrap >}}
-
