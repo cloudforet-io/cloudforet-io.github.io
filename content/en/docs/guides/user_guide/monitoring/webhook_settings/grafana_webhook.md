@@ -9,9 +9,10 @@ description: >
 
 ## Set up a Webhook at Grafana
 
-**To** Connect **SpaceONE's** Alert Manager**,** Set up Grafana's Notification Channels.
+To Connect your Grafana with **SpaceONE's Alert Manager**, Set up Grafana's Notification Channels.
 
-Please, Set Alerting Channel for following Steps
+Please set the alerting channel with following steps
+
 
 * [**Set up a Notification Channel**](#set-up-a-notification-channels) ****
 
@@ -35,11 +36,12 @@ Please, Set Alerting Channel for following Steps
 
 ![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_03.png)
 
-**Step 4. Type name,** [**Webhook URL\(from SapceONE\)**](./#webhook-list) **and Select Type of Channel as webhook**
+**Step 4. Type name,** [**Webhook URL\(from SpaceONE\)**](./#webhook-list) **and Select Type of Channel as webhook**
 
 <br/>
 
 ![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_04.png)
+
 
 **Grafana** Webhook URL accepts only **HTTP** Protocol**.**  
 Created Webhook ****URL from **SpaceONE** is **HTTPS** but **HTTP** works as well**.
@@ -52,7 +54,7 @@ Please,** type ****URL ****as **HTTP  like`http://monitoring-webhook.dev.spaceon
 
 ![](/docs/guides/user_guide/monitoring/webhook_settings/grafana_webhook_img/grafana_webhook_img_05.png)
 
-**Step 5. Click Save button and Check Notification Channel has successfully created.**
+**Step 6. Click Save button and Check Notification Channel has successfully created.**
 
 <br/>
 
