@@ -7,9 +7,9 @@ description: >
     Managing alert for each project.
 ---
 
-# Overview
+## Overview
 각 Project 별로 Alert을 수신받기 위한 설정을 관리하고, 수신된 Alert 리스트를 확인할 수 있습니다.
 
-![Project Dashboard Alert Widget]()
+![Project Dashboard Alert Widget](/docs/guides/user_guide/monitoring/project_dashboard/project_dashboard_img/alert_manager_project_dashboard_img_01.png)
 
 
