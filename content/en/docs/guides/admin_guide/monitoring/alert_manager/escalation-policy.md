@@ -14,12 +14,16 @@ description: >
 수신된 Alert을 프로젝트의 구성원들에게 효과적으로 전달하기 위해, Escalation Policy를 생성,변경,삭제 합니다.
 Escalation Policy는 발생된 Alert을 다양한 매체를 통 알람 발생시 어떠한 방식으로 전달할 것인가를 상세하게 정의 합니다.
 
+<br>
+
 ![Escalation Policy Main](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_01.png)
 
 
 ## Create Escalation Policy
 
 화면 내 _**Create**_ 버튼을 통해 Policy를 생성할 수 있습니다.
+
+<br>
 
 ![Escalation Policy Create](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_02.png)
 
@@ -44,12 +48,16 @@ Escalation Policy는 발생된 Alert을 다양한 매체를 통 알람 발생시
 
 _**Alert 선택**_ > _**Action**_ > _**Update**_ 를 통해 정책을 변경할 수 있습니다.
 
+<br>
+
 ![Escalation Policy Update](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_03.png)
 
 
 ## Delete Escalation Policy
 
 _**Alert 선택**_ > _**Action**_ > _**Update**_ 를 통해 정책을 변경할 수 있습니다.
+
+<br>
 
 ![Escalation Policy Delete](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_04.png)
 
@@ -61,6 +69,8 @@ Default로 설정된 정책, 사용중인 Policy는 삭제할 수 없습니다.
 
 검색창을 통해 생성된 Escalation Policy를 검색할 수 있습니다.
 
+<br>
+
 ![Escalation Policy Search](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_05.png)
 
 
@@ -68,6 +78,8 @@ Default로 설정된 정책, 사용중인 Policy는 삭제할 수 없습니다.
 ## Set As Default
 
 Default Policy를 정의할 수 있습니다. Alert 수신 설정 하는 모든 메뉴에서 기본 값으로 설정되게 됩니다.
+
+<br>
 
 ![Escalation Policy Default](/docs/guides/admin_guide/monitoring/alert_manager/escalation_policy_img/escalation_policy_admin_img_06.png)
 

@@ -10,10 +10,14 @@ description: >
 ## Overview
 Project에 수신된 모든 Alert를 관리할 수 있습니다.
 
+<br>
+
 ![Alert list_main](/docs/guides/user_guide/monitoring/project_dashboard/project_dashboard_img/alert_manager_project_dashboard_img_01.png)
 
 ## Alert List
 Alert 리스트를 다양한 필터를 사용하여 조회할 수 있습니다.
+
+<br>
 
 ![Alert List](/docs/guides/user_guide/monitoring/project_dashboard/project_dashboard_img/alert_manager_project_dashboard_img_02.png)
 

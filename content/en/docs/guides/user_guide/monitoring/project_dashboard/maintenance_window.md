@@ -10,6 +10,8 @@ description: >
 ## Overview
 정기, 비정기적인 시스템 작업일정을 등록합니다. Project Dashboard를 통해 작업을 안내하고, 작업간 발생하는 알람이 Disable 됩니다.
 
+<br>
+
 ![Maintenance Window Main](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_02.png)
 
 
@@ -19,6 +21,8 @@ description: >
 ### Create Maintenance Window
 작업 일정을 등록합니다. 작업명과 작업 일정을 등록합니다.
 작업 일정에 대한 세부 옵션설명은 아래와 같습니다.
+
+<br>
 
 ![Maintenance Window Create](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_01.png)
 
@@ -30,6 +34,8 @@ description: >
 
 ### Maintenance Window List
 작업 일정을 조회할 수 있습니다.
+
+<br>
 
 ![Maintenance Window List](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_03.png)
 
@@ -47,6 +53,8 @@ description: >
 ### Update Maintenance Window
 작업 일정을 변경할 수 있습니다.
 
+<br>
+
 ![Maintenance Window Update](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_04.png)
 
 {{% alert title="Info" %}}
@@ -55,6 +63,8 @@ description: >
 
 ### Close Maintenance Window
 진행중인 작업 일정을 강제로 종료할 수 있습니다.
+
+<br>
 
 ![Maintenance Window Close](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_05.png)
 

@@ -1,4 +1,4 @@
-baseURL = "https://docs.spaceone.org/"
+baseURL = "www.spaceone.org"
 languageCode = "en-us"
 title = "SpaceONE"
 theme = "docsy"
@@ -157,7 +157,7 @@ description = "OpenSource multicloud operation tool"
 showedit = true
 
 docsbranch = "master"
-currentUrl = "https://docs.spaceone.org/docs/home/"
+currentUrl = "https://www.spaceone.org/home/"
 
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
@@ -202,7 +202,7 @@ version = "v1.8.2"
 githubbranch = "release-1.8.2"
 docsbranch = "master"
 # Set master version url
-url = "https://docs.spaceone.org/"
+url = "https://www.spaceone.org/"
 
 #[[params.versions]]
 #fullversion = "v1.17.17"

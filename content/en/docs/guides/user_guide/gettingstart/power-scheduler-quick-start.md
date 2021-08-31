@@ -48,6 +48,7 @@ Please, assign corresponding access policies to SpaceONE from each provider's co
 
 **STEP 1:** Select `Automation` &gt; `Power Scheduler` on top header menu 
 
+<br>
 
 ![Select Power Scheduler on menu](/docs/guides/user_guide/gettingstart/power/ps2.png)
 
@@ -55,11 +56,15 @@ Please, assign corresponding access policies to SpaceONE from each provider's co
 
 **STEP 2:** Select a project to set up Power Scheduler on the dashboard. 
 
+<br>
+
 ![Select a Project on Dashboard](/docs/guides/user_guide/gettingstart/power/ps3.png)
 
 
 
 **STEP 3:**  Click `+ New Scheduler`  button at the top left corner. It is automatically changed to the creation mode if there is no previously created scheduler in the project.
+
+<br>
 
 ![](/docs/guides/user_guide/gettingstart/power/ps4.png)
 
@@ -67,9 +72,13 @@ Please, assign corresponding access policies to SpaceONE from each provider's co
 
 **STEP 4:**  Set the scheduler's name to create a scheduler. You can enter a string including letters and  `-` . Scheduler name is required and blank spaces are not allowed.
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps5.png)
 
 ## Configure scheduler runtime
+
+<br>
 
 ![](/docs/guides/user_guide/gettingstart/power/ps6.png)
 
@@ -94,6 +103,8 @@ There are three types of scheduler mode.
 
 **STEP 1:** Click&drag to select certain time segments to set time for the scheduler to run.
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps10.png)
 
 > **Please, be advised**   
@@ -103,9 +114,13 @@ There are three types of scheduler mode.
 
 Set the resource group for applying defined schedule  
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps11.png)
 
 By clicking **`+ Add Resource Group`**, user can move to **Create a resource group** page. 
+
+<br>
 
 ![](/docs/guides/user_guide/gettingstart/power/ps12.png)
 
@@ -119,6 +134,8 @@ The Naming Rules of Resource Group is below.
 
 Select resource type
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps13.png)
 
 
@@ -129,19 +146,27 @@ Enter search keyword to grouping resources. By clicking search bar available sea
 
 Supported search filter is listed here. Usually name or tag filter is preferred.
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps14.png)
 
 To apply search filter, You need to press _**Enter**_. Then filtered resources will be appeared. 
 
+<br>
+
 ![](/docs/guides/user_guide/gettingstart/power/ps15.png)
 
 Enter all information, then click the save button below. 
+
+<br>
 
 ![](/docs/guides/user_guide/gettingstart/power/ps16.png)
 
 Get _**creating success**_ message pops up when all creation process is done successfully. 
 
 
+
+<br>
 
 ![](/docs/guides/user_guide/gettingstart/power/ps17.png)
 

@@ -5,79 +5,20 @@ weight: 4
 date: 2021-08-23
 description: >
     SpaceONE Development Guides
-
+no_list: true
 ---
 
-
-
 ## Backend Integration
-
-
-<section id="developmentlanding1">
-    <div class="col-container">
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>APIs</b>
-          </h4>
-          <br>SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!
-          <br><br>
-          <a href="/docs/development/apis/" class="button">API Guide</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Core Services</b>
-          </h4>
-	  <br>SpaceONE supports multi-tenancy for managing enterprise-grade cloud resources with various plugins.
-          <br><br>
-          <a href="/docs/development/core_services/" class="button">Core Service</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Plugins</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br>
-          <a href="/docs/references/integration/design_system" >Developer Guide</a> <br><br>
-          <a href="/docs/development/plugins" class="button">About Plugins</a>
-        </center>
-      </div>
-    </div>
-</section>
-
+{{< pane_entry_wrap >}}
+{{< pane_entry title="APIs" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/development/apis/" buttonTxt="API Guide"/>}}
+{{< pane_entry title="Core Services" description="SpaceONE supports multi-tenancy for managing enterprise-grade cloud resources with various plugins." buttonUrl="/docs/development/core_services/" buttonTxt="Core Service" />}}
+{{< pane_entry title="Plugins" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/development/core_services/" buttonTxt="Core Service" >}}
+<a href="/docs/references/integration/design_system" >Developer Guide</a>
+{{< /pane_entry >}}
+{{< /pane_entry_wrap >}}
 
 ## UI/UX Integration
-
-<section id="developmentlanding2">
-    <div class="col-container">
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Dynamic Layout</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br>
-          <a href="/docs/development/dynamic_layout/" class="button">Dynamic Layout Guide</a>
-        </center>
-      </div>
-      <div class="col-nav">
-        <center>
-          <h4>
-            <b>Design System</b>
-          </h4>
-          <br>SpaceONE supports easy installation guides with Helm charts in Kubernetes environment.
-          <br><br>
-          <a href="/docs/plugins/" class="button">Design System Guide</a>
-        </center>
-      </div>
-    </div>
-</section>
-
-
-<style>
-    {{< include "partner-style.css" >}}
-</style>
+{{< pane_entry_wrap >}}
+{{< pane_entry title="Dynamic Layout" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/development/dynamic_layout/" buttonTxt="Dynamic Layout Guide" />}}
+{{< pane_entry title="Design System" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/plugins/" buttonTxt="Design System Guide" />}}
+{{< /pane_entry_wrap >}}

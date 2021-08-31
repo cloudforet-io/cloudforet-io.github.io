@@ -27,6 +27,8 @@ Users can reach the available plugin list by selecting **`+ Create`** > **`Offic
 
 Select a plugin you want to install, then click the **`+ Create`** button. This will start the _Collector Creation Wizard_.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_02_1.png)
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_02.png)
@@ -37,6 +39,8 @@ Fill out the 'Name' and 'Priority' for the collector and choose a version of the
 
 Latest Versions of plugins are normally recommended.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_03.png)
 
 <br/>
@@ -44,6 +48,8 @@ Latest Versions of plugins are normally recommended.
 Confirm credential informations for the collector. 
 
 This step will be done automatically, so simply confirm all the information that has been filled out.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_04.png)
 
@@ -55,6 +61,8 @@ Tags can be added by clicking the **`+ Add`** button.
 
 If there are exsisting Tags, there's no need to delete them. \(They are for system uses.\)
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_img_05.png)
 
 <br/>
@@ -64,6 +72,8 @@ If there are exsisting Tags, there's no need to delete them. \(They are for syst
 {{% /alert %}}
 
 For example, if you try to give identical names to collectors the **Collector Creation Wizard** will mark this process and ask you to try a different name. 
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_06.png)
 
@@ -77,6 +87,8 @@ Editing and Controling _**Collectors**_ can be done by the **`Action`** list men
 (This is located next to the **`+ Create`** button.)
 
 Select a _**Collector**_ you want to edit, then click **`Action`**. A list of available actions will be shown.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_07_1.png)
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_img_07.png)
@@ -92,6 +104,8 @@ You can update the 'Name', 'Priority', and 'Version' of the Collector.
 
 After you've made your changes click **`Confirm`** to save the changes.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_08.png)
 
 <br/>
@@ -102,6 +116,8 @@ After you've made your changes click **`Confirm`** to save the changes.
 Select a Collector you want to **delete**, then click **`Action > Delete`**.
 
 Confirm the collector you've selected through the pop up, and delete by clicking the **`Confirm`** button.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_09.png)
 
@@ -114,6 +130,8 @@ Change your Collectors' status from **`DISABLE`** to **`ENABLE`**.
 
 This allows the Collectors to collect resources.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_10.png)
 
 <br/>
@@ -125,6 +143,8 @@ Change your Collectors' status from **`ENABLE`** to **`DISABLE`**.
 
 This will block the Collector from collecting resources.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_11.png)
 
 <br/>
@@ -133,6 +153,8 @@ This will block the Collector from collecting resources.
 ## Collector List
 
 From the list of Collectors, you can check Collector informations and statuses.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_12.png)
 
@@ -155,6 +177,8 @@ By selecting a Collector you can veiw the **`Details`**.
 
 Tables of items collected by the **Collector** are shown like the following image.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_img_13.png)
 
 <br/>
@@ -164,6 +188,8 @@ Tables of items collected by the **Collector** are shown like the following imag
 
 Managing Collector tags with the **`Edit`** button.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_img_14.png)
 
 <br/>
@@ -171,6 +197,8 @@ Managing Collector tags with the **`Edit`** button.
 Users can Add / Delete items by using the **`+ Add Tag`** button and the **`x`** button. 
 
 After editing the tags, click **`Save`** at the bottom right corner of the page.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_img_15.png)
 
@@ -185,6 +213,8 @@ These Credentials are linked to the **Service Accounts** from SpaceONE.
 
 Select Collectors of which you'd like to see the details, then click **`Credentials`**.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_16.png)
 
 <br/>
@@ -195,6 +225,8 @@ Select Collectors of which you'd like to see the details, then click **`Credenti
 Set the Collectors to collect resources on your schedule.
 
 By setting a **Schedule**, users can set Collectors to perform _Cloud Resource Collection_ at a specified time, daily.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_18.png)
 
@@ -210,6 +242,8 @@ The scheduled collecting time can be set _Hourly_ on a 24-hour base.
 
 Select **`Confirm`** to save your schedule.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_18_1.png)
 
 <br/>
@@ -219,15 +253,21 @@ Select **`Confirm`** to save your schedule.
 
 After the schedules have been created, they can be modified or deleted by the menu **`Action`** > **`Update/Delete`**.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_20_2.png)
 
 <br/>
 
 Users can update informations and confirm.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_20.png)
 
 Or Users can delete selected schedules.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_20_1.png)
 
@@ -248,11 +288,15 @@ Users can _Collect Resources_ from each cloud, immediately or according to sched
 
 Choose a Collector and click the menu, **`Action > Collect Data`**.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_21.png)
 
 <br/>
 
 A confirmation pop up will appear, check and proceed by clicking the **`Confirm`** button.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_22.png)
 
@@ -260,9 +304,13 @@ A confirmation pop up will appear, check and proceed by clicking the **`Confirm`
 
 After you've started collecting, the Status of **Collecting Jobs** can be checked at the bottom right corner of the **Main Dashboard**.
 
+<br>
+
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_23.png)
 
 Click **`More >`** to see the detailed history.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_23_1.png)
 
@@ -276,6 +324,8 @@ By adding a **Schedule** (If you need help adding Schedules follow this [link](#
 the Collectors automatically perform Cloud Resource Collection through SpaceONE.
 
 You can also check the _timestamps_ of the _latest collection job_ from the collector list.
+
+<br>
 
 ![](/docs/guides/admin_guide/plugin/collector_img/collector_24.png)
 

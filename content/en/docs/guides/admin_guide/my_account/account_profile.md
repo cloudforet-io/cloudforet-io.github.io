@@ -35,7 +35,9 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 
 By clicking the **`Profile`** menu, you can move to the User information window.
 
-![Profile](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_03.png)
+<br>
+
+![Profile](/ko/docs/guides/admin_guide/my_account/profile_img/pOrofile_img_03.png)
 
 Users can change all information, except _**ID**_ and _**Role**_. 
 
@@ -43,6 +45,7 @@ After changing any information, click **`Save Changes`**.
 
 A Success message will appear to confirm.
 
+<br>
+
 ![](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_04.png)
 
-### 

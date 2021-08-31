@@ -100,5 +100,3 @@ You will receive _Create AccessKey popup_, and click **`Copy`** below the blue b
 {{% /pageinfo %}}
 
 ![](/docs/guides/user_guide/service_account/service_account_img/alibaba/image(109).png)
-
-### 
