@@ -5,11 +5,8 @@ weight: 1
 date: 2021-08-05
 description: >
     Introducing SpaceONE Project
-
+no_list: true
 ---
-
-
-# SpaceONE
 
 ## Main Features
 

@@ -11,7 +11,7 @@
     <main role="main" class="td-main">
         {{ block "main" . }}{{ end }}
     </main>
-    {{ partial "footer_home.html" . }}
+    {{ partialCached "footer_home.html" . }}
 </div>
 {{ partialCached "scripts.html" . }}
 </body>

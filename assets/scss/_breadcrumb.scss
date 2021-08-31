@@ -1,0 +1,28 @@
+// Breadcrumb
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+
+  a {
+    color: $navy400;
+    font-size: 0.8125rem;
+    line-height: 1.3;
+
+    &:hover {
+      color: $navy500;
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: flex;
+  align-items: center;
+  margin: 0 0.25rem;
+  color: $navy300;
+  font-size: 0.7rem;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 300;
+  content: "\f054";
+}
