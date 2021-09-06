@@ -12,11 +12,9 @@ $enable-rounded: true !default;
 $enable-shadows: true !default;
 
 // Theme flags.
-
 $td-enable-google-fonts: true !default;
 
 // Theme colors
-
 $primary: #30638E !default;
 $primary-light: lighten($primary, 75%) !default;
 $secondary: #FFA630 !default;
@@ -59,14 +57,12 @@ $khaki100: #5CA2B1;
 $blue100: #007EE5;
 $blue200: #004F99;
 
-
 // UI element colors
-
 $border-color: $gray-300 !default;
 $td-sidebar-tree-root-color: $primary !default;
 $td-sidebar-bg-color: rgba($primary, 0.03) !default;
 $td-sidebar-border-color: $border-color !default;
-$td-sidebar-height: 15.3125rem;
+$td-sidebar-width: 15.3125rem;
 
 // Background colors for the sections on home page etc. It is a paint by number system, starting at 0, where the number is taken from the shortcode's ordinal
 // if not provided by the user.
@@ -91,13 +87,11 @@ $td-fonts-serif: Arial, sans-serif;
 }
 
 $font-family-sans-serif: $td-fonts-serif !default;
-
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 $font-size-base: 1rem !default;
 
 // Font weights
-
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;
@@ -107,7 +101,6 @@ $font-weight-body-text: $font-weight-normal !default;
 $headings-font-weight: $font-weight-medium !default;
 
 // Heading sizes
-
 $h1-font-size: $font-size-base * 2.25 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.5 !default;
@@ -116,7 +109,6 @@ $h5-font-size: $font-size-base * 1.15 !default;
 $h6-font-size: $font-size-base !default;
 
 // Display styles
-
 $display1-weight: $font-weight-bold !default;
 $display2-weight: $font-weight-bold !default;
 $display3-weight: $font-weight-bold !default;
@@ -127,20 +119,17 @@ $display3-size: 2rem !default;
 $display4-size: 1.75rem !default;
 
 // Space
-
 $spacer: 1rem;
 $td-block-space-top-base: 4 * $spacer !default;
 $td-block-space-bottom-base: 4 * $spacer !default;
 
 // Pagination
-
 $pagination-color: $gray-600 !default;
 $pagination-border-color: rgba($black, 0.1) !default;
 $pagination-active-border-color: darken($primary, 5%) !default;
 $pagination-disabled-color: $gray-300 !default;
 
 // Navbar
-
 $navbar-height: 3.75rem;
 $navbar-dark-color: rgba($white, 0.75) !default;
 $navbar-dark-hover-color: rgba($white, 0.5) !default;

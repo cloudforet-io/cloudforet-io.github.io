@@ -11,8 +11,8 @@
   main {
     width: 100%;
     padding-top: calc(#{$navbar-height} + 1.5rem);
-    padding-left: calc(#{$td-sidebar-height} + 1rem);
-    padding-right: calc(#{$td-sidebar-height} + 1rem);
+    padding-left: calc(#{$td-sidebar-width} + 1rem);
+    padding-right: calc(#{$td-sidebar-width} + 1rem);
 
     @include media-breakpoint-down(md) {
       padding: 1rem;
