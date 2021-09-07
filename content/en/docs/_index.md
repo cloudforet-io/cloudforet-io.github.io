@@ -5,7 +5,6 @@ no_list: true
 main_menu: true
 description: SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. 
 ---
-
 {{< pane_entry_wrap >}}
 {{< pane_entry title="Concepts" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/concepts" buttonTxt="See Concepts" >}}
 <a href="/docs/concepts" >About SpaceONE</a>

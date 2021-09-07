@@ -31,9 +31,6 @@ pygmentsStyle = "tango"
 [languages.en]
     languageName ="English"
     title = "SpaceONE - Open Source Multi-Cloud Management Platfrom"
-    author = "Team CloudONE"
-    description = "SpaceONE helps you manage multi-cloud environments and your all cloud resources & cost in ONE platform that offers support for AWS, Azure, Google Cloud, and more."
-    keytword = "cloud management platform, multi-cloud managed service, open source project, cloud resource, multi-cloud accounts, cloud automation service, cloud spend optimization, cloud billing, multi-cloud infrastructure, real-time monitoring, cloud governance service, cloud orchestration service"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
@@ -42,9 +39,6 @@ pygmentsStyle = "tango"
 [languages.ko]
     languageName ="Korean"
     title = "SpaceONE - 오픈소스 멀티 클라우드 플랫폼 스페이스원"
-    author = "팀 클라우드원"
-    description = "멀티 클라우드 환경에서 클라우드 리소스와 비용을 하나의 플랫폼, 스페이스원에서 관리할 수 있습니다. AWS, Azure, 구글 클라우드, 오라클 클라우드, 알리바바 클라우드 등을 지원합니다."
-    keytword = "클라우드 관리 플랫폼, 멀티 클라우드 매니지먼트 서비스, 오픈 소스 프로젝트, 클라우드 리소스, 멀티 클라우드 계정, 클라우드 자동화 서비스, 클라우드 비용 최적화, 멀티 클라우드 빌링, 멀티 클라우드 인프라, 실시간 모니터링, 클라우드 거버넌스 서비스, 클라우드 오케스트레이션 서비스"
     contentDir = "content/ko"
     time_format_default = "2006.01.02"
     time_format_blog = "2006.01.02"
@@ -119,36 +113,25 @@ date = ["date", ":filename", "publishDate", "lastmod"]
     url = "/docs"
 
 [params]
-
 version_menu = "Versions"
-
 copyright = "SpaceONE Team"
 #privacy_policy = "https://policies.google.com/privacy"
-
 latest = "v1.8.2"
 #archived_version = true
-
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/spaceone-dev/docs"
-
 body_classes = "georgia bg-near-white"
 navbar_logo = true
-
 # Enable Algolia DocSearch
 algolia_docsearch = false
-
 # Enable Lunr.js offline search
 offlineSearch = true
-
 description = "OpenSource multicloud operation tool"
 showedit = true
-
 docsbranch = "master"
 currentUrl = "https://www.spaceone.org/home/"
-
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
-
 # Configure url of latest version
 # url_latest_version = ""
 
