@@ -121,7 +121,6 @@ latest = "v1.8.2"
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/spaceone-dev/docs"
 body_classes = "georgia bg-near-white"
-navbar_logo = true
 # Enable Algolia DocSearch
 algolia_docsearch = false
 # Enable Lunr.js offline search
