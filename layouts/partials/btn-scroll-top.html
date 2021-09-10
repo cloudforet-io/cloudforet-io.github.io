@@ -1,0 +1,27 @@
+<button class="fas fa-arrow-circle-up" id="btn-scroll-top"></button>
+<script>
+    document.addEventListener("scroll", handleScroll);
+    var scrollToTopBtn = document.querySelector("#btn-scroll-top");
+
+    function handleScroll() {
+        var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var GOLDEN_RATIO = 0.3;
+
+        if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
+            //show button
+            scrollToTopBtn.style.display = "block";
+        } else {
+            //hide button
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>

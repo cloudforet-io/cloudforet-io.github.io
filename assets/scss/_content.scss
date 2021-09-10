@@ -83,3 +83,19 @@
 .fa-external-link-alt {
   margin-left: 0.5rem;
 }
+
+#btn-scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  z-index: 100;
+  display: none;
+  padding: 0;
+  margin-left: -1.1rem;
+  font-size: 2.2rem;
+  border: 0;
+  background-color: #F2F4F5;
+  color: $navy500;
+  border-radius: 50%;
+  cursor: pointer;
+}
