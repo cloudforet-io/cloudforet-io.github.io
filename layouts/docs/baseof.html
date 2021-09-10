@@ -20,6 +20,7 @@
             {{ partial "version-banner.html" . }}
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ block "main" . }}{{ end }}
+            {{ partial "btn-scroll-top.html" . }}
         </main>
     </div>
     {{ partialCached "footer.html" . }}

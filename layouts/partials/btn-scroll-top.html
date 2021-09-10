@@ -5,13 +5,11 @@
 
     function handleScroll() {
         var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var GOLDEN_RATIO = 0.3;
+        var GOLDEN_RATIO = 0.005;
 
         if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
-            //show button
             scrollToTopBtn.style.display = "block";
         } else {
-            //hide button
             scrollToTopBtn.style.display = "none";
         }
     }
