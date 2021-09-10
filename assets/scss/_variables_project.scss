@@ -1,13 +1,55 @@
+// Theme flags.
+$td-enable-google-fonts: true !default;
+
+// Fonts
+$google_font_name: "Roboto";
+$google_font_family: "Roboto:300,300i,400,400i,700,700i";
+$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
+$td-fonts-serif: Arial, sans-serif;
+@if $td-enable-google-fonts {
+  $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
+}
+
 //$primary: #ff00ff;
 $primary: #6638B6;
 $secondary: #da5fa1;
 $info: #379c9c;
 $back: #fff;
 
-
 $enable-gradients: true;
 $enable-rounded: true;
 $enable-shadows: true;
 
+//$h1-font-size: 1.125rem;
+//$h2-font-size: 1rem;
+//$h3-font-size: 1rem;
+//$h4-font-size: 0.875rem;
+//$h5-font-size: 0.875rem;
+//$h6-font-size: 0.75rem;
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0;
+}
 
+// theme color for docs portal
+$black: #000;
+$white: #FFFFFF;
+$navy000: #F2F4F5;
+$navy100: #D6DBDF;
+$navy200: #BFC5CB;
+$navy300: #808D99;
+$navy400: #415567;
+$navy500: #001B33;
+$purple100: #A8A5CE;
+$green100: #65CBA0;
+$pink100: #CF88A0;
+$khaki100: #5CA2B1;
+$blue100: #007EE5;
+$blue200: #004F99;
+
+// Navbar
+$navbar-height: 3.75rem;
+
+// Sidebar
+$td-sidebar-width: 15.3125rem;
