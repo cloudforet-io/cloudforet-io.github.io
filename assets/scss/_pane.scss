@@ -17,7 +17,7 @@
 .pane-entry-wrap {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 2.5rem;
 }
 
