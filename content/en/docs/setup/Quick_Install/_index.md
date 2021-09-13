@@ -134,5 +134,5 @@ Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:80
 <img src="/docs/setup/Quick_Install/Quick_Install_img/quick_install_image_03.png" width="800" height="500">
 
 ### Initial Setup
+{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" >}}
 
-<iframe width="800" height="500" src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
