@@ -33,7 +33,7 @@ Slack OAuth token gives you the ability to handle things that relate to your app
 3. Go to `Scopes` section, you can add permission to access to slack channel. Click on 'Add an OAuth Scope' and select `chat:write` scope.
 <br><br>
 
-![slack_generate_app_level_token.png](/docs/guides/user_guide/notification/notification_img/slack_generate_app_level_token.png)
+![slack_bot_token_scope.png](/docs/guides/user_guide/notification/notification_img/slack_bot_token_scope.png)
 
 <br><br>
 3. Go to `Basic Information` section, you can install your app by click on `Install to Workspace` button.  
