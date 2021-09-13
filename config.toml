@@ -19,37 +19,30 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-
 # Highlighting config
 pygmentsCodeFences = true
 pygmentsUseClasses = false
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
 [languages]
 [languages.en]
-    title = ""
-    description = "SpaceONE Project"
     languageName ="English"
+    title = "SpaceONE - Open Source Multi-Cloud Management Platfrom"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
     # Weight used for sorting.
     weight = 1
-	[languages.ko]
-		title = ""
-		languageName ="Korean"
-		description = "SpaceONE 프로젝트 입니다."
-		contentDir = "content/ko"
-		time_format_default = "2006.01.02"
-		time_format_blog = "2006.01.02"
-		weight = 2
-
-
-
+[languages.ko]
+    languageName ="Korean"
+    title = "SpaceONE - 오픈소스 멀티 클라우드 플랫폼 스페이스원"
+    contentDir = "content/ko"
+    time_format_default = "2006.01.02"
+    time_format_blog = "2006.01.02"
+    weight = 2
 
 [outputs]
 home = [ "HTML" ]
@@ -72,15 +65,6 @@ extensions = [
 resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
-
-# Additional menu items
-#[[menu.main]]
-    #name = "Project Site"
-    #url = "https://www.spaceone.org/"
-    #pre = "<i class='fas fa-laptop-code'></i>"
-
-
-
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -121,7 +105,6 @@ defaultMarkdownHandler = 'goldmark'
 [frontmatter]
 date = ["date", ":filename", "publishDate", "lastmod"]
 
-
 [menu]
     [[menu.main]]
     name = "Documentation"
@@ -129,48 +112,27 @@ date = ["date", ":filename", "publishDate", "lastmod"]
     weight = 10
     url = "/docs"
 
-
-
 [params]
-
 version_menu = "Versions"
-
 copyright = "SpaceONE Team"
 #privacy_policy = "https://policies.google.com/privacy"
-
 latest = "v1.8.2"
 #archived_version = true
-
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/spaceone-dev/docs"
-# An optional link to a related project repo. For example, the sibling repository where your product code lives.
-#github_project_repo = "https://github.com/spaceone-dev/docs"
-
 body_classes = "georgia bg-near-white"
-navbar_logo = true
 # Enable Algolia DocSearch
 algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = true
-
 description = "OpenSource multicloud operation tool"
 showedit = true
-
 docsbranch = "master"
 currentUrl = "https://www.spaceone.org/home/"
-
-
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
-
 # Configure url of latest version
 # url_latest_version = ""
-
-[params.fonts]
-name = "Open Sans"
-sizes = [300, 400, 600, 700]
-type = "sans_serif"
-
 
 # User interface configuration
 [params.ui]
@@ -187,50 +149,10 @@ navbar_logo = true
 # Set to true to disable the About link in the site footer
 footer_about_disable = true
 
-[params.ui.feedback]
-enable = true
-# The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-
-[params.ui.readingtime]
-enable = false
-
 [[params.versions]]
 fullversion = "v1.8.2"
 version = "v1.8.2"
 githubbranch = "release-1.8.2"
 docsbranch = "master"
 # Set master version url
-url = "https://www.spaceone.org/"
-
-#[[params.versions]]
-#fullversion = "v1.17.17"
-#version = "v1.17"
-#githubbranch = "v1.17.17"
-#docsbranch = "release-1.17"
-## Set release version url 
-#url = ""
-
-[params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name ="GitHub"
-	url = "https://github.com/spaceone-dev"
-	icon = "fab fa-github"
-        desc = "Discussion and help from your fellow users"
-
-
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/spaceone-dev"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
-
-[[params.links.developer]]
-	name = "HomePage"
-	url = "https://www.spaceone.org/"
-	icon = "fas fa-user-astronaut"
-        desc = "SpaceONE main page"
-
+url = "/"

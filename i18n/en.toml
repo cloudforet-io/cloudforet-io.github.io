@@ -1,2 +1,8 @@
-[ui_search]
-other = "Search"
+[meta_description]
+other = "SpaceONE helps you manage multi-cloud environments and your all cloud resources & cost in ONE platform that offers support for AWS, Azure, Google Cloud, and more."
+
+[meta_author]
+other = "Team CloudONE"
+
+[meta_keywords]
+other = "cloud management platform, multi-cloud managed service, open source project, cloud resource, multi-cloud accounts, cloud automation service, cloud spend optimization, cloud billing, multi-cloud infrastructure, real-time monitoring, cloud governance service, cloud orchestration service"

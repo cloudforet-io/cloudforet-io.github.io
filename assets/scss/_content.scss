@@ -4,6 +4,10 @@
 
 .td-content {
   order: 1;
+  padding: 1.5rem 1rem 2.5rem;
+  background-color: $white;
+  border: solid 1px $navy100;
+  font-size: 0.875rem;
 
   p, li, td {
     font-weight: $font-weight-body-text;
@@ -11,15 +15,10 @@
 
   > h1 {
     font-weight: $font-weight-bold;
-    margin-bottom: 1rem;
   }
 
   > h2 {
-    margin-bottom: 1rem;
-  }
-
-  > h2:not(:first-child) {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   > h2 + h3 {
@@ -28,7 +27,7 @@
 
   > h3, > h4, > h5, > h6 {
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   img {
@@ -67,16 +66,8 @@
     margin-bottom: 2 * $spacer;
   }
 
-  .lead {
-    max-width: 100%;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border:solid 1px $navy100;
-    background-color: $white;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    font-weight: 400;
+  .page-summary {
+    margin-top: 0.75rem;
   }
 }
 
@@ -91,4 +82,40 @@
 
 .fa-external-link-alt {
   margin-left: 0.5rem;
+}
+
+#btn-scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  padding: 0;
+  margin-left: -1.1rem;
+  font-size: 2.2rem;
+  border: 0;
+  background-color: #F2F4F5;
+  color: $navy500;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-wrapper {
+  max-width: 35rem;
+
+  .video {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 56.25%; // 16:9
+    background-color: $navy500;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
