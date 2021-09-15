@@ -25,24 +25,8 @@ You can set up your IAM policy for power scheduler in SpaceONE with pre-defined 
 
 Please, assign corresponding access policies to SpaceONE from each provider's console as mentioned below, prior to create a Power Scheduler.
 
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/service-account-policy-management"
-    target="_blank"
-    rel="noopener"
-    >(AWS) Service Account Policy Management</a>
-</div>
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management"
-    target="_blank"
-    rel="noopener"
-    >(Google Cloud) Service Account Policy Management</a>
-</div>
-
-
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/aws-service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/" text="(Google Cloud) Service Account Policy Management" />}}
 
 ## Set up Basic Scheduler Info
 
