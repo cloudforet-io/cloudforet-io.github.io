@@ -1,6 +1,6 @@
 <div class="td-content">
     <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+    {{ with .Params.description }}<div class="page-summary">{{ . | markdownify }}</div>{{ end }}
     <header class="article-meta">
         {{ $context := . }}
         {{ if isset .Site.Params.Taxonomy "taxonomypageheader" }}
