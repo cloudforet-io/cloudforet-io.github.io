@@ -1,19 +1,17 @@
 {{- $buttonTxt := .Get "buttonTxt" -}}
 
-<div class="pane-entry">
+<div class="box">
     {{ with $.Get "title" }}
-    <p class="title">
-        {{ . }}
-    </p>
+    <h2>{{ . }}</h2>
     {{ end }}
     {{ with $.Get "description" }}
-    <p class="description">
+    <p>
         {{ . }}
     </p>
     {{ end }}
     {{ $.Inner }}
 
     {{ with .Get "buttonUrl" }}
-    <a href="{{ . }}" class="link-button">{{ $buttonTxt }}</a>
+    <a href="{{ . }}" class="link-button navy400">{{ $buttonTxt }}</a>
     {{ end }}
 </div>
