@@ -27,9 +27,6 @@ Webhook Plugin 리스트 조회시 각 항목에 대한 설명은 아래와 같�
 
 {{% alert title="Info" %}}
 Webhook URL을 외부의 모니터링 시스템과 연동하기 위한 가이드는 
-
-<br>
-
 [Monitoring System 연결가이드](/docs/guides/user_guide/monitoring/webhook_settings/) 를 참조 해주세요.
 {{% /alert %}}
 

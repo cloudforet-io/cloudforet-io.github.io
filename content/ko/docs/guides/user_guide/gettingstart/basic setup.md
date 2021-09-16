@@ -20,7 +20,7 @@ description: >
 
 ## Create My Project Group and Project
 
-{{% alert title="Note" color="info" %}}
+{{% alert title="Note" %}}
 **General User** has a permission to control only the project group/project which they belong to. 
 {{% /alert %}}
 
@@ -63,7 +63,7 @@ Click **`+ Add`** button to add AWS service account.
 **STEP 2:** Fill out the name of Service Account and Account ID on base information fields. Please, fill out your **AWS Access Key** and **AWS Secret Key** as well. 
 
 
-{{% alert title="" color="" %}}
+{{% alert title="" %}}
 Please, Click links at Help for AWS Users panel if you have any issue to get Account id, Assume role, and AWS access key. 
 {{% /alert %}}
 

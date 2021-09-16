@@ -20,7 +20,7 @@ description: >
 
 ## Create My Project Group and Project
 
-{{% alert title="Note" color="info" %}}
+{{% alert title="Note" %}}
 **General User** has a permission to control only the project group/project which they belong to. 
 {{% /alert %}}
 

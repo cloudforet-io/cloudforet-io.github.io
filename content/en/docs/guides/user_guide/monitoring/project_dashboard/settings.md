@@ -98,6 +98,6 @@ _**`Create New Policy`**_ 버튼을 클릭하여, 신규 Policy를 생성후 즉
 ![Escalation Policy Create](/docs/guides/user_guide/monitoring/project_dashboard/settings_img/settings_img_08.png)
 
 
-{{% alert title="Escalation Policy 생성" color="info" %}}
+{{% alert title="Escalation Policy 생성" %}}
 새로운 Policy 생성에 대한 상세한 안내는 [Creating New Escalation Policy](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/#create-escalation-policy)를 참고 해주세요.
 {{% /alert %}}

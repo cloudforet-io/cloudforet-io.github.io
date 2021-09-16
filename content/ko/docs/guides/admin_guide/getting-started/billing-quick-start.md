@@ -35,7 +35,7 @@ Billing informations can be provided by various vendors like **`AWS`**, **`Googl
 
 To enable billing service, contact your domain administrator at SpaceONE.
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **In the Version 1.5.3, Hyperbilling backend is enabled by default.**
 {{% /alert %}}
 
@@ -90,7 +90,7 @@ You can register the Billing service account at the menu, **`Identity`** > **`Se
 
 Select your **Hyper Billing** Service Provider, then click **Add**.
 
-{{% alert title="" color="warning" %}}
+{{% alert title="" %}}
 **If _`Hyper Billing` does not appear_ in your Service Providers List, please contact the SpaceONE Domain Administrator.**
 {{% /alert %}}
 
@@ -127,7 +127,7 @@ The Credentials given by Billing Service Provider, will be consisted with **"Acc
 
 #### 4. Assigning Projects
 
-{{% alert title="" color="warning" %}}
+{{% alert title="" %}}
 **PLEASE, DO NOT SKIP THIS STEP.**
 {{% /alert %}}
 
@@ -139,7 +139,7 @@ When you're done please **`Save`**.
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **If you have several billing accounts, simply repeat the steps from :**
 
 **"Registering the Billing Service Account >** [How to Register](#how-to-register)

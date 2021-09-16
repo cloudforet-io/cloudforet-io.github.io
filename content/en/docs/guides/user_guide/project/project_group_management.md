@@ -139,7 +139,7 @@ You can also **Upate** and **Delete** these Roles through the **`Action`** list 
 
 ![](/docs/guides/user_guide/project/project_group_management_img/pmg_20.png) 
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 During this process you can only grant users **Project Admin** roles. 
 
 However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/guides/advanced_topics/user-role).

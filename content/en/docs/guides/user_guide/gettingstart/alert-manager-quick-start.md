@@ -19,7 +19,7 @@ Alert Manager를 사용하기 위해서는 크게 두가지 설정이 필요합�
 
 두번째는, Alert이 임계치를 넘었을 경우 발생되는 Alarm Message를 수신받기 위한 Notification 설정 입니다.
 
-{{% alert title="About Notification" color="info" %}}
+{{% alert title="About Notification" %}}
 SpaceONE Notification 서비스는 Alarm Message를 다양한 매체를 통해 수신자들에게 전송합니다. 자세한 설명은 [Notificaiton 소개](/docs/guides/user_guide/notification/) 을 참고 하세요
 {{% /alert %}}
 
@@ -94,7 +94,7 @@ Event를 수신받고자 하는 Monitoring Tool을 선택 하고 _**Name**_ 과 
 
 ![Alert Manager Webhook Plugin List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_06.png)
 
-{{% alert title="Webhook Plugin Details" color="info" %}}
+{{% alert title="Webhook Plugin Details" %}}
 각 Tool 별로 설정을 위한 방법은 [Monitoring Tool Webhook Plugin Configuration Guide](/docs/guides/user_guide/monitoring/webhook_settings/) 를 참고해주세요.
 {{% /alert %}}
 
@@ -128,7 +128,7 @@ _**`Project Dashboard < Notifications`**_ 로 이동합니다.
 ![Notification Channel List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_08.png)
 
 
-{{% alert title="Notification Plugin Details" color="info" %}}
+{{% alert title="Notification Plugin Details" %}}
 각 Plugin별 Channel 설정에 대한 상세한 방안은 [Notification Protocol Plugin 설정 가이드](/docs/guides/user_guide/notification/protocol/)를 참고 해주세요.
 {{% /alert %}}
 
@@ -158,6 +158,6 @@ _**Create New Policy**_ 버튼을 클릭 합니다.
 
 ![Notification Escalation Policy List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_10.png)
 
-{{% alert title="Escalation Policy Details" color="info" %}}
+{{% alert title="Escalation Policy Details" %}}
 Escalation Policy의 상세 설명은  [Escalation Policy 상세 설정 가이드](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)를 참고 해주세요.
 {{% /alert %}}

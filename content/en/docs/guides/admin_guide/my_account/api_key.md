@@ -14,7 +14,7 @@ Users can create and manage **API Keys** from the **`My Account`** side bar > **
 
 To create an API Key simply click **`+ Create API Key`**.
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **Users are only allowed to create 2 API Keys maximum.**
 {{% /alert %}}
 
@@ -32,7 +32,7 @@ When clicking the **`+ Create API Key`**, an API Key Creation Success message wi
 
 From this window you can **`Download JSON`** or **`Download YAML`**. 
 
-{{% alert title="" color="warning" %}}
+{{% alert title="" %}}
 **It's essential that users _Download their JSON / Config files_ before they move on. Once you confirm and close this window(pop-up) you will NOT be able to download the same files again.**
 {{% /alert %}}
 
@@ -54,7 +54,7 @@ Change of status will be shown on the column **`State`**.
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_03.png)
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 
@@ -68,7 +68,7 @@ To delete API Keys select and use the **`Action`** list menu > **`Delete`** .
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_04.png)
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 

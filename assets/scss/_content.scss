@@ -3,7 +3,6 @@
 //
 
 .td-content {
-  max-width: 55rem;
   order: 1;
   padding: 1.5rem 1rem 2.5rem;
   background-color: $white;
@@ -62,9 +61,14 @@
     @extend .td-max-width-on-larger-screens;
   }
 
-  .alert:not(:first-child) {
-    margin-top: 2 * $spacer;
-    margin-bottom: 2 * $spacer;
+  .alert {
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+
+  .alert-heading {
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.5rem;
   }
 
   .page-summary {

@@ -92,7 +92,7 @@ If you face Error messages when following the steps above, please follow this Tr
 ### Authorization
 #### **1.** \(AuthorizationFailed\) Client does not have authorization 
 
-{{% alert title="" color="warning" %}}
+{{% alert title="" %}}
 The client \(`client_id`\) with object id \(`object_id`\) does not have authorization to perform action 'Microsoft.Resources/subscriptions/resourcegroups/read' over scope \(`subscription_id`\), or the scope is invalid. If access was recently granted, please try refreshing your credentials.
 {{% /alert %}}
 
@@ -129,7 +129,7 @@ Add the Role Assignments like the following description and image.
   
   ![](/docs/guides/user_guide/service_account/service_account_img/azure/image-azure-subscription.png)
 
-{{% alert title="Note" color="info" %}}
+{{% alert title="Note" %}}
   'Service Account names' and 'Registered App names' are easily confused.   
   Please, Select Registered App as shown below \(Check the Icon Differences\).  
 {{% /alert %}}

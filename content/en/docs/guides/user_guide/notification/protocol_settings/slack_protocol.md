@@ -38,7 +38,7 @@ Slack OAuth token gives you the ability to handle things that relate to your app
 <br><br>
 3. Go to `Basic Information` section, you can install your app by click on `Install to Workspace` button.  
 
-{{% alert title="Token Information Alert" color="Info" %}}
+{{% alert title="Token Information Alert" %}}
 Token information need to be considered secure. Be sure not to share token
 {{% /alert %}}
 
@@ -110,7 +110,7 @@ You can select when to receive alarm. There two options
 
 Notification subscribes topics to check which alarm to send
 
-{{% alert title="About Notification Topics" color="Info" %}}
+{{% alert title="About Notification Topics" %}}
 Now only monitoring.Alert topics are available. Other topics will be created in future release.
 Just pin _**Setting Mode**_ to _**Receive all notifications**_
 {{% /alert %}}

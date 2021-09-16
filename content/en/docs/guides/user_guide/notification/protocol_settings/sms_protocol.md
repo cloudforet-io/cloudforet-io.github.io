@@ -53,7 +53,7 @@ You can select when to receive alarm. There two options
 
 Notification subscribes topics to check which alarm to send
 
-{{% alert title="About Notification Topics" color="Info" %}}
+{{% alert title="About Notification Topics" %}}
 Now only monitoring.Alert topics are available. Other topics will be created in future release.
 Just pin _**Setting Mode**_ to _**Receive all notifications**_
 {{% /alert %}}

@@ -318,7 +318,7 @@ Cloud resources has a such a condition that does not support within power schedu
   * Minimum number of Instance in Instance group is 1 when instance group scales in\(autoscaling\) except certain type \(Unmanaged Instance Group\). 
 
 
-{{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" color="info" %}}
+{{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" %}}
 * **Valid type:** 
   * **Stateless** (**Managed**) as mentioned above.
 * **Results on Action:** 

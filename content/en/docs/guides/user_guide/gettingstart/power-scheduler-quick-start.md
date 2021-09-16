@@ -91,8 +91,9 @@ There are three types of scheduler mode.
 
 ![](/docs/guides/user_guide/gettingstart/power/ps10.png)
 
-> **Please, be advised**   
-> Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All` which causes all resource to stop working immediately.
+{{% alert title="Please, be advised" %}}
+Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All` which causes all resource to stop working immediately.
+{{% /alert%}}
 
 ## Define Resource Group
 
@@ -109,11 +110,11 @@ By clicking **`+ Add Resource Group`**, user can move to **Create a resource gro
 ![](/docs/guides/user_guide/gettingstart/power/ps12.png)
 
 The Naming Rules of Resource Group is below.
-
-> * Max 128 character 
-> * Start with character
-> * Character, Number, & Hyphen`-`  available
-
+{{% alert title="" %}}
+Max 128 character <br>
+Start with character <br>
+Character, Number, & Hyphen`-`  available <br> 
+{{% /alert %}}
 
 
 Select resource type
