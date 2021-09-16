@@ -20,25 +20,8 @@ User need to define security policy\(IAM\) before setup power scheduler.
 
 Before creating Power Scheduler modify your existing policy, For detailed process refer to link below.
 
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/service-account-policy-management/"
-    target="_blank"
-    rel="noopener"
-    >(AWS) Service Account Policy Management</a>
-</div>
-
-
-
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/"
-    target="_blank"
-    rel="noopener"
-    >(Google Cloud) Service Account Policy Management</a>
-</div>
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/" text="(Google Cloud) Service Account Policy Management" />}}
 
 ## Power Scheduler Dashboard
 
@@ -98,12 +81,11 @@ Items of power scheduler information for each projects are below.
   </tbody>
 </table>
 
-> **Scheduling Meat Map**
->
-> The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below
-> 
-> <img src="/docs/guides/user_guide/automation/automation_img/image(58).png"> Scheduled time is between 0 ~ 12 hours
-> <img src="/docs/guides/user_guide/automation/automation_img/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
+{{% alert title="Scheduling Meat Map" %}}
+The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below <br/>
+<img src="/docs/guides/user_guide/automation/automation_img/image(58).png"> Scheduled time is between 0 ~ 12 hours
+<img src="/docs/guides/user_guide/automation/automation_img/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
+{{% /alert%}}
 
 ## Scheduler Management
 
@@ -322,7 +304,7 @@ Cloud resources has a such a condition that does not support within power schedu
   * Minimum number of Instance in Instance group is 1 when instance group scales in\(autoscaling\) except certain type \(Unmanaged Instance Group\). 
 
 
-{{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" color="info" %}}
+{{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" %}}
 * **Valid type:** 
   * **Stateless** (**Managed**) as mentioned above.
 * **Results on Action:** 
