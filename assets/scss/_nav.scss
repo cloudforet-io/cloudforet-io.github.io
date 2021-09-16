@@ -178,7 +178,7 @@ nav.foldable-nav {
   .ul-0 li > input:not(:checked) ~ label:hover::before,
   .ul-0 li > input:not(:checked) ~ label:hover a  {
     color: $navy500;
-    transition: color 0.5s;
+    transition: transform 0.5s;
   }
 
   .ul-1 > li {
@@ -227,7 +227,7 @@ nav.foldable-nav {
       font-size: 1rem;
       color: $navy300;
       font-size: 1rem;
-      transition: all 0.5s;
+      transition: transform 0.5s;
       cursor: pointer;
     }
 

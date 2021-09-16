@@ -44,7 +44,6 @@
 
   li {
     display: block;
-
     list-style: none;
   }
 
@@ -53,26 +52,32 @@
   }
 
   #TableOfContents {
-    // Hugo's ToC is a mouthful, this can be used to style the top level h2 entries.
-    > ul > li > ul > li > a {}
-
-    > ul > li {
-      border-left: solid 0.125rem $navy100;
-    }
 
     margin-top: 0.5rem;
-    a {
-      color: $gray-600;
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      border-left: solid 0.125rem $navy100;
+      color: $navy300;
+      transition: color .2s, border-color .2s;
 
       &:hover {
         color: $navy500;
-        text-decoration: none;
+      }
+
+      &.active {
+        border-color: currentColor;
+        color: $blue100;
+        transition: color .2s, border-color .2s;
       }
     }
-  }
 
-  ul {
-    padding-left: 0;
+    a {
+      color: inherit;
+    }
   }
 }
 
