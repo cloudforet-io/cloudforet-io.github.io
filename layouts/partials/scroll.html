@@ -1,5 +1,6 @@
 <button class="fas fa-arrow-circle-up d-lg-none d-lx-none" id="btn-scroll-top"></button>
 <script>
+    // For button scroll top
     document.addEventListener("scroll", handleScroll);
     var scrollToTopBtn = document.querySelector("#btn-scroll-top");
 
@@ -22,4 +23,16 @@
             behavior: "smooth"
         });
     }
+
+    // For activation of table of contents list
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+
+        $('h2').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('#TableOfContents li.active').removeClass('active');
+                $('#TableOfContents li').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
 </script>

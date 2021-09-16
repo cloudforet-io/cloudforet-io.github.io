@@ -67,7 +67,7 @@ If there are exsisting Tags, there's no need to delete them. \(They are for syst
 
 <br/>
 
-{{% alert title="" color="warning" %}}
+{{% alert title="" %}}
 **If you've failed to create a Collector, please check for steps that are _marked red_.**
 {{% /alert %}}
 

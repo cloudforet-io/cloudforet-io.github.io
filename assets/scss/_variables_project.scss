@@ -10,29 +10,26 @@ $td-fonts-serif: Arial, sans-serif;
   $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
 }
 
-//$primary: #ff00ff;
-$primary: #6638B6;
-$secondary: #da5fa1;
-$info: #379c9c;
-$back: #fff;
-
 $enable-gradients: true;
 $enable-rounded: true;
 $enable-shadows: true;
 
-//$h1-font-size: 1.125rem;
-//$h2-font-size: 1rem;
-//$h3-font-size: 1rem;
-//$h4-font-size: 0.875rem;
-//$h5-font-size: 0.875rem;
-//$h6-font-size: 0.75rem;
+$headings-font-weight: 400;
+$headings-line-height: 1.3;
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.124rem;
+$h4-font-size: 0.875rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.875rem;
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0;
 }
 
-// theme color for docs portal
+// Theme colors
+$primary: #A8A5CE;
 $black: #000;
 $white: #FFFFFF;
 $navy000: #F2F4F5;
@@ -47,6 +44,8 @@ $pink100: #CF88A0;
 $khaki100: #5CA2B1;
 $blue100: #007EE5;
 $blue200: #004F99;
+
+$link-color: $blue100;
 
 // Navbar
 $navbar-height: 3.75rem;

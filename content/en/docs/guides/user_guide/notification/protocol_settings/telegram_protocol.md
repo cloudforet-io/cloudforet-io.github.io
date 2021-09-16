@@ -43,7 +43,7 @@ You then need the **Chat ID**. To get this, following will help you to get the C
 4. In the JSON Response, you should see a node with a message that has the type=group, This node will also have an ID. Copy this into CHAT ID field in SpaceONE. The CHAT ID will most likely be a negative number in the form of -#########.
 
 
-{{% alert title="Precautions" color="Info" %}}
+{{% alert title="Precautions" %}}
 The chat id is likely to be a negative number, so make sure you copy the negative symbol as well when setting the chat id in the script.
 ```
 Eg, If chat id = -123456789, occasionally quickly copying and pasting you may forget the - character and copy just 123456789
@@ -87,7 +87,7 @@ You can select when to receive alarm. There two options
 
 Notification subscribes topics to check which alarm to send
 
-{{% alert title="About Notification Topics" color="Info" %}}
+{{% alert title="About Notification Topics" %}}
 Now only monitoring.Alert topics are available. Other topics will be created in future release.
 Just pin _**Setting Mode**_ to _**Receive all notifications**_
 {{% /alert %}}

@@ -111,7 +111,7 @@ After step 5, you'll be able to see the Key ID on the list and also its service 
 _**SpaceONE**_'s _**General Collector**_ requires permission to access the following services:
 
 
-{{% alert title="" color="info" %}}
+{{% alert title="" %}}
 **Google Cloud APIs are categorized as its types, and therefore it is essential to set up a Special Role that collects others types, rather than just the general cloud services.**  
 {{% /alert %}}
 

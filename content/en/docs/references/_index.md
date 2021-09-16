@@ -8,7 +8,7 @@ description: >
 no_list: true
 ---
 
-{{< pane_entry_wrap >}}
-{{< pane_entry title="Release Notes" description="SpaceONE Release Notes" buttonUrl="/docs/references/release_notes/" buttonTxt="Release Notes" />}}
-{{< pane_entry title="Supported Technologies" description="SpaceONE plugin supported providers" buttonUrl="/docs/references/supported_technologies/" buttonTxt="Supported Technologies" />}}
-{{< /pane_entry_wrap >}}
+{{< box_wrap >}}
+{{< box title="Release Notes" description="SpaceONE Release Notes" buttonUrl="/docs/references/release_notes/" buttonTxt="Release Notes" />}}
+{{< box title="Supported Technologies" description="SpaceONE plugin supported providers" buttonUrl="/docs/references/supported_technologies/" buttonTxt="Supported Technologies" />}}
+{{< /box_wrap >}}

@@ -25,24 +25,8 @@ You can set up your IAM policy for power scheduler in SpaceONE with pre-defined 
 
 Please, assign corresponding access policies to SpaceONE from each provider's console as mentioned below, prior to create a Power Scheduler.
 
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/service-account-policy-management"
-    target="_blank"
-    rel="noopener"
-    >(AWS) Service Account Policy Management</a>
-</div>
-
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management"
-    target="_blank"
-    rel="noopener"
-    >(Google Cloud) Service Account Policy Management</a>
-</div>
-
-
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/aws-service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/" text="(Google Cloud) Service Account Policy Management" />}}
 
 ## Set up Basic Scheduler Info
 
@@ -107,8 +91,9 @@ There are three types of scheduler mode.
 
 ![](/docs/guides/user_guide/gettingstart/power/ps10.png)
 
-> **Please, be advised**   
-> Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All` which causes all resource to stop working immediately.
+{{% alert title="Please, be advised" %}}
+Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All` which causes all resource to stop working immediately.
+{{% /alert%}}
 
 ## Define Resource Group
 
@@ -125,11 +110,11 @@ By clicking **`+ Add Resource Group`**, user can move to **Create a resource gro
 ![](/docs/guides/user_guide/gettingstart/power/ps12.png)
 
 The Naming Rules of Resource Group is below.
-
-> * Max 128 character 
-> * Start with character
-> * Character, Number, & Hyphen`-`  available
-
+{{% alert title="" %}}
+Max 128 character <br>
+Start with character <br>
+Character, Number, & Hyphen`-`  available <br> 
+{{% /alert %}}
 
 
 Select resource type

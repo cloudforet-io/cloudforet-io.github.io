@@ -98,7 +98,7 @@ defaultMarkdownHandler = 'goldmark'
     tabWidth = 4
 
 [markup.tableOfContents]
-    endLevel = 3
+    endLevel = 2
     ordered = false
     startLevel = 2
 

@@ -87,13 +87,7 @@ Select a project in which a **Service Account** will be placed. Collected resour
 
 * For a more detailed process on creating a project, refer to the link below.
 
-<div class="my-4">
-<a class="btn btn-secondary"
-    href="/docs/guides/user_guide/project/project_group_management/"
-    target="_blank"
-    rel="noopener"
-    >Project Group Management</a>
-</div>
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/project/project_group_management/" text="Project Group Management" />}}
 
 * Select a project you want, then click the **Save** button.
 
