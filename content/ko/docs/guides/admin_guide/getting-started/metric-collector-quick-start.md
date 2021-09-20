@@ -4,14 +4,12 @@ linkTitle: "Metric Collector Quick Start"
 weight: 4
 date: 2021-07-31
 description: >
-    Quick Guide for user to set up Monitoring Metric Collectors for Servers over Clouds.
+    사용자가 Cloud의 서버들의 Monitoring Metric Collector를 설정하기 위한 퀵 가이드 입니다.  
 ---
-
-# Metric Collector Quick Start
 
 ## How to Set up
 
-Collect monitoring metric data through the following steps:
+아래의 과정을 통해 Monitoring Metric Data를 수집할 수 있습니다 : 
 
 * [Prerequisites](metric-collector-quick-start.md#prerequisites)
 * [Get API Key for SpaceONE Service Account](metric-collector-quick-start.md#get-api-key-for-spaceone-service-account)
@@ -21,67 +19,68 @@ Collect monitoring metric data through the following steps:
 
 ## PREPARATION
 
-To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.
+SpaceONE의 Metric Collector를 사용하기 위해, Service Account가 필요 합니다. 아래의 등록 프로세스를 참고 해주세요.
 
 ## Get API Key for Service Account
 
-Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
+Service Account \(SpaceONE\)를 추가 하기전에, SpaceONE의 API Key가 필요 합니다. 
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
-API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
+API-Key는 사용자 관리 메뉴에서 발급이 가능합니다. [사용자 API Key 관리하기](/docs/guides/admin_guide/my_account/api_key/api_key.md)를 통해 API Key를 발급 합니다. 
 <!-- {% endhint %} -->
 
 ## Assign SpaceOne Service Account \(Ex. Metric Collector\)
  
-You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
-Select Service Provider, Click **+Add** button.
+SpaceONE의 Service Account를 등록하기 위해 **Identity** &gt; **Service Account**로 이동 합니다. 
+
+SpaceONE Service Provider를 선택한 후, **+Add** 버튼을 클릭 합니다. 
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
 
-You can register SpaceONE Service Account following the procedure below.
-1. Service Account name
-2. Fill out User ID
-3. Fill out Credential \(API Key information\)
+아래의 순서로 SpaceONE Service Account를 등록 합니다. 
+1. Service Account 이름 입력
+2. User ID 입력
+3. Credential \(API Key information\) 입력
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
 
-After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌
+Service Account 이름과 user ID를 입력한 후, [Get API Key for Service Account](metric-collector-quick-start.md#get-api-key-for-service-account)에서 받은 정보를 Credentials에 입력 합니다.
 
-Credential input values are shown below.‌
+Credentials 입력 정보는 아래와 같습니다.
 
 1. _API Key_
 2. _API Key ID_
 3. _Identity Endpoint_
 
-All values are required.
+모든 정보가 반드시 입력 되어야 합니다.
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
 
 <!-- {% hint style="info" %} -->
-The Monitoring Metric collector service should not assign a project.
-
-You can skip this procedure.
+Monitoring Metric collector service는 프로젝트 정보를 입력하지 않아야 합니다.
+프로젝트 정보를 입력하는 부분을 생략 합니다.
 <!-- {% endhint %} -->
 
 ## Monitoring Metric Information
 
-You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
-**Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
+입력된 Monitoring Metric 정보는 **Inventory** &gt; **Server** 에서 확인할 수 있습니다.
+
+**Note: Monitoring-metric-collectors의 수집은 하루에 한번을 권장 합니다.**
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
- 
-After the Collector Job is complete, the Monitoring metric is updated.
+
+Collector Job이 완료된 이후에는, 모니터링 메트릭 정보가 업데이트 됩니다. 
 
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
 
-You can check collected data on the **"Raw Data"** tab of **Data -&gt; Monitoring**.
+수집된 데이터를 **"Raw Data"** tab of **Data -&gt; Monitoring** 에서 확인할 수 있습니다.
+
 ## Metric items \(Monitoring Collection\)
 
 <!-- {% hint style="info" %} -->
-The default metric type is supported after version 1.5.3.
-**Note: Monitoring Metric entries are continuously updated.**
+**Note: 모니터링 메트릭 항목들은 지속적으로 업데이트 됩니다.**
 <!-- {% endhint %} -->
 
 ### Default Metric Stat
@@ -93,57 +92,10 @@ The default metric type is supported after version 1.5.3.
 
 ### Collecting Metrics
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Collecting Metric Type</th>
-      <th style="text-align:left">Metric name / (Unit)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><b>CPU</b>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>utilization (%)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Memory</b>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>usage (%)</li>
-          <li>total (bytes)</li>
-          <li>used (bytes)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Disk</b>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>write_iops (counts)</li>
-          <li>write_throughput (bytes)</li>
-          <li>read_iops (counts)</li>
-          <li>read_throughput (bytes)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Network</b>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>received_throughput (bytes)</li>
-          <li>received_pps (counts)</li>
-          <li>sent_throughput (bytes)</li>
-          <li>sent_pps (counts)</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+|Collecting Metric Type	|Collecting Metric Type	|
+|:--:|:--|
+|**CPU**|utilization (%)|
+|**Memory**|usage (%) </br> total (bytes) </br> used (bytes)|
+|**Disk**|write_iops (counts) </br> write_throughput (bytes) </br> read_iops (counts) </br> read_throughput (bytes)|
+|**Network**|received_throughput (bytes) </br> received_pps (counts) </br> sent_throughput (bytes) </br> sent_pps (counts)|
+

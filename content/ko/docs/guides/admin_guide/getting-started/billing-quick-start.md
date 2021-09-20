@@ -4,42 +4,35 @@ linkTitle: "Billing Quick Start"
 weight: 3
 date: 2021-07-31
 description: >
-    Quick Guide to help Users easily set up Billing Services
+    사용자들이 Billing 서비스를 쉽게 설정하도록 돕는 퀵 가이드 입니다. 
 ---
 
 
-# Billing Quick Start
-
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_01.png)
-
-<br/>
-
 
 
 ## How to Set up
 
-You can view and use the **`Billing Service`** after completing the following steps:
+아래의 설정 과정을 완료한 후에 **`Billing Service`** 를 사용할 수 있습니다 :
 
 * [Prerequisites](#prerequisites)
 * [Getting API Key from the Billing Service Provider](#getting-api-key-from-the-billing-service-provider)
 * [Registering the Billing Service Account](#registering-the-billing-service-account)
 * [Veiwing Billing Informations](#billing-information)
 
-<br/>
 
 
 
 ## Prerequisites
 
-Billing informations can be provided by various vendors like **`AWS`**, **`Google Cloud`**, **`Azure`** or **`Hyperbilling`**.
+비용 정보는 **`AWS`**, **`Google Cloud`**, **`Azure`** 및 **`Hyperbilling`** 과 같은 다양한 서비스 제공자들로부터 전달받을 수 있습니다.
 
-To enable billing service, contact your domain administrator at SpaceONE.
+빌링 서비스를 활성화 하기 위해서는 먼저 도메인 관리자에게 문의 하세요.
 
 {{% alert title="" %}}
-**In the Version 1.5.3, Hyperbilling backend is enabled by default.**
+**1.5.3 버전 이후로는, Hyperbilling backend가 기본적으로 활성화 됩니다.**
 {{% /alert %}}
 
-<br/>
 
 Supported billing backends are :
 
@@ -47,123 +40,93 @@ Supported billing backends are :
 | :--- | :--- |
 | 1.5.3 | Hyperbilling for AWS |
 
-<br/>
-
-
 
 ## Getting API Key from the Billing Service Provider
+ 
+빌링 Service Account를 추가하기 전에, API Key 정보가 필요 합니다.
+각 서비스 제공자에게 이 정보를 문의 하세요.
 
-Before adding a Billing Service Account, you need the API Key. 
-
-Contact your vendor for this information.
-
-<br/>
-
-The contact point of billing backends are :
+빌링 서비스 연동을 위한 컨텍 포인트는 아래와 같습니다 : 
 
 | Backend | Contact |
 | :--- | :--- |
 | Hyperbilling for AWS | MEGAZONE CLOUD \(Innoworks Team\) |
-
-<br/>
-
 
 
 ## Registering the Billing Service Account
 
 ### How to Register
 
-Register **Billing Service Accounts** by following the next steps :
+아래의 순서를 따라 **Billing Service Accounts**를 등록 하세요.
 
 1. [Select and Add Hyper Billing](#1-hyper-billing)
 2. [Fill in Base Informations](#2-base-information)
 3. [Fill in Credentials \(API Key\)](#3-credentials-api-key)
 4. [Assigning Projects](#4-assigning-projects)
 
-<br/>
-
-
 
 #### 1. Hyper Billing
 
-You can register the Billing service account at the menu, **`Identity`** > **`Service Account`**.
+빌링 Service Account를 **`Identity`** > **`Service Account`** 메뉴를 통해 등록할 수 있습니다.
 
-Select your **Hyper Billing** Service Provider, then click **Add**.
+**Hyper Billing** 서비스 제공자를 선택한 후, **Add** 를 클릭 합니다.
 
 {{% alert title="" %}}
-**If _`Hyper Billing` does not appear_ in your Service Providers List, please contact the SpaceONE Domain Administrator.**
+**만약 _`Hyper Billing`이 서비스 제공자 리스트에 없는 경우, SpaceONE 도메인 관리자에게 문의 하세요.**
 {{% /alert %}}
 
 ![Register billing service account](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_02.png)
 
-<br/>
-
-
 
 #### 2. Base Information
-Fill in Base Informations, like 'Name' and 'Tags'.
+'이름' 혹은 'Tags'와 같은 기본적인 정보를 입력 하세요.
 
 ![Name of service account](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_03.png)
-
-<br/>
-
 
 
 #### 3. Credentials \(API Key\)
 
-After filling out the base information, you now have to configure **`Credentials`**.
+기본정보를 입력한 후, **`Credentials`** 를 설정해야 합니다.
 
-The **`Credentials`** can be received from the Billing Service Provider. 
+**`Credentials`** 은 빌링 서비스 제공자로부터 전달 받아야 합니다.
 
-(In this example, the Credentials were given by the Megazone Hyperbilling team.)
-
-The Credentials given by Billing Service Provider, will be consisted with **"Account", "Email" and "Key"** informations. Fill out those informations correctly.
-
+Billing Service Provider로 부터 전달 받은 Credentials은 **"Account", "Email" and "Key"** 정보를 포합하고 있습니다. 해당 정보를 정확하게 입력 합니다.
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_04.png)
-
-<br/>
-
 
 
 #### 4. Assigning Projects
 
 {{% alert title="" %}}
-**PLEASE, DO NOT SKIP THIS STEP.**
+**아래 순서는 반드시 진행되어야 합니.**
 {{% /alert %}}
 
-Assigning a Project is **mandatory** when using the Billing Service.
+빌링 서비스를 설정할 때 Project를 **반드시** 추가 해야 합니다. 
 
-Select one of your projects that match the service account, and billing service. 
+Billing Service Account가 연결 되어야 하는 프로젝트를 선택 합니다.
 
-When you're done please **`Save`**. 
+설정이 돤료 되었다면 **`Save`** 버튼을 클릭 합니다.
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_05.png)
 
 {{% alert title="" %}}
-**If you have several billing accounts, simply repeat the steps from :**
-
-**"Registering the Billing Service Account >** [How to Register](#how-to-register)
+**빌링 Service Account를 여러개 가지고 있다면, 아래의 순서를 반복 합니다 :**
+**빌링 Service Account 등록하기 >** [How to Register](#how-to-register)
 {{% /alert %}}
-
-<br/>
-
 
 
 ## Billing Information
-
-When all the steps above are finished, 
-
-you will be able to see the **`Billing Information`** from the **main dashboard** and also the seperate **project pages**.
+ 
+위의 모든 과정이 완료 되었다면,
+**main dashboard** 및 각 **project dashboard**에서 **`Billing Information`**을 확인할 수 있습니다. 
 
 * **Main Dashboard** > Overall Billing information
-    * An integrated summation of all the billing accounts will be shown on the main dashboard.
+    * main dashboard에서 모든 billing account의 합산 정보가 나타납니다.
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_06.png)
 
-<br/>
 
 * **Seperate Project Pages** > Project Billing information
-    * Each project page will provides its own billing information after you've registered a billing service account and assigned it to a project.
+    * 각 Project Dashboard에서는 빌링 Service Account를 등록한 이후 각각의 빌링 정보를 제공합니다. 
 
 ![](/docs/guides/admin_guide/getting-started/billing_quick_start_img/billing_quick_start_img_07.png)
 
