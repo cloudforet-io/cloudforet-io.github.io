@@ -2,6 +2,7 @@
 // Right side toc
 //
 .td-sidebar-toc {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
@@ -107,3 +108,8 @@
   }
 }
 
+@media only screen and (max-width:1023.999px) {
+  .td-sidebar-toc {
+    display: none;
+  }
+}

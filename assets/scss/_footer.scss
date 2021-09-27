@@ -3,14 +3,11 @@ footer:not(.footer-home) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: calc(100vw - 16.3125rem * 2);
-    border-top: solid 0.0625rem $navy100;
+    border-top: solid 0.0625rem #D6DBDF;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
     margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    color: $navy400;
+    color: #415567;
   }
 
   .license {
@@ -39,7 +36,6 @@ footer:not(.footer-home) {
 
 @media only screen and (max-width: 1023.999px) {
   footer:not(.footer-home)  {
-
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -56,5 +52,19 @@ footer:not(.footer-home) {
         margin-top: 1.5rem;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .documentation footer {
+    max-width: 55rem;
+    margin-left: 16.3125rem;
+    margin-right: calc(15.3125rem + 1rem);
+  }
+
+  .community footer {
+    width: 55rem;
+    margin: 0 auto;
   }
 }
