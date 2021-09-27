@@ -45,13 +45,8 @@
   }
 
   a:not(.active):hover {
-    //color: $navy500;
     text-decoration: none;
   }
-
-  //&.with-child > input ~ label:hover::before {
-  //  color: $navy500;
-  //}
 
   .dropdown {
     a {
