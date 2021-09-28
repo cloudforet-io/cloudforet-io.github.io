@@ -3,13 +3,12 @@ title: "gRPC Interface 확인"
 linkTitle: "gRPC Interface 확인"
 weight: 1
 date: 2021-08-04
-description: 
+description: gRPC Interface 확인
 
 ---
 
 먼저, 개발하고자 하는 Plugin 과 Core 서비스 간의 Interface 를 확인한다. 
 interface 는 각각의 서비스 마다 구조가 다르다. 이에 대한 gRPC interface 정보는 API 문서에서 확인 가능하다. ([SpaceONE API](https://spaceone-dev.gitbook.io/spaceone-apis))
-
 
 예를 들어 Identity 의 인증 용 Auth Plugin 을 개발한다고 가정해보자.
 이때, Auth Plugin 의 Interface 정보를 확인해 보면 아래와 같다. ([SpaceONE API - Identity Auth](https://spaceone-dev.gitbook.io/spaceone-apis/identity/plugin/auth ))

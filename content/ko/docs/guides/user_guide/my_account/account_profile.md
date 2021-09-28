@@ -16,7 +16,7 @@ Users can view and modify their profile information through the **`Profile`** me
 
 You can reach this menu by clicking on the Profile Icon on the top right corner of the console.
 
-<br/>
+<br>
 
 ![User Profile](/ko/docs/guides/user_guide/my_account/profile_img/profile_01.png)
 
@@ -31,7 +31,7 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 * **Log Out** : Log out and return to the console login page.
 {{% /pageinfo %}}
 
-<br/>
+<br>
 
 
 ## Editing Profile

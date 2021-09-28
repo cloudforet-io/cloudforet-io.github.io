@@ -18,16 +18,16 @@ The Project page consists **`Project Group Management`** and **`Project Manageme
 
 It allows company users to participate in projects, and manage authorization through roles in projects.  
 
-<br/>
+<br>
 
 When you enter the first page of **`Project`**, you can see the entire project list aka the **`All Project`**.
 
-<br/>
+<br>
 
 ![Project Management page Overview](/docs/guides/user_guide/project/project_group_management_img/pmg_01.png)
 
 
-<br/>
+<br>
 
 ## Project Group Management
 
@@ -37,7 +37,7 @@ The search field, helps you easily search / create / edit the **`Project Group T
 
 ![](/docs/guides/user_guide/project/project_group_management_img/pmg_03.png)
 
-<br/>
+<br>
 
 ### View Project Group
 
@@ -52,7 +52,7 @@ When you select a **`Project group`**, you can see all the projects that belong 
 
 ![Project Group&#xC744; &#xC120;&#xD0DD;&#xD55C; &#xACBD;&#xC6B0;](/docs/guides/user_guide/project/project_group_management_img/pmg_05.png)
 
-<br/>
+<br>
 
 
 ### Create Project Group
@@ -71,7 +71,7 @@ click the **`+`** button like the following image :
 
 ![Sub Project Group &#xC785;&#xB825; &#xD654;&#xBA74;](/docs/guides/user_guide/project/project_group_management_img/pmg_08.png)  
 
-<br/>
+<br>
 
 ### Edit Directory
 
@@ -79,7 +79,7 @@ From the **`Project Groups`** side bar, you can edit the directory of your **Pro
 
 ![](/docs/guides/user_guide/project/project_group_management_img/pmg_15.png)  
 
-<br/>
+<br>
 
 
 ### Edit / Delete Project Group
@@ -94,7 +94,7 @@ To delete a **Project Group**, you must delete all of the projects that are incl
 
 ![Delete Project Group](/docs/guides/user_guide/project/project_group_management_img/pmg_11.png)  
 
-<br/>
+<br>
 
 
 ### Set Project Group Roles
@@ -125,7 +125,7 @@ During this process you can only grant users **Project Admin** roles.
 However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/guides/advanced_topics/user-role).
 {{% /alert %}}
 
-<br/>
+<br>
 
 
 ## View Project 
@@ -141,7 +141,7 @@ You can also check your **Cloud `Service Account` Type**.
 
 ![](/docs/guides/user_guide/project/project_group_management_img/pmg_13.png)  
 
-<br/>
+<br>
 
 
 ## Search Project Group 

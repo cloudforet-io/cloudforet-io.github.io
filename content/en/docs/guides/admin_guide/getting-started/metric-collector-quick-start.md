@@ -8,7 +8,6 @@ description: >
 ---
 
 ## How to Set up
-
 Collect monitoring metric data through the following steps:
 
 * [Prerequisites](metric-collector-quick-start.md#prerequisites)
@@ -17,16 +16,11 @@ Collect monitoring metric data through the following steps:
 * [Monitoring Metric Information](metric-collector-quick-start.md#monitoring-metric-information) 
 * [Collecting Monitoring Metric Type](metric-collector-quick-start.md#collecting-monitoring-metric-type)
 
-## PREPARATION
-
+## PREPARATIONs
 To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.
 
 ## Get API Key for Service Account
-
 Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
-
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
@@ -34,12 +28,8 @@ API-Key is provided through the system administrator. If you don't have an API-K
 <!-- {% endhint %} -->
 
 ## Assign SpaceOne Service Account \(Ex. Metric Collector\)
- 
-You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.
+You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.<br>
 Select Service Provider, Click **+Add** button.
-
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
 
 You can register SpaceONE Service Account following the procedure below.
@@ -47,22 +37,15 @@ You can register SpaceONE Service Account following the procedure below.
 2. Fill out User ID
 3. Fill out Credential \(API Key information\)
 
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
-
-After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌
-
-Credential input values are shown below.‌
+After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌ <br>
+Credential input values are shown below.‌ <br>
 
 1. _API Key_
 2. _API Key ID_
 3. _Identity Endpoint_
 
 All values are required.
-
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
 
 <!-- {% hint style="info" %} -->
@@ -72,23 +55,14 @@ You can skip this procedure.
 <!-- {% endhint %} -->
 
 ## Monitoring Metric Information
-
 You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
 **Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
-
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
- 
 After the Collector Job is complete, the Monitoring metric is updated.
-
-<br>
-
 ![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
-
 You can check collected data on the **"Raw Data"** tab of **Data -&gt; Monitoring**.
-## Metric items \(Monitoring Collection\)
 
+## Metric items \(Monitoring Collection\)
 <!-- {% hint style="info" %} -->
 The default metric type is supported after version 1.5.3.
 **Note: Monitoring Metric entries are continuously updated.**

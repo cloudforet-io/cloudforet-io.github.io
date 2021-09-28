@@ -3,7 +3,7 @@ title: "Plugin Deployment"
 linkTitle: "Plugin Deployment"
 weight: 3
 date: 2021-08-04
-description: 
+description: Plugin Deployment
 
 ---
 등록된 Plugin 을 실제로 배포해서 사용하려면, Plugin 이미지를 바탕으로 Kubernetes 환경에 Pod 를 배포해야 한다.  

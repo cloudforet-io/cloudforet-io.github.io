@@ -9,7 +9,6 @@ description: >
 ---
 
 ## Install Kubernetes
-
 SpaceONE provides various EKS installation guides.
 
 | Type | Description |
@@ -17,32 +16,24 @@ SpaceONE provides various EKS installation guides.
 | Option 1 | Create new ***VPC*** and ***EKS Cluster*** |
 | Option 2 | Create ***EKS Cluster*** in existing VPC |
 
-
-This example shows the Option 1.
-
+This example shows the Option 1.<br>
 https://github.com/spaceone-dev/launchpad.git
 
 ### Configure environments
-
 Prepare your AWS credentials. Put your ~/.aws/credentials
 
-<br>
-
-~~~
+~~~bash
 git clone https://github.com/spaceone-dev/launchpad.git
 cd launchpad/spaceone/eks/terraform
 ~~~
 
-edit eks.auto.tfvars
-
+edit eks.auto.tfvars<br>
 This is your environment variables.
 
 * ***region*** is aws region name for installation.
 * ***userarn*** is your IAM arn for installation.
 
-<br>
-
-~~~
+~~~bash
 region = "us-east-1"
 
 map_users = [
@@ -55,37 +46,27 @@ map_users = [
 ~~~
 
 ### Execute terraform
-
 If you don't have terraform binary, see [Reference](#reference)
-~~~
+~~~bash
 terraform init
 terraform plan
 terraform apply
 ~~~
 
 ### Configure kubernetes
-
-After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes.
-
+After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes. <br>
 If you don't have kubectl, see [Reference](#reference)
 You may also install aws-iam-authenticator, see [Reference](#reference)
 
-<br>
-
-~~~
+~~~bash
 cp kubecconfig_spaceone-prd-eks ~/.kube/config
 ~~~
 
 After installation of EKS, we highly recommend to install [AWS Load Balancer Controller](#reference) and [External-DNS](#reference).
 
-
-
-
-
-
 ## Install SpaceONE with Helm Chart
 
-~~~
+~~~bash
 kubectl create ns spaceone
 kubectl create ns root-supervisor
 
@@ -95,7 +76,7 @@ kcd spaceone
 
 ### Helm repo
 
-~~~
+~~~bash
 helm repo add spaceone https://spaceone-dev.github.io/charts
 helm repo update
 helm search repo
@@ -103,13 +84,11 @@ helm search repo
 
 ### Pre-condition
 
-read pre-condition/README.md
-
+read pre-condition/README.md <br>
 update values in pre-conditon
 apply pre-condition
 
-<br>
-~~~
+~~~bash
 kubectl create -f shared.yaml
 ~~~
 
@@ -119,14 +98,11 @@ kubectl create -f shared.yaml
 * update database.yaml 
 * update frontend.yaml
 
-
 If you use mongodb cluster,
 host is "localhost" in database.yaml
 Use TYPE 2. global varable in values.yaml
 
-<br>
-
-~~~
+~~~bash
 kcd spaceone
 
 helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/spaceone
@@ -134,16 +110,10 @@ helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/
 
 ## SpaceONE Configuration
 
-
 ## Reference
-
-[How to install terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-
-[How to install kubectl](https://kubernetes.io/docs/tasks/tools/)
-
-[How to install aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
-
-[How to install AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
-
-[How to install External DNS](https://github.com/spaceone-dev/launchpad/tree/master/spaceone/external-dns)
+* [How to install terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+* [How to install kubectl](https://kubernetes.io/docs/tasks/tools/)
+* [How to install aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
+* [How to install AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
+* [How to install External DNS](https://github.com/spaceone-dev/launchpad/tree/master/spaceone/external-dns)
 

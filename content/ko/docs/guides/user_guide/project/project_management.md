@@ -24,7 +24,7 @@ The **`Project`** page allows you the following features:
 
 ![Project Management Overview](/docs/guides/user_guide/project/project_management_img/pm_01.png)
 
-<br/>
+<br>
 
 ## Summary
 
@@ -34,7 +34,7 @@ Check general statuses on **`Trends`**, **`Cloud Service Type`**, and **`Region`
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_03.png)
 
-<br/>
+<br>
 
 ### Alert
 
@@ -42,7 +42,7 @@ You can easily check on **`Alerts`** by their statuses.
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_10.png)
 
-<br/>
+<br>
 
 ### Billing
 
@@ -50,7 +50,7 @@ You can easily check **`Billing Trends`**. Click on each service names to see de
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_09.png)
 
-<br/>
+<br>
 
 ### Personal Health Dashboard
 
@@ -58,7 +58,7 @@ You can check **`Open Issues`**, **`Scheduled Changes`** and **`Other Notificati
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_04.png)
 
-<br/>
+<br>
 
 ### Service Accounts
 
@@ -66,7 +66,7 @@ You can check resource usages from **`Service Accounts`** within the project. Yo
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_05.png)
 
-<br/>
+<br>
 
 ### Daily Updates
 
@@ -76,7 +76,7 @@ Click on each update to go to the detailed status page.
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_06.png)
 
-<br/>
+<br>
 
 ### Cloud Services
 
@@ -86,7 +86,7 @@ To see further details you can click on each service or the **`more >`** button.
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_07.png)
 
-<br/>
+<br>
 
 ### Trusted Advisor
 
@@ -94,7 +94,7 @@ You can easily check Advises on **`Cost Optimization`** , **`Performance`** , **
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_08.png)
 
-<br/>
+<br>
 
 ## Member
 
@@ -116,7 +116,7 @@ Select users you want to delete and click **`Action`** > **`Delete`**.
 
 ![Delete member](/docs/guides/user_guide/project/project_management_img/pm_13.png)
 
-<br/>
+<br>
 
 ## Alert
 
@@ -126,7 +126,7 @@ You can also manage Rules and Escalation Policies from **`Settings`**.
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_14.png)
 
-<br/>
+<br>
 
 ## Notifications
 
@@ -134,7 +134,7 @@ Add notification channels such as, **`Slack Protocol`** **`Megazone Voice Call P
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_15.png)
 
-<br/>
+<br>
 
 ## Maintenance Window
 
@@ -144,7 +144,7 @@ Click **`Create Maintenance Window`** and select a schedule.
 
 ![](/docs/guides/user_guide/project/project_management_img/pm_16.png)
 
-<br/>
+<br>
 
 ## Tag
 

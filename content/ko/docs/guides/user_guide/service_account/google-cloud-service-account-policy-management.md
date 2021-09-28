@@ -35,7 +35,7 @@ description: >
 * [**Register Service Account into SpaceONE**](#register-your-service-account-into-spaceone)
 {{% /pageinfo %}}
 
-<br/>
+<br>
 
 
 
@@ -102,7 +102,7 @@ After step 5, you'll be able to see the Key ID on the list and also its service 
 
 ![](/docs/guides/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.07.16.png)
 
-<br/>
+<br>
 
 
 
@@ -185,7 +185,7 @@ When you are done, click the **`Save`** button.
 
 ![](/docs/guides/user_guide/service_account/service_account_img/google/screen-shot-2021-04-07-at-18.26.14.png)
 
-<br/>
+<br>
 
 
 
@@ -250,7 +250,7 @@ After finishing the edit click the **`Save`** button.
 
 ![](/docs/guides/user_guide/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.05.26.png)
 
-<br/>
+<br>
 
 
 

@@ -526,3 +526,15 @@ $shadows-big: multiple-box-shadow(100,300);
   50% {opacity:.3;}
   to {opacity:1;}
 }
+
+@media screen and (min-width: 1024px) {
+  .only-desktop {
+    display: inline-block;
+  }
+  .only-tablet {
+    display: none !important;
+  }
+  .only-mobile {
+    display: none !important;
+  }
+}

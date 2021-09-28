@@ -7,16 +7,11 @@ description: >
     Install & configure monitoring webhook plugin to receive alert 
 ---
 
-# Overview
+## Overview
 SpaceONE의 Monitoring Service는 외부 시스템으로부터 Alert 수신시 Webhook 방식을 사용하고, 이를 지원하는 다양한 플러그인들을 가지고 있습니다.
 다양한 플러그인들을 활용하여 Webhook URL을 생성하여 알람을 수신 받을 수 있습니다. 
-
-<br>
-
 ![webhook main](/docs/guides/user_guide/monitoring/project_dashboard/webhook_img/webhook_img_01.png)
-
 Webhook Plugin 리스트 조회시 각 항목에 대한 설명은 아래와 같습니다.
-
 |항목|설명|
 |:--:|:--:|
 |Name|Webhook의 수신 설정명|
@@ -30,37 +25,23 @@ Webhook URL을 외부의 모니터링 시스템과 연동하기 위한 가이드
 [Monitoring System 연결가이드](/docs/guides/user_guide/monitoring/webhook_settings/) 를 참조 해주세요.
 {{% /alert %}}
 
-
-# Managing Webhook Plugin
+## Managing Webhook Plugin
 _**Alert**_ 를 수신받기 위한 다양한 종류의 _**Monitoring Webhook Plugin**_ 을 추가,변경,삭제할 수 있습니다.
 
 ## Add webhook plugin
 MarketPlace 로부터 다양한 타입의 _**Monitoring Webhook Plugin**_ 을 선택하여 설치합니다.
-
-<br>
-
 ![webhook add](/docs/guides/user_guide/monitoring/project_dashboard/webhook_img/webhook_img_02.png)
 
 ## Update webhook plugin
 Webhook의 이름과 사용되는 플러그인 버전을 변경할 수 있습니다. 
-
-<br>
-
 ![webhook update](/docs/guides/user_guide/monitoring/project_dashboard/webhook_img/webhook_img_03.png)
 
 ## Disable webhook plugin
 Webhook으로부터 수신되는 Alert이 무시 되도록 설정합니다. 
-
-<br>
-
 ![webhook disable](/docs/guides/user_guide/monitoring/project_dashboard/webhook_img/webhook_img_04.png)
-
 
 ## Delete webhook plugin
 Webhook을 삭제합니다. 
-
-<br>
-
 ![webhook delete](/docs/guides/user_guide/monitoring/project_dashboard/webhook_img/webhook_img_05.png)
 
 
