@@ -8,59 +8,38 @@ description: >
 ---
 
 ## Overview
-
 On the Collector History page, you can check the monthly changes of the various resources collected
 through the Collector Plugin on SpaceONE.
 
 ## Collector History
-
 You can check the monthly job status collected by the Collector. Job is the result of performing according to the schedule that you set up the actions for the Collector.
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_01.png)
-
-Main Graph shows the status of the number of jobs collected. The number of successful and unsuccessful jobs is shown on graph. When you click a point, job list details are shown in the form of the table below.
-
+Main Graph shows the status of the number of jobs collected. The number of successful and unsuccessful jobs is shown on graph. When you click a point, job list details are shown in the form of the table below.<br>
 You can move the month through `< >` at the top right of the graph.
 
 ### Collector History Detail
 
 #### Status
-
-You can check list of jobs respectively in 4 status(All, In-Progress, Completed, Failed).
-
+You can check list of jobs respectively in 4 status(All, In-Progress, Completed, Failed).<br><br>
 **ALL**
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_02.png)
+<br>
 
 **In-Progress**
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_03.png)
+<br>
 
 **Completed**
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_04.png)
+<br>
 
 **Failed**
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_05.png)
+<br>
 
 #### Search Bar
 Using the search bar, You can search Job ID, Status, Collector, Created Time for Job collected through Collector History.
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_06.png)
-
 The information of the job can be viewed on the Collector history page is as follows.
 
 | Title | Description |
@@ -73,26 +52,15 @@ The information of the job can be viewed on the Collector history page is as fol
 | Duration | Job running time |
 
 ### Job Detail
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_07.png)
-
-When you click an individual job in the job list on the Collector history page, you can check the details on the Job Management page.
-
+When you click an individual job in the job list on the Collector history page, you can check the details on the Job Management page.<br>
 At the top of the page, you will see the collector and cloud provider that collected the job.
 
-
 #### Task Search
-
 You can search service account, project, status for job's task collected by Collector History.
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_08.png)
 
 #### Task List Search
-
 At the bottom of the page, a list of tasks is shown according to Job status. The information of Task that you can see on this page is as follows.
 
 | item | Description |
@@ -109,7 +77,4 @@ At the bottom of the page, a list of tasks is shown according to Job status. The
 | Duration | task running time |
 
 When the status of job is failure, you can see the cause of task failure in the Error list at the bottom.
-
-<br>
-
 ![](/docs/guides/admin_guide/management/collector-history_img/collector-history_image_09.png)

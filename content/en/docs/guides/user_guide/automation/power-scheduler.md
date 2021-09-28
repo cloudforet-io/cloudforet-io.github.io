@@ -9,37 +9,25 @@ description: >
 ---
 
 ## Overall
-
-In Power Scheduler page, User can schedule power status of target cloud resources. 
-
+In Power Scheduler page, User can schedule power status of target cloud resources.  
 Power Scheduler page offers listing scheduler information, add/update/delete scheduler.
 
 ## Prerequisites
-
-User need to define security policy\(IAM\) before setup power scheduler. 
-
+User need to define security policy\(IAM\) before setup power scheduler.
 Before creating Power Scheduler modify your existing policy, For detailed process refer to link below.
 
 {{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
 {{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/" text="(Google Cloud) Service Account Policy Management" />}}
 
 ## Power Scheduler Dashboard
-
 ![](/docs/guides/user_guide/automation/automation_img/image(89).png)
 
-**Scheduler list by Projects**
-
-User can see Overall status of power scheduling 
-
-**Search Bar**
-
-User can search status of power scheduling by project name.
-
-**Scheduling Widget**
-
-Items of power scheduler information for each projects are below.
-
-<br>
+* **Scheduler list by Projects**  
+User can see Overall status of power scheduling  
+* **Search Bar**  
+User can search status of power scheduling by project name.  
+* **Scheduling Widget**  
+Items of power scheduler information for each projects are below.  
 
 ![](/docs/guides/user_guide/automation/automation_img/image(89).png)
 
@@ -82,7 +70,7 @@ Items of power scheduler information for each projects are below.
 </table>
 
 {{% alert title="Scheduling Meat Map" %}}
-The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below <br/>
+The color of scheduling head map has 2 steps. The color shows how long is scheduled job. Each color means below <br>
 <img src="/docs/guides/user_guide/automation/automation_img/image(58).png"> Scheduled time is between 0 ~ 12 hours
 <img src="/docs/guides/user_guide/automation/automation_img/power-scheduler-12h.png"> Scheduled time is between 12~24 hours
 {{% /alert%}}
@@ -93,49 +81,25 @@ The color of scheduling head map has 2 steps. The color shows how long is schedu
 In scheduler Calendar, User can manage this functions
 
 #### Scheduling Time
-
-<br>
-
 ![](/docs/guides/user_guide/automation/automation_img/image(83).png)
-
 User can see scheduler timetable. x-axis is date, y-axis is time to be controlled. By clicking _**This weeks**_ jump to power scheduling plan for this weeks.
 
 Move to next/previous weeks by  `< >` buttons right upper side of table.
 
-
-
 #### Resource Group
-
 **• Priority by Resource Group**
-
-<br>
-
 ![](/docs/guides/user_guide/automation/automation_img/image(87).png)
 
-Scheduler is consist of several resource group. Each resource group has step defined by priority.
-
-The lower number gets higher priority. The status change of higher priority finishes first. If the target status is _**ON**_, higher priority _**Resource Group**_ start first. 
-
-Create/Deleting _**Resource Group**_ is done by clicking _**Edit button &gt; + Add Group**_.  
-
+Scheduler is consist of several resource group. Each resource group has step defined by priority.<br>
+The lower number gets higher priority. The status change of higher priority finishes first. If the target status is _**ON**_, higher priority _**Resource Group**_ start first.<br>
+Create/Deleting _**Resource Group**_ is done by clicking _**Edit button &gt; + Add Group**_.<br>
 **Resource Groups In Same Priority**
-
-<br>
-
 ![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-01.png)
 
-There is sequence of changing status between resource groups in same priority.
-
-Upper position resource group changes first, and Lower position goes second.
-
-
-
+There is sequence of changing status between resource groups in same priority.<br>
+Upper position resource group changes first, and Lower position goes second.<br>
 _**Details of Resource Group**_
-
-<br>
-
 ![](/docs/guides/user_guide/automation/automation_img/11-power-scheduler-resource-group-wizard.png)
-
 Detailed status resource group is done by clicking _**Name of Resource Group.**_
 
 | Item | Description |
@@ -144,48 +108,31 @@ Detailed status resource group is done by clicking _**Name of Resource Group.**_
 | Resource Type | Type of Resource Group\(Instance, RDS, Autoscaling\) |
 | Target List | List of Cloud Resources to be controlled |
 
-### 
-
 ### Creating New Scheduler
-
 ![](/docs/guides/user_guide/automation/automation_img/power-scheduler-creating.png)
 
-By Clicking _**Creating New Scheduler**_ button, New scheduler editing screen appears. 
-
-If there is no existed scheduler, Creation screen is auto generated.
-
+By Clicking _**Creating New Scheduler**_ button, New scheduler editing screen appears.<br>
+If there is no existed scheduler, Creation screen is auto generated.<br>
 To create schedule, fill out several items required.
 
-
-
 #### Name
-
-Name of Schedule. 
-
+Name of Schedule.<br>
 Combination of String, Number, '-' is valid. escape character is not available. 
 
 #### Timestamp
-
-Specifying time for scheduler, x-axis is date, y-axis is detailed time.    
-
-Selecting range of times done by click & drag in calendar.
-
+Specifying time for scheduler, x-axis is date, y-axis is detailed time.<br>    
+Selecting range of times done by click & drag in calendar.<br>
 Schedule has two mode.
 
 | Scheduled mode | State | Description | color |
 | :--- | :--- | :--- | :--- |
-| Repeated Schedule |  | Repeated by every weeks. Within selected area, Resources are On, Otherwise\(Non selected\) resources became Off. | <img src="/img/doc/guides/automation/power-scheduler/repeated-schedule.png" alt="drawing" width="200"/> |
-| One time | ON | Event time for specific date. At the selected area, resources became on.  | <img src="//docs/guides/user_guide/automation/power-scheduler-ficture/one-time-on.png" alt="drawing" width="200"/>|
-| One time | OFF | Event time for specific date. At the selected area, resources became off. | <img src="/docs/guides/user_guide/automation/power-scheduler-ficture/one-time-off.png" alt="drawing" width="200"/>|
-
-
+| Repeated Schedule |  | Repeated by every weeks. Within selected area, Resources are On, Otherwise\(Non selected\) resources became Off. | <img src="/docs/guides/user_guide/automation/automation_img/repeated-schedule.png" alt="drawing" width="200"/> |
+| One time | ON | Event time for specific date. At the selected area, resources became on.  | <img src="/docs/guides/user_guide/automation/automation_img/one-time-on.png" alt="drawing" width="200"/>|
+| One time | OFF | Event time for specific date. At the selected area, resources became off. | <img src="/docs/guides/user_guide/automation/automation_img/one-time-off.png" alt="drawing" width="200"/>|
 
 #### Resource Group
-
-Creating resource groups to control.
-
-By _**Creating Resource Group**_ button, _**Creating Resource Group Page**_ Pops up.
-
+Creating resource groups to control.<br>
+By _**Creating Resource Group**_ button, _**Creating Resource Group Page**_ Pops up.<br>
 Informations to be specified are belows
 
 <table>
@@ -229,13 +176,10 @@ Informations to be specified are belows
 Confirm the input information, then click _**save**_ button.
 
 ### Schedule Deletion
-
 ![](/docs/guides/user_guide/automation/automation_img/image(90).png)
-
 By clicking _**Trash Can**_ button, Scheduler can be deleted.
 
 ### Scheduler Edit
-
 ![](/docs/guides/user_guide/automation/automation_img/image(92).png)
 
 <table>
@@ -270,14 +214,10 @@ By clicking _**Trash Can**_ button, Scheduler can be deleted.
   </tbody>
 </table>
 
-
-
 ## Limitation & Restrictions
-
 Some limitations for power scheduler service are existed, Most of them are inherited from functionality of each cloud providers.
 
 ### AWS
-
 Cloud resources which has conditions below can not managed by power scheduler service
 
 * AutoScalingGroup
@@ -292,18 +232,15 @@ Cloud resources which has conditions below can not managed by power scheduler se
   * [AWS DB instance limitation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html#USER_StopInstance.Limitations)
 
 ### Google Cloud
-
 Cloud resources has a such a condition that does not support within power scheduler Service 
 
 * Compute Engine
   * Compute Engine resources may **NOT** turn on/off if selected compute engines are instance of **Instance group**.
   * Categorizing **Instance group**'s compute engine and normal compute engine on the view will be available soon.  
 * Instance Group
-
   * Only **Stateless** type in Instance Group is valid to turn on/off in power scheduler service because Google Cloud supports autoscaling on **Stateless** type only in Instance Group.  \(Refer to[ google.compute.instance\_group](https://cloud.google.com/compute/docs/instance-groups)\)
   * Minimum number of Instance in Instance group is 1 when instance group scales in\(autoscaling\) except certain type \(Unmanaged Instance Group\). 
-
-
+    
 {{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" %}}
 * **Valid type:** 
   * **Stateless** (**Managed**) as mentioned above.
@@ -313,8 +250,7 @@ Cloud resources has a such a condition that does not support within power schedu
   * **OFF :** No matter autoscaling mode is on or off, diminish Instance Group to 1 Instance and autoscaling mode is off.
 {{% /alert %}}
 
-* Action Cycle & status  
-
+* Action Cycle & status
 ![](/docs/guides/user_guide/automation/automation_img/screen-shot-2021-04-26-at-20.59.27.png)
 
 

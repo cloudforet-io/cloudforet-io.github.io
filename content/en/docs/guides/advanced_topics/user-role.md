@@ -9,11 +9,8 @@ description: >
 
 ## Overview
 
-
 ## Pre-defined Roles
-
-SpaceONE provides you with pre-defined roles so that you can manage roles more easily.
-
+SpaceONE provides you with pre-defined roles so that you can manage roles more easily.<br>
 Available roles are as follows:
 
 * Root Account: Allow to access any objects and resources in the domain. 
@@ -21,12 +18,4 @@ Available roles are as follows:
 * Project Admin: Allow to access designated objects, resources, and projects.
 * No Role: Guest users are NOT allowed to perform any actions unless they get permission from the admin user.
 
-
-
-
-
-
-## Available Task 
-
-
-
+[comment]: <> (## Available Task)

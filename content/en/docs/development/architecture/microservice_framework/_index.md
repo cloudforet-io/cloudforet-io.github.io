@@ -9,24 +9,13 @@ description: >
 ---
 
 ### SpaceONE Architecture
-
 The SpaceONE consists of a micro service architecture based on identity and inventory. Each micro services provides a plugin interface for flexibility of implementation. 
-
-<br>
-
 ![](/docs/development/architecture/microservice_framework/img/spaceone_msa_architecture.png)
 
 ### SpaceONE Backend Software Framework
-
 The SpaceONE development team has created our own S/W framework like Python Django or Java Spring.
-
-<br>
-
 ![](/docs/development/architecture/microservice_framework/img/spaceone_sw_architecture.png)
-
 SpaceONE S/W Framework provides software framework for implementing business logic. Each business logic can present its services in various way like gRPC interface, REST interface or periodic task.
-
-<br>
 
 | Layer | Descrption | Base Class | Implementation Directory 
 | ---       | ---        | ---        | ---                      | ---     |
@@ -35,5 +24,4 @@ SpaceONE S/W Framework provides software framework for implementing business log
 | Service | Business logic of service | core/service.py  | ***project***/service/    |
 | Cache | Caching for manager function(optional) | core/cache/  |     |    |
 | Manager | Unit operation for each service function | core/manager.py  | ***project***/manager/    |
-| Connector | Interface for Data Source(ex. DB, Other micro services) |  |     | 
-
+| Connector | Interface for Data Source(ex. DB, Other micro services) |  |     |

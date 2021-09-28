@@ -18,7 +18,7 @@ Please set service accounts to Create APIs for each Use Case:
 
 * [General Collector](#general-collector)
 
-<br/>
+<br>
 
 
 
@@ -26,7 +26,7 @@ Please set service accounts to Create APIs for each Use Case:
 
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
-<br/>
+<br>
 
 
 
@@ -39,16 +39,16 @@ There are two ways to do so.
 * **Grant _Reader role_ to Resource Groups**
   * Grant **`Reader role`** to Resource Groups where the resources are located. If you give a role to the resource group, _SpaceONE_ will only collect resources located in this resource group.
 
-<br/>
+<br>
 
 * **Grant _Reader role_ to Subscriptions**
   * Grant **`Reader role`** to Subscriptions where resources are located. If you give a role to the subscription, _SpaceONE_ will collect resources from all the resource groups in this subscription.
 
-<br/>
+<br>
 
 If you want to know more about Azure's access control policies, visit this [link](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) .
 
-<br/>
+<br>
 
 
 
@@ -81,15 +81,15 @@ Assign the **Reader Role** to the account. The account should have access permis
 
 ![](/docs/guides/user_guide/service_account/service_account_img/azure/image(103).png)
 
-<br/>
-<br/>
+<br>
+<br>
 
 
 ## Troubleshooting
 
 If you face Error messages when following the steps above, please follow this TroubleShooting Guide.
 
-<br/>
+<br>
 
 ### Authorization
 #### **1.** \(AuthorizationFailed\) Client does not have authorization 

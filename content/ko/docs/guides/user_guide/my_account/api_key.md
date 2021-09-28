@@ -24,7 +24,7 @@ For further information you can read the _Handbook_ SpaceONE provides at the top
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_01.png)
 
-<br/>
+<br>
 
 ### Downloading API Keys
 
@@ -38,7 +38,7 @@ From this window you can **`Download JSON`** or **`Download YAML`**.
 
 ![](/ko/docs/guides/user_guide/my_account/api_key_img/api_02.png)
 
-<br/>
+<br>
 
 ### Enable / Disable API Keys
 
@@ -54,7 +54,7 @@ Change of status will be shown on the column **`State`**.
 **Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 
-<br/>
+<br>
 
 ## Delete API Keys
 
@@ -66,7 +66,7 @@ To delete API Keys select and use the **`Action`** list menu > **`Delete`** .
 **Enabling, Disabling, and Deleting API Keys can take up to approximately 10 minutes to actually be applied.**
 {{% /alert %}}
 
-<br/>
+<br>
 
 ## Endpoints
 
@@ -74,7 +74,7 @@ Users can also check the EndPoints for the API Keys.
 
 Currently SpaceONE provides Endpoints of the following features:
 
-<br/>
+<br>
 
 * Cloud Services
 * Cloud Service Types

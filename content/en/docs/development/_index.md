@@ -13,7 +13,6 @@ no_list: true
 {{< box title="Mirco Service Framework" description="SpaceONE Team has developed Python based Micro Service Famework!" buttonUrl="/docs/development/architecture/microservice_framework/" buttonTxt="Micro Service Framework"/>}}
 {{< /box_wrap >}}
 
-
 ## Backend Integration
 {{< box_wrap >}}
 {{< box title="APIs" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/development/apis/" buttonTxt="API Guide"/>}}

@@ -26,7 +26,7 @@ https://github.com/spaceone-dev/launchpad.git
 
 Prepare your AWS credentials. Put your ~/.aws/credentials
 
-~~~
+~~~bash
 git clone https://github.com/spaceone-dev/launchpad.git
 cd launchpad/spaceone/eks/terraform
 ~~~
@@ -38,7 +38,7 @@ This is your environment variables.
 * ***region*** is aws region name for installation.
 * ***userarn*** is your IAM arn for installation.
 
-~~~
+~~~bash
 region = "us-east-1"
 
 map_users = [
@@ -54,7 +54,7 @@ map_users = [
 ### Execute terraform
 
 If you don't have terraform binary, see [Reference](#Reference)
-~~~
+~~~bash
 terraform init
 terraform plan
 terraform apply
@@ -66,7 +66,7 @@ After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This
 
 If you don't have kubectl, see [Reference](#Reference)
 You may also install aws-iam-authenticator, see [Reference](#Reference)
-~~~
+~~~bash
 cp kubecconfig_spaceone-prd-eks ~/.kube/config
 ~~~
 
@@ -79,7 +79,7 @@ After installation of EKS, we highly recommend to install [AWS Load Balancer Con
 
 ## Install SpaceONE with Helm Chart
 
-~~~
+~~~bash
 kubectl create ns spaceone
 kubectl create ns root-supervisor
 
@@ -89,7 +89,7 @@ kcd spaceone
 
 ### Helm repo
 
-~~~
+~~~bash
 helm repo add spaceone https://spaceone-dev.github.io/charts
 helm repo update
 helm search repo
@@ -102,7 +102,7 @@ read pre-condition/README.md
 update values in pre-conditon
 apply pre-condition
 
-~~~
+~~~bash
 kubectl create -f shared.yaml
 ~~~
 
@@ -117,7 +117,7 @@ If you use mongodb cluster,
 host is "localhost" in database.yaml
 Use TYPE 2. global varable in values.yaml
 
-~~~
+~~~bash
 kcd spaceone
 
 helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/spaceone

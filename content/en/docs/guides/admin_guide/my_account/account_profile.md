@@ -8,17 +8,10 @@ description: >
 ---
 
 ## User Profile
-
-Users can view and modify their profile information through the **`Profile`** menu.
-
+Users can view and modify their profile information through the **`Profile`** menu.<br>
 You can reach this menu by clicking on the Profile Icon on the top right corner of the console.
-
-<br/>
-
 ![User Profile](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_01.png)
-
 ![&#xC0AC;&#xC6A9;&#xC790; &#xC815;&#xBCF4; &#xC870;&#xD68C;](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_02.png)
-
 
 {{% pageinfo color="300" %}}
 * **Role** : User role \(Domain Admin/Project Admin\).
@@ -28,24 +21,11 @@ You can reach this menu by clicking on the Profile Icon on the top right corner 
 * **Log Out** : Log out and return to the console login page.
 {{% /pageinfo %}}
 
-<br/>
-
-
 ## Editing Profile
-
 By clicking the **`Profile`** menu, you can move to the User information window.
-
-<br>
-
-![Profile](/ko/docs/guides/admin_guide/my_account/profile_img/pOrofile_img_03.png)
-
-Users can change all information, except _**ID**_ and _**Role**_. 
-
-After changing any information, click **`Save Changes`**.
-
+![Profile](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_03.png)
+Users can change all information, except _**ID**_ and _**Role**_.<br> 
+After changing any information, click **`Save Changes`**.<br>
 A Success message will appear to confirm.
-
-<br>
-
 ![](/ko/docs/guides/admin_guide/my_account/profile_img/profile_img_04.png)
 

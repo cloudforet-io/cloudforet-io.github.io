@@ -7,50 +7,35 @@ description: >
     Notification Plugin SMS Protocol Configuration Guide
 ---
 
-
 ## Overview
-
 You can receive SMS alert message and return acknowledge via mobile.
 
----
-
 ## Prerequisites
-
 There are not any requirements.
 SMS Protocol will be supported by AWS SNS in future release.
 
-
----
-## Add SMS Channel to your Project / User in SpaceONE 
-
+## Add SMS Channel to your Project / User in SpaceONE
 Go to _**`SpaceONE Console > Project > Notifications`**_ which you want to get alerts.
 
 ### Basic Information
-
 ![sms protocol create](/docs/guides/user_guide/notification/notification_img/sms_protocol_01.png)
 
-
 |Item|Descriptions|
-|:--:|:--:|
+|:--:|:--|
 |Channel Name|Notification channel name|
 |Notification Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)|
 |Phone Number|Mobile phone number to receive sms message|
 
-
 ### Notification Schedule
-
-
 You can select when to receive alarm. There two options
-
 ![Notification Schedule](/docs/guides/user_guide/notification/notification_img/notification_img_01.png)
 
 |Setting Mode|Descriptions|
-|:--:|:--:|
+|:--:|:--|
 |All Time|Receive alert notification any time|
 |Custom|Receive alert notification within designated time period|
 
 ### Topic
-
 Notification subscribes topics to check which alarm to send
 
 {{% alert title="About Notification Topics" %}}
@@ -59,7 +44,7 @@ Just pin _**Setting Mode**_ to _**Receive all notifications**_
 {{% /alert %}}
 
 |Setting Mode|Descriptions|
-|:--:|:--:|
+|:--:|:--|
 |Receive all notifications|Allow notification channel to send all alert messages from _**any topics**_|
 |Receive notifications based on selected topics|Allow notification channel to send alert message from _**selected topics**_|
 

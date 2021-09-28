@@ -11,18 +11,14 @@ description: >
 ![](/docs/guides/user_guide/gettingstart/power/ps1.png)
 
 ## How to Set up
-
-Start your Power Scheduler after completing the following steps: 
-
-* [Prerequisites](power-scheduler-quick-start.md#prerequisites)
-* [Set up Basic Scheduler Info](power-scheduler-quick-start.md#set-up-basic-scheduler-info)
-* [Configure Scheduler Runtime](power-scheduler-quick-start.md#configure-scheduler-runtime)
-* [Define Resource Group](power-scheduler-quick-start.md#define-resource-group)
+Start your Power Scheduler after completing the following steps
+* [Prerequisites](power_scheduler_quick_start.md#prerequisites)
+* [Set up Basic Scheduler Info](power_scheduler_quick_start.md#set-up-basic-scheduler-info)
+* [Configure Scheduler Runtime](power_scheduler_quick_start.md#configure-scheduler-runtime)
+* [Define Resource Group](power_scheduler_quick_start.md#define-resource-group)
 
 ## Prerequisites
-
-You can set up your IAM policy for power scheduler in SpaceONE with pre-defined credentials per cloud-provider to control resources with safety and prevent others to access resources without permission.
-
+You can set up your IAM policy for power scheduler in SpaceONE with pre-defined credentials per cloud-provider to control resources with safety and prevent others to access resources without permission.<br>
 Please, assign corresponding access policies to SpaceONE from each provider's console as mentioned below, prior to create a Power Scheduler.
 
 {{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/aws-service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
@@ -30,65 +26,40 @@ Please, assign corresponding access policies to SpaceONE from each provider's co
 
 ## Set up Basic Scheduler Info
 
-**STEP 1:** Select `Automation` &gt; `Power Scheduler` on top header menu 
-
-<br>
-
+### STEP 1
+Select `Automation` &gt; `Power Scheduler` on top header menu 
 ![Select Power Scheduler on menu](/docs/guides/user_guide/gettingstart/power/ps2.png)
 
-
-
-**STEP 2:** Select a project to set up Power Scheduler on the dashboard. 
-
-<br>
-
+### STEP 2
+Select a project to set up Power Scheduler on the dashboard. 
 ![Select a Project on Dashboard](/docs/guides/user_guide/gettingstart/power/ps3.png)
 
-
-
-**STEP 3:**  Click `+ New Scheduler`  button at the top left corner. It is automatically changed to the creation mode if there is no previously created scheduler in the project.
-
-<br>
-
+### STEP 3
+Click `+ New Scheduler`  button at the top left corner. It is automatically changed to the creation mode if there is no previously created scheduler in the project.
 ![](/docs/guides/user_guide/gettingstart/power/ps4.png)
 
-
-
-**STEP 4:**  Set the scheduler's name to create a scheduler. You can enter a string including letters and  `-` . Scheduler name is required and blank spaces are not allowed.
-
-<br>
-
+### STEP 4
+Set the scheduler's name to create a scheduler. You can enter a string including letters and  `-` . Scheduler name is required and blank spaces are not allowed.
 ![](/docs/guides/user_guide/gettingstart/power/ps5.png)
 
 ## Configure scheduler runtime
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps6.png)
 
-
-Set the time for applying a scheduler.   
-  
-The calendar grid breaks the week down by day on the horizontal axis and has 24-hour basis segments in portrait orientation.  You can click `This week` button to set the scheduled time for this week.  
-
-You can move between month through  `< >` at the upper right of the graph. 
-
-
-
-There are three types of scheduler mode.
+Set the time for applying a scheduler.<br>
+The calendar grid breaks the week down by day on the horizontal axis and has 24-hour basis segments in portrait orientation.  You can click `This week` button to set the scheduled time for this week.<br>  
+You can move between month through  `< >` at the upper right of the graph.<br>
+There are three types of scheduler mode.<br>
 
 |  Mode | State | Description | Color |
-| :---: | :---: | :--- | :---: |
-| Repeated Schedule |  | Timer repeated by every week. Selected area became On, Otherwise\(Non selected\) became Off. | ![](/docs/guides/user_guide/gettingstart/power/ps7.png) |
-| One Time Schedule | ON | Created specified time range. Resource became On selected area. | ![](/docs/guides/user_guide/gettingstart/power/ps8.png) |
-|  | OFF | Created specified time range. Resource became Off selected area. | ![](/docs/guides/user_guide/gettingstart/power/ps9.png) |
+| :-----: | :-----: | :---- | :---: |
+| Repeated Schedule |  | Timer repeated by every week. Selected area became On, Otherwise\(Non selected\) became Off. | <img src="/docs/guides/user_guide/gettingstart/power/ps7.png" width="200px"> |
+| One Time Schedule | ON | Created specified time range. Resource became On selected area. | <img src="/docs/guides/user_guide/gettingstart/power/ps8.png" width="200px"> |
+|  | OFF | Created specified time range. Resource became Off selected area. | <img src="/docs/guides/user_guide/gettingstart/power/ps9.png" width="200px"> |
 
 
 
-**STEP 1:** Click&drag to select certain time segments to set time for the scheduler to run.
-
-<br>
-
+### STEP 1
+Click&drag to select certain time segments to set time for the scheduler to run.
 ![](/docs/guides/user_guide/gettingstart/power/ps10.png)
 
 {{% alert title="Please, be advised" %}}
@@ -96,57 +67,28 @@ Without any setting of Scheduler Time, it recognizes scheduler as `Turn Off All`
 {{% /alert%}}
 
 ## Define Resource Group
-
 Set the resource group for applying defined schedule  
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps11.png)
-
 By clicking **`+ Add Resource Group`**, user can move to **Create a resource group** page. 
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps12.png)
-
 The Naming Rules of Resource Group is below.
+
 {{% alert title="" %}}
 Max 128 character <br>
 Start with character <br>
 Character, Number, & Hyphen`-`  available <br> 
 {{% /alert %}}
 
-
 Select resource type
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps13.png)
-
-
-
-Then, Targeting resource is needed.
-
-Enter search keyword to grouping resources. By clicking search bar available search properties pops up. Default property is name.
-
+Then, Targeting resource is needed.<br>
+Enter search keyword to grouping resources. By clicking search bar available search properties pops up. Default property is name.<br>
 Supported search filter is listed here. Usually name or tag filter is preferred.
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps14.png)
-
 To apply search filter, You need to press _**Enter**_. Then filtered resources will be appeared. 
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps15.png)
-
 Enter all information, then click the save button below. 
-
-<br>
-
 ![](/docs/guides/user_guide/gettingstart/power/ps16.png)
-
 Get _**creating success**_ message pops up when all creation process is done successfully. 
 
 

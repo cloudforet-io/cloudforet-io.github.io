@@ -9,12 +9,7 @@ description: >
 
 ## About Notification
 
-
-
-
 ## How It Works
-
-
 
 ## 용어 정의
 
