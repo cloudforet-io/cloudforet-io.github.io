@@ -9,6 +9,6 @@ description: >
 ---
 
 {{< box_wrap >}}
-{{< box title="About Plugin" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/contribute/plugins/about_plugin" buttonTxt="See Plugin" />}}
-{{< box title="Developer Guide" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/contribute/plugins/developer_guide" buttonTxt="See Developer Guide" />}}
+{{< box title="About Plugin" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/development/plugins/about_plugin/" buttonTxt="See Plugin" />}}
+{{< box title="Developer Guide" description="SpaceONE supports easy installation guides with Helm charts in Kubernetes environment." buttonUrl="/docs/development/plugins/developer_guide" buttonTxt="See Developer Guide" />}}
 {{< /box >}}

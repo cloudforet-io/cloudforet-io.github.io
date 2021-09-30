@@ -8,7 +8,7 @@ description: SpaceONE is open source Multi Cloud Management Platform for resourc
 {{< box_wrap >}}
 {{< box title="Concepts" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/concepts" buttonTxt="See Concepts" >}}
 <a href="/docs/concepts" >About SpaceONE</a>
-<a href="/docs/concepts/key-differentiators" >Key Differentiators</a>
+<a href="/docs/concepts/key_differentiators" >Key Differentiators</a>
 <a href="/docs/references/supported_technologies" >Supported Technologies</a>
 {{< /box >}}
 

@@ -19,10 +19,10 @@ Alert Manager를 사용하기 위해서는 크게 두가지 설정이 필요합�
 SpaceONE Notification 서비스는 Alarm Message를 다양한 매체를 통해 수신자들에게 전송합니다. 자세한 설명은 [Notificaiton 소개](/docs/guides/user_guide/notification/) 을 참고 하세요
 {{% /alert %}}
 
-이 페이지에서는 Alert Manager를 기본 설정하기 위한 방법에 대해 살펴 보도록 하겠습니다. 전체 순서는 아래와 같습니다.
-[사전 준비](/docs/guides/user_guide/gettingstart/alert-manager-quick-start/#Prerequisites)
-[Event 수신 설정](#event-수신-설정)
-[Alarm 수신 설정](#alarm-수신-설정)
+이 페이지에서는 Alert Manager를 기본 설정하기 위한 방법에 대해 살펴 보도록 하겠습니다. 전전체 순서는 아래와 같습니다.
+* [사전 준비](#사전-준비)
+* [Event 수신 설정](#event-수신-설정)
+* [Alarm 수신 설정](#alarm-수신-설정)
 
 ## 사전 준비
 Alert Manager를 사용하기 위해서는 사전에 아래와 같은 준비가 필요 합니다. 
@@ -80,7 +80,7 @@ _**`Project Dashboard < Notifications`**_ 로 이동합니다.<br>
 ![Notification Channel List](/docs/guides/user_guide/gettingstart/alert_manager_img/alert_manager_img_08.png)
 
 {{% alert title="Notification Plugin Details" %}}
-각 Plugin별 Channel 설정에 대한 상세한 방안은 [Notification Protocol Plugin 설정 가이드](/docs/guides/user_guide/notification/protocol/)를 참고 해주세요.
+각 Plugin별 Channel 설정에 대한 상세한 방안은 [Notification Protocol Plugin 설정 가이드](/docs/guides/user_guide/notification/protocol_settings/)를 참고 해주세요.
 {{% /alert %}}
 
 ### Escalation Policy 설정

@@ -17,7 +17,8 @@ User need to define security policy\(IAM\) before setup power scheduler.
 Before creating Power Scheduler modify your existing policy, For detailed process refer to link below.
 
 {{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/service-account-policy-management/" text="(AWS) Service Account Policy Management" />}}
-{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google-cloud-service-account-policy-management/" text="(Google Cloud) Service Account Policy Management" />}}
+{{< link-button background-color="navy400" url="/docs/guides/user_guide/service_account/google_cloud_service_account_policy_management/" text="(Google Cloud) Service Account Policy Management" />}}
+
 
 ## Power Scheduler Dashboard
 ![](/docs/guides/user_guide/automation/automation_img/image(89).png)
