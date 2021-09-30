@@ -18,7 +18,7 @@ description: >
     * Google power state Collector - **google-cloud-power-state**
 
 * **Power-scheduler** 
-  : \(Post Action to Google Cloud resources to turn on/off for following resources :  Compute VMs, Instance group, Cloud SQL\) with [Power-scheduler > Scheduler Management](/docs/guides/user_guide/automation/power-scheduler/)
+  : \(Post Action to Google Cloud resources to turn on/off for following resources :  Compute VMs, Instance group, Cloud SQL\) with [Power-scheduler > Scheduler Management](/docs/guides/user_guide/automation/power_scheduler/)
     * Google Cloud power Controller 
 
 ### **STEP 1. Please, Set Service Accounts** to Create API for each Use Case

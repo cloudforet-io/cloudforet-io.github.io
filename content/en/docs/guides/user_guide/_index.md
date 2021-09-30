@@ -32,19 +32,19 @@ Managing credentials for cloud provider accounts.
 
 ### 5. **Automation**
 Automate repetitive operational tasks, Optimize cloud resource costs.
-* [About Power Scheduler](/docs/guides/user_guide/automation/power-scheduler/)
+* [About Power Scheduler](/docs/guides/user_guide/automation/power_scheduler/)
 
 ## Learn how to use SpaceONE
 Look up tasks and how to perform them using step by step guide.
 
 ### **Understand SpaceONE**
 Learn about SpaceONE and its fundamental concepts
-* [SpaceONE](introduction-to-spaceone/spaceone.md)
-* [Key Differentiators](introduction-to-spaceone/key-differentiators.md)
+* [SpaceONE](/docs/concepts/)
+* [Key Differentiators](/docs/concepts/key_differentiators/)
 
 ### **Try SpaceONE**
 Step by step guide for each user to user SpaceONE environment.
 
-* [Basic Setup](general-user.md)
-* [Power Scheduler Quick Start](power-scheduler-quick-start.md)
+* [Basic Setup](/docs/setup/quick_install/)
+* [Power Scheduler Quick Start](/docs/guides/user_guide/gettingstart/power_scheduler_quick_start/)
 

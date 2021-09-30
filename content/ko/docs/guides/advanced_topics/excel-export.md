@@ -65,7 +65,7 @@ Users can also choose filters through the **`Search`** bar.
 
 Like the example image below, if you search for a specific **Project** name, you'll be given a list of all **Cloud Services** that project has.
 
-Users can also use the **`Custom Table`** feature to combine and compose selected data into tables. Which then can be exported into Excel files. To read a more detailed guide about the **`Custom Table`** feature, click [here](/docs/guides/advanced_topics/custom-table)
+Users can also use the **`Custom Table`** feature to combine and compose selected data into tables. Which then can be exported into Excel files. To read a more detailed guide about the **`Custom Table`** feature, click [here](/docs/guides/advanced_topics/custom_table)
 
 
 ![](/docs/guides/advanced_topics/excel-export-img/excel_export_03.png)

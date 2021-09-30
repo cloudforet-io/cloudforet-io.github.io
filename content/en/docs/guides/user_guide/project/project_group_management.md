@@ -66,7 +66,7 @@ You can also **Upate** and **Delete** these Roles through the **`Action`** list 
 
 {{% alert title="" %}}
 During this process you can only grant users **Project Admin** roles. <br>
-However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/guides/advanced_topics/user-role).
+However if you would like to see further details about different **Users Role types** and **Users Role Settings**, please visit [here](/docs/guides/advanced_topics/user_role).
 {{% /alert %}}
 
 ## View Project 

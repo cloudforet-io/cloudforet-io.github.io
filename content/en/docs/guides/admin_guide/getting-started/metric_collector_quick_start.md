@@ -10,11 +10,11 @@ description: >
 ## How to Set up
 Collect monitoring metric data through the following steps:
 
-* [Prerequisites](metric-collector-quick-start.md#prerequisites)
-* [Get API Key for SpaceONE Service Account](metric-collector-quick-start.md#get-api-key-for-spaceone-service-account)
-* [Register SpaceONE Service Account](metric-collector-quick-start.md#register-spaceone-service-account-ex-metric-collector)
-* [Monitoring Metric Information](metric-collector-quick-start.md#monitoring-metric-information) 
-* [Collecting Monitoring Metric Type](metric-collector-quick-start.md#collecting-monitoring-metric-type)
+* [Prerequisites](metric_collector_quick_start.md#prerequisites)
+* [Get API Key for SpaceONE Service Account](metric_collector_quick_start.md#get-api-key-for-spaceone-service-account)
+* [Register SpaceONE Service Account](metric_collector_quick_start.md#register-spaceone-service-account-ex-metric-collector)
+* [Monitoring Metric Information](metric_collector_quick_start.md#monitoring-metric-information) 
+* [Collecting Monitoring Metric Type](metric_collector_quick_start.md#collecting-monitoring-metric-type)
 
 ## PREPARATIONs
 To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.

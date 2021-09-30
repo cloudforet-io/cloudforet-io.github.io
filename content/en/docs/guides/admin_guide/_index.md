@@ -18,9 +18,9 @@ We are a Cloud management platform that enables integrating all **Multi-Clouds**
 ## Contents
 
 ### **Getting started with the Role you assigned -** _SpaceONE has different roles by the authority._
-* [**Domain Admin**](getting-started/domain-admin)
-* [**Root Account**](getting-started/root-account)
-* [**Billing Quick Start**](getting-started/billing-quick-start)
+* [**Domain Admin**](getting-started/domain_admin)
+* [**Root Account**](getting-started/root_account)
+* [**Billing Quick Start**](getting-started/billing_quick_start)
 * [**Metric Collector Quick Start**](getting-started/metric-collector-quick-start)
 
 ### **Set up IAM & manage users**
@@ -29,7 +29,7 @@ We are a Cloud management platform that enables integrating all **Multi-Clouds**
 
 ### **Managing Plugin**
 * [**Collector**](plugin/collector)
-* [**Collector History**](management/collector-history)
+* [**Collector History**](management/collector_history)
 
 
 ## Please, visit us via
