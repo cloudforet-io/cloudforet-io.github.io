@@ -108,5 +108,5 @@ Open browser
 ![](/docs/setup/Quick_Install/Quick_Install_img/quick_install_image_03.png)
 
 ### Initial Setup
-{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" >}}
+{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basci Setup in 10 minutes">}}
 
