@@ -17,6 +17,8 @@ SpaceONE has default Title and CI with Wanny Favicon like
 
 But you can change your own Title and Favicon.
 
+![](/docs/setup/advanced_configuration/img/spaceone_custom_favicon.png)
+
 </br>
 
 | Component   | File Path | Description |
@@ -56,7 +58,7 @@ This is example value of console.yaml
 
 The real values are used as ConfigMap in kubernetes. So you have to change the format as ConfigMap.
 
-### Title
+#### Title
 
 ~~~
 apiVersion: v1
@@ -81,4 +83,10 @@ metadata:
 binaryData:
   favicon.ico: AAABAAEAAAAAAAEAIADxxxxxxx...
 
+~~~
+
+**_NOTE:_**  favicon.ico must be encoded to base64.
+
+~~~
+# cat favicon.ico | base64
 ~~~
