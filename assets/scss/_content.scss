@@ -87,7 +87,7 @@
     @extend .td-max-width-on-larger-screens;
   }
 
-  > pre, >.highlight {
+  > pre, .highlight {
     max-width: 90%;
     margin: 1rem 0;
     background-color: $navy000;
