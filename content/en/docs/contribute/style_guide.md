@@ -1,5 +1,5 @@
 ---
-title: "Documentation Style Guide (shortcodes)"
+title: "Style Guide (shortcodes)"
 linkTitle: "style guide"
 weight: 2
 date: 2021-10-01
@@ -9,21 +9,20 @@ description: >
 
 ## Heading tag
 It is recommended to use them sequentially from `##`, `<h2>`. It's for style, not just semantic markup.
-
-<!-- 헤딩 태그 사용 시 `##`부터 순차적으로 사용하는 것을 권장합니다. 시맨틱 마크업뿐만 아니라 스타일을 위한 것입니다. -->
-## Shortcodes
-Read more about shortcodes in the [Hugo documentation](https://gohugo.io/content-management/shortcodes/)
+{{< alert title="Note" >}}
+When you add `##` in the documentation, it makes a list of Table of Contents automatically.
+{{< /alert >}}
 
 ## Link button
 Code :
 ```go-html-template
-{{</* link-button background-color="navy400" url="" text="link-button" */>}}
-{{</* link-button background-color="white" url="" text="link-button" */>}}
+{{</* link-button background-color="navy400" url="/" text="Home" */>}}
+{{</* link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" */>}}
 ```
 
 Output : <br>
-{{< link-button background-color="navy400" url="" text="link-button" />}}
-{{< link-button background-color="white" url="" text="link-button" />}}
+{{< link-button background-color="navy400" url="/" text="Home" />}}
+{{< link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" />}}
 
 ## Video
 Code :

@@ -1,5 +1,5 @@
 ---
-title: "Documentation Content Guide"
+title: "Content Guide"
 linkTitle: "content guide"
 weight: 1
 date: 2021-10-01
@@ -9,7 +9,6 @@ description: >
 
 ## Create a new page
 Go to the parent page of the page creation location. Then, click the 'Create child page' button at the bottom right.<br><br>
-<!-- 페이지 생성 위치의 상위 페이지로 이동 합니다. 오른쪽 하단의 '하부 페이지 생성' 버튼을 클릭합니다. -->
 or:
 <br>
 You can also fork from [the repository](https://github.com/spaceone-dev/docs) and work locally.
@@ -32,7 +31,7 @@ description: >
 
 ```
 
-### Description of front matter variable
+### Description of front matter variables
 | Variables | Description |
 | :--- | :--- |
 | title | The title for the content |
@@ -45,14 +44,14 @@ If you want to see more details about front matter, click [Front matter](https:/
 
 ## Write a document
 
+### Adding Table of Contents
+When you add `##` in the documentation, it makes a list of Table of Contents automatically.
+
 ### Adding images
-Create a directory for images named **file_name_img**. For example, create project_management_img directory for project_management.md. Put images in the directory.
+Create a directory for images named **file_name_img** in the same hierarchy as the document. For example, create project_management_img directory for project_management.md. Put images in the directory.
 
 ### Style guide
 Please refer to the [style guide](/docs/contribute/style_guide/) to write the document.
-
-### Adding Table of Contents
-When you add `##` in the documentation, it makes a list of Table of Contents automatically. 
 
 ## Opening a pull request
 When you are ready to submit a pull request, commit your changes with **new branch**.
