@@ -36,6 +36,7 @@
   }
 
   > p {
+    word-break: keep-all;
     max-width: unset;
   }
 
@@ -61,6 +62,7 @@
   }
 
   > table {
+    word-break: keep-all;
     @extend .table-striped;
 
     @extend .table-responsive;
@@ -199,6 +201,7 @@
   }
 
   .fas {
+    margin-left: 0;
     margin-right: 0.5rem;
   }
 }
