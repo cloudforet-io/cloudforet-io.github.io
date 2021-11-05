@@ -13,6 +13,11 @@ description: >
 Please set service accounts to Create APIs for each Use Case:
 * [General Collector](#general-collector)
 
+## Prerequiesite
+Create an app registration in Azure AD for ```SpaceONE``` to be used as an application in Azure AD.
+
+Follow [Microsoft Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad#-create-an-app-registration-in-azure-ad-for-your-app-service-app).
+
 ## General Collector 
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
