@@ -1,7 +1,7 @@
 ---
 title: "Advanced Configuration Guide"
 linkTitle: "Advanced Configuration"
-weight: 3
+weight: 4
 url_dash_board: "/docs/guides/advanced_configuration" 
 date: 2021-07-31
 description: >
@@ -9,7 +9,7 @@ description: >
 
 ---
 
-### Title and Favicon
+## Title and Favicon
 
 SpaceONE has default Title and CI with Wanny Favicon like
 
@@ -58,7 +58,7 @@ This is example value of console.yaml
 
 The real values are used as ConfigMap in kubernetes. So you have to change the format as ConfigMap.
 
-#### Title
+### Title
 
 ~~~
 apiVersion: v1
@@ -72,7 +72,7 @@ data:
 
 ~~~
 
-#### Favicon
+### Favicon
 
 ~~~
 apiVersion: v1
