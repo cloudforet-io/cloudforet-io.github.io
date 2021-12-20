@@ -13,45 +13,85 @@ description: >
 Please set service accounts to Create APIs for each Use Case:
 * [General Collector](#general-collector)
 
-## Prerequiesite
+## Prerequisites
+### App registration in Azure AD
 Create an app registration in Azure AD for ```SpaceONE``` to be used as an application in Azure AD.
 
-Follow [Microsoft Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad#-create-an-app-registration-in-azure-ad-for-your-app-service-app).
+**Step 1. Create and register new application** <br>
+From the portal menu, select Azure Active Directory, then go to the ```App registrations``` tab and select ```New registration```
 
-## General Collector 
+**Step 2. Copy the following information** <br>
+Name the application, and copy the following information for later: 
+- Client ID 
+- Tenant ID 
+
+**Step 3. Create a client secret**
+SpaceONE service account requires client secret for registering service account.
+Select ```Certificates & secrets``` > ```Client secrets``` > ```New client secret```.  After, copy the client secret value shown in the page.
+
+**Step 4. Confirm again that you have copied the authentication information in this page.**
+As you create your app creation, make sure to save the following information which you will need later when you register ```SpaceONE Service Account```.
+- Client ID
+- Tenant ID
+- Client Secret
+
+For more information, Look at [Microsoft Azure App Service Documentation](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad#-create-an-app-registration-in-azure-ad-for-your-app-service-app).
+
+## General Collector
 Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
 
 ### Prerequisites
-This user guide tutorial assumes that a **`subscription id`** is already created. Assuming that the **`subscription id`** is created, you now need to allow permission from Azure Resources so SpaceONE can collect them. <br>
-There are two ways to do so.
+This user guide tutorial assumes that a **`subscription id`** and **`App registration`** are ready. Assuming that the **`subscription id`** and **`App registration`** are created, you now need to allow permission from Azure Resources so SpaceONE can collect them. <br>
 
-* **Grant _Reader role_ to Resource Groups**
-  * Grant **`Reader role`** to Resource Groups where the resources are located. If you give a role to the resource group, _SpaceONE_ will only collect resources located in this resource group.
 
-<br>
+If you want to know more about Azure's access control policies, visit this [Microsoft RBAC document](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) . <br>
 
-* **Grant _Reader role_ to Subscriptions**
-  * Grant **`Reader role`** to Subscriptions where resources are located. If you give a role to the subscription, _SpaceONE_ will collect resources from all the resource groups in this subscription.
-
-If you want to know more about Azure's access control policies, visit this [link](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) . <br>
 
 ### Granting Roles
-**Grant Roles to Resource Groups**
+  _SpaceONE_ needs the **`Reader role`** to be granted to the```scope you want(subscription or resource group)``` where resources are located. <br>
+  For example, if you give a role to the subscription, _SpaceONE_ will collect resources from all the resource groups in this subscription. <br>
 
-### **STEP 1. Sign in and move to Azure Portal > Resource groups** 
-Select a Resource Group for which the Collector will collect resources from.
+### **STEP 1. Move to Azure Portal > Resource groups / Subscriptions** 
+Select a Resource Group or Subscription for which the Collector will collect resources from.
 ![](/docs/guides/user_guide/service_account/service_account_img/azure/image(104).png)
 
-### **STEP 2. Add Access Control (IAM)**
+### **Step 2. (Optional) Create Custom Roles**
+
+  If you want to create a custom role for `SpaceONE App`, rather than using Azure built-in reader role, create a custom role using the following JSON file:
+  ```
+    {
+      "properties": {
+          "roleName": "Spaceone_reader_role",
+          "description": "View all resources, but does not allow you to make any changes.",
+          "assignableScopes": [
+              "/subscriptions/CHANGE_HERE_TO_YOUR_SUBSCRIPTION_ID (or the scope you want)" 
+          ],
+          "permissions": [
+              {
+                  "actions": [
+                      "*/read"
+                  ],
+                  "notActions": [],
+                  "dataActions": [],
+                  "notDataActions": []
+              }
+          ]
+      }
+    }
+  ```
+
+### **STEP 3. Add Access Control (IAM)**
 Click `Access control (IAM)` from the Navigation tab, and then select the `+Add` button.
 ![](/docs/guides/user_guide/service_account/service_account_img/azure/image(102).png)
 
-### **STEP 3: Assign `Reader role`**
-Assign the **Reader Role** to the account. The account should have access permission in this resource group.
+### **STEP 4: Assign `Reader role` or `created custom role`**
+Assign the **Reader Role** or **Created custom role** to the _SpaceONE_ App. The app will have read-only access permission in this subscription or resource group.
 ![](/docs/guides/user_guide/service_account/service_account_img/azure/image(103).png)
 
+<br>
+
 ## Troubleshooting
-If you face Error messages when following the steps above, please follow this TroubleShooting Guide.
+If you face error messages when following the steps above, please follow this TroubleShooting Guide.
 
 ### Authorization
 
