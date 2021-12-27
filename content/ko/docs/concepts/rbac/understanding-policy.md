@@ -27,7 +27,7 @@ Permission은 Cloud Resource에 대해 관리할 수 있는 범위를 정의 합
 *Custom Policy*는 *Private Repository*에 게시되어 각 도메인의 관리자가 관리합니다.
 {{< /alert >}}
 
-## Managed Policy List
+## Managed Policy
 
 아래의 Policy는 SpaceONE 팀에 의해 관리되는 Managed Policy의 전체 리스트 입니다.
 상세 Permission은 필요시 자동으로 업데이트 됩니다. Policy는 조직내의 주요 역할에 따라 분류하여 생성 하였습니다.

@@ -9,7 +9,9 @@ description: >
 
 
 ## Role structure
-Role은 자원에 대한 접근 범위를 지정하는 [Role Type](/ko/docs/concepts/rbac/understanding-role/#role-type)과 Action을 정의하는 [Policy](/ko/docs/concepts/rbac/understanding-policy/)로 구성 됩니다.
+
+Role은 아래와 같이 자원에 대한 접근 범위를 지정하는 [Role Type](/ko/docs/concepts/rbac/understanding-role/#role-type)과 권한이 적용되는 조직(프로젝트 or 프로젝트 그룹)으로 구성 됩니다.
+사용자는 RoleBinding을 통해 각 SpaceONE내에 접근할 수 있는 권한을 정의할 수 있습니다. 
 
 ![](/ko/docs/concepts/rbac/rbac_img/understanding_role_img01.png)
 
