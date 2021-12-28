@@ -8,20 +8,5 @@ description: >
 
 ---
 
-# Overview
-
-
-
-
-# install
-
-
-
-# configure
-
-
-
-# test
-
 
 
