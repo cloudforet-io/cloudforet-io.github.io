@@ -62,8 +62,22 @@ Project내의 Member로 추가하는 방법은 [Project의 Member로 추가](/ko
 SpaceONE내의 모든 자원들은 아래와 같이 계층적으로 관리 됩니다. 
 도메인의 관리자는 각 Project에 Member를 추가하여 사용자를 프로젝트내의 자원에 Access 할 수 있도록 관리할 수 있습니다.
 여러 Project에 대한 Access가 필요한 사용자의 경우는 상위 Project Group에 Member로 추가하여 하위 계층에 소속된 모든 Project에 대한 Access할 수 있습니다.  
-Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 추가](/ko/docs/guides/user_guide/project/project_group_management/) 를 참고 해주세요. 
-![](/ko/docs/concepts/rbac/rbac_img/rbac_concept_img03.png)
+Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 추가](/ko/docs/guides/user_guide/project/project_group_management/)를 참고 해주세요. 
+
+
+## Role Hierarchy
+
+사용자가 [계층적인 Project 구조](/ko/docs/concepts/rbac/#organization)내에서 복합적인 [Rolebinding](/ko/docs/concepts/rbac/#how-rbac-works)을 가질 경우 
+Role은 아래와 같은 규칙으로 적용 됩니다.
+
+예를 들어, 아래의 그림과 같이 _**stark@example.com**_ 사용자가 상위 Project Group에 _**Project Admin**_ Role로 Binding이 되어 있고, 하위 레벨의 프로젝트인 _**APAC**_ 에 _**Project Viewer**_ Role로 Binding되어 있는 경우
+아래와 같은 방식으로 프로젝트별 Role이 적용 됩니다. 
+
+- 직접 RoleBinding 하지 않은 하위 프로젝트/프로젝트 그룹에는 상위 프로젝트의 Role이 적용됨
+- 명시적으로 RoleBinding 한 하위 프로젝트에는 해당 Role이 적용됨(상위레벨의 Role을 Overwriting함)
+
+
+![](/ko/docs/concepts/rbac/rbac_img/rbac_concept_img04.png)
 
 
 ## Default Roles
@@ -77,8 +91,6 @@ Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 �
 |     Project Admin      |  PROJECT  |               멤버로 추가된 프로젝트 전체 Resource 를 조회/변경/삭제 할 수 있음                |
 |     Project Viewer     |  PROJECT  |                  멤버로 추가된 프로젝트 전체 Resource 를 조회 할 수 있음                   |
 | Alert Manager Operator |  PROJECT  | 멤버로 추가된 Project 전체 Resource 를 조회 할 수 있음, Alert Manager의 Alert 처리 권한을 가짐 |
-|     Billing Admin      |  PROJECT  |           선택한 프로젝트의 Billing 기능의 모두를 관리할 수 있음, 타 서비스에 대한 권한 없음           |
-|    Billing Operator    |  PROJECT  |           선택한 프로젝트의 Billing 기능의 모두를 조회할 수 있음, 타 서비스에 대한 권한 없음           |
 
 ## Managing Roles
 
