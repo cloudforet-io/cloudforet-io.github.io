@@ -90,3 +90,55 @@ binaryData:
 ~~~
 # cat favicon.ico | base64
 ~~~
+
+## Corporate Identity
+
+When you open SpaceONE page, you can see the default SpaceONE CI, logo and text.
+You can change the default SpaceONE CI with your company CI.
+
+### Login Page
+![](/docs/setup/advanced_configuration/img/spaceone_custom_ci.png)
+
+### Every Page
+![](/docs/setup/advanced_configuration/img/spaceone_custom_ci2.png)
+
+Update helm value of console (console -> production_json -> DOMAIN_IMAGE)
+
+keyword: ***DOMAIN_IMAGE***
+
+| Configuration 	| Description | Format |
+| ---           	|  ---         | ---   |
+| CI_LOGO     		| Custom Logo Image | Image |
+| CI_TEXT_WITH_TYPE 	| CI Text Image | Image |
+| SIGN_IN 		| Sign-in page Image | Image |
+| CI_TEXT           	| CI Text Image On every page | Image |
+
+
+**_NOTE:_**  SpaceONE does not support uploading files, so upload CI files at your web server or S3.
+
+~~~
+console:
+  enabled: true
+  developer: false
+  name: console
+  replicas: 2
+  image:
+      name: spaceone/console
+      version: 1.8.7
+  imagePullPolicy: IfNotPresent
+
+#######################
+# TODO: Update value
+#  - ENDPOINT
+#  - GTAG_ID (if you have google analytics ID)
+#  - AMCHARTS_LICENSE (for commercial use only)
+#######################
+  production_json:
+      CONSOLE_API:
+          ENDPOINT: http://console-api.example.com
+      DOMAIN_IMAGE:
+          CI_LOGO: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-logo.svg
+          CI_TEXT_WITH_TYPE: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text1.svg
+          SIGN_IN: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/login-img.png
+          CI_TEXT: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text2.svg
+~~~
