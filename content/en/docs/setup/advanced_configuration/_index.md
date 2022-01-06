@@ -108,11 +108,13 @@ keyword: ***DOMAIN_IMAGE***
 
 | Configuration 	| Description | Format |
 | ---           	|  ---         | ---   |
-| CI_LOGO     		| Custom Logo Image | Image |
-| CI_TEXT_WITH_TYPE 	| CI Text Image | Image |
-| SIGN_IN 		| Sign-in page Image | Image |
-| CI_TEXT           	| CI Text Image On every page | Image |
+| CI_LOGO     		| Custom Logo Image | Image (56 * 56 px) |
+| CI_TEXT_WITH_TYPE 	| CI Text Image | Image (164 * 40 px) |
+| SIGN_IN 		| Sign-in page Image | Image (1024 * 1024 px) |
+| CI_TEXT           	| CI Text Image On every page | Image (123 * 16 px)  |
 
+
+**_NOTE:_**  Recommended file format is SVG. But if you has PNG, use transparent background and twice larger than recommended size.
 
 **_NOTE:_**  SpaceONE does not support uploading files, so upload CI files at your web server or S3.
 
