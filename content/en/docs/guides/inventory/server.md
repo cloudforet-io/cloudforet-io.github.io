@@ -1,7 +1,7 @@
 ---
 title: "Server"
 linkTitle: "Server"
-weight: 10
+weight: 1
 url_dash_board: "/user_guide/invetory/server/" 
 date: 2021-06-10
 description: >
@@ -11,8 +11,8 @@ description: >
 ## Overview
 You can integrate server resources scattered by various regions or projects.<br>
 Through this page, Users can easily check detail status of servers without login to cloud console repeatedly nor connect to terminal.
-![Server List](/docs/guides/user_guide/invetory/server_img/server_image_01.png)
-![Server Detail](/docs/guides/user_guide/invetory/server_img/server_image_02.png)
+![Server List](/docs/guides/inventory/server_img/server_image_01.png)
+![Server Detail](/docs/guides/inventory/server_img/server_image_02.png)
 
 Server page is consist of several functions.
 * Search Bar : Easy to search servers by query.
@@ -22,13 +22,13 @@ Server page is consist of several functions.
 ## Search Bar
 User can query server easily by suggested keywords.<br>
 SpaceONE classify automatically based on major keywords. This allows users to conveniently search through the collected information.
-![Server search bar](/docs/guides/user_guide/invetory/server_img/server_image_03.png)
+![Server search bar](/docs/guides/inventory/server_img/server_image_03.png)
 Supported keywords contains all parameters defined for server.
-![searching keyword list](/docs/guides/user_guide/invetory/server_img/server_image_04.png)
+![searching keyword list](/docs/guides/inventory/server_img/server_image_04.png)
 
 ## Server list
 Server information collected based on multi clouds.
-![Server Example](/docs/guides/user_guide/invetory/server_img/server_image_05.png)
+![Server Example](/docs/guides/inventory/server_img/server_image_05.png)
 List of supported information is as follows.
 
 <table>
@@ -110,18 +110,18 @@ List of supported information is as follows.
 
 ### Action
 By clicking _**Action**_ button after selection of server, you can manage server status.
-![Action](/docs/guides/user_guide/invetory/server_img/server_image_06.png)
+![Action](/docs/guides/inventory/server_img/server_image_06.png)
 * Delete : Remove from server list. Server will not be deleted physically. They will be added after re-collected by collectors.
 * Change Project : Change project which server is belong to. 
 * Connect to Console : Link to AWS Console.
 
 ### Export
 All information within tables will be exported (Excel format).
-![Excel Export](/docs/guides/user_guide/invetory/server_img/server_image_07.png)
+![Excel Export](/docs/guides/inventory/server_img/server_image_07.png)
 
 ### Custom Table
 You can personalize the fields that you want to display in the Resource List table.
-![](/docs/guides/user_guide/invetory/server_img/server_image_08.png)
+![](/docs/guides/inventory/server_img/server_image_08.png)
 You can check details of Cumstom Table here. <a href ="/docs/guides/advanced_topics/custom_table">Custom Table Details.</a>
 
 ## Tab
@@ -129,20 +129,20 @@ Provides detailed information about the server. They are consists of tabs below.
 
 ### Details
 Additional information provided\(Machine image, Security group, etc..\)
-![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_09.png)
+![Details tab](/docs/guides/inventory/server_img/server_image_09.png)
 
 ### Tag
 Grouping servers by tagging.
-![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_10.png)
+![Details tab](/docs/guides/inventory/server_img/server_image_10.png)
 
 ### Member
 List of server managers.
-![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_11.png)
+![Details tab](/docs/guides/inventory/server_img/server_image_11.png)
 
 ### History
 History of resources collected.
-![Details tab](/docs/guides/user_guide/invetory/server_img/server_image_12.png)
+![Details tab](/docs/guides/inventory/server_img/server_image_12.png)
 
 ### Monitoring
 Monitoring metric informations provided by external monitoring sources\(CloudWatch, Azure Monitor, StackDriver..\).
-![Monitoring tab](/docs/guides/user_guide/invetory/server_img/server_image_13.png)
+![Monitoring tab](/docs/guides/inventory/server_img/server_image_13.png)

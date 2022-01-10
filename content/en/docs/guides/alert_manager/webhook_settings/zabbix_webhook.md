@@ -49,9 +49,9 @@ Parameter: Add parameter information as a below
 | triggerStatus | {TRIGGER.STATUS} |
 | webhookURL | <<YOUR_ZABBIX_WEBHOOK_URL>> |
 
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_webhook_parameter.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_webhook_parameter.png)
 You can check the WebhookURL in the project page -> webhook list on SpaceONE Console.
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_webhook_list_page.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_webhook_list_page.png)
 script: Copy and use the code below.
 ~~~javascript
 var params = JSON.parse(value),
@@ -97,7 +97,7 @@ JSON.stringify(payload)
 return resp;
 ~~~
 
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_webhook_script.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_webhook_script.png)
 ### Step 5. Add the message templates
 Move to Message templates tab and Click on Add button to add template.  
 Add 3 templates.
@@ -109,7 +109,7 @@ Add 3 templates.
 | Problem update | When the problem event is updated, it is sent as a message in this format. |
 
 The subject and message can be used as they are in the given format or filled in after editing the content you want.
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_message_template.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_message_template.png)
 
 ### Step 6. Add media to Users 
 If webhook setting is completed in media type, add the webhook media to user.  
@@ -123,9 +123,9 @@ Send to: Although it is a value that is not actually used, it is a required para
 When active: Use the given default value without modifying it (1-7,00:00-24:00). The actual schedule will be executed by `SpaceONE's Alert manager`.  
 Use if severity: Checked all    
 Enabled: Checked  
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_media_to_user.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_media_to_user.png)
 When the setting is complete, click the `Add` button to complete the setting.  
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/zabbix_media_to_user_2.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/zabbix_media_to_user_2.png)
 Finally, click the update button to finish.  
 
 ### Step 8. Add Trigger Action
@@ -134,23 +134,23 @@ From now on, we will set up to send a message to the user who has set up a webho
 <br>
 Move to `Trigger actions` menu. `Configuration` on Left menu -> `Actions` -> `Trigger actions`.  
 
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/trigger_action_menu.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/trigger_action_menu.png)
 <br>
 
 Click on `Create action` button on the right-top.  
 Name: SpaceONE Webhook  
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/create_trigger_action.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/create_trigger_action.png)
 <br>
 
 Move to `Operations` tab.
 Add on `Operations` and set as below.
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/add_trigger_action_operation.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/add_trigger_action_operation.png)
 <br>
 
 Add on Recovery operations and set as below.
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/add_trigger_action_recovery.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/add_trigger_action_recovery.png)
 <br>
 
 Finally, the settings of the Operations tab.
-![](/docs/guides/user_guide/monitoring/webhook_settings/zabbix_webhook_img/trigger_action_operations.png)
+![](/docs/guides/alert_manager/webhook_settings/zabbix_webhook_img/trigger_action_operations.png)
 <br>

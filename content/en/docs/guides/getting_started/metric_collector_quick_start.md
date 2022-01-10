@@ -21,7 +21,7 @@ To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provid
 
 ## Get API Key for Service Account
 Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector-api_key.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
 API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
@@ -30,14 +30,14 @@ API-Key is provided through the system administrator. If you don't have an API-K
 ## Assign SpaceOne Service Account \(Ex. Metric Collector\)
 You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.<br>
 Select Service Provider, Click **+Add** button.
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_01.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_01.png)
 
 You can register SpaceONE Service Account following the procedure below.
 1. Service Account name
 2. Fill out User ID
 3. Fill out Credential \(API Key information\)
 
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_02.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_02.png)
 After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌ <br>
 Credential input values are shown below.‌ <br>
 
@@ -46,7 +46,7 @@ Credential input values are shown below.‌ <br>
 3. _Identity Endpoint_
 
 All values are required.
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_03.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_03.png)
 
 <!-- {% hint style="info" %} -->
 The Monitoring Metric collector service should not assign a project.
@@ -57,9 +57,9 @@ You can skip this procedure.
 ## Monitoring Metric Information
 You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
 **Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_04.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_04.png)
 After the Collector Job is complete, the Monitoring metric is updated.
-![](/docs/guides/admin_guide/getting-started/metric-collector_img/metric-collector_image_05.png)
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_05.png)
 You can check collected data on the **"Raw Data"** tab of **Data -&gt; Monitoring**.
 
 ## Metric items \(Monitoring Collection\)

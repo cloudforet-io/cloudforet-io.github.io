@@ -9,7 +9,7 @@ description: >
 
 ## Overview
 You can add, modify, delete, and enable/disable users on the _**User Management**_ page.
-![](/docs/guides/admin_guide/identity/user_img/user_img_01.png)
+![](/docs/guides/user/user_img/user_img_01.png)
 
 ## Create Users
 Click the _**+ Add button**_. 

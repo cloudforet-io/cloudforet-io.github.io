@@ -10,11 +10,11 @@ description: >
 ## Overview
 수신된 Alert을 프로젝트의 구성원들에게 효과적으로 전달하기 위해, Escalation Policy를 생성,변경,삭제 합니다.
 Escalation Policy는 발생된 Alert을 다양한 매체를 통 알람 발생시 어떠한 방식으로 전달할 것인가를 상세하게 정의 합니다.
-![Escalation Policy Main](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_01.png)
+![Escalation Policy Main](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_01.png)
 
 ## Create Escalation Policy
 화면 내 _**Create**_ 버튼을 통해 Policy를 생성할 수 있습니다.
-![Escalation Policy Create](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_02.png)
+![Escalation Policy Create](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_02.png)
 
 설정 가능한 각 정책에 대한 설명은 아래와 같습니다.
 
@@ -32,11 +32,11 @@ Escalation Policy는 발생된 Alert을 다양한 매체를 통 알람 발생시
 
 ## Update Escalation Policy
 _**Alert 선택**_ > _**Action**_ > _**Update**_ 를 통해 정책을 변경할 수 있습니다.
-![Escalation Policy Update](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_03.png)
+![Escalation Policy Update](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_03.png)
 
 ## Delete Escalation Policy
 _**Alert 선택**_ > _**Action**_ > _**Update**_ 를 통해 정책을 변경할 수 있습니다.
-![Escalation Policy Delete](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_04.png)
+![Escalation Policy Delete](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_04.png)
 
 {{% alert title="Info" %}}
 Default로 설정된 정책, 사용중인 Policy는 삭제할 수 없습니다.
@@ -44,11 +44,11 @@ Default로 설정된 정책, 사용중인 Policy는 삭제할 수 없습니다.
 
 ## Search Escalation Policy
 검색창을 통해 생성된 Escalation Policy를 검색할 수 있습니다.
-![Escalation Policy Search](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_05.png)
+![Escalation Policy Search](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_05.png)
 
 ## Set As Default
 Default Policy를 정의할 수 있습니다. Alert 수신 설정 하는 모든 메뉴에서 기본 값으로 설정되게 됩니다.
-![Escalation Policy Default](docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_06.png)
+![Escalation Policy Default](/docs/guides/alert_manager/escalation_policy/escalation_policy_img/escalation_policy_admin_img_06.png)
 
 {{% alert title="Info" %}}
 _**Global Scope**_ 으로 생성되어야 설정 가능합니다.
