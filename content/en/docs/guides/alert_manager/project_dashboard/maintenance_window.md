@@ -9,7 +9,7 @@ description: >
 
 ## Overview
 정기, 비정기적인 시스템 작업일정을 등록합니다. Project Dashboard를 통해 작업을 안내하고, 작업간 발생하는 알람이 Disable 됩니다.
-![Maintenance Window Main](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_02.png)
+![Maintenance Window Main](/docs/guides/alert_manager/project_dashboard/maintenance_window_img/maintenance_window_img_02.png)
 
 ## Managing Maintenance Window
 작업 일정을 등록, 변경, 종료 할 수 있습니다.
@@ -17,7 +17,7 @@ description: >
 ## Create Maintenance Window
 작업 일정을 등록합니다. 작업명과 작업 일정을 등록합니다.
 작업 일정에 대한 세부 옵션설명은 아래와 같습니다.
-![Maintenance Window Create](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_01.png)
+![Maintenance Window Create](/docs/guides/alert_manager/project_dashboard/maintenance_window_img/maintenance_window_img_01.png)
 |항목|설명|
 |:--:|:--:|
 |Start now and end in|지금 즉시 지정된 시간까지 작업 일정을 등록 합니다. 15분, 30분, 1시간, 2시간, 3시간 중 선택할 수 있습니다.|
@@ -25,7 +25,7 @@ description: >
 
 ## Maintenance Window List
 작업 일정을 조회할 수 있습니다.
-![Maintenance Window List](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_03.png)
+![Maintenance Window List](/docs/guides/alert_manager/project_dashboard/maintenance_window_img/maintenance_window_img_03.png)
 작업 일정의 각 Parameter에 대한 상세 설명은 아래와 같습니다.
 |항목|설명|
 |:--:|:--:|
@@ -39,7 +39,7 @@ description: >
 
 ## Update Maintenance Window
 작업 일정을 변경할 수 있습니다.
-![Maintenance Window Update](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_04.png)
+![Maintenance Window Update](/docs/guides/alert_manager/project_dashboard/maintenance_window_img/maintenance_window_img_04.png)
 
 {{% alert title="Info" %}}
 예정된 작업의 내용을 변경할 수 있습니다. 작업 시간이 지나서 _**Closed**_ 상태인 작업 일정은 변경할 수 없습니다.
@@ -47,5 +47,5 @@ description: >
 
 ## Close Maintenance Window
 진행중인 작업 일정을 강제로 종료할 수 있습니다.
-![Maintenance Window Close](/docs/guides/user_guide/monitoring/project_dashboard/maintenance_window_img/maintenance_window_img_05.png)
+![Maintenance Window Close](/docs/guides/alert_manager/project_dashboard/maintenance_window_img/maintenance_window_img_05.png)
 

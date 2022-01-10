@@ -13,7 +13,7 @@ description: >
 
 ### Step 1. Get webhook url
 Sign in to SpaceONE console, and get the `webhook url` in the `Project` page -> webhook list on it. 
-![](/docs/guides/user_guide/monitoring/webhook_settings/prometheus_webhook_img/prometheus_webhook_img_01.png)
+![](/docs/guides/alert_manager/webhook_settings/prometheus_webhook_img/prometheus_webhook_img_01.png)
 <br>
 Webhook url is likely to be appeared as `https://monitoring-webhook.dev.spaceone.dev/monitoring/v1/webhook/{string}/{string}/events	`
 

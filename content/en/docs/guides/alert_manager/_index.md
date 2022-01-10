@@ -23,4 +23,4 @@ Alert Manager에서 주로 사용하는 용어를 정리 합니다.
 |:--:|:--:|
 |Event/Incident|외부의 모니터링 Tool(AWS SNS, Zabbix, DataDog 등..)에서 발생되는 다양한 패턴의 메시지 입니다. 인프라 및 어플리케이션에서 감지된 다양한 정보들을 포함 합니다. |
 |Alert|SpaceONE의 다양한 Monitoring Webhook Plugin에 의해 필터링 되어 체계적으로 정리된 Event Message 입니다.|
-|Alarm|SpaceONE의 Notification 서비스를 통해 발송되는 다양한 안내 메시지 입니다. 상세한 설명은 [Notification 서비스 소개](/docs/guides/user_guide/notification/) 를 참고해주세요.|
+|Alarm|SpaceONE의 Notification 서비스를 통해 발송되는 다양한 안내 메시지 입니다. 상세한 설명은 [Notification 서비스 소개](/docs/guides/alert_manager/notification/) 를 참고해주세요.|
