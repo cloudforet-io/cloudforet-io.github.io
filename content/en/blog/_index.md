@@ -1,6 +1,7 @@
 ---
 title: "SpaceONEBlog"
 linkTitle: "Blog"
+navTitle: "Blog"
 menu:
   main:
     weight: 30

@@ -17,8 +17,8 @@
 
 {{ partialCached "favicons.html" . }}
 
-<title>{{ $.Site.Language.Title }}</title>
-<meta name="description" content={{ T "meta_description" }}>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Params.Subtitle }}{{ end }}</title>
+<meta name="description" content={{ if .IsHome }}{{ T "meta_description" }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }} />
 <meta name="Keywords" content={{ T "meta_keywords" }}>
 <meta name="Author" content={{ T "meta_author" }}>
 {{- template "_internal/opengraph.html" . -}}

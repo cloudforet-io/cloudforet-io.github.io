@@ -6,7 +6,7 @@ theme = "docsy"
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
-# Enable Emoji emoticons support for page content 
+# Enable Emoji emoticons support for page content
 # See https://www.webfx.com/tools/emoji-cheat-sheet/
 enableEmoji = true
 
@@ -30,12 +30,13 @@ pygmentsStyle = "tango"
 [languages]
 [languages.en]
     languageName ="English"
-    title = "SpaceONE - Open Source Multi-Cloud Management Platfrom"
+    title = "SpaceONE - Open Source Multi-Cloud Management Platform"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
     # Weight used for sorting.
     weight = 1
+    description = "SpaceONE helps you manage multi-cloud environments and all your cloud resources & cost in ONE platform. SpaceONE supports AWS, Azure, Google Cloud, and more."
 [languages.ko]
     languageName ="Korean"
     title = "SpaceONE - 오픈소스 멀티 클라우드 플랫폼 스페이스원"
@@ -43,6 +44,7 @@ pygmentsStyle = "tango"
     time_format_default = "2006.01.02"
     time_format_blog = "2006.01.02"
     weight = 2
+    description = "멀티 클라우드 환경에서 클라우드 자원과 비용을 하나의 플랫폼, 스페이스원에서 관리할 수 있습니다. AWS, Azure, 구글 클라우드, 프라이빗 클라우드 등을 지원합니다."
 
 [outputs]
 home = [ "HTML" ]
@@ -56,7 +58,7 @@ hrefTargetBlank = true
 angledQuotes = false
 latexDashes = true
 extensions = [
-  "laxHtmlBlocks", 
+  "laxHtmlBlocks",
   "hardLineBreak", # newlines result in line breaks
 ]
 
@@ -70,7 +72,7 @@ anchor = "smart"
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
 
-# Options to using html inline markdown  
+# Options to using html inline markdown
 [markup]
 defaultMarkdownHandler = 'goldmark'
 
@@ -125,7 +127,6 @@ body_classes = "georgia bg-near-white"
 algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = true
-description = "OpenSource multicloud operation tool"
 showedit = true
 docsbranch = "master"
 currentUrl = "https://www.spaceone.org/home/"
@@ -133,6 +134,7 @@ currentUrl = "https://www.spaceone.org/home/"
 prism_syntax_highlighting = false
 # Configure url of latest version
 # url_latest_version = ""
+subtitle = "SpaceONE"
 
 # User interface configuration
 [params.ui]
