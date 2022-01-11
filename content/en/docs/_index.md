@@ -1,9 +1,10 @@
 ---
-title: "Documentation"
+title: "Documentation for SpaceONE - Easy guide for multi cloud management"
 linkTitle: "Documentation Home"
+navTitle: "Documentation"
 no_list: true
 main_menu: true
-description: SpaceONE is open source Multi Cloud Management Platform for resource monitoring, automation, and analysis. 
+description: Documentation and detailed use guide for SpaceONE users and opensource contributors.
 ---
 {{< box_wrap >}}
 {{< box title="Concepts" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/concepts" buttonTxt="See Concepts" >}}
