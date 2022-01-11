@@ -20,7 +20,7 @@ SpaceONE recommends two seperate node groups for core services and plugins.
 | spaceone-core-nodegroup | Deploy core PODs like identity, console, inventory |
 | spaceone-supervisor-nodegroup | Deploy supervisor POD and plugins            |
 
-![](/ko/docs/setup-operation/advanced_installation/img/spaceone-node-groups.png)
+![](/ko/docs/setup_operation/advanced_installation/img/spaceone-node-groups.png)
 
 Each node group has its own ***kubernetes labels***
 
@@ -28,13 +28,13 @@ Each node group has its own ***kubernetes labels***
 | --- | ---   |
 | Category | core |
 
-![](/ko/docs/setup-operation/advanced_installation/img/spaceone-core-nodegroup.png)
+![](/ko/docs/setup_operation/advanced_installation/img/spaceone-core-nodegroup.png)
 
 | Key | Value |
 | --- | ---   |
 | Category | supervisor |
 
-![](/ko/docs/setup-operation/advanced_installation/img/spaceone-supervisor-nodegroup.png)
+![](/ko/docs/setup_operation/advanced_installation/img/spaceone-supervisor-nodegroup.png)
 
 ## Helm chart value
 

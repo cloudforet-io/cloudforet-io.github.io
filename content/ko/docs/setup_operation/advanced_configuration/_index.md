@@ -13,11 +13,11 @@ description: >
 
 SpaceONE has default Title and CI with Wanny Favicon like
 
-![](/docs/setup/advanced_configuration/img/spaceone_default_favicon.png)
+![](/ko/docs/setup_operation/advanced_configuration/img/spaceone_default_favicon.png)
 
 But you can change your own Title and Favicon.
 
-![](/docs/setup/advanced_configuration/img/spaceone_custom_favicon.png)
+![](/ko/docs/setup_operation/advanced_configuration/img/spaceone_custom_favicon.png)
 
 </br>
 
@@ -97,10 +97,10 @@ When you open SpaceONE page, you can see the default SpaceONE CI, logo and text.
 You can change the default SpaceONE CI with your company CI.
 
 ### Login Page
-![](/docs/setup/advanced_configuration/img/spaceone_custom_ci.png)
+![](/ko/docs/setup_operation/advanced_configuration/img/spaceone_custom_ci.png)
 
 ### Every Page
-![](/docs/setup/advanced_configuration/img/spaceone_custom_ci2.png)
+![](/ko/docs/setup_operation/advanced_configuration/img/spaceone_custom_ci2.png)
 
 Update helm value of console (console -> production_json -> DOMAIN_IMAGE)
 

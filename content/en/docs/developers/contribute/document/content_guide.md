@@ -31,6 +31,10 @@ description: >
 
 ```
 
+{{% alert title="Attention" %}}
+When writing a description, if you start a sentence without a space with a tab. Entire site will fail.   
+{{% /alert %}}
+
 ### Description of front matter variables
 | Variables | Description |
 | :--- | :--- |

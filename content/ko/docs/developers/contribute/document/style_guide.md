@@ -40,11 +40,11 @@ description: >
 	Note Contents
 {{< /alert */>}}
 ```
-
 결과: <br>
 {{% alert title="Note Title" %}}
 Note Contents
 {{% /alert %}}
+
 
 ## Reference
 * Learn about [Hugo](https://gohugo.io/)

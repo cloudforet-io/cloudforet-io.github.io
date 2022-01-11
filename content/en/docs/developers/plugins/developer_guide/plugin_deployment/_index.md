@@ -35,7 +35,7 @@ version 에는 Dockerhub 와 같은 이미지 저장소에 실제 이미지 업�
 아래 tag 정보 중 "1.0" tag 이미지로 배포되기 된다. 
 <br><br>
 
-![](/docs/development/plugins/developer_guide/developer_guide_img/dockerhub_slack_protocol.png)
+![](/docs/developers/plugins/developer_guide/developer_guide_img/dockerhub_slack_protocol.png)
 
 <br><br>
 해당 API 의 경우, Kubernetes 환경에 Service 와 Pod 를 생성해 배포하는 단계를 거치기 때문에 응답까지 약간의 시간이 걸린다.  
