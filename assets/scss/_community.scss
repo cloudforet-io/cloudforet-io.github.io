@@ -41,6 +41,7 @@
   .about-spaceone {
     @include border-bottom;
     display: flex;
+    min-height: 18rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     max-width: 80rem;
