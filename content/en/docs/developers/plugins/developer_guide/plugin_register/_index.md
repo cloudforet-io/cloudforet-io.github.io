@@ -15,7 +15,7 @@ Container 빌드는 Dockerfile 을 활용해 docker build 를 수행 한 후,
 
 <br>
 
-![](/docs/development/plugins/developer_guide/developer_guide_img/plugin_container_build.png)
+![](/docs/developers/plugins/developer_guide/developer_guide_img/plugin_container_build.png)
 
 
 이미지를 저장소에 업로드 하였다면, Microservice 중 Repository 서비스에 해당 이미지를 등록해야 한다.   
@@ -23,7 +23,7 @@ Container 빌드는 Dockerfile 을 활용해 docker build 를 수행 한 후,
 
 <br>
 
-![](/docs/development/plugins/developer_guide/developer_guide_img/repository_plugin_register.png)
+![](/docs/developers/plugins/developer_guide/developer_guide_img/repository_plugin_register.png)
 
 
 아래 예제는 Notification 의 Protocol Plugin 등록시 전달된 Parameter 내용이다. 
@@ -72,4 +72,4 @@ plugin_id                              | name
 
 
 spacectl 의 자세한 사용 방법은 해당 페이지에서 확인 가능하다.  
-[Spacectl CLI Tool](/docs/guides/spaceone_cli) 
+[Spacectl CLI Tool](/docs/guides/advanced/spaceone_cli) 

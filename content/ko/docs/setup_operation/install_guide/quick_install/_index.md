@@ -93,7 +93,7 @@ You need to check status of pods.
 
 {{% /pageinfo %}}
 
-![](/ko/docs/setup-operation/install_guide/quick_install/quick_install_img/quick_install_image_01.png)
+![](/ko/docs/setup_operation/install_guide/quick_install/quick_install_img/quick_install_image_01.png)
 
 Check STATUS **Completed** or **Running**.
 
@@ -112,13 +112,13 @@ We use **kubectl port-forward**
 
 Open two terminal then run at separate terminal.
 <br>
-![](/ko/docs/setup-operation/install_guide/quick_install/quick_install_img/quick_install_image_02.png)
+![](/ko/docs/setup_operation/install_guide/quick_install/quick_install_img/quick_install_image_02.png)
 
 **Tips**
 
 You can run in the background by adding & at the end.
 <br>
-![](/ko/docs/setup-operation/install_guide/quick_install/quick_install_img/quick_install_image_03.png)
+![](/ko/docs/setup_operation/install_guide/quick_install/quick_install_img/quick_install_image_03.png)
 
 
 ## Enjoy
@@ -130,7 +130,7 @@ Open browser(<a href='http://localhost:8080' target='_blank'>http://localhost:80
 | ID | user1@example.com |
 | PASSWORD | User1234! |
 
-![](/ko/docs/setup-operation/install_guide/quick_install/quick_install_img/quick_install_image_04.png)
+![](/ko/docs/setup_operation/install_guide/quick_install/quick_install_img/quick_install_image_04.png)
 
 ### Initial Setup
 

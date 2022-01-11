@@ -70,7 +70,7 @@ You need to check status of pods.
 ~~~bash
 kubectl get pod
 ~~~
-![](/ko/docs/setup-operation/quick_install/quick_install_img/quick_install_image_01.png)
+![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_01.png)
 
 Check STATUS **Completed** or **Running**.
 It will take some time, so please wait.
@@ -85,7 +85,7 @@ kubectl port-forward -n spaceone svc/console-api 8081:80
 ~~~
 
 Open two terminal then run at separate terminal.
-![](/ko/docs/setup-operation/quick_install/quick_install_img/quick_install_image_02.png)
+![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_02.png)
 
 ### Tips
 You can run in the background by adding & at the end.
@@ -105,7 +105,7 @@ Open browser
 |---|---|
 | user1@example.com | User1234! |
 
-![](/ko/docs/setup-operation/quick_install/quick_install_img/quick_install_image_03.png)
+![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_03.png)
 
 ### Initial Setup
 {{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basic Setup in 10 minutes">}}
