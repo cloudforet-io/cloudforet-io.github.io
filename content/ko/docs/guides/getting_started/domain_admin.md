@@ -149,7 +149,7 @@ SpaceONE의 모든 클라우드 자원들은 반드시 특정 **`Project`**에 �
 #### Preparation
 
 Metric Collector를 사용하기 전에, 이를 위한 Service Account를 먼저 생성 해야 합니다.
-링크를 참조 해주세요. [Metric Collector Service Account](/ko/docs/guides/getting_started/metric-collector-quick-start.md)
+링크를 참조 해주세요. [Metric Collector Service Account](/ko/docs/guides/getting_started/metric-collector-quick-start/)
 
 
 {{% pageinfo color=“300” %}}

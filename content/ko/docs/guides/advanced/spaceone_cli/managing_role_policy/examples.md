@@ -59,7 +59,7 @@ $> spacectl list repository.Policy -p repository_id=repo-xxxxx -c policy_id,name
 
 ## EX1. Create Domain Admin Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#policy)합니다.
+- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
 - 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
 
 ~~~bash
@@ -90,7 +90,7 @@ $> spacectl list identity.Role
 
 ## EX2. Create Domain Viewer Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#policy)합니다.
+- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
 - 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
 
 ~~~bash
@@ -120,7 +120,7 @@ $> spacectl list identity.Role
 
 ## EX3. Create Project Admin Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#policy)합니다.
+- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
 - 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
 
 ~~~bash
@@ -151,7 +151,7 @@ $> spacectl list identity.Role
 
 ## EX4. Create Project Viewer Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#policy)합니다.
+- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
 - 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
 
 ~~~bash
@@ -181,7 +181,7 @@ $> spacectl list identity.Role
 
 ## EX5. Create Alert Manager Full Access Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/spaceone_cli/managing_role_policy/examples/#policy)합니다.
+- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
 - 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
 
 ~~~bash

@@ -23,7 +23,7 @@ Go to _**`SpaceONE Console > Project > Notifications`**_ which you want to get a
 |Item|Descriptions|
 |:--:|:--|
 |Channel Name|Notification channel name|
-|Notification Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)|
+|Notification Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/alert_manager/escalation_policy/)|
 |Country Code|Region code for mobile phone(Default 82)|
 |Phone Number|Mobile phone number|
 

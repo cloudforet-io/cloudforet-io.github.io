@@ -60,7 +60,7 @@ These items below are descriptions for plugins
 |Item|Descriptions|
 |:--:|:--|
 |Channel Name|Notification channel name|
-|Notifications Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)|
+|Notifications Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/alert_manager/escalation_policy/)|
 |Slack Channel|Name of the slack channel to publish message. No need `#` in front of channel name|
 |Slack Token|Token of slack app|
 

@@ -16,7 +16,7 @@ description: >
 - Asterisk(*)를 지원합니다. 
 
 {{< alert title="Note" >}}
-Policy를 관리하기 위해서는 사용자에게 적절한 권한이 필요합니다. 이에 상세한 권한에 대해 [Default Role](/ko/docs/concepts/rbac/understanding-role/#default-roles)을 참고해주세요.
+Policy를 관리하기 위해서는 사용자에게 적절한 권한이 필요합니다. 이에 상세한 권한에 대해 [Default Role](/ko/docs/concepts/identity/rbac/understanding-role/#default-roles)을 참고해주세요.
 {{< /alert >}}
 
 ~~~json

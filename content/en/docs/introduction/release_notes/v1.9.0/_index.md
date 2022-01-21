@@ -20,8 +20,8 @@ description: >
 - 이제 사용자는 다양한 역할별로 세분화된 접근 제어관리가 가능 합니다.
 - SpaceONE 팀에서 게시한 5종의 기본 정책 이외에, 회사내 관리자가 내부 방침에 따른 권한을 편집할 수 있습니다.
 - SpaceONE의 RBAC에 대한 문서는 아래의 문서를 참고해주세요.
-    - https://www.spaceone.org/ko/docs/concepts/rbac/
-    - https://www.spaceone.org/ko/docs/guides/spaceone_cli/managing_role_policy/examples/
+    - https://www.spaceone.org/ko/docs/concepts/identity/rbac/
+    - https://www.spaceone.org/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/
 
 ### Bugfix
 - Billing 서비스 안정화

@@ -53,7 +53,7 @@ map_users = [
 
 ### Execute terraform
 
-If you don't have terraform binary, see [Reference](#Reference)
+If you don't have terraform binary, see [Reference](#reference)
 ~~~bash
 terraform init
 terraform plan
@@ -64,13 +64,13 @@ terraform apply
 
 After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes.
 
-If you don't have kubectl, see [Reference](#Reference)
-You may also install aws-iam-authenticator, see [Reference](#Reference)
+If you don't have kubectl, see [Reference](#reference)
+You may also install aws-iam-authenticator, see [Reference](#reference)
 ~~~bash
 cp kubecconfig_spaceone-prd-eks ~/.kube/config
 ~~~
 
-After installation of EKS, we highly recommend to install [AWS Load Balancer Controller](#Reference) and [External-DNS](#Reference).
+After installation of EKS, we highly recommend to install [AWS Load Balancer Controller](#reference) and [External-DNS](#reference).
 
 
 

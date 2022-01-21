@@ -46,7 +46,7 @@ Set information above.
 |Item|Descriptions|
 |:--:|:--|
 |Channel Name|Notification channel name|
-|Notification Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/)|
+|Notification Level|Which level to be placed in escalation policy, see [Escalation Policy for details](/docs/guides/alert_manager/escalation_policy/)|
 |Chat ID| Telegram chatting room ID, see [How To get Chat ID](/docs/guides/alert_manager/notification/protocol_settings/telegram_protocol/#how-to-get-chat-id) to get information|
 |BOT API Token| Telegram bot api token, see[How To get Bot API Token](/docs/guides/alert_manager/notification/protocol_settings/telegram_protocol/#how-to-get-bot-api-token) to get information|
 

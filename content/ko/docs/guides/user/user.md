@@ -29,7 +29,7 @@ _**+ Add 버튼**_을 클릭 합니다.
 ### Assign Domain Role
 
 **Domain Admin**을 선택 하였다면, SpaceONE 도메인내의 모든 권한을 얻을 수 있습니다. 
-사용자 role에 대한 상세한 설명은 링크를 참고 하세요: [User Role](/docs/guides/advanced_topics/user-role).
+사용자 role에 대한 상세한 설명은 링크를 참고 하세요: [User Role](/docs/guides/advanced/spaceone_cli/managing_role_policy/managing_role/).
 
 ![](/ko/docs/guides/user/user_img/user_img_04.png)
 

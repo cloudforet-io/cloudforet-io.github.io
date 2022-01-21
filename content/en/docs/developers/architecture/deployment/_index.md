@@ -108,7 +108,7 @@ Based on micro service types like frontend, backend, or supervisor, the contents
 	https://github.com/spaceone-dev/spaceone/tree/master/helm_templates
 {{< /alert >}}
 
-![](/docs/development/architecture/deployment/img/spaceone_helm_deployment.png)
+![](/docs/developers/architecture/deployment/img/spaceone_helm_deployment.png)
 
 ## Implementation
 

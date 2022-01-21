@@ -47,7 +47,7 @@ Event Rule 편집 화면에서 각 Event Rule 우측의 _**`Delete`**_ 버튼을
 
 ## Escalation Policy
 각 Project 별로 Notification 발생에 대한 세부 정책을 설정할 수 있습니다.
-정책의 각 항목별 상세 설명은 [Escalation Policy Admin Guide](/docs/guides/admin_guide/monitoring/alert_manager/escalation-policy/#create-escalation-policy) 를 참고 해주세요.
+정책의 각 항목별 상세 설명은 [Escalation Policy Admin Guide](/docs/guides/alert_manager/escalation_policy/#create-escalation-policy) 를 참고 해주세요.
 Escalation Policy의 _**Name**_ 의 링크를 클릭 했을 경우, 대상 _**Escalation Policy**_ 관리 메인 화면으로 이동 합니다. 
  
 ### Update Existing Policy
@@ -62,5 +62,5 @@ _**`Create New Policy`**_ 버튼을 클릭하여, 신규 Policy를 생성후 즉
 ![Escalation Policy Create](/docs/guides/alert_manager/project_dashboard/settings_img/settings_img_08.png)
 
 {{% alert title="Escalation Policy 생성" %}}
-새로운 Policy 생성에 대한 상세한 안내는 [Creating New Escalation Policy](/docs/guides/alert_manager/escalation-policy/#create-escalation-policy)를 참고 해주세요.
+새로운 Policy 생성에 대한 상세한 안내는 [Creating New Escalation Policy](/docs/guides/alert_manager/escalation_policy/escalation-policy/#create-escalation-policy)를 참고 해주세요.
 {{% /alert %}}

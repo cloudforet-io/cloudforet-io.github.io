@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="td-content">
+    {{ if .Params.main_menu }}
+    <h1>{{ .LinkTitle }}</h1>
+    {{ else }}
     <h1>{{ .Title }}</h1>
+    {{ end }}
     {{ with .Params.description }}
     <div class="page-summary">
         {{ . | markdownify }}
