@@ -11,11 +11,11 @@ description: >
 
 아래의 과정을 통해 Monitoring Metric Data를 수집할 수 있습니다 : 
 
-* [Prerequisites](metric-collector-quick-start.md#prerequisites)
-* [Get API Key for SpaceONE Service Account](metric-collector-quick-start.md#get-api-key-for-spaceone-service-account)
-* [Register SpaceONE Service Account](metric-collector-quick-start.md#register-spaceone-service-account-ex-metric-collector)
-* [Monitoring Metric Information](metric-collector-quick-start.md#monitoring-metric-information) 
-* [Collecting Monitoring Metric Type](metric-collector-quick-start.md#collecting-monitoring-metric-type)
+* [Prerequisites](#preparation)
+* [Get API Key for SpaceONE Service Account](#get-api-key-for-service-account)
+* [Register SpaceONE Service Account](#assign-spaceone-service-account-ex-metric-collector)
+* [Monitoring Metric Information](#monitoring-metric-information) 
+* [Collecting Monitoring Metric Type](#metric-items-monitoring-collection)
 
 ## PREPARATION
 
@@ -28,7 +28,7 @@ Service Account \(SpaceONE\)를 추가 하기전에, SpaceONE의 API Key가 필�
 ![](/ko/docs/guides/getting_started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
-API-Key는 사용자 관리 메뉴에서 발급이 가능합니다. [사용자 API Key 관리하기](/ko/docs/guides/my_account/api_key/api_key.md)를 통해 API Key를 발급 합니다. 
+API-Key는 사용자 관리 메뉴에서 발급이 가능합니다. [사용자 API Key 관리하기](/ko/docs/guides/my_account/api_key/)를 통해 API Key를 발급 합니다. 
 <!-- {% endhint %} -->
 
 ## Assign SpaceOne Service Account \(Ex. Metric Collector\)
@@ -46,7 +46,7 @@ SpaceONE Service Provider를 선택한 후, **+Add** 버튼을 클릭 합니다.
 
 ![](/ko/docs/guides/getting_started/metric-collector_img/metric-collector_image_02.png)
 
-Service Account 이름과 user ID를 입력한 후, [Get API Key for Service Account](metric-collector-quick-start.md#get-api-key-for-service-account)에서 받은 정보를 Credentials에 입력 합니다.
+Service Account 이름과 user ID를 입력한 후, [Get API Key for Service Account](#get-api-key-for-service-account)에서 받은 정보를 Credentials에 입력 합니다.
 
 Credentials 입력 정보는 아래와 같습니다.
 

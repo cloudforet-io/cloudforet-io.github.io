@@ -36,7 +36,7 @@ Users can also choose filters through the **`Search`** bar.
 ![](/docs/guides/advanced/excel-export-img/excel_export_02.png)
 <!-- 더 나아가, 검색창에서도 원하는 필터를 선택할 수 있습니다. -->
 Like the example image below, if you search for a specific **Project** name, you'll be given a list of all **Cloud Services** that project has.<br>
-Users can also use the **`Custom Table`** feature to combine and compose selected data into tables. Which then can be exported into Excel files. To read a more detailed guide about the **`Custom Table`** feature, click [here](/docs/guides/advanced_topics/custom_table)
+Users can also use the **`Custom Table`** feature to combine and compose selected data into tables. Which then can be exported into Excel files. To read a more detailed guide about the **`Custom Table`** feature, click [here](/docs/guides/advanced/custom_table)
 ![](/docs/guides/advanced/excel-export-img/excel_export_03.png)
 <!-- 예를 들어 이 검색 필터를 이용해 원하는 프로젝트를 검색하면, 위와 같이 프로젝트 별로 가지고 있는 클라우드 서비스를 한 눈에 볼 수 있습니다.이와 같은 방식으로 뒤의 목차에서 설명할 커스텀 테이블 기능을 활용해 원하는 데이터를 조합하여 테이블을 구성하고, 해당 데이터를 Excel로 추출할 수 있습니다. -->
 

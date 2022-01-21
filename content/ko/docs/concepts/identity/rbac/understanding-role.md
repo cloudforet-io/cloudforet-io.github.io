@@ -67,7 +67,7 @@ Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 �
 
 ## Role Hierarchy
 
-사용자가 [계층적인 Project 구조](/ko/docs/concepts/rbac/#organization)내에서 복합적인 [Rolebinding](/ko/docs/concepts/identity/rbac/#how-rbac-works)을 가질 경우 
+사용자가 [계층적인 Project 구조](/ko/docs/concepts/identity/rbac/#organization)내에서 복합적인 [Rolebinding](/ko/docs/concepts/identity/rbac/#how-rbac-works)을 가질 경우 
 Role은 아래와 같은 규칙으로 적용 됩니다.
 
 예를 들어, 아래의 그림과 같이 _**stark@example.com**_ 사용자가 상위 Project Group에 _**Project Admin**_ Role로 Binding이 되어 있고, 하위 레벨의 프로젝트인 _**APAC**_ 에 _**Project Viewer**_ Role로 Binding되어 있는 경우

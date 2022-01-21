@@ -8,7 +8,8 @@ description: >
 ---
 
 {{< box_wrap >}}
-{{< box title="Overview" description="Introducing SpaceONE" buttonUrl="/docs/references/release_notes/" buttonTxt="Overview" />}}
-{{< box title="Release Notes" description="SpaceONE release note" buttonUrl="/docs/references/supported_technologies/" buttonTxt="Release Notes" />}}
-{{< box title="Integrations" description="SpaceONE plugin supported providers" buttonUrl="/docs/references/supported_technologies/" buttonTxt="Integrations" />}}
+{{< box title="Overview" description="Introducing SpaceONE" buttonUrl="/ko/docs/introduction/overview/" buttonTxt="See Overview" />}}
+{{< box title="Release Notes" description="SpaceONE release note" buttonUrl="/ko/docs/introduction/release_notes/" buttonTxt="See Release Notes" />}}
+{{< box title="Integrations" description="SpaceONE plugin supported providers" buttonUrl="/ko/docs/introduction/integrations/" buttonTxt="See Integrations" />}}
+{{< box title="Key Differentiators" description="Core technology of SpaceONE." buttonUrl="/ko/docs/introduction/key_differentiators/" buttonTxt="See Key Differentiators" />}}
 {{< /box_wrap >}}

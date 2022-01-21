@@ -2,7 +2,7 @@
 title: "Power Scheduler"
 linkTitle: "Power Scheduler"
 weight: 11
-url_dash_board: "" 
+url_dash_board: ""
 date: 2021-06-11
 description: >
     Managing Power Status of Cloud Resources in projects
@@ -24,11 +24,11 @@ Before creating Power Scheduler modify your existing policy, For detailed proces
 ![](/docs/guides/advanced/automation/automation_img/image(89).png)
 
 * **Scheduler list by Projects**  
-User can see Overall status of power scheduling  
+  User can see Overall status of power scheduling
 * **Search Bar**  
-User can search status of power scheduling by project name.  
+  User can search status of power scheduling by project name.
 * **Scheduling Widget**  
-Items of power scheduler information for each projects are below.  
+  Items of power scheduler information for each projects are below.
 
 ![](/docs/guides/advanced/automation/automation_img/image(89).png)
 
@@ -118,7 +118,7 @@ To create schedule, fill out several items required.
 
 #### Name
 Name of Schedule.<br>
-Combination of String, Number, '-' is valid. escape character is not available. 
+Combination of String, Number, '-' is valid. escape character is not available.
 
 #### Timestamp
 Specifying time for scheduler, x-axis is date, y-axis is detailed time.<br>    
@@ -222,37 +222,34 @@ Some limitations for power scheduler service are existed, Most of them are inher
 Cloud resources which has conditions below can not managed by power scheduler service
 
 * AutoScalingGroup
-  * ASG controlled by _**EKS managed group**_
+    * ASG controlled by _**EKS managed group**_
 * RDS Instance
-  * Instance that member of _**replication**_
-  * SQL Server DB using _**Multi-AZ**_
+    * Instance that member of _**replication**_
+    * SQL Server DB using _**Multi-AZ**_
 * RDS Aurora Instance
-  * Member of _**Aurora global database**_
-  * Cluster that using _**parallel query feature**_
+    * Member of _**Aurora global database**_
+    * Cluster that using _**parallel query feature**_
 * Reference
-  * [AWS DB instance limitation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html#USER_StopInstance.Limitations)
+    * [AWS DB instance limitation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html#USER_StopInstance.Limitations)
 
 ### Google Cloud
-Cloud resources has a such a condition that does not support within power scheduler Service 
+Cloud resources has a such a condition that does not support within power scheduler Service
 
 * Compute Engine
-  * Compute Engine resources may **NOT** turn on/off if selected compute engines are instance of **Instance group**.
-  * Categorizing **Instance group**'s compute engine and normal compute engine on the view will be available soon.  
+    * Compute Engine resources may **NOT** turn on/off if selected compute engines are instance of **Instance group**.
+    * Categorizing **Instance group**'s compute engine and normal compute engine on the view will be available soon.
 * Instance Group
-  * Only **Stateless** type in Instance Group is valid to turn on/off in power scheduler service because Google Cloud supports autoscaling on **Stateless** type only in Instance Group.  \(Refer to[ google.compute.instance\_group](https://cloud.google.com/compute/docs/instance-groups)\)
-  * Minimum number of Instance in Instance group is 1 when instance group scales in\(autoscaling\) except certain type \(Unmanaged Instance Group\). 
-    
+    * Only **Stateless** type in Instance Group is valid to turn on/off in power scheduler service because Google Cloud supports autoscaling on **Stateless** type only in Instance Group.  \(Refer to[ google.compute.instance\_group](https://cloud.google.com/compute/docs/instance-groups)\)
+    * Minimum number of Instance in Instance group is 1 when instance group scales in\(autoscaling\) except certain type \(Unmanaged Instance Group\).
+
 {{% alert title="Please, be advised that Instance Group is working for action Start/Stop as followings" %}}
-* **Valid type:** 
-  * **Stateless** (**Managed**) as mentioned above.
-* **Results on Action:** 
-  * * Recommend size is given by Google Cloud from their own statistic
-  * **ON :** Scale up to recommend size\(count\) of Instance group and autoscaling mode is on \(Keep scale in/out itself by recommend size if autoscaling mode is on\). 
-  * **OFF :** No matter autoscaling mode is on or off, diminish Instance Group to 1 Instance and autoscaling mode is off.
-{{% /alert %}}
+* **Valid type:**
+    * **Stateless** (**Managed**) as mentioned above.
+* **Results on Action:**
+    * * Recommend size is given by Google Cloud from their own statistic
+    * **ON :** Scale up to recommend size\(count\) of Instance group and autoscaling mode is on \(Keep scale in/out itself by recommend size if autoscaling mode is on\).
+    * **OFF :** No matter autoscaling mode is on or off, diminish Instance Group to 1 Instance and autoscaling mode is off.
+      {{% /alert %}}
 
 * Action Cycle & status
-![](/docs/guides/advanced/automation/automation_img/screen-shot-2021-04-26-at-20.59.27.png)
-
-
-
+  ![](/docs/guides/advanced/automation/automation_img/screen-shot-2021-04-26-at-20.59.27.png)

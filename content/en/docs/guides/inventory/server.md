@@ -122,7 +122,7 @@ All information within tables will be exported (Excel format).
 ### Custom Table
 You can personalize the fields that you want to display in the Resource List table.
 ![](/docs/guides/inventory/server_img/server_image_08.png)
-You can check details of Cumstom Table here. <a href ="/docs/guides/advanced_topics/custom_table">Custom Table Details.</a>
+You can check details of Cumstom Table here. <a href ="/docs/guides/advanced/custom_table">Custom Table Details.</a>
 
 ## Tab
 Provides detailed information about the server. They are consists of tabs below.

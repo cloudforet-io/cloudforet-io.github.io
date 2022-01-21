@@ -11,7 +11,7 @@ description: >
 ## Role
 
 - Role은 정책이 적용되는 범위에 따라 Domain/Project Type으로 구분 됩니다.
-- 자세한 설명은 [Role Type](/ko/docs/concepts/rbac/understanding-role/#role-type) 문서를 참조해 주세요.
+- 자세한 설명은 [Role Type](/ko/docs/concepts/identity/rbac/understanding-role/#role-type) 문서를 참조해 주세요.
 
 <br>
 
@@ -100,7 +100,7 @@ policies:
 **Delete Domain Role**
 
 {{< alert title="Note" >}}
-사용중인 Domain Role은 삭제할 수 없습니다. [사용자 Domain Role 해제하기](/ko/docs/guides/admin_guide/identity/user/#editdelete-users) 를 참고하여  
+사용중인 Domain Role은 삭제할 수 없습니다. [사용자 Domain Role 해제하기](/ko/docs/guides/user/user/#editdelete-users) 를 참고하여  
 _**Assign Domain Role > Not select role > Confirm **_ 와 같은 방법을 통해 해제 할 수 있습니다. 
 {{< /alert >}}
 
@@ -189,10 +189,10 @@ policies:
 
 {{< alert title="Note" >}}
 사용중인 Role은 삭제할 수 없습니다. 
-1. [사용자에게 할당된 Role 확인하기](/ko/docs/guides/admin_guide/identity/user/#overview)를 통해 
+1. [사용자에게 할당된 Role 확인하기](/ko/docs/guides/user/user/#overview)를 통해 
 삭제 대상 Role을 사용중인 사용자를 확인 후  
-2. [Project Group Member 관리하기](/ko/docs/guides/user_guide/project/project_group_management/#set-project-group-roles) 혹은 
-[Project Membember 관리하기](/ko/docs/guides/user_guide/project/project_management/#member)를 통해 등록된 Member 설정을 삭제할 수 있습니다. 
+2. [Project Group Member 관리하기](/ko/docs/guides/project/project_group_management/#set-project-group-roles) 혹은 
+[Project Membember 관리하기](/ko/docs/guides/project/project_management/#member)를 통해 등록된 Member 설정을 삭제할 수 있습니다. 
 {{< /alert >}}
 
 ~~~bash

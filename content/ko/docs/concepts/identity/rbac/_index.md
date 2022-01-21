@@ -43,7 +43,7 @@ SpaceONE Identity Service는 각 사용자에게 부여된 Role/Policy를 확인
 ### Resource
 
 만약 사용자가 특정한 SpaceONE 프로젝트 내의 자원에 접근 하고자 한다면, 해당 사용자에게 적합한 Role을 부여한 후 대상 프로젝트에 멤버로 추가하여 접근 가능할게 할 수 있습니다.
-이러한 자원의 예는 [Server](/ko/docs/guides/inventory/server/), [Project](/ko/docs/guides/project/project_management.md), [Alert](/docs/guides/alert_manager/alert/) 입니다.
+이러한 자원의 예는 [Server](/ko/docs/guides/inventory/server/), [Project](/ko/docs/guides/project/project_management/), [Alert](/docs/guides/alert_manager/alert/) 입니다.
 
 SpaceONE내에서 관리되는 자원들을 각 서비스별로 편리하게 이용할 수 있게 하기 위해, 사전에 정의된 Role/Policy를 게시하고 있습니다.
 회사 내부적으로 자체 접근범위를 정의하고 싶을 경우 Custom Policy/Custom Role을 생성하여 내부 조직에 적용할 수도 있습니다.

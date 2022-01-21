@@ -30,7 +30,7 @@ Enter your user ID, then click the _**Check ID**_ button to check availability.
 
 If you select **Domain Admin**, you can get full access to the SpaceONE domain.
 
-For more information on user roles, refer to the following link: [User Role](/docs/guides/advanced_topics/user-role).
+For more information on user roles, refer to the following link: [User Role](/docs/guides/advanced/spaceone_cli/managing_role_policy/managing_role/).
 
 ![](/ko/docs/guides/my_account/user_management_img/user_management_img_04.png)
 
