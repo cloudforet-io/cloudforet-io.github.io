@@ -1,0 +1,16 @@
+{{ $section_id := .Get "name" | default .Ordinal }}
+{{ $title := .Get "title" }}
+{{ $description := .Get "description" }}
+{{ $bg_blue := .Get "bg_blue" }}
+<section class="section section-{{ $section_id }}{{if $bg_blue}} bg-blue{{end}}">
+    <div class="inner">
+        {{ with .Get "title" }}
+            <h3>{{ . | safeHTML }}</h3>
+        {{ end }}
+        {{ if eq .Page.File.Ext "md" }}
+            {{ .Inner | markdownify }}
+        {{ else }}
+            {{ .Inner | htmlUnescape | safeHTML }}
+        {{ end }}
+    </div>
+</section>

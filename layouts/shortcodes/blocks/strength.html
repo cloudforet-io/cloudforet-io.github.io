@@ -1,0 +1,14 @@
+{{ $section_id := .Get "name" | default .Ordinal }}
+{{ $thumbnail_id := .Get "thumbnail" }}
+{{ $title := .Get "title" }}
+{{ $description := .Get "description" }}
+<div class="strength strength-{{ $section_id }}">
+    <figure id={{ $thumbnail_id }} class="img-strength"></figure>
+    <h4>{{ $title }}</h4>
+    <p>{{ $description }}</p>
+    {{ if eq .Page.File.Ext "md" }}
+        {{ .Inner | markdownify }}
+    {{ else }}
+        {{ .Inner | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>
