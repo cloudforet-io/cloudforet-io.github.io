@@ -1,4 +1,4 @@
-footer:not(.footer-home) {
+footer {
   .inner {
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@ footer:not(.footer-home) {
 
 @media only screen and (max-width: 1023.999px) {
 
-  footer:not(.footer-home)  {
+  footer {
     padding-left: 1rem;
     padding-right: 1rem;
 
