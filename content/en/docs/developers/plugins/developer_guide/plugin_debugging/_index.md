@@ -17,7 +17,8 @@ Overall setting processes are as below.
 
 - [1. Open Projects and Dependencies](/docs/developers/plugins/developer_guide/plugin_debugging/#1-open-projects-and-dependencies)
 - [2. Configure Virtual Environment](/docs/developers/plugins/developer_guide/plugin_debugging/#2-configure-virtual-environment)
-- [3. Test Code](/docs/developers/plugins/developer_guide/plugin_debugging/#3-test-code)
+- [3. Run Server](/docs/developers/plugins/developer_guide/plugin_debugging/#3-run-server)
+- [4. Test Code](/docs/developers/plugins/developer_guide/plugin_debugging/#4-execute-test-code)
 
 ### 1. Open projects and dependencies
 First, open project Identity, python-core and api one by one.
