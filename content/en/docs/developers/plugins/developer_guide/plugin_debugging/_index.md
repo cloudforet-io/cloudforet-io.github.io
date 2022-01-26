@@ -68,6 +68,10 @@ You can attach a project as a module if it was imported at least once.
 - 'spaceone-api'
 - 'spaceone-tester'
 - Additional libraries are in 'pkg/pip_requirements.txt' in every repository. You also need to install them.
+- Repeat above process or you can install through command line
+~~~bash
+$> pip3 install -r pip_requirements.txt
+~~~
 ![](/docs/developers/plugins/developer_guide/plugin_debugging/plugin_debugging_img/plugin-debugging-img-13.png)
 
 ![](/docs/developers/plugins/developer_guide/plugin_debugging/plugin_debugging_img/plugin-debugging-img-12.png)
