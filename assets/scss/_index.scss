@@ -1,5 +1,5 @@
 //font
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=block');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
 
 // default
@@ -450,10 +450,10 @@ html::before {
   }
 
   .td-home {
-    // section
     .section {
       height: auto;
       .inner {
+        max-width: 48rem;
         padding: 4rem 1.5rem;
       }
       h3 {
@@ -533,6 +533,7 @@ html::before {
 
     .section-universe {
       .inner {
+        max-width: unset;
         padding: 0;
       }
       h3 {
@@ -631,7 +632,7 @@ html::before {
     height: 4.1rem;
     font-size: 1.6rem;
   }
-  
+
   .btn-link-gradient {
     &.link-github:before {
       width: 1.6rem;

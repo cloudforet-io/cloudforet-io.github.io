@@ -4,7 +4,7 @@ $td-enable-google-fonts: true;
 // Fonts
 $google_font_name: "Roboto";
 $google_font_family: "Roboto:300,300i,400,400i,700,700i";
-$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
+$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=block";
 
 $td-fonts-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
