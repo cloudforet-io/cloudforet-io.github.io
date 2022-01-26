@@ -5,7 +5,7 @@
 <div class="strength strength-{{ $section_id }}">
     <figure id={{ $thumbnail_id }} class="img-strength"></figure>
     <h4>{{ $title }}</h4>
-    <p>{{ $description }}</p>
+    <p class="description">{{ $description }}</p>
     {{ if eq .Page.File.Ext "md" }}
         {{ .Inner | markdownify }}
     {{ else }}
