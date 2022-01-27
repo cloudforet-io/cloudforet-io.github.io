@@ -28,9 +28,6 @@ body {
 *:lang(en) .td-home {
   font-family: "Work Sans";
 }
-*:lang(ko) .td-home {
-  font-family: "Work Sans", "Pretendard Variable";
-}
 
 // color set (only for home)
 $primary100: #F8F8FC;
@@ -48,16 +45,17 @@ $gray400: #5F616D;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8.375rem;
+  min-width: 9rem;
   height: 2.5rem;
-  cursor: pointer;
+  padding: 0 1.5rem;
   color: $white;
   border-radius: 1.875rem;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Roboto";
-
+  cursor: pointer;
   &:hover {
+    background: linear-gradient(90deg, #65cba0 0%, #cf88a0 52.6%, #5ca2b1 100%);
     color: $white;
   }
 }
@@ -65,15 +63,21 @@ $gray400: #5F616D;
   background-color: $green100;
 }
 .btn-link-gradient {
-  background: url('/images/home/button-border.svg') no-repeat center / contain;
+  top: 0.125rem;
+  min-width: calc(9rem - 0.25rem);
+  height: calc(2.5rem - 0.25rem);
+  //background: rgba(0, 27, 51, 0.5) url('/images/home/button-border.svg') no-repeat center / contain;
+  background-color: $navy500;
 
-  &:hover {
-    background: linear-gradient(90deg,
-            #65cba0 0%,
-            #cf88a0 52.6%,
-            #5ca2b1 100%);
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 0.25rem);
+    height: calc(100% + 0.25rem);
+    background: linear-gradient(90deg, #65cba0 0%, #cf88a0 52.6%, #5ca2b1 100%);
+    border-radius: 1.875rem;
   }
-
   &.link-github:before {
     content: '';
     width: 1rem;
@@ -139,6 +143,7 @@ $shadows-big: multiple-box-shadow(100,300);
 // section
 .td-home {
   background-color: #090a0f;
+  word-break: keep-all;
 
   .td-outer {
     padding: 0;
@@ -151,6 +156,7 @@ $shadows-big: multiple-box-shadow(100,300);
   .section {
     overflow: hidden;
     height: 60rem;
+    //height: 100vh;
     &.bg-blue {
       background-color: rgba(0, 27, 51, 0.5);
     }
@@ -170,6 +176,7 @@ $shadows-big: multiple-box-shadow(100,300);
       text-align: center;
       color: $primary200;
       letter-spacing: -0.01em;
+      border: solid 1px greenyellow; // temporary code
     }
     h3 {
       width: 100%;
@@ -184,6 +191,10 @@ $shadows-big: multiple-box-shadow(100,300);
 
   .section-main {
     position: relative;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% auto;
+    background-image: url("/images/home/bg_section_main.png");
     h2 {
       font-size: 4rem;
       font-weight: 500;
@@ -220,44 +231,13 @@ $shadows-big: multiple-box-shadow(100,300);
         height: 11rem;
         margin-left: 9rem;
       }
-      /* &.bg-wave1 {
-        width: 90rem;
-        max-width: 100vw;
-        height: 60.25rem;
-        background-image: url('/images/home/wave1.svg');
-        background-repeat: no-repeat;
-      }
-      &.bg-wave2 {
-        width: 89.75rem;
-        max-width: 100vw;
-        height: 52.9375rem;
-        background-image: url('/images/home/wave2.svg');
-        background-repeat: no-repeat;
-      }
-      &.bg-ellipse1 {
-        top: 7rem;
-        left: 0;
-        width: 19.375rem;
-        height: 35.625rem;
-        background-image: url('/images/home/ellipse1.svg');
-        background-repeat: no-repeat;
-      }
-      &.bg-ellipse2 {
-        width: 19.778rem;
-        height: 18.375rem;
-        left: 50%;
-        margin-left: 11.875rem;
-        transform: rotate(-5.95deg);
-        background-image: url('/images/home/ellipse2.svg');
-        background-repeat: no-repeat;
-      } */
     }
   }
 
   .section-feature {
     .feature {
       display: grid;
-      grid-template-columns: 4fr 8fr;
+      grid-template-columns: 20.25rem 43.5rem;
       grid-column-gap: 2.5rem;
       align-items: center;
       .contents {
@@ -305,7 +285,7 @@ $shadows-big: multiple-box-shadow(100,300);
 
   .feature-analysis {
     .feature {
-      grid-template-columns: 8fr 4fr;
+      grid-template-columns: 43.5rem 20.25rem;
       .contents {
         order: 1;
       }
@@ -352,9 +332,8 @@ $shadows-big: multiple-box-shadow(100,300);
       }
       .description {
         margin-bottom: 0;
-        font-family: "Roboto";
-        font-weight: 300;
-        font-size: 1.1875rem;
+        font-family: "Roboto", "pretenPretendard Variable";
+        font-size: 1.25rem;
         line-height: 1.6;
         opacity: 0.8;
         color: $primary200;
@@ -427,26 +406,29 @@ $shadows-big: multiple-box-shadow(100,300);
     .inner {
       max-width: 90rem;
       margin: 0 auto;
+      padding: 2rem 0 2.5rem;
       border-top: none;
+      color: $navy300;
     }
   }
 }
 
-// desktop
+// desktop (temporary code)
 html::before {
   position: fixed;
   top:0;
-  right: 0;
+  left: 0;
   z-index: 1000;
   content: 'desktop';
   color: red;
-  font-size: 5rem;
+  font-size: 3rem;
 }
+
 
 // tablet
 @media only screen and (max-width: 1439px) {
   html::before {
-    content: 'tablet';
+    content: 'tablet'; // temporary code
   }
 
   .td-home {
@@ -455,6 +437,8 @@ html::before {
       .inner {
         max-width: 48rem;
         padding: 4rem 1.5rem;
+        border: solid 1px orange; // temporary code
+        border: none !important;
       }
       h3 {
         text-align: center;
@@ -463,6 +447,8 @@ html::before {
 
     .section-main {
       height: 38.625rem;
+      background-size: 102% auto;
+      background-image: url("/images/home/bg_section_main_m.png");
       .img-spaceman{
         &#spaceman {
           top: 410px;
@@ -484,6 +470,12 @@ html::before {
           text-align: center;
           .description {
             margin-top: 1.5rem;
+          }
+        }
+
+        h4 {
+          span {
+            display: block;
           }
         }
       }
@@ -547,9 +539,9 @@ html::before {
     .section-mission {
       h4 {
         max-width: 36rem;
-      }
-      .lb { // line-break
-        display: block;
+        .lb { // line-break
+          display: block;
+        }
       }
     }
   }
@@ -561,7 +553,7 @@ html::before {
   html, body {
     font-size: 62.5%; // 10px = 16px(browser default font size) * 0.625
     &::before {
-      content: 'mobile';
+      content: 'mobile'; // temporary code
     }
   }
 
@@ -572,13 +564,16 @@ html::before {
   .td-home {
     .section {
       .inner {
-        gap: 1rem;
+        width: 36rem;
+        gap: 1.6rem;
         padding: 3.5rem 1.5rem;
+        border: solid 1px pink; // temporary code
       }
     }
 
     .section-main {
       height: 51.9rem;
+      background-size: 75rem auto;
       h2 {
         width: 95%;
       }
@@ -628,7 +623,7 @@ html::before {
   }
 
   .btn-link {
-    width: 14.4rem;
+    min-width: 14.4rem;
     height: 4.1rem;
     font-size: 1.6rem;
   }
@@ -638,6 +633,104 @@ html::before {
       width: 1.6rem;
       height: 1.6rem;
       margin-right: 0.6rem;
+    }
+  }
+}
+
+// korean version
+*:lang(ko) .td-home {
+  font-family: "Work Sans", "Pretendard Variable";
+
+  .section .inner {
+    border: solid 1px green;
+  }
+
+  .section-feature {
+    .feature {
+      .contents {
+        width: 80%;
+        h4 {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .feature-notification {
+    .feature {
+      .contents {
+        width: 55%;
+      }
+    }
+  }
+
+  .feature-by-project {
+    .feature {
+      .contents {
+        width: 92%;
+        .description {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .section-mission {
+    h4 {
+      max-width: unset;
+      .lb {
+        display:block;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1439px) {
+    .section .inner {
+      border: solid 1px yellow;
+    }
+    .section-feature {
+      .feature {
+        .contents {
+          h4 {
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    .section-mission {
+      h4 {
+        max-width: 36rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section {
+      .inner {
+        border: solid 1px white;
+      }
+    }
+
+    .section-main {
+      h2 {
+        font-size: 2.4rem;
+        em {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .section-mission {
+      .description {
+        .lb {
+          display: block;
+        }
+      }
     }
   }
 }
