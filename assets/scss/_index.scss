@@ -358,6 +358,7 @@ $shadows-big: multiple-box-shadow(100,300);
       padding: 0;
     }
     h3 {
+      visibility: hidden;
       position: absolute;
       z-index: 1;
       top: 50%;
@@ -367,7 +368,8 @@ $shadows-big: multiple-box-shadow(100,300);
       transform: translateY(-50%);
     }
     .img-universe {
-      width: 100%;
+      width: 116.875rem;
+      margin-left: -26.875rem;
     }
   }
 
@@ -442,13 +444,13 @@ $shadows-big: multiple-box-shadow(100,300);
     }
 
     .section-main {
-      height: 38.625rem;
+      height: 100vh;
       background-size: 102% auto;
+      background-position: 0 0;
       background-image: url("/images/home/bg_section_main_m.png");
       .img-spaceman{
         &#spaceman {
-          top: 25.625rem;
-          bottom: unset;
+          bottom: 5%;
           left: unset;
           right: 0;
           transform: translateY(0);
@@ -526,10 +528,15 @@ $shadows-big: multiple-box-shadow(100,300);
         padding: 0;
       }
       h3 {
+        visibility: visible;
         top: 3.5rem;
         left: auto;
         width: 100%;
         transform: translateY(0);
+      }
+      .img-universe {
+        width: 100%;
+        margin-left: 0;
       }
     }
 
@@ -568,7 +575,7 @@ $shadows-big: multiple-box-shadow(100,300);
     }
 
     .section-main {
-      height: 51.9rem;
+      height: 100vh;
       background-size: 75rem auto;
       .btn-group {
         flex-direction: column;
@@ -576,8 +583,7 @@ $shadows-big: multiple-box-shadow(100,300);
       }
       .img-spaceman {
         &#spaceman {
-          top: 40.4rem;
-          bottom: unset;
+          bottom: 1rem;
           left: unset;
           right: 0;
           margin-left: 0;
