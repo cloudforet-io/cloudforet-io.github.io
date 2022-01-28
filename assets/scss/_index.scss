@@ -176,7 +176,6 @@ $shadows-big: multiple-box-shadow(100,300);
       text-align: center;
       color: $primary200;
       letter-spacing: -0.01em;
-      border: solid 1px greenyellow; // temporary code
     }
     h3 {
       width: 100%;
@@ -222,7 +221,6 @@ $shadows-big: multiple-box-shadow(100,300);
     .img-spaceman {
       display: inline-block;
       position: absolute;
-      top: 0;
       z-index: 0;
       &#spaceman {
         top: 42.5rem;
@@ -414,22 +412,22 @@ $shadows-big: multiple-box-shadow(100,300);
 }
 
 // desktop (temporary code)
-html::before {
-  position: fixed;
-  top:0;
-  left: 0;
-  z-index: 1000;
-  content: 'desktop';
-  color: red;
-  font-size: 3rem;
-}
+//html::before {
+//  position: fixed;
+//  top:0;
+//  left: 0;
+//  z-index: 1000;
+//  content: 'desktop';
+//  color: red;
+//  font-size: 3rem;
+//}
 
 
 // tablet
 @media only screen and (max-width: 1439px) {
-  html::before {
-    content: 'tablet'; // temporary code
-  }
+  //html::before {
+  //  content: 'tablet'; // temporary code
+  //}
 
   .td-home {
     .section {
@@ -437,8 +435,6 @@ html::before {
       .inner {
         max-width: 48rem;
         padding: 4rem 1.5rem;
-        border: solid 1px orange; // temporary code
-        border: none !important;
       }
       h3 {
         text-align: center;
@@ -552,9 +548,9 @@ html::before {
 @media screen and (max-width: 767px) {
   html, body {
     font-size: 62.5%; // 10px = 16px(browser default font size) * 0.625
-    &::before {
-      content: 'mobile'; // temporary code
-    }
+    //&::before {
+    //  content: 'mobile'; // temporary code
+    //}
   }
 
   h2 {
@@ -567,16 +563,12 @@ html::before {
         width: 36rem;
         gap: 1.6rem;
         padding: 3.5rem 1.5rem;
-        border: solid 1px pink; // temporary code
       }
     }
 
     .section-main {
       height: 51.9rem;
       background-size: 75rem auto;
-      h2 {
-        width: 95%;
-      }
       .btn-group {
         flex-direction: column;
         gap: 2.4rem;
@@ -641,10 +633,6 @@ html::before {
 *:lang(ko) .td-home {
   font-family: "Work Sans", "Pretendard Variable";
 
-  .section .inner {
-    border: solid 1px green;
-  }
-
   .section-feature {
     .feature {
       .contents {
@@ -687,9 +675,6 @@ html::before {
   }
 
   @media screen and (max-width: 1439px) {
-    .section .inner {
-      border: solid 1px yellow;
-    }
     .section-feature {
       .feature {
         .contents {
@@ -710,11 +695,6 @@ html::before {
   }
 
   @media screen and (max-width: 767px) {
-    .section {
-      .inner {
-        border: solid 1px white;
-      }
-    }
 
     .section-main {
       h2 {
