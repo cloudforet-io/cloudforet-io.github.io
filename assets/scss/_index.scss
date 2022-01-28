@@ -66,7 +66,6 @@ $gray400: #5F616D;
   top: 0.125rem;
   min-width: calc(9rem - 0.25rem);
   height: calc(2.5rem - 0.25rem);
-  //background: rgba(0, 27, 51, 0.5) url('/images/home/button-border.svg') no-repeat center / contain;
   background-color: $navy500;
 
   &:after {
@@ -189,10 +188,11 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 
   .section-main {
+    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-position: 0 100%;
-    background-size: 100% auto;
+    background-size: 100vw 100vh;
     background-image: url("/images/home/bg_section_main.png");
     h2 {
       font-size: 4rem;
@@ -223,7 +223,7 @@ $shadows-big: multiple-box-shadow(100,300);
       position: absolute;
       z-index: 0;
       &#spaceman {
-        top: 42.5rem;
+        bottom: 10.8%;
         left: 50%;
         width: 11rem;
         height: 11rem;
@@ -447,7 +447,8 @@ $shadows-big: multiple-box-shadow(100,300);
       background-image: url("/images/home/bg_section_main_m.png");
       .img-spaceman{
         &#spaceman {
-          top: 410px;
+          top: 25.625rem;
+          bottom: unset;
           left: unset;
           right: 0;
           transform: translateY(0);
@@ -576,6 +577,7 @@ $shadows-big: multiple-box-shadow(100,300);
       .img-spaceman {
         &#spaceman {
           top: 40.4rem;
+          bottom: unset;
           left: unset;
           right: 0;
           margin-left: 0;
