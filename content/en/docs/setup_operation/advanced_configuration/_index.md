@@ -119,6 +119,33 @@ keyword: ***DOMAIN_IMAGE***
 **_NOTE:_**  SpaceONE does not support uploading files, so upload CI files at your web server or S3.!
 
 
+~~~
+console:
+  enabled: true
+  developer: false
+  name: console
+  replicas: 2
+  image:
+      name: spaceone/console
+      version: 1.8.7
+  imagePullPolicy: IfNotPresent
+
+#######################
+# TODO: Update value
+#  - ENDPOINT
+#  - GTAG_ID (if you have google analytics ID)
+#  - AMCHARTS_LICENSE (for commercial use only)
+#######################
+  production_json:
+      CONSOLE_API:
+          ENDPOINT: http://console-api.example.com
+      DOMAIN_IMAGE:
+          CI_LOGO: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-logo.svg
+          CI_TEXT_WITH_TYPE: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text1.svg
+          SIGN_IN: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/login-img.png
+          CI_TEXT: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text2.svg
+~~~
+
 ## Google Analytics
 
 You can apply [Google Analytics](https://analytics.google.com/analytics) to SpaceONE Console by following the steps below.
@@ -178,32 +205,3 @@ console:
     ...
 ```
 
-
-
-
-~~~
-console:
-  enabled: true
-  developer: false
-  name: console
-  replicas: 2
-  image:
-      name: spaceone/console
-      version: 1.8.7
-  imagePullPolicy: IfNotPresent
-
-#######################
-# TODO: Update value
-#  - ENDPOINT
-#  - GTAG_ID (if you have google analytics ID)
-#  - AMCHARTS_LICENSE (for commercial use only)
-#######################
-  production_json:
-      CONSOLE_API:
-          ENDPOINT: http://console-api.example.com
-      DOMAIN_IMAGE:
-          CI_LOGO: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-logo.svg
-          CI_TEXT_WITH_TYPE: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text1.svg
-          SIGN_IN: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/login-img.png
-          CI_TEXT: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text2.svg
-~~~
