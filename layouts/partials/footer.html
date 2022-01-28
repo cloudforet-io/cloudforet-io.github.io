@@ -2,7 +2,11 @@
 <footer class="d-print-none">
     <div class="inner">
        <div class="copyright">
-            <img src="/images/brand_logo.svg" alt="">
+           {{ if .IsHome }}
+            <img src="/images/home/spaceone_fnb_logo.png" alt="Home footer logo">
+           {{ else }}
+            <img src="/images/brand_logo.svg" alt="footer logo">
+           {{ end }}
             <p class="license">The SpaceONE Project is provided under the Apache 2.0 license.<br>The project is sponsored by the MEGAZONE CLOUD.</p>
         </div>
         <div class="external-link">

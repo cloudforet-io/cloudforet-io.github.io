@@ -1,193 +1,54 @@
 {{ define "main"}}
-
-<section class="section-top">
-    <div class="main-content">
-        <h2>Manage All<br />Cloud Resources<br />in <span>One Platform</span></h2>
-        <p class="sub">SpaceONE is an Open Source Platform for Enabling Integrated Management of Multi-Clouds.</p>
-        <a href="https://github.com/spaceone-dev" class="btn-git" target="_blank"><span>GitHub</span></a>
-    </div>
-    <figure class="bg-wave1 only-desktop"></figure>
-    <figure class="bg-wave2 only-desktop"></figure>
-    <figure class="bg-ellipse1"></figure>
-    <figure class="bg-ellipse2"></figure>
-    <figure class="spaceman" id="spaceman"></figure>
-</section>
-
-<section class="main-section section-feature">
-    <div class="inner">
-        <h3>we&apos;re very capable:</h3>
-        <div class="main-content">
-            <div class="feature">
-                <img src="/images/home/integrate.svg" alt="">
-                <p><em>Integrate</em>Multi-Cloud Accounts</p>
-            </div>
-            <div class="feature">
-                <img src="/images/home/improve.svg" alt="">
-                <p><em>Improve</em>Operation Efficiency</p>
-            </div>
-            <div class="feature">
-                <img src="/images/home/manage.svg" alt="">
-                <p><em>Manage</em>Cloud Expense</p>
-            </div>
-        </div>
-    </div>
-    <figure class="bg-ellipse3"></figure>
-</section>
-
-<section>
-
-</section>
-
-<section class="main-section section-approach bg-blue">
-    <div class="inner">
-        <h3>our approach:</h3>
-        <div id="carousel-approach" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-approach" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-approach" data-slide-to="1"></li>
-                <li data-target="#carousel-approach" data-slide-to="2"></li>
-                <li data-target="#carousel-approach" data-slide-to="3"></li>
-                <li data-target="#carousel-approach" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-caption">
-                        <h4>Manage Cloud Resource</h4>
-                        <p><em>Quick and Easy Visualisation</em> of Multi-Cloud Resources.</p>
-                    </div>
-                    <img src="/images/home/slide1.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption">
-                        <h4>Project-Based Management System</h4>
-                        <p>Manage All Resources with <em>Own Role and the Project</em> over
-                            All Clouds.</p>
-                    </div>
-                    <img src="/images/home/slide2.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption">
-                        <h4>Consolidated Billing</h4>
-                        <p>Easy View on <em>Resource Expenses and the Most Efficient Cost Optimization</em></p>
-                    </div>
-                    <img src="/images/home/slide3.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption">
-                        <h4>Real-Time Monitoring</h4>
-                        <p>Support <em>Various Mornitoring Systems</em>: Cloudwatch, Stackdriver, Azure monitor.</p>
-                    </div>
-                    <img src="/images/home/slide4.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-caption">
-                        <h4>Core Resource Automation Process</h4>
-                        <p>Power Scheduling lets you <em>Set Resource and Control Expenses.</em></p>
-                    </div>
-                    <img src="/images/home/slide5.png" alt="">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel-approach" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-approach" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="main-section section-strength">
-    <div class="inner">
-        <h3>our strength:</h3>
-        <div class="main-content">
-        <div class="strength">
-            <figure id="cloud"></figure>
-            <h4>Cloud Native</h4>
-            <p>We are architecting Cloud Native-Based Technology; <i>K8S, Helm, Prometheus, gRPC, Istio.</i></p>
-        </div>
-        <div class="strength">
-            <figure id="architecture"></figure>
-            <h4>Plugin Architecture</h4>
-            <p>You can build your own plugin and share with others. You can also
-                find various plugins including multi-cloud service, power
-                managements, even scheduling over resources.</p>
-        </div>
-        <div class="strength">
-            <figure id="box"></figure>
-            <h4>Open API</h4>
-            <p>We offer you new perspectives on development environments;
-                Expand and customize with open APIs if your need arise.</p>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section class="main-section section-universe bg-blue">
-    <h3>our <br />universe</h3>
-    <figure class="universe only-desktop"><img src="/images/home/universe_lg.svg" alt=""></figure>
-    <figure class="universe only-tablet"><img src="/images/home/universe_md.svg" alt=""></figure>
-    <figure class="universe only-mobile"><img src="/images/home/universe_sm.svg" alt=""></figure>
-</section>
-
-<section class="main-section section-mission">
-    <h4>our goal</h4>
-    <p class="mission">Together, we make OUR UNIVERSE a better place that changes the way you operate IT infrastructure across on-premises and multi-clouds.</p>
-    <figure id="spaceship"></figure>
-    <p>Climb Aboard <span>the <em>SpaceONEship</em></span></p>
-</section>
-
-<figure class="background-stars">
-    <figure class="stars stars1"></figure>
-    <figure class="stars stars2"></figure>
-    <figure class="stars stars3"></figure>
-</figure>
+    {{ .Content }}
+    <figure class="background-stars">
+        <figure class="stars stars1"></figure>
+        <figure class="stars stars2"></figure>
+        <figure class="stars stars3"></figure>
+    </figure>
 <script>
-(function() {
-    $(function () {
-        bodymovin.loadAnimation({
-            container: document.getElementById('spaceman'),
-            path: '/images/home/lottie_spaceman.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
+    (function() {
+        $(function () {
+            bodymovin.loadAnimation({
+                container: document.getElementById('spaceman'),
+                path: '/images/home/lottie_spaceman.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
 
-        bodymovin.loadAnimation({
-            container: document.getElementById('cloud'),
-            path: '/images/home/lottie_cloud.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
+            bodymovin.loadAnimation({
+                container: document.getElementById('cloud'),
+                path: '/images/home/lottie_cloud.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
 
-        bodymovin.loadAnimation({
-            container: document.getElementById('architecture'),
-            path: '/images/home/lottie_puzzle.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
+            bodymovin.loadAnimation({
+                container: document.getElementById('architecture'),
+                path: '/images/home/lottie_puzzle.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
 
-        bodymovin.loadAnimation({
-            container: document.getElementById('box'),
-            path: '/images/home/lottie_box.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
+            bodymovin.loadAnimation({
+                container: document.getElementById('box'),
+                path: '/images/home/lottie_box.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
 
-        bodymovin.loadAnimation({
-            container: document.getElementById('spaceship'),
-            path: '/images/home/lottie_spaceship.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
+            bodymovin.loadAnimation({
+                container: document.getElementById('spaceship'),
+                path: '/images/home/lottie_spaceship.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
         });
-    });
-}(jQuery));
+    }(jQuery));
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.12/lottie.min.js" integrity="sha512-Dr2QERtNqLw0I06FR7G73CjiWvR4roRMDNTbOGp+qeGhVjEl0xs4AKZzqVFREqdOL3t8ei7H9y9XUcpYVkwEIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{ end }}

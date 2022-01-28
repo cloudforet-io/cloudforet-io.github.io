@@ -1,0 +1,26 @@
+{{ $section_id := .Get "name" | default .Ordinal }}
+{{ $title := .Get "title" }}
+{{ $description := .Get "description" }}
+{{ $bg_blue := .Get "bg_blue" }}
+
+<section class="section section-feature feature-{{ $section_id }} {{ if $bg_blue }}bg-blue{{ end }}">
+    <div class="inner">
+        {{ with .Get "section_title" }}
+            <h3>{{ . | safeHTML }}</h3>
+        {{ end }}
+        <div class="feature">
+            <div class="contents">
+                <h4>{{ $title | safeHTML }}</h4>
+                <p class="description">{{ $description | safeHTML }}</p>
+            </div>
+            {{ with .Get "thumbnail" }}
+                <img src="{{ . }}" alt="{{ $description }}" class="img-feature" />
+            {{ end }}
+            {{ if eq .Page.File.Ext "md" }}
+            {{ .Inner | markdownify }}
+            {{ else }}
+            {{ .Inner | htmlUnescape | safeHTML }}
+            {{ end }}
+        </div>
+    </div>
+</section>
