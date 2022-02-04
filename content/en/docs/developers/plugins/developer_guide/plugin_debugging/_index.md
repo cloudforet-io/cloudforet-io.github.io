@@ -113,7 +113,7 @@ You need to make credential file and set them as environments before run
 
 |Item|Configuration|Etc|
 |:--:|:--|:--:|
-|Module name|spaceone.core.command||
+|PYTHONUNBUFFERED|1||
 |GOOGLE_APPLICATION_CREDENTIALS|Full path of your configuration file||
 
 Finally you can test run your server
