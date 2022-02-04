@@ -28,6 +28,12 @@ _build:
 수집 Flow를 그림으로 표현
 
 
+1. Service Account에 속한 모든 Region의 자원 정보를 수집
+   -  
+2. Service Account에 속한 모든 VM Instance의 정보를 수집
+   - 
+
+
 ## Collected Resources
 수집되는 전체 항목을 Table로 나타냄
 
