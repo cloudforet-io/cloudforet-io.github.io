@@ -9,6 +9,6 @@ no_list: true
 ---
 
 {{< box_wrap >}}
-{{< box title="Content Guide" description="This page contains guidelines for SpaceONE documentation." buttonUrl="/docs/developers/contribute/document/content_guide" buttonTxt="Content Guide" />}}
-{{< box title="Style Guide" description="This page explains the custom Hugo shortcodes that can be used in SpaceONE Markdown documentation." buttonUrl="/docs/developers/contribute/document/style_guide" buttonTxt="Style Guide" />}}
+{{< box title="Content Guide" description="This page contains guidelines for SpaceONE documentation." buttonUrl="/docs/developers/contribute/documentation/content_guide" buttonTxt="Content Guide" />}}
+{{< box title="Style Guide" description="This page explains the custom Hugo shortcodes that can be used in SpaceONE Markdown documentation." buttonUrl="/docs/developers/contribute/documentation/style_guide" buttonTxt="Style Guide" />}}
 {{< /box_wrap >}}
