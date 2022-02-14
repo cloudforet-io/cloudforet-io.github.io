@@ -26,7 +26,10 @@
         mySwiper = new Swiper ('.swiper', {
             direction: 'vertical',
             speed: 500,
-            mousewheel: { invert: false, },
+            mousewheel: {
+                invert: false,
+                sensitivity: 0,
+            },
             keyboard: { enabled: true, },
             on: {
                 slideChange: function () {
