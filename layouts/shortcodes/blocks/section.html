@@ -2,7 +2,7 @@
 {{ $title := .Get "title" }}
 {{ $description := .Get "description" }}
 {{ $bg_blue := .Get "bg_blue" }}
-<section class="section section-{{ $section_id }}{{if $bg_blue}} bg-blue{{end}}">
+<section class="section section-{{ $section_id }}{{if $bg_blue}} bg-blue{{end}} swiper-slide">
     <div class="inner">
         {{ with .Get "title" }}
             <h3>{{ . | safeHTML }}</h3>

@@ -5,50 +5,86 @@
         <figure class="stars stars2"></figure>
         <figure class="stars stars3"></figure>
     </figure>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    (function() {
-        $(function () {
-            bodymovin.loadAnimation({
-                container: document.getElementById('spaceman'),
-                path: '/images/home/lottie_spaceman.json',
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-            });
+(function() {
+    const breakpoint = window.matchMedia( '(min-width: 1440px)' );
+    let mySwiper;
 
-            bodymovin.loadAnimation({
-                container: document.getElementById('cloud'),
-                path: '/images/home/lottie_cloud.json',
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-            });
+    const breakpointChecker = function() {
+        if ( breakpoint.matches === false ) {
+            // mySwiper.setGrabCursor();
+            if ( mySwiper !== undefined ) mySwiper.destroy();
+        } else if ( breakpoint.matches === true ) {
+            window.scrollTo(0, 0);
+            return enableSwiper();
+        }
 
-            bodymovin.loadAnimation({
-                container: document.getElementById('architecture'),
-                path: '/images/home/lottie_puzzle.json',
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-            });
+    };
 
-            bodymovin.loadAnimation({
-                container: document.getElementById('box'),
-                path: '/images/home/lottie_box.json',
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-            });
-
-            bodymovin.loadAnimation({
-                container: document.getElementById('spaceship'),
-                path: '/images/home/lottie_spaceship.json',
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-            });
+    const enableSwiper = function() {
+        mySwiper = new Swiper ('.swiper', {
+            direction: 'vertical',
+            speed: 500,
+            mousewheel: { invert: false, },
+            keyboard: { enabled: true, },
+            on: {
+                slideChange: function () {
+                    const elem = document.getElementsByClassName('td-home');
+                    if(mySwiper.activeIndex === 7) {
+                        elem[0].classList.add('reach-end');
+                    } else {
+                        elem[0].classList.remove('reach-end');
+                    }
+                }
+            }
         });
-    }(jQuery));
+    };
+
+    // keep an eye on viewport size changes
+    breakpoint.addEventListener('change', breakpointChecker);
+
+    // kickstart
+    breakpointChecker();
+
+    $(function () {
+        bodymovin.loadAnimation({
+            container: document.getElementById('spaceman'),
+            path: '/images/home/lottie_spaceman.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+        bodymovin.loadAnimation({
+            container: document.getElementById('cloud'),
+            path: '/images/home/lottie_cloud.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+        bodymovin.loadAnimation({
+            container: document.getElementById('architecture'),
+            path: '/images/home/lottie_puzzle.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+        bodymovin.loadAnimation({
+            container: document.getElementById('box'),
+            path: '/images/home/lottie_box.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+        bodymovin.loadAnimation({
+            container: document.getElementById('spaceship'),
+            path: '/images/home/lottie_spaceship.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+    });
+}(jQuery));
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.12/lottie.min.js" integrity="sha512-Dr2QERtNqLw0I06FR7G73CjiWvR4roRMDNTbOGp+qeGhVjEl0xs4AKZzqVFREqdOL3t8ei7H9y9XUcpYVkwEIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{ end }}
