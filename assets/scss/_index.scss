@@ -1,4 +1,4 @@
-//font
+// font
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=block');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
 
@@ -54,28 +54,32 @@ $gray400: #5F616D;
   font-weight: 400;
   font-family: "Roboto";
   cursor: pointer;
-  &:hover {
+  transition: all .25s;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(90deg, #65cba0 0%, #cf88a0 52.6%, #5ca2b1 100%);
+    border-radius: 1.875rem;
+  }
+  &:hover {
+    background-color: transparent;
     color: $white;
   }
 }
 .btn-link-green {
-  background-color: $green100;
+  background: $green100;
 }
 .btn-link-gradient {
   top: 0.125rem;
   min-width: calc(9rem - 0.25rem);
   height: calc(2.5rem - 0.25rem);
-  background-color: $navy500;
-
+  background: $navy500;
   &:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
     width: calc(100% + 0.25rem);
     height: calc(100% + 0.25rem);
-    background: linear-gradient(90deg, #65cba0 0%, #cf88a0 52.6%, #5ca2b1 100%);
-    border-radius: 1.875rem;
   }
   &.link-github:before {
     content: '';
@@ -91,7 +95,6 @@ $gray400: #5F616D;
     }
   }
 }
-
 
 // background
 @function multiple-box-shadow($n, $density) {
@@ -138,7 +141,6 @@ $shadows-big: multiple-box-shadow(100,300);
   to {opacity:1;}
 }
 
-
 // section
 .td-home {
   background-color: #090a0f;
@@ -155,7 +157,6 @@ $shadows-big: multiple-box-shadow(100,300);
   .section {
     overflow: hidden;
     height: 60rem;
-    //height: 100vh;
     &.bg-blue {
       background-color: rgba(0, 27, 51, 0.5);
     }
@@ -170,7 +171,7 @@ $shadows-big: multiple-box-shadow(100,300);
       width: 100%;
       height: 100%;
       max-width: 90rem;
-      padding: 3.5rem 11.875rem;
+      padding: 3.5rem 11.875rem 0;
       margin: 0 auto;
       text-align: center;
       color: $primary200;
@@ -251,7 +252,7 @@ $shadows-big: multiple-box-shadow(100,300);
         }
         .description {
           display: inline-block;
-          margin-top: 2rem;
+          margin-top: 3.33vh;
           font-size: 1.25rem;
           letter-spacing: -0.02em;
           color: $navy200;
@@ -274,8 +275,7 @@ $shadows-big: multiple-box-shadow(100,300);
         text-align: center;
       }
       .img-feature {
-        width: 100%;
-        max-width: 60rem;
+        width: 81vh;
         height: auto;
       }
     }
@@ -354,9 +354,6 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 
   .section-universe {
-    .inner {
-      padding: 0;
-    }
     h3 {
       visibility: hidden;
       position: absolute;
@@ -368,13 +365,17 @@ $shadows-big: multiple-box-shadow(100,300);
       transform: translateY(-50%);
     }
     .img-universe {
-      width: 116.875rem;
+      width: 100vw;
+      max-width: 90rem;
       margin-left: -26.875rem;
     }
   }
 
   .section-mission {
     text-align: center;
+    .inner {
+      padding-bottom: 10.25rem;
+    }
     h4 {
       max-width: 40rem;
       font-size: 1.5rem;
@@ -400,7 +401,6 @@ $shadows-big: multiple-box-shadow(100,300);
     }
   }
 
-  // footer
   footer {
     background-color: $navy500;
     .inner {
@@ -413,24 +413,8 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 }
 
-// desktop (temporary code)
-//html::before {
-//  position: fixed;
-//  top:0;
-//  left: 0;
-//  z-index: 1000;
-//  content: 'desktop';
-//  color: red;
-//  font-size: 3rem;
-//}
-
-
 // tablet
 @media only screen and (max-width: 1439px) {
-  //html::before {
-  //  content: 'tablet'; // temporary code
-  //}
-
   .td-home {
     .section {
       height: auto;
@@ -444,8 +428,8 @@ $shadows-big: multiple-box-shadow(100,300);
     }
 
     .section-main {
-      height: 100vh;
-      background-size: 102% auto;
+      height: 34.6875rem;
+      background-size: 100% auto;
       background-position: 0 0;
       background-image: url("/images/home/bg_section_main_m.png");
       .img-spaceman{
@@ -484,6 +468,9 @@ $shadows-big: multiple-box-shadow(100,300);
       .feature {
         .contents {
           width: 80%;
+        }
+        .img-feature {
+          width: 100%;
         }
       }
     }
@@ -556,13 +543,11 @@ $shadows-big: multiple-box-shadow(100,300);
 @media screen and (max-width: 767px) {
   html, body {
     font-size: 62.5%; // 10px = 16px(browser default font size) * 0.625
-    //&::before {
-    //  content: 'mobile'; // temporary code
-    //}
   }
 
   h2 {
     font-size: 4rem;
+    padding-top: 0;
   }
 
   .td-home {
@@ -575,8 +560,9 @@ $shadows-big: multiple-box-shadow(100,300);
     }
 
     .section-main {
-      height: 100vh;
-      background-size: 75rem auto;
+      height: 51.4rem;
+      background-size: 70rem auto;
+
       .btn-group {
         flex-direction: column;
         gap: 2.4rem;
@@ -683,14 +669,32 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 
   @media screen and (max-width: 1439px) {
+
     .section-feature {
       .feature {
         .contents {
+          align-items: center;
           h4 {
             span {
               display: inline-block;
             }
           }
+        }
+      }
+    }
+
+    .feature-notification {
+      .feature {
+        .contents {
+          width: 80%;
+        }
+      }
+    }
+
+    .feature-by-project {
+      .feature {
+        .contents {
+          width: 60%;
         }
       }
     }
@@ -713,6 +717,14 @@ $shadows-big: multiple-box-shadow(100,300);
       }
     }
 
+    .feature-by-project {
+      .feature {
+        .contents {
+          width: 80%;
+        }
+      }
+    }
+
     .section-mission {
       .description {
         .lb {
@@ -723,4 +735,19 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 }
 
-
+@media screen and (min-width: 1440px) {
+  .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  .footer {
+    opacity: 0;
+    transition: all .5s;
+  }
+  .reach-end {
+    .footer {
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .td-navbar {
-  min-height: 3.75rem;
+  min-height: $navbar-height;
   padding: 0 1.875rem;
   background-color: #001B33;
   font-family: $td-fonts-serif;
@@ -51,7 +51,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 3.75rem;
+    height: $navbar-height;
     padding: 0;
     font-size: 1.125rem;
     color: $white;

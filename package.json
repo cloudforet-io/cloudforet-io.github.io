@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "swiper": "^8.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
