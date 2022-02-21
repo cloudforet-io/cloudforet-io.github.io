@@ -21,18 +21,18 @@ footer {
     margin-top: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.6;
+    a {
+      color: inherit;
+    }
   }
-
   .external-link {
     display: flex;
-
     a {
       display: inline-block;
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       color: currentColor;
     }
-
     i {
       color: currentColor;
       font-size: 1.75rem;
