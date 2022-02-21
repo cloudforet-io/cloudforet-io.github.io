@@ -4,6 +4,7 @@
   background-color: #001B33;
   font-family: $td-fonts-serif;
   color: $white;
+  flex-wrap: nowrap;
 
   .navbar-brand {
     display: inline-block;
@@ -28,7 +29,7 @@
     align-items: center;
     flex-shrink: 0;
     height: 100%;
-    margin-right: 0;
+    margin-right: 3.75rem;
     padding: 0;
 
     svg {
@@ -41,6 +42,7 @@
   .nav-list-wrap {
     display: flex;
     flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .nav-list {
@@ -85,14 +87,9 @@
 
 .nav-list1 {
   margin-right: auto;
-  margin-left: 3.75rem;
 
   .nav-item {
     margin-right: 1.875rem;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 }
 

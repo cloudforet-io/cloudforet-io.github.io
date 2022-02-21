@@ -1,12 +1,10 @@
 ---
 title: SpaceONE 커뮤니티 - 멀티 클라우드를 위한 오픈소스 프로젝트
-navTitle: Community
+linkTitle: Community
 description: 스페이스원 오픈소스 커뮤니티에 참여해 주세요. 보다 간편하게 멀티 클라우드를 관리할 수 있습니다.
 menu:
-  main:
-    weight: 40
-    pre: <i class='fas fa-users'></i>
-
+    main:
+        weight: 3
 ---
 
 {{< blocks/cover title="SpaceONE Community" image_anchor="top" height="full" color="primary" >}}

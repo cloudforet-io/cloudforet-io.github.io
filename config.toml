@@ -107,13 +107,6 @@ defaultMarkdownHandler = 'goldmark'
 [frontmatter]
 date = ["date", ":filename", "publishDate", "lastmod"]
 
-[menu]
-    [[menu.main]]
-    name = "Documentation"
-    pre = "<i class='fas fa-book'></i>"
-    weight = 10
-    url = "/docs"
-
 [params]
 version_menu = "Versions"
 copyright = "SpaceONE Team"

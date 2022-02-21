@@ -1,10 +1,12 @@
 ---
 title: "Documentation for SpaceONE - Easy guide for multi cloud management"
-linkTitle: "Documentation Home"
-navTitle: "Documentation"
+linkTitle: "Documentation"
 no_list: true
 main_menu: true
 description: Documentation and detailed use guide for SpaceONE users and opensource contributors.
+menu:
+    main:
+        weight: 1
 ---
 {{< box_wrap >}}
 {{< box title="Concepts" description="SpaceONE helps you to manage enterprise-grade cloud resource in One Platform!" buttonUrl="/docs/concepts" buttonTxt="See Concepts" >}}{{< /box >}}
