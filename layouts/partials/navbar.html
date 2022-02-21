@@ -7,14 +7,18 @@
     <div class="nav-list-wrap">
         <ul class="nav-list nav-list1">
             {{ $p := . }}
-            {{ $sections := slice "docs" "community" }}
-            {{ range $sections }}
-            {{ with site.GetPage "section" . }}
-            <li class="nav-item">
-                {{ $active := eq .Section $.Section }}
-                <a class="nav-link{{if $active }} active{{end}}" href="{{ .RelPermalink }}" >{{ .Params.NavTitle }}</span></a>
+            {{ range .Site.Menus.main }}
+            <li class="nav-item mr-4 mb-2 mb-lg-0">
+                {{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+                {{ with .Page }}
+                {{ $active = or $active ( $.IsDescendant .)  }}
+                {{ end }}
+                {{ $pre := .Pre }}
+                {{ $post := .Post }}
+                {{ $url := urls.Parse .URL }}
+                {{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+                <a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>{{ with .Pre}}{{ $pre }}{{ end }}{{ .Name }}{{ with .Post}}{{ $post }}{{ end }}</a>
             </li>
-            {{ end }}
             {{ end }}
         </ul>
         <ul class="nav-list nav-list2">

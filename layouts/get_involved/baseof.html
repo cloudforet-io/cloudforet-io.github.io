@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="td-{{ .Kind }}">
+<header>
+    {{ partial "navbar.html" . }}
+</header>
+<div class="flex td-outer documentation">
+    <div class="td-main">
+        <aside class="td-sidebar d-print-none">
+            {{ partial "sidebar.html" . }}
+        </aside>
+        <aside class="td-sidebar-toc d-print-none">
+            {{ partial "toc.html" . }}
+            {{ partial "page-meta-links.html" . }}
+        </aside>
+        <main role="main">
+            {{ partial "version-banner.html" . }}
+            {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+            {{ block "main" . }}{{ end }}
+            {{ partial "scroll.html" . }}
+        </main>
+    </div>
+    {{ partialCached "footer.html" . }}
+</div>
+{{ partial "scripts.html" . }}
+</body>
+</html>
