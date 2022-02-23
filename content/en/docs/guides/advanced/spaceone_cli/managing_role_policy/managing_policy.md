@@ -4,19 +4,19 @@ linkTitle: "Manage Policy"
 weight: 1
 date: 2021-12-21
 description: >
-    Domain 내의 Role & Policy를 Spacectl로 편리하게 관리할 수 있습니다.
+    You can conveniently manage Role & Policy within the domain with Spacectl.
 ---
 
 
 
 ## Policy
 
-- Policy는 Permission의 모음으로 구성되어 있습니다. 
-- Permission은 {microservice}.{resource}.{verb}로 나타냅니다.
-- Asterisk(*)를 지원합니다. 
+- Policy consists of a collection of Permissions.
+- Permission is expressed as {microservice}.{resource}.{verb}.
+- Asterisk(*) is supported.
 
 {{< alert title="Note" >}}
-Policy를 관리하기 위해서는 사용자에게 적절한 권한이 필요합니다. 이에 상세한 권한에 대해 [Default Role](/ko/docs/concepts/identity/rbac/understanding-role/#default-roles)을 참고해주세요.
+To manage policies, users need appropriate privileges. For detailed permissions, please refer to [Default Role](/docs/concepts/identity/rbac/understanding-role/#default-roles).
 {{< /alert >}}
 
 ~~~json
@@ -47,14 +47,14 @@ permissions:
 
 
 ## MANAGED Policy
-- _**MANAGED Policy**_는 SpaceONE Marketplace에 등록되어 SpaceONE 팀에 의해 관리되는 정책 입니다. 
-- 일반 사용자는 조회만 가능하며, 게시된 Policy를 Role에 연동하여 사용 가능합니다. 
+- _**MANAGED Policy**_ is a policy registered on the SpaceONE Marketplace and managed by the SpaceONE team.
+- General users can only inquire, and the published policy can be linked to a role.
 
 <br>
 
 **Lists policy**
 
-- Domain에 등록된 Repository를 확인 합니다. _**repository_type : remote**_ 인 repository가 Marketplace 입니다.
+- Check the Repository registered in the Domain. The repository with _**repository_type : remote**_ is the Marketplace.
 ~~~bash
 $> spacectl list repository.Repository
  repository_id     | name        | repository_type   | endpoint                                          | created_at
@@ -65,7 +65,7 @@ $> spacectl list repository.Repository
  Count: 2 / 2
 ~~~
 
-- 위의 Repository로 부터 Policy를 조회 합니다. Permission이 긴 경우 -c 옵션으로 필요한 parameter만 추출할 수 있습니다. 
+- Retrieve the policy from the Repository above. If the permission is long, only the necessary parameters can be extracted with the -c option. 
 ~~~bash
 $> spacectl list repository.Policy -p repository_id=repo-xxxxxxxx -c policy_id,name,state,labels,repository_info,domain_id
  policy_id                             | name                          | state   | labels   | repository_info                                                                            | domain_id
@@ -78,13 +78,13 @@ $> spacectl list repository.Policy -p repository_id=repo-xxxxxxxx -c policy_id,n
 ~~~
 
 ## Custom Policy
-- 도메인 관리자는 Private Registry에 도메인 내부에서 사용할 Policy를 직접 등록하여 사용할 수 있습니다.
+- A domain administrator can directly register and use the policy to be used within the domain in the private registry.
 
 <br>
 
 **Lists Private Repository**
 
-- Domain에 등록된 Repository를 확인 합니다. _**repository_type : local**_ 인 repository가 Marketplace 입니다.
+- Check the Repository registered in the Domain. A repository with _**repository_type : local**_ is a Marketplace.
 ~~~bash
 $> spacectl list repository.Repository
  repository_id     | name        | repository_type   | endpoint                                          | created_at
@@ -99,11 +99,11 @@ $> spacectl list repository.Repository
 <br>
 
 **Create Custom Policy**
-- 아래와 같은 Yaml 파일을 참고하여 custom policy를 생성할 수 있습니다.
+- You can create custom policy by referring to the Yaml file below.
 {{< alert title="Note" >}}
-policy를 편리하게 활용하기 위해 사용자가 원하는 policy_id입력할 수 있습니다. 
+In order to use the policy conveniently, the user can input the desired policy_id.
 
-- 48 자 이내, 소문자, 숫자, 하이픈('-') 조합을 지원 합니다. 
+- Within 48 characters, a combination of lowercase letters, numbers, and hyphens ('-') is supported.
 {{< /alert >}}
 
 ~~~bash
@@ -178,7 +178,7 @@ permissions:
 
 **Delete Custom Policy**
 
-- 대상 Policy를 조회 합니다.
+- Query the target policy.
 ~~~bash
 $> spacectl list repository.Policy -p repository_id=repo-xxxxxxxx -c policy_id,name,state,labels,repository_info,domain_id
  policy_id            | name           | state   | labels   | repository_info                                                                    | domain_id
@@ -188,7 +188,7 @@ $> spacectl list repository.Policy -p repository_id=repo-xxxxxxxx -c policy_id,n
  Count: 3 / 3
 ~~~
 
-- 대상 Policy를 삭제 합니다. 
+- Delete the target policy. 
 ~~~bash
 $> spacectl exec delete repository.Policy -p policy_id=policy-custom-policy -p domain_id=domain-xxxxxxx
 ~~~
