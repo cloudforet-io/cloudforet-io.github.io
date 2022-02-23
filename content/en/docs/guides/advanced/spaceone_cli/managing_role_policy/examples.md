@@ -4,26 +4,26 @@ linkTitle: "Examples"
 weight: 3
 date: 2021-12-21
 description: >
-    Role을 관리하는 방법을 주요 사례를 통해서 알아 보도록 합니다. 
+    Let's find out how to manage roles through major examples.
 ---
 
 ## PreRequisite 
-모든 Example을 진행하기 전 사전에 확인해야 할 사항을 정리 합니다.
+Before proceeding with all the examples, we arrange the things to check in advance.
 
 {{< alert title="Note" >}}
-이 페이지의 모든 예제는 Official Marketplace를 사용하는것을 가정하고 작성 하였습니다.
+All examples on this page assume that you are using the Official Marketplace.
 {{< /alert >}}
 
 <br>
 
 ### Repository
 
-모든 작업은 Repository(repository_id)를 지정해야 합니다. 
-각 SpaceONE내의 도메인은 _**Official Marketplace**_ 와 _**Private Repository**_ 타입의 Repository를 가질 수 있습니다.
-이것은 아래와 같이 확인할 수 있습니다.
+All operations must specify a Repository(repository_id).
+Each domain in SpaceONE can have _**Official Marketplace**_ and _**Private Repository**_ types of Repository.
+This can be verified as below.
 
-- repository_type : _**remote**_ 인 repository가 _**Official Marketplace**_ 입니다.
-- repository_type : _**local**_ 인 repository가 _**Private Repository**_ 입니다.
+- repository_type : The repository with _**remote**_ is _**Official Marketplace**_ .
+- repository_type : The repository with _**local**_ is _**Private Repository**_ .
 
 ~~~bash
 $> spacectl list repository.Repository
@@ -39,8 +39,8 @@ $> spacectl list repository.Repository
 
 ### Policy
 
-- 아래와 같이 원하는 정책을 가지고 있는 policy_id를 확인 합니다.
-- -c 옵션을 통해 조회 하고자 하는 column을 지정할 수 있습니다.(전체 column 사용시 line이 너무 길어질 수 있습니다.)
+- Check the policy_id that has the desired policy as shown below.
+- You can specify the column you want to search through the -c option. (The line may become too long when using all columns.)
 
 ~~~bash
 $> spacectl list repository.Policy -p repository_id=repo-xxxxx -c policy_id,name,state,labels,repository_info,domain_id
@@ -59,8 +59,8 @@ $> spacectl list repository.Policy -p repository_id=repo-xxxxx -c policy_id,name
 
 ## EX1. Create Domain Admin Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
-- 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
+- First check [repository_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) and [check policy_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy) .
+- You can create a role after changing policy_id in the yaml file of the sample below.
 
 ~~~bash
 $> spacectl exec create identity.Role -f crate_domain_admin_role.yml
@@ -76,7 +76,7 @@ policies:
     policy_id: policy-managed-domain-admin
 ~~~
 
-- 정상적으로 생성 되었다면 아래와 같은 command로 생성을 확인할 수 있습니다.
+- If it was created normally, you can check the creation with the following command.
 
 ~~~bash
 $> spacectl list identity.Role 
@@ -90,8 +90,8 @@ $> spacectl list identity.Role
 
 ## EX2. Create Domain Viewer Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
-- 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
+- First check [repository_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) and [check policy_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy) .
+- You can create a role after changing policy_id in the yaml file of the sample below.
 
 ~~~bash
 $> spacectl exec create identity.Role -f crate_domain_viewer_role.yml
@@ -107,7 +107,7 @@ policies:
     policy_id: policy-managed-domain-viewer
 ~~~
 
-- 정상적으로 생성 되었다면 아래와 같은 command로 생성을 확인할 수 있습니다. 
+- If it was created normally, you can check the creation with the following command.
 
 ~~~bash
 $> spacectl list identity.Role 
@@ -120,8 +120,8 @@ $> spacectl list identity.Role
 
 ## EX3. Create Project Admin Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
-- 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
+- First check [repository_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) and [check policy_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy) .
+- You can create a role after changing policy_id in the yaml file of the sample below.
 
 ~~~bash
 $> spacectl exec create identity.Role -f crate_project_admin_role.yml
@@ -137,7 +137,7 @@ policies:
     policy_id: policy-managed-project-admin
 ~~~
 
-- 정상적으로 생성 되었다면 아래와 같은 command로 생성을 확인할 수 있습니다.
+- If it was created normally, you can check the creation with the following command.
 
 ~~~bash
 $> spacectl list identity.Role 
@@ -151,8 +151,8 @@ $> spacectl list identity.Role
 
 ## EX4. Create Project Viewer Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
-- 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
+- First check [repository_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) and [check policy_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy) .
+- You can create a role after changing policy_id in the yaml file of the sample below.
 
 ~~~bash
 $> spacectl exec create identity.Role -f crate_project_viewer_role.yml
@@ -168,7 +168,7 @@ policies:
     policy_id: policy-managed-project-viewer
 ~~~
 
-- 정상적으로 생성 되었다면 아래와 같은 command로 생성을 확인할 수 있습니다. 
+- If it was created normally, you can check the creation with the following command.
 
 ~~~bash
 $> spacectl list identity.Role 
@@ -181,8 +181,8 @@ $> spacectl list identity.Role
 
 ## EX5. Create Alert Manager Full Access Role
 
-- 먼저 [repository_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) 및 [policy_id 확인](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy)합니다.
-- 아래와 같은 샘플의 yaml 파일에서 policy_id를 변경 후 Role을 생성할 수 있습니다.
+- First check [repository_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#repository) and [check policy_id](/docs/guides/advanced/spaceone_cli/managing_role_policy/examples/#policy).
+- You can create a role after changing policy_id in the yaml file of the sample below.
 
 ~~~bash
 $> spacectl exec create identity.Role -f crate_alert_manager_full_access_role.yml
@@ -200,7 +200,7 @@ policies:
     policy_id: policy-managed-project-viewer
 ~~~
 
-- 정상적으로 생성 되었다면 아래와 같은 command로 생성을 확인할 수 있습니다.
+- If it was created normally, you can check the creation with the following command.
 
 ~~~bash
 $> spacectl list identity.Role 

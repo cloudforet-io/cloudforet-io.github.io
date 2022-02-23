@@ -4,14 +4,14 @@ linkTitle: "Manage Role"
 weight: 2
 date: 2021-12-21
 description: >
-    Domain 내의 Role & Policy를 Spacectl로 편리하게 관리할 수 있습니다.
+    You can conveniently manage Role & Policy within the domain with Spacectl.
 ---
 
 
 ## Role
 
-- Role은 정책이 적용되는 범위에 따라 Domain/Project Type으로 구분 됩니다.
-- 자세한 설명은 [Role Type](/ko/docs/concepts/identity/rbac/understanding-role/#role-type) 문서를 참조해 주세요.
+- Role is divided into Domain/Project Type according to the scope to which the policy is applied.
+- For more information, refer to the [Role Type](/docs/concepts/identity/rbac/understanding-role/#role-type) document.
 
 <br>
 
@@ -67,7 +67,7 @@ policies:
 
 **Update Domain Role**
 
-상세 Parameter는 [identity.Role api 문서](https://spaceone-dev.gitbook.io/spaceone-apis/identity/v1/role#update) 를 참고해 주세요. 
+For detailed parameters, refer to the [identity.Role api document](https://spaceone-dev.gitbook.io/spaceone-apis/identity/v1/role#update). 
 
 ~~~bash
 $> spacectl exec update identity.Role -p role_id=role-xxxxxx -p domain_id=domain-xxxxxx -f update_role.yaml
@@ -100,8 +100,8 @@ policies:
 **Delete Domain Role**
 
 {{< alert title="Note" >}}
-사용중인 Domain Role은 삭제할 수 없습니다. [사용자 Domain Role 해제하기](/ko/docs/guides/user/user/#editdelete-users) 를 참고하여  
-_**Assign Domain Role > Not select role > Confirm **_ 와 같은 방법을 통해 해제 할 수 있습니다. 
+The domain role in use cannot be deleted. Refer to [Release User Domain Role](/docs/guides/user/user/#editdelete-users)
+It can be released through methods such as _**Assign Domain Role > Not select role > Confirm **_.
 {{< /alert >}}
 
 ~~~bash
@@ -188,11 +188,11 @@ policies:
 **Delete Project Role**
 
 {{< alert title="Note" >}}
-사용중인 Role은 삭제할 수 없습니다. 
-1. [사용자에게 할당된 Role 확인하기](/ko/docs/guides/user/user/#overview)를 통해 
-삭제 대상 Role을 사용중인 사용자를 확인 후  
-2. [Project Group Member 관리하기](/ko/docs/guides/project/project_group_management/#set-project-group-roles) 혹은 
-[Project Membember 관리하기](/ko/docs/guides/project/project_management/#member)를 통해 등록된 Member 설정을 삭제할 수 있습니다. 
+Roles in use cannot be deleted.
+1. Via [Checking Roles Assigned to User](/docs/guides/user/user/#overview)
+   After checking the user who is using the role to be deleted
+2. [Manage Project Group Members](/docs/guides/project/project_group_management/#set-project-group-roles) or
+   You can delete the registered member settings through [Manage Project Member](/docs/guides/project/project_management/#member). 
 {{< /alert >}}
 
 ~~~bash
