@@ -30,6 +30,7 @@ spec:
               serviceName: docs
               servicePort: 80
             path: /*
+
     - host: www.{{ .Values.endpoint }}
       http:
         paths:
@@ -37,9 +38,5 @@ spec:
               serviceName: redirect-to-non-www
               servicePort: use-annotation
             path: /*
-
-
-  
-
 
 {{- end }}
