@@ -1,9 +1,9 @@
 ---
-title: "Technical Sterring Comittee"
+title: "Technical Steering Committee"
 date: 2022-02-21
 weight: 2
 description: >
-    Technical Sterring Comittee description
+    Technical Steering Committee
 ---
 
 ## Technical Sterring Comittee
