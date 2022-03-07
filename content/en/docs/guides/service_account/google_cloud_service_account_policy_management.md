@@ -17,30 +17,28 @@ description: >
     * Google Cloud Service Collector - **google-cloud-services**
     * Google power state Collector - **google-cloud-power-state**
 
-* **Power-scheduler** 
-  : \(Post Action to Google Cloud resources to turn on/off for following resources :  Compute VMs, Instance group, Cloud SQL\) with [Power-scheduler > Scheduler Management](/docs/guides/advanced/automation/power_scheduler/)
-    * Google Cloud power Controller 
-
 ### **STEP 1. Please, Set Service Accounts** to Create API for each Use Case
-* [**General Collector**](#general-collector) &sol; [**Special Roles**](#special-roles)
-* [**Power Controller**](#power-controller)
+* [**General Collector**](#general-collector) &sol; [**Additional Roles**](#additional-roles)
 
 ### **STEP 2. Register Your Service Account into SpaceONE** 
 * [**Register Service Account into SpaceONE**](#register-your-service-account-into-spaceone)
 
-## General Collector 
-Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions. One useful example is to restrict its rights within region.
+<br>
 
-### **STEP 1. Sign in to Google Cloud Console > IAM** 
+---
+## General Collector 
+Collectors require appropriate authorities to collect cloud resources. We strongly recommend limiting the collector's service account permission to **`read only access`**. Or you can add more restrictions per resources or actions.
+
+### **STEP 1. Login to Google Cloud Console > IAM** 
 Go to **IAM >  Service Account** and click **`+ CREATE SERVICE ACCOUNT`**.
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.00.20.png)
 
-### **STEP 2. Set Service account details**
+### **STEP 2. Set Service Account details**
 Enter _**Service account name**_, and _**Service account description**_.
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.16.10.png)
 
-### **STEP 3: Grant Service account to Project**
-Set Permission to Viewer \(Role\): Read Access to All Resources, and click **`CONTINUE`**.
+### **STEP 3: Grant Role Service Account**
+Set Permission to Viewer (Role): Read Access to All Resources, and click **`CONTINUE`**.
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-16.27.10.png)
 
 ### **STEP 4: Grant Users access to this service Account \(Optional\)** 
@@ -61,7 +59,7 @@ After step 5, you'll be able to see the Key ID on the list and also its service 
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.05.55.png)
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.07.16.png)
 
-### Special Roles
+### Additional Roles
 _**SpaceONE**_'s _**General Collector**_ requires permission to access the following services:
 
 {{% alert title="" %}}
@@ -113,69 +111,3 @@ Use the **`+ ADD ANOTHER ROLE`** and add BigQuery roles. <br>
 When you are done, click the **`Save`** button.
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-04-07-at-18.26.14.png)
 
-## Power Controller
-_**SpaceONE**_'s _**Power Scheduler**_ requires editing permissions to update the following Cloud Services: 
-
-* **VM Instance**
-* **Instance Group**
-* **Cloud SQL**
-
-### **Step 1. Create Role**
-Go to **IAM > Role >** **`+ Create Role`**.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-18.09.00.png)
-
-### **Step 2. Add Permissions to Role**
-**Please, find an appropriate permission within the cloud services** then click the **`ADD`** button.
-
-* VM Instance 
-  * Start
-  * Stop
-  * Reset
-* Instance Group \(Manager\)
-  * Resize
-  * Autoscaler
-    * Update
-* Cloud SQL
-  * Update
-
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-18.23.13.png)
-
-### **STEP 3: Review Permission** 
-Review the permissions in the role you've created.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-18.57.43.png)
-
-### **STEP 4: Set Created Role into the Service Account** 
-Drive to menu **IAM > IAM**. 
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.02.52.png)
-
-Click the _**pencil icon**_ to move to **Edit permissions**. Then add the New Role created from the previous step. <br>
-After finishing the edit click the **`Save`** button.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.05.18.png)
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-19.05.26.png)
-
-## Register Your Service Account into SpaceONE
-### **Step 1: Please, **`Sign In`** to the SpaceONE portal.**
-![](/docs/guides/service_account/service_account_img/google/google_01.png)
-
-### **Step 2: Move to the menu's Service Account** 
-Follow **`Identity`** > **`Service Account`** from the Top Menu bar.
-![](/docs/guides/service_account/service_account_img/google/google_02.png)
-
-### **Step 3: Select Provider and Add Service Account**
-Select Google for the Service Provider and then click the **`+ Add`** Button
-![](/docs/guides/service_account/service_account_img/google/google_04.png)
-![](/docs/guides/service_account/service_account_img/google/google_03.png)
-
-### **Step 4: Fill out the Base Information and Credentials**
-Please, fill out all required fields. Use your Service Account JSON that you issued at [**General Collector Step**](#general-collector) . <br>
-You can also just simply copy and paste the JSON.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-04-16-at-16.06.09.png)
-
-### **Step 5: Select a Project to Map the Service Account**
-Select a Project that you want to map the service account on. <br>
-Then click the **`Save`** button.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-04-16-at-16.11.11.png)
-
-### **Step 6: Confrim your Registration**
-Finally check the Service Account's **Google Account List** to confirm your registration.
-![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-04-16-at-16.14.44.png)

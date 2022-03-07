@@ -8,8 +8,6 @@ description: >
     Details of API Security policy to use SpaceONE plugin
 ---
 
-# \(Alibaba Cloud\) Service Account Policy Management
-
 ## Service Account Policy
 
 **SpaceONE** highly recommends to set appropriate permissions to **Service Account** for each purpose. 

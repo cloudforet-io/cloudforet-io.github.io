@@ -8,8 +8,6 @@ description: >
     Details of API Security policy to use SpaceONE plugin
 ---
 
-# \(Azure\) Access Control \(IAM\) Policy Management
-
 ## Access Control Policy
 
 **SpaceONE** highly recommends, setting appropriate permissions to Resource groups for each purpose. 
