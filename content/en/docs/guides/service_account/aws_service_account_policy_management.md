@@ -12,11 +12,14 @@ description: >
 Before creating a **Service Account**, you can modify your existing API policies.<br>
 This will guarantee that your resources are isolated from other non power-scheduled items. It can also prevent malfunctions caused by misconfigurations of power scheduling.<br>
 To create API for each use case, follow directions below.
-* [General Collector](#general-collector)
-* [Power Scheduler Service](#powerscheduler)
-* [Personal Health Dashboard/Trusted Advisor Collector](#aws-personal-health-dashboardtrusted-advisor)
-In case of internal regulations, create the policy below and attach it when creating an API user.
-* [Overall IAM Policy Superset](#overall-iam-policy-superset)
+
+| Collector Plugin                                  | Policy Setting Guide                                                                                 |
+|:--------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| aws-cloud-services/aws-ec2                        | [General Collector](#general-collector)                                                              |
+| aws-trusted-advisor/aws-personal-health-dashboard | [Personal Health Dashboard/Trusted Advisor Collector](#aws-personal-health-dashboardtrusted-advisor) |
+
+<br>
+
 
 ## General Collector
 Collectors do not require any types of permissions, except for the read permission. So we strongly recommend you to restrict permissions to **read-only access**.<br> 
@@ -51,73 +54,6 @@ After the IAM key pair is created, _**make sure to copy the Access key ID/Secret
 If you forget to copy them, there is no way to have them again \(you have to start over from step 1\).
 ![](/docs/guides/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
-## PowerScheduler
-Suggested IAM policices for each cloud provider to use _**SpaceONE Power Scheduler**_ service are described below.
-
-### Step 1. Create Policy
-Go to IAM &gt; Policies &gt; Create policy.
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_iam_power_scheduler_create_policy.png)
-
-### Step 2. Attach Policy Definitions
-Move to the JSON tab, and attach the policy definition as shown below. Then click _**Review policy**_.
-{{<tabpane>}}
-{{<tab header="AWS">}}
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "rds:StartDBCluster",
-                "rds:StopDBCluster",
-                "rds:StartDBInstance",
-                "rds:StopDBInstance",
-                "rds:RebootDBInstance",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:RebootInstances",
-                "autoscaling:SetDesiredCapacity",
-                "autoscaling:UpdateAutoScalingGroup"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-{{</tab>}}
-{{</tabpane>}}
-
-
-### Step 3. Review Policy
-Enter policy _**Name**_ and _**Description**_. Then click _**Create policy**_.
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_powerscheduler_review_policy.png)
-
-### Step 4. Log into AWS Console &gt; IAM
-Go to IAM &gt; Users &gt; Add user.
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_policy_iam_add_user.png)
-
-### Step 5. Set User Details
-Enter _**User name**_, and set _**Access type**_ to _**Programmatic access**_.
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_set_user_details.png)
-
-### Step 6. Set API Permission
-Add all policies below. They should be included to guarantee successful actions.
-
-* AmazonDynamoDBReadOnlyAccess 
-* AmazonEC2ReadOnlyAccess 
-* AmazonRDSReadOnlyAccess 
-* AutoScalingReadOnlyAccess
-* **Policy created in step 3**
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_powerscheduler_set_api_permission.png)
-
-### Step 7. Review
-Make sure to include all policies from Step 4. Then click _**Create user**_.
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_powerscheduler_review.png)
-
-### Step 8. Copy Key Pair
-After the IAM key pair is created, _**make sure to copy the Access key ID/Secret access key and keep them safely**_.<br>
-If you forget to copy them, there is no way to have them again \(you have to start over from step 1\).
-![](/docs/guides/service_account/service_account_img/aws/aws_service_account_iam_add_user_copy_keypair.png)
 
 ## AWS Personal Health Dashboard/Trusted Advisor
 To use AWS advanced collectors such as AWS _**Personal Health Dashboard/Trusted Advisor**_, the user account support level should be above _**business**_ and additional IAM policies need to be attached.
