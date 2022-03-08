@@ -18,17 +18,11 @@ Refer to the link below and proceed with the installation.
 * [Minikube Install](https://minikube.sigs.k8s.io/docs/start/)
 * [Helm Install](https://helm.sh/docs/intro/install/)
 
-Using v1.20.0 or below is recommended for minikube and kubectl.<br><br>
-Check your version.
-
-~~~bash
-minikube version
-kubectl version
-~~~
 
 ## Start Minikube
+- Using v1.21.8 or below is recommended for kubernetes
 ~~~bash
-minikube start --driver=docker
+minikube start --driver=docker --kubernetes-version=v1.21.8
 ~~~
 
 ## Install SpaceONE
@@ -62,8 +56,8 @@ helm repo update
 ### Install SpaceONE with helm chart
 ~~~bash
 git clone https://github.com/spaceone-dev/charts.git
-cd charts/examples/v1.7.4
-helm install spaceone -f minikube.yaml spaceone/spaceone --devel
+cd charts/examples/v1.9.1
+helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
 You need to check status of pods.
@@ -74,6 +68,29 @@ kubectl get pod
 
 Check STATUS **Completed** or **Running**.
 It will take some time, so please wait.
+
+### Create user domain
+Delete initialize-spaceone pod
+```
+kubectl get pod | grep initialize-spaceone
+---
+initialize-spaceone-abcd-12345      0/1     Completed   0          --m
+```
+```
+kubectl delete pod initialize-spaceone-abcd-12345
+```
+
+Install spaceone-initializer helm chart for user domain
+```
+helm install user-domain -f user-domain.yaml spaceone/spaceone-initializer
+```
+
+Check that the newly created initialize-space pod is complete.
+```
+kubectl get pod | grep initialize-spaceone
+---
+initialize-spaceone-abcd-12345      0/1     Completed   0          --m
+```
 
 ## Port-forwarding
 Since you have installed SpaceONE in your minikube, you don’t have any ingress like ALB or NGINX ingress controller.
@@ -97,13 +114,13 @@ kubectl port-forward -n spaceone svc/console-api 8081:80 &
 
 ## Start SpaceONE
 
-### Log-In
+### Log-In (Sign in for Root Account)
 Open browser
 ([localhost:8080](http://localhost:8080))
 
 | ID | PASSWORD |
 |---|---|
-| user1@example.com | User1234! |
+| admin | Admin123!@# |
 
 ![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_03.png)
 
