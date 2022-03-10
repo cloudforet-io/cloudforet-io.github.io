@@ -56,7 +56,7 @@ helm repo update
 ### Install SpaceONE with helm chart
 ~~~bash
 git clone https://github.com/spaceone-dev/charts.git
-cd charts/examples/v1.9.3
+cd charts/examples/v1.9.1
 helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
@@ -70,7 +70,7 @@ Check STATUS **Completed** or **Running**.
 It will take some time, so please wait.
 
 ### Create user domain
-Delete initialize-spaceone pod
+Delete initialize-spaceone pod and configmap
 ```
 kubectl get pod | grep initialize-spaceone
 ---
@@ -79,13 +79,16 @@ initialize-spaceone-abcd-12345      0/1     Completed   0          --m
 ```
 kubectl delete pod initialize-spaceone-abcd-12345
 ```
+```
+for i in `kubectl get cm | egrep "spacectl-|start" | awk '{print $1}'`; do kubectl delete cm $i; done
+```
 
 Install spaceone-initializer helm chart for user domain
 ```
 helm install user-domain -f user-domain.yaml spaceone/spaceone-initializer
 ```
 
-Check that the newly created initialize-space pod is complete.
+Check that the newly created initialize-space pod is completed.
 ```
 kubectl get pod | grep initialize-spaceone
 ---
