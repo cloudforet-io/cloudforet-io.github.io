@@ -56,7 +56,7 @@ helm repo update
 ### Install SpaceONE with helm chart
 ~~~bash
 git clone https://github.com/spaceone-dev/charts.git
-cd charts/examples/v1.9.1
+cd charts/examples/v1.9.3
 helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
