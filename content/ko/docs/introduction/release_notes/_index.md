@@ -10,7 +10,7 @@ description: >
 
 | Date       | Version | See Details                                         |
 |------------|---------|-----------------------------------------------------|
-| 2022-02-09 | 1.9.3   | [Version 1.9.3-korean](./release_note_list/v1.9.3/) |
+| 2022-03-10 | 1.9.3   | [Version 1.9.3-korean](./release_note_list/v1.9.3/) |
 | 2022-02-09 | 1.9.1   | [Version 1.9.1-korean](./release_note_list/v1.9.1/) |
 | 2021-12-30 | 1.9.0   | [Version 1.9.0-korean](./release_note_list/v1.9.0/) |
 | 2021-12-14 | 1.8.7   | [Version 1.8.7-korean](./release_note_list/v1.8.7/) |
