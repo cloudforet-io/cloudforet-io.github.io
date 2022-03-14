@@ -1,10 +1,10 @@
 ---
-title: "CICD"
-linkTitle: "CICD"
+title: "Frontend Microservice CI"
+linkTitle: "Frontend Microservice CI"
 weight: 8
 date: 2022-03-14
 description: >
-    SpaceONE CICD Pipeline
+    Frontend Microservice CI
 
 ---
 
