@@ -8,21 +8,27 @@ description: >
     SpaceONE의 inventory 플러그인에 적용하기 위한 Google IAM 정책을 안내 합니다.
 ---
 
-## Service Account Policy
-SpaceONE의 Inventory Collector Plugin이 정상적으로 동작하기 위한 IAM Service Account 설정 방안은 아래와 같습니다.
+## Overview
+SpaceONE의 Inventory Collector Plugin이 정상적으로 동작하기 위해 적절한 권한을 가진 IAM Service Account 를 생성해야 합니다.
+이 문서를 통해 지원하는 Google Cloud Inventory Plugin은 아래와 같습니다. 
 
-* **General Collector**
-  : \(**SpaceONE** Google Inventory Collector Plugin을 통해 Google Cloud 리소스 정보를 수집 합니다. \)
-    * Google Compute VM Collector - **google-cloud compute**
-    * Google Cloud Service Collector - **google-cloud-services**
+### Supported Collector
+|Type|Name|비고|
+|:---:|:---:|:---:|
+|inventory.Collector|Google Compute VM Collector ||
+|inventory.Collector|Google Cloud Service Collector ||
+|inventory.Collector|Google Cloud Collector ||
 
-### **STEP 1. Service Account 설정** API사용을 위한 Service Account를 설정
-* [**General Collector**](#general-collector) &sol; [**Additional Roles**](#additional-roles)
+{{% alert title="" %}}
+inventory.Collector Type 플러그인은 **SpaceONE Inventory** Service를 통해 Google Cloud 리소스 정보를 수집 합니다.
+{{% /alert %}}
 
-### **STEP 2. SpaceONE에 Service Account를 등록**
-* [**Register Service Account into SpaceONE**](#register-your-service-account-into-spaceone)
+### IAM Creation Steps
+Service Account를 생성후 아래의 Role을 Biniding 합니다. 
+* [**Basic Role**](#basic-role)
+* [**Additional Roles**](#additional-roles)
 
-## General Collector
+## Basic Role
 Collector는 cloud 자원을 수집하기 위해 적절한 권한을 필요로 합니다. 또한, service account의 권한을 **`read only access`**로 설정하시는 것을 강력히 권고 드립니다. 
 
 
@@ -55,25 +61,25 @@ Create Key를 클릭하면, 자동으로 API Credential 정보가 Local 환경�
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.05.55.png)
 ![](/docs/guides/service_account/service_account_img/google/screen-shot-2021-02-10-at-17.07.16.png)
 
-### Additional Roles
+## Additional Roles
 _**SpaceONE**_'s _**General Collector**_ 는 아래의 cloud resource에 접근 하기 위해 추가적인 접근 권한을 필요로 합니다.: 
 
 {{% alert title="" %}}
-**Google Cloud API는 각 서비스 Category로 구분되어 있어 Compute 서비스 이외의 자원들은 추가적인 Role을 필요로 합니다.** 
+**Google Cloud API는 각 서비스 Category로 구분되어 있어 Compute 서비스 이외의 자원들은 추가적인 Policy/Role을 필요로 합니다.** 
 {{% /alert %}}
 
-* Cloud Storage
-    * Object
-        * list
-        * get
-        * getIamPolicy
-    * Bucket
-        * list
-        * get
-        * getIamPolicy
-* Big Query
-    * Resource Viewer
-    * Data Viewer
+
+| Service |Type|Name|
+|:--:|:---:|:-------|
+|Cloud Storage|Policy|storage.buckets.get|
+|Cloud Storage|Policy|storage.buckets.getIamPolicy|
+|Cloud Storage|Policy|storage.buckets.list|
+|Cloud Storage|Policy|storage.objects.get|
+|Cloud Storage|Policy|storage.objects.getIamPolicy|
+|Cloud Storage|Policy|storage.objects.list|
+|Big Query|Role|Resource Viewer|
+|Big Query|Role|Data Viewer|
+
 
 ### **Step 1. Role 생성**
 **IAM > Role >** 로 이동 후 **`+ Create Role`** 을 클릭 합니다.
