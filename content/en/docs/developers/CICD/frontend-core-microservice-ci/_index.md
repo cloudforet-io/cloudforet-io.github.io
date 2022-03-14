@@ -16,7 +16,7 @@ description: >
 
 </br>
 
-Frontend Core microservices' codes are integrated and built, uploaded with the flow explained above. Most of the workflows include set-up process including setting Node.js, caching node modules, and installing dependencies. After the set-up proccess, each repository workflow is headed to building process proceeded in NPM. After building, both repositories' packages built are released in NPM by code “npm run semantic-release”. 
+Frontend Core microservices' codes are integrated and built, uploaded with the flow explained above. Most of the workflows include set-up process including setting Node.js, caching node modules, and installing dependencies. After the set-up proccess, each repository workflow is headed to building process proceeded in NPM. After building, both repositories' packages built are released in NPM by code `npm run semantic-release`. 
 
 </br>
 
@@ -28,7 +28,7 @@ Also, unlike other repositories deployed by the flow from Docker to Spinnaker an
 
 </br>
 
-To check the details, go to the .github/workflow directory in each directory.
+To check the details, go to the `.github/workflow` directory in each directory.
 
 </br>
 

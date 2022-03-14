@@ -36,7 +36,7 @@ Tools-category repositories use different repositories to upload.
 </br>
 </br>
 
-To check the details, go to the .github/workflow directory in each directory.
+To check the details, go to the `.github/workflow` directory in each directory.
 
 </br>
 

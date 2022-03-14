@@ -16,7 +16,7 @@ description: >
 
 </br>
 
-**CI process is mainly processed by GitHub Actions** described in .github/workflows directory of each repository.  The process can be triggered automatically through events such as pull requests or push, or manually. Continuous integration includes software building, uploading image in docker, and releasing package in NPM or PyPi. Docker Image is built with all dependency packages to include.   
+**CI process is mainly processed by GitHub Actions** described in `.github/workflows` directory of each repository.  The process can be triggered automatically through events such as pull requests or push, or manually. Continuous integration includes software building, uploading image in docker, and releasing package in NPM or PyPi. Docker Image is built with all dependency packages to include.   
 
 </br>
 
@@ -33,7 +33,7 @@ description: >
 
 </br>
 
-Before we discuss the CI process of each repository, we should check the spaceone-dev/spaceone repository (or ‘root’ repository). Root repository serves a role as a trigger of all repositories to start the CI process. Through manually starting one of the GitHub Action the root repository has, most of the repositories detect the action and their GitHub Action is triggered.   
+Before we discuss the CI process of each repository, we should check the `spaceone-dev/spaceone` repository (or ‘root’ repository). Root repository serves a role as a trigger of all repositories to start the CI process. Through manually starting one of the GitHub Action the root repository has, most of the repositories detect the action and their GitHub Action is triggered.   
 
 </br>
 
@@ -69,7 +69,7 @@ Core microservices are differentiated with ordinary microservices, since they su
 
 </br>
 
-** Some repositories might not fit in the categories and standards. To check more details in CI/CD, check our GitHub repositories' .github/workflow files.     
+** Some repositories might not fit in the categories and standards. To check more details in CI/CD, check our GitHub repositories' `.github/workflow` files.     
 
 </br>
 
@@ -114,16 +114,16 @@ CI process of each repositories can be organized by 4 different kinds of trigger
 </br>
 
 1. **Master Branch Push** :     
-If the master branch in GitHub get pushed, GitHub Action occurs by CI_master_push.yml file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, SpaceONE team is notified through Slack.     
+If the master branch in GitHub get pushed, GitHub Action occurs by `CI_master_push.yml` file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, SpaceONE team is notified through Slack.     
 
 2. **Create Release Branch** :     
-Each repository can create release branch manually or by spaceone-dev/spaceone repository’s event. After initialization, GitHub Action triggers branch tagging action.       
+Each repository can create release branch manually or by `spaceone-dev/spaceone` repository’s event. After initialization, GitHub Action triggers branch tagging action.       
 
 3. **Branch Tagging** :      
 By being triggered by the event above or getting pushed with version tags, each repository can tag branch with GitHub Action by updating the version in both local and master branch, building the software, and uploading the output to registries such as Docker or PyPi. After all process is done, Slack notification is automatically sent to SpaceONE team.      
 
 4. **Reflect Branch Update** :       
-The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or spaceone-dev/spaceone repository GitHub Action.         
+The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or `spaceone-dev/spaceone` repository GitHub Action.         
 
 </br>
 </br>

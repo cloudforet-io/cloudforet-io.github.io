@@ -24,7 +24,7 @@ Also, Backend Core microservices are not built and uploaded on Docker. They are 
 
 </br>
 
-To check the details, go to the .github/workflow directory in each directory.
+To check the details, go to the `.github/workflow directory` in each directory.
 
 </br>
 
