@@ -41,8 +41,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1023.999px) {
-
+@media only screen and (max-width: 1023px) {
   footer {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -64,7 +63,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .documentation footer {
     max-width: 55rem;
     margin-left: 16.3125rem;

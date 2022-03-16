@@ -159,7 +159,7 @@
   }
 }
 
-@media only screen and (max-width: 1023.999px) {
+@media only screen and (max-width: 1023px) {
   @mixin border-bottom {
     &::after {
       left: 1rem;
@@ -233,7 +233,7 @@
   }
 }
 
-@media only screen and (min-width: 767.999px) and (max-width: 1023.999px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
   .community {
 
     section {
