@@ -1,51 +1,46 @@
 ---
 title: Home
 ---
-<div class="swiper">
-    <div class="swiper-wrapper">
-    {{% blocks/section name="main" %}}
-    <h2>멀티클라우드 관리를 하나로 <br /><em>SpaceONE</em></h2>
-    <p class="sub-title">SpaceONE은 멀티 클라우드 환경을 위한 통합 관리하는 오픈소스 플랫폼입니다.</p>
-    <div class="btn-group">
-        <a href="https://www.spaceone.org/docs/setup_operation/install_guide/" class="btn-link btn-link-green" target="_blank"><span>설치하기</span></a>
-        <a href="https://github.com/spaceone-dev" class="btn-link btn-link-gradient link-github" target="_blank">GitHub</a>
-    </div>
-    <figure class="img-spaceman" id="spaceman"></figure>
-    {{% /blocks/section %}}
-
-    {{% blocks/feature name="management" section_title="our approach" thumbnail="/images/home/img_discover_manage_clouds.gif" title="<span>멀티 클라우드</span> 자원 통합 관리" description="흩어져있는 여러 클라우드 자원들을 하나의 플랫폼에서 관리하세요. 통합 대시보드로 간편하게 자원들을 모아 볼 수 있습니다. " %}}{{% /blocks/feature %}}
-    {{% blocks/feature name="notification" bg_blue="true" title="장애 관리 및 알림 자동화" description="실시간으로 장애 알림을 수신하여 신속하게 장애에 대응해보세요. 장애 관리 이력을 분석하여 사용자 경험을 개선할 수 있습니다." %}}
-    <picture>
-        <source srcset="/images/home/img_notify_events_m.png" media="(max-width:767px)">
-        <source srcset="/images/home/img_notify_events.png" media="(max-width:1440px)">
-        <img src="/images/home/img_notify_events.png" alt="our approach" class="img-feature">
-    </picture>
-    {{% /blocks/feature %}}
-    {{% blocks/feature name="analysis" thumbnail="/images/home/img_analyze_cost.gif" title="<span>비용 분석 및</span> 자원 최적화" description="비용을 항목별로 관리해 상세 내역을 분석해보세요. 분석 정보를 활용해 자원을 최적화할 수 있습니다.  예산 설정 기능과 다양한 데이터 시각화를 지원해 비용 관리가 더 간편해집니다." %}}{{% /blocks/feature %}}
-    {{% blocks/feature name="by-project" bg_blue="true" thumbnail="/images/home/img_manage_resources_by_project.png" title="프로젝트 기반 운영 체계화" description="복잡한 클라우드 계정 관리를 프로젝트와 부서 단위로 간단하게 정리할 수 있습니다. 사용자별로 권한 설정을 세분화하여 보다 안전하게 클라우드 환경을 운영해보세요." %}}{{% /blocks/feature %}}
-
-    {{% blocks/section name="strength" title="our strength" %}}
-    <div class="strength-box">
-        {{% blocks/strength thumbnail="cloud" title="클라우드 네이티브" description="SpaceONE은 K8S, gRPC, Helm, Prometheus, Istio 등 클라우드 네이티브 기술을 활용한 마이크로 서비스 아키텍처를 기반으로 설계되었습니다." %}}{{% /blocks/strength %}}
-        {{% blocks/strength thumbnail="architecture" title="플러그인 아키텍처" description="SpaceONE은 플러그인 구조를 통해 지속적으로 기능을 확장할 수 있습니다. 플러그인을 직접 제작하여 다른 사용자와 공유해보세요." %}}{{% /blocks/strength %}}
-        {{% blocks/strength thumbnail="box" title="오픈 API" description="오픈 API를 기반으로 외부 서비스와 연동해보세요. SpaceONE은 손쉽게 커스터마이징이 가능하도록 자유로운 개발 환경을 제공합니다." %}}{{% /blocks/strength %}}
-    </div>
-    {{% /blocks/section %}}
-
-    {{% blocks/section name="universe" title="our universe" bg_blue="true" %}}
-    <picture>
-        <source srcset="/images/home/img_universe_m.png" media="(max-width:1439px)">
-        <source srcset="/images/home/img_universe.png" media="(min-width:1440px)">
-        <img src="/images/home/img_universe.png" alt="our universe" class="img-universe">
-    </picture>
-    {{% /blocks/section %}}
-
-    {{% blocks/section name="mission" %}}
-    <h4><span class="lb">멀티 클라우드부터 온프레미스까지,</span> 보다 나은 IT 인프라 운영을 위해 SpaceONE만의 생태계를 함께 만들고자 합니다</h4>
-    <figure id="spaceship" class="img-mission"></figure>
-    <p class="description"><span class="lb">SpaceONE 우주선에</span> 지금 바로 탑승하세요!</p>
-    <a href="https://www.spaceone.org/docs/developers/contribute/" class="btn-link btn-link-gradient" target="_blank">오픈소스 참여하기</a>
-    {{% /blocks/section %}}
-    </div>
+{{% blocks/section name="main" %}}
+<h2>멀티클라우드 관리를 하나로 <br /><em>SpaceONE</em></h2>
+<p class="sub-title">SpaceONE은 멀티 클라우드 환경을 위한 통합 관리하는 오픈소스 플랫폼입니다.</p>
+<div class="btn-group">
+    <a href="https://www.spaceone.org/docs/setup_operation/install_guide/" class="btn-link btn-link-green" target="_blank"><span>설치하기</span></a>
+    <a href="https://github.com/spaceone-dev" class="btn-link btn-link-gradient link-github" target="_blank">GitHub</a>
 </div>
+<figure class="img-spaceman" id="spaceman"></figure>
+{{% /blocks/section %}}
 
+{{% blocks/feature name="management" section_title="our approach" thumbnail="/images/home/img_discover_manage_clouds.gif" title="<span>멀티 클라우드</span> 자원 통합 관리" description="흩어져있는 여러 클라우드 자원들을 하나의 플랫폼에서 관리하세요. 통합 대시보드로 간편하게 자원들을 모아 볼 수 있습니다. " %}}{{% /blocks/feature %}}
+{{% blocks/feature name="notification" bg_blue="true" title="장애 관리 및 알림 자동화" description="실시간으로 장애 알림을 수신하여 신속하게 장애에 대응해보세요. 장애 관리 이력을 분석하여 사용자 경험을 개선할 수 있습니다." %}}
+<picture>
+    <source srcset="/images/home/img_notify_events_m.png" media="(max-width:767px)">
+    <source srcset="/images/home/img_notify_events.png" media="(max-width:1440px)">
+    <img src="/images/home/img_notify_events.png" alt="our approach" class="img-feature">
+</picture>
+{{% /blocks/feature %}}
+{{% blocks/feature name="analysis" thumbnail="/images/home/img_analyze_cost.gif" title="<span>비용 분석 및</span> 자원 최적화" description="비용을 항목별로 관리해 상세 내역을 분석해보세요. 분석 정보를 활용해 자원을 최적화할 수 있습니다.  예산 설정 기능과 다양한 데이터 시각화를 지원해 비용 관리가 더 간편해집니다." %}}{{% /blocks/feature %}}
+{{% blocks/feature name="by-project" bg_blue="true" thumbnail="/images/home/img_manage_resources_by_project.png" title="프로젝트 기반 운영 체계화" description="복잡한 클라우드 계정 관리를 프로젝트와 부서 단위로 간단하게 정리할 수 있습니다. 사용자별로 권한 설정을 세분화하여 보다 안전하게 클라우드 환경을 운영해보세요." %}}{{% /blocks/feature %}}
+
+{{% blocks/section name="strength" title="our strength" %}}
+<div class="strength-box">
+    {{% blocks/strength thumbnail="cloud" title="클라우드 네이티브" description="SpaceONE은 K8S, gRPC, Helm, Prometheus, Istio 등 클라우드 네이티브 기술을 활용한 마이크로 서비스 아키텍처를 기반으로 설계되었습니다." %}}{{% /blocks/strength %}}
+    {{% blocks/strength thumbnail="architecture" title="플러그인 아키텍처" description="SpaceONE은 플러그인 구조를 통해 지속적으로 기능을 확장할 수 있습니다. 플러그인을 직접 제작하여 다른 사용자와 공유해보세요." %}}{{% /blocks/strength %}}
+    {{% blocks/strength thumbnail="box" title="오픈 API" description="오픈 API를 기반으로 외부 서비스와 연동해보세요. SpaceONE은 손쉽게 커스터마이징이 가능하도록 자유로운 개발 환경을 제공합니다." %}}{{% /blocks/strength %}}
+</div>
+{{% /blocks/section %}}
+
+{{% blocks/section name="universe" title="our universe" bg_blue="true" %}}
+<picture>
+    <source srcset="/images/home/img_universe_m.png" media="(max-width:1023px)">
+    <source srcset="/images/home/img_universe.png" media="(max-width: 1024px)">
+    <img src="/images/home/img_universe.png" alt="our universe" class="img-universe">
+</picture>
+{{% /blocks/section %}}
+
+{{% blocks/section name="mission" %}}
+<h4><span class="lb">멀티 클라우드부터 온프레미스까지,</span> 보다 나은 IT 인프라 운영을 위해 SpaceONE만의 생태계를 함께 만들고자 합니다</h4>
+<figure id="spaceship" class="img-mission"></figure>
+<p class="description"><span class="lb">SpaceONE 우주선에</span> 지금 바로 탑승하세요!</p>
+<a href="https://www.spaceone.org/docs/developers/contribute/" class="btn-link btn-link-gradient" target="_blank">오픈소스 참여하기</a>
+{{% /blocks/section %}}
