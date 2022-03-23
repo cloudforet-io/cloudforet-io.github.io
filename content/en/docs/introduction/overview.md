@@ -17,6 +17,7 @@ description: >
 ### 2. Cloud Orchestration
 * Infrastructure as Code: Code-based infrastructure configuration management
 * Remote Command: Batch command execution over multiple remote servers
+  
 * Application Catalog: Supports easy installation on applications such as Database and Middleware
 
 ### 3. Infra. Analysis

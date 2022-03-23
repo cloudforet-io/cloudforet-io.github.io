@@ -5,7 +5,7 @@ weight: 8
 date: 2022-03-14
 description: >
     Detailed Explanation of SpaceONE CI CD Pipeline and Architecture
-
+no_list: true
 ---
 
 ## SpaceONE CICD Architecture

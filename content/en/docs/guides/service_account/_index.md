@@ -6,6 +6,7 @@ url_dash_board: ""
 date: 2021-06-10
 description: >
     Credential information for each cloud providers.
+no_list: true
 ---
 
 ## Overall

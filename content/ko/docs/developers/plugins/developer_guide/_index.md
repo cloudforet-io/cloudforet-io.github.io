@@ -3,8 +3,9 @@ title: "Developer Guide"
 linkTitle: "Developer Guide"
 weight: 1
 date: 2021-08-04
-description: 
-
+description:
+    Developer Guide
+no_list: true
 ---
 
 Plugin 은 Protobuf 를 사용하는 어떤 언어로도 개발 가능하다.  

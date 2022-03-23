@@ -5,6 +5,7 @@ weight: 2
 date: 2021-08-10
 description: >
     Managing alert for each project.
+no_list: true
 ---
 
 ## Overview
