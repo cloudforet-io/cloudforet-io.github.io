@@ -1,0 +1,21 @@
+.section-index {
+  .entry-wrap {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .entry {
+    padding: 1.5rem 1.25rem;
+    border:solid 1px $navy100;
+    background-color: $white;
+    > h2 {
+      margin-bottom: 0.5rem;
+    }
+    .description {
+      margin-bottom: 1.5rem;
+    }
+    .link-list {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -5,6 +5,7 @@ weight: 3
 date: 2021-08-10
 description: >
     Escalation policy to spread notification
+no_list: true
 ---
 
 ## Overview

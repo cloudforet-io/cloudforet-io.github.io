@@ -5,6 +5,7 @@ weight: 1
 date: 2021-12-21
 description: >
     이 페이지에서는 SpaceONE의 사용자 역할기반 접근관리(RBAC)의 기본 개념에 대해 살펴봅니다.
+no_list: true
 ---
 
 ## How RBAC Works

@@ -5,6 +5,8 @@ weight: 1
 date: 2021-12-21
 description: >
     This page explores the basic concepts of User Role-Based Access Management (RBAC) in SpaceONE.
+listed_on_entry: true
+no_list: true
 ---
 
 ## How RBAC Works

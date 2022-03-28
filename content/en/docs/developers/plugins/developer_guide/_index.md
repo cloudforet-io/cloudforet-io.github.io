@@ -3,8 +3,8 @@ title: "Developer Guide"
 linkTitle: "Developer Guide"
 weight: 2
 date: 2021-08-04
-description: 
-
+description: Developer Guide
+no_list: true
 ---
 
 Plugin can be developed in any language using Protobuf.

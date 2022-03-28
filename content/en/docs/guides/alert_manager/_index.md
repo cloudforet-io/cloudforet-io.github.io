@@ -6,6 +6,7 @@ url_dash_board: ""
 date: 2021-08-10
 description: >
     SpaceONE Incident Management Service
+no_list: true
 ---
 
 ## About Alert Manager
