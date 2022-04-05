@@ -2,7 +2,7 @@
 title: "Release Notes"
 linkTitle: "Release Notes"
 weight: 3
-date: 2022-01-07
+date: 2024-04-05
 description: >
     SpaceONE Release Notes
 ---
