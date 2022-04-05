@@ -1,7 +1,7 @@
 ---
 title: "Release Notes"
 linkTitle: "Release Notes"
-weight: 2
+weight: 3
 date: 2022-01-07
 description: >
     SpaceONE Release Notes
@@ -10,6 +10,7 @@ description: >
 
 | Date       | Version | See Details                                          |
 |------------|---------|------------------------------------------------------|
+| 2022-04-05 | 1.9.4   | [Version 1.9.4-english](./release_note_list/v1.9.4/) |
 | 2022-03-10 | 1.9.3   | [Version 1.9.3-english](./release_note_list/v1.9.3/) |
 | 2022-02-09 | 1.9.1   | [Version 1.9.1-english](./release_note_list/v1.9.1/) |
 | 2021-12-30 | 1.9.0   | [Version 1.9.0-english](./release_note_list/v1.9.0/) |
