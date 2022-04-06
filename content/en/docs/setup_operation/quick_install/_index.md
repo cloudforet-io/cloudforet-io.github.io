@@ -20,9 +20,9 @@ Refer to the link below and proceed with the installation.
 
 
 ## Start Minikube
-- Using v1.21.8 or below is recommended for kubernetes
+- Spaceone requires a minimum of 4GB of memory.
 ~~~bash
-minikube start --driver=docker --kubernetes-version=v1.21.8
+minikube start --driver=docker --memory=4096mb
 ~~~
 
 ## Install SpaceONE
@@ -56,7 +56,7 @@ helm repo update
 ### Install SpaceONE with helm chart
 ~~~bash
 git clone https://github.com/spaceone-dev/charts.git
-cd charts/examples/v1.9.1
+cd charts/examples/v1.9.4
 helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
@@ -68,32 +68,6 @@ kubectl get pod
 
 Check STATUS **Completed** or **Running**.
 It will take some time, so please wait.
-
-### Create user domain
-Delete initialize-spaceone pod and configmap
-```
-kubectl get pod | grep initialize-spaceone
----
-initialize-spaceone-abcd-12345      0/1     Completed   0          --m
-```
-```
-kubectl delete pod initialize-spaceone-abcd-12345
-```
-```
-for i in `kubectl get cm | egrep "spacectl-|start" | awk '{print $1}'`; do kubectl delete cm $i; done
-```
-
-Install spaceone-initializer helm chart for user domain
-```
-helm install user-domain -f user-domain.yaml spaceone/spaceone-initializer
-```
-
-Check that the newly created initialize-space pod is completed.
-```
-kubectl get pod | grep initialize-spaceone
----
-initialize-spaceone-abcd-12345      0/1     Completed   0          --m
-```
 
 ## Port-forwarding
 Since you have installed SpaceONE in your minikube, you don’t have any ingress like ALB or NGINX ingress controller.
