@@ -18,17 +18,11 @@ Refer to the link below and proceed with the installation.
 * [Minikube Install](https://minikube.sigs.k8s.io/docs/start/)
 * [Helm Install](https://helm.sh/docs/intro/install/)
 
-Using v1.20.0 or below is recommended for minikube and kubectl.<br><br>
-Check your version.
-
-~~~bash
-minikube version
-kubectl version
-~~~
 
 ## Start Minikube
+- Spaceone requires a minimum of 4GB of memory.
 ~~~bash
-minikube start --driver=docker
+minikube start --driver=docker --memory=4096mb
 ~~~
 
 ## Install SpaceONE
@@ -62,15 +56,15 @@ helm repo update
 ### Install SpaceONE with helm chart
 ~~~bash
 git clone https://github.com/spaceone-dev/charts.git
-cd charts/examples/v1.7.4
-helm install spaceone -f minikube.yaml spaceone/spaceone --devel
+cd charts/examples/v1.9.4
+helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
 You need to check status of pods.
 ~~~bash
 kubectl get pod
 ~~~
-![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_01.png)
+![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_01.png)
 
 Check STATUS **Completed** or **Running**.
 It will take some time, so please wait.
@@ -85,7 +79,7 @@ kubectl port-forward -n spaceone svc/console-api 8081:80
 ~~~
 
 Open two terminal then run at separate terminal.
-![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_02.png)
+![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_02.png)
 
 ### Tips
 You can run in the background by adding & at the end.
@@ -97,16 +91,16 @@ kubectl port-forward -n spaceone svc/console-api 8081:80 &
 
 ## Start SpaceONE
 
-### Log-In
+### Log-In (Sign in for Root Account)
 Open browser
 ([localhost:8080](http://localhost:8080))
 
 | ID | PASSWORD |
 |---|---|
-| user1@example.com | User1234! |
+| admin | Admin123!@# |
 
-![](/ko/docs/setup_operation/quick_install/quick_install_img/quick_install_image_03.png)
+![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_03.png)
 
 ### Initial Setup
-{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basic Setup in 10 minutes">}}
+{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basci Setup in 10 minutes">}}
 

@@ -63,22 +63,3 @@ To remove the produced images run:
 ```bash 
 docker-compose rm
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
