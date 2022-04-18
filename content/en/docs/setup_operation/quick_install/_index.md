@@ -60,6 +60,20 @@ cd charts/examples/v1.9.4
 helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
+If you use EC2 VM(not localhost), edit minikube.yaml file, ***localhost*** to EC2 public IP.
+
+* ENDPOINT
+* DOMAIN_NAME_REF
+
+~~~
+  production_json:
+      CONSOLE_API:
+        ENDPOINT: http://##### EC2 public IP ####:8081
+      DOMAIN_NAME: spaceone
+      DOMAIN_NAME_REF: spaceone
+      BILLING_ENABLED: []
+~~~
+
 You need to check status of pods.
 ~~~bash
 kubectl get pod
@@ -74,8 +88,8 @@ Since you have installed SpaceONE in your minikube, you don’t have any ingress
 We use **kubectl port-forward**.
 
 ~~~bash
-kubectl port-forward -n spaceone svc/console 8080:80
-kubectl port-forward -n spaceone svc/console-api 8081:80
+kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0'
+kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0'
 ~~~
 
 Open two terminal then run at separate terminal.
@@ -85,8 +99,8 @@ Open two terminal then run at separate terminal.
 You can run in the background by adding & at the end.
 
 ~~~bash
-kubectl port-forward -n spaceone svc/console 8080:80 &
-kubectl port-forward -n spaceone svc/console-api 8081:80 &
+kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
+kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0' &
 ~~~
 
 ## Start SpaceONE
@@ -104,3 +118,11 @@ Open browser
 ### Initial Setup
 {{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basci Setup in 10 minutes">}}
 
+## Reference
+
+If you use Amazon Linux(RedHat Linux).
+
+Install dependency libraries.
+~~~
+yum install socat
+~~~
