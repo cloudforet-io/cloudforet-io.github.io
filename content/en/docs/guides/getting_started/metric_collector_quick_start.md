@@ -2,7 +2,7 @@
 title: "Metric Collector Quick Start"
 linkTitle: "Metric Collector Quick Start"
 weight: 4
-date: 2021-07-31
+date: 2022-04-29
 description: >
     Quick Guide for user to set up Monitoring Metric Collectors for Servers over Clouds.
 ---
@@ -10,57 +10,124 @@ description: >
 ## How to Set up
 Collect monitoring metric data through the following steps:
 
-* [Prerequisites](#preparations)
-* [Get API Key for SpaceONE Service Account](#get-api-key-for-service-account)
-* [Assign SpaceOne Service Account](#assign-spaceone-service-account-ex-metric-collector)
-* [Monitoring Metric Information](#monitoring-metric-information) 
-* [Collecting Monitoring Metric Type](#metric-items-monitoring-collection)
+* Create API Only User
+* Create API Key of API User
+* Register SpaceONE Account
+* Create Metric Collector
 
-## PREPARATIONs
+<br>
+
+We assume that you are ***Domain Admin***, who can
+* Create User
+* Create API Key
+* Create Collector
+* Schedule collection time
+
+
+## Create API Only User
+Menu: ***Administration*** > ***IAM*** > ***User***
+
 To use SpaceONE's Metric Collector, you need the SpaceONE Service Account provided by Provider. Please refer to below for the registration process.
 
-## Get API Key for Service Account
+![](/docs/guides/getting_started/metric-collector_img/create_api_user.png)
+
+1. Add User, which type is ***API Only*** named as ***monitoring-api-user***, any name is OK.
+2. Assign ***Domain Admin*** role
+
+## Create API Key of API User
+Menu: ***Administration*** > ***IAM*** > ***User***
+
 Before add Service Account \(SpaceONE\), You need API Key for SpaceONE Service Provider.
+
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector-api_key.png)
 
 <!-- {% hint style="info" %} -->
 API-Key is provided through the system administrator. If you don't have an API-Key for SpaceONE Service Account, you will need to contact your domain administrator or email support@spaceone.dev.
 <!-- {% endhint %} -->
 
-## Assign SpaceOne Service Account \(Ex. Metric Collector\)
-You can register Service Account on SpaceONE at **Identity** &gt; **Service Account**.<br>
-Select Service Provider, Click **+Add** button.
+## Register SpaceONE Account
+Menu: ***Asset Inventory*** > ***Service Account***
+
+You can register Service Account on SpaceONE.
+
+Select ***SpaceONE*** Provider first,
+Click **+Add** button.
+
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_01.png)
 
 You can register SpaceONE Service Account following the procedure below.
-1. Service Account name
+1. Service Account name (Any name is OK).
 2. Fill out User ID
-3. Fill out Credential \(API Key information\)
+3. Check ***No Project Selected*** in the Project Section
 
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_02.png)
+
+<br>
+
+Open ***api_key.json*** which is downloaded at above ***Get API Key for Service Account*** step.
+
+![](/docs/guides/getting_started/metric-collector_img/api_key_json.png)
+
+
 After filling out the Service Account name and user ID, set the Credential obtained from the domain administrator.‌ <br>
 Credential input values are shown below.‌ <br>
 
-1. _API Key_
-2. _API Key ID_
-3. _Identity Endpoint_
+1. _API Key_ : from api_key.json file
+2. _API Key ID_ : from api_key.json file
+3. _Identity Endpoint_: ***grpc://identity.spaceone.svc.cluster.local:50051/v1***
 
 All values are required.
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_03.png)
 
-<!-- {% hint style="info" %} -->
-The Monitoring Metric collector service should not assign a project.
+## Create Metric Collector
+Menu: ***Asset Inventory*** > ***Collector***
 
-You can skip this procedure.
-<!-- {% endhint %} -->
+To collect metric information, you need ***monitoring-metric-collector*** plugin.
 
-## Monitoring Metric Information
-You can check Monitoring Metric information at **Inventory** &gt; **Server**<br>
-**Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_04.png)
-After the Collector Job is complete, the Monitoring metric is updated.
+
+***+Create*** monitoring-metric-collector
+
 ![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_05.png)
+
+Input any name, then ***confirm***.
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_06.png)
+
+You can check new metric collector is created, and there is one credential registered.
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_07.png)
+
+If you want to test new collector, click ***Collect Data***.
+
+You can check Monitoring Metric information at **Asset Inventory** &gt; **Server**<br>
+
+<br>
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_08.png)
+
+**Note: Collection of Monitoring-metric-collectors is recommended once a day.** 
+After the Collector Job is complete, the Monitoring metric is updated.
 You can check collected data on the **"Raw Data"** tab of **Data -&gt; Monitoring**.
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_09.png)
+
+All done
+
+## Check metric value
+
+In a Server menu, you can check the result.
+First, customize your table column.
+
+<br>
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_10.png)
+
+<br>
+
+You can check any attribute what you want to see. You can also adjust the column order by moving items.
+
+![](/docs/guides/getting_started/metric-collector_img/metric-collector_image_11.png)
 
 ## Metric items \(Monitoring Collection\)
 <!-- {% hint style="info" %} -->
