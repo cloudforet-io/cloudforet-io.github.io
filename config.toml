@@ -111,7 +111,7 @@ date = ["date", ":filename", "publishDate", "lastmod"]
 version_menu = "Versions"
 copyright = "SpaceONE Team"
 #privacy_policy = "https://policies.google.com/privacy"
-latest = "v1.9.1"
+latest = "v1.9.6"
 #archived_version = true
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/spaceone-dev/docs"
@@ -145,9 +145,9 @@ navbar_logo = true
 footer_about_disable = true
 
 [[params.versions]]
-fullversion = "v1.9.1"
-version = "v1.9.1"
-githubbranch = "release-1.9.1"
+fullversion = "v1.9.6"
+version = "v1.9.6"
+githubbranch = "release-1.9.6"
 docsbranch = "master"
 # Set master version url
 url = "/"
