@@ -83,7 +83,7 @@ No Resource라는 토스트를 보여주고, redirect url이 있을 시 해당 u
 <br>
 
 - list 등 일반적인 작업
-```
+```typescript
 try {
     특정 동작
 } catch (e) {
@@ -94,7 +94,7 @@ try {
 - create/update 등 실패 시 toast message를 보여주어야 하는 작업
 <br>
 
-```
+```typescript
 try {
     특정 동작
 } catch (e) {
