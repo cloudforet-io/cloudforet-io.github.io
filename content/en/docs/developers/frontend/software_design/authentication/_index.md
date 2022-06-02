@@ -37,7 +37,8 @@ Authenticator는 다음과 같은 구조를 가집니다.
 최상위 Authenticator는 아주 기본적인 signIn과 signOut 메서드만 가지는 추상 클래스입니다.
 <br />
 <br />
-```
+
+```typescript
 abstract class Authenticator {
 	static async signIn(필요한 매개변수): Promise<void> {
     	// sign in 로직
@@ -69,7 +70,8 @@ signOut에서는 vuex에 작성해놓은 signOut 메서드를 호출합니다.
 각 커스텀 인증에 맞는 Sign In, Sign Out 로직과 추상 클래스 Authenticator의 인증(기본 인증)을 수행하는 로직이 필요합니다.
 Authenticator의 Sign In은 credentials라는 data를 필요로 하고, 이 credentials 안에 들어가는 데이터는 모든 커스텀 인증마다 상이합니다.
 <br />
-```
+
+```typescript
 // custom-auth.ts
 
 class CustomAuth extends Authenticator {
@@ -93,7 +95,7 @@ class CustomAuth extends Authenticator {
 <br />
 이제 어떤 인증 클래스를 부를 건지 결정하는 loader를 간단하게 만들어보도록 합니다.
 
-```
+```typescript
 export const loadAuth = (authType?) => {
     if (authType === 'CUSTOM_AUTH') return CustomAuth;
     return SpaceAuth;
@@ -106,7 +108,7 @@ SignIn은 개별 템플릿을 가지지만, SignOut은 어디에서든 호출될
 <br />
 위의 작업을 하고난 후 마지막 작업은 폼 렌더링입니다.
 
-```
+```typescript
 //Custom Auth의 template(external/custom/template/CUSTOM_AUTH.vue)
 
 <template>
@@ -136,7 +138,8 @@ vue에는 <component :is="xxx">라는 문법으로 다이나믹하게 컴포넌�
 해당 문법을 이용하여
 <br />
 <br />
-```
+
+```vue
 //sign-in page
 <component :is="component" class="sign-in-template"
 	@sign-in="handleSignIn"
@@ -146,7 +149,7 @@ vue에는 <component :is="xxx">라는 문법으로 다이나믹하게 컴포넌�
 
 이렇게 템플릿 부분에 작성해주고, 아래 스크립트 부분에서
 
-```
+```vue
 //sign-in page
   const state = reactive({
   	...
@@ -165,6 +168,7 @@ vue에는 <component :is="xxx">라는 문법으로 다이나믹하게 컴포넌�
   })
 
 ```
+
 <br />
 위와 같이 dynamic import 방식을 사용하여 컴포넌트를 렌더링합니다.
 
