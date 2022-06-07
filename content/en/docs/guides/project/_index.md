@@ -1,10 +1,8 @@
 ---
 title: "Project"
 linkTitle: "Project"
-weight: 3
-url_dash_board: "" 
-date: 2021-06-10
+weight: 2
+date: 2022-06-07
 description: >
-    About Project Management
+    페이지 설명
 ---
-

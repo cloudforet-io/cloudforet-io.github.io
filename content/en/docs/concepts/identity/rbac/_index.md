@@ -45,7 +45,7 @@ SpaceONE Identity Service verifies the Role/Policy granted to each user so that 
 ### Resource
 
 If a user wants to access a resource in a specific SpaceONE project, you can grant the user an appropriate role and then add it to the target project as a member to make it accessible.
-Examples of these resources are [Server](/docs/guides/inventory/server/), [Project](/docs/guides/project/project_management/), [Alert](/docs/guides/alert_manager/alert/) .
+Examples of these resources are [Server](/docs/guides_v1/inventory/server/), [Project](/docs/guides_v1/project/project_management/), [Alert](/docs/guides_v1/alert_manager/alert/) .
 
 In order to conveniently use the resources managed within SpaceONE for each service, we publish the predefined Role/Policy.
 If you want to define your own access scope within the company, you can create a Custom Policy/Custom Role and apply it to the internal organization.
@@ -90,9 +90,9 @@ Depending on the role type, the user can access all resources within the domain 
 - Domain: You can access all resources within the domain.
 - Project: You can access the resources within the specified Project.
 
-Project type users can access resources within the project by being specific [added as a member of the project](/docs/guides/project/project_management/).
+Project type users can access resources within the project by being specific [added as a member of the project](/docs/guides_v1/project/project_management/).
 
-If you [Add as member of Project Group](/docs/guides/project/project_group_management/), the right to access all subordinate project resources is inherited.
+If you [Add as member of Project Group](/docs/guides_v1/project/project_group_management/), the right to access all subordinate project resources is inherited.
 
 ### Organization
 
@@ -101,7 +101,7 @@ All resources in SpaceONE can be hierarchically managed through the following or
 All users can specify access targets in such a way that they are _**connected (RoleBinding)**_ to the organization.
 - _**Domain**_ : This is the highest level organization. Covers all projects and project groups.
 - _**PROJECT GROUP**_ : This is an organization that can integrate and manage multiple projects.
-- _**Projects**_ : The smallest organizational unit in SpaceONE. All cloud resources belong to a project. 
+- _**Projects**_ : The smallest organizational unit in SpaceONE. All cloud resources belong to a project.
 
 ![](/docs/concepts/identity/rbac/rbac_img/rbac_concept_img03.png)
 

@@ -1,8 +1,8 @@
 ---
 title: "Advanced"
 linkTitle: "Advanced"
-weight: 10
-date: 2021-07-31
+weight: 9
+date: 2022-06-07
 description: >
-    Detailed use case of SpaceONE
+    Advanced 페이지 설명
 ---

@@ -47,6 +47,6 @@ Policy는 Permission Scope에 따라 아래와 같이 구분 가능 합니다.
 
 ## Custom Policy
 
-도메인 자체적 으로 Policy를 관리 하고자 할 경우, [Custom Policy 관리하기](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/) 문서를 참고 해 주세요. 
+도메인 자체적 으로 Policy를 관리 하고자 할 경우, [Custom Policy 관리하기](/ko/docs/guides_v1/advanced/spaceone_cli/managing_role_policy/) 문서를 참고 해 주세요. 
 
 

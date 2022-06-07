@@ -15,7 +15,7 @@ description: >
 [The docs repository](https://github.com/spaceone-dev/docs) 에서 fork 한 후 페이지를 생성합니다.
 
 ## 제목 및 파일 이름 작성
-제목에서 밑줄(_)로 구분된 단어를 사용하여 파일 이름을 생성합니다. 예를 들어, 제목이 [Project Management](/docs/guides/project/project_management/)인 파일 이름은 project_management.md입니다.
+제목에서 밑줄(_)로 구분된 단어를 사용하여 파일 이름을 생성합니다. 예를 들어, 제목이 [Project Management](/docs/guides_v1/project/project_management/)인 파일 이름은 project_management.md입니다.
 
 
 ## Front matter에 필드 추가

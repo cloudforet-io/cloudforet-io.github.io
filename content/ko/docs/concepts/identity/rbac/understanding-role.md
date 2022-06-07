@@ -55,14 +55,14 @@ Role Type은 도메인내의 접근 가능한 자원의 범위를 지정 합니�
 - DOMAIN : Domain내의 모든 자원에 Access 가능 합니다. 
 - PROJECT : Member로 추가된 Project내의 모든 자원에 Access 가능 합니다.
 
-Project내의 Member로 추가하는 방법은 [Project의 Member로 추가](/ko/docs/guides/project/project_management/) 를 참고 해 주세요.
+Project내의 Member로 추가하는 방법은 [Project의 Member로 추가](/ko/docs/guides_v1/project/project_management/) 를 참고 해 주세요.
 
 ### Add Member
 
 SpaceONE내의 모든 자원들은 아래와 같이 계층적으로 관리 됩니다. 
 도메인의 관리자는 각 Project에 Member를 추가하여 사용자를 프로젝트내의 자원에 Access 할 수 있도록 관리할 수 있습니다.
 여러 Project에 대한 Access가 필요한 사용자의 경우는 상위 Project Group에 Member로 추가하여 하위 계층에 소속된 모든 Project에 대한 Access할 수 있습니다.  
-Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 추가](/ko/docs/guides/project/project_group_management/)를 참고 해주세요. 
+Project Group의 Member로 추가하는 방법은 [Project Group의 Member로 추가](/ko/docs/guides_v1/project/project_group_management/)를 참고 해주세요. 
 
 
 ## Role Hierarchy
@@ -95,7 +95,7 @@ Role은 아래와 같은 규칙으로 적용 됩니다.
 ## Managing Roles
 
 spacectl을 통해 도메인 자체적 으로 Role을 관리할 수 있습니다.
-[Role 관리하기](/ko/docs/guides/advanced/spaceone_cli/managing_role_policy/) 문서를 참고 해 주세요.
+[Role 관리하기](/ko/docs/guides_v1/advanced/spaceone_cli/managing_role_policy/) 문서를 참고 해 주세요.
 
 
 

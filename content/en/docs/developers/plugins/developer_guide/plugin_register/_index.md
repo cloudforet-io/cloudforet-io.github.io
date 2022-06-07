@@ -66,10 +66,10 @@ plugin_id                              | name
  plugin-voicecall-notification-protocol_settings | Voicecall Notification Protocol
  plugin-slack-notification-protocol_settings     | Slack Notification Protocol
  plugin-telegram-notification-protocol_settings  | Telegram Notification Protocol
- 
+
  Count: 9 / 9
 ~~~
 
 
 Detailed usage of spacectl can be found on this page.
-[Spacectl CLI Tool](/docs/guides/advanced/spaceone_cli/) 
+[Spacectl CLI Tool](/docs/guides_v1/advanced/spaceone_cli/)

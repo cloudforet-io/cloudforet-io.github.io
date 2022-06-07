@@ -55,14 +55,14 @@ Role Type specifies the range of accessible resources within the domain.
 - DOMAIN: Access is possible to all resources in the domain.
 - PROJECT: Access is possible to all resources in the project added as a member.
 
-Please refer to [Add as Project Member](/docs/guides/project/project_management/) for how to add a member as a member in the project.
+Please refer to [Add as Project Member](/docs/guides_v1/project/project_management/) for how to add a member as a member in the project.
 
 ### Add Member
 
 All resources in SpaceONE are hierarchically managed as follows.
 The administrator of the domain can manage so that users can access resources within the project by adding members to each project.
 Users who need access to multiple projects can access all projects belonging to the lower hierarchy by adding them to the parent project group as a member.
-For how to add as a member of the Project Group, refer to [Add as a Member of Project Group](/docs/guides/project/project_group_management/).
+For how to add as a member of the Project Group, refer to [Add as a Member of Project Group](/docs/guides_v1/project/project_group_management/).
 
 
 ## Role Hierarchy
@@ -95,7 +95,7 @@ All SpaceOne domains automatically include _**Default Role**_ when created. Belo
 ## Managing Roles
 
 Roles can be managed by the domain itself through spacectl.
-Please refer to the [Managing Roles](/docs/guides/advanced/spaceone_cli/managing_role_policy/) document.
+Please refer to the [Managing Roles](/docs/guides_v1/advanced/spaceone_cli/managing_role_policy/) document.
 
 
 
