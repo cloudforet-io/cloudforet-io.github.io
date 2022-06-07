@@ -2,7 +2,7 @@
 title: "Operation"
 linkTitle: "Operation"
 weight: 5
-url_dash_board: "/docs/guides/operation" 
+url_dash_board: "/docs/guides_v1/operation"
 date: 2022-01-24
 description: >
     Operation Guide of SpaceONE

@@ -2,7 +2,7 @@
 title: "Install Guide"
 linkTitle: "Install Guide"
 weight: 1
-url_dash_board: "/docs/guides/install_guide" 
+url_dash_board: "/docs/guides_v1/install_guide"
 date: 2021-07-31
 description: >
     Install Guide of SpaceONE
@@ -95,7 +95,7 @@ kubectl create -f shared.yaml
 ### Install
 
 * update values.yaml
-* update database.yaml 
+* update database.yaml
 * update frontend.yaml
 
 If you use mongodb cluster,

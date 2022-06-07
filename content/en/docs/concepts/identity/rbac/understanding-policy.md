@@ -47,6 +47,6 @@ Detailed permission is automatically updated if necessary. Policy was created by
 
 ## Custom Policy
 
-If you want to manage the policy by the domain itself, please refer to the [Managing Custom Policy](/docs/guides/advanced/spaceone_cli/managing_role_policy/) document. 
+If you want to manage the policy by the domain itself, please refer to the [Managing Custom Policy](/docs/guides_v1/advanced/spaceone_cli/managing_role_policy/) document. 
 
 

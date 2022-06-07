@@ -2,7 +2,7 @@
 title: "Advanced Configuration Guide"
 linkTitle: "Advanced Configuration"
 weight: 4
-url_dash_board: "/docs/guides/advanced_configuration" 
+url_dash_board: "/docs/guides_v1/advanced_configuration"
 date: 2021-07-31
 description: >
     Advanced Configuration Guide of SpaceONE

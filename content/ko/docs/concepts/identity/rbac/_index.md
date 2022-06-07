@@ -19,7 +19,7 @@ SpaceONE의 RBAC(Role Based Access Control)을 통해 **누가(who)**, **어떠�
 이를 통해 복잡한 프로젝트 관계 속에서 사용자의 역할관리를 손쉽게 관리할 수 있습니다.
 
 Role은 [Policy](/ko/docs/concepts/identity/rbac/#policy)를 통해 대상이 지정된 자원에 대해 어떠한 Action을 할 수 있는지 정의 합니다.
-또한 Role은 각각의 사용자에 바인딩 됩니다.  
+또한 Role은 각각의 사용자에 바인딩 됩니다.
 아래의 다이어그램은 RBAC를 구성하는 사용자와 Role 및 Project 간의 관계를 나타냅니다.
 
 ![](/ko/docs/concepts/identity/rbac/rbac_img/rbac_concept_img01.png)
@@ -29,7 +29,7 @@ Role은 [Policy](/ko/docs/concepts/identity/rbac/#policy)를 통해 대상이 �
 - _**Role**_. 각 사용자별 부여할 수 있는 접근권한 정책의 모음 입니다. 모든 Role은 하나의 Policy를 반드시 필요로 합니다.
   더 상세한 설명은 [Understanding Role](/ko/docs/concepts/identity/rbac/understanding-role/)를 참고해주세요
 
-- _**Project**_. 권한이 적용되는 프로젝트 혹은 프로젝트 그룹 입니다.  
+- _**Project**_. 권한이 적용되는 프로젝트 혹은 프로젝트 그룹 입니다.
 
 - _**User**_. 사용자는 콘솔에 로그인하여 UI를 이용하는 사용자와 API 사용자, SYSTEM 사용자를 모두 포함 합니다.
   각 사용자들은 RoleBinding 절차를 통해 복수의 Role과 연결 됩니다. 이를 통해 적절한 권한을 받아 SpaceONE의 다양한 자원들에 접근이 가능합니다.
@@ -44,7 +44,7 @@ SpaceONE Identity Service는 각 사용자에게 부여된 Role/Policy를 확인
 ### Resource
 
 만약 사용자가 특정한 SpaceONE 프로젝트 내의 자원에 접근 하고자 한다면, 해당 사용자에게 적합한 Role을 부여한 후 대상 프로젝트에 멤버로 추가하여 접근 가능할게 할 수 있습니다.
-이러한 자원의 예는 [Server](/ko/docs/guides/inventory/server/), [Project](/ko/docs/guides/project/project_management/), [Alert](/docs/guides/alert_manager/alert/) 입니다.
+이러한 자원의 예는 [Server](/ko/docs/guides_v1/inventory/server/), [Project](/ko/docs/guides_v1/project/project_management/), [Alert](/docs/guides_v1/alert_manager/alert/) 입니다.
 
 SpaceONE내에서 관리되는 자원들을 각 서비스별로 편리하게 이용할 수 있게 하기 위해, 사전에 정의된 Role/Policy를 게시하고 있습니다.
 회사 내부적으로 자체 접근범위를 정의하고 싶을 경우 Custom Policy/Custom Role을 생성하여 내부 조직에 적용할 수도 있습니다.
@@ -57,17 +57,17 @@ SpaceONE내에서 관리되는 자원들을 각 서비스별로 편리하게 이
 정책은 permission의 모음 입니다. permission에는 스페이스원의 각 자원에 대해 허용되는 접근 범위가 정의 되어 있습니다.
 정책은 Role을 통해, 각 사용자에게 부여될 수 있습니다. 정책은 Marketplace에 게시하여 다른사용자들이 사용할 수도 있고, 특정 도메인만을 위해 Private 하게 게시될 수도 있습니다.
 
-이 Permission은 아래와 같은 형태로 표현됩니다. _**{service}.{resource}.{verb}**_ 
+이 Permission은 아래와 같은 형태로 표현됩니다. _**{service}.{resource}.{verb}**_
 예를 들자면 _**inventory.Server.list**_ 와 같은 형태 입니다.
 
 Permission은 SpaceONE API Method에 대응 되기도 합니다. 이것은 각각의 SpaceONE내의 microservice 각각의 노출된 API method과 긴밀하게 연관 되어 있기 때문 입니다.
-그러므로, API를 호출하는 사용자가 method를 호출시 대응하는 permission을 필요로 합니다. 
+그러므로, API를 호출하는 사용자가 method를 호출시 대응하는 permission을 필요로 합니다.
 
 예를 들어, Inventory 서비스의 Server 리스트를 보기 위해 inventory.Server.list를 호출 하고자 한다면
 사용자는 대응되는 _**inventory.Server.list**_ permission을 role에 포함하고 있어야 합니다.
 
 Permission은 사용자에게 직접적으로 부여할 수 없습니다. 대신에 적절한 permission의 모음을 Policy로 정의하여, 사용자에게 Role을 통해 할당할 수 있습니다.
-자세한 설명은 [Understanding Policy](/ko/docs/concepts/identity/rbac/understanding-policy/)를 참고 해주세요. 
+자세한 설명은 [Understanding Policy](/ko/docs/concepts/identity/rbac/understanding-policy/)를 참고 해주세요.
 
 ### Roles
 
@@ -81,7 +81,7 @@ Role은 접근 대상과 Policy의 조합으로 구성되어 있습니다. 사�
 
 ### Members
 
-SpaceONE 내에서 관리하는 클라우드 자원들은 모두 프로젝트 단위로 관리 됩니다. 
+SpaceONE 내에서 관리하는 클라우드 자원들은 모두 프로젝트 단위로 관리 됩니다.
 그러므로, 각 사용자에게 역할을 부여하고 프로젝트 멤버로 추가하여, 자원에 접근 할 수 있도록 제어할 수 있습니다.
 
 Role 타입에 따라 사용자는 도메인내의 전체 자원에 접근 하거나, 지정된 Project 내의 자원에 Access 할 수 있습니다.
@@ -89,18 +89,18 @@ Role 타입에 따라 사용자는 도메인내의 전체 자원에 접근 하�
 - Domain : 도메인내의 전체 자원에 접근 할 수 있습니다.
 - Project : 지정된 Project 내의 자원에 접근 할 수 있습니다.
 
-Project 타입의 사용자는 특정 [Project의 Member로 추가](/ko/docs/guides/project/project_management/) 됨으로서 해당 프로젝트 내의 자원에 접근이 가능 합니다.
+Project 타입의 사용자는 특정 [Project의 Member로 추가](/ko/docs/guides_v1/project/project_management/) 됨으로서 해당 프로젝트 내의 자원에 접근이 가능 합니다.
 
-[Project Group의 Member로 추가](/ko/docs/guides/project/project_group_management/)하면, 하위 모든 프로젝트 자원에 접근할 수 있는 권한이 승계 됩니다.
+[Project Group의 Member로 추가](/ko/docs/guides_v1/project/project_group_management/)하면, 하위 모든 프로젝트 자원에 접근할 수 있는 권한이 승계 됩니다.
 
 ### Organization
 
-SpaceONE내의 모든 자원들은 아래와 같은 조직 구조를 통한 계층적인 관리가 가능합니다. 
+SpaceONE내의 모든 자원들은 아래와 같은 조직 구조를 통한 계층적인 관리가 가능합니다.
 
-모든 사용자는 조직에 _**연결(RoleBinding)**_ 되는 방식으로 접근 대상을 지정 할 수 있습니다. 
-- _**Domain**_ : 가장 상위 레벨의 조직 입니다. 모든 프로젝트와 프로젝트 그룹을 포괄 합니다. 
-- _**PROJECT GROUP**_ : 복수의 Project를 통합하여 관리 할 수 있는 조직 입니다. 
-- _**Projects**_ : SpaceONE내의 가장 작은 조직 단위 입니다. 모든 클라우드의 자원들은 프로젝트에 소속 됩니다.  
+모든 사용자는 조직에 _**연결(RoleBinding)**_ 되는 방식으로 접근 대상을 지정 할 수 있습니다.
+- _**Domain**_ : 가장 상위 레벨의 조직 입니다. 모든 프로젝트와 프로젝트 그룹을 포괄 합니다.
+- _**PROJECT GROUP**_ : 복수의 Project를 통합하여 관리 할 수 있는 조직 입니다.
+- _**Projects**_ : SpaceONE내의 가장 작은 조직 단위 입니다. 모든 클라우드의 자원들은 프로젝트에 소속 됩니다.
 
 ![](/ko/docs/concepts/identity/rbac/rbac_img/rbac_concept_img03.png)
 

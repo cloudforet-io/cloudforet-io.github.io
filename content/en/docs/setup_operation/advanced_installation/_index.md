@@ -2,7 +2,7 @@
 title: "Advanced Installation Guide"
 linkTitle: "Advanced Installation"
 weight: 3
-url_dash_board: "/docs/guides/advanced_installation" 
+url_dash_board: "/docs/guides_v1/advanced_installation"
 date: 2021-12-08
 description: >
     Advanced Installation Guide of SpaceONE

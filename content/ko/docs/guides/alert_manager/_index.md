@@ -2,9 +2,7 @@
 title: "Alert Manager"
 linkTitle: "Alert Manager"
 weight: 5
-date: 2021-08-10
+date: 2022-06-07
 description: >
-    Incident Management Service
+    Alert Manager 간단소개
 ---
-
-![SpaceONE Alert Manager Main](/ko/docs/guides/alert_manager/monitoring_main_01.png)
