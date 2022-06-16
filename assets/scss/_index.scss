@@ -61,7 +61,7 @@ $gray400: #5F616D;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #65cba0 0%, #cf88a0 52.6%, #5ca2b1 100%);
+    background: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
     border-radius: 1.875rem;
   }
   &:hover {
@@ -70,13 +70,13 @@ $gray400: #5F616D;
   }
 }
 .btn-link-green {
-  background: $green100;
+  background: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 }
 .btn-link-gradient {
   top: 0.125rem;
   min-width: calc(9rem - 0.25rem);
   height: calc(2.5rem - 0.25rem);
-  background: $navy500;
+  background: #717dba;
   &:after {
     width: calc(100% + 0.25rem);
     height: calc(100% + 0.25rem);
@@ -96,54 +96,10 @@ $gray400: #5F616D;
   }
 }
 
-// background
-@function multiple-box-shadow($n, $density) {
-  $value: "#{random($density)}vh #{random(100)}vh #fff";
-  @for $i from 2 through $n {
-    $value: "#{$value} , #{random($density)}vh #{random(100)}vh #fff";
-  }
-  @return unquote($value);
-}
-$shadows-small: multiple-box-shadow(700,300);
-$shadows-medium: multiple-box-shadow(200,300);
-$shadows-big: multiple-box-shadow(100,300);
-.background-stars {
-  content:'';
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-}
-.stars {
-  width: 1px;
-  height: 1px;
-  box-shadow: $shadows-small;
-  background-color:transparent;
-}
-.stars2 {
-  width: 2px;
-  height: 2px;
-  box-shadow: $shadows-medium;
-  animation: animStar 1.7s linear 200;
-}
-.stars3 {
-  width: 3px;
-  height: 3px;
-  box-shadow: $shadows-big;
-}
-@keyframes animStar {
-  from {opacity:1;}
-  50% {opacity:.3;}
-  to {opacity:1;}
-}
-
 // section
 .td-home {
-  background-color: #090a0f;
+  //background-color: #090a0f;
+  background-color: #1F1B38;
   word-break: keep-all;
 
   .td-outer {
@@ -158,7 +114,7 @@ $shadows-big: multiple-box-shadow(100,300);
     overflow: hidden;
     height: 100vh;
     &.bg-blue {
-      background-color: rgba(0, 27, 51, 0.5);
+      background-color: rgba(220, 218, 233, 0.16);
     }
     .inner {
       position: relative;
@@ -192,16 +148,15 @@ $shadows-big: multiple-box-shadow(100,300);
   .section-main {
     height: 100vh;
     position: relative;
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 100vw 100vh;
-    background-image: url("/images/home/bg_section_main.png");
+    background: url("/images/home/bg_universe.png") no-repeat 50% 0;
+    background-size: 100% auto;
+
     h2 {
       font-size: 4rem;
       font-weight: 500;
       line-height: 1;
       em {
-        background: linear-gradient(to right, #65cba0, #cf88a0, #5ca2b1);
+        background: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -235,6 +190,7 @@ $shadows-big: multiple-box-shadow(100,300);
   }
 
   .section-feature {
+
     .feature {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -266,6 +222,14 @@ $shadows-big: multiple-box-shadow(100,300);
         border-radius: 0.5rem;
       }
     }
+  }
+
+  .feature-management {
+    background-image: url("/images/home/bg_universe.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-x: 50%;
+    background-position-y: -100vh;
   }
 
   .feature-notification {
@@ -353,7 +317,7 @@ $shadows-big: multiple-box-shadow(100,300);
         z-index: -1;
         width: 100%;
         height: 100%;
-        background: #001b33;
+        background: rgba(220, 218, 233, 0.16);
         opacity: 0.3;
         box-shadow: 0 0.25rem 0.9375rem rgba(0, 92, 179, 0.3);
         border-radius: 0.5rem;
@@ -452,7 +416,8 @@ $shadows-big: multiple-box-shadow(100,300);
           width: 100vw;
           height: 100%;
           max-height:  46.1875rem;
-          background-color: rgba(0, 27, 51, 0.5);
+          background-color: rgba(220, 218, 233, 0.16);
+          border:solid 1px red;
         }
       }
     }
@@ -512,9 +477,6 @@ $shadows-big: multiple-box-shadow(100,300);
 
     .section-main {
       height: 42rem;
-      background-size: 100vw 100%;
-      background-position: 0 0;
-      background-image: url("/images/home/bg_section_main_m.png");
       .inner {
         padding-top: 8.75rem;
       }

@@ -1,7 +1,6 @@
 <nav class="navbar td-navbar">
     <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-        <img src="/images/logo.svg" alt="" class="logo">
-        <img src="/images/logo_text.svg" alt="SpaceONE" class="logo-text">
+        {{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}
     </a>
     <button class="btn btn-menu fas fa-bars" id="btn-menu"> Menu</button>
     <div class="nav-list-wrap">
