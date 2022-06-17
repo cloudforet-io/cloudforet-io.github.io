@@ -26,3 +26,9 @@
     padding-top: $navbar-height;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .td-outer {
+    padding-top: calc(#{$navbar-height} + 2.25rem);
+  }
+}

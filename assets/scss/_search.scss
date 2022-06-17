@@ -8,16 +8,15 @@
 .td-search-input {
   max-width: 100%;
   height: 2rem;
-  background-color: rgba(255,255,255,0.3);
-  border: solid 0.0625rem $white;
-  border-radius: 0.125rem;
+  background-color: rgba($white, 0.3);
+  border: solid 1px rgba($white, 0.3);
+  border-radius: 0.25rem;
   font-size: 1rem;
   font-family: "Font Awesome 5 Free";
 
   &::placeholder {
     color: $navy100 !important;
   }
-
 }
 
 .popover.offline-search-result {

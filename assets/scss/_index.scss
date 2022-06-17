@@ -30,17 +30,12 @@ body {
 }
 
 // color set (only for home)
-$primary100: #F8F8FC;
-$primary200: #EBEAF6;
-$primary300: #A8A5CE;
-$primary400: #8C81D1;
-$gray100: #F7F7F7;
-$gray200: #CED0D6;
-$gray300: #A7A9B2;
-$gray400: #5F616D;
+$dark-bg: rgba(220, 218, 233, 0.16);
+$gradient1: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
+$gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 
-// button link
 .btn-link {
+  // button link
   position: relative;
   display: flex;
   justify-content: center;
@@ -61,7 +56,7 @@ $gray400: #5F616D;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
+    background: $gradient1;
     border-radius: 1.875rem;
   }
   &:hover {
@@ -70,7 +65,7 @@ $gray400: #5F616D;
   }
 }
 .btn-link-green {
-  background: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
+  background: $gradient2;
 }
 .btn-link-gradient {
   top: 0.125rem;
@@ -98,8 +93,7 @@ $gray400: #5F616D;
 
 // section
 .td-home {
-  //background-color: #090a0f;
-  background-color: #1F1B38;
+  background-color: $navy600;
   word-break: keep-all;
 
   .td-outer {
@@ -113,8 +107,8 @@ $gray400: #5F616D;
   .section {
     overflow: hidden;
     height: 100vh;
-    &.bg-blue {
-      background-color: rgba(220, 218, 233, 0.16);
+    &.bg-dark {
+      background-color: $dark-bg;
     }
     .inner {
       position: relative;
@@ -131,7 +125,7 @@ $gray400: #5F616D;
       padding-left: 1.5rem;
       margin: 0 auto;
       text-align: center;
-      color: $primary200;
+      color: $purple100;
       letter-spacing: -0.01em;
     }
     h3 {
@@ -155,8 +149,9 @@ $gray400: #5F616D;
       font-size: 4rem;
       font-weight: 500;
       line-height: 1;
+      color: $purple100;
       em {
-        background: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
+        background: $gradient1;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -166,7 +161,7 @@ $gray400: #5F616D;
     .sub-title {
       max-width: 39.0625rem;
       margin: 0 auto 1.5rem;
-      color: $gray300;
+      color: $navy000;
       font-size: 1.5rem;
       line-height: 1.3;
     }
@@ -203,7 +198,7 @@ $gray400: #5F616D;
         justify-content: center;
         text-align: left;
         h4 {
-          color: $primary300;
+          color: $purple200;
           font-size: 2.25rem;
           line-height: 1.3;
           font-weight: 500;
@@ -251,8 +246,30 @@ $gray400: #5F616D;
 
   .feature-analysis {
     .feature {
+      position: relative;
+      z-index: 1;
       .contents {
         order: 1;
+      }
+    }
+    .inner {
+      &:before,
+      &:after {
+        content:'';
+        position: absolute;
+        left: 50%;
+        display: inline-block;
+        width: 35rem;
+        height: 35rem;
+        margin-top: -18rem;
+        margin-left: -15rem;
+        background-size: 100%;
+        background-image: url("/images/home/bg_ellipse_purple.png");
+      }
+      &:after {
+        margin-top: 15rem;
+        margin-left: -8rem;
+        background-image: url("/images/home/bg_ellipse_green.png");
       }
     }
   }
@@ -269,6 +286,9 @@ $gray400: #5F616D;
   }
 
   .section-strength {
+    h3 {
+      text-align: center;
+    }
     .strength-box {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -297,8 +317,7 @@ $gray400: #5F616D;
         font-size: 1.75rem;
         line-height: 2.1875rem;
         letter-spacing: 0.0625rem;
-        color: $primary300;
-        letter-spacing: -0.0325rem;
+        color: $purple200;
       }
       .description {
         margin-bottom: 0;
@@ -306,7 +325,7 @@ $gray400: #5F616D;
         font-size: 1.25rem;
         line-height: 1.6;
         opacity: 0.8;
-        color: $primary200;
+        color: $purple100;
       }
       &::after {
         content: '';
@@ -317,9 +336,8 @@ $gray400: #5F616D;
         z-index: -1;
         width: 100%;
         height: 100%;
-        background: rgba(220, 218, 233, 0.16);
+        background: $dark-bg;
         opacity: 0.3;
-        box-shadow: 0 0.25rem 0.9375rem rgba(0, 92, 179, 0.3);
         border-radius: 0.5rem;
       }
     }
@@ -352,7 +370,7 @@ $gray400: #5F616D;
       max-width: 40rem;
       font-size: 1.5rem;
       line-height: 1.3;
-      color: $primary200;
+      color: $purple100;
       margin-bottom: 0;
       margin-right: auto;
       margin-left: auto;
@@ -363,13 +381,18 @@ $gray400: #5F616D;
       height: 6.875rem;
     }
     .description {
-      width: 43.75rem;
       font-weight: 500;
       font-size: 1.875rem;
-      background: linear-gradient(to right, #65cba0, #cf88a0, #5ca2b1);
+      background: $gradient1;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    .btn-link {
+      background: $navy600;
+      &:hover {
+        background-color: transparent;
+      }
     }
   }
 
@@ -401,24 +424,12 @@ $gray400: #5F616D;
 @media screen and (min-width: 1024px) {
   .td-home  {
     .section-universe {
-      &.bg-blue{
+      &.bg-dark{
         background-color: transparent;
       }
       .inner {
         padding-top: 3.75rem;
         max-width: none;
-        &:before {
-          content:' ';
-          display: block;
-          position: absolute;
-          left: 0;
-          z-index: -1;
-          width: 100vw;
-          height: 100%;
-          max-height:  46.1875rem;
-          background-color: rgba(220, 218, 233, 0.16);
-          border:solid 1px red;
-        }
       }
     }
   }
@@ -512,6 +523,10 @@ $gray400: #5F616D;
       }
     }
 
+    .feature-management {
+      background-position-y: -42rem;
+    }
+
     .feature-notification {
       .feature {
         .contents {
@@ -527,6 +542,12 @@ $gray400: #5F616D;
       .feature {
         .contents {
           order: initial;
+        }
+      }
+      .inner {
+        &:before,
+        &:after {
+          display: none;
         }
       }
     }
@@ -561,13 +582,6 @@ $gray400: #5F616D;
       .inner {
         max-width: unset;
         padding: 0;
-      }
-      h3 {
-        visibility: visible;
-        top: 3.5rem;
-        left: auto;
-        width: 100%;
-        transform: translateY(0);
       }
       .img-universe {
         width: 100%;
@@ -612,14 +626,10 @@ $gray400: #5F616D;
         flex-direction: column;
         gap: 2.4rem;
       }
-      .img-spaceman {
-        &#spaceman {
-          bottom: 1rem;
-          left: unset;
-          right: 0;
-          margin-left: 0;
-        }
-      }
+    }
+
+    .feature-management {
+      background-position-y: -51.4rem;
     }
 
     .section-feature {

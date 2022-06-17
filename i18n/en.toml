@@ -6,3 +6,6 @@ other = "Team CloudONE"
 
 [meta_keywords]
 other = "cloud management platform, multi cloud management, open source project, cloud resource, multi-cloud accounts, cloud orchestration, cloud cost optimization, cloud billing, multi-cloud infrastructure, incident management"
+
+[ui_search]
+other = "Search"
