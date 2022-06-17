@@ -16,11 +16,6 @@
                     </div>
                     <div class="swiper-button swiper-button-next"></div>
                 </div>
-                <figure class="background-stars">
-                    <figure class="stars stars1"></figure>
-                    <figure class="stars stars2"></figure>
-                    <figure class="stars stars3"></figure>
-                </figure>
                 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
             </main>
         </div>
@@ -34,7 +29,10 @@
                         if ( mainSwiper !== undefined ) mainSwiper.destroy();
                     } else if ( breakpoint.matches === true ) {
                         window.scrollTo(0, 0);
-                        return enableSwiper();
+                        // abc();
+                        return (
+                            enableSwiper()
+                        )
                     }
                 };
                 const enableSwiper = function() {
@@ -51,20 +49,31 @@
                             sensitivity: 0,
                         },
                         keyboard: { enabled: true, },
+                        on: {
+                            activeIndexChange: function () {
+                                if(mainSwiper.realIndex - mainSwiper.previousIndex > 0) {
+                                    navbar[0].classList.add('active');
+                                } else {
+                                    navbar[0].classList.remove('active');
+                                }
+                            }
+                        },
                     });
                 };
                 breakpoint.addEventListener('change', breakpointChecker);
                 breakpointChecker();
 
+                // navbar
+                const navbar = document.getElementsByClassName('navbar');
+                let before = 0;
+                window.addEventListener('scroll',(ev)=>{
+                    if(before < window.scrollY) navbar[0].classList.add('active');
+                    else navbar[0].classList.remove('active');
+                    before = window.scrollY;
+                });
+
                 // lottie
                 $(function () {
-                    bodymovin.loadAnimation({
-                        container: document.getElementById('spaceman'),
-                        path: '/images/home/lottie_spaceman.json',
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                    });
                     bodymovin.loadAnimation({
                         container: document.getElementById('cloud'),
                         path: '/images/home/lottie_cloud.json',

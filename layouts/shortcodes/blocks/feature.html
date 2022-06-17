@@ -1,9 +1,9 @@
 {{ $section_id := .Get "name" | default .Ordinal }}
 {{ $title := .Get "title" }}
 {{ $description := .Get "description" }}
-{{ $bg_blue := .Get "bg_blue" }}
+{{ $bg_dark := .Get "bg_dark" }}
 
-<section class="section section-feature feature-{{ $section_id }} {{ if $bg_blue }}bg-blue{{ end }} swiper-slide">
+<section class="section section-feature feature-{{ $section_id }} {{ if $bg_dark }}bg-dark{{ end }} swiper-slide">
     <div class="inner">
         {{ with .Get "section_title" }}
             <h3>{{ . | safeHTML }}</h3>

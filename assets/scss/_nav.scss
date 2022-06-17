@@ -19,7 +19,7 @@
 }
 
 .navbar-bg-onscroll {
-  background: $primary !important;
+  background: $purple200 !important;
   opacity: inherit;
 }
 
@@ -56,8 +56,6 @@
   }
 
   .td-search-input {
-    border: none;
-
     @include placeholder {
       color: $navbar-dark-color;
     }

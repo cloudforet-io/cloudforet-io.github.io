@@ -27,26 +27,35 @@ $h5-font-size: 0.875rem;
 $h6-font-size: 0.875rem;
 
 // Theme colors
-$primary: #A8A5CE;
+$primary: #8B33FF;
 $black: #000;
 $white: #FFFFFF;
+$gray100: #A7A9B2;
+
 $navy000: #F2F4F5;
 $navy100: #D6DBDF;
 $navy200: #BFC5CB;
-$navy300: #808D99;
-$navy400: #415567;
-$navy500: #001B33;
-$purple100: #A8A5CE;
+$navy300: #A7ACBD;
+$navy400: #8A8C9F;
+$navy500: #53566E;
+$navy600: #1F1B38;
+
 $green100: #65CBA0;
-$pink100: #CF88A0;
+$pink100: #E8AAF2;
 $khaki100: #5CA2B1;
 $blue100: #007EE5;
 $blue200: #004F99;
+$purple100: #EBEAF6;
+$purple200: #B4B1E4;
+$purple300: #8B33FF;
 
 $link-color: $blue100;
 
 // Navbar
-$navbar-height: 3.5rem;
+$navbar-height: 3.75rem;
 
 // Sidebar
 $td-sidebar-width: 15.3125rem;
+
+// Dropdown
+$dropdown-link-active-bg:           $purple200 !default;
