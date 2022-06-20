@@ -6,6 +6,12 @@ theme = "docsy"
 # robots.txt
 enableRobotsTXT = true
 
+# sitemap
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
+
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
