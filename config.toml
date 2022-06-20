@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "SpaceONE"
 theme = "docsy"
 
+# robots.txt
+enableRobotsTXT = true
+
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
@@ -151,12 +154,3 @@ githubbranch = "release-1.9.6"
 docsbranch = "master"
 # Set master version url
 url = "/"
-
-# robots.txt
-enableRobotsTXT = true
-
-# sitemap
-[sitemap]
-changefreq = "monthly"
-filename = "sitemap.xml"
-priority = 0.5
