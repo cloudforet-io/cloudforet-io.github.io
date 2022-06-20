@@ -57,9 +57,10 @@
     font-weight: 500;
     transition: color .2s;
     border-radius: 0.375rem;
-    &:not(.active):hover {
-      background: rgba(255, 255, 255, 0.2);
-      transition: background-color .2s;
+    &.active,
+    &:hover {
+      background: rgba($white, 0.2);
+      transition: background-color 0.2s;
     }
   }
 
@@ -204,10 +205,5 @@
   .td-navbar {
     background-color: transparent;
     transition: background-color 0.3s;
-
-    &.active {
-      background-color: $navy600;
-      transition: background-color 0.3s;
-    }
   }
 }
