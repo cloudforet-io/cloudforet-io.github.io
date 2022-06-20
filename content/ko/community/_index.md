@@ -6,46 +6,30 @@ menu:
     main:
         weight: 3
 ---
-
-{{< blocks/cover title="SpaceONE Community" image_anchor="top" height="full" color="primary" >}}
-<div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/spaceone-dev/spaceone">
-		Download <i class="fab fa-github ml-2 "></i>
-	</a>
-	<p class="lead mt-5">Multi Cloud Management Platform</p>
-	{{< blocks/link-down color="info" >}}
+<div class="inner">
+    <section class="about-community">
+        <h3>Cloudforet 커뮤니티</h3>
+        <p>멀티 클라우드부터 온프레미스까지,</span> 보다 나은 IT 인프라 운영을 위해 클라우드포레만의 생태계를 함께 만들고자 합니다</p>
+    </section>
+    <section class="community-channels">
+        <h4>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h4>
+        <ul class="channels-list">
+            <li class="channel-item">
+                <a href="https://github.com/spaceone-dev/feedback/discussions" style="color:#004F99;" target="_blank" class="channel-link">
+                    <figure class="channel-icon"><img src="/images/community/img_forum.png" alt=""></figure>
+                    <strong class="channel-name">Discussion</strong>
+                    <p class="channel-description">문의 & 피드백</p>
+                </a>
+            </li>
+            <li class="channel-item">
+                <a href="https://github.com/spaceone-dev" style="color:#415567;" target="_blank" class="channel-link">
+                    <figure class="channel-icon"><img src="/images/community/img_github.png" alt=""></figure>
+                    <strong class="channel-name">Github</strong>
+                    <p class="channel-description">전체 프로젝트</p>
+                </a>
+            </li>
+        </ul>
+    </section>
 </div>
-{{< /blocks/cover >}}
-
-{{% blocks/lead  %}}
-Our Community Details
-{{% /blocks/lead %}}
-
-{{< blocks/section color="dark" >}}
-  {{% blocks/feature icon="fa-lightbulb" title="Gitter" url="https://gitter.im/spaceone-dev/developers"%}}
-  The Goldydocs UI now shows chair size metrics by default.
-  
-  Please follow this space for updates!
-  {{% /blocks/feature %}}
-
-  {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/spaceone-dev" %}}
-  We do a [Pull Request](https://github.com/spaceone-dev) contributions workflow on **GitHub**. New users are always welcome!
-  {{% /blocks/feature %}}
-   
-  {{% blocks/feature icon="fab fa-twitter" title="Discuss" url="https://discuss.spaceone.org" %}}
-  For announcement of latest features etc.
-  {{% /blocks/feature %}}
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section >}}
-  <div class="col">
-  <h1 class="text-center">This is the second Section</h1>
-  </div>
-{{< /blocks/section >}}
 
 
