@@ -1,92 +1,28 @@
-<!doctype html>
-<html lang="{{ .Site.Language.Lang }}" class="no-js">
-<head>
-    {{ partial "head.html" . }}
-</head>
-<body class="td-{{ .Kind }}">
-<header>
-    {{ partial "navbar.html" . }}
-</header>
-<div class="td-outer community">
-    <main role="main">
-        <section class="top" style="background-image: url('/images/top_community.png');"></section>
-        <section class="about-spaceone">
-            <h3>The SpaceONE<br>Community</h3>
-            <div>Together, we make OUR UNIVERSE a better place that changes the way you operate IT infrastructure across on-premises and multi-clouds.</div>
-        </section>
-        <section class="vod-list">
-            <h3>Videos</h3>
-            <ul>
-                <li>
-                    <div class="vod">
-                        <div class="vod-inner">
-                            <iframe src="https://www.youtube.com/embed/zSoEg2v_JrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <a href="https://youtu.be/zSoEg2v_JrE" target="_blank">
-                            <strong>SpaceONE Basic Setup in 10minutes</strong>
-                            <p>Setting up SpaceONE is easy!</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="vod">
-                        <div class="vod-inner">
-                            <iframe src="https://www.youtube.com/embed/YNALo5BqOo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <a href="https://youtu.be/YNALo5BqOo0" target="_blank">
-                            <strong>SpaceONE Quick Tour in 10minutes</strong>
-                            <p>SpaceONE is a Multi-cloud Management Platform.<br>In this video, Wanny introduces the console of SpaceONE.</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="vod">
-                        <div class="vod-inner">
-                            <iframe src="https://www.youtube.com/embed/RlUtdJQdM7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <a href="https://youtu.be/RlUtdJQdM7I" target="_blank">
-                            <strong>How to Integrate AWS Multi Account?</strong>
-                            <p>To consolidate cloud resources across multiple aws account has been a problem for many customers.</p>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="community-list">
-            <h3>Channels. We talk a lot.</h3>
-            <ul>
-                <li>
-                    <a href="https://github.com/spaceone-dev/feedback/discussions" style="color:#004F99;" target="_blank">
-                        <figure><img src="/images/img_forum.png" alt=""></figure>
-                        <strong>Forum</strong>
-                        <p class="description">Topic-based discussions.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/orgs/spaceone-dev/projects/4" style="color:#C60A49;" target="_blank">
-                        <figure><img src="/images/img_gitter.png" alt=""></figure>
-                        <strong>Backlog</strong>
-                        <p class="description">All issue tracking.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/spaceone-dev" style="color:#415567;" target="_blank">
-                        <figure><img src="/images/img_github.png" alt=""></figure>
-                        <strong>Github</strong>
-                        <p class="description">All the project.</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    {{ partial "footer.html" . }}
+{{ define "main" }}
+<section class="top">This is Community Page</section>
+<div class="inner">
+    <section class="about-community">
+        <h3>The Cloudforet Community</h3>
+        <p>Together, we make OUR UNIVERSE a better place that changes the way you operate IT <br />infrastructure across on-premises and multi-clouds.</p>
+    </section>
+    <section class="community-channels">
+        <h4>Channels. We talk a lot.</h4>
+        <ul class="channels-list">
+            <li class="channel-item">
+                <a href="https://github.com/spaceone-dev/feedback/discussions" style="color:#004F99;" target="_blank" class="channel-link">
+                    <figure class="channel-icon"><img src="/images/community/img_forum.png" alt=""></figure>
+                    <strong class="channel-name">Forum</strong>
+                    <p class="channel-description">Topic-based discussions.</p>
+                </a>
+            </li>
+            <li class="channel-item">
+                <a href="https://github.com/spaceone-dev" style="color:#415567;" target="_blank" class="channel-link">
+                    <figure class="channel-icon"><img src="/images/community/img_github.png" alt=""></figure>
+                    <strong class="channel-name">Github</strong>
+                    <p class="channel-description">All the project.</p>
+                </a>
+            </li>
+        </ul>
+    </section>
 </div>
-{{ partialCached "scripts.html" . }}
-</body>
-</html>
+{{ end }}
