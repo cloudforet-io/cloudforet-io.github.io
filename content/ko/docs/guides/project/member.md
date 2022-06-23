@@ -20,7 +20,6 @@ description: >
 
 
 ## 프로젝트 그룹 멤버 관리하기
-<br>
 
 [프로젝트 그룹 멤버 관리] 페이지로 이동하여 멤버를 관리할 수 있습니다.
 <br>
@@ -103,7 +102,6 @@ description: >
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bfc290c4-982e-420c-bde3-567c8710c755/Untitled.png)
 
 ## 프로젝트 멤버 관리하기
-<br>
 
 프로젝트 상세 페이지의 [멤버] 탭으로 이동하여 멤버를 관리할 수 있으며, 모든 방식과 내용은 프로젝트 그룹 멤버 관리하기(링크)와 동일합니다.
 <br>

@@ -4,11 +4,10 @@ linkTitle: "Project Setup"
 weight: 2
 date: 2022-06-07
 description: >
-    체계적인 리소스 관리를 위해 프로젝트와 프로젝트 그룹을 생성합니다.
+    체계적인 리소스 관리를 위해 [**프로젝트**](/ko/docs/guides/project/project)와 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)을 생성합니다.
 ---
 
 ## 프로젝트 그룹 생성하기
-<br>
 
 프로젝트는 반드시 하나의 프로젝트 그룹에 속해있어야 하므로, 프로젝트를 생성하기 이전에 먼저 프로젝트 그룹을 생성해야 합니다.
 
@@ -25,7 +24,6 @@ description: >
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/010358a7-52e8-4fff-a98e-9f216ceaef7c/Untitled.png)
 
 ## 프로젝트 생성하기
-<br>
 
 프로젝트 그룹을 생성한 뒤, 그 하위에 속하게 될 프로젝트를 생성합니다.
 
@@ -43,9 +41,8 @@ description: >
 
 
 ## 프로젝트 그룹 멤버 초대하기
-<br>
 
-프로젝트 그룹에 사용자를 초대하여 프로젝트 그룹의 멤버로 등록할 수 있습니다.
+프로젝트 그룹에 사용자를 초대하여 프로젝트 그룹의 [**멤버**](/ko/docs/guides/project/member)로 등록할 수 있습니다.
 
 {{<alert title="프로젝트 그룹 멤버 역할(Role)">}}
 초대된 멤버들은 해당 프로젝트 그룹에 대하여 반드시 하나의 역할(Role)을 가지게 되며, 그 하위에 있는 모든 프로젝트 그룹과 프로젝트에 대하여서도 동일한 역할(Role)이 적용됩니다. 
