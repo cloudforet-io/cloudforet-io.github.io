@@ -38,7 +38,6 @@ description: >
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dd6b6d1-6e3d-40c9-922a-8d41cd193158/Untitled.png)
 
 ## 프로젝트 목록 조회하기
-<br>
 
 프로젝트 목록에서 각 프로젝트의 주요 카테고리에 대한 리소스 현황을 간편하게 확인할 수 있습니다.
 <br>
@@ -74,7 +73,7 @@ description: >
 위의 구조로 예를 들면, `Project Group A` 를 선택하면 `Project A-1`, `Project A-2` 만 목록에 표시됩니다.
 
 ## 프로젝트 살펴보기
-<br>
+
 프로젝트 목록에서 프로젝트를 선택하여 프로젝트 상세 페이지로 이동합니다.
 
 ### 프로젝트 대시보드
@@ -145,7 +144,6 @@ description: >
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2f075cd-a4c9-49b8-b485-80d5a0ccd1c8/Untitled.png)
 
 ## 프로젝트 삭제하기
-<br>
 
 (1) 프로젝트 이름 우측의 [삭제] 아이콘 버튼을 클릭합니다.
 

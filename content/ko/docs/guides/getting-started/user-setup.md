@@ -4,7 +4,7 @@ linkTitle: "User Setup"
 weight: 1
 date: 2022-06-07
 description: >
-    클라우드포레를 사용할 사용자를 추가합니다.
+    클라우드포레를 사용할 [**사용자**](/ko/docs/guides/administration/iam-user)를 추가합니다.
 ---
 
 클라우드포레의 사용자는 아래의 세 가지 타입으로 분류됩니다.
@@ -18,7 +18,6 @@ description: >
 여기에서는 내부 사용자를 추가하는 방법만을 소개하며, 외부 사용자와 API 사용자 추가 방식은 [[IAM] 사용자 가이드](/ko/docs/guides/administration/iam-user)에서 확인할 수 있습니다.
 
 ## 사용자 추가하기
-<br>
 
 [관리 > 사용자] 메뉴에서 클라우드포레를 사용할 사용자를 추가할 수 있습니다.
 
