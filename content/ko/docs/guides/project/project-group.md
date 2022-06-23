@@ -69,7 +69,7 @@ description: ""
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e99f38f5-251e-4aec-b07d-c94a73de191e/Untitled.png)
 
 ## 프로젝트 그룹 & 프로젝트 검색하기
-
+<br>
 왼쪽의 검색 창을 통해 프로젝트 그룹과 프로젝트를 검색할 수 있습니다.
 
 검색된 프로젝트 그룹 목록에서 원하는 프로젝트 그룹을 선택하여 이동할 수 있습니다.
@@ -79,7 +79,7 @@ description: ""
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/224c3a3f-e7a8-4c46-9d58-a9b92a7c08b3/Untitled.png)
 
 ## 프로젝트 그룹 살펴보기
-
+<br>
 프로젝트 그룹을 생성하면 왼쪽의 [프로젝트 그룹] 목록에 생성한 프로젝트 그룹이 표시됩니다.
 
 생성한 프로젝트 그룹을 선택하면 해당 그룹의 상세 정보를 확인할 수 있습니다.
@@ -167,7 +167,7 @@ description: ""
 (3) [프로젝트 그룹 계층 구조 편집 방법](/ko/docs/guides/project/project-group/#프로젝트-그룹-계층-구조-편집하기)과 동일한 방법으로 프로젝트를 이동합니다.
 
 ## 프로젝트 그룹 삭제하기
-
+<br>
 (1) 왼쪽의 [프로젝트 그룹] 목록에서 삭제하려는 프로젝트 그룹을 선택합니다.
 
 (2) 오른쪽 상단의 [설정] 버튼을 클릭한 후, 드롭다운에서 [선택한 그룹 삭제]를 선택합니다.
