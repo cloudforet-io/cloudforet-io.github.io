@@ -1,6 +1,6 @@
 ---
 title: "대시보드"
-linkTitle: "대시보"
+linkTitle: "대시보드"
 weight: 2
 date: 2022-06-07
 description: >
