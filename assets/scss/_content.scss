@@ -3,41 +3,53 @@
 //
 
 .td-content {
-  max-width: 55rem;
+  max-width: 60rem;
   order: 1;
-  padding: 1.5rem 1rem 2.5rem;
-  background-color: $white;
-  border: solid 1px $navy100;
+  padding: 1.5rem 4rem 2.5rem;
   font-size: 1rem;
+  margin: 0 auto;
+
+  >h1, >h2, >h3, >h4, >h5, >h6, >h2, >h3, >h4, >h5, >h6 {
+    margin-bottom: 1rem;
+    font-weight: $font-weight-bold;
+  }
 
   h1 {
     font-weight: $font-weight-bold;
+    font-size: 2.25rem;
   }
 
   h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before {
     display: none;
   }
 
-  >h3, >h4, >h5, >h6, >.h2, >.h3, >.h4, >.h5, >.h6 {
-    margin-top: 1.875rem;
-    margin-bottom: 0.5rem;
-  }
-
   >h2, >.h2 {
-    margin-top: 3.75rem;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px $navy100;
+    font-size: 1.75rem;
   }
 
-  h4 {
-    font-weight: $font-weight-bold;
+  >h3 {
+    font-size: 1.5rem
   }
 
-  h6 {
-    color: $navy400;
+  >h4 {
+    font-size: 1.125rem;
+  }
+
+  >h5 {
+    font-size: 1.125rem;
+  }
+
+  >h6 {
+    font-size: 1rem;
   }
 
   > p {
     word-break: keep-all;
     max-width: unset;
+    margin-bottom: 1rem;
   }
 
   >ul, >ol {
@@ -58,7 +70,10 @@
 
   img {
     @extend .img-fluid;
-
+    padding: 1rem;
+    border: solid 1px $navy100;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   > table {
@@ -107,8 +122,7 @@
   }
 
   .page-summary {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   > table {

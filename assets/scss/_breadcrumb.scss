@@ -2,8 +2,9 @@
 
 .breadcrumb {
   background: none;
-  padding: 0;
-  margin-bottom: 0.75rem;
+  max-width: 60rem;
+  padding: 0 4rem;
+  margin: 1.875rem auto 0;
 
   a {
     color: $navy400;

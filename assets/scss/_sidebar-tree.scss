@@ -36,7 +36,7 @@
     }
 
     a {
-      color: $navy300;
+      color: $navy500;
     }
   }
 
@@ -77,7 +77,7 @@
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
     padding-left: 1rem;
-    color: $navy300;
+    color: $navy500;
     font-size: 1.125rem;
     line-height: 1.55;
     font-weight: 400;
@@ -91,7 +91,7 @@
   width: $td-sidebar-width;
   height: 100vh;
   padding-top: $navbar-height;
-  background-color: $white;
+  background-color: $navy100;
   box-shadow: 0.125rem 0px 0.125rem rgba(0, 27, 51, 0.1);
 
   &__search {
