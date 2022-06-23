@@ -3,12 +3,13 @@ title: "Project Setup"
 linkTitle: "Project Setup"
 weight: 2
 date: 2022-06-07
-description: ""
+description: >
+    체계적인 리소스 관리를 위해 프로젝트와 프로젝트 그룹을 생성합니다.
 ---
-<br>
-프로젝트와 프로젝트 그룹을 통해 리소스들을 체계적으로 관리할 수 있습니다.
 
 ## 프로젝트 그룹 생성하기
+<br>
+
 프로젝트는 반드시 하나의 프로젝트 그룹에 속해있어야 하므로, 프로젝트를 생성하기 이전에 먼저 프로젝트 그룹을 생성해야 합니다.
 
 ### Steps
@@ -24,6 +25,7 @@ description: ""
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/010358a7-52e8-4fff-a98e-9f216ceaef7c/Untitled.png)
 
 ## 프로젝트 생성하기
+<br>
 
 프로젝트 그룹을 생성한 뒤, 그 하위에 속하게 될 프로젝트를 생성합니다.
 
@@ -41,6 +43,7 @@ description: ""
 
 
 ## 프로젝트 그룹 멤버 초대하기
+<br>
 
 프로젝트 그룹에 사용자를 초대하여 프로젝트 그룹의 멤버로 등록할 수 있습니다.
 

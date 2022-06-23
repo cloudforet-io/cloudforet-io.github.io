@@ -3,20 +3,14 @@ title: "Project Group"
 linkTitle: "Project Group"
 weight: 2
 date: 2022-06-07
-description: ""
+description: >
+    **프로젝트 그룹**은 여러 [**프로젝트**](/ko/docs/guides/project/project)를 묶어 관리하기 위한 개념입니다.
+    <br>
+    <br>
+    프로젝트 그룹 하위에는 프로젝트와 프로젝트 그룹 모두가 속할 수 있으며, 이러한 트리 계층 구조를 통해 조직의 규모와 구조에 맞는 프로젝트 계층 구조를 설계하여 관리할 수 있습니다.
 ---
-<br>
 
-**프로젝트 그룹**은 여러 [프로젝트](/ko/docs/guides/project/project)를 묶어 관리하기 위한 개념입니다.
-<br>
-<br>
-프로젝트 그룹 하위에는 프로젝트와 프로젝트 그룹 모두가 속할 수 있습니다.
-<br>
-<br>
-또한 프로젝트 그룹에 초대한 [멤버](/ko/docs/guides/project/member)에게 [역할(Role)](/ko/docs/guides/administration/iam-user)을 부여하면, 해당 멤버는 하위 프로젝트 그룹과 프로젝트에 대해 동일한 역할(Role)을 가지게 됩니다.
-<br>
-<br>
-이러한 트리 계층 구조를 통해 조직의 규모와 구조에 맞는 프로젝트 계층 구조를 설계하여 관리할 수 있습니다.
+프로젝트 그룹에 초대한 [멤버](/ko/docs/guides/project/member)에게 [역할(Role)](/ko/docs/guides/administration/iam-user)을 부여하면, 해당 멤버는 하위 프로젝트 그룹과 프로젝트에 대해 동일한 역할(Role)을 가지게 됩니다.
 
 ## 프로젝트 그룹 생성하기
 

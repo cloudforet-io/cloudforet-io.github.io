@@ -3,14 +3,12 @@ title: "Member"
 linkTitle: "Member"
 weight: 4
 date: 2022-06-07
-description: ""
+description: >
+    [**프로젝트**](/ko/docs/guides/project/project)와 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 **멤버**를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있습니다.
+    <br>
+    <br>
+    멤버들에게는 반드시 하나의 역할(Role)이 부여되며, 이를 통해 해당 프로젝트와 프로젝트 그룹에 대한 접근을 관리할 수 있습니다.
 ---
-<br>
-
-[**프로젝트**](/ko/docs/guides/project/project)와 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 **멤버**를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있습니다.
-<br>
-<br>
-멤버들에게는 반드시 하나의 역할(Role)이 부여되며, 이를 통해 해당 프로젝트와 프로젝트 그룹에 대한 접근을 관리할 수 있습니다.
 
 역할(Role)에 연결된 [**정책(Policy)**](/ko/docs/guides/administration/iam-policy)에 따라 접근 권한이 달라집니다.
 <br>
