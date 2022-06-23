@@ -22,9 +22,7 @@ html {
 ::-webkit-scrollbar {
   display: none !important;
 }
-body {
-  background-color: $navy000;
-}
+
 *:lang(en) .td-home {
   font-family: "Work Sans";
 }
@@ -108,6 +106,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 
   .td-main {
     margin-bottom: 0;
+    background-color: transparent;
   }
 
   .section {
@@ -167,7 +166,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
     .sub-title {
       max-width: 39.0625rem;
       margin: 0 auto 1.5rem;
-      color: $navy000;
+      color: $navy100;
       font-size: 1.5rem;
       line-height: 1.3;
     }
