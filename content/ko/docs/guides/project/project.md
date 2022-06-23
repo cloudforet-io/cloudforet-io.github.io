@@ -3,18 +3,13 @@ title: "Project"
 linkTitle: "Project"
 weight: 3
 date: 2022-06-07
-description: ""
+description: >
+    **프로젝트**는 리소스를 관리하기 위한 묶음 단위입니다.
+    <br>
+    <br>
+    프로젝트는 반드시 특정한 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 속해야 하며, 프로젝트 아래에는 더 이상의 계층이 존재할 수 없습니다.
 ---
-
-<br>
-
-**프로젝트**는 리소스를 관리하기 위한 묶음 단위입니다.
-<br>
-<br>
-프로젝트는 반드시 특정한 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 속해야 하며, 프로젝트 아래에는 더 이상의 계층이 존재할 수 없습니다.
-<br>
-<br>
-프로젝트에 [**멤버**](/ko/docs/guides/project/member)를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있습니다. 
+프로젝트에 [**멤버**](/ko/docs/guides/project/member)를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있습니다.
 
 멤버들은 부여된 역할(Role)에 따라 프로젝트 리소스에 대한 접근 권한이 달라집니다.
 
