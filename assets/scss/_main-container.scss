@@ -7,16 +7,16 @@
 .td-main {
   flex-grow: 1;
   margin-bottom: 2rem;
+  background-color: $white;
 
   main {
     width: 100%;
-    padding-top: calc(#{$navbar-height} + 1.5rem);
-    padding-left: calc(#{$td-sidebar-width} + 1rem);
-    padding-right: calc(#{$td-sidebar-width} + 1rem);
+    padding-top: $navbar-height;
+    padding-left: $td-sidebar-width;
+    padding-right: $td-sidebar-width;
 
     @include media-breakpoint-down(md) {
       padding: 1rem;
-
     }
   }
 }
