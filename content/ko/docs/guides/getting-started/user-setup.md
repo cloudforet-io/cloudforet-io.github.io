@@ -25,17 +25,17 @@ description: >
 
 (1) [생성] 버튼을 클릭합니다.
 
-![user-create-start.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d0496d9-aaa5-48d5-b798-7920ae854ded/user-create-start.png)
+![user-create-01](/ko/docs/guides/getting-started/user-setup-img/user-create-01.png)
 
 (2) [사용자 생성 모달] 에서 [Local] 탭을 선택합니다. 
 
 (2-1) 아이디를 입력 후 [아이디 확인] 버튼을 클릭하여, 유효한 아이디인지 확인합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b452f911-5419-4fe3-a258-039264aa0c38/Untitled.png)
+![user-create-02](/ko/docs/guides/getting-started/user-setup-img/user-create-02.png)
 
 (2-2) 사용자를 식별할 이름, 이메일, 그리고 비밀번호를 입력한 후 [확인] 버튼을 클릭하여 사용자 생성을 완료합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0901e4c5-89a2-48db-8c7a-5d62747b4264/Untitled.png)
+![user-create-03](/ko/docs/guides/getting-started/user-setup-img/user-create-03.png)
 
 {{<alert title="어드민 권한 할당">}}
 사용자에게 어드민 권한을 부여하려면, [어드민 권한 할당] 드롭다운에서 선택하여 할당할 수 있습니다.
@@ -44,5 +44,5 @@ description: >
 
 권한에 대한 더 자세한 설명은 [여기](/ko/docs/guides/administration/iam-role)에서 확인할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6aa072dc-d22a-4b55-bae4-4589da8e9622/Untitled.png)
+![user-create-04](/ko/docs/guides/getting-started/user-setup-img/user-create-04.png)
 {{</alert>}}
