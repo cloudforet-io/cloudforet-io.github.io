@@ -1,8 +1,11 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "시작하기"
+linkTitle: "시작하기"
 weight: 1
 date: 2022-06-07
 description: >
-    Getting Started 간단소개
+    클라우드포레는 여러 클라우드 서비스 프로바이더에 분산된 리소스들을 통합하여 체계적으로 관리할 수 있는 서비스입니다.
+    <br>
+    <br>
+    가이드를 통해 클라우드포레에 대한 모든 것을 알아보세요. 
 ---

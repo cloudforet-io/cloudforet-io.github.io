@@ -1,6 +1,6 @@
 ---
-title: "Cloud Service"
-linkTitle: "Cloud Service"
+title: "클라우드 서비스"
+linkTitle: "클라우드 서비스"
 weight: 2
 date: 2022-06-07
 description: >

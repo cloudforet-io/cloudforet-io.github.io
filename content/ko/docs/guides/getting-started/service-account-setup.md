@@ -1,6 +1,6 @@
 ---
-title: "Service Account Setup"
-linkTitle: "Service Account Setup"
+title: "서비스 계정 설정"
+linkTitle: "서비스 계정 설정"
 weight: 3
 date: 2022-06-07
 description: >

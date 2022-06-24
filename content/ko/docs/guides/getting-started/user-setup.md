@@ -1,6 +1,6 @@
 ---
-title: "User Setup"
-linkTitle: "User Setup"
+title: "사용자 설정"
+linkTitle: "사용자 설정"
 weight: 1
 date: 2022-06-07
 description: >

@@ -1,6 +1,6 @@
 ---
-title: "Project Setup"
-linkTitle: "Project Setup"
+title: "프로젝트 설정"
+linkTitle: "프로젝트 설정"
 weight: 2
 date: 2022-06-07
 description: >

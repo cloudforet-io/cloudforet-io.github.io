@@ -1,6 +1,6 @@
 ---
-title: "Member"
-linkTitle: "Member"
+title: "멤버"
+linkTitle: "멤버"
 weight: 4
 date: 2022-06-07
 description: >
