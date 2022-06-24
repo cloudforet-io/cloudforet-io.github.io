@@ -1,13 +1,15 @@
 footer {
   min-height: auto;
   .inner {
+    margin-top: auto;
+  }
+
+  .contents {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-top: solid 0.0625rem #D6DBDF;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
-    margin-top: auto;
     color: #415567;
   }
 
@@ -17,6 +19,7 @@ footer {
       width: 2.5rem
     }
   }
+
   .license {
     margin-top: 0.5rem;
     font-size: 0.875rem;
@@ -25,6 +28,7 @@ footer {
       color: inherit;
     }
   }
+
   .external-link {
     display: flex;
     a {
@@ -39,6 +43,19 @@ footer {
     }
 
   }
+
+  .td-home & {
+    background-color: $dark-bg;
+    .inner {
+      max-width: 112rem;
+      margin: 0 auto;
+    }
+    .contents {
+      //padding: 2rem 1.5rem 2.5rem;
+      border-top: none;
+      color: $navy300;
+    }
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -46,27 +63,33 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
 
-    .inner {
+    .contents {
       flex-direction: column;
       justify-content: initial;
       width: 100%;
+    }
 
-      .copyright {
-        align-self: flex-start;
-      }
+    .copyright {
+      align-self: flex-start;
+    }
 
-      .external-link {
-        margin-top: 1.5rem;
-      }
+    .external-link {
+      margin-top: 1.5rem;
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .documentation footer {
-    max-width: 55rem;
-    margin-left: 16.3125rem;
-    margin-right: calc(15.3125rem + 1rem);
+    padding-left: $td-sidebar-width;
+    padding-right: $table-of-contents-with;
+
+    .inner {
+      max-width: 60rem;
+      padding-right: 4rem;
+      padding-left: 4rem;
+      margin: 0 auto;
+    }
   }
 
   .community footer {

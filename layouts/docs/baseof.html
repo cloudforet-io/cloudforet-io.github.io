@@ -12,14 +12,10 @@
                 <aside class="td-sidebar d-print-none">
                     {{ partial "sidebar.html" . }}
                 </aside>
-                <aside class="td-sidebar-toc d-print-none">
-                    {{ partial "toc.html" . }}
-                    {{ partial "page-meta-links.html" . }}
-                </aside>
                 <main role="main">
                     {{ partial "version-banner.html" . }}
                     {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
-                        {{ block "main" . }}{{ end }}
+                    {{ block "main" . }}{{ end }}
                     {{ partial "scroll.html" . }}
                 </main>
             </div>

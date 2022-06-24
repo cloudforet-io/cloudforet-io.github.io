@@ -9,24 +9,23 @@
   top: 0;
   right: 0;
   z-index: 5;
-  width: 15.3125rem;
+  width: $table-of-contents-with;
   height: 100vh;
   padding-top: $navbar-height;
-  padding-right: 1rem;
+  padding-right: 4.0625rem;
   padding-bottom: 1.5rem;
   vertical-align: top;
   order: 2;
 }
 
 .td-toc {
-
   overflow: auto;
   flex-shrink: 1;
-  margin-top: 1.5rem;
+  margin-top: 3.75rem;
   margin-bottom: 1.5rem;
 
   .label {
-    color: $navy400;
+    color: $navy500;
     line-height: 1.5;
     font-weight: 700;
   }
@@ -37,9 +36,9 @@
     padding-bottom: 0.375rem;
     padding-left: 1rem;
     font-size: 0.875rem;
-    line-height: 1.4;
     font-weight: $font-weight-light;
     color: $navy300;
+    word-break: keep-all;
   }
 
   li {
@@ -53,24 +52,24 @@
 
   #TableOfContents {
 
-    margin-top: 0.5rem;
+    margin-top: 1.25rem;
 
     ul {
       padding-left: 0;
     }
 
     li {
-      border-left: solid 0.125rem $navy100;
-      color: $navy300;
+      border-left: solid 3px $navy100;
+      color: $navy400;
       transition: color .2s, border-color .2s;
 
       &:hover {
-        color: $navy500;
+        color: $navy600;
       }
 
       &.active {
         border-color: currentColor;
-        color: $blue100;
+        color: $navy600;
         transition: color .2s, border-color .2s;
       }
     }

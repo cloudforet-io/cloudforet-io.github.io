@@ -147,8 +147,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
   .section-main {
     height: 100vh;
     position: relative;
-    background: url("/images/home/bg_hero.png") no-repeat 50% 0;
-    background-size: 100% auto;
+    background: url("/images/home/bg_hero.png") no-repeat 50% 0 / 100% auto;
 
     h2 {
       font-size: 4rem;
@@ -224,11 +223,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 
   .feature-management {
     position: relative;
-    background-image: url("/images/home/bg_hero.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position-x: 50%;
-    background-position-y: -100vh;
+    background: url("/images/home/bg_hero.png") no-repeat 50% -100vh / 100% auto;
     &:before {
       content: '';
       display: inline-block;
@@ -406,17 +401,6 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
       &:hover {
         background-color: transparent;
       }
-    }
-  }
-
-  .footer {
-    background-color: $dark-bg;
-    .inner {
-      max-width: 112rem;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 2.5rem;
-      border-top: none;
-      color: $navy300;
     }
   }
 }
@@ -629,6 +613,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 
     .section-main {
       height: 51.4rem;
+      background-size: 200% auto;
 
       .btn-group {
         flex-direction: column;
@@ -637,6 +622,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
     }
 
     .feature-management {
+      background-size: 200% auto;
       background-position-y: -51.4rem;
       &:before {
         background-position-y: -51.4rem;

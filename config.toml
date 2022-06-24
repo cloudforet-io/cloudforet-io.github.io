@@ -47,7 +47,7 @@ pygmentsStyle = "tango"
     weight = 1
     description = "SpaceONE helps you manage multi-cloud environments and all your cloud resources & cost in ONE platform. SpaceONE supports AWS, Azure, Google Cloud, and more."
 [languages.ko]
-    languageName ="Korean"
+    languageName ="한국어"
     title = "SpaceONE - 오픈소스 멀티 클라우드 플랫폼 스페이스원"
     contentDir = "content/ko"
     time_format_default = "2006.01.02"

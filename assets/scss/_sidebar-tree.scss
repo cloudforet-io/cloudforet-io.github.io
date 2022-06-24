@@ -1,19 +1,43 @@
 //
 // Left side navigation
 //
-
-#td-sidebar-menu {
+.td-sidebar {
   overflow: auto;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $td-sidebar-width;
+  height: 100vh;
+  padding-top: calc(#{$navbar-height} + 0.875rem);
+  padding-bottom: 3rem;
+  background-color: rgba($navy000, 0.6);
+  border-right: solid 1px $navy100;
+  line-height: 1.25;
+
+  &__search {
+    padding: 1rem;
+    background-color: $navy600;
+  }
+
+  #content-desktop {display: block;}
+  #content-mobile {display: none;}
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    #content-desktop {display: none;}
+    #content-mobile {display: block;}
+  }
 }
 
 .td-sidebar-nav {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-
-  @include media-breakpoint-up(md) {
-    display: block !important;
-  }
+  display: block !important;
+  position: relative;
 
   &__section {
     li {
@@ -30,22 +54,28 @@
 
   &__section-title {
     display: block;
+  }
 
-    .active {
-      color: $blue100 !important;
-    }
-
-    a {
-      color: $navy500;
-    }
+  label {
+    margin-bottom: 0;
+    width: 100%;
   }
 
   .td-sidebar-link {
     display: block;
-  }
+    color: $navy500;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-right: 1.75rem;
+    transition: background-color 0.3s;
 
-  a:not(.active):hover {
-    text-decoration: none;
+    :hover {
+      color: $navy400;
+    }
+
+    &.active {
+      font-weight: $font-weight-bold;
+    }
   }
 
   .dropdown {
@@ -58,63 +88,103 @@
     }
   }
 
-  & > .td-sidebar-nav__section {
-    padding-top: .5rem;
-    padding-left: 1.5rem;
-  }
+  .with-child {
 
-  li i { // Layout of icons
-    padding-right: 0.5em;
-    &:before{
-      display: inline-block;
-      text-align: center;
-      min-width: 1em;
+    > label {
+      position: relative;
+      &:before {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        height: 100%;
+        font-family: "Font Awesome 5 Free";
+        content: "\f078";
+        color: $navy300;
+        transition: transform 0.5s;
+        cursor: pointer;
+      }
+    }
+
+    > input:checked ~ label::before {
+      transform: rotate(180deg);
+      transition: transform 0.5s;
+    }
+
+    > input:checked ~ label a {
+      background-color: rgba($navy100, 0.4);
+      font-weight: $font-weight-bold;
     }
   }
 
-  .td-sidebar-link.tree-root {
-    margin-top: 1rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+  input[type=checkbox] {
+    display: none;
+
+    &:checked ~ ul.foldable {
+      max-height: 100vmax;
+      transition: max-height 1s ease-in-out;
+    }
+  }
+
+  .tree-root {
     padding-left: 1rem;
-    color: $navy500;
-    font-size: 1.125rem;
-    line-height: 1.55;
-    font-weight: 400;
+  }
+
+  ul.foldable {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+
+    .td-sidebar-nav__section-title {
+      border-left: solid 1px $navy100;
+
+      &:first-of-type {
+        margin-top: 0.75rem;
+      }
+      &:last-of-type {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+
+  .ul-1 {
+    .td-sidebar-link {
+      padding-left: 1rem;
+    }
+  }
+
+  .ul-2 {
+    margin-left: 1rem;
+    .td-sidebar-link {
+      padding-left: 1.5rem;
+    }
+  }
+
+  .ul-3 {
+    margin-left: 1.5rem;
+    .td-sidebar-link {
+      padding-left: 1.25rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  .ul-4 {
+    margin-left: 1.25rem;
+    .td-sidebar-link {
+      padding-left: 1rem;
+      font-size: 0.875rem;
+    }
   }
 }
 
-.td-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: $td-sidebar-width;
-  height: 100vh;
-  padding-top: $navbar-height;
-  background-color: $navy100;
-  box-shadow: 0.125rem 0px 0.125rem rgba(0, 27, 51, 0.1);
 
-  &__search {
-    padding: 1rem;
-    background-color: #001B33;
+@include media-breakpoint-down(md) {
+  .td-sidebar {
+    overflow: visible;
   }
 
-  &__toggle {
-    color: $white !important;
-  }
-
-  #content-desktop {display: block;}
-  #content-mobile {display: none;}
-
-  @include media-breakpoint-down(md) {
-    width: 100%;
-    height: auto;
-    position: static;
-    padding-top: 0;
-    padding-bottom: 0;
-
-
-    #content-desktop {display: none;}
-    #content-mobile {display: block;}
+  .td-sidebar-nav {
+    box-shadow: 0px 0.25rem 0.75rem rgba(31, 22, 70, 0.2);
   }
 }
