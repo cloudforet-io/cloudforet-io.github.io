@@ -23,13 +23,13 @@ description: >
 
 (2) 왼쪽의 [프로젝트 그룹] 목록에서, 프로젝트를 생성할 프로젝트 그룹을 선택합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72e729ed-e630-4063-883c-31a9b57716de/Untitled.png)
+![project-create-01](/ko/docs/guides/project/project-img/project-create-01.png)
 
 (3) 오른쪽 상단의 [프로젝트 생성] 버튼을 클릭합니다.
 
 (4) [프로젝트 생성] 모달에서 프로젝트 이름을 입력한 후, [확인] 버튼을 클릭하여 프로젝트를 생성합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dd6b6d1-6e3d-40c9-922a-8d41cd193158/Untitled.png)
+![project-create-02](/ko/docs/guides/project/project-img/project-create-02.png)
 
 ## 프로젝트 목록 조회하기
 
@@ -44,13 +44,13 @@ description: >
 
 왼쪽의 [프로젝트 그룹]에서 [모든 프로젝트]를 선택하여 전체 프로젝트 목록을 조회할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf5fa4ee-75a1-48a8-a074-e797aec7c650/Untitled.png)
+![project-list-01](/ko/docs/guides/project/project-img/project-list-01.png)
 
 ### 프로젝트 그룹 내 프로젝트 목록 조회하기
 
 왼쪽의 [프로젝트 그룹] 목록에서 원하는 프로젝트 그룹을 선택하여 해당 그룹에 속한 프로젝트만을 조회할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eda59ae6-4112-4762-b1e8-4d2e3de36871/Untitled.png)
+![project-list-02](/ko/docs/guides/project/project-img/project-list-02.png)
 
 <br>
 만약 선택한 프로젝트 그룹 아래에 또다른 프로젝트 그룹들이 있다면, 다른 프로젝트 그룹에 속한 프로젝트들은 여기에 표시되지 않습니다.
@@ -74,7 +74,7 @@ description: >
 
 [요약 정보] 탭에서 프로젝트 대시보드를 통해 해당 프로젝트에 속한 리소스의 집약된 정보를 확인할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c681be0-7558-4973-b8b7-565b0f7de597/Untitled.png)
+![project-detail-01](/ko/docs/guides/project/project-img/project-detail-01.png)
 
 <br>
 프로젝트 대시보드에서는 카테고리 별, 지역 별 리소스 사용 현황과 트렌드를 보여줍니다.
@@ -99,11 +99,11 @@ description: >
 
 (1) 프로젝트 이름 우측의 [편집] 아이콘 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5081b921-5025-439e-bcf5-494dd6cc37ec/Untitled.png)
+![project-edit-01](/ko/docs/guides/project/project-img/project-edit-01.png)
 
 (2) [프로젝트 변경] 모달에서 변경할 이름을 입력한 후 [확인] 버튼을 클릭하여 프로젝트 이름을 변경합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c81acd2a-6ef0-4ea3-a9eb-2dc5f3f28d4d/Untitled.png)
+![project-edit-02](/ko/docs/guides/project/project-img/project-edit-02.png)
 
 ### 프로젝트 태그 관리하기
 
@@ -115,34 +115,34 @@ description: >
 
 (2) [편집] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/00bd8b95-09e7-4c67-8599-52fe4ce2c3fe/Untitled.png)
+![project-edit-tag-01](/ko/docs/guides/project/project-img/project-edit-tag-01.png)
 
 (2-1) [태그] 페이지에서 [태그 추가] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc422be2-b162-4528-b2a1-8e1e84aca3a2/Untitled.png)
+![project-edit-tag-02](/ko/docs/guides/project/project-img/project-edit-tag-02.png)
 
 (2-2) 추가하고자 하는 값을 `키: 값` 형태로 입력합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a474e2eb-0f29-46c7-94db-b6abd07077b3/Untitled.png)
+![project-edit-tag-03](/ko/docs/guides/project/project-img/project-edit-tag-03.png)
 
 (2-3) 태그를 더 추가하고자 한다면, 원하는 개수만큼 [태그 추가] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/86e6ac95-2234-4664-a494-ddcdd3484f42/Untitled.png)
+![project-edit-tag-04](/ko/docs/guides/project/project-img/project-edit-tag-04.png)
 
 (2-4) 추가한 태그 입력 창을 삭제하고자 한다면, 값 입력 창 오른쪽의 [삭제] 아이콘 버튼을 클릭하여 삭제합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22196a6f-78f8-4339-b6bd-fc8cd9f66851/Untitled.png)
+![project-edit-tag-05](/ko/docs/guides/project/project-img/project-edit-tag-05.png)
 
 (2-5) [저장] 버튼을 클릭하여 태그 추가를 완료한 후, [태그] 탭에서 확인합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2f075cd-a4c9-49b8-b485-80d5a0ccd1c8/Untitled.png)
+![project-edit-tag-06](/ko/docs/guides/project/project-img/project-edit-tag-06.png)
 
 ## 프로젝트 삭제하기
 
 (1) 프로젝트 이름 우측의 [삭제] 아이콘 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b23e796-bf99-45a9-909c-4ee9ef5a8778/Untitled.png)
+![project-delete-01](/ko/docs/guides/project/project-img/project-delete-01.png)
 
 (2) [프로젝트 삭제] 모달의 [확인] 버튼을 클릭하여 프로젝트를 삭제합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae231762-7e4d-47e4-ae68-09f7828c6de5/Untitled.png)
+![project-delete-02](/ko/docs/guides/project/project-img/project-delete-02.png)
