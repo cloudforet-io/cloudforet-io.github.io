@@ -1,21 +1,59 @@
 .section-index {
-  .entry-wrap {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
   .entry {
-    padding: 1.5rem 1.25rem;
-    border:solid 1px $navy100;
-    background-color: $white;
-    > h2 {
-      margin-bottom: 0.5rem;
+    &-list {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
     }
-    .description {
-      margin-bottom: 1.5rem;
+    &-item {
+      overflow: hidden;
+      position: relative;
+      border: solid 1px $navy100;
+      border-radius: 0.25rem;
+      padding: 1.25rem;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $blue100;
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 1rem rgba(31, 27, 56, 0.1);
+        &:before {
+          height: 0.25rem;
+          transition: height 0.3s;
+        }
+      }
     }
-    .link-list {
-      margin-bottom: 1.5rem;
+    &-title {
+      margin-bottom: 1rem;
+      font-size: 1.125rem;
+      font-weight: $font-weight-bold;
+    }
+    &-link {
+      color: $black;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .entry {
+      &-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .entry {
+      &-list {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }
+
