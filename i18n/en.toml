@@ -9,3 +9,6 @@ other = "cloud management platform, multi cloud management, open source project,
 
 [ui_search]
 other = "Search"
+
+[ui_version]
+other = "Version"

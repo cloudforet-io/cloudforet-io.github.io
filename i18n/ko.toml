@@ -9,3 +9,6 @@ other = "클라우드 관리 플랫폼, 멀티 클라우드 매니지먼트, 오
 
 [ui_search]
 other = "검색"
+
+[ui_version]
+other = "버전"

@@ -1,6 +1,6 @@
 ---
-title: "Guides (deprecated)"
-linkTitle: "Guides (deprecated)"
+title: "설치 및 운영 (deprecated)"
+linkTitle: "설치 및 운영 (deprecated)"
 weight: 4
 date: 2021-07-31
 description: >

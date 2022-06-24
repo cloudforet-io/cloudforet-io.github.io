@@ -22,12 +22,16 @@
         background-color: $blue100;
       }
       &:hover {
-        cursor: pointer;
+        background-color: $white;
         box-shadow: 0px 0px 1rem rgba(31, 27, 56, 0.1);
+        cursor: pointer;
         &:before {
           height: 0.25rem;
           transition: height 0.3s;
         }
+      }
+      a {
+        color: $black;
       }
     }
     &-title {
@@ -36,7 +40,12 @@
       font-weight: $font-weight-bold;
     }
     &-link {
-      color: $black;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
     }
   }
 

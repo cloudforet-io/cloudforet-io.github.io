@@ -13,7 +13,7 @@
     width: 100%;
     padding-top: $navbar-height;
     padding-left: $td-sidebar-width;
-    padding-right: $td-sidebar-width;
+    padding-right: $table-of-contents-with;
 
     @include media-breakpoint-down(md) {
       padding: 1rem;
