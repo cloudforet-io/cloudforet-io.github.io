@@ -1,6 +1,6 @@
 ---
-title: "Collector"
-linkTitle: "Collector"
+title: "컬렉터"
+linkTitle: "컬렉터"
 weight: 4
 date: 2022-06-07
 description: >

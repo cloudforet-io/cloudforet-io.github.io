@@ -1,6 +1,6 @@
 ---
-title: "Service Account"
-linkTitle: "Service Account"
+title: "서비스 계정"
+linkTitle: "서비스 계정"
 weight: 5
 date: 2022-06-07
 description: >

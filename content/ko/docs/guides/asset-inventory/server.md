@@ -1,6 +1,6 @@
 ---
-title: "Server"
-linkTitle: "Server"
+title: "서버"
+linkTitle: "서버"
 weight: 3
 date: 2022-06-07
 description: >

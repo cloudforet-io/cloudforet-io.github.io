@@ -1,6 +1,6 @@
 ---
-title: "[IAM] Policy"
-linkTitle: "[IAM] Policy"
+title: "[IAM] 정책"
+linkTitle: "[IAM] 정책"
 weight: 3
 date: 2022-06-07
 description: >

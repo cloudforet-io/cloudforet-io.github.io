@@ -1,6 +1,6 @@
 ---
-title: "Advanced"
-linkTitle: "Advanced"
+title: "고급 기능"
+linkTitle: "고급 기능"
 weight: 9
 date: 2022-06-07
 description: >

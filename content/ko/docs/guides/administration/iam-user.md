@@ -1,6 +1,6 @@
 ---
-title: "사용자"
-linkTitle: "사용자"
+title: "[IAM] 사용자"
+linkTitle: "[IAM] 사용자"
 weight: 1
 date: 2022-06-23
 description: >

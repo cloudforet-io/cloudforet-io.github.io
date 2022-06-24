@@ -1,6 +1,6 @@
 ---
-title: "Project"
-linkTitle: "Project"
+title: "프로젝트"
+linkTitle: "프로젝트"
 weight: 3
 date: 2022-06-07
 description: >
@@ -15,15 +15,9 @@ description: >
 
 ## 프로젝트 생성하기
 
-<br>
-
 프로젝트는 프로젝트 그룹 하위에만 존재할 수 있으므로, 먼저 프로젝트 그룹이 있어야 합니다.
 
-### [프로젝트 그룹 생성하기](/ko/docs/guides/project/project-group/#프로젝트-그룹-생성하기)
-
-
-
-### Steps
+[**프로젝트 그룹 생성하기**](/ko/docs/guides/project/project-group/#프로젝트-그룹-생성하기)
 
 (1) [프로젝트] 메뉴를 선택하여 프로젝트 페이지로 이동합니다.
 
