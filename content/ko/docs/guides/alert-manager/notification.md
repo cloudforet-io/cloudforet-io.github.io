@@ -103,13 +103,13 @@ description: >
 
 우측 상단의 [삭제 아이콘] 버튼을 클릭시 알림 채널 삭제가 가능합니다.
 
-## Cloudforet User 채널
+## 클라우드포레 사용자 채널
 
 프로젝트에서 [알림 채널] 파트에는 [Cloudforet User 채널 추가] 카드가 존재합니다.
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0b41556-7d14-428e-a2f6-0236f3364812/Untitled.png)
 
-Cloudforet User 채널을 추가 시, 프로젝트 멤버들의 개인 채널로 얼럿이 전파됩니다. 이후 전파 받은 사용자의 **개인 알림 채널**을 통해 얼럿이 전달됩니다.
+클라우드포레 사용자 채널을 추가하면, 프로젝트 멤버들의 개인 채널로 얼럿이 전파됩니다. 이후 전파 받은 사용자의 **개인 알림 채널**을 통해 얼럿이 전달됩니다.
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b210bf92-ca46-441e-8643-633e873d4cea/Untitled.png)
 
