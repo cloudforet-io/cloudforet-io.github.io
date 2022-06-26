@@ -28,13 +28,13 @@ description: >
 
 최상위에 프로젝트 그룹을 생성할 수 있는 역할(Role)이 부여되지 않은 사용자에게는 해당 버튼이 보이지 않습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce20928b-18ca-40ae-9bd0-72e94f741618/Untitled.png)
+![project-group-create-01](/ko/docs/guides/project/project-group-img/project-group-create-01.png)
 
 {{</alert>}}
 
 (4) [프로젝트 그룹 생성] 모달에서 원하는 이름을 입력한 후 [확인] 버튼을 클릭하여 프로젝트 그룹 생성을 완료합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/506926de-df3a-48f5-b461-6eb109df1355/Untitled.png)
+![project-group-create-02](/ko/docs/guides/project/project-group-img/project-group-create-02.png)
 
 ### 하위 프로젝트 그룹 생성하기
 
@@ -44,23 +44,25 @@ description: >
 
 (1) 왼쪽의 [프로젝트 그룹] 목록에서 하위에 프로젝트 그룹을 생성하고 싶은 상위 프로젝트 그룹에 마우스 커서를 올리면, 오른쪽에 표시되는  [+] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6467644f-61c5-4f08-8eac-1f4c1f259b82/Untitled.png)
+![project-group-create-03](/ko/docs/guides/project/project-group-img/project-group-create-03.png)
 
 {{<alert title="[+] 버튼이 비활성화된 경우">}}
 
-해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나 해당 그룹을 생성할 수 있는 권한이 없는 경우에 해당 버튼이 비활성화됩니다. 관리자에게 프로젝트 그룹 멤버로 초대를 요청하거나 역할(Role) 변경을 요청하세요.
+해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나 해당 그룹을 생성할 수 있는 권한이 없는 경우에 해당 버튼이 비활성화됩니다. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce20928b-18ca-40ae-9bd0-72e94f741618/Untitled.png)
+관리자에게 프로젝트 그룹 멤버로 초대를 요청하거나 역할(Role) 변경을 요청하세요.
+
+![project-group-create-04](/ko/docs/guides/project/project-group-img/project-group-create-04.png)
 
 {{</alert>}}
 
 (2) [프로젝트 그룹 생성] 모달에 그룹 이름을 작성한 후 [확인] 버튼을 클릭하여 프로젝트 그룹을 생성합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/39cd64f3-de44-420c-a2da-6b78fe67fb57/Untitled.png)
+![project-group-create-05](/ko/docs/guides/project/project-group-img/project-group-create-05.png)
 
 (3) 선택한 프로젝트 그룹 하위에 새롭게 생성한 프로젝트 그룹이 표시됩니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e99f38f5-251e-4aec-b07d-c94a73de191e/Untitled.png)
+![project-group-create-06](/ko/docs/guides/project/project-group-img/project-group-create-06.png)
 
 ## 프로젝트 그룹 & 프로젝트 검색하기
 
@@ -70,7 +72,7 @@ description: >
 
 함께 검색된 프로젝트를 선택하면, 해당하는 프로젝트 상세 페이지가 새 탭으로 열립니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/224c3a3f-e7a8-4c46-9d58-a9b92a7c08b3/Untitled.png)
+![project-group-search-01](/ko/docs/guides/project/project-group-img/project-group-search-01.png)
 
 ## 프로젝트 그룹 살펴보기
 
@@ -78,7 +80,7 @@ description: >
 
 생성한 프로젝트 그룹을 선택하면 해당 그룹의 상세 정보를 확인할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c3891a4-c9a2-4684-a02d-5dad1fdbc9f9/Untitled.png)
+![project-group-detail-01](/ko/docs/guides/project/project-group-img/project-group-detail-01.png)
 
 ### 프로젝트 목록 조회
 
@@ -91,7 +93,7 @@ description: >
 <br>
 왼쪽의 [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환하여 편집할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b4ccdc4-e0ab-483f-a92c-537707305db0/Untitled.png)
+![project-group-edit-01](/ko/docs/guides/project/project-group-img/project-group-edit-01.png)
 
 {{<alert title="[편집] 버튼이 비활성화된 경우">}}
 • 프로젝트 그룹을 선택하지 않은 상태에서 [편집] 버튼이 비활성화되어 있는 경우라면, 최상위 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다.
@@ -106,13 +108,11 @@ description: >
 
 (2) [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환합니다.
 
-(2-1) 선택한 프로젝트 그룹의 이름을 변경하기 위해, 해당 프로젝트 그룹을 클릭하여 입력 모드로 전환합니다.
+(3) 선택한 프로젝트 그룹의 이름을 변경하기 위해, 해당 프로젝트 그룹을 클릭하여 입력 모드로 전환합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/394484ec-4720-4acf-b1ca-71de4b2855f7/Untitled.png)
+![project-group-edit-02](/ko/docs/guides/project/project-group-img/project-group-edit-02.png)
 
-(2-2) 입력 창이 나타나면 변경하려는 이름을 입력합니다. 그리고 입력 창을 제외한 다른 곳을 마우스로 클릭하여, 읽기 모드로 전환합니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d998be1b-4b11-4d8f-a902-0617010ffb1d/Untitled.png)
+(4) 입력 창이 나타나면 변경하려는 이름을 입력합니다. 그리고 입력 창을 제외한 다른 곳을 마우스로 클릭하여, 읽기 모드로 전환합니다.
 
 ### 프로젝트 그룹 계층 구조 편집하기
 
@@ -124,15 +124,11 @@ description: >
 
 (2) [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b4ccdc4-e0ab-483f-a92c-537707305db0/Untitled.png)
+![project-group-edit-03](/ko/docs/guides/project/project-group-img/project-group-edit-03.png)
 
-(2-1) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(3) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
 
-![스크린샷 2022-06-10 오후 6.13.24.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2dcacf41-ad71-4555-87a9-3188baa28a3b/스크린샷_2022-06-10_오후_6.13.24.png)
-
-(2-2) 내려놓은 위치로 프로젝트 그룹의 위치가 위동한 것을 확인할 수 있습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e6ae5a0-0b32-4cb5-bb86-7f6d34579272/Untitled.png)
+![project-group-edit-04](/ko/docs/guides/project/project-group-img/project-group-edit-04.png)
 
 {{<alert title="프로젝트 그룹 이동이 안되는 경우">}}
 • 선택한 프로젝트 그룹을 수정할 수 있는 권한이 없는 경우: 만약 편집 모드에서 프로젝트 그룹 선택이 안된다면, 해당 프로젝트 그룹을 이동할 수 있는 권한이 없는 것입니다.
@@ -150,7 +146,7 @@ description: >
 
 (2) [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b4ccdc4-e0ab-483f-a92c-537707305db0/Untitled.png)
+![project-group-edit-05](/ko/docs/guides/project/project-group-img/project-group-edit-05.png)
 
 {{<alert title="[편집] 버튼이 활성화되지 않는 경우">}}
 해당 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다. 
@@ -166,11 +162,11 @@ description: >
 
 (2) 오른쪽 상단의 [설정] 버튼을 클릭한 후, 드롭다운에서 [선택한 그룹 삭제]를 선택합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/08a85fb0-93a5-4c72-9b48-8dd4fc42c5d9/Untitled.png)
+![project-group-delete-01](/ko/docs/guides/project/project-group-img/project-group-delete-01.png)
 
 (2-1) [프로젝트 그룹 삭제] 모달에서 [확인] 버튼을 클릭하여 프로젝트 그룹을 영구히 삭제합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b425d104-ffec-4602-a50b-fbdfb5d16503/Untitled.png)
+![project-group-delete-02](/ko/docs/guides/project/project-group-img/project-group-delete-02.png)
 
 {{<alert title="프로젝트 그룹 삭제가 안되는 경우">}}
 
