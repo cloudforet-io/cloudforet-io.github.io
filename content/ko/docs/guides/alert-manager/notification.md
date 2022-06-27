@@ -36,7 +36,7 @@ description: >
 [채널 이름]과 [알림 레벨]이 기본 설정 필드이며, 이후 나머지는 채널별로 입력받는 정보가 다릅니다.
 
 {{< alert title="" >}}
-각 알림 채널의 자세한 연동 가이드는 이곳(링크)을 확인하십시오.
+각 **알림 플러그인**에 대한 자세한 연동 가이드는 [이곳](/ko/docs/guides/plugins/alert-manager-notification/)을 확인하십시오.
 {{< /alert >}}
 
 
@@ -44,7 +44,7 @@ description: >
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dad7e797-8330-413d-9be4-64805bcfda1a/Untitled.png)
 
 {{< alert title="알림 레벨" >}}
-알림 레벨은 얼럿 전파에 대한 규칙을 정의하는 [에스컬레이션 정책](https://www.notion.so/96f7a63522ea4e7186a2cac81bf6464f)과 관련이 있습니다. 
+알림 레벨은 얼럿 전파에 대한 규칙을 정의하는 [에스컬레이션 정책](/ko/docs/guides/alert-manager/escalation-policy/)과 관련이 있습니다. 
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40cca28a-278d-45cd-acf7-201c54d9fdcb/Untitled.png)
 
