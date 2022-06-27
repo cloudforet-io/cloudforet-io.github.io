@@ -48,6 +48,14 @@
     font-size: 1rem;
   }
 
+  a {
+    &:hover,
+    &.active {
+      color: $blue200;
+      text-decoration: underline;
+    }
+  }
+
   p {
     max-width: unset;
     margin-bottom: 1rem;
@@ -110,6 +118,7 @@
     max-width: 90%;
     margin: 1rem 0;
     background-color: $navy100;
+    border-radius: 0;
   }
 
   .alert {
@@ -227,6 +236,12 @@
   }
 }
 
+.btn {
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($blue100, 0.25);
+  }
+}
+
 .link-button {
   display: inline-flex;
   align-items: center;
@@ -240,9 +255,9 @@
   font-size: 0.875rem;
   line-height: 1.6;
 
-  &.navy400 {
-    border-color: $navy400;
-    background-color: $navy400;
+  &.navy500 {
+    border-color: $navy500;
+    background-color: $navy500;
     color: $white;
   }
 

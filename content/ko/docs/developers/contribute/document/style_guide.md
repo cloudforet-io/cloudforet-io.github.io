@@ -21,7 +21,7 @@ description: >
 ```
 
 결과 : <br>
-{{< link-button background-color="navy400" url="/" text="Home" />}}
+{{< link-button background-color="navy500" url="/" text="Home" />}}
 {{< link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" />}}
 
 ## Video

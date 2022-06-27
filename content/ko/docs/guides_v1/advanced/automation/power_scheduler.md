@@ -16,8 +16,8 @@ Power Scheduler page offers listing scheduler information, add/update/delete sch
 User need to define security policy\(IAM\) before setup power scheduler.
 Before creating Power Scheduler modify your existing policy, For detailed process refer to link below.
 
-{{< link-button background-color="navy400" url="/docs/guides_v1/service_account/aws_service_account_policy_management/" text="(AWS) Service Account Policy Management" />}}
-{{< link-button background-color="navy400" url="/docs/guides_v1/service_account/google_cloud_service_account_policy_management/" text="(Google Cloud) Service Account Policy Management" />}}
+{{< link-button background-color="navy500" url="/docs/guides_v1/service_account/aws_service_account_policy_management/" text="(AWS) Service Account Policy Management" />}}
+{{< link-button background-color="navy500" url="/docs/guides_v1/service_account/google_cloud_service_account_policy_management/" text="(Google Cloud) Service Account Policy Management" />}}
 
 
 ## Power Scheduler Dashboard

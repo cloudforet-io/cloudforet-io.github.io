@@ -16,12 +16,12 @@ When you add `##` in the documentation, it makes a list of Table of Contents aut
 ## Link button
 Code :
 ```go-html-template
-{{</* link-button background-color="navy400" url="/" text="Home" */>}}
+{{</* link-button background-color="navy500" url="/" text="Home" */>}}
 {{</* link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" */>}}
 ```
 
 Output : <br>
-{{< link-button background-color="navy400" url="/" text="Home" />}}
+{{< link-button background-color="navy500" url="/" text="Home" />}}
 {{< link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" />}}
 
 ## Video
