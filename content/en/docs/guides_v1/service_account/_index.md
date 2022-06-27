@@ -57,7 +57,7 @@ Select a project in which a **Service Account** will be placed. Collected resour
 ![](/docs/guides_v1/service_account/service_account_img/service_account_img_06.png)
 * To create a **Project**, click the **+ Create Project** button.
 * For a more detailed process on creating a project, refer to the link below.<br>
-{{< link-button background-color="navy400" url="/docs/guides_v1/project/project_group_management/" text="Project Group Management" />}}
+{{< link-button background-color="navy500" url="/docs/guides_v1/project/project_group_management/" text="Project Group Management" />}}
 * Select a project you want, then click the **Save** button.
 
 ## Delete Service Account/Change Project
