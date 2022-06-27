@@ -68,7 +68,6 @@
     padding-bottom: 0.625rem;
     padding-right: 1.75rem;
     transition: background-color 0.3s;
-
     :hover {
       color: $navy400;
     }
@@ -99,12 +98,16 @@
         top: 0;
         right: 1rem;
         height: 100%;
-        font-family: "Font Awesome 5 Free";
-        content: "\f078";
-        color: $navy300;
+        content: '';
+        background: chevronIcon(53566E) no-repeat 50% 50% / 100%;
+        width: 1rem;
         transition: transform 0.5s;
         cursor: pointer;
       }
+    }
+
+    > label:hover::before {
+      background-image: chevronIcon(8a8c9f);
     }
 
     > input:checked ~ label::before {

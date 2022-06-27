@@ -55,10 +55,17 @@ $link-color: $blue100;
 $navbar-height: 3.75rem;
 
 // Sidebar
-$td-sidebar-width: 20rem;
+$td-sidebar-width: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 
 // TOC
-$table-of-contents-with: 15.3125rem;
+$table-of-contents-with: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 
 // Dropdown
 $dropdown-link-active-bg:           $purple200 !default;
+
+// chevron
+@function chevronIcon($color) {
+  $color: '%23'+$color;
+  $icon: "data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z' fill='#{$color}'/%3E%3C/svg%3E%0A";
+  @return url($icon);
+}
