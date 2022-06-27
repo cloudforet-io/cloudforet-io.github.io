@@ -11,7 +11,11 @@
                 <p class="license">Documentation Distributed under <a href="https://github.com/spaceone-dev/docs/blob/master/LICENSE">CC BY 4.0</a></p>
             </div>
             <div class="external-link">
+                {{ if .IsHome }}
                 <a href="https://discuss.spaceone.org/" target="_blank"><i class="fas fa-comment-dots"></i></a>
+                {{ else }}
+                <a href="https://www.youtube.com/channel/UCJrHbVMOd-zh2U9z35ZpJ0Q" target="_blank"><i class="fab fa-youtube"></i></a>
+                {{ end }}
                 <a href="https://github.com/spaceone-dev" target="_blank"><i class="fab fa-github fa-fw"></i></a>
             </div>
         </div>

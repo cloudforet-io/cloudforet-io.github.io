@@ -10,7 +10,8 @@ footer {
     align-items: flex-end;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
-    color: #415567;
+    color: $navy400;
+    border-top: solid 1px $navy100
   }
 
   .copyright {
@@ -51,7 +52,6 @@ footer {
       margin: 0 auto;
     }
     .contents {
-      //padding: 2rem 1.5rem 2.5rem;
       border-top: none;
       color: $navy300;
     }

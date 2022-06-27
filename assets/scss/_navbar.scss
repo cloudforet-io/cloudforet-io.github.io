@@ -2,7 +2,7 @@
   min-height: $navbar-height;
   padding: 0 1.875rem;
   background-color:$navy600;
-  font-family: $td-fonts-serif;
+  font-family: $font-family-sans-serif;
   color: $white;
   flex-wrap: nowrap;
 
@@ -74,11 +74,14 @@
     }
 
     .dropdown-toggle::after {
+      display: inline-block;
+      content:'';
+      width: 1rem;
+      height: 1rem;
       margin-left: 0.25rem;
-      content:"\f078";
-      font-family: 'Font Awesome 5 Free';
-      font-size: 0.6rem;
+      background: chevronIcon(ffffff) no-repeat 0 0 / 100%;
       line-height: 1;
+      vertical-align: middle;
       border: none;
     }
   }
