@@ -16,19 +16,20 @@ description: >
 
 (1) 프로젝트 상세 페이지에 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee0b167e-5aa6-4332-b517-4ac34849b3b0/Untitled.png)
+![create-escalation-policy-1](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-1.png)
 
-(2) 에스컬레이션 정책 영역에서 [편집] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1cd631f5-8951-4fdc-97bf-0d826c2d255d/Untitled.png)
+(2) 에스컬레이션 정책 영역에서 [변경] 버튼을 클릭합니다.
+
+![create-escalation-policy-2](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-2.png)
 
 (3) [새로운 정책 생성] 탭을 클릭합니다.
 
-![스크린샷 2022-06-20 오전 9.56.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2df1dc95-256e-4f01-9733-52379ed865e3/스크린샷_2022-06-20_오전_9.56.12.png)
+![create-escalation-policy-3](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-3.png)
 
 (4) 에스컬레이션 정책을 생성하기 위한 설정들을 입력합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/783bf1b0-bc4f-481d-b602-e50273d2bb32/Untitled.png)
+![create-escalation-policy-4](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-4.png)
 
 | 정책 | 설명 |
 | --- | --- |
@@ -44,7 +45,7 @@ description: >
 
 해당 프로젝트에 알림 채널을 설정할 수 있으며, 알림 채널은 각각 자신의 레벨을 가집니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07be427b-ad3f-4e4d-a986-1d6865406ed0/Untitled.png)
+![escalation-policy-level](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-level.png)
 
 에스컬레이션 규칙을 정의할 때, [알림 레벨]을 설정하게 됩니다. 설정된 단계마다 해당하는 레벨의 알림 채널들로 얼럿을 전송하게 됩니다.
 
@@ -60,7 +61,7 @@ description: >
 
 새로운 프로젝트가 생성되고 얼럿을 활성화하면, 해당 정책이 자동으로 적용됩니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70948211-6da4-4c80-b460-60dfb0903797/Untitled.png)
+![set-as-default](/ko/docs/guides/alert-manager/escalation-policy-img/set-as-default.png)
 
 {{< alert title="" >}}
 단, 범위가 `글로벌` 인 정책만 [기본으로 설정하기]가 가능합니다.
@@ -72,19 +73,19 @@ description: >
 
 에스컬레이션 정책 목록에서 대상을 선택 후 [작업] 드롭다운에서 [편집] 및 [삭제]가 가능합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a611b1b-c8d3-4992-a99f-dd53a78e13fb/Untitled.png)
+![escalation-policy-update-delete](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-update-delete.png)
 
 ### 편집
 
 편집의 경우 [생성] 버튼 클릭 시 생성되는 모달과 같은 형태이며, 범위를 제외한 모든 항목을 편집할 수 있습니다.
 
-![스크린샷 2022-06-16 오전 10.25.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8e3eb67c-7039-403d-9967-d8709e4b9ca9/스크린샷_2022-06-16_오전_10.25.06.png)
+![update-escalation-policy](/ko/docs/guides/alert-manager/escalation-policy-img/update-escalation-policy.png)
 
 ### 삭제
 
 삭제의 경우 아래와 같은 확인 모달을 통해 삭제를 진행할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fca6f724-60a4-4cc3-91dd-1df31e459828/Untitled.png)
+![delete-escalation-policy](/ko/docs/guides/alert-manager/escalation-policy-img/delete-escalation-policy.png)
 
 {{< alert title="" >}}
 기본 값으로 설정된 정책과 사용중인 정책은 삭제할 수 없습니다.
@@ -99,4 +100,4 @@ description: >
 
 반면 에스컬레이션 정책 페이지에서는 추가적으로 권한이 부여된 계정이라면, `글로벌` 스코프의 에스컬레이션 정책을 생성할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a8f968f9-69ee-4429-ae35-8f59d60b122d/Untitled.png)
+![escalation-policy-page](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-page.png)
