@@ -15,7 +15,7 @@ description: >
 
 얼럿 속성에대한 자세한 정보는 [여기](링크)를 참고하십시오.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7342bc34-168b-4e92-9891-baef289ee8f5/Untitled.png)
+![view-alert-by-status](/ko/docs/guides/alert-manager/dashboard-img/view-alert-by-status.png)
 
 얼럿 항목을 클릭하면 [얼럿 상세 페이지](링크)로 이동하여 상세 정보를 확인하거나 세부 설정을 할 수 있습니다.
 
@@ -23,11 +23,9 @@ description: >
 
 프로젝트(프로젝트 가이드 링크)에서 발생한 얼럿 히스토리를 보여줍니다. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/65d50665-fc83-4ad4-8f5d-22360f3a70e4/Untitled.png)
+![alert-history-1](/ko/docs/guides/alert-manager/dashboard-img/alert-history-1.png)
 
 월별 얼럿 히스토리를 차트와 카드를 통해 확인할 수 있습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d7cfe707-53d5-4bfc-8e56-a31f486faa66/Untitled.png)
 
 이전 달과의 비교 데이터가 존재하면, 얼럿의 [생성됨] 증감량과 [완료] 증감량을 확인할 수 있습니다.
 
@@ -35,11 +33,11 @@ description: >
 
 사용자와 관련된 각각의 프로젝트들의 얼럿 정보를 보여줍니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eba389ce-a260-4016-9395-fba1e47c1330/Untitled.png)
+![project-board-1](/ko/docs/guides/alert-manager/dashboard-img/project-board-1.png)
 
 [Top 5 프로젝트 활동]의 경우 [오픈] 상태의 얼럿의 가장 많은 순서대로 위젯을 통해 보여줍니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/49035315-ab0d-4ea4-a2fc-664a20132dd6/Untitled.png)
+![project-board-2](/ko/docs/guides/alert-manager/dashboard-img/project-board-2.png)
 
 검색 창 아래에는 얼럿이 발생한 프로젝트가 활동이 높은 순서대로 보여집니다.
 
