@@ -12,7 +12,7 @@ description: >
 ### 얼럿의 생성 조건
 
 - **수동 생성**: 지정된 프로젝트에 수동으로 알림이 필요한 경우 얼럿을 생성합니다.
-- **웹훅 연동을 통한 자동 생성**: 웹훅(링크)은 외부 모니터링 서비스로부터 발생된 이벤트를 수신합니다. 그리고 수신한 이벤트 메시지를 정제하여 얼럿을 자동으로 생성합니다.
+- **웹훅 연동을 통한 자동 생성**: [웹훅](/ko/docs/guides/plugins/)은 외부 모니터링 서비스로부터 발생된 이벤트를 수신합니다. 그리고 수신한 이벤트 메시지를 정제하여 얼럿을 자동으로 생성합니다.
 
 ### 상태
 
@@ -51,13 +51,13 @@ description: >
 
 (1) 얼럿 페이지로 이동 후 [생성] 버튼을 눌러줍니다.
 
-![스크린샷 2022-06-13 오후 6.42.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c706ec9-0c45-436a-bb7c-213ba2972e27/스크린샷_2022-06-13_오후_6.42.16.png)
+![create-alert-step-1](/ko/docs/guides/alert-manager/alert-img/create-alert-step-1.png)
 
 (2) 얼럿 생성 폼을 작성합니다.
 
-![스크린샷 2022-06-13 오후 6.47.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8515c1cc-b7c9-4ce3-ad08-509c75ed4126/스크린샷_2022-06-13_오후_6.47.13.png)
+![create-alert-step-2](/ko/docs/guides/alert-manager/alert-img/create-alert-step-2,3.png)
 
-(2-1) 얼럿 제목을 입력하고 긴급도(링크)를 선택합니다.
+(2-1) 얼럿 제목을 입력하고 [긴급도](/ko/docs/guides/alert-manager/alert/#긴급도)를 선택합니다.
 
 (2-2) 다음으로 얼럿이 어떤 프로젝트에 대하여 발생한 것인지 지정해줍니다.
 
@@ -67,15 +67,15 @@ description: >
 
 ### 외부 모니터링 서비스를 연결하여 얼럿 자동 생성하기
 
-웹훅 연동을 통한 얼럿 자동 생성을 하려면 **웹훅** **생성**과 **연동 설정**이 필요합니다.
+웹훅 연동을 통한 얼럿 자동 생성을 하려면 **웹훅 생성**과 **연동 설정**이 필요합니다.
 
-(1) 원하는 외부 모니터링 서비스에 해당하는 [웹훅을 추가] (링크)합니다. 
+(1) 원하는 외부 모니터링 서비스에 해당하는 [웹훅을 추가](/ko/docs/guides/alert-manager/webhook/)합니다. 
 
-![스크린샷 2022-06-14 오후 10.32.24.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25f4506a-02c0-4b98-8b2c-1eefb76042fe/스크린샷_2022-06-14_오후_10.32.24.png)
+![create-webhook-step-1](/ko/docs/guides/alert-manager/alert-img/create-webhook-step-1.png)
 
-(2) 추가 된 웹훅의 웹훅 URL으로 각 [외부 모니터링 서비스와 연동] (링크)해줍니다.
+(2) 추가 된 웹훅의 웹훅 URL으로 각 [외부 모니터링 서비스와 연동](/ko/docs/guides/plugins/)해줍니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22f90db8-3ccb-427a-85bc-e1935b8ee3bd/Untitled.png)
+![create-webhook-step-2](/ko/docs/guides/alert-manager/alert-img/create-webhook-step-2.png)
 
 (3) 연결되어 있는 모니터링 서비스에서 발생하는 이벤트의 메시지가 정제되어 얼럿으로 자동 생성됩니다.
 
@@ -83,10 +83,10 @@ description: >
 
 클라우드포레의 얼럿을 활용한 여러가지 기능을 간단하게 살펴봅니다.
 
-- [알림 채널](https://www.notion.so/c77dd0541f8d4d82bc124471ad62accc): 얼럿을 어떤 사용자에게 어떻게, 언제 전달할 것인지 등을 설정합니다.
-- [에스컬레이션 정책](https://www.notion.so/96f7a63522ea4e7186a2cac81bf6464f): 단계별 규칙을 적용하여, 수신된 얼럿을 프로젝트의 멤버들에게 효과적으로 전달합니다.
-- [이벤트 규칙](https://www.notion.so/6ac7c40198e04366b1118ac9ed6653f1): 웹훅을 통해 수신된 이벤트는 조건에 따라 **얼럿**으로 생성됩니다.
-- [유지 관리 기간](https://www.notion.so/45cdfbee7b8a4b408e06d9685222708f):  정기, 비정기적인 시스템 작업 일정을 등록하여 작업을 안내하고, 작업간 발생하는 **얼럿**을 차단합니다.
+- [알림 채널](/ko/docs/guides/alert-manager/notification): 얼럿을 어떤 사용자에게 어떻게, 언제 전달할 것인지 등을 설정합니다.
+- [에스컬레이션 정책](/ko/docs/guides/alert-manager/escalation-policy/): 단계별 규칙을 적용하여, 수신된 얼럿을 프로젝트의 멤버들에게 효과적으로 전달합니다.
+- [이벤트 규칙](/ko/docs/guides/alert-manager/event-rule): 웹훅을 통해 수신된 이벤트는 조건에 따라 **얼럿**으로 생성됩니다.
+- [유지 관리 기간](/ko/docs/guides/alert-manager/maintenance):  정기, 비정기적인 시스템 작업 일정을 등록하여 작업을 안내하고, 작업간 발생하는 **얼럿**을 차단합니다.
 
 
 ## 얼럿 목록 조회하기
@@ -97,10 +97,10 @@ description: >
 
 ### 얼럿 검색
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ec6ee4b-a9c4-4098-b6d4-2edd0bc2c075/Untitled.png)
+![alert-search](/ko/docs/guides/alert-manager/alert-img/alert-search.png)
 
 검색어를 입력하여 조건에 부합하는 얼럿 목록을 확인할 수 있으며, 원하는 얼럿의 제목을 클릭하여 얼럿 상세 페이지로 이동할 수 있습니다.
-(고급 검색에 대한 상세 설명은 여기(링크)를 참고하세요.)
+(고급 검색에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search/#고급-검색)를 참고하세요.)
 
 ### 얼럿 목록 탐색 조건
 
@@ -114,7 +114,7 @@ description: >
 
 (1) 상태를 수정할 얼럿을 선택하고, 오른쪽 상단의 [확인], [완료], [삭제] 중 원하는 버튼을 클릭합니다.
 
-![스크린샷 2022-06-14 오후 5.32.34.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3c6229bb-b6f6-49cc-89ba-af72385779e0/스크린샷_2022-06-14_오후_5.32.34.png)
+![update-alert-1](/ko/docs/guides/alert-manager/alert-img/update-alert-1.png)
 
 (1-1) [확인] 버튼을 클릭하여 `확인` 상태로 변경하기
 
@@ -122,7 +122,7 @@ description: >
 
 상태 변경과 동시에 선택한 얼럿의 담담자를 본인으로 설정할 수 있으며, [확인] 버튼을 클릭하여 완료합니다.
 
-![스크린샷 2022-06-14 오후 5.36.47.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a3fc112-968c-480a-a291-b7ee8ee136ef/스크린샷_2022-06-14_오후_5.36.47.png)
+![update-alert-1-1](/ko/docs/guides/alert-manager/alert-img/update-alert-1-1.png)
 
 (1-2) [완료] 버튼을 클릭하여 `완료` 상태로 변경하기
 
@@ -130,19 +130,19 @@ description: >
 
 상태 변경과 동시에 노트를 작성할 수 있으며, [확인] 버튼을 클릭하여 완료합니다.
 
-![스크린샷 2022-06-14 오후 5.46.21.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/872106e7-0ae7-4076-b890-6a7abca6ecab/스크린샷_2022-06-14_오후_5.46.21.png)
+![update-alert-1-2](/ko/docs/guides/alert-manager/alert-img/update-alert-1-2.png)
 
 (1-3) [삭제] 버튼을 클릭하여 얼럿 삭제하기
 
 삭제할 얼럿 목록을 다시 한번 확인이 가능하며, [확인] 버튼을 클릭하여 삭제합니다.
 
-![스크린샷 2022-06-14 오후 5.47.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d64f7e5-5616-4683-824e-59724464297c/스크린샷_2022-06-14_오후_5.47.06.png)
+![update-alert-1-3](/ko/docs/guides/alert-manager/alert-img/update-alert-1-3.png)
 
 ## 얼럿 살펴보기
 
 얼럿 상세 페이지에서 얼럿에 대한 상세 정보와 히스토리를 조회하고, 관리할 수 있습니다.
 
-![스크린샷 2022-06-14 오후 4.52.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ba9562e-aa22-45ba-b0f1-6d6f8db4fe4b/스크린샷_2022-06-14_오후_4.52.39.png)
+![alert-detail-page](/ko/docs/guides/alert-manager/alert-img/alert-detail-page.png)
 
 | 상세항목 | 설명 |
 | --- | --- |
@@ -159,7 +159,7 @@ description: >
 
 [편집 아이콘] 버튼과 [삭제 아이콘] 버튼을 통해 얼럿의 이름 변경 및 얼럿 삭제가 가능합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6785e7de-288a-4fc6-9913-99479bf2a7f1/Untitled.png)
+![update-alert-name-or-delete-alert](/ko/docs/guides/alert-manager/alert-img/update-alert-name-or-delete-alert.png)
 
 ### 상태 / 긴급도 / 담당자 변경하기
 
@@ -167,17 +167,17 @@ description: >
 
 상태와 긴급도는 드롭다운을 통해 쉽게 수정할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b844b5d-8d24-4b00-a0c0-387ff708da6e/Untitled.png)
+![update-state-urgency](/ko/docs/guides/alert-manager/alert-img/update-state-urgency.png)
 
 (2) 담당자 변경
 
 (2-1) [담당] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83c27b19-904b-4329-8aec-5b8088570d4e/Untitled.png)
+![update-assignee-1](/ko/docs/guides/alert-manager/alert-img/update-assignee-1.png)
 
 (2-2) 담당자를 선택하고 [확인] 버튼을 눌러 담당자 할당을 완료합니다.
 
-![스크린샷 2022-06-14 오후 6.00.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b943917a-a25a-4e0e-b82b-cd8ccba0f91a/스크린샷_2022-06-14_오후_6.00.26.png)
+![update-assignee-2](/ko/docs/guides/alert-manager/alert-img/update-assignee-2.png)
 
 ### 설명 수정하기
 
@@ -185,11 +185,11 @@ description: >
 
 (1) [편집] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac5f079a-e54a-48dc-a959-de4611ccc01b/Untitled.png)
+![update-desciption-1](/ko/docs/guides/alert-manager/alert-img/update-desciption-1.png)
 
 (2) 얼럿 상세설명란에 생성된 폼을 통해 변경사항을 작성하고 [변경사항 저장] 버튼을 클릭하여 설명 수정을 완료합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab168913-a030-4d86-aca7-3ef4f909c02e/Untitled.png)
+![update-desciption-2](/ko/docs/guides/alert-manager/alert-img/update-desciption-2.png)
 
 ### 프로젝트 변경하기
 
@@ -197,7 +197,7 @@ description: >
 
 (1) 프로젝트 [변경] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f0b0a24-2130-4307-a566-9a2412b455d7/Untitled.png)
+![update-project-1](/ko/docs/guides/alert-manager/alert-img/update-project-1.png)
 
 (2) [프로젝트 선택] 드롭다운에서 프로젝트를 선택합니다.
 
@@ -205,7 +205,7 @@ description: >
 
 변경하고자 하는 프로젝트를 선택한 후 [변경사항 저장] 버튼을 클릭하여 프로젝트 변경을 완료합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e4491ec7-f79d-4747-8eef-ae0526ab4e12/Untitled.png)
+![update-project-2](/ko/docs/guides/alert-manager/alert-img/update-project-2.png)
 
 ### 새로운 상태로 업데이트하기
 
@@ -215,39 +215,39 @@ description: >
 
 (1) [새로운 업데이트] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90325dbf-b8a9-403f-b68a-30b02fc4ff88/Untitled.png)
+![update-status-1](/ko/docs/guides/alert-manager/alert-img/update-status-1.png)
 
 (2) [새로운 상태 업데이트] 모달에서 상태를 작성하고 [확인] 버튼을 눌러 상태 업데이트를 완료합니다.
 
-![스크린샷 2022-06-15 오전 10.07.58.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/34a241c0-b069-4324-9760-7064f11f0636/스크린샷_2022-06-15_오전_10.07.58.png)
+![update-status-2](/ko/docs/guides/alert-manager/alert-img/update-status-2.png)
 
 ### 수신인 추가하기
 
-얼럿은 **에스컬레이션 정책**(링크)을 통해 수신자에게 전파됩니다.
+얼럿은 [에스컬레이션 정책](/ko/docs/guides/alert-manager/escalation-policy/)을 통해 수신자에게 전파됩니다.
 
 예외적으로 해당 얼럿에 대하여 추가 사용자에게 얼럿의 전파가 필요하다면, [추가 수신인]을 설정하여 전파할 수 있습니다. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9372d7cb-93eb-4af8-b14c-b7faa635fc53/Untitled.png)
+![add-additional-responder-1](/ko/docs/guides/alert-manager/alert-img/add-additional-responder-1.png)
 
 검색 창을 클릭하면 수신 가능한 사용자 목록을 조회할 수 있으며, 다중 선택이 가능합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4a81e2a-1037-45ee-ac03-25da94205aae/Untitled.png)
+![add-additional-responder-2](/ko/docs/guides/alert-manager/alert-img/add-additional-responder-2.png)
 
 ### 노트 추가하기
 
 얼럿에 대해 구성원들이 코멘트를 남겨 처리 중 문의사항과 이에 대한 답변을 등록하여 의사소통할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ebd7291f-48f2-43fd-8bca-3088fc1f7d2f/Untitled.png)
+![add-note](/ko/docs/guides/alert-manager/alert-img/add-note.png)
 
 ### 발생한 이벤트 살펴보기
 
 같은 이벤트에 대해 각각 얼럿을 생성하지 않습니다. 한 얼럿에서 발생한 이벤트들을 로깅하여 히스토리를 보여주고 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a13e0f8b-100d-40fb-b238-c9dfd0cc0288/Untitled.png)
+![view-pushed-event](/ko/docs/guides/alert-manager/alert-img/view-pushed-event.png)
 
 이벤트 목록 중 하나를 클릭하면, 이벤트의 상세 정보를 조회하실 수 있습니다.
 
-![스크린샷 2022-06-23 오후 4.43.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/168b1ffd-fd82-4c01-b406-3a7b0143e790/스크린샷_2022-06-23_오후_4.43.06.png)
+![view-pushed-event-detail](/ko/docs/guides/alert-manager/alert-img/view-pushed-event-detail.png)
 
 ### 알림 정책 설정하기
 
@@ -255,15 +255,15 @@ description: >
 
 (1) 프로젝트 상세 페이지에 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
 
-![스크린샷 2022-06-28 오전 11.40.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0164544f-c3e8-4bf5-abdb-411f77fcc9cd/스크린샷_2022-06-28_오전_11.40.49.png)
+![notification-policy-1](/ko/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
 
 (2) 알림 정책 영역의 [편집] 버튼을 클릭합니다.
 
-![스크린샷 2022-06-28 오전 11.40.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0164544f-c3e8-4bf5-abdb-411f77fcc9cd/스크린샷_2022-06-28_오전_11.40.49.png)
+![notification-policy-2](/ko/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
 
 (3) 원하는 알림 정책을 클릭합니다.
 
-![스크린샷 2022-06-28 오전 11.40.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7c10fa07-d03a-4acf-bd7a-4eb4a4a40c7b/스크린샷_2022-06-28_오전_11.40.09.png)
+![notification-policy-3](/ko/docs/guides/alert-manager/alert-img/notification-policy-3.png)
 
 (4) [확인] 버튼을 클릭해 정책 설정을 완료합니다.
 
@@ -273,7 +273,7 @@ description: >
 
 {{< alert title="자동 복구 작동 원리" >}}
 
-![스크린샷 2022-06-28 오전 11.53.47.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/515aa39f-0fcd-4214-9438-1a6932406e3f/스크린샷_2022-06-28_오전_11.53.47.png)
+![auto-recovery-setting](/ko/docs/guides/alert-manager/alert-img/auto-recovery-setting.png)
 
 자동 복구가 설정된 프로젝트의 얼럿이 추가 이벤트 수신할 때, 해당 이벤트의 event_type의 값이 `RECOVERY` 인경우 자동으로 얼럿의 상태가 `완료` 로 전환됩니다.
 
@@ -283,14 +283,14 @@ description: >
 
 (1) 프로젝트 상세 페이지에 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
 
-![스크린샷 2022-06-28 오전 11.40.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0164544f-c3e8-4bf5-abdb-411f77fcc9cd/스크린샷_2022-06-28_오전_11.40.49.png)
+![auto-recovery-1](/ko/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
 
 (2) 자동 복구 영역의 [편집] 버튼을 클릭합니다.
 
-![스크린샷 2022-06-28 오전 11.40.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0164544f-c3e8-4bf5-abdb-411f77fcc9cd/스크린샷_2022-06-28_오전_11.40.49.png)
+![auto-recovery-2](/ko/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
 
 (3) 원하는 자동 복구 설정을 클릭합니다.
 
-![스크린샷 2022-06-28 오전 11.40.19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03c21770-2121-4254-b83c-9d201e01d393/스크린샷_2022-06-28_오전_11.40.19.png)
+![auto-recovery-3](/ko/docs/guides/alert-manager/alert-img/auto-recovery-3.png)
 
 (4) [확인] 버튼을 클릭해 자동 복구 설정을 완료합니다.
