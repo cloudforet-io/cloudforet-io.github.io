@@ -21,11 +21,11 @@ description: >
 
 (1) 얼럿 페이지로 이동 후 [생성] 버튼을 눌러줍니다.
 
-![스크린샷 2022-06-13 오후 6.42.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c706ec9-0c45-436a-bb7c-213ba2972e27/스크린샷_2022-06-13_오후_6.42.16.png)
+![create-alert-step-1](/ko/docs/guides/alert-manager/quick-start-img/create-alert-step-1.png)
 
 (2) 얼럿 생성 폼을 작성합니다.
 
-![스크린샷 2022-06-13 오후 6.47.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8515c1cc-b7c9-4ce3-ad08-509c75ed4126/스크린샷_2022-06-13_오후_6.47.13.png)
+![create-alert-step-2](/ko/docs/guides/alert-manager/quick-start-img/create-alert-step-2.png)
 
 (2-1) [설명] 폼을 제외한 모든 입력 폼이 필수요소입니다.
 
@@ -45,7 +45,7 @@ description: >
 
 (1) 원하는 외부 모니터링 서비스에 해당하는 [웹훅을 추가](/ko/docs/guides/alert-manager/quick-start/#웹훅-설정하기)합니다.  
 
-(2) 추가 된 웹훅의 웹훅 URL으로 각 외부 **모니터링 서비스와 연동**(링크)해줍니다.
+(2) 추가 된 웹훅의 웹훅 URL으로 각 외부 [모니터링 서비스와 연동](/ko/docs/guides/plugins/alert-manager-webhook/)해줍니다.
 
 (3) 연결되어 있는 모니터링 서비스에서 발생하는 이벤트의 메시지가 정제되어 얼럿으로 자동 생성됩니다.
 
@@ -63,21 +63,23 @@ description: >
 
 (1) 프로젝트 상세 페이지의 [얼럿] 탭으로 이동 후, [웹훅] 탭을 선택합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9cc07d60-4f24-4511-b59c-14db3630f0f2/Untitled.png)
+![create-webhook-step-1](/ko/docs/guides/alert-manager/quick-start-img/create-webhook-step-1,2.png)
 
 (2) [추가] 버튼을 클릭하여 [웹훅 추가] 모달을 열어줍니다.
 
 (3) [웹훅 추가] 모달에서 이름을 작성하고, 연동할 외부 모니터링 툴 플러그인 타입을 선택합니다.
 
-![스크린샷 2022-06-14 오후 10.32.24.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/25f4506a-02c0-4b98-8b2c-1eefb76042fe/스크린샷_2022-06-14_오후_10.32.24.png)
+![create-webhook-step-3](/ko/docs/guides/alert-manager/quick-start-img/create-webhook-step-3.png)
 
 (4) [확인] 버튼을 클릭하여 설정을 완료합니다.
 
-{{< alert title="생성된 웹훅으로 외부 모니터링 서비스별 연동하기" >}}
+![create-webhook-step-4](/ko/docs/guides/alert-manager/quick-start-img/create-webhook-step-4.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f39e7d87-4d05-4898-9dd8-4b6d3981f51b/Untitled.png)
 
-외부 모니터링 서비스 별 연동방식 가이드는 이곳을 확인해 주십시오.
+{{< alert title="" >}}
+이후 생성된 웹훅 URL으로 외부 모니터링 서비스와 연동을 진행해야합니다.
+
+각각의 외부 모니터링 서비스 연동방식 가이드는 [여기](/ko/docs/guides/plugins/alert-manager-webhook/)를 확인해 주십시오.
 {{< /alert >}}
 
 
@@ -87,19 +89,19 @@ description: >
 
 (1) 프로젝트 상세 페이지에 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee0b167e-5aa6-4332-b517-4ac34849b3b0/Untitled.png)
+![create-escalation-policy-step-1](/ko/docs/guides/alert-manager/quick-start-img/create-escalation-policy-step-1,2.png)
 
 (2) 에스컬레이션 정책 영역에서 [편집] 버튼을 클릭합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1cd631f5-8951-4fdc-97bf-0d826c2d255d/Untitled.png)
+![create-escalation-policy-step-2](/ko/docs/guides/alert-manager/quick-start-img/create-escalation-policy-step-1,2.png)
 
 (3) [새로운 정책 생성] 탭을 클릭합니다.
 
-![스크린샷 2022-06-20 오전 9.56.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2df1dc95-256e-4f01-9733-52379ed865e3/스크린샷_2022-06-20_오전_9.56.12.png)
+![create-escalation-policy-step-3](/ko/docs/guides/alert-manager/quick-start-img/create-escalation-policy-step-3.png)
 
 (4) 에스컬레이션 정책을 생성하기 위한 설정들을 입력합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/783bf1b0-bc4f-481d-b602-e50273d2bb32/Untitled.png)
+![create-escalation-policy-step-4](/ko/docs/guides/alert-manager/quick-start-img/create-escalation-policy-step-4.png)
 
 | 정책 | 설명 |
 | --- | --- |
@@ -121,7 +123,7 @@ description: >
 
 (1) 프로젝트 상세 페이지의 [알림] 탭에서 생성할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/20127446-cac5-45bf-bca7-3df1c824a2d6/Untitled.png)
+![notification-step-1](/ko/docs/guides/alert-manager/quick-start-img/notification-step-1,2.png)
 
 (2) 원하는 알림 채널을 클릭하여 알림 생성 페이지로 이동합니다.
 
@@ -131,7 +133,8 @@ description: >
 
 [채널 이름]과 [알림 레벨]이 기본 설정 필드이며, 이후 나머지는 채널별로 입력받는 정보가 다릅니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dad7e797-8330-413d-9be4-64805bcfda1a/Untitled.png)
+![notification-step-3-1](/ko/docs/guides/alert-manager/quick-start-img/notification-step-3-1.png)
+
 
 #### 알림 레벨
 
@@ -139,11 +142,11 @@ description: >
 
 (3-2) 스케줄을 설정하여 특정 시간에말 알림을 수신할 수 있도록 설정할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d49ffe8d-e389-4018-8def-4833809f905a/Untitled.png)
+![notification-step-3-2](/ko/docs/guides/alert-manager/quick-start-img/notification-step-3-2.png)
 
 (3-3) 알림은 얼럿이 발생했을 때, 예산 알림 기준에 도달했을 때에 수신할 수 있습니다. 여기에서는 어떤 토픽에 대하여 알림을 수신할 것인지를 설정할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/927229b8-9c24-4250-9329-e668770f6811/Untitled.png)
+![notification-step-3-3](/ko/docs/guides/alert-manager/quick-start-img/notification-step-3-3.png)
 
 {{< alert title="" >}}
 각 플러그인의 자세한 연동 가이드는 이곳을 확인하십시오.
@@ -153,7 +156,7 @@ description: >
 
 (5) 생성이 완료된 알림 채널들은 [알림] 탭 하단에서 확인할 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e0cce142-aeb2-4394-ae51-794f6b7ed3ee/Untitled.png)
+![notification-step-5](/ko/docs/guides/alert-manager/quick-start-img/notification-step-5.png)
 
 왼쪽 상단의 토글 버튼을 통해 해당 알림 채널의 활성여부를 조작할 수 있습니다.
 
