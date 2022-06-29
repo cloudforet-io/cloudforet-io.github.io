@@ -6,3 +6,6 @@
 </div>
 {{ end }}
 {{ end }}
+
+{{ $jsTOC := resources.Get "js/toc.js" }}
+<script src="{{ $jsTOC.RelPermalink }}"></script>

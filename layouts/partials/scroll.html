@@ -29,7 +29,7 @@
         var scrollDistance = $(window).scrollTop();
 
         $('h2').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
+            if ($(this).position().top <= scrollDistance + 70) {
                 $('#TableOfContents li.active').removeClass('active');
                 $('#TableOfContents li').eq(i).addClass('active');
             }
