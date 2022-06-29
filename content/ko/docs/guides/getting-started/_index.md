@@ -173,5 +173,5 @@ description: >
 위의 과정들을 완료한 뒤, 클라우드포레의 서비스를 좀 더 편리하고 다양하게 이용하고 싶다면 다음 가이드를 참고해주세요.
 
 - [**에셋 인벤토리** 시작하기](/ko/docs/guides/asset-inventory/quick-start)
-- [**비용 분석** 시작하기](/ko/docs/guides/cost-explorer/quick-start)
+- [**비용 분석** 시작하기](/ko/docs/guides/cost-explorer/cost-analysis)
 - [**얼럿 매니저** 시작하기](/ko/docs/guides/alert-manager/quick-start)
