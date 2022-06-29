@@ -11,6 +11,7 @@
       border: solid 1px $navy100;
       border-radius: 0.25rem;
       padding: 1.25rem;
+      color: $navy500;
       &:before {
         content: '';
         display: block;
@@ -31,7 +32,7 @@
         }
       }
       a {
-        color: $black;
+        color: inherit;
       }
     }
     &-title {
