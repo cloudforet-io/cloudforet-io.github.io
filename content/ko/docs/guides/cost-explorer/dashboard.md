@@ -74,7 +74,7 @@ AWS Data-Transfer와 AWS CloudFront의 데이터 전송 및 비용 발생 현황
 ![cost-dashboard-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-01.png)
 
 {{<alert title="[편집] 버튼이 비활성화 되어 있는 경우">}}
-[비용 관리 > 대시보드] 페이지에 대한 MANAGE 권한이 없으면 대시보드를 편집할 수 없습니다.
+[비용 관리 > 대시보드] 페이지에 대한 `MANAGE` 권한이 없으면 대시보드를 편집할 수 없습니다.
 {{</alert>}}
 
 ### 대시보드 이름 편집하기
@@ -107,7 +107,7 @@ AWS Data-Transfer와 AWS CloudFront의 데이터 전송 및 비용 발생 현황
 {{<alert title="비용 분석 쿼리">}}
 커스텀 위젯을 생성하기 위해서는 **비용 분석 쿼리**가 필요합니다.
 비용 분석 쿼리는 [비용 관리 > 비용 분석] 페이지에서 생성할 수 있습니다.
-자세한 방법은 여기를 참고하세요.
+자세한 방법은 [여기](/ko/docs/guides/cost-explorer/cost-analysis/#비용-분석-쿼리)를 참고하세요.
 {{</alert>}}
 
 (1) 오른쪽의 [위젯 추가] 버튼을 클릭합니다.
@@ -140,11 +140,11 @@ AWS Data-Transfer와 AWS CloudFront의 데이터 전송 및 비용 발생 현황
 ### 위젯 편집하기
 (1) 위젯의 우측 상단에 있는 [편집] 아이콘 버튼을 클릭합니다.
 
-![cost-dashboard-widget-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-widget-01.png)
+![cost-dashboard-widget-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-01.png)
 
 (2) 위젯의 이름이나 그룹별 통계를 편집한 뒤, [확인] 버튼을 클릭합니다.
 
-![cost-dashboard-widget-edit-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-widget-02.png)
+![cost-dashboard-widget-edit-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-02.png)
 
 ### 위젯 삭제하기
 (1) 위젯의 우측 상단에 있는 [삭제] 아이콘 버튼을 클릭합니다.
@@ -202,14 +202,16 @@ AWS Data-Transfer와 AWS CloudFront의 데이터 전송 및 비용 발생 현황
 
 ![cost-dashboard-home-dashboard-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-home-dashboard-01.png)
 
-## 대시보드 복제하기 
-대시보드를 복제할 시 다음 항목들을 설정할 수 있습니다.
+## 대시보드 복제하기
+대시보드 제목 옆의 [더보기] 아이콘 버튼을 클릭 시 [복제] 메뉴에 접근할 수 있습니다.
+![cost-dashboard-duplicate-dashboard-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-01.png)
+
+대시보드를 복제 폼에서 다음 항목들을 설정할 수 있습니다.
+
+![cost-dashboard-duplicate-dashboard-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-02.png)
 - 대시보드 이름
 - 필터 복제 여부: 해당 옵션을 활성화하면 대시보드의 필터 설정까지 그대로 복제합니다.
 - 대시보드 노출방식: `Public`과 `My Dashboard` 중 하나를 선택합니다.
-
-![cost-dashboard-duplicate-dashboard-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-01.png)
-![cost-dashboard-duplicate-dashboard-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-02.png)
 
 ## 대시보드 PDF 다운로드하기
 대시보드 우측 상단의 [다운로드] 아이콘 버튼을 클릭하면 대시보드를 PDF로 다운로드할 수 있습니다.
