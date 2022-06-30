@@ -304,26 +304,16 @@ description: >
 
 컬렉터에 태그를 추가하여 관리할 수 있습니다.
 
-(1) [태그] 탭을 선택합니다.
-
-(2) [편집] 버튼을 클릭합니다.
+(1) [태그] 탭 내부의 [편집] 버튼을 클릭합니다.
 
 ![collector-tag-edit](/ko/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
 
-(2-1) [태그] 페이지에서 [태그 추가] 버튼을 클릭합니다.
+(2) [태그] 페이지에서 [태그 추가] 버튼을 클릭합니다.
 
-![collector-tag-add](/ko/docs/guides/asset-inventory/collector-img/collector-tag-add.png)
-
-(2-2) 추가하고자 하는 값을 `키: 값` 형태로 입력합니다.
+(3) 추가하고자 하는 값을 `키: 값` 형태로 입력합니다.
 
 ![collector-tag-filled](/ko/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
 
-(2-3) 태그를 더 추가하고자 한다면, 원하는 개수만큼 [태그 추가] 버튼을 클릭합니다.
+(3-1) 태그를 더 추가하고자 한다면, 원하는 개수만큼 [태그 추가] 버튼을 클릭합니다.
 
-![collector-tag-multiple](/ko/docs/guides/asset-inventory/collector-img/collector-tag-multiple.png)
-
-2-4) 추가한 태그 입력 창을 삭제하고자 한다면, 값 입력 창 오른쪽의 [삭제] 버튼을 클릭하여 삭제합니다.
-
-![collector-tag-delete](/ko/docs/guides/asset-inventory/collector-img/collector-tag-delete.png)
-
-(2-5) [저장] 버튼을 클릭하여 태그 추가를 완료한 후, [태그] 탭에서 확인합니다.
+(4) [저장] 버튼을 클릭하여 태그 추가를 완료합니다.
