@@ -12,7 +12,7 @@ description: >
 
 ## 플러그인 지원 목록
 
-| 플러그인 | 설정 가이드 링크 |
+| **플러그인** | **설정 가이드 링크** |
 | --- | --- |
 | AWS Cloud Services collector | https://github.com/spaceone-dev/plugin-aws-cloud-service-inven-collector/blob/master/docs/ko/GUIDE.md |
 | AWS EC2 Compute collector | https://github.com/spaceone-dev/plugin-aws-ec2-inven-collector/blob/master/docs/ko/GUIDE.md |
