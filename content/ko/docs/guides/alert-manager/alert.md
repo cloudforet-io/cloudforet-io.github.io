@@ -117,7 +117,7 @@ description: >
 
 또한 기본적으로 제공되는 필터링 기능을 통해 얼럿을 편리하게 필터링할 수 있습니다.
 
-![alert-search-02](/ko/docs/guides/alert-manager/alert-img/alert-search-02.png)
+고급 검색에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
 
 ### 목록에서 얼럿 상태 변경하기
 
