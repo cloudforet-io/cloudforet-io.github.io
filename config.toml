@@ -39,21 +39,21 @@ pygmentsStyle = "tango"
 [languages]
 [languages.en]
     languageName ="English"
-    title = "SpaceONE - Open Source Multi-Cloud Management Platform"
+    title = "Cloudforet | Open Source Multi-cloud Management Platfrom"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
     # Weight used for sorting.
     weight = 1
-    description = "SpaceONE helps you manage multi-cloud environments and all your cloud resources & cost in ONE platform. SpaceONE supports AWS, Azure, Google Cloud, and more."
+    description = "Manage multi-cloud environments and your all cloud resources & cost in a single platform that offers support for AWS, Azure, Google Cloud, and more."
 [languages.ko]
     languageName ="한국어"
-    title = "SpaceONE - 오픈소스 멀티 클라우드 플랫폼 스페이스원"
+    title = "Cloudforet | 오픈소스 멀티 클라우드 관리 플랫폼"
     contentDir = "content/ko"
     time_format_default = "2006.01.02"
     time_format_blog = "2006.01.02"
     weight = 2
-    description = "멀티 클라우드 환경에서 클라우드 자원과 비용을 하나의 플랫폼, 스페이스원에서 관리할 수 있습니다. AWS, Azure, 구글 클라우드, 프라이빗 클라우드 등을 지원합니다."
+    description = "멀티 클라우드 환경에서 클라우드 리소스와 비용을 클라우드포레로 관리할 수 있습니다. AWS, Azure, 구글 클라우드, 오라클, 알리바바 등 다양한 클라우드 서비스를 지원합니다."
 
 [outputs]
 home = [ "HTML" ]
@@ -118,7 +118,7 @@ date = ["date", ":filename", "publishDate", "lastmod"]
 
 [params]
 version_menu = "Versions"
-copyright = "SpaceONE Team"
+copyright = "Team CloudONE"
 #privacy_policy = "https://policies.google.com/privacy"
 latest = "v1.9.6"
 #archived_version = true
@@ -136,7 +136,7 @@ currentUrl = "https://www.spaceone.org/home/"
 prism_syntax_highlighting = false
 # Configure url of latest version
 # url_latest_version = ""
-subtitle = "SpaceONE"
+subtitle = "Cloudforet"
 
 # User interface configuration
 [params.ui]
