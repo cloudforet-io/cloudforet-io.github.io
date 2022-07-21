@@ -97,15 +97,15 @@ description: >
 
 
 
-## 에스컬레이션 편집 및 삭제하기
+## 에스컬레이션 수정 및 삭제하기
 
-에스컬레이션 정책 목록에서 대상을 선택 후 [작업] 드롭다운에서 [편집] 및 [삭제]가 가능합니다.
+에스컬레이션 정책 목록에서 대상을 선택 후 [작업] 드롭다운에서 [수정] 및 [삭제]가 가능합니다.
 
 ![escalation-policy-update-delete](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-update-delete.png)
 
-### 편집하기
+### 수정하기
 
-편집의 경우 [생성] 버튼 클릭 시 생성되는 모달과 같은 형태이며, 범위를 제외한 모든 항목을 편집할 수 있습니다.
+수정의 경우 [생성] 버튼 클릭 시 생성되는 모달과 같은 형태이며, 범위를 제외한 모든 항목을 수정할 수 있습니다.
 
 ![update-escalation-policy](/ko/docs/guides/alert-manager/escalation-policy-img/update-escalation-policy.png)
 

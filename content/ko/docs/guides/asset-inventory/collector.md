@@ -74,15 +74,15 @@ description: >
 
 ![collector-detail-info-tab](/ko/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
 
-## 컬렉터 편집하기
+## 컬렉터 수정하기
 
-(1) 컬렉터 목록에서 편집하고자 하는 컬렉터를 선택합니다.
+(1) 컬렉터 목록에서 수정하고자 하는 컬렉터를 선택합니다.
 
-(2) [작업] 드롭다운에서 [편집] 메뉴를 선택합니다.
+(2) [작업] 드롭다운에서 [수정] 메뉴를 선택합니다.
 
 ![collector-edit-menu](/ko/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
 
-(3) [컬렉터 편집] 모달에서 값을 변경한 후 [확인] 버튼을 클릭하여 편집을 완료합니다.
+(3) [컬렉터 수정] 모달에서 값을 변경한 후 [확인] 버튼을 클릭하여 수정을 완료합니다.
 
 ![collector-edit-modal](/ko/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
 
