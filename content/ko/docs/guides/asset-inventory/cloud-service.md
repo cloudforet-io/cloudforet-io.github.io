@@ -131,11 +131,29 @@ description: >
 
 ### 클라우드 리소스 변경 기록 확인하기
 
-[변경 기록] 탭에서 선택한 클라우드 리소스의 변경사항을 확인할 수 있습니다.
+[변경 이력] 탭에서는 선택한 클라우드 리소스의 날짜/시간별로 변경사항을 빠르게 파악할 수 있습니다.
 
-어떤 데이터에 대한 변경이 일어난 것인지는 Key 필드를 통해 확인할 수 있습니다.
+(1) 특정 날짜 선택 또는 검색을 통해 확인하고자 하는 세부 내역을 추려낼 수 있습니다.
 
-![cloud-resource-changelog-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-changelog-tab.png)
+![cloud-resource-changes-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-history-changes-tab.png)
+
+(2) 특정 키값 또는 특정 시간대 전체 클릭시, 해당하는 변경 이력 상세를 확인할 수 있습니다.
+
+(2-1) 변경내역: 해당 리소스의 어떤 Key값들이 어떻게 업데이트 되었는지 상세 내역을 확인할 수 있습니다.
+
+![cloud-history-diff-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-diff-tab.png)
+
+(2-2) 로그: AWS CloudTrail와 같은 Provider별 상세 로그를 지원하여, 선택한 시간내/외로 어떤 세부 이벤트가 발생했는지 확인할 수 있습니다. 이에 따라, 특정 리소스를 변경한 유저를 파악할 수 있는 큰 장점이 있습니다.
+
+![cloud-history-log-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-tab.png)
+
+확인하고자 하는 값의 키를 클릭하여 상세 로그를 확인할 수 있습니다.
+
+![cloud-history-log-modal](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-modal.png)
+
+(2-3) 노트: 선택한 타임에 노트를 추가/관리 함으로써, 어떤 담당자와 해당 변경이 관련이 있는지, 어떤 프로세스로 해당 이슈를 해결할지 등 기업별 워크플로우를 자유롭게 관리할 수 있습니다.
+
+![cloud-history-note-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-note-tab.png)
 
 ### 클라우드 리소스 모니터링 정보 확인하기
 
