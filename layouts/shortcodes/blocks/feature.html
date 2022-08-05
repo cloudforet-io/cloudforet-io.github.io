@@ -14,7 +14,7 @@
                 <p class="description">{{ $description | safeHTML }}</p>
             </div>
             {{ with .Get "thumbnail" }}
-                <img src="{{ . }}" alt="{{ $description }}" class="img-feature" />
+                <img src="{{ . }}" alt="{{ $description }}" class="img-feature" loading="lazy" />
             {{ end }}
             {{ if eq .Page.File.Ext "md" }}
             {{ .Inner | markdownify }}
