@@ -117,7 +117,7 @@ description: >
 
 (1) 편집 모드로 전환한 뒤, 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
 
-(3) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(2) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
 
 ![project-group-tree-change](/ko/docs/guides/project/project-group-img/project-group-tree-change.png)
 
