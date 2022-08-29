@@ -1,35 +1,33 @@
 ---
-title: 커뮤니티 | Cloudforet
-linkTitle: 커뮤니티
-description: 멀티 클라우드부터 온프레미스까지, 보다 나은 IT 인프라 운영을 위해 함께 멀티 클라우드 생태계를 구축합니다.
+title: Commnunity | Cloudforet
+linkTitle: Community
+description: We've built together multi-cloud environments and change the way you operate IT infrastructure across on-premise and multi-clouds.
 menu:
     main:
         weight: 3
 ---
 <div class="inner">
     <section class="about-community">
-        <h3>Cloudforet 커뮤니티</h3>
-        <p>멀티 클라우드부터 온프레미스까지,</span> 보다 나은 IT 인프라 운영을 위해 클라우드포레만의 생태계를 함께 만들고자 합니다</p>
+        <h3>The Cloudforet Community</h3>
+        <p>Together, we make OUR UNIVERSE a better place that changes the way you operate IT <br />infrastructure across on-premises and multi-clouds.</p>
     </section>
     <section class="community-channels">
-        <h4>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h4>
+        <h4>Share any of your idea or feedback.</h4>
         <ul class="channels-list">
             <li class="channel-item">
                 <a href="https://github.com/spaceone-dev/feedback/discussions" style="color:#004F99;" target="_blank" class="channel-link">
                     <figure class="channel-icon"><img src="/images/community/img_forum.png" alt=""></figure>
                     <strong class="channel-name">Discussion</strong>
-                    <p class="channel-description">문의 & 피드백</p>
+                    <p class="channel-description">Inquiry & Feedback</p>
                 </a>
             </li>
             <li class="channel-item">
                 <a href="https://github.com/spaceone-dev" style="color:#415567;" target="_blank" class="channel-link">
                     <figure class="channel-icon"><img src="/images/community/img_github.png" alt=""></figure>
                     <strong class="channel-name">Github</strong>
-                    <p class="channel-description">전체 프로젝트</p>
+                    <p class="channel-description">All the project</p>
                 </a>
             </li>
         </ul>
     </section>
 </div>
-
-
