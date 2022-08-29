@@ -54,6 +54,10 @@ pygmentsStyle = "tango"
     time_format_blog = "2006.01.02"
     weight = 2
     description = "멀티 클라우드 환경에서 클라우드 리소스와 비용을 클라우드포레로 관리할 수 있습니다. AWS, Azure, 구글 클라우드, 오라클, 알리바바 등 다양한 클라우드 서비스를 지원합니다."
+[languages.jp]
+    languageName ="日本語"
+    contentDir = "content/jp"
+    weight = 3
 
 [outputs]
 home = [ "HTML" ]
