@@ -4,133 +4,133 @@ linkTitle: "[IAM] Role"
 weight: 2
 date: 2022-06-07
 description: >
-    **역할**은 권한에 대한 범위를 정의한 단위입니다.
+    **Role** is a unit that defines the scope of privileges.
 ---
 
-관리자가 원하는 역할을 생성하여 해당 역할을 수행할 [사용자](/ko/docs/guides/administration/iam-user/)들에게 할당할 수 있습니다.
+An administrator can create desired roles and assign them to [Users](/docs/guides/administration/iam-user/) who will perform such roles.
 
-역할에 설정되는 속성들은 아래와 같습니다.
+The properties set up for a role are as follows:
 
-#### 역할(Role) 타입
+#### Role type
 
-|  | 프로젝트 관리 권한 | 역할을 사용자에게 부여하는 위치 |
+| | Project management privilege | the position to grant roles to users |
 | --- | --- | --- |
-| **User** | • 사용자 직접 생성 <br/>• 초대받은 프로젝트와 프로젝트 그룹<br/>• 권한이 있는 프로젝트 그룹의 하위 프로젝트 | • 프로젝트 상세 페이지 > [멤버] 탭에서 프로젝트에 사용자를 초대<br/>• 멤버의 정보를 변경하는 경우 User 타입의 역할을 변경 가능 |
-| **Admin** | 모든 프로젝트와 프로젝트 그룹 | [관리 > 사용자 및 권한 관리 > 사용자] 페이지에서 사용자를 추가 또는 수정 시 가능 |
+| **User** | • Create your own <br/>• Invited projects and project groups<br/>• Subprojects within the project groups you have privilege to enter | • Invite other users to the project under the project detail page > [Members] tab<br/>• When changing member information, you can shift the type of user’s role |
+| **Admin** | All projects and project groups | Add or edit users on the [Admin > Users and permission management > Users] page |
 
-#### 클라우드포레 서비스의 페이지별 접근 권한
+#### Access permission for each page of the Cloudforet service
 
-각 서비스 세부 메뉴별로 `View`와 `Manage` 권한을 다르게 부여할 수 있습니다.
+You can grant different `view` and `manage` permissions for each sub menu of each service.
 
 - **View**
 
-  각 페이지들에 대하여 보기 권한이 주어집니다.
+  View permissions are separately given for each page.
 
 - **Manage**
 
-  선택한 서비스 메뉴에 존재하는 생성, 수정, 추가 등과 같은 관리기능을 사용할 수 있습니다. (각 서비스/페이지 별로 관리기능은 상이합니다.)
+  You can use management features such as create, edit, add, etc. that exist in a selected service menu. (Management features are different for each service/page.)
 
 
-#### API 정책 연결
+#### Reviewing API policy
 
-정책(Policy)은 리소스에 연결될 때 해당 권한을 정의하는 개체입니다.
+Policy is an object that defines privilege over a resource when it is attached.
 
-정책에 대한 안내는 [정책 문서](/ko/docs/guides/administration/iam-policy)를 참고하십시오.
+For guidelines on policies, see [Policy documents](/docs/guides/administration/iam-policy).
 
-## 역할 생성하기
+## Creating roles
 
 {{< alert title="" >}}
-역할은 관리자만 생성할 수 있습니다. [생성] 버튼이 활성화 되어있지 않다면 관리자에게 권한을 요청하세요.
+Roles can be created only by an administrator. If the [Create] button is not activated, ask the administrator for permission.
 {{< /alert >}}
 
 
 
 
-(1) [관리 > 사용자 및 권한 관리 > 역할] 메뉴를 선택해 역할 페이지에 진입합니다.
+(1) Select [Admin > User and permission management > Roles] to enter the role page.
 
-(2) 좌측상단 [생성] 버튼을 통해서 [역할 생성] 페이지에 진입합니다.
+(2) Enter the [Create role] page through the [Create] button at the upper left.
 
-![role-create-button](/ko/docs/guides/administration/iam-role-img/role-create-button.png)
+![role-create-button](/docs/guides/administration/iam-role-img/role-create-button.png)
 
-(3) 역할의 이름, 설명(선택)을 작성하고, [역할 타입](/ko/docs/guides/administration/iam-role/#역할role-타입)을 선택해 줍니다.
+(3) Write a name and description (optional) of the role, and select [Role type](/docs/guides/administration/iam-role/#role-type).
 
-![role-create-base-info](/ko/docs/guides/administration/iam-role-img/role-create-base-info.png)
+![role-create-base-info](/docs/guides/administration/iam-role-img/role-create-base-info.png)
 
-- [이름]은 최소 2글자 이상으로 작성되어야 합니다.
-- [[역할 타입]](/ko/docs/guides/administration/iam-role/#역할role-타입)은 생성 이후 수정이 불가능한 항목이므로, 신중하게 선택해주세요.
+- The [Name] must be at least 2 characters long.
+- Since [[Role type]](/docs/guides/administration/iam-role/#role-role-type) is an item that cannot be modified once you create it, please make a careful selection.
 
-(4) [페이지 접근권한](/ko/docs/guides/administration/iam-role/#클라우드포레-서비스의-페이지별-접근-권한)에 대해 설정해 줍니다.
+(4) Set the [Page access permission](/docs/guides/administration/iam-role/#Cloudforet-service-per-page-access-permission).
 
-![role-create-page-access](/ko/docs/guides/administration/iam-role-img/role-create-page-access.png)
+![role-create-page-access](/docs/guides/administration/iam-role-img/role-create-page-access.png)
 
-(5) 생성하려는 역할(Role)에 어떤 권한을 부여할지를 결정하기 위해, 정책(Policy)을 선택하여 연결합니다.
+(5) To decide what permission to grant to the role that you are creating, select a policy to connect.
 
-![role-create-page-policy-connect](/ko/docs/guides/administration/iam-role-img/role-create-page-policy-connect.png)
+![role-create-page-policy-connect](/docs/guides/administration/iam-role-img/role-create-page-policy-connect.png)
 
 
-정책(Policy)연결 관련 자세한 설명은 [여기](/ko/docs/guides/administration/iam-role/#api-정책-연결)를 참고 하십시오.
+For a detailed description on policy connection, see [here](/docs/guides/administration/iam-role/#api-policy-connection).
 
-(6) [생성] 버튼을 클릭하여 역할 생성을 완료합니다.
+(6) Click the [Create] button to complete role creation.
 
-## 역할 조회하기
+## Viewing roles
 
-생성된 역할들은 조회, 검색 그리고 상세 정보 확인이 가능합니다.
+You can search for created roles, view them, and review their detailed information.
 
-### 역할 목록 조회하기
+### Getting a list of roles
 
-생성이 완료된 역할들은 역할 페이지에서 조회할 수 있습니다.
+Roles that have been created can be viewed on the role page.
 
-![role-list](/ko/docs/guides/administration/iam-role-img/role-list.png)
+![role-list](/docs/guides/administration/iam-role-img/role-list.png)
 
-검색어를 입력하여 조건에 부합하는 역할 목록을 확인할 수 있습니다. 고급 검색에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+You can enter a search term to see a list of roles that match your criteria. For a detailed description on advanced search, see [here](/docs/guides/advanced/search/).
 
-![role-search](/ko/docs/guides/administration/iam-role-img/role-search.png)
+![role-search](/docs/guides/administration/iam-role-img/role-search.png)
 
-### 역할 상세 정보 확인하기
+### Viewing detailed information on roles
 
-목차에서 역할 선택 시, 아래 [상세 정보] 탭에서 선택된 역할의 정보를 확인할 수 있습니다.
+When selecting a role in the table of contents, you can check information about the selected role in the [Details] tab below.
 
-![role-detail-info](/ko/docs/guides/administration/iam-role-img/role-detail-info.png)
+![role-detail-info](/docs/guides/administration/iam-role-img/role-detail-info.png)
 
-## 역할 수정하기
+## Editing roles
 
 ### Steps
 
-(1) 수정하고자 하는 역할을 역할 목록에서 선택하고, [수정] 버튼을 클릭하여 수정 페이지에 진입합니다.
+(1) Select the role you want to edit from a list of roles, and click the [Edit] button to enter the edit page.
 
-![role-edit-button](/ko/docs/guides/administration/iam-role-img/role-edit-button.png)
+![role-edit-button](/docs/guides/administration/iam-role-img/role-edit-button.png)
 
-(2) 역할 타입 이외에 수정사항은 [역할 생성하기](/ko/docs/guides/administration/iam-role/#역할-생성하기)와 동일합니다.
+(2) Except for a role type, changes are the same as [Create Role](/docs/guides/administration/iam-role/#role-creating).
 
-![role-edit-base-info](/ko/docs/guides/administration/iam-role-img/role-edit-base-info.png)
+![role-edit-base-info](/docs/guides/administration/iam-role-img/role-edit-base-info.png)
 
 {{< alert title="주의" >}}
 
-기본정보의 [역할 타입]은 생성이후 수정이 불가능한 항목입니다.
+[Role Type] of basic information is an item that cannot be modified after you created the role.
 
 {{< /alert >}}
 
 
-## 역할 삭제하기
+## Deleting roles
 
 ### Steps
 
-(1) 역할 페이지에 진입합니다.
+(1) Enter the role page.
 
-![role-delete-menu](/ko/docs/guides/administration/iam-role-img/role-delete-menu.png)
+![role-delete-menu](/docs/guides/administration/iam-role-img/role-delete-menu.png)
 
-삭제 시에 여러 역할을 한 번에 제거할 수 있습니다.
+You can delete multiple roles at once.
 
-(2) [삭제] 버튼을 클릭하여 제거 대상인 역할 목록을 검토합니다.
+(2) Click the [Delete] button to review the list of roles to be removed.
 
-![role-delete-modal](/ko/docs/guides/administration/iam-role-img/role-delete-modal.png)
+![role-delete-modal](/docs/guides/administration/iam-role-img/role-delete-modal.png)
 
 {{< alert title="주의" >}}
-사용자에게 할당되어있는 역할은 제거할 수 없습니다.
+Roles assigned to a user cannot be removed.
 
-![role-cannot-delete-modal](/ko/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
+![role-cannot-delete-modal](/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
 
-삭제가 불가능한 역할이 포함되어있는 경우, 역할과 해당 역할이 할당된 사용자를 함께 보여줍니다.
+If a role that cannot be deleted was included, the role and the user assigned to the role are displayed together.
 {{< /alert >}}
 
-(3) [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) Click the [OK] button to delete the role.

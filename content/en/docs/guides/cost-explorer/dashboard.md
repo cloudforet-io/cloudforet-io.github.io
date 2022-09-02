@@ -4,216 +4,216 @@ linkTitle: "Dashboard"
 weight: 2
 date: 2022-06-22
 description: >
-    **비용 대시보드**에서 사용자는 기본 대시보드, 혹은 원하는 위젯을 조합한 커스텀 대시보드를 통해 비용 데이터를 한눈에 볼 수 있습니다.
+    In **Cost dashboard**, users can view cost data at a glance through a default dashboard or a custom dashboard with any combination of widgets.
 ---
 
-## 기본 대시보드
-아래는 현재 기본으로 제공되는 대시보드입니다.
+## Default Dashboard
+Below is a dashboard that is currently provided by default:
 
-### 월별 비용 통계
-클라우드 비용 발생 현황 및 예산 사용 상태를 다양한 그룹별 통계 기준으로 차트화한 대시보드입니다.
+### Monthly cost statistics
+This is a dashboard that charts costs that occurred in the cloud and that shows the status of budget use based on diverse group statistics.
 
-![cost-dashboard-intro-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-intro-01.png)
+![cost-dashboard-intro-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-intro-01.png)
 
-### CDN 및 트래픽 비용
-AWS Data-Transfer와 AWS CloudFront의 데이터 전송 및 비용 발생 현황을 차트화한 대시보드입니다.
+### CDN and traffic cost
+This is a dashboard that charts data transfers and the status of costs that occurred status of AWS Data-Transfer and AWS CloudFront.
 
-![cost-dashboard-intro-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-intro-02.png)
+![cost-dashboard-intro-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-intro-02.png)
 
 
-## 대시보드 생성하기
-(1) [비용 관리 > 대시보드] 페이지의 좌측 메뉴 목록에서 [대시보드 생성] 아이콘 버튼을 클릭합니다.
+## Creating a dashboard
+(1) Click the [Create dashboard] icon button in the left menu list on the [Cost management > Dashboard] page.
 
-![cost-dashboard-create-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-01.png)
+![cost-dashboard-create-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-01.png)
 
-(2) [대시보드 생성] 페이지에 진입하여 새로운 대시보드에 적용될 템플릿을 선택합니다.
+(2) Enter the [Create dashboard] page and select a template to be applied to a new dashboard.
 
-(2-1) 클라우드포레가 제공하는 기본 템플릿을 선택하거나, 기존 대시보드를 복제할 수 있습니다.
+(2-1) You can select the default template provided by Cloudforet or clone an existing dashboard.
 
-![cost-dashboard-create-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-02.png)
+![cost-dashboard-create-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-02.png)
 
-(2-2) 기존 대시보드를 복제할 경우, 해당 대시보드에 적용된 필터도 포함할 것인지 선택할 수 있습니다.
+(2-2) When duplicating an existing dashboard, you can choose whether to include filters applied to that dashboard as well.
 
-![cost-dashboard-create-03](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-03.png)
+![cost-dashboard-create-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-03.png)
 
-(3) 노출방식을 선택합니다. `My Dashboard`는 사용자 본인에게만, `Public`은 [비용 관리 > 대시보드] 페이지에 대한 `VIEW` 권한을 가진 모든 사용자들에게 보여집니다.
+(3) Select exposure method. `My dashboard` is visible only to a user, and `public` is visible to all users with `view` permission on the [Cost management > Dashboard] page.
 
-![cost-dashboard-create-04](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-04.png)
+![cost-dashboard-create-04](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-04.png)
 
-{{<alert title="Public 옵션이 보이지 않는 경우">}}
-[비용 관리 > 대시보드] 페이지에 대한 `MANAGE` 권한이 있을 경우 Public과 My Dashboard를 모두 생성할 수 있습니다. 하지만 사용자가 `VIEW` 권한만을 가지고 있을 경우 My Dashboard만 생성할 수 있습니다.
+{{<alert title="If the public option is not visible">}}
+If you have `manage` permission on the [Cost management > Dashboard] page, you can create both public and my dashboards. However, if you have only `view` permission as a user, you can only create my dashboard.
 
-**접근 권한**을 설정하는 방법은 [여기](/ko/docs/guides/administration/iam-role/#역할-생성하기)를 참고 하십시오.
+For ways to set **Access permission**, see [here](/docs/guides/administration/iam-role/#create-role).
 {{</alert>}}
 
-(4) [생성] 버튼을 클릭합니다.
+(4) Click the [Create] button.
 
 
-## 대시보드 삭제하기
+## Delete dashboard
 
-(1) 왼쪽의 대시보드 목록에서 삭제하려는 대시보드를 선택합니다.
+(1) Select the dashboard you want to delete from the dashboard list on the left.
 
-![cost-dashboard-delete-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-01.png)
+![cost-dashboard-delete-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-01.png)
 
-(2) 선택한 대시보드 이름 옆의 [설정] 아이콘 버튼을 클릭한 뒤, 드롭다운에서 [삭제]를 선택합니다.
+(2) Click the [Settings] icon button next to the selected dashboard name, and then select [Delete] from the dropdown.
 
-![cost-dashboard-delete-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-02.png)
+![cost-dashboard-delete-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-02.png)
 
-{{<alert title="[삭제] 버튼이 비활성화 되어 있는 경우">}}
-[비용 관리 > 대시보드] 페이지에 대한 `MANAGE` 권한이 없거나, 삭제하려는 대시보드가 홈 대시보드로 설정되어 있으면 삭제할 수 없습니다.
+{{<alert title="If the [Delete] button is disabled">}}
+If you do not have `manage` permission on the [Cost management > Dashboard] page, or the dashboard you want to delete is set as your home dashboard, you cannot delete it.
 {{</alert>}}
 
-(3) [대시보드 삭제] 모달의 [확인] 버튼을 클릭하여 대시보드를 삭제합니다.
+(3) Click the [OK] button in the [Delete dashboard] modal dialog to delete the dashboard.
 
-![cost-dashboard-delete-03](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-03.png)
+![cost-dashboard-delete-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-03.png)
 
 
-## 대시보드 편집하기
-대시보드 페이지에서 오른쪽의 [편집] 버튼을 클릭하면 대시보드 편집 페이지로 이동하여, 대시보드의 이름이나 위젯 등을 편집할 수 있습니다.
+## Edit dashboard
+If you click the [Edit] button on the right side of the dashboard page, you can enter the dashboard edit page and edit dashboard names or widgets.
 
-![cost-dashboard-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-01.png)
+![cost-dashboard-edit-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-01.png)
 
-{{<alert title="[편집] 버튼이 비활성화 되어 있는 경우">}}
-[비용 관리 > 대시보드] 페이지에 대한 `MANAGE` 권한이 없으면 대시보드를 편집할 수 없습니다.
+{{<alert title="If the [Edit] button is disabled">}}
+If you do not have `manage` permission on the [Cost management > Dashboard] page, you cannot edit dashboards.
 {{</alert>}}
 
-### 대시보드 이름 편집하기
-상단의 입력 폼에서 대시보드의 이름을 편집할 수 있습니다.
+### Editing the dashboard name
+You can edit names of dashboards in the input form at the top.
 
-![cost-dashboard-edit-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-02.png)
+![cost-dashboard-edit-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-02.png)
 
-### 위젯 추가하기
-추가할 수 있는 위젯은 두 가지로, 기본 위젯과 커스텀 위젯이 있습니다.
-기본 위젯은 클라우드포레에서 제공하는 위젯 템플릿으로 만들 수 있는 위젯이며, 커스텀 위젯은 [비용 관리 > 비용 분석] 페이지에서 생성한 쿼리 기반의 위젯입니다.
+### Adding widgets
+There are two widgets you can add: default and custom widgets.
+Default widgets are widgets that can be created with widget templates provided by Cloudforet, and custom widgets are widgets based on queries and created on the [Cost management > Cost analysis] page.
 
-#### 기본 위젯 추가하기
-(1) 오른쪽의 [위젯 추가] 버튼을 클릭합니다.
+#### Adding a default widget
+(1) Click the [Add widget] button on the right.
 
-![cost-dashboard-basic-widget-add-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-01.png)
+![cost-dashboard-basic-widget-add-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-01.png)
 
-(2) [새로운 위젯 추가] 모달에서 [기본] 탭을 선택합니다.
+(2) Select the [Basic] tab in the [Add new widget] modal dialog.
 
-(2-1) 왼쪽의 [위젯 템플릿] 목록에서 템플릿을 선택합니다.
+(2-1) Select a template from the [Widget template] list on the left.
 
-![cost-dashboard-basic-widget-add-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-02.png)
+![cost-dashboard-basic-widget-add-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-02.png)
 
-(2-2) 위젯의 [이름]을 입력합니다. 위젯의 종류에 따라 [그룹별 통계]를 선택해야 하는 경우도 있습니다.
+(2-2) Enter the [Name] of the widget. Depending on the widget type, you may need to select [Group statistics].
 
-![cost-dashboard-basic-widget-add-03](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-03.png)
+![cost-dashboard-basic-widget-add-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-basic-widget-add-03.png)
 
-(3) [확인] 버튼을 클릭하여 위젯 추가를 완료합니다.
+(3) Click the [OK] button to finish adding the widget.
 
-#### 커스텀 위젯 추가하기
-{{<alert title="비용 분석 쿼리">}}
-커스텀 위젯을 생성하기 위해서는 **비용 분석 쿼리**가 필요합니다.
-비용 분석 쿼리는 [비용 관리 > 비용 분석] 페이지에서 생성할 수 있습니다.
-자세한 방법은 [여기](/ko/docs/guides/cost-explorer/cost-analysis/#비용-분석-쿼리)를 참고 하십시오.
+#### Adding a custom widget
+{{<alert title="Cost analysis query">}}
+**Cost analysis query** is required to create custom widgets.
+Cost analysis queries can be created from the [Cost management > Cost analysis] page.
+For detailed information, see [here](/docs/guides/cost-explorer/cost-analysis/#cost-analysis-query).
 {{</alert>}}
 
-(1) 오른쪽의 [위젯 추가] 버튼을 클릭합니다.
+(1) Click the [Add widget] button on the right.
 
-![cost-dashboard-custom-widget-add-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-01.png)
+![cost-dashboard-custom-widget-add-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-01.png)
 
-(2) [새로운 위젯 추가] 모달에서 [커스텀] 탭을 선택합니다.
+(2) Select the [Custom] tab in the [Add new widget] modal dialog.
 
-(2-1) 왼쪽 하단의 [비용 분석 쿼리] 목록에서, 커스텀 위젯에 적용하고 싶은 쿼리의 [커스텀 위젯에 추가] 버튼을 클릭합니다.
+(2-1) In the [Cost analysis query] list at the bottom left, click the [Add to custom widget] button of the query you want to apply to the custom widget.
 
-![cost-dashboard-custom-widget-add-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-02.png)
+![cost-dashboard-custom-widget-add-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-02.png)
 
-(2-2) 추가된 커스텀 위젯이 왼쪽 상단의 [위젯 템플릿] 목록에 나타나면, 그것을 선택합니다.
+(2-2) When the added custom widget appears in the [Widget template] list at the top left, select it.
 
-![cost-dashboard-custom-widget-add-03](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-03.png)
+![cost-dashboard-custom-widget-add-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-03.png)
 
-(2-3) 위젯의 이름을 입력합니다.
+(2-3) Enter a name for the widget.
 
-![cost-dashboard-custom-widget-add-04](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-04.png)
+![cost-dashboard-custom-widget-add-04](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-custom-widget-add-04.png)
 
-(2-4) [확인] 버튼을 클릭하여 위젯 추가를 완료합니다.
-
-
-### 위젯 순서 변경하기
-위젯 목록에서 위젯 이름의 왼쪽에 있는 [순서 변경] 아이콘 버튼을 드래그 & 드롭하여 순서를 변경할 수 있습니다.
-
-![cost-dashboard-edit-widget-order-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-widget-order-01.png)
+(2-4) Click the [OK] button to finish adding the widget.
 
 
-### 위젯 편집하기
-(1) 위젯의 우측 상단에 있는 [편집] 아이콘 버튼을 클릭합니다.
+### Changing the order of widgets
+You can change the order by dragging and dropping the [Reorder] icon button to the left of the widget name in the widget list.
 
-![cost-dashboard-widget-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-01.png)
-
-(2) 위젯의 이름이나 그룹별 통계를 편집한 뒤, [확인] 버튼을 클릭합니다.
-
-![cost-dashboard-widget-edit-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-02.png)
-
-### 위젯 삭제하기
-(1) 위젯의 우측 상단에 있는 [삭제] 아이콘 버튼을 클릭합니다.
-
-![cost-dashboard-widget-delete-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-delete-01.png)
-
-(2) [위젯 삭제] 모달이 열리면 [확인] 버튼을 클릭합니다.
-
-![cost-dashboard-widget-delete-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-delete-02.png)
+![cost-dashboard-edit-widget-order-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-widget-order-01.png)
 
 
-## 대시보드 설정하기
-### 대시보드 이름 편집하기
-(1) 대시보드 제목 옆의 [편집] 아이콘 버튼을 클릭합니다.
+### Editing a widget
+(1) Click the [Edit] icon button in the upper right corner of the widget.
 
-![cost-dashboard-name-edit-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-name-edit-01.png)
+![cost-dashboard-widget-edit-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-01.png)
 
-(2) 대시보드의 이름을 변경한 뒤 [확인] 버튼을 클릭합니다.
+(2) After editing the widget name or group statistics, click the [OK] button.
 
-![cost-dashboard-name-edit-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-name-edit-02.png)
+![cost-dashboard-widget-edit-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-edit-02.png)
 
+### Deleting a widget
+(1) Click the [Delete] icon button in the upper right corner of the widget.
 
-### 필터 설정하기
-필터를 설정하면 대시보드의 데이터를 원하는 조건으로 필터링하여 볼 수 있습니다.
+![cost-dashboard-widget-delete-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-delete-01.png)
 
-(1) 대시보드 상단의 [필터] 아이콘 버튼을 클릭합니다.
+(2) When the [Delete widget] modal dialog opens, click the [OK] button.
 
-![cost-dashboard-filter-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-filter-01.png)
-
-(2) 원하는 필터를 선택한 뒤, [확인] 버튼을 클릭합니다.
-
-![cost-dashboard-filter-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-filter-02.png)
+![cost-dashboard-widget-delete-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-widget-delete-02.png)
 
 
-### 기간 설정하기
-대시보드 우측 상단의 [기간] 드롭다운에서 기간 메뉴를 선택하거나, [기간 선택] 메뉴를 통해 기간을 직접 설정할 수 있습니다.
+## Dashboard settings
+### Editing the dashboard name
+(1) Click the [Edit] icon button next to the dashboard title.
 
-![cost-dashboard-period-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-01.png)
+![cost-dashboard-name-edit-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-name-edit-01.png)
 
-직접 설정할 경우, 월 단위로 최대 12개월까지 설정 가능합니다.
+(2) After changing the name of the dashboard, click the [OK] button.
 
-![cost-dashboard-period-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-02.png)
+![cost-dashboard-name-edit-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-name-edit-02.png)
 
-만약 [기간] 드롭다운 왼쪽의 [날짜 고정] 옵션을 체크한다면, 설정한 날짜가 새로고침 시에도 유지됩니다.
 
-![cost-dashboard-period-03](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-03.png)
+### Filtering settings
+By setting the filter, you can view data on the dashboard by filtering it by the criteria you want.
 
-### 환율 설정하기
-대시보드 우측 상단의 [환율] 드롭다운에서 환율을 선택할 수 있습니다. 선택 시 모든 차트와 테이블의 데이터가 해당 환율로 변환되어 보여집니다.
+(1) Click the [Filter] icon button at the top of the dashboard.
 
-![cost-dashboard-currency-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-currency-01.png)
+![cost-dashboard-filter-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-filter-01.png)
 
-### 홈 대시보드 설정하기
-특정 대시보드를 홈 대시보드로 설정하면 비용 관리 > 대시보드 페이지로 진입 시 해당 대시보드 페이지로 바로 이동합니다. 홈 대시보드 설정은 사용자의 브라우저에 저장되는 정보로, 다른 사용자들과 공유되지 않습니다.
+(2) After selecting the desired filter, click the [OK] button.
 
-![cost-dashboard-home-dashboard-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-home-dashboard-01.png)
+![cost-dashboard-filter-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-filter-02.png)
 
-## 대시보드 복제하기
-대시보드 제목 옆의 [더보기] 아이콘 버튼을 클릭 시 [복제] 메뉴에 접근할 수 있습니다.
-![cost-dashboard-duplicate-dashboard-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-01.png)
 
-대시보드를 복제 폼에서 다음 항목들을 설정할 수 있습니다.
+### Setting up duration
+You can select the duration menu from the [Duration] dropdown at the top right of the dashboard, or set the duration directly through the [Select duration] menu.
 
-![cost-dashboard-duplicate-dashboard-02](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-02.png)
-- 대시보드 이름
-- 필터 복제 여부: 해당 옵션을 활성화하면 대시보드의 필터 설정까지 그대로 복제합니다.
-- 대시보드 노출방식: `Public`과 `My Dashboard` 중 하나를 선택합니다.
+![cost-dashboard-period-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-01.png)
 
-## 대시보드 PDF 다운로드하기
-대시보드 우측 상단의 [다운로드] 아이콘 버튼을 클릭하면 대시보드를 PDF로 다운로드할 수 있습니다.
+If you set the duration directly, you can set the interval on a monthly basis for up to 12 months.
 
-![cost-dashboard-pdf-download-01](/ko/docs/guides/cost-explorer/dashboard-img/cost-dashboard-pdf-download-01.png)
+![cost-dashboard-period-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-02.png)
+
+If you check the [Fix date] option on the left of the [Duration] drop-down, the set date is maintained even when refreshed.
+
+![cost-dashboard-period-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-period-03.png)
+
+### Exchange rate settings
+You can select the exchange rate from the [Exchange rate] dropdown at the top right of the dashboard. When selected, data in all charts and tables is converted to the corresponding exchange rate and displayed.
+
+![cost-dashboard-currency-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-currency-01.png)
+
+### Home dashboard settings
+If you set a specific dashboard as your home dashboard, you will be taken directly to that dashboard page when you enter the [Cost management > Dashboard] page. Information at home dashboard settings is stored in your browser and not shared with other users.
+
+![cost-dashboard-home-dashboard-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-home-dashboard-01.png)
+
+## Duplicating the dashboard
+You can access the [Duplicate] menu by clicking the [More] icon button next to the dashboard title.
+![cost-dashboard-duplicate-dashboard-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-01.png)
+
+You can set the following items in the dashboard duplication form.
+
+![cost-dashboard-duplicate-dashboard-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-duplicate-dashboard-02.png)
+- Dashboard name
+- Whether to duplicate the filter: If you enable this option, data including the filter settings on the dashboard will be duplicated.
+- Dashboard exposure method: Choose between `public` and `my dashboard.`
+
+## Downloading a dashboard as a PDF
+You can download a dashboard as a PDF file by clicking the [Download] icon button at the top right of the dashboard.
+
+![cost-dashboard-pdf-download-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-pdf-download-01.png)

@@ -1,120 +1,120 @@
 ---
-title: "Escalation Policy"
-linkTitle: "Escalation Policy"
+title: "Escalation policy"
+linkTitle: "Escalation policy"
 weight: 8
 date: 2022-06-07
 description: >
-    에스컬레이션 정책을 통해 얼럿에 단계별 규칙을 적용하여, 수신된 얼럿을 프로젝트의 멤버들에게 효과적으로 전달합니다.
+    By applying stage-by-stage rules to alerts through escalation policies, alerts that have been received are effectively sent to members of the project.
 
 
-    각 규칙에는 설정된 레벨이 존재하고, 레벨마다 해당하는 알림 채널에 얼럿이 전파됩니다.
+    Each rule has a set level, and an alert is spread to the corresponding notifications channel for each level.
 ---
 
-웹훅을 통해 수신한 얼럿이 프로젝트의 멤버들에게 알림으로 전송될지 여부는 **에스컬레이션 정책**을 통해 결정됩니다.
+Whether an alert received via a webhook is to be sent as a notification to project members is determined by **Escalation policy**.
 <br>
-에스컬레이션 정책은 다음 두 곳에서 관리할 수 있습니다.
+Escalation policy can be managed in two places:
 
-- **[얼럿 매니저 > 에스컬레이션 정책]** 페이지: `글로벌`과 `프로젝트` 범위의 에스컬레이션 정책 관리
-- **[프로젝트]** 상세 페이지: `프로젝트` 범위의 에스컬레이션 정책 관리
+- **[Alert manager > Escalation policy]** page: Manage escalation policy under the scope of `global` and `project`
+- **[Project]** detail page: Manage escalation policy under the scope of `project`
 
-## 에스컬레이션 정책 생성하기
+## Create escalation policy
 
-[에스컬레이션 정책] 페이지에 대한 `MANAGE` 권한을 가진 사용자일 경우, 에스컬레이션 정책을 생성할 수 있습니다.
+If you are a user with `manage` permission on the [Escalation policy] page, you can create an escalation policy.
 
-### [에스컬레이션 정책] 페이지에서 생성하기
-(1) [얼럿 매니저 > 에스컬레이션 정책] 페이지에서 [생성] 버튼을 클릭합니다.
+### Create in an [Escalation policy] page
+(1) Click the [Create] button on the [Alert manager > Escalation policy] page.
 
-![escalation-policy-full-page](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-full-page.png)
+![escalation-policy-full-page](/docs/guides/alert-manager/escalation-policy-img/escalation-policy-full-page.png)
 
-(2) 에스컬레이션 정책을 생성하기 위한 설정들을 입력합니다.
+(2) Enter the settings to create an escalation policy.
 
-![escalation-policy-create-modal](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-create-modal.png)
+![escalation-policy-create-modal](/docs/guides/alert-manager/escalation-policy-img/escalation-policy-create-modal.png)
 
-| 정책        | 설명                                                                                                  |
+| Policy        | Description                                                                                                  |
 |-----------|-----------------------------------------------------------------------------------------------------|
-| 종료 조건(상태) | 발생된 알람이 중지되는 조건을 정의합니다.                                                                             |
-| 범위        | 에스컬레이션 정책을 사용할 수 있는 범위를 나타냅니다. `글로벌`인 경우 도메인내 모든 프로젝트에서 사용 가능하고, `프로젝트`인 경우 지정된 프로젝트 내에서만 사용 가능합니다. |
-| 프로젝트      | 범위가 `프로젝트`인 경우 대상이 되는 프로젝트를 나타냅니다.                                                                  |
-| 에스컬레이션 규칙 | 단계별 알림 송신을 위해 규칙을 정의합니다.<br/>설정된 레벨에 속하는 알림 채널에 얼럿을 전달하며, 2단계 이상부터 단계 간 텀을 분 단위로 부여할 수 있습니다.        |
-| 반복 횟수     | 얼럿 알림을 몇회 반복할 것인지 정의합니다. 최대 9회까지 반복 가능합니다.                                                          |
+| Exit condition (status) | Define the condition to stop the generated alarm.                                                                             |
+| Range | Indicate the scope in which the escalation policy can be used. In case of `global,` the policy can be used in all projects within the domain, and in case of `project,` within the specified project. |
+| Project | Scope defined as `project` indicates the project being targeted.                                                                  |
+| Escalation rules | Define rules for sending step-by-step notifications.<br/>Alerts are sent to a notifications channel belonging to a set level, and a period between steps can be given in minutes from step 2 or higher.        |
+| Number of repetitions | Define how many times to repeat an alert notification. Notifications can be repeated up to 9 times.                                                          |
 
 {{<alert>}}
-**범위**와 **프로젝트** 항목은 [얼럿 매니저 > 에스컬레이션 정책] 페이지에서 생성할 경우에만 나타납니다.
+**Scope** and **Project** items only appear when you create them in the [Alert manager > Escalation policy] page.
 <br>
-[프로젝트] 상세 페이지에서 생성할 경우, 범위는 자동으로 `프로젝트`가 선택되며, 해당 프로젝트가 대상으로 지정됩니다.
+When creating such items on the [Project] detail page, a `project` is automatically selected for the scope, and the project is designated as the target.
 {{</alert>}}
 
-### [프로젝트] 상세 페이지에서 생성하기
-[프로젝트] 상세 페이지에서 에스컬레이션 정책을 생성하면, 자동으로 해당 프로젝트가 에스컬레이션 정책 대상으로 지정됩니다.
+### Create in a [Project] detail page
+When you create an escalation policy on the [Project] detail page, the project is automatically designated as an escalation policy target.
 
-(1) 프로젝트 상세 페이지의 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
+(1) Inside the [Alert] tab of the project detail page, go to the [Settings] tab.
 
-![create-escalation-policy-1](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-1.png)
+![create-escalation-policy-1](/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-1.png)
 
-(2) 에스컬레이션 정책 영역에서 [변경] 버튼을 클릭합니다.
+(2) Click the [Change] button in the escalation policy area.
 
-![create-escalation-policy-2](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-2.png)
+![create-escalation-policy-2](/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-2.png)
 
-(3) [새로운 정책 생성] 탭을 클릭합니다.
+(3) Click the [Create new policy] tab.
 
-![create-escalation-policy-3](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-3.png)
+![create-escalation-policy-3](/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-3.png)
 
-(4) 에스컬레이션 정책을 생성하기 위한 설정들을 입력합니다.
+(4) Enter settings to create an escalation policy.
 
-![create-escalation-policy-4](/ko/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-4.png)
+![create-escalation-policy-4](/docs/guides/alert-manager/escalation-policy-img/create-escalation-policy-4.png)
 
-### 레벨
+### Level
 
-레벨은 얼럿을 단계별로 전송할 때, 해당 단계에서 얼럿을 전송할 전송 범위입니다.
+A level is a transmission range at which you send an alert from the stage you are in when sending the alert by stage.
 
-해당 프로젝트에 알림 채널을 설정할 수 있으며, 알림 채널은 각각 자신의 레벨을 가집니다.
+You can set up a notifications channel in the project, and each notifications channel has its own level.
 
-![escalation-policy-level](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-level.png)
+![escalation-policy-level](/docs/guides/alert-manager/escalation-policy-img/escalation-policy-level.png)
 
-에스컬레이션 규칙을 정의할 때, [알림 레벨]을 설정하게 됩니다. 설정된 단계마다 해당하는 레벨의 알림 채널들로 얼럿을 전송하게 됩니다.
+When defining the escalation rule, you set the [Notification level]. At each set stage, an alert is sent to the notifications channel of the corresponding level.
 
 {{<alert>}}
-얼럿이 상위 레벨으로 단계별 진행 되기 위한 기간 차이를 충분히 설정하는 것이 좋습니다.
+We recommend you set a sufficient period for the alert to progress to a higher level.
 {{</alert>}}
 
-(5) 모든 설정이 완료되었다면 [확인] 버튼을 클릭해 에스컬레이션 정책을 생성합니다.
+(5) When all settings are completed, click the [OK] button to create the escalation policy.
 
 
 
 
-## 기본 정책으로 설정하기
+## Set as default policy
 
-에스컬레이션 정책 목록에서 하나를 선택한 뒤, [작업] 드롭다운에서 [기본으로 설정하기] 메뉴를 선택해 해당 정책을 기본으로 설정할 수 있습니다.
+After selecting one from the list of escalation policies, you can set it up as a default by selecting the [Set as default] menu from the [Action] dropdown.
 
-새로운 프로젝트가 생성되고 얼럿을 활성화하면, 해당 정책이 자동으로 적용됩니다.
+When a new project is created and the alert is activated, the corresponding policy is automatically applied.
 
-![set-as-default](/ko/docs/guides/alert-manager/escalation-policy-img/set-as-default.png)
+![set-as-default](/docs/guides/alert-manager/escalation-policy-img/set-as-default.png)
 
 {{< alert title="" >}}
-단, 범위가 `글로벌` 인 정책만 [기본으로 설정하기]가 가능합니다.
+However, only policies under the scope of `global` can be selected through the [Set as default] menu.
 {{< /alert >}}
 
 
 
 
-## 에스컬레이션 수정 및 삭제하기
+## Modify and delete escalation
 
-에스컬레이션 정책 목록에서 대상을 선택 후 [작업] 드롭다운에서 [수정] 및 [삭제]가 가능합니다.
+Once you select a target from the escalation policy list, [Modify] and [Delete] become available from the [Action] dropdown.
 
-![escalation-policy-update-delete](/ko/docs/guides/alert-manager/escalation-policy-img/escalation-policy-update-delete.png)
+![escalation-policy-update-delete](/docs/guides/alert-manager/escalation-policy-img/escalation-policy-update-delete.png)
 
-### 수정하기
+### Edit
 
-수정의 경우 [생성] 버튼 클릭 시 생성되는 모달과 같은 형태이며, 범위를 제외한 모든 항목을 수정할 수 있습니다.
+In the case of editing, you can use the same form as a modal dialog that is created when the [Create] button is clicked, and all items except the range can be edited.
 
-![update-escalation-policy](/ko/docs/guides/alert-manager/escalation-policy-img/update-escalation-policy.png)
+![update-escalation-policy](/docs/guides/alert-manager/escalation-policy-img/update-escalation-policy.png)
 
-### 삭제하기
+### Delete
 
-삭제의 경우 아래와 같은 확인 모달을 통해 삭제를 진행할 수 있습니다.
+In case of deletion, you can proceed with deletion through the confirmation modal dialog as shown below:
 
-![delete-escalation-policy](/ko/docs/guides/alert-manager/escalation-policy-img/delete-escalation-policy.png)
+![delete-escalation-policy](/docs/guides/alert-manager/escalation-policy-img/delete-escalation-policy.png)
 
 {{<alert>}}
-기본 값으로 설정된 정책과 사용중인 정책은 삭제할 수 없습니다.
+Policies set as default values ​​and those in use cannot be deleted.
 {{</alert>}}

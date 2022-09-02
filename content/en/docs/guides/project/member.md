@@ -4,113 +4,113 @@ linkTitle: "Member"
 weight: 4
 date: 2022-06-07
 description: >
-    [**프로젝트**](/ko/docs/guides/project/project)와 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 **멤버**를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있습니다.
+    Invite **Members** to a [**Project**](/docs/guides/project/project) and a [**Project group**](/docs/guides/project/project-group), and assign a [**Role**](/docs/guides/administration/iam-role) to them.
     <br>
     <br>
-    멤버들에게는 반드시 하나의 역할(Role)이 부여되며, 이를 통해 해당 프로젝트와 프로젝트 그룹에 대한 접근을 관리할 수 있습니다.
+    Members are always assigned at least one role for each, which allows them to manage access to the project and project group.
 ---
 
 {{<alert>}}
-멤버의 역할(Role)에 연결된 [**정책(Policy)**](/ko/docs/guides/administration/iam-policy)에 따라 프로젝트에 대한 접근 권한이 달라집니다.
-역할(Role)은 아래의 규칙에 따라 하위 계층에 전파됩니다.
+Access to the project depends on the [**Policy**](/docs/guides/administration/iam-policy) related to the member's role.
+Roles are spread to lower levels according to the rules below.
 <br>
 <br>
-• **프로젝트 그룹 멤버 역할**은 그 하위에 있는 모든 프로젝트 그룹과 프로젝트에 대하여서도 동일하게 적용됩니다.
+• **Roles of project group members** are equally applied to all project groups and projects under such roles.
 <br>
-• **프로젝트 멤버 역할**은 해당 프로젝트에만 적용됩니다.
+• **Roles of project members** are applied only to corresponding projects.
 <br>
-• 상위 계층에 존재하는 여러 프로젝트 그룹에 대하여 멤버 역할이 존재하는 경우, 각각에 부여된 역할이 모두 병합되어 적용됩니다.
+• If roles of members exist for multiple project groups that exist in the upper hierarchy, the roles granted to each are merged and then applied.
 {{</alert>}}
 
-## 프로젝트 그룹 멤버 관리하기
+## Manage project group members
 
-[프로젝트 그룹 멤버 관리] 페이지로 이동하여 멤버를 관리할 수 있습니다.
+You can manage members by entering the [Manage project group members] page.
 <br>
 <br>
 
-(1) [프로젝트] 페이지 왼쪽의 [프로젝트 그룹] 목록에서 멤버를 관리하려는 프로젝트 그룹을 선택합니다.
+(1) Select the project group whose members you want to manage from the [Project group] list on the left side of the [Project] page.
 
-(2) 오른쪽 상단에 [프로젝트 그룹 멤버 관리] 아이콘 버튼을 클릭합니다.
+(2) Click the [Manage project group members] icon button at the top right.
 
-![project-member-icon-button](/ko/docs/guides/project/member-img/project-member-icon-button.png)
+![project-member-icon-button](/docs/guides/project/member-img/project-member-icon-button.png)
 
 {{<alert title="">}}
-해당 프로젝트 그룹을 관리할 수 있는 권한이 있어야 오른쪽 상단의 버튼이 보입니다.
+You must have permission to manage the project group to see the button at the top right.
 {{</alert>}}
 
-(3) 프로젝트 그룹 멤버 관리 페이지에서 검색어를 입력하여 조건에 부합하는 프로젝트 목록을 조회하고, 새로운 멤버를 초대하거나, 멤버를 편집 / 삭제할 수 있습니다.
+(3) Enter a search word on the [Manage project group members] page to view a list of projects that meet the criteria, invite new members, or edit/delete members.
 
-![project-member-search](/ko/docs/guides/project/member-img/project-member-search.png)
+![project-member-search](/docs/guides/project/member-img/project-member-search.png)
 
 {{<alert title="">}}
-해당 프로젝트 그룹을 관리할 수 있는 권한이 있어야 멤버 초대 / 편집 / 삭제가 가능합니다.
+You should be permitted to manage project groups to invite/edit/delete members.
 {{</alert>}}
 
-### 프로젝트 그룹 멤버 초대하기
+### Inviting project group members
 
-(1) [프로젝트 그룹 멤버 관리] 페이지에서 [초대] 버튼을 클릭하여 [멤버 초대] 모달을 엽니다.
+(1) Click the [Invite] button on the [Manage project group members] page to open the [Invite members] modal dialog.
 
-![project-member-invite-button](/ko/docs/guides/project/member-img/project-member-invite-button.png)
+![project-member-invite-button](/docs/guides/project/member-img/project-member-invite-button.png)
 
-(2) 초대하려는 멤버를 선택합니다. 한 번에 여러 멤버를 선택하여 초대할 수 있습니다.
+(2) Select the member you want to invite. You can select and invite multiple members at once.
 
-![project-member-invite-modal-member](/ko/docs/guides/project/member-img/project-member-invite-modal-member.png)
+![project-member-invite-modal-member](/docs/guides/project/member-img/project-member-invite-modal-member.png)
 
-(3) 초대할 멤버들에게 부여할 역할(Role)을 선택합니다.
+(3) Select the roles to be granted to members that you want to invite.
 
-![project-member-invite-modal-role](/ko/docs/guides/project/member-img/project-member-invite-modal-role.png)
+![project-member-invite-modal-role](/docs/guides/project/member-img/project-member-invite-modal-role.png)
 
-{{<alert title="멤버 역할(Role)">}}
+{{<alert title="roles of members">}}
 
-프로젝트의 멤버에게 부여할 수 있는 역할(Role)은 `User` 타입의 역할만 가능합니다. 
+Roles that can be granted to members of the project can only be of a `user` type. 
 
-자세한 설명은 [여기](/ko/docs/guides/administration/iam-role)를 참고 하십시오.
+For detailed instructions, see [here](/docs/guides/administration/iam-role).
 
 {{</alert>}}
 
-(4) 초대할 멤버들에 대한 라벨을 입력 후, 엔터 키를 눌러 추가합니다.
+(4) After entering labels for members to invite, press the Enter key to add them.
 
-(5) [확인] 버튼을 클릭하여 멤버 초대를 완료합니다.
+(5) Click the [OK] button to complete member invitation.
 
-![project-member-invite-success](/ko/docs/guides/project/member-img/project-member-invite-success.png)
+![project-member-invite-success](/docs/guides/project/member-img/project-member-invite-success.png)
 
-### 프로젝트 그룹 멤버 편집하기
+### Editing project group members
 
-프로젝트 그룹에 대하여 멤버에게 부여한 역할(Role)과 라벨을 변경할 수 있습니다.
+You can change the roles and labels granted to members for the project group.
 <br>
 <br>
 
-(1) [프로젝트 그룹 멤버 관리] 페이지에서 편집하려는 멤버를 선택합니다.
+(1) In the [Manage project group members] page, select the member you want to edit.
 
-(2) [작업] 드롭다운에서 [편집]을 선택합니다.
+(2) Select [Edit] from the [Action] dropdown.
 
-![project-member-edit-menu](/ko/docs/guides/project/member-img/project-member-edit-menu.png)
+![project-member-edit-menu](/docs/guides/project/member-img/project-member-edit-menu.png)
 
-(3) [멤버 정보 변경] 모달에서 변경하려는 내용을 입력한 후 [확인] 버튼을 클릭하여 변경을 완료합니다.
+(3) In the [Change member information] modal dialog, enter the contents you want to change and click the [OK] button to complete the change.
 
-![project-member-edit-modal](/ko/docs/guides/project/member-img/project-member-edit-modal.png)
+![project-member-edit-modal](/docs/guides/project/member-img/project-member-edit-modal.png)
 
-### 프로젝트 그룹 멤버 삭제하기
+### Deleting project group members
 
-(1) [프로젝트 그룹 멤버 관리] 페이지에서 삭제하려는 멤버를 선택합니다. 복수 선택이 가능합니다.
+(1) In the [Manage project group members] page, select the member you want to delete. Multiple selections are possible.
 
-(2) [작업] 드롭다운에서 [삭제]를 선택합니다.
+(2) Select [Delete] from the [Action] dropdown.
 
-![project-member-delete-menu](/ko/docs/guides/project/member-img/project-member-delete-menu.png)
+![project-member-delete-menu](/docs/guides/project/member-img/project-member-delete-menu.png)
 
-(3) [멤버 제거] 모달에서 [확인] 버튼을 클릭하여 해당 멤버를 제거합니다.
+(3) Click the [OK] button in the [Remove member] modal dialog to remove the member.
 
-![project-member-delete-modal](/ko/docs/guides/project/member-img/project-member-delete-modal.png)
+![project-member-delete-modal](/docs/guides/project/member-img/project-member-delete-modal.png)
 
 
-## 프로젝트 멤버 관리하기
+## Managing project members
 
-프로젝트 상세 페이지의 [멤버] 탭으로 이동하여 멤버를 관리할 수 있으며, 모든 방식과 내용은 프로젝트 그룹 멤버 관리하기(링크)와 동일합니다.
+You can manage members by entering the [Members] tab of the project detail page, and all methods and contents are the same as the managing project group members (link).
 <br>
 <br>
 
-(1) [프로젝트] 페이지에서 멤버를 관리하려는 프로젝트를 선택하여 프로젝트 상세 페이지로 이동합니다.
+(1) On the [Project] page, select the project whose members you want to manage and go to the project detail page.
 
-(2) [멤버] 탭을 선택합니다.
+(2) Select the [Member] tab.
 
-![project-member-tab](/ko/docs/guides/project/member-img/project-member-tab.png)
+![project-member-tab](/docs/guides/project/member-img/project-member-tab.png)

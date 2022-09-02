@@ -4,37 +4,37 @@ linkTitle: "Server"
 weight: 3
 date: 2022-06-07
 description: >
-    [컬렉터](/ko/docs/guides/asset-inventory/collector)를 통해 수집되는 여러 클라우드 서비스의 리소스들 중 서버 리소스를 확인할 수 있습니다.
+    [Collector](/docs/guides/asset-inventory/collector) allows you to check server resources among diverse resources of cloud services.
 ---
 
-## 서버 리소스 목록 조회하기
+## Getting a list of server resources
 
-[에셋 인벤토리 > 서버] 메뉴를 통해 서버 페이지에 진입하여 서버 리소스 목록을 확인할 수 있습니다.
+You can check a list of server resources by entering the server page through the [Asset inventory > Server] menu.
 
-[고급 검색](/ko/docs/guides/advanced/search)을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다.
+[Advanced search](/docs/guides/advanced/search) allows you to filter the list by elaborate criteria.
 
-[엑셀] 아이콘 버튼을 클릭하여 리소스 목록을 [엑셀 파일로 내보내기](/ko/docs/guides/advanced/excel-export) 하거나, [설정] 아이콘 버튼을 클릭하여 [테이블 필드 개인화](/ko/docs/guides/advanced/custom-table)를 할 수 있습니다.
+Click the [Excel] icon button to [Export as an Excel file] for a list of resources (/ko/docs/guides/advanced/excel-export) or click the [Settings] icon button to [Personalize table fields](/ko/ docs/guides/advanced/custom-table).
 
-![server-full-page](/ko/docs/guides/asset-inventory/server-img/server-full-page.png)
+![server-full-page](/docs/guides/asset-inventory/server-img/server-full-page.png)
 
-## 서버 리소스 콘솔 열기
+## Opening the server resources console
 
-때로는 서버 리소스의 프로바이더에서 제공하는 콘솔 사이트에서 작업을 해야 하는 경우가 있습니다.
+Sometimes you need to work on a console site that a server resources provider offers.
 
-(1) 콘솔을 연결하려는 서버 리소스를 선택합니다.
+(1) Select the server resource to which you want to connect the console.
 
-(2) [콘솔 연결] 버튼을 클릭합니다.
+(2) Click the [Console connection] button.
 
-![server-console-connect](/ko/docs/guides/asset-inventory/server-img/server-console-connect.png)
+![server-console-connect](/docs/guides/asset-inventory/server-img/server-console-connect.png)
 
-(3) 버튼을 클릭하면 해당 서버 리소스에 대한 작업을 이어나갈 수 있는 프로바이더의 콘솔이 새 탭으로 열립니다.
+(3) Click the button to open the provider's console in a new tab where you can continue working with the server resource.
 
-아래는 AWS의 EC2 Instance의 콘솔이 열린 예시입니다.
+Below is an example of the AWS EC2 Instance console that was opened.
 
-![server-console-opened](/ko/docs/guides/asset-inventory/server-img/server-console-opened.png)
+![server-console-opened](/docs/guides/asset-inventory/server-img/server-console-opened.png)
 
-## 서버 리소스 살펴보기
+## Explore server resources
 
-서버 리소스 목록에서 살펴보고자 하는 항목을 선택하면, 하단에서 해당 리소스에 대한 정보를 확인할 수 있습니다.
+If you select the item you want to look at from a list of server resources, you can check information about the resource at the bottom.
 
-[에셋 인벤토리 > 클라우드 서비스] 메뉴의 [클라우드 서비스 리소스 살펴보기](/ko/docs/guides/asset-inventory/cloud-service/#클라우드-서비스의-리소스-살펴보기)와 동일합니다.
+It is equivalent to the [Explore cloud service resources](/docs/guides/asset-inventory/cloud-service/#resources-in-cloud-services) in the [Asset inventory > Cloud service] menu.

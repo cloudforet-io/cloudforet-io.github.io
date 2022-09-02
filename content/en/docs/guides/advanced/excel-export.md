@@ -1,16 +1,16 @@
 ---
-title: "Excel Export"
-linkTitle: "Excel Export"
+title: "Export as an Excel file"
+linkTitle: "Export as an Excel file"
 weight: 2
 date: 2022-06-22
 description: >
-    **엑셀 내보내기**를 통해 테이블 데이터를 엑셀로 다운로드 할 수 있습니다.
+    **Export as an Excel file** allows you to download table data compatible with Excel.
 ---
 
-테이블의 [엑셀 내보내기] 아이콘 버튼을 클릭합니다.
+Click the [Export as an Excel file] icon button from the table.
 
-![excel-export-01](/ko/docs/guides/advanced/excel-export-img/excel-export-01.png)
+![excel-export-01](/docs/guides/advanced/excel-export-img/excel-export-01.png)
 
-엑셀로 다운로드한 데이터는 다음과 같으며, 만약 커스텀 테이블로 일부 필드만 보이도록 설정했을 경우 해당 필드의 데이터만 볼 수 있습니다.
+The data downloaded to Excel is as follows, and if you set it up to show only some fields as a custom table, you can see the data of that field only:
 
-![excel-export-02](/ko/docs/guides/advanced/excel-export-img/excel-export-02.png)
+![excel-export-02](/docs/guides/advanced/excel-export-img/excel-export-02.png)

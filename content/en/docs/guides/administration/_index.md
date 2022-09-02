@@ -4,8 +4,8 @@ linkTitle: "Administration"
 weight: 6
 date: 2022-06-27
 description: >
-    **관리**에서는 도메인 사용자들의 정보나 역할, 정책 등을 관리하고 편집할 수 있습니다.
+    In the **Administration** page, you can manage and edit information, roles, policies, etc. of domain users.
     <br>
     <br>
-    [**사용자**](/ko/docs/guides/administration/iam-user)를 생성하고, [**API 정책**](/ko/docs/guides/administration/iam-policy)이 연결된 [**역할**](/ko/docs/guides/administration/iam-role)을 부여해보세요.
+    You can create a [**User**](/docs/guides/administration/iam-user) and designate a [**Role**](/docs/guides/administration/iam-role) that is connected to an [**API policy**](/docs/guides/administration/iam-policy).
 ---

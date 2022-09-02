@@ -1,8 +1,8 @@
 ---
-title: "Advanced"
-linkTitle: "Advanced"
+title: "Advanced feature"
+linkTitle: "Advanced feature"
 weight: 9
 date: 2022-06-07
 description: >
-    **고급 기능**에서는 클라우드포레를 더욱 편리하게 사용할 수 있는 기능들을 설명합니다. 
+    **Advanced features** are designed to use Cloudforet more conveniently.  
 ---

@@ -4,84 +4,85 @@ linkTitle: "[IAM] Policy"
 weight: 3
 date: 2022-06-07
 description: >
-    **정책**은 실행 가능한 API 들의 권한으로, 사용자들에게 부여할 [역할](/ko/docs/guides/administration/iam-role)을 생성할 때 사용합니다.
+    **Policy** refers to the scope of privileges that APS can perform, and is used when you create a [Role](/docs/guides/administration/iam-role) to assign to a user.
 ---
 
-## 정책이란?
+## What is policy?
 
-정책(Policy)은 실행 가능한 API 들의 권한을 의미하며, Managed / Custom 타입의 정책이 존재합니다.
+Policy refers to the scope of privileges that APIs can perform. There are managed/custom types of policies.
 
 |            | Managed                                                                                                                | Custom                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| 정의         | Repository 서비스에 Global하게 정의된 Policy로,<br />Policy를 전체 시스템 Admin이 직접 관리하여 공유합니다.<br />대부분의 사용자들이 활용하기 편리한 공통 Policy입니다. | Domain 별로 자체 정의된 Policy로,<br />각 Domain별로 세부적인 권한을 관리하기에 유용합니다. |
-| 생성, 수정, 삭제 | X (불가능)                                                                                                                | O (가능)                                                          |
-| 읽기         | O (가능)                                                                                                                 | O (가능)                                                          |
+| Definition         | This is a globally defined policy in a repository service, <br />and it is managed and shared directly by the overall system administrator.<br />This is a common policy that is convenient for most users. | It is a self-defined policy per domain,<br />and is useful when managing detailed privileges for each domain. |
+| Create, edit, delete  | X (Possible)                                                                                                                | O (Impossible)                                                          |
+| Read         | O (Possible)                                                                                                                 | O (Possible)                                                          |
 
 {{<alert>}}
-Repository 서비스란 Marketplace 에 연결하기 위한 공유 저장소 서비스를 말합니다.
+The repository service refers to a shared storage service for connecting to marketplaces.
 {{</alert>}}
 
-자세한 내용은 [Understanding Policy](/ko/docs/concepts/identity/rbac/understanding-policy)를 참고해주세요.
+For detailed information, see [Understanding policy]
+(/ko/docs/concepts/identity/rbac/understanding-policy).
 
 
 {{<alert>}}
-Custom 정책만 생성 / 수정 / 삭제가 가능하니, 해당 기능을 이용할 때 타입을 확인 후 진행해주시길 바랍니다.
+You might need to check a policy type first before using the relevant features, for only a custom policy can be created, modified, and/or deleted.
 {{</alert>}}
 
-## 정책 조회하기
+## Viewing policy
 
-조회하고자 하는 정책의 타입을 클릭 한 후, 테이블에 연결된 ID 필드를 통해 정책 상세페이지에 진입할 수 있습니다.
+After clicking the policy type you want to check, you can enter the policy detail page through an ID field linked to a table.
 
-![policy-full-page](/ko/docs/guides/administration/iam-policy-img/policy-full-page.png)
+![policy-full-page](/docs/guides/administration/iam-policy-img/policy-full-page.png)
 
-## 정책 생성하기
+## Creating policy
 
-우측의 [생성] 버튼을 통해서 정책을 생성하는 페이지에 진입합니다.
+Enter the page to create a policy by using the [Create] button on the right.
 
-![policy-create-button](/ko/docs/guides/administration/iam-policy-img/policy-create-button.png)
+![policy-create-button](/docs/guides/administration/iam-policy-img/policy-create-button.png)
 
-이름과 설명, 권한을 입력 후 정책을 생성할 수 있습니다.
+You can create a policy after entering a name, description, and privileges.
 
-부여할 권한은 복수개를 입력할 수 있으며, 개행으로 구분합니다.
+Multiple privileges can be entered, separated by newlines.
 
-권한의 예시는 다음과 같으며, `{서비스}.{리소스}.{동작}` 의 형식을 지닙니다.
+Examples of privileges are as follows, and they have a ‘{service}.{resource}.{action}’ format:
 
-| 예시                      | 예시에 대한 설명                  |
+| Example                      | Description of examples                  |
 |-------------------------|----------------------------|
-| identity.Project.*      | Project 리소스에 대한 모든 권한      |
-| identity.ProjectGroup.* | ProjectGroup 리소스에 대한 모든 권한 |
-| identity.User.get       | User 리소스에 대한 get 권한        |
-| identity.User.update    | User 리소스에 대한 update 권한     |
-| identity.User.list      | User 리소스에 대한 list 권한       |
+| identity.Project.*      | Full privileges to take whatever types of actions over project resources      |
+| identity.ProjectGroup.* | Full privileges over all project group resources |
+| identity.User.get       | Privilege to obtain user resources        |
+| identity.User.update    | Privilege to update user resources     |
+| identity.User.list      | Privilege to list user resources       |
 
-서비스와 리소스 등에 대한 자세한 정보는 (여기)를 참고 하십시오.
+For detailed information on services, resources, etc., see [here].
 
-## 정책 편집하기
+## Editing policy
 
-편집하고자 하는 정책의 페이지에 진입합니다.
+Enter the page of the policy you want to edit
 
-### 정책 이름 편집하기
+### Editing policy name
 
-제목 우측의 편집 아이콘 버튼을 누른 후 생성된 모달에서 정책의 이름을 편집할 수 있습니다.
+After clicking the edit icon button on the right side of a title, you can edit the name of the policy in a created modal dialog.
 
-![policy-edit-icon-button](/ko/docs/guides/administration/iam-policy-img/policy-edit-icon-button.png)
+![policy-edit-icon-button](/docs/guides/administration/iam-policy-img/policy-edit-icon-button.png)
 
-### 정책 내용 편집하기
+### Editing policy content
 
-설명란의 입력창에서 설명을 수정할 수 있습니다.
+You can edit the description of a policy in the input box of a description field.
 
-하단의 코드블럭에서 권한을 수정할 수 있습니다. 복수개의 권한은 개행으로 구분됩니다.
+You can edit privileges from code blocks at the bottom. Multiple privileges are separated by newlines.
 
-![policy-detail-page-with-new-permission](/ko/docs/guides/administration/iam-policy-img/policy-detail-page-with-new-permission.png)
+![policy-detail-page-with-new-permission](/docs/guides/administration/iam-policy-img/policy-detail-page-with-new-permission.png)
 
-## 정책 삭제하기
+## Removing policy
 
-삭제하고자 하는 정책 페이지에 진입합니다.
+Enter the policy page you want to delete.
 
-삭제 아이콘 버튼을 누른 후 생성된 모달에서 정책을 삭제할 수 있습니다.
+After clicking the delete icon button, you can delete the policy from a created modal dialog.
 
-![policy-delete-icon-button](/ko/docs/guides/administration/iam-policy-img/policy-delete-icon-button.png)
+![policy-delete-icon-button](/docs/guides/administration/iam-policy-img/policy-delete-icon-button.png)
 
-이때 역할(Role)이 연결되어있는 정책은 삭제가 불가하오니, 역할(Role) 페이지로 이동하여 검토를 진행해주세요.
+Since a policy connected to a role is impossible to remove, visit and review the role page if you have any issues removing a policy.
 
-![policy-cannot-delete-modal](/ko/docs/guides/administration/iam-policy-img/policy-cannot-delete-modal.png)
+![policy-cannot-delete-modal](/docs/guides/administration/iam-policy-img/policy-cannot-delete-modal.png)
