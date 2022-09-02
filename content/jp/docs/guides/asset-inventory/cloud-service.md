@@ -1,170 +1,170 @@
 ---
-title: "Cloud Service"
-linkTitle: "Cloud Service"
+title: "クラウドサービス"
+linkTitle: "クラウドサービス"
 weight: 2
 date: 2022-06-07
 description: >
-    [**컬렉터**](/ko/docs/guides/asset-inventory/collector)를 통해 수집된 여러 클라우드 리소스들을 통합적으로 조회하고 이용 현황을 파악할 수 있습니다.
+    [**コレクター**](/jp/docs/guides/asset-inventory/collector)によって収集されたさまざまなクラウドリソースを統合的に照会して、利用状況を把握することができます。
 ---
 
-## 클라우드 서비스 목록 조회하기
+## クラウドサービス一覧を照会する
 
-클라우드 서비스 페이지에서는 **프로바이더**별 클라우드 서비스 이용 현황을 보여줍니다.
+クラウドサービスページでは、 **プロバイダ**別のクラウドサービスの利用状況を確認できます。
 
-[고급 검색](/ko/docs/guides/advanced/search)과 필터 설정을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다.
+[詳細検索](/jp/docs/guides/advanced/search)とフィルター設定を利用すると、詳細条件で一覧をフィルタリングできます。
 
-### 프로바이더 선택
+### プロバイダ選択
 
-프로바이더를 선택하여 특정 프로바이더를 통해 제공되는 클라우드 서비스만을 조회합니다.
+プロバイダを選択して、特定プロバイダを通じて提供されるクラウドサービスのみを照会します。
 
-![cloud-service-provider-menu](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-provider-menu.png)
+![cloud-service-provider-menu](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-provider-menu.png)
 
-### 필터 설정
+### フィルター設定
 
-서비스 분류와 리전 필터를 설정하여 보다 세부적인 조건 검색이 가능합니다.
+サービス分類とリージョンフィルターを設定すると、さらに詳細な条件検索が可能です。
 
-(1) [설정] 버튼을 클릭하면 [필터 설정] 모달이 열립니다.
+(1) [設定]ボタンをクリックすると、[フィルター設定]モダールウィンドウが表示されます。
 
-![cloud-service-filter-button](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-button.png)
+![cloud-service-filter-button](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-button.png)
 
-(2) 원하는 필터를 선택한 후 [확인] 버튼을 클릭해 적용합니다.
+(2) 設定したいフィルターを選択して[確認]ボタンをクリックすると、適用されます。
 
-![cloud-service-filter-modal](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-modal.png)
+![cloud-service-filter-modal](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-modal.png)
 
 
-## 클라우드 서비스 살펴보기
+## クラウドサービスを確認する
 
-클라우드 서비스 상세 페이지에서 특정 클라우드 서비스의 상세 정보를 확인할 수 있습니다.
+クラウドサービス詳細ページでは、特定クラウドサービスの詳細情報を確認できます。
 
-클라우드 서비스 페이지에서 카드를 클릭하면 상세 페이지로 이동합니다.
+クラウドサービスページでカードをクリックすると、詳細ページへ移動します。
 
-![cloud-service-select](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-select.png)
+![cloud-service-select](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-select.png)
 
-왼쪽의 클라우드 서비스 목록에서 선택된 클라우드 서비스에 대한 상세 정보를 확인할 수 있습니다.
+左横のクラウドサービス一覧で、選択したクラウドサービスに対する詳細情報を確認できます。
 
-![cloud-service-list-lnb](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-lnb.png)
+![cloud-service-list-lnb](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-lnb.png)
 
-### 클라우드 서비스의 리소스 목록 조회하기
+### クラウドサービスのリソース一覧を照会する
 
-검색어를 입력하여 조건에 부합하는 클라우드 리소스 목록을 확인할 수 있습니다.
+検索ワードを入力すると、条件と一致するクラウドリソース一覧を確認できます。
 
-**고급 검색**에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search)를 참고 하십시오.
+**詳細検索**に関する詳細については、[こちら](/jp/docs/guides/advanced/search)をご参考にしてください｡
 
-[엑셀] 아이콘 버튼을 클릭하여 리소스 목록을 [엑셀 파일로 내보내기](/ko/docs/guides/advanced/excel-export) 하거나, [설정] 아이콘 버튼을 클릭하여 [테이블 필드 개인화](/ko/docs/guides/advanced/custom-table)를 할 수 있습니다.
+[Excel]アイコンをクリックしてリソース一覧を[Excelファイルでエクスポート](/jp/docs/guides/advanced/excel-export)、または[設定]アイコンをクリックして[テーブルフィールド個人化](/jp/docs/guides/advanced/custom-table)を実行できます。
 
-![cloud-sevice-detail-full-page](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-sevice-detail-full-page.png)
+![cloud-sevice-detail-full-page](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-sevice-detail-full-page.png)
 
-### 클라우드 서비스 이용 현황 보기
+### クラウドサービスの利用状況を見る
 
-선택한 클라우드 서비스에 대한 통계 정보를 확인할 수 있습니다.
+選択したクラウドサービスに対する統計情報を確認できます。
 
-![cloud-service-single-select](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-single-select.png)
+![cloud-service-single-select](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-single-select.png)
 
-더욱 자세한 내용을 확인하려면, 오른쪽의 [차트 보기] 버튼을 클릭하여 확인할 수 있습니다.
+さらに詳細な情報は、右側の[チャートを見る]ボタンをクリックすると確認できます。
 
-![cloud-service-chart-modal](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-chart-modal.png)
+![cloud-service-chart-modal](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-chart-modal.png)
 
-### 클라우드 리소스 콘솔 열기
+### クラウドリソースコンソールを開く
 
-때로는 클라우드 리소스의 프로바이더에서 제공하는 콘솔에서 작업을 해야 하는 경우가 있습니다.
+時には、クラウドリソースのプロバイダが提供するコンソールで作業する場合があります。
 
-(1) 콘솔을 연결하려는 클라우드 리소스를 선택합니다.
+(1) コンソールに接続するクラウドリソースを選択します。
 
-(2) [콘솔 연결] 버튼을 클릭합니다.
+(2) [コンソール接続]ボタンをクリックします。
 
-![cloud-service-connect-console](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-connect-console.png)
+![cloud-service-connect-console](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-connect-console.png)
 
-(3) 버튼을 클릭하면 해당 클라우드 리소스에 대한 작업을 이어나갈 수 있는 프로바이더의 콘솔이 새 탭으로 열립니다.
+(3) ボタンをクリックすると、当該クラウドリソースに対する作業を実行できるプロバイダのコンソールが新しいタブとして開かれます。
 
-아래는 AWS의 EC2 Instance의 콘솔이 열린 예시입니다.
+下図は、AWSのEC2 Instanceコンソールを開いた例です。
 
-![cloud-service-console-opened](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-console-opened.png)
+![cloud-service-console-opened](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-console-opened.png)
 
-## 클라우드 서비스의 리소스 살펴보기
+## クラウドサービスのリソースを確認する
 
-클라우드 리소스 목록에서 살펴보고자 하는 항목을 선택하면, 하단에서 해당 리소스에 대한 정보를 확인할 수 있습니다.
+クラウドリソース一覧で確認したい項目を選択すると、その下に当該リソースに対する情報が表示されます。
 
-- [상세 정보](#클라우드-리소스-상세-정보-확인하기)
-- [태그](#클라우드-리소스-태그-관리하기)
-- [연관된 멤버](#클라우드-리소스에-연관된-멤버-확인하기)
-- [변경 기록](#클라우드-리소스에-연관된-멤버-확인하기)
-- [모니터링](#클라우드-리소스-모니터링-정보-확인하기)
+- [詳細情報](#クラウド-リソース-詳細-情報-確認する)
+- [タグ](#クラウド-リソース-タグ-管理する)
+- [関連メンバー](#クラウド-リソース-関連-メンバー-確認する)
+- [変更記録](#クラウド-リソース-関連-メンバー-確認する)
+- [モニタリング](#クラウド-リソース-モニタリング-情報-確認する)
 
-![cloud-resource-single-select](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-single-select.png)
+![cloud-resource-single-select](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-single-select.png)
 
-### 클라우드 리소스 상세 정보 확인하기
+### クラウドリソースの詳細情報を確認する
 
-선택한 리소스에 대한 자세한 정보를 보여줍니다.
+選択したリソースに対する詳細情報が表示されます。
 
-여기에 표시되는 정보는 **기본 탭**과 **추가 정보 탭**으로 나뉩니다.
+ここに表示される情報は、**基本タブ**と**追加情報タブ**に分けられます。
 
-- **기본 탭**: 클라우드 리소스 상세 정보에 기본적으로 제공되는 것으로, [기본 정보], [원본 데이터] 탭이 이에 해당됩니다.
-- **추가 정보 탭**: 기본 탭을 제외한 모든 탭들은 해당 리소스를 수집한 컬렉터의 플러그인에 의해 결정됩니다. 자세한 설명은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+- **基本タブ**: クラウドリソース詳細情報に基本的に提供さり[基本情報]、[ソースデータ]タブです。
+- **追加情報タブ**: 基本タブを除いたすべてのタブは、当該リソースを収集したコレクターのプラグインによって決定されます。これについての詳細については、[こちら](/jp/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
 
 <br>
 
-![cloud-resource-info-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-info-tab.png)
+![cloud-resource-info-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-info-tab.png)
 
-위의 이미지는 클라우드 리소스 상세 정보 예시입니다.
+上図は、クラウドリソースの詳細情報の例です。
 
-[기본 정보] 탭과 [원본 데이터] 탭을 제외한 나머지 탭들(AMI, Permission, Tags)은 모두 컬렉터의 플러그인에 의해 추가된 정보입니다.
+[基本情報]タブと[ソースデータ]タブを除いた残りのタブ(AMI、Permission、Tags)は、すべてコレクターのプラグインによって追加された情報です。
 
-### 클라우드 리소스 태그 관리하기
+### クラウドリソースタグを管理する
 
-클라우드 리소스에 태그를 추가하여 관리할 수 있습니다.
+クラウドリソースにタグを追加して管理することができます。
 
-(1) [태그] 탭 내부에서 [편집] 버튼을 클릭합니다.
+(1) [タブ]タブ内で[編集]ボタンをクリックします。
 
-![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-tab.png)
+![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-tab.png)
 
-(2) 태그 페이지에서 `키: 값` 형태로 태그를 입력 후 [저장] 버튼을 클릭하여 완료합니다.
+(2) タグページで「キー: 値」形態でタグを入力して、[保存]ボタンをクリックすると完了します。
 
-![cloud-resource-tag-add](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-add.png)
+![cloud-resource-tag-add](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-add.png)
 
-### 클라우드 리소스에 연관된 멤버 확인하기
+### クラウドリソース関連メンバーを確認する
 
-[연관된 멤버] 탭에서는 아래의 조건에 해당되는 사용자 정보를 확인할 수 있습니다.
+[関連メンバー]タブでは、以下の条件と一致するユーザー情報を確認できます。
 
-- [프로젝트 멤버](/ko/docs/guides/project/member)로써 해당 클라우드 리소스에 접근 권한을 가진 사용자
+- [プロジェクトメンバー](/jp/docs/guides/project/member)として当該クラウドリソースへのアクセス権限を有するユーザー
 
-![cloud-resource-member-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-member-tab.png)
+![cloud-resource-member-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-member-tab.png)
 
-### 클라우드 리소스 변경 기록 확인하기
+### クラウドリソースの変更記録を確認する
 
-[변경 이력] 탭에서는 선택한 클라우드 리소스의 날짜/시간별로 변경사항을 빠르게 파악할 수 있습니다.
+[変更履歴]タブでは、選択したクラウドリソースの日付・時間別に変更事項を速やかに把握できます。
 
-(1) 특정 날짜 선택 또는 검색을 통해 확인하고자 하는 세부 내역을 추려낼 수 있습니다.
+(1) 特定の日付を選択または検索すると、確認したい詳細履歴を抽出することができます。
 
-![cloud-resource-changes-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-history-changes-tab.png)
+![cloud-resource-changes-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-history-changes-tab.png)
 
-(2) 특정 키값 또는 특정 시간대 전체 클릭시, 해당하는 변경 이력 상세를 확인할 수 있습니다.
+(2) 特定キー値または特定の時間帯をすべてクリックすると、該当する変更履歴の詳細を確認できます。
 
-(2-1) 변경내역: 해당 리소스의 어떤 Key값들이 어떻게 업데이트 되었는지 상세 내역을 확인할 수 있습니다.
+(2-1) 変更履歴: 当該リソースのどのKey値がどのようにアップデートされたのかなどの詳細履歴を確認できます。
 
-![cloud-history-diff-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-diff-tab.png)
+![cloud-history-diff-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-history-diff-tab.png)
 
-(2-2) 로그: AWS CloudTrail와 같은 Provider별 상세 로그를 지원하여, 선택한 시간내/외로 어떤 세부 이벤트가 발생했는지 확인할 수 있습니다. 이에 따라, 특정 리소스를 변경한 유저를 파악할 수 있는 큰 장점이 있습니다.
+(2-2) ログ: AWS CloudTrailなどのProvider別詳細ログをサポートして、選択した時間内・時間外に発生するイベント詳細を確認できます。これを利用すると、特定リソースを変更したユーザーを把握できる点が大きなメリットです。
 
-![cloud-history-log-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-tab.png)
+![cloud-history-log-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-tab.png)
 
-확인하고자 하는 값의 키를 클릭하여 상세 로그를 확인할 수 있습니다.
+確認したいキー値をクリックすると、詳細ログを確認できます。
 
-![cloud-history-log-modal](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-modal.png)
+![cloud-history-log-modal](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-history-log-modal.png)
 
-(2-3) 노트: 선택한 타임에 노트를 추가/관리 함으로써, 어떤 담당자와 해당 변경이 관련이 있는지, 어떤 프로세스로 해당 이슈를 해결할지 등 기업별 워크플로우를 자유롭게 관리할 수 있습니다.
+(2-3) ノート: 選択したタイムにノートを追加・管理して、どの担当者と変更が関連するのか、どのプロセスで当該イシューを解決するのかなど、企業別ワークフローを自由に管理できます。
 
-![cloud-history-note-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-history-note-tab.png)
+![cloud-history-note-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-history-note-tab.png)
 
-### 클라우드 리소스 모니터링 정보 확인하기
+### クラウドリソースのモニタリング情報を確認する
 
-[모니터링] 탭에서는 클라우드 리소스에 대하여 다양한 메트릭을 보여줍니다.
+[モニタリング]タブには、クラウドリソースに対するさまざまなメトリクスが表示されます。
 
-![cloud-resource-monitoring-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-monitoring-tab.png)
+![cloud-resource-monitoring-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-monitoring-tab.png)
 
-[시간 범위] 필터를 변경하거나, [통계] 드롭다운에서 다른 통계 방식을 선택하여 다른 기준에 대한 메트릭을 확인할 수도 있습니다.
+[時間範囲]フィルターの変更、または[統計]ドロップダウンで他の統計方法を選択して、別の基準に対するメトリクスを確認することもできます。
 
-상단의 클라우드 리소스 목록에서 왼쪽의 체크박스를 클릭하여 여러 개의 리소스를 선택하면, 다수의 리소스에 대한 메트릭 정보를 비교하여 살펴볼 수 있습니다.
+画面上部のクラウドリソース一覧の左横にあるチェックボックスで複数のリソースを選択すると、複数のリソースに対するメトリクス情報を比較して確認することができます。
 
-![cloud-resource-multi-monitoring](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-multi-monitoring.png)
+![cloud-resource-multi-monitoring](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-multi-monitoring.png)
 
-메트릭 정보는 **모니터링 플러그인**에 의해 수집되며, 자세한 내용은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+メトリクス情報は、**モニタリングプラグイン**によって収集されます。これに関する詳細については、[こちら](/jp/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡

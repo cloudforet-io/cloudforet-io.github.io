@@ -1,25 +1,25 @@
 ---
-title: "[Alert Manager] Notification"
-linkTitle: "[Alert Manager] Notification"
+title: "[アラートマネージャー]通知"
+linkTitle: "[アラートマネージャー]通知"
 weight: 3
 date: 2022-07-05
 description: >
-
+    クラウドフォレは、ユーザーに**アラートを送信するための通知手段**としてプラグインを提供しています。
 ---
 
-## 개요
+## 概要
 
-클라우드포레는 사용자에게 얼럿을 전달하기 위한 알림 수단으로 플러그인을 제공하고 있습니다.  
-현재 클라우드포레에서 지원하는 플러그인 목록은 **플러그인 지원 목록**을 참조하세요.  
-**Telegram**과 **Slack** 연동에 대한 보다 자세한 설명은 아래 링크를 참조해 주십시오.  
-반면, **Email**, **SMS** 그리고 **Voice Call**은 **별도의 설정없이** 사용 가능합니다.
+クラウドフォレは、ユーザーにアラートを送信するための通知手段として、プラグインを提供しています。  
+現在クラウドフォレがサポートを提供中のプラグインリストは、**プラグインサポートリスト**をご参照ください。  
+**Telegram**と**Slack**の連携に関する詳細については、下記のリンクをご参照ください。  
+また、**Email**、**SMS**、**Voice Call**は、**別途設定せずに**使用することがきます。
 
-## 플러그인 지원 목록
+## プラグインサポートリスト
 
-| **플러그인** | **설정 가이드 링크** |
+| **プラグイン** | **設定ガイドリンク** |
 | --- | --- |
 | Telegram | https://github.com/spaceone-dev/plugin-telegram-noti-protocol/blob/master/docs/ko/GUIDE.md |
 | Slack | https://github.com/spaceone-dev/plugin-slack-noti-protocol/blob/master/docs/ko/GUIDE.md |
-| Email | 별도 설정 없이 사용가능 |
-| SMS | 별도 설정 없이 사용가능 |
-| Voice Call | 별도 설정 없이 사용가능 |
+| Email | 別途設定せずに使用可能 |
+| SMS | 別途設定せずに使用可能 |
+| Voice Call | 別途設定せずに使用可能 |

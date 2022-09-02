@@ -1,64 +1,64 @@
 ---
-title: "Maintenance"
-linkTitle: "Maintenance"
+title: "ユーザー管理期間"
+linkTitle: "ユーザー管理期間"
 weight: 6
 date: 2022-06-07
 description: >
-    정기, 비정기적인 시스템 작업 기간 내에 발생하는 [얼럿](/ko/docs/guides/alert-manager/alert/)에 대하여서는 [알림](/ko/docs/guides/alert-manager/notification/) 발송을 차단해야 할 필요가 있습니다.
+    定期・非定期なシステム作業期間内に発生する[アラート](/jp/docs/guides/alert-manager/alert/)に対しては、[通知](/jp/docs/guides/alert-manager/notification/)送信を遮断する必要があります。
     <br>
-    **유지 관리 기간**을 설정하여 해당 기간 동안에는 알림이 일어나지 않도록 차단할 수 있습니다.
+    **ユーザー管理期間**を設定すると、当該期間中は通知が発生しないよう遮断することができます。
 
 ---
 
 
-유지 관리 기간은 프로젝트에 종속되며, 프로젝트 상세 페이지에서 관리할 수 있습니다.
+維持管理期間はプロジェクトに依存し、プロジェクト詳細ページで管理できます。
 
-![maintenance](/ko/docs/guides/alert-manager/maintenance-img/maintenance.png)
+![maintenance](/jp/docs/guides/alert-manager/maintenance-img/maintenance.png)
 
 
 
-## 유지 관리 기간 생성하기
+## 維持管理期間を作成する
 
-(1) 프로젝트 상세 페이지의 우측 상단에 있는 [유지 관리 기간 생성] 버튼을 클릭합니다.
+(1) プロジェクト詳細ページの画面右上にある[維持管理期間作成]ボタンをクリックします。
 
-![create-maintenance-window-1](/ko/docs/guides/alert-manager/maintenance-img/create-maintenance-window-1.png)
+![create-maintenance-window-1](/jp/docs/guides/alert-manager/maintenance-img/create-maintenance-window-1.png)
 
-(2) 유지 관리 기간의 [제목]을 입력하고, 얼럿 발생을 제한할 스케줄을 설정합니다.
+(2) 維持管理期間の[タイトル]を入力して、アラート発生を制限するスケジュールを設定します。
 
-![create-maintenance-window-2-1](/ko/docs/guides/alert-manager/maintenance-img/create-maintenance-window-2-1.png)
+![create-maintenance-window-2-1](/jp/docs/guides/alert-manager/maintenance-img/create-maintenance-window-2-1.png)
 
-스케줄을 지정할 때 바로 시작하거나 예정된 시간에 시작하도록 할 수 있습니다.
+スケジュールを指定時に、今すぐ開始、または予定された時間に開始するよう設定できます。
 <br>
-바로 시작하기를 원한다면 [지금 시작하고 끝내기] 옵션을, 예정된 작업 일정을 등록하려면 [예정된 시간에 시작하기] 옵션을 선택하십시오.
+今すぐ開始を希望する場合は、[今すぐ開始して終了]オプションを、予定された作業日程を登録する場合は、[予定された時間に開始する]オプションを選択してください。
 
-![create-maintenance-window-2-2](/ko/docs/guides/alert-manager/maintenance-img/create-maintenance-window-2-2.png)
-
-
-(3) [확인] 버튼을 클릭하면 생성이 완료됩니다.
+![create-maintenance-window-2-2](/jp/docs/guides/alert-manager/maintenance-img/create-maintenance-window-2-2.png)
 
 
-
-## 유지 관리 기간 편집하기
-
-아직 종료되지 않은 유지 관리 기간만 편집이 가능합니다.
-
-(1) 프로젝트 상세 페이지의 [얼럿] 탭 아래의 [유지 관리 기간] 탭을 선택합니다.
-
-(2) 편집하려는 대상을 선택하고 [편집] 버튼을 클릭합니다.
-
-![update-maintenance-window-1](/ko/docs/guides/alert-manager/maintenance-img/update-maintenance-window-1.png)
+(3) [確認]ボタンをクリックすると、作成が終了します。
 
 
-(3) 원하는 항목을 변경한 후 [확인] 버튼을 클릭하여 완료합니다.
 
-![update-maintenance-window-2](/ko/docs/guides/alert-manager/maintenance-img/update-maintenance-window-2.png)
+## 維持管理期間を編集する
+
+終了していない維持管理期間のみ編集できます。
+
+(1) プロジェクト詳細ページの[アラート]タブの下にある[維持管理期間]タブを選択します。
+
+(2) 編集したい対象を選択して、[編集]ボタンをクリックします。
+
+![update-maintenance-window-1](/jp/docs/guides/alert-manager/maintenance-img/update-maintenance-window-1.png)
 
 
-## 유지 관리 기간 종료하기
+(3) 希望する項目を変更後に[確認]ボタンをクリックすると完了します。
 
-(1) 프로젝트 상세 페이지의 [얼럿] 탭 아래의 [유지 관리 기간] 탭을 선택합니다.
+![update-maintenance-window-2](/jp/docs/guides/alert-manager/maintenance-img/update-maintenance-window-2.png)
 
-(2) 편집하려는 대상을 선택하고 [종료] 버튼을 클릭하여 종료합니다.
 
-![delete-maintenance-window](/ko/docs/guides/alert-manager/maintenance-img/delete-maintenance-window.png)
+## 維持管理期間を終了する
+
+(1) プロジェクト詳細ページの[アラート]タブの下にある[維持管理期間]タブを選択します。
+
+(2) 編集する対象を選択して[終了]ボタンをクリックすると終了します。
+
+![delete-maintenance-window](/jp/docs/guides/alert-manager/maintenance-img/delete-maintenance-window.png)
 

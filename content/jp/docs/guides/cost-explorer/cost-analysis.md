@@ -1,98 +1,98 @@
 ---
-title: "Cost Analysis"
-linkTitle: "Cost Analysis"
+title: "コスト分析"
+linkTitle: "コスト分析"
 weight: 3
 date: 2022-06-23
 description: >
-    **비용 분석**은 클라우드 제공자로부터 수신되는 비용 데이터를 상세하게 분석합니다.
+    **コスト分析**は、クラウド提供者から受信したコストデータを詳細に分析します。
     <br>
     <br>
-    다양한 조건으로 데이터를 그룹화 혹은 필터링하여, 원하는 비용 데이터를 한눈에 볼 수 있습니다.
+    多様な条件でデータをグループ化またはフィルタリングするため、確認したいコストデータがひと目で把握することができます。
 ---
 
-## 비용 분석 확인하기
+## コスト分析を確認する
 
-### 세부기준 선택하기
+### 細部基準を選択する
 
-**세부 기준**은 데이터를 어떤 방식으로 보여줄 것인가에 대한 기준입니다. 세부 기준에 따라 제공되는 차트나 테이블의 형태가 달라집니다.
+**細部基準**は、データの表示方法に対する基準です。細部基準によって表示されるチャートやテーブルの形態が異なります。
 
-![cost-analysis-granularity-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-01.png)
+![cost-analysis-granularity-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-01.png)
 
-- `누적 데이터`: 파이차트가 제공되며, 테이블에서는 선택한 기간의 데이터 총합을 보여줍니다.
-- `일별 데이터` 혹은 `월별 데이터`: 칼럼차트가 제공되며, 테이블에서는 선택한 기간을 일별, 월별로 보여줍니다.
-  일별 데이터, 월별 데이터 차트에서 [누적] 토글 버튼을 활성화할 경우, 현재까지의 누적 비용 데이터를 볼 수 있습니다.
-    ![cost-analysis-granularity-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-02.png)
+- 「累積データ」: テーブルで選択した期間の総合データは円グラフで表示されます。
+- 「日別データ」または「月別データ」: テーブルで選択した期間が日別・月別に棒グラフで表示されます。
+  日別データ・月別データチャートで[累積]トグルボタンを有効化すると、現在までの累積コストデータを確認できます。
+    ![cost-analysis-granularity-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-02.png)
 
-### 기간 설정하기
-세부 기준에 따라 선택할 수 있는 기간 메뉴가 다르게 나타납니다. [기간] 드롭다운에서 메뉴를 선택하거나, [기간 선택] 메뉴를 통해 직접 설정합니다.
+### 期間を設定する
+細部基準によって選択できる期間のメニューは異なります。[期間]ドロップダウンでメニューを選択、または[期間選択]メニューで直接設定します。
 
-![cost-analysis-period-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-01.png)
+![cost-analysis-period-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-01.png)
 
-`누적 데이터`와 `월별 데이터`는 월 단위로 커스텀 가능하며 기간은 최대 12개월까지 지정할 수 있습니다.
-`일별 데이터`의 경우 일 단위로 커스텀 가능하며 기간은 최대 1개월입니다.
+「累積データ」と「月別データ」は月単位でカスタムでき、期間は最大12カ月まで指定できます。
+「日別データ」は日単位でカスタムでき、期間は最大1カ月です。
 
-![cost-analysis-period-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-02.png)
+![cost-analysis-period-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-02.png)
 
-### 환율 설정하기
-[환율] 드롭다운에서 적용하려는 환율을 선택하면, 차트와 테이블의 비용 데이터에 환율이 적용됩니다.
+### 為替レートを設定する
+[為替レート]ドロップダウンで適用したいレートを選択すると、チャートとテーブルのコストデータにレートが適用されます。
 
-![cost-analysis-currency-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-currency-01.png)
+![cost-analysis-currency-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-currency-01.png)
 
-### 그룹별 통계 설정하기
-그룹별 통계에서 유저가 선택한 값을 기준으로 데이터를 그룹화합니다.
+### グループ別に統計を設定する
+グループ別統計でユーザーの選択値を基準にデータをグループ化します。
 
-![cost-analysis-groupby-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01.png)
+![cost-analysis-groupby-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01.png)
 
-그룹별 통계는 한 개 이상 선택할 수 있습니다. 차트에서는 선택한 그룹별 통계 중 하나만이 보여지며, 테이블에서는 선택한 그룹별 통계를 모두 볼 수 있습니다.
+グループ別統計は、1個以上選択できます。チャートで選択したグループ別統計のうち一つが表示され、テーブルでは選択したグループ別統計をすべて確認できます。
 
-![cost-analysis-groupby-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02.png)
+![cost-analysis-groupby-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02.png)
 
-### 필터 설정
-필터는 그룹별 통계와 마찬가지로 한 개 이상 선택 가능하며, 유저가 설정한 값을 and 조건으로 필터링합니다.
+### フィルター設定
+フィルターは、グループ別統計と同じように1個以上選択でき、ユーザー設定値をand条件でフィルタリングします。
 
-(1) [필터 추가] 아이콘 버튼을 클릭합니다.
+(1) [フィルター追加]ボタンをクリックします。
 
-![cost-analysis-filter-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-01.png)
+![cost-analysis-filter-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-01.png)
 
-(2) [필터 세팅] 모달이 열리면 원하는 필터를 선택한 뒤 [확인] 버튼을 클릭합니다.
+(2) [フィルター設定]モダールウィンドウが表示されたら、フィルターを選択して[確認]ボタンをクリックします。
 
-![cost-analysis-filter-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02.png)
+![cost-analysis-filter-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02.png)
 
 
-## 비용 분석 쿼리
-[비용 관리 > 비용 분석] 페이지에 진입할 때마다 세부 기준과 기간 등을 다시 설정해야 하는 번거로움을 해소하기 위해, 자주 사용하는 설정들을 쿼리로 저장할 수 있는 기능이 제공됩니다.
+## コスト分析クエリ
+[コスト管理 > コスト分析]ページに移動するたびに細部基準と期間などを再設定する煩わしさを解消するため、頻繁に使用する設定をクエリで保存できる機能を提供します。
 {{<alert>}}
-환율은 쿼리에 저장되지 않습니다.
+為替レートはクエリに保存されません。
 {{</alert>}}
 
-### 쿼리 저장하기
-(1) 세부 기준과 그룹별 통계, 필터 등을 설정합니다.
+### クエリを保存する
+(1) 細部基準とグループ別統計、フィルターなどを設定します。
 
-(2) 우측 상단의 [다른 이름으로 저장] 버튼을 클릭합니다.
+(2) 画面右上の[名前を付けて保存]ボタンをクリックします。
 
-![cost-analysis-query-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-01.png)
+![cost-analysis-query-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-01.png)
 
 {{<alert>}}
-default 쿼리의 경우 [다른 이름으로 저장] 버튼이 나타나며, 기존 쿼리를 수정했을 경우 [저장] 버튼과 [다른 이름으로 저장] 버튼이 함께 나타납니다.
+defaultクエリは[名前を付けて保存]ボタンが表示され、既存のクエリを修正する場合は、[保存]ボタンと[名前を付けて保存]ボタンがどちらも表示されます。
 {{</alert>}}
 
-(3) [쿼리 저장] 모달에서 쿼리명을 입력한 뒤, [확인] 버튼을 클릭합니다.
+(3) [クエリ保存]モダールウィンドウでクエリ名を入力後、[確認]ボタンをクリックします。
 
-![cost-analysis-query-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-02.png)
+![cost-analysis-query-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-02.png)
 
-### 쿼리 불러오기
-[비용 분석] 페이지에서 좌측 상단의 [쿼리 목록] 아이콘 버튼을 클릭한 뒤, 저장된 쿼리 목록 중 하나를 선택해 해당 쿼리를 불러올 수 있습니다.
+### クエリを読み込む
+[コスト分析]ページで画面左上の[クエリ一覧]アイコンをクリックして、保存されたクエリ一覧のうち一つを選択すると、当該クエリを読み込むことができます。
 
-![cost-analysis-query-03](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-03.png)
+![cost-analysis-query-03](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-03.png)
 
-### 쿼리 이름 편집하기
-저장된 쿼리의 이름은 [비용 분석] 페이지에서 해당 쿼리를 불러온 뒤 [편집] 버튼을 클릭하거나, 저장된 쿼리 목록에서 [편집] 버튼을 클릭하여 편집할 수 있습니다.
+### クエリ名を編集する
+保存されたクエリ名は、[コスト分析]ページで当該クエリを読み込んで[編集]ボタンをクリック、または保存されたクエリ一覧で[編集]ボタンをクリックすると編集できます。
 
-![cost-analysis-query-edit-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-01.png)
-![cost-analysis-query-edit-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-02.png)
+![cost-analysis-query-edit-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-01.png)
+![cost-analysis-query-edit-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-02.png)
 
-### 쿼리 삭제하기
-저장된 쿼리는 [비용 분석] 페이지에서 해당 쿼리를 불러온 뒤 [삭제] 버튼을 클릭하거나, 저장된 쿼리 목록에서 [삭제] 버튼을 클릭하여 삭제할 수 있습니다.
+### クエリを削除する
+保存された[コスト分析]ページで当該クエリを読み込んでから[削除]ボタンをクリック、または保存されたクエリ一覧で[削除]ボタンをクリックすると削除できます。
 
-![cost-analysis-query-delete-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-01.png)
-![cost-analysis-query-delete-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-02.png)
+![cost-analysis-query-delete-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-01.png)
+![cost-analysis-query-delete-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-02.png)

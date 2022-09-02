@@ -1,301 +1,301 @@
 ---
-title: "Alert"
-linkTitle: "Alert"
+title: "アラート"
+linkTitle: "アラート"
 weight: 3
 date: 2022-06-07
 description: >
-    **얼럿**은 서비스 운영 시 발생하는 모든 이슈를 정의한 것으로, 주로 관계자에게 알림을 발송하는 목적으로 생성됩니다.
+    **アラート**は、サービス運営時に発生するすべてのイシューを定義したもので、主に関係者に通知を送信する目的で作成されます。
 ---
 
-### 상태
+### 状態
 
-얼럿은 아래와 같은 상태들을 가지고 있습니다.
+アラートは、以下のような状態があります。
 
-| 상태 | 설명 |
+| 状態 | 説明 |
 | --- | --- |
-| 확인 | 얼럿에 담당자가 할당되어 처리중인 상태 |
-| 생성 | 얼럿이 최초 등록된 상태 |
-| 완료 | 장애, 점검 등 얼럿의 내용이 처리 완료된 상태 |
-| 에러 | 웹훅 연동을 통해 이벤트가 수신되었으나, 오류로 인해 얼럿이 정상적으로 등록되지 않은 상태 |
+| 確認 | アラートに担当者が割り当てられて処理中の状態 |
+| 作成 | アラートが最初に登録された状態 |
+| 完了 | 障害、点検などアラートの処理が完了した状態 |
+| エラー | ウェブフックの連携を通じてイベントが受信されたが、エラーによってアラートが正常に登録されていない状態 |
 
-### 긴급도
+### 緊急度
 
-클라우드포레에서 얼럿의 긴급도는 `높음`과 `낮음` 두 가지가 존재합니다.
+クラウドフォレのアラートの緊急度は、「高」と「低」の2種類が存在します。
 
-얼럿 [수동 생성](/ko/docs/guides/alert-manager/alert/#얼럿-생성하기)의 경우에는 `높음` 과 `낮음` 두 가지로 생성되지만, [웹훅 연동을 통해 자동으로 생성](/ko/docs/guides/alert-manager/alert/#얼럿-생성하기)되는 경우에는 **심각도(Severity)** 에 따라 긴급도(Urgency)가 측정됩니다.
+アラート [手動作成](/jp/docs/guides/alert-manager/alert/#アラート-作成する)の場合、「高」と「低」の2種類で作成されますが、[ウェブフック連携を通じた自動作成](/jp/docs/guides/alert-manager/alert/#アラート-作成する)の場合は、**深刻度(Severity)** に従って緊急度(Urgency)が測定されます。
 
-{{<alert title="심각도">}}
-**심각도**는 일반적인 외부 모니터링 훅으로부터 받아오는 이벤트의 위험 강도를 나타냅니다.
-`CRITICAL`, `ERROR`, `WARNING`, `INFO`, `NOT_AVAILABLE` 다섯 가지의 심각도가 있으며, 클라우드포레는 이를 얼럿으로 생성 시 아래와 같은 기준으로 긴급도를 설정합니다.
+{{<alert title="深刻度">}}
+**深刻度**は、一般的な外部モニタリングのフックから受信されるイベントの危険度を表します。
+「CRITICAL」、「ERROR」、「WARNING」、「INFO」、「NOT_AVAILABLE」の5種類の深刻度があり、アラートとして作成時に、クラウドフォレは下記の基準で緊急度を設定します。
 
-• `높음` : `CRITICAL`, `ERROR`, `NOT_AVAILABLE`
+• 「高」 : 「CRITICAL」、「ERROR」、「NOT_AVAILABLE」
 
-• `낮음` : `WARNING`, `INFO`
+• 「低」 : 「WARNING」、「INFO」
 {{</alert>}}
 
 
 
 
-## 얼럿 생성하기
+## アラートを作成する
 
-얼럿은 다음 두 가지 방법을 통해 생성할 수 있습니다.
+アラートは、次の2つの方法で作成できます。
 
-- **수동 생성**: 클라우드포레의 콘솔에서 얼럿을 수동으로 생성합니다.
-- **자동 생성**: 웹훅을 생성해 웹훅과 연동된 외부 모니터링 서비스로부터 이벤트를 수신합니다. 그리고 수신한 이벤트 메시지를 정제하여 얼럿을 자동으로 생성합니다.
+- **手動作成**: クラウドフォレのコンソールでアラートを手動で作成します。
+- **自動作成**: ウェブフックを作成して、ウェブフックと連携した外部モニタリングサービスを通じてイベントを受信します。受信したイベントのメッセージを精製してアラートを自動的に作成します。
 
-### 콘솔에서 수동으로 얼럿 생성하기
+### コンソールでアラートを手動作成する
 
-(1) [얼럿 매니저 > 얼럿] 페이지로 이동 후 [생성] 버튼을 클릭합니다.
+(1) [アラートマネージャー > アラート]ページへ移動して[作成]ボタンをクリックします。
 
-![create-alert-step-1](/ko/docs/guides/alert-manager/quick-start-img/create-alert-step-1.png)
+![create-alert-step-1](/jp/docs/guides/alert-manager/quick-start-img/create-alert-step-1.png)
 
-(2) [얼럿 생성] 모달이 열리면 입력 폼을 작성합니다.
+(2) [アラート作成]のモダールウィンドウが表示されたら、入力フォームを作成します。
 
-![create-alert-step-2](/ko/docs/guides/alert-manager/quick-start-img/create-alert-step-2.png)
+![create-alert-step-2](/jp/docs/guides/alert-manager/quick-start-img/create-alert-step-2.png)
 
-(2-1) [얼럿 제목]을 입력하고 [긴급도]를 선택합니다.
+(2-1) [アラートタイトル]を入力して[緊急度]を選択します。
 
-(2-2) 얼럿이 어떤 프로젝트에 대하여 발생한 것인지 지정해줍니다.
+(2-2) アラートが発生するプロジェクトを指定します。
 
-(2-3) 추가적인 설명이 필요하다면 [설명]을 작성합니다.
+(2-3) 追加説明が必要な場合は、[説明]を作成します。
 
-(3) [확인] 버튼을 클릭하여 얼럿 생성을 완료합니다.
+(3) [確認]ボタンをクリックして、アラート作成を完了します。
 
-### 외부 모니터링 서비스를 연결하여 얼럿 수신하기
+### 外部モニタリングサービスに接続してアラートを受信する
 
-외부 모니터링 서비스를 연결하면, 해당 서비스에서 발생하는 이벤트의 메시지가 얼럿으로 자동 생성됩니다.
+外部モニタリングサービスに接続すると、当該サービスで発生するイベントのメッセージがアラートとして自動的に作成されます。
 <br>
-외부 모니터링으로부터 발생된 얼럿을 수신하기 위해서는 **웹훅 생성**과 **연동 설정**이 필요합니다.
+外部モニタリングで発生したアラートを受信するためには、**ウェブフック作成**と **連携設定**をする必要があります。
 
 {{<alert>}}
-**웹훅 생성**은 클라우드포레 콘솔에서 진행되나, **연동 설정**은 외부 모니터링 서비스를 제공하는 클라우드 서비스의 콘솔에서 직접 설정해야 합니다.
+**ウェブフック作成**は、クラウドフォレのコンソールで実行されますが、**連携設定**は、外部モニタリングサービスを提供するクラウドサービスのコンソールで直接設定しなければなりません。
 
-외부 모니터링 서비스를 연동하는 방법은 [여기](/ko/docs/guides/plugins/alert-manager-webhook/)를 참고 하십시오.
+外部モニタリングサービスとの連携方法は、[こちら](/jp/docs/guides/plugins/alert-manager-webhook/)をご参考にしてください｡
 {{</alert>}}
 
 <br>
 
-#### 웹훅 생성하기
+#### ウェブフックを作成する
 
-외부 모니터링 서비스로부터 발생하는 이벤트 메시지를 수신하려면 웹훅을 생성해야 합니다.
+外部モニタリングサービスで発生するイベントメッセージを受信するためには、ウェブフックを作成しなければなりません。
 <br>
-웹훅은 프로젝트 상세 페이지에서 생성 가능합니다.
+ウェブフックは、プロジェクト詳細ページで作成できます。
 
 
-(1) 프로젝트 상세 페이지의 [얼럿] 탭으로 이동 후, [웹훅] 탭을 선택합니다.
+(1) プロジェクト詳細ページの[アラート]タブに移動して、[ウェブフック]タブを選択します。
 
-![create-webhook-step-1](/ko/docs/guides/alert-manager/quick-start-img/create-webhook-step-1,2.png)
+![create-webhook-step-1](/jp/docs/guides/alert-manager/quick-start-img/create-webhook-step-1,2.png)
 
-(2) [추가] 버튼을 클릭합니다.
+(2) [追加]ボタンをクリックします。
 
-(3) [웹훅 추가] 모달에서 이름을 작성하고, 연동할 외부 모니터링 서비스의 플러그인을 선택합니다.
+(3) [ウェブフック追加]モダールウィンドウで名前を作成して、連携する外部モニタリングサービスのプラグインを選択します。
 
-![create-webhook-step-3](/ko/docs/guides/alert-manager/quick-start-img/create-webhook-step-3.png)
+![create-webhook-step-3](/jp/docs/guides/alert-manager/quick-start-img/create-webhook-step-3.png)
 
-(4) [확인] 버튼을 클릭하여 설정을 완료합니다.
+(4) [確認]ボタンをクリックして設定を完了します。
 
-### 얼럿 활용하기
-클라우드포레의 얼럿을 활용한 여러가지 기능을 간단하게 살펴봅시다.
+### アラートを活用する
+クラウドフォレのアラートを活用したさまざまな機能をかんたんにご紹介します。
 
-- [알림 채널](/ko/docs/guides/alert-manager/notification): 얼럿을 어떤 사용자에게 어떻게, 언제 전달할 것인지 등을 설정합니다.
-- [에스컬레이션 정책](/ko/docs/guides/alert-manager/escalation-policy/): 단계별 규칙을 적용하여, 수신된 얼럿을 프로젝트의 멤버들에게 효과적으로 전달합니다.
-- [이벤트 규칙](/ko/docs/guides/alert-manager/event-rule): 웹훅을 통해 수신된 이벤트는 조건에 따라 **얼럿**으로 생성됩니다.
-- [유지 관리 기간](/ko/docs/guides/alert-manager/maintenance):  정기, 비정기적인 시스템 작업 일정을 등록하여 작업을 안내하고, 작업간 발생하는 **얼럿**을 차단합니다.
+- [通知チャンネル](/jp/docs/guides/alert-manager/notification): アラートをどのユーザーにどのように、いつ送信するのかなどを設定します。
+- [エスカレーションポリシー](/jp/docs/guides/alert-manager/escalation-policy/): 段階別のルールを適用して、受信したアラートをプロジェクトメンバーに効果的に伝達します。
+- [イベントルール](/jp/docs/guides/alert-manager/event-rule): ウェブフックを通じて受信したイベントは、条件に従って **アラート**として作成されます。
+- [維持管理期間](/jp/docs/guides/alert-manager/maintenance):  定期・非定期のシステム作業日程を登録して作業を案内し、作業間で発生する **アラート**を遮断します。
 
 
 
-## 얼럿 목록 조회하기
+## アラート一覧を照会する
 
-[얼럿 매니저 > 얼럿] 페이지에서 모든 프로젝트의 얼럿을 조회할 수 있습니다.
+[アラートマネージャー > アラート]ページですべてのプロジェクトのアラートを照会できます。
 <br>
-얼럿을 검색하거나 얼럿의 상태를 변경할 수 있습니다.
+アラートを検索したりアラートの状態を変更できます。
 
-### 얼럿 검색하기
-검색어를 입력하여 조건에 부합하는 얼럿 목록을 확인할 수 있으며, 원하는 얼럿의 제목을 클릭하여 얼럿 상세 페이지로 이동할 수 있습니다.
+### アラートを検索する
+検索ワードを入力して条件と一致するアラート一覧を確認でき、確認したいアラートのタイトルをクリックすると、アラート詳細ページへ移動します。
 
-![alert-search](/ko/docs/guides/alert-manager/alert-img/alert-search.png)
+![alert-search](/jp/docs/guides/alert-manager/alert-img/alert-search.png)
 
-또한 기본적으로 제공되는 필터링 기능을 통해 얼럿을 편리하게 필터링할 수 있습니다.
+また、基本的に提供されるフィルタリング機能を利用すると、アラートを便利にフィルタリングできます。
 
-고급 검색에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+詳細検索に関する詳細については､[こちら](/jp/docs/guides/advanced/search/)をご参考にしてください｡
 
-### 목록에서 얼럿 상태 변경하기
+### 一覧でアラート状態を変更する
 
-목록에서 바로 얼럿의 상태 수정이 가능합니다.
+一覧ですぐにアラートの状態を修正できます。
 
-(1) 상태를 수정할 얼럿을 선택하고, 오른쪽 상단의 [확인], [완료], [삭제] 중 원하는 버튼을 클릭합니다.
+(1) 状態を修正したいアラートを選択して、画面右上の[確認]、[完了]、[削除]のうち実行したいボタンをクリックします。
 
-![update-alert-1](/ko/docs/guides/alert-manager/alert-img/update-alert-1.png)
+![update-alert-1](/jp/docs/guides/alert-manager/alert-img/update-alert-1.png)
 
-(1-1) [확인] 버튼을 클릭하여 `확인` 상태로 변경하기
+(1-1) [確認]ボタンをクリックして「確認」状態に変更する
 
-`확인` 상태는 담당자가 할당되어 처리중인 상태입니다.
+「確認」状態は、担当者の割り当てが完了して処理中の状態です。
 <br>
-상태 변경과 동시에 선택한 얼럿의 담당자를 본인으로 설정할 수 있으며, [확인] 버튼을 클릭하여 완료합니다.
+状態変更と同時に選択したアラートの担当者を自分に設定できます。[確認]ボタンをクリックすると完了します。
 
-![update-alert-1-1](/ko/docs/guides/alert-manager/alert-img/update-alert-1-1.png)
+![update-alert-1-1](/jp/docs/guides/alert-manager/alert-img/update-alert-1-1.png)
 
-(1-2) [완료] 버튼을 클릭하여 `완료` 상태로 변경하기
+(1-2) [完了]ボタンをクリックして完了状態に変更する
 
-`완료` 상태는 얼럿을 발생시킨 이슈가 처리 완료된 상태입니다.
+「完了」状態は、アラートを発生させるイシューの処理が完了した状態です。
 <br>
-상태 변경과 동시에 노트를 작성할 수 있으며, [확인] 버튼을 클릭하여 완료합니다.
+状態変更と同時にノートを作成でき、[確認]ボタンをクリックすると完了します。
 
-![update-alert-1-2](/ko/docs/guides/alert-manager/alert-img/update-alert-1-2.png)
+![update-alert-1-2](/jp/docs/guides/alert-manager/alert-img/update-alert-1-2.png)
 
-(1-3) [삭제] 버튼을 클릭하여 얼럿 삭제하기
+(1-3) [削除]ボタンをクリックしてアラートを削除する
 
-삭제할 얼럿 목록을 다시 한번 확인이 가능하며, [확인] 버튼을 클릭하여 삭제합니다.
+削除するアラート一覧をもう一度確認でき、[確認]ボタンをクリックすると削除されます。
 
-![update-alert-1-3](/ko/docs/guides/alert-manager/alert-img/update-alert-1-3.png)
-
-
+![update-alert-1-3](/jp/docs/guides/alert-manager/alert-img/update-alert-1-3.png)
 
 
 
-## 얼럿 살펴보기
 
-얼럿 상세 페이지에서 얼럿에 대한 상세 정보와 히스토리를 조회하고, 관리할 수 있습니다.
 
-![alert-detail-page](/ko/docs/guides/alert-manager/alert-img/alert-detail-page.png)
+## アラートを確認する
 
-| 상세항목 | 설명 |
+アラート詳細ページで、アラートに関する詳細情報とヒストリーを照会・管理することができます。
+
+![alert-detail-page](/jp/docs/guides/alert-manager/alert-img/alert-detail-page.png)
+
+| 詳細項目 | 説明 |
 | --- | --- |
-| 지속 시간 | 얼럿이 지속된 시간 |
-| 설명 | 얼럿에 대한 설명으로, 사용자가 직접 작성한 내용 또는 외부 모니터링 서비스로부터 수신한 이벤트의 내용 |
-| 규칙 | 외부 모니터링 서비스에서 얼럿이 발생한 조건 |
-| 심각도 | 웹훅 이벤트의 데이터로부터 받은 심각도 |
-| 에스컬레이션 정책 | 적용된 에스컬레이션 정책 |
-| 프로젝트 | 얼럿이 발생된 프로젝트 |
-| 생성 | 얼럿을 전송한 모니터링 서비스 |
-| 리소스 이름 | 얼럿 발생 대상  |
+| 継続時間 | アラートが続く時間 |
+| 説明 | アラートに対する説明で、ユーザーが直接作成した内容、または外部モニタリングサービスから受信したイベント内容 |
+| ルール | 外部モニタリングサービスでアラートが発生した条件 |
+| 深刻度 | ウェブフックイベントのデータから受信した深刻度 |
+| エスカレーションポリシー | 適用されたエスカレーションポリシー |
+| プロジェクト | アラートが発生したプロジェクト |
+| 作成 | アラートを送信したモニタリングサービス |
+| リソース名 | アラートが発生した対象  |
 
-### 이름 변경 및 삭제하기
+### 名前変更と削除
 
-[편집] 아이콘 버튼과 [삭제] 아이콘 버튼을 통해 얼럿의 이름 변경 및 얼럿 삭제가 가능합니다.
+[編集]アイコンと[削除]アイコンをクリックすると、アラートの名前変更と削除を実行することができます。
 
-![update-alert-name-or-delete-alert](/ko/docs/guides/alert-manager/alert-img/update-alert-name-or-delete-alert.png)
+![update-alert-name-or-delete-alert](/jp/docs/guides/alert-manager/alert-img/update-alert-name-or-delete-alert.png)
 
-### 상태 / 긴급도 변경하기
+### 状態 / 緊急度を変更する
 
-상태와 긴급도는 드롭다운을 통해 쉽게 수정할 수 있습니다.
+状態と緊急度は、ドロップダウンで手軽に修正できます。
 
-![update-state-urgency](/ko/docs/guides/alert-manager/alert-img/update-state-urgency.png)
+![update-state-urgency](/jp/docs/guides/alert-manager/alert-img/update-state-urgency.png)
 
-### 담당자 변경하기
-(1) [할당] 버튼을 클릭합니다.
+### 担当者を変更する
+(1) [割り当て]ボタンをクリックします。
 
-![update-assignee-1](/ko/docs/guides/alert-manager/alert-img/update-assignee-1.png)
+![update-assignee-1](/jp/docs/guides/alert-manager/alert-img/update-assignee-1.png)
 
-(2) 담당자를 선택하고 [확인] 버튼을 눌러 담당자 할당을 완료합니다.
+(2) 担当者を選択して[確認]ボタンをクリックすると、担当者の割り当てが完了します。
 
-![update-assignee-2](/ko/docs/guides/alert-manager/alert-img/update-assignee-2.png)
+![update-assignee-2](/jp/docs/guides/alert-manager/alert-img/update-assignee-2.png)
 
-### 설명 수정하기
+### 説明を修正する
 
-해당 얼럿에 대하여 관리 권한이 있는 사용자만 편집이 가능합니다.
+選択したアラートに対する管理権限を有するユーザーのみ編集できます。
 
-(1) [편집] 버튼을 클릭합니다.
+(1) [編集]ボタンをクリックします。
 
-![update-description-1](/ko/docs/guides/alert-manager/alert-img/update-description-1.png)
+![update-description-1](/jp/docs/guides/alert-manager/alert-img/update-description-1.png)
 
-(2) 얼럿 설명란의 폼을 통해 변경사항을 작성하고 [변경사항 저장] 버튼을 클릭하여 수정을 완료합니다.
+(2) アラート説明欄のフォームで変更事項を作成して[変更事項保存]ボタンをクリックすると、修正が完了します。
 
-![update-description-2](/ko/docs/guides/alert-manager/alert-img/update-description-2.png)
+![update-description-2](/jp/docs/guides/alert-manager/alert-img/update-description-2.png)
 
-### 프로젝트 변경하기
+### プロジェクトを変更する
 
-얼럿과 연결된 프로젝트를 변경할 수 있습니다.
+アラートと接続されたプロジェクトを変更することができます。
 
-(1) 프로젝트 [변경] 버튼을 클릭합니다.
+(1) プロジェクト[変更]ボタンをクリックします。
 
-![update-project-1](/ko/docs/guides/alert-manager/alert-img/update-project-1.png)
+![update-project-1](/jp/docs/guides/alert-manager/alert-img/update-project-1.png)
 
-(2) [프로젝트 선택] 드롭다운에서 프로젝트를 선택한 뒤, [변경사항 저장] 버튼을 클릭하여 프로젝트 변경을 완료합니다.
+(2) [プロジェクト選択]ドロップダウンでプロジェクトを選択後に[変更事項保存]ボタンをクリックすると、プロジェクトの変更が完了します。
 
-![update-project-2](/ko/docs/guides/alert-manager/alert-img/update-project-2.png)
+![update-project-2](/jp/docs/guides/alert-manager/alert-img/update-project-2.png)
 
-### 새로운 상태로 업데이트하기
+### 新しい状態にアップデートする
 
-얼럿의 상태에 진행 상황 등을 기록하여, 빠르게 해당 얼럿의 상태를 파악할 수 있도록 합니다.
+アラートの状態に進行状況などを記録して、当該アラートの状態を速やかに確認できるよう設定します。
 <br>
-내용을 변경하면 이전의 상태 기록은 사라집니다.
+内容を変更すると、以前の状態の記録は削除されます。
 
-(1) [새로운 업데이트] 버튼을 클릭합니다.
+(1) [新しいアップデート]ボタンをクリックします。
 
-![update-status-1](/ko/docs/guides/alert-manager/alert-img/update-status-1.png)
+![update-status-1](/jp/docs/guides/alert-manager/alert-img/update-status-1.png)
 
-(2) [새로운 상태 업데이트] 모달에서 상태를 작성하고, [확인] 버튼을 클릭해 상태 업데이트를 완료합니다.
+(2) [新しい状態にアップデート]モダールウィンドウで状態を作成して[確認]ボタンをクリックすると、状態のアップデートが完了します。
 
-![update-status-2](/ko/docs/guides/alert-manager/alert-img/update-status-2.png)
+![update-status-2](/jp/docs/guides/alert-manager/alert-img/update-status-2.png)
 
-### 수신인 추가하기
+### 受信先を追加する
 
-얼럿은 [에스컬레이션 정책](/ko/docs/guides/alert-manager/escalation-policy/)을 통해 수신자에게 전파됩니다.
+アラートは、[エスカレーションポリシー](/jp/docs/guides/alert-manager/escalation-policy/)を通じて受信先に送信されます。
 
-해당 얼럿에 대하여 추가 사용자에게 얼럿을 전파할 필요가 있다면, [추가 수신인]을 설정합니다.
+アラートをを送信するユーザーを追加したい場合は、[追加受信先]を設定します。
 
-![add-additional-responder-1](/ko/docs/guides/alert-manager/alert-img/add-additional-responder-1.png)
+![add-additional-responder-1](/jp/docs/guides/alert-manager/alert-img/add-additional-responder-1.png)
 
-검색 창을 클릭하여 수신 가능한 사용자 목록을 조회 및 검색할 수 있으며, 다중 선택이 가능합니다.
+検索ウィンドウをクリックすると受信可能なユーザーリストを照会・検索できます。複数選択も可能です。
 
-![add-additional-responder-2](/ko/docs/guides/alert-manager/alert-img/add-additional-responder-2.png)
+![add-additional-responder-2](/jp/docs/guides/alert-manager/alert-img/add-additional-responder-2.png)
 
-### 노트 추가하기
+### ノートを追加する
 
-얼럿에 대해 구성원들이 코멘트를 남겨, 처리 중 문의사항과 이에 대한 답변을 등록하여 의사소통할 수 있습니다.
+アラートに対してメンバーがコメントを残して、処理中の問い合わせやこれに対する回答を登録して、コミュニケーションを取ることができます。
 
-![add-note](/ko/docs/guides/alert-manager/alert-img/add-note.png)
+![add-note](/jp/docs/guides/alert-manager/alert-img/add-note.png)
 
-### 발생한 이벤트 살펴보기
+### 発生したイベントを確認する
 
-한 얼럿에서 발생한 이벤트들을 로깅하여 히스토리를 볼 수 있습니다.
+アラートで発生したイベントをロギングして、ヒストリーを確認することができます。
 
-![view-pushed-event](/ko/docs/guides/alert-manager/alert-img/view-pushed-event.png)
+![view-pushed-event](/jp/docs/guides/alert-manager/alert-img/view-pushed-event.png)
 
-이벤트 목록 중 하나를 클릭하면, 이벤트의 상세 정보를 조회할 수 있습니다.
+イベント一覧のなかの一つをクリックすると、イベントの詳細情報を照会できます。
 
-![view-pushed-event-detail](/ko/docs/guides/alert-manager/alert-img/view-pushed-event-detail.png)
+![view-pushed-event-detail](/jp/docs/guides/alert-manager/alert-img/view-pushed-event-detail.png)
 
-### 알림 정책 설정하기
+### 通知ポリシーを設定する
 
-프로젝트에 발생한 얼럿의 긴급도가 `긴급` 인 경우에만 얼럿이 발생하도록 설정할 수 있습니다.
+プロジェクトで発生したアラートの緊急度が「緊急」の場合のみ、アラートが発生するよう設定できます。
 
-(1) 프로젝트 상세 페이지의 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
+(1) プロジェクト詳細ページの[アラート]タブ内で[設定]タブへ移動します。
 
-![notification-policy-1](/ko/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
+![notification-policy-1](/jp/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
 
-(2) 알림 정책 영역의 [편집] 아이콘 버튼을 클릭합니다.
+(2) 通知ポリシーゾーンの[編集]アイコンをクリックします。
 
-![notification-policy-2](/ko/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
+![notification-policy-2](/jp/docs/guides/alert-manager/alert-img/notification-policy-1,2.png)
 
-(3) 원하는 알림 정책을 선택합니다.
+(3) 設定したい通知ポリシーを選択します。
 
-![notification-policy-3](/ko/docs/guides/alert-manager/alert-img/notification-policy-3.png)
+![notification-policy-3](/jp/docs/guides/alert-manager/alert-img/notification-policy-3.png)
 
-(4) [확인] 버튼을 클릭해 정책 설정을 완료합니다.
+(4) [確認]ボタンをクリックすると、ポリシーの設定が完了します。
 
-### 자동 복구 설정하기
+### 自動復旧を設定する
 
-자동 복구 기능은 시스템 장애가 복구되면 얼럿을 자동으로 `완료` 상태로 전환합니다.
+自動復旧機能は、システム障害が復旧されると、アラートを自動的に「完了」状態に変換します。
 
-{{<alert title="자동 복구 작동 원리">}}
+{{<alert title="自動復旧の作動原理">}}
 
-![auto-recovery-setting](/ko/docs/guides/alert-manager/alert-img/auto-recovery-setting.png)
+![auto-recovery-setting](/jp/docs/guides/alert-manager/alert-img/auto-recovery-setting.png)
 
-자동 복구가 설정된 프로젝트의 얼럿이 추가 이벤트 수신할 때, 해당 이벤트의 `event_type` 값이 `RECOVERY` 인 경우, 자동으로 얼럿의 상태가 `완료` 로 전환됩니다.
+自動復旧が設定されたプロジェクトのアラートが追加イベントを受信すると、当該イベントの「event_type」値が「RECOVERY」の場合、自動的にアラートの状態が「完了」に変換されます。
 {{</alert>}}
 
-(1) 프로젝트 상세 페이지에 [얼럿] 탭 내부에서, [설정] 탭으로 이동합니다.
+(1) プロジェクト詳細ページの[アラート]タブ内で[設定]タブへ移動します。
 
-![auto-recovery-1](/ko/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
+![auto-recovery-1](/jp/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
 
-(2) 자동 복구 영역의 [편집] 아이콘 버튼을 클릭합니다.
+(2) 自動復旧ゾーンの[編集]アイコンをクリックします。
 
-![auto-recovery-2](/ko/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
+![auto-recovery-2](/jp/docs/guides/alert-manager/alert-img/auto-recovery-1,2.png)
 
-(3) 원하는 자동 복구 설정을 선택합니다.
+(3) 実行したい自動復旧設定を選択します。
 
-![auto-recovery-3](/ko/docs/guides/alert-manager/alert-img/auto-recovery-3.png)
+![auto-recovery-3](/jp/docs/guides/alert-manager/alert-img/auto-recovery-3.png)
 
-(4) [확인] 버튼을 클릭해 자동 복구 설정을 완료합니다.
+(4) [確認]ボタンをクリックして自動復旧設定を完了します。

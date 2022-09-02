@@ -1,87 +1,87 @@
 ---
-title: "[IAM] Policy"
-linkTitle: "[IAM] Policy"
+title: "[IAM]ポリシー"
+linkTitle: "[IAM]ポリシー"
 weight: 3
 date: 2022-06-07
 description: >
-    **정책**은 실행 가능한 API 들의 권한으로, 사용자들에게 부여할 [역할](/ko/docs/guides/administration/iam-role)을 생성할 때 사용합니다.
+    **ポリシー**は、実行可能なAPIの権限で、ユーザーに付与する[ロール](/jp/docs/guides/administration/iam-role)を作成時に使用します。
 ---
 
-## 정책이란?
+## ポリシーとは？
 
-정책(Policy)은 실행 가능한 API 들의 권한을 의미하며, Managed / Custom 타입의 정책이 존재합니다.
+ポリシー(Policy)は、実行可能なAPIの権限を意味し、Managed / Customタイプのポリシーが存在します。
 
 |            | Managed                                                                                                                | Custom                                                          |
 |------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| 정의         | Repository 서비스에 Global하게 정의된 Policy로,<br />Policy를 전체 시스템 Admin이 직접 관리하여 공유합니다.<br />대부분의 사용자들이 활용하기 편리한 공통 Policy입니다. | Domain 별로 자체 정의된 Policy로,<br />각 Domain별로 세부적인 권한을 관리하기에 유용합니다. |
-| 생성, 수정, 삭제 | X (불가능)                                                                                                                | O (가능)                                                          |
-| 읽기         | O (가능)                                                                                                                 | O (가능)                                                          |
+| 定義         | Repositoryサービスにおいてグローバルに定義されたポリシーで、<br />ポリシーをすべてのシステムアドミンが直接管理して共有します。<br />ほとんどのユーザーが活用しやすい共通のポリシーです。| ドメイン別に独自に定義されたポリシーで、<br />各ドメインの詳細権限を管理するのに役立ちます。 |
+| 作成、修正、削除 | X (不可)                                                                                                                | O (可能)                                                          |
+| 読む         | O (可能)                                                                                                                 | O (可能)                                                          |
 
 {{<alert>}}
-Repository 서비스란 Marketplace 에 연결하기 위한 공유 저장소 서비스를 말합니다.
+Repositoryサービスとは、マーケットプレイスに接続するために共有の保存場所を提供するサービスです。
 {{</alert>}}
 
-자세한 내용은 [Understanding Policy](/ko/docs/concepts/identity/rbac/understanding-policy)를 참고해주세요.
+詳細については、[Understanding Policy](/jp/docs/concepts/identity/rbac/understanding-policy)をご参考にしてください。
 
 
 {{<alert>}}
-Custom 정책만 생성 / 수정 / 삭제가 가능하니, 해당 기능을 이용할 때 타입을 확인 후 진행해주시길 바랍니다.
+Customポリシーのみ作成 / 修正 / 削除が可能なので、当該機能を利用時には、タイプを確認後に実行してください。
 {{</alert>}}
 
-## 정책 조회하기
+## ポリシーを照会する
 
-조회하고자 하는 정책의 타입을 클릭 한 후, 테이블에 연결된 ID 필드를 통해 정책 상세페이지에 진입할 수 있습니다.
+照会したいポリシーのタイプをクリックすると、テーブルに接続されたIDフィールドからポリシーの詳細ページへ移動します。
 
-![policy-full-page](/ko/docs/guides/administration/iam-policy-img/policy-full-page.png)
+![policy-full-page](/jp/docs/guides/administration/iam-policy-img/policy-full-page.png)
 
-## 정책 생성하기
+## ポリシーを作成する
 
-우측의 [생성] 버튼을 통해서 정책을 생성하는 페이지에 진입합니다.
+画面右上の[作成]ボタンからポリシーを作成するページへ移動します。
 
-![policy-create-button](/ko/docs/guides/administration/iam-policy-img/policy-create-button.png)
+![policy-create-button](/jp/docs/guides/administration/iam-policy-img/policy-create-button.png)
 
-이름과 설명, 권한을 입력 후 정책을 생성할 수 있습니다.
+氏名、説明、権限を入力すると、ポリシーを作成できます。
 
-부여할 권한은 복수개를 입력할 수 있으며, 개행으로 구분합니다.
+与えられた権限を複数入力できます。複数の場合は改行で区分します。
 
-권한의 예시는 다음과 같으며, `{서비스}.{리소스}.{동작}` 의 형식을 지닙니다.
+権限の例は、次のとおりです。`{サービス}.{リソース}.{作動}`の形式が設定されています。
 
-| 예시                      | 예시에 대한 설명                  |
+| 例                      | 例に対する説明                  |
 |-------------------------|----------------------------|
-| identity.Project.*      | Project 리소스에 대한 모든 권한      |
-| identity.ProjectGroup.* | ProjectGroup 리소스에 대한 모든 권한 |
-| identity.User.get       | User 리소스에 대한 get 권한        |
-| identity.User.update    | User 리소스에 대한 update 권한     |
-| identity.User.list      | User 리소스에 대한 list 권한       |
+| identity.Project.*      | プロジェクトリソースに対するすべての権限      |
+| identity.ProjectGroup.* | プロジェクトグループリソースに対するすべての権限 |
+| identity.User.get       | ユーザーリソースに対する獲得権限        |
+| identity.User.update    | ユーザーリソースに対するアップデート権限     |
+| identity.User.list      | ユーザ―リソースに対するリスト権限       |
 
-서비스와 리소스 등에 대한 자세한 정보는 (여기)를 참고 하십시오.
+サービスやリソース等に関する詳細な情報については、(こちら)をご参考にしてください。
 
-## 정책 편집하기
+## ポリシーを編集する
 
-편집하고자 하는 정책의 페이지에 진입합니다.
+編集したいポリシーのページに移動します。
 
-### 정책 이름 편집하기
+### ポリシー名を編集する
 
-제목 우측의 편집 아이콘 버튼을 누른 후 생성된 모달에서 정책의 이름을 편집할 수 있습니다.
+タイトルの右横にある編集アイコンをクリックすると表示されるモダールでポリシー名を編集できます。
 
-![policy-edit-icon-button](/ko/docs/guides/administration/iam-policy-img/policy-edit-icon-button.png)
+![policy-edit-icon-button](/jp/docs/guides/administration/iam-policy-img/policy-edit-icon-button.png)
 
-### 정책 내용 편집하기
+### ポリシーの内容を編集する
 
-설명란의 입력창에서 설명을 수정할 수 있습니다.
+説明欄の入力ウィンドウで説明を修正できます。
 
-하단의 코드블럭에서 권한을 수정할 수 있습니다. 복수개의 권한은 개행으로 구분됩니다.
+画面下のコードブロックで権限を修正できます。複数の権限は改行で区分します。
 
-![policy-detail-page-with-new-permission](/ko/docs/guides/administration/iam-policy-img/policy-detail-page-with-new-permission.png)
+![policy-detail-page-with-new-permission](/jp/docs/guides/administration/iam-policy-img/policy-detail-page-with-new-permission.png)
 
-## 정책 삭제하기
+## ポリシーを削除する
 
-삭제하고자 하는 정책 페이지에 진입합니다.
+削除したいポリシーのページに移動します。
 
-삭제 아이콘 버튼을 누른 후 생성된 모달에서 정책을 삭제할 수 있습니다.
+削除アイコンをクリックすると表示されるモダールウィンドウでポリシーを削除できます。
 
-![policy-delete-icon-button](/ko/docs/guides/administration/iam-policy-img/policy-delete-icon-button.png)
+![policy-delete-icon-button](/jp/docs/guides/administration/iam-policy-img/policy-delete-icon-button.png)
 
-이때 역할(Role)이 연결되어있는 정책은 삭제가 불가하오니, 역할(Role) 페이지로 이동하여 검토를 진행해주세요.
+このとき、ロール(Role)が連結たポリシーは削除できないため、ロール(Role)ページへ移動して検討を実行してください。
 
-![policy-cannot-delete-modal](/ko/docs/guides/administration/iam-policy-img/policy-cannot-delete-modal.png)
+![policy-cannot-delete-modal](/jp/docs/guides/administration/iam-policy-img/policy-cannot-delete-modal.png)

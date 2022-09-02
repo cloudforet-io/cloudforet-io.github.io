@@ -1,136 +1,136 @@
 ---
-title: "[IAM] Role"
-linkTitle: "[IAM] Role"
+title: "[IAM]ロール"
+linkTitle: "[IAM]ロール"
 weight: 2
 date: 2022-06-07
 description: >
-    **역할**은 권한에 대한 범위를 정의한 단위입니다.
+    **ロール**は、権限に対するスコアを定義した単位です。
 ---
 
-관리자가 원하는 역할을 생성하여 해당 역할을 수행할 [사용자](/ko/docs/guides/administration/iam-user/)들에게 할당할 수 있습니다.
+管理者が希望するロールを作成して、当該ロールを実行する[ユーザー](/jp/docs/guides/administration/iam-user/)に割り当てることができます。
 
-역할에 설정되는 속성들은 아래와 같습니다.
+ロールに設定される属性は、以下のとおりです。
 
-#### 역할(Role) 타입
+#### ロール(Role)タイプ
 
-|  | 프로젝트 관리 권한 | 역할을 사용자에게 부여하는 위치 |
+|  | プロジェクト管理権限 | ロールをユーザーに付与する位置 |
 | --- | --- | --- |
-| **User** | • 사용자 직접 생성 <br/>• 초대받은 프로젝트와 프로젝트 그룹<br/>• 권한이 있는 프로젝트 그룹의 하위 프로젝트 | • 프로젝트 상세 페이지 > [멤버] 탭에서 프로젝트에 사용자를 초대<br/>• 멤버의 정보를 변경하는 경우 User 타입의 역할을 변경 가능 |
-| **Admin** | 모든 프로젝트와 프로젝트 그룹 | [관리 > 사용자 및 권한 관리 > 사용자] 페이지에서 사용자를 추가 또는 수정 시 가능 |
+| **User** | • ユーザーが直接作成 <br/>• 招待されたプロジェクトとプロジェクトグループ<br/>• 権限のあるプロジェクトグループのサブプロジェクト | •プロジェクト詳細ページ > [メンバー]タブでプロジェクトにユーザーを招待<br/>• メンバー情報を変更すると、ユーザータイプのロールを変更可能 |
+| **Admin** | すべてのプロジェクトとプロジェクトグループ | [管理 > ユーザーと権限管理 > ユーザー] ページでユーザーを追加・修正可能 |
 
-#### 클라우드포레 서비스의 페이지별 접근 권한
+#### クラウドフォレサービスのページ別のアクセス権限
 
-각 서비스 세부 메뉴별로 `View`와 `Manage` 권한을 다르게 부여할 수 있습니다.
+各サービスの詳細メニューで、`View`と`Manage`の権限を選択して付与できます。
 
 - **View**
 
-  각 페이지들에 대하여 보기 권한이 주어집니다.
+  各ページに対する閲覧権限を付与します。
 
 - **Manage**
 
-  선택한 서비스 메뉴에 존재하는 생성, 수정, 추가 등과 같은 관리기능을 사용할 수 있습니다. (각 서비스/페이지 별로 관리기능은 상이합니다.)
+  選択したサービスメニューに存在する作成、修正、追加などの管理機能を使用できます。(サービスやページによって管理機能は異なります。)
 
 
-#### API 정책 연결
+#### APIポリシー接続
 
-정책(Policy)은 리소스에 연결될 때 해당 권한을 정의하는 개체입니다.
+ポリシー(Policy)は､リソースに接続時にその権限を定義する個体です｡
 
-정책에 대한 안내는 [정책 문서](/ko/docs/guides/administration/iam-policy)를 참고하십시오.
+ポリシーについての詳細は､[ポリシー文書](/jp/docs/guides/administration/iam-policy)をご参考にしてください｡
 
-## 역할 생성하기
+## ロールを作成する
 
 {{< alert title="" >}}
-역할은 관리자만 생성할 수 있습니다. [생성] 버튼이 활성화 되어있지 않다면 관리자에게 권한을 요청하세요.
+ロールは､管理者のみ作成できます｡[作成]ボタンが無効状態の場合は､管理者に権限をリクエストしてください｡
 {{< /alert >}}
 
 
 
 
-(1) [관리 > 사용자 및 권한 관리 > 역할] 메뉴를 선택해 역할 페이지에 진입합니다.
+(1) [管理 > ユーザーと権限管理 > ロール]メニューを選択すると､ロ―ルページに移動します｡
 
-(2) 좌측상단 [생성] 버튼을 통해서 [역할 생성] 페이지에 진입합니다.
+(2) 画面左上の[作成]ボタンから[ロール作成]ページに移動します｡
 
-![role-create-button](/ko/docs/guides/administration/iam-role-img/role-create-button.png)
+![role-create-button](/jp/docs/guides/administration/iam-role-img/role-create-button.png)
 
-(3) 역할의 이름, 설명(선택)을 작성하고, [역할 타입](/ko/docs/guides/administration/iam-role/#역할role-타입)을 선택해 줍니다.
+(3) ロールの名前､説明(選択)を作成して､[ロールタイプ](/jp/docs/guides/administration/iam-role/#ロールrole-タイプ)を選択します｡
 
-![role-create-base-info](/ko/docs/guides/administration/iam-role-img/role-create-base-info.png)
+![role-create-base-info](/jp/docs/guides/administration/iam-role-img/role-create-base-info.png)
 
-- [이름]은 최소 2글자 이상으로 작성되어야 합니다.
-- [[역할 타입]](/ko/docs/guides/administration/iam-role/#역할role-타입)은 생성 이후 수정이 불가능한 항목이므로, 신중하게 선택해주세요.
+- [名前]は､最低２文字以上を入力してください｡
+- [[ロールタイプ]](/jp/docs/guides/administration/iam-role/#ロールrole-タイプ)は､作成後に修正できない項目なので､慎重に選択してください｡
 
-(4) [페이지 접근권한](/ko/docs/guides/administration/iam-role/#클라우드포레-서비스의-페이지별-접근-권한)에 대해 설정해 줍니다.
+(4) [ぺｰジへのアクセス権限](/jp/docs/guides/administration/iam-role/#クラウドフォレ-サービスの-ページ別-アクセス-権限)を設定してください｡
 
-![role-create-page-access](/ko/docs/guides/administration/iam-role-img/role-create-page-access.png)
+![role-create-page-access](/jp/docs/guides/administration/iam-role-img/role-create-page-access.png)
 
-(5) 생성하려는 역할(Role)에 어떤 권한을 부여할지를 결정하기 위해, 정책(Policy)을 선택하여 연결합니다.
+(5) 作成するロール(Role)にどのような権限を与えるのかを決定するため､ポリシー(Policy)を選択して接続します｡
 
-![role-create-page-policy-connect](/ko/docs/guides/administration/iam-role-img/role-create-page-policy-connect.png)
+![role-create-page-policy-connect](/jp/docs/guides/administration/iam-role-img/role-create-page-policy-connect.png)
 
 
-정책(Policy)연결 관련 자세한 설명은 [여기](/ko/docs/guides/administration/iam-role/#api-정책-연결)를 참고 하십시오.
+ポリシー(Policy)の接続に関する詳細については､[こちら](/jp/docs/guides/administration/iam-role/#api-ポリシー-接続)をご参考にしてください｡
 
-(6) [생성] 버튼을 클릭하여 역할 생성을 완료합니다.
+(6) [作成]ボタンをクリックすると､ロール作成を完了します｡
 
-## 역할 조회하기
+## ロールを照会する
 
-생성된 역할들은 조회, 검색 그리고 상세 정보 확인이 가능합니다.
+作成されたロールは､照会･検索や､詳細情報確認をすることができます｡
 
-### 역할 목록 조회하기
+### ロール一覧を照会する
 
-생성이 완료된 역할들은 역할 페이지에서 조회할 수 있습니다.
+作成が完了したロールは､ロールぺージで照会できます｡
 
-![role-list](/ko/docs/guides/administration/iam-role-img/role-list.png)
+![role-list](/jp/docs/guides/administration/iam-role-img/role-list.png)
 
-검색어를 입력하여 조건에 부합하는 역할 목록을 확인할 수 있습니다. 고급 검색에 대한 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+検索ワードを入力すると､条件と一致するロール一覧を確認できます｡詳細検索に関する詳細については､[こちら](/jp/docs/guides/advanced/search/)をご参考にしてください｡
 
-![role-search](/ko/docs/guides/administration/iam-role-img/role-search.png)
+![role-search](/jp/docs/guides/administration/iam-role-img/role-search.png)
 
-### 역할 상세 정보 확인하기
+### ロールの詳細情報を確認する
 
-목차에서 역할 선택 시, 아래 [상세 정보] 탭에서 선택된 역할의 정보를 확인할 수 있습니다.
+目次でロールを選択すると､下の[詳細情報]タブで選択したロールの情報を確認することができます｡
 
-![role-detail-info](/ko/docs/guides/administration/iam-role-img/role-detail-info.png)
+![role-detail-info](/jp/docs/guides/administration/iam-role-img/role-detail-info.png)
 
-## 역할 수정하기
+## ロールを修正する
 
 ### Steps
 
-(1) 수정하고자 하는 역할을 역할 목록에서 선택하고, [수정] 버튼을 클릭하여 수정 페이지에 진입합니다.
+(1) 修正したいロールをロール一覧から選択して[修正]ボタンをクリックすると､修正ページに移動します｡
 
-![role-edit-button](/ko/docs/guides/administration/iam-role-img/role-edit-button.png)
+![role-edit-button](/jp/docs/guides/administration/iam-role-img/role-edit-button.png)
 
-(2) 역할 타입 이외에 수정사항은 [역할 생성하기](/ko/docs/guides/administration/iam-role/#역할-생성하기)와 동일합니다.
+(2) ロールタイプ以外の修正は､[ロールを作成する](/jp/docs/guides/administration/iam-role/#ロール-作成する)の方法と同じです｡
 
-![role-edit-base-info](/ko/docs/guides/administration/iam-role-img/role-edit-base-info.png)
+![role-edit-base-info](/jp/docs/guides/administration/iam-role-img/role-edit-base-info.png)
 
-{{< alert title="주의" >}}
+{{< alert title="注意" >}}
 
-기본정보의 [역할 타입]은 생성이후 수정이 불가능한 항목입니다.
+基本情報の[ロールタイプ]は､作成後に修正できない項目です｡
 
 {{< /alert >}}
 
 
-## 역할 삭제하기
+## ロールを削除する
 
 ### Steps
 
-(1) 역할 페이지에 진입합니다.
+(1) ロールぺージに移動します｡
 
-![role-delete-menu](/ko/docs/guides/administration/iam-role-img/role-delete-menu.png)
+![role-delete-menu](/jp/docs/guides/administration/iam-role-img/role-delete-menu.png)
 
-삭제 시에 여러 역할을 한 번에 제거할 수 있습니다.
+複数のロールを一度に削除することができます｡
 
-(2) [삭제] 버튼을 클릭하여 제거 대상인 역할 목록을 검토합니다.
+(2) [削除]ボタンをクリックして､削除するロール一覧を検討します｡
 
-![role-delete-modal](/ko/docs/guides/administration/iam-role-img/role-delete-modal.png)
+![role-delete-modal](/jp/docs/guides/administration/iam-role-img/role-delete-modal.png)
 
-{{< alert title="주의" >}}
-사용자에게 할당되어있는 역할은 제거할 수 없습니다.
+{{< alert title="注意" >}}
+ユーザーに割り当てられたロールは削除できません｡
 
-![role-cannot-delete-modal](/ko/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
+![role-cannot-delete-modal](/jp/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
 
-삭제가 불가능한 역할이 포함되어있는 경우, 역할과 해당 역할이 할당된 사용자를 함께 보여줍니다.
+削除できないロールが含まれている場合､ロールと当該ロールが割り当てられたユーザー名が表示されます｡
 {{< /alert >}}
 
-(3) [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) [確認]ボタンをクリックすると､削除が完了します｡

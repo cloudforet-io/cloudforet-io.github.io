@@ -1,313 +1,313 @@
 ---
-title: "Collector"
-linkTitle: "Collector"
+title: "コレクター"
+linkTitle: "コレクター"
 weight: 4
 date: 2022-06-07
 description: >
-    클라우드포레는 **컬렉터**를 통해 [클라우드 리소스](/ko/docs/guides/asset-inventory)들을 수집하며, 스케줄링을 통해 수집 시기를 결정할 수 있습니다.
+    クラウドフォレは、**コレクター**を利用して[クラウドリソース](/jp/docs/guides/asset-inventory)を収集し、スケジューリングを利用して収集時期を決定できます。
 
 ---
 
-## 개요
+## 概要
 
-컬렉터로 데이터를 수집하기 위해서는 다음 두 가지 요소가 필요합니다.
+コレクターでデータを収集するためには、次の2つの要素が必要です。
 
-### 컬렉터 플러그인
+### コレクタープラグイン
 
-[클라우드 프로바이더](/ko/docs/guides/asset-inventory)로부터 어떤 리소스들을 수집할지, 수집한 데이터들을 어떻게 화면에 보여줄지에 대한 스펙이 정의된 요소입니다. 
+[クラウドプロバイダ](/jp/docs/guides/asset-inventory)から収集するリソースと、収集したデータを画面に表示する方法に対するスペックが定義された要素です。 
 
-프로바이더 별로 가지고 있는 데이터의 구조와 내용이 상이하므로 컬렉터는 철저히 **컬렉터 플러그인**에 의존하여 리소스들을 수집합니다.
+プロバイダ別に持っているデータの構造と内容が異なるため、コレクターはどこまでも**コレクタープラグイン**に依存してリソースを収集します。
 
-이에 대한 자세한 설명은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+これに関する詳細については、[こちら](/jp/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
  
-### 서비스 계정 
+### サービスアカウント 
 
-리소스를 수집하기 위해서는 [클라우드 프로바이더](/ko/docs/guides/asset-inventory)의 계정에 연결이 필요합니다.
+リソースを収集するためには、[クラウドプロバイダ](/jp/docs/guides/asset-inventory)のアカウントに接続する必要があります。
 
-**서비스 계정**은 프로바이더의 계정에 연결하기 위한 계정 정보입니다. 
+**サービスアカウント**は、プロバイダのアカウントに接続するためのアカウント情報です。 
 
-컬렉터는 기존에 프로바이더 별로 만들어져 있는 서비스 계정을 통해 프로바이더 계정에 접근합니다. 
+コレクターは、各プロバイダが作成したサービスアカウントを利用してプロバイダアカウントにアクセスします。 
 
-이에 대한 자세한 설명은 [여기](/ko/docs/guides/asset-inventory/service-account)를 참고 하십시오.
+これに関する詳細については、[こちら](/jp/docs/guides/asset-inventory/service-account)をご参考にしてください｡
 
-## 컬렉터 생성하기
+## コレクターを作成する
 
-(1) 왼쪽 상단의 [생성] 버튼을 클릭합니다.
+(1) 画面左上の[作成]ボタンをクリックします。
 
-![collector-create-button](/ko/docs/guides/asset-inventory/collector-img/collector-create-button.png)
+![collector-create-button](/jp/docs/guides/asset-inventory/collector-img/collector-create-button.png)
 
-(2) 플러그인 목록 페이지에서 원하는 컬렉터 플러그인을 찾아 [생성] 버튼을 클릭합니다.
+(2) プラグイン一覧ページで作成したいコレクタープラグインを選択して[作成]ボタンをクリックします。
 
-![collector-plugin-lists](/ko/docs/guides/asset-inventory/collector-img/collector-plugin-lists.png)
+![collector-plugin-lists](/jp/docs/guides/asset-inventory/collector-img/collector-plugin-lists.png)
 
-(3) [컬렉터 생성] 페이지에서 아래 단계를 거칩니다.
+(3) [コレクター作成]ページで以下の段階を実行します。
 
-(3-1) [컬렉터 설정] 탭에서 이름과 플러그인의 버전을 선택합니다.
+(3-1) [コレクター設定]タブで名前とプラグインのバージョンを選択します。
 
-![collector-create-base-info](/ko/docs/guides/asset-inventory/collector-img/collector-create-base-info.png)
+![collector-create-base-info](/jp/docs/guides/asset-inventory/collector-img/collector-create-base-info.png)
 
-{{<alert title="버전 및 자동 업그레이드">}}
-버전은 앞에서 선택한 컬렉터 플러그인의 버전을 의미하며, 자동 업그레이드를 비활성화하면 선택할 수 있습니다. 이 경우에는 항상 지정한 버전의 플러그인으로 데이터가 수집됩니다.
+{{<alert title="バージョンと自動アップグレード">}}
+バージョンは先に選択したコレクタープラグインのバージョンを意味し、自動アップグレードを無効化すると選択できます。この場合、常に指定したバージョンのプラグインでデータが収集されます。
 
-반면, 자동 업그레이드를 활성화하면 항상 최신 버전의 플러그인으로 데이터가 수집됩니다.
+自動アップグレードを有効化すると、常に最新バージョンのプラグインでデータが収集されます。
 {{</alert>}}
 
-(3-2) 필요한 경우, [태그 추가] 탭에서 컬렉터에 대한 추가 정보를 입력합니다.
+(3-2) 必要であれば、[タグ追加]タブでコレクターに対する追加情報を入力します。
 
-![collector-create-tags](/ko/docs/guides/asset-inventory/collector-img/collector-create-tags.png)
+![collector-create-tags](/jp/docs/guides/asset-inventory/collector-img/collector-create-tags.png)
 
-(4) [확인] 버튼을 클릭하여 컬렉터 생성을 완료합니다.
+(4) [確認]ボタンをクリックすると、コレクターの作成が完了します。
 
-## 컬렉터 목록 조회하기
+## コレクター一覧を照会する
 
-컬렉터 페이지에서 생성되어 있는 모든 컬렉터 목록을 조회할 수 있습니다.
+コレクターページで作成中のすべてのコレクター一覧を照会できます。
 
-**고급 검색**을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다. 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+**詳細検索**を利用すると、詳細条件で一覧をフィルタリングできます。これに関する詳細については、[こちら](/jp/docs/guides/advanced/search/)をご参考にしてください｡
 
-![collector-list-inquiry](/ko/docs/guides/asset-inventory/collector-img/collector-list-inquiry.png)
+![collector-list-inquiry](/jp/docs/guides/asset-inventory/collector-img/collector-list-inquiry.png)
 
-## 컬렉터 상세 정보 확인하기
+## コレクターの詳細情報を確認する
 
-(1) 컬렉터 목록에서 상세 내용을 확인하고 싶은 컬렉터를 선택합니다.
+(1) コレクター一覧で詳細内容を確認したいコレクターを選択します。
 
-(2) 목록 아래의 [상세 정보] 탭에서 컬렉터의 상세한 정보를 확인할 수 있습니다.
+(2) 一覧の下にある[詳細情報]タブで、コレクターの詳細情報を確認できます。
 
-![collector-detail-info-tab](/ko/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
+![collector-detail-info-tab](/jp/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
 
-## 컬렉터 수정하기
+## コレクターを修正する
 
-(1) 컬렉터 목록에서 수정하고자 하는 컬렉터를 선택합니다.
+(1) コレクター一覧で修正したいコレクターを選択します。
 
-(2) [작업] 드롭다운에서 [수정] 메뉴를 선택합니다.
+(2) [作業]ドロップダウンで[修正]メニューを選択します。
 
-![collector-edit-menu](/ko/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
+![collector-edit-menu](/jp/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
 
-(3) [컬렉터 수정] 모달에서 값을 변경한 후 [확인] 버튼을 클릭하여 수정을 완료합니다.
+(3) [コレクター修正]モダールウィンドウで値を変更後に[確認]ボタンを押すと、修正が完了します。
 
-![collector-edit-modal](/ko/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
+![collector-edit-modal](/jp/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
 
-## 컬렉터 활성화/비활성화 하기
+## コレクターを有効化・無効化する
 
-컬렉터를 활성화하거나 비활성화할 수 있습니다. 컬렉터를 비활성화하면 스케줄러에 의한 데이터 수집이 이뤄지지 않습니다.
+コレクターを有効化または無効化することができます。コレクターを無効化すると、スケジューラによるデータ収集が停止します。
 
-(1) 컬렉터 목록에서 활성화 혹은 비활성화 하려는 컬렉터를 선택합니다. 여러 개를 선택하여 일괄 적용이 가능합니다.
+(1) コレクター一覧で有効化または無効化したいコレクターを選択します。複数を選択すると、一括適用されます。
 
-(2) [작업] 드롭다운에서 [활성화] 혹은 [비활성화] 항목을 선택합니다.
+(2) [作業]ドロップダウンで[有効化]または[無効化]項目を選択します。
 
-![collector-multi-select-for-disable](/ko/docs/guides/asset-inventory/collector-img/collector-multi-select-for-disable.png)
+![collector-multi-select-for-disable](/jp/docs/guides/asset-inventory/collector-img/collector-multi-select-for-disable.png)
 
-(3) [컬렉터 활성화] 혹은 [컬렉터 비활성화] 모달에서 선택한 항목들을 확인한 후, [확인] 버튼을 클릭하여 활성화/비활성화를 완료합니다.
+(3) [コレクター有効化]または[コレクター無効化]のモダールウィンドウで選択した項目を確認後に[確認]ボタンをクリックすると、有効化・無効化が完了します。
 
-![collector-disable-modal](/ko/docs/guides/asset-inventory/collector-img/collector-disable-modal.png)
+![collector-disable-modal](/jp/docs/guides/asset-inventory/collector-img/collector-disable-modal.png)
 
-## 컬렉터 삭제하기
+## コレクターを削除する
 
-컬렉터를 영구히 삭제할 수 있습니다.
+コレクターを完全削除することができます。
 
-(1) 컬렉터 목록에서 삭제하려는 컬렉터를 선택합니다. 여러 개를 선택하여 일괄 삭제가 가능합니다.
+(1) コレクター一覧で削除したいコレクターを選択します。複数を選択すると、一括削除することができます。
 
-(2) [작업] 드롭다운에서 [삭제] 메뉴를 선택합니다.
+(2) [作業]ドロップダウンで[削除]メニューを選択します。
 
-![collector-delete-menu](/ko/docs/guides/asset-inventory/collector-img/collector-delete-menu.png)
+![collector-delete-menu](/jp/docs/guides/asset-inventory/collector-img/collector-delete-menu.png)
 
-(3) [컬렉터 삭제] 모달에서 선택한 항목들을 확인한 후, [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) [コレクター削除]モダールウィンドウで選択した項目を確認して[確認]ボタンをクリックすると、削除が完了します。
 
-![collector-delete-modal](/ko/docs/guides/asset-inventory/collector-img/collector-delete-modal.png)
+![collector-delete-modal](/jp/docs/guides/asset-inventory/collector-img/collector-delete-modal.png)
 
-## 일회성 데이터 수집하기
+## 一回性データを収集する
 
-스케줄링하지 않고 일회성으로 데이터를 수집할 수 있습니다.
+スケジューリングせずに一度だけデータを収集できます。
 
-이 기능을 사용하면 컬렉터가 비활성화 상태여도 데이터 수집이 이뤄집니다.
+この機能を利用すると、コレクターが無効化状態でもデータが収集されます。
 
-데이터 수집은 두 가지 방식으로 동작합니다.
+データ収集は、2つの方法で作動します。
 
-- [모든 서비스 계정에 대하여 데이터 수집](/ko/docs/guides/asset-inventory/collector/#연결된-모든-서비스-계정에-대하여-데이터-수집하기)
-- [하나의 서비스 계정에 대하여 데이터 수집](/ko/docs/guides/asset-inventory/collector/#하나의-서비스-계정에-대하여-데이터-수집하기)
+- [すべてのサービスアカウントに対してデータ収集](/jp/docs/guides/asset-inventory/collector/#接続した-すべての-サービス-アカウントに-対して-データを-収集する)
+- [1つのサービスアカウントに対してデータ収集](/jp/docs/guides/asset-inventory/collector/#1つの-サービス-アカウントに-対して-データを-収集する)
 
-### 연결된 모든 서비스 계정에 대하여 데이터 수집하기
+### 接続したすべてのサービスアカウントに対してデータを収集する
 
-컬렉터는 데이터 수집을 위해 [프로바이더](/ko/docs/guides/asset-inventory)의 계정 정보를 필요로 하며, 이는 [서비스 계정](/ko/docs/guides/asset-inventory/service-account)을 통해 등록됩니다.
+コレクターはがデータを収集するためには、[プロバイダ](/jp/docs/guides/asset-inventory)のアカウント情報を必要です。アカウント情報は、[サービスアカウント](/jp/docs/guides/asset-inventory/service-account)を通じて登録されます。
 
-컬렉터는 기본적으로 프로바이더의 모든 서비스 계정에 대하여 데이터를 수집합니다.
+コレクターは、基本的にプロバイダのすべてのサービスアカウントに対してデータを収集します。
 
-(1) 컬렉터 목록에서 데이터를 수집할 컬렉터를 선택합니다.
+(1) コレクター一覧でデータを収集するコレクターを選択します。
 
-(2) [작업] 드롭다운에서 [데이터 수집] 메뉴를 선택합니다.
+(2) [作業]ドロップダウンで[データ収集]メニューを選択します。
 
-![collector-collect-data-menu](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-menu.png)
+![collector-collect-data-menu](/jp/docs/guides/asset-inventory/collector-img/collector-collect-data-menu.png)
 
-(3) [데이터 수집] 모달에서 [확인] 버튼을 클릭하여 데이터 수집을 시작합니다.
+(3) [データ収集]モダールウィンドウで[確認]ボタンをクリックすると、データ収集を開始します。
 
-![collector-collect-data-modal](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-modal.png)
+![collector-collect-data-modal](/jp/docs/guides/asset-inventory/collector-img/collector-collect-data-modal.png)
 
-(4) 해당 컬렉터가 데이터 수집을 완료했는지 여부는 [컬렉터 히스토리](ko/docs/guides/asset-inventory/collector/#데이터-수집-내역-확인하기)에서 확인 가능합니다. 선택한 컬렉터의 [상세 보기] 링크를 클릭하여 해당 페이지로 이동할 수 있습니다.
+(4) 当該コレクターのデータ収集の完了状況は、[コレクター履歴](ko/docs/guides/asset-inventory/collector/#データ-収集-履歴-確認する)で確認できます。選択したコレクターの[詳細を見る]リンクをクリックすると、当該ページへ移動します。
 
-![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+![collector-history-at-table](/jp/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
-### 하나의 서비스 계정에 대하여 데이터 수집하기
+### 1つのサービスアカウントに対してデータを収集する
 
-컬렉터로 데이터를 수집할 때에 특정한 클라우드 프로바이더 계정의 데이터만을 수집할 수도 있습니다.
+コレクターでデータを収集時に、特定のクラウドプロバイダのアカウントデータのみを収集することもできます。
 
-(1) 컬렉터 목록에서 데이터를 수집할 컬렉터를 선택합니다.
+(1) コレクター一覧でデータを収集するコレクターを選択します。
 
-(2) 아래의 [서비스 계정] 탭을 선택합니다.
+(2) 下にある[サービスアカウント]タブを選択します。
 
-![collector-service-account-tab](/ko/docs/guides/asset-inventory/collector-img/collector-service-account-tab.png)
+![collector-service-account-tab](/jp/docs/guides/asset-inventory/collector-img/collector-service-account-tab.png)
 
-여기에는 선택한 컬렉터를 통해 데이터 수집 시 사용되는 서비스 계정 목록이 표시됩니다.
+ここには、選択したコレクターを通じてデータを収集時に使用されるサービスアカウント一覧が表示されます。
 
-{{<alert title="서비스 계정">}}
-[서비스 계정](/ko/docs/guides/asset-inventory/service-account)은 데이터 수집에 필요한 프로바이더 계정에 대한 접근 정보를 가지고 있습니다.
+{{<alert title="サービスアカウント">}}
+[サービスアカウント](/jp/docs/guides/asset-inventory/service-account)は、データ収集に必要なプロバイダアカウントに対するアクセス情報を持っています。
 
-만약 여기에서 아무런 정보를 확인할 수 없다면, 프로바이더에 접근할 수 있는 계정 정보가 없는 것이므로 컬렉터가 실행되더라도 데이터 수집이 일어나지 않습니다.
+ここで情報が確認できない場合、プロバイダにアクセスできるアカウント情報がないものと見做され、コレクターが実行されてもデータは収集されません。
 
-따라서 컬렉터로 데이터를 수집하려면 [서비스 계정] 메뉴에서 해당 프로바이더의 계정 정보를 먼저 등록해두어야 합니다.
+そのため、コレクターでデータ収集するためには、先に[サービスアカウント]メニューで当該プロバイダのアカウント情報を登録しなければなりません。
 
 {{</alert>}}
 
-(3) 데이터를 수집하고자 하는 서비스 계정의 오른쪽 [데이터 수집] 버튼을 클릭합니다.
+(3) データ収集するサービスアカウントの右にある[データ収集]ボタンをクリックします。
 
-(4) [데이터 수집] 모달에서 [확인] 버튼을 클릭하여 데이터 수집을 시작합니다.
+(4) [データ収集]モダールウィンドウで[確認]ボタンをクリックすると、データ収集を開始します。
 
-![collector-data-collect-one-account-modal](/ko/docs/guides/asset-inventory/collector-img/collector-data-collect-one-account-modal.png)
+![collector-data-collect-one-account-modal](/jp/docs/guides/asset-inventory/collector-img/collector-data-collect-one-account-modal.png)
 
-## 데이터 수집 스케줄 설정하기
+## データ収集スケジュールを設定する
 
-주기적으로 리소스들을 수집해오도록 컬렉터에 스케줄링을 할 수 있습니다.
+周期的にリソースを収集するようコレクターのスケジュールを設定することができます。
 
-(1) 컬렉터 목록에서 스케줄을 설정할 컬렉터를 선택합니다.
+(1) コレクター一覧でスケジュールを設定するコレクターを選択します。
 
-(2) 아래의 [스케줄] 탭을 선택합니다.
+(2) 下にある[スケジュール]タブを選択します。
 
-여기에서 스케줄 목록을 확인하거나 추가/변경/삭제할 수 있습니다.
+ここでスケジュール一覧を確認したり、追加・変化・削除を実行できます。
 
-![collector-schedule-tab](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-tab.png)
+![collector-schedule-tab](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-tab.png)
 
-### 스케줄 추가하기
+### スケジュールを追加する
 
-(1) [추가] 버튼을 클릭합니다.
+(1) [追加]ボタンをクリックします。
 
-(2) [스케줄 추가] 모달에서 값을 입력합니다.
+(2) [スケジュール追加]モダールウィンドウに値を入力します。
 
-![collector-schedule-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-modal.png)
+![collector-schedule-modal](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-modal.png)
 
-(2-1) 식별 가능한 이름과 설정한 스케줄이 동작할 시간대(타임존)를 선택합니다.
+(2-1) 識別可能な名前と設定したスケジュールが作動する時間帯(タイムゾーン)を選択します。
 
-(2-2) 컬렉터가 데이터를 수집할 스케줄을 설정합니다. 
+(2-2) コレクターがデータを収集するスケジュールを設定します。 
 
 <br>
 <br>
 
-스케줄을 설정할 때에는 두 가지 방식이 있습니다.
+スケジュールの設定方法は2つのあります。
 
-![collector-schedule-type](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-type.png)
+![collector-schedule-type](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-type.png)
 
-- 시간으로 설정: 반복을 원하는 시간을 입력하면, 입력한 모든 시간마다 데이터를 수집합니다. 이를 매일 반복합니다.
-- 반복 주기로 설정: 입력한 시간 주기로 데이터를 수집합니다. 플러그인에서 지원하는 시간 단위(시, 분, 초)에 따라 입력 양식도 달라집니다.
+- 時間で設定: 繰り返したい時間を入力すると、入力したすべての時間毎にデータを収集します。これを毎日繰り返します。
+- 繰り返し周期で設定: 入力した周期でデータを収集します。プラグインでサポートする時間単位(時、分、秒)によって入力方式が異なります。
 
-{{<alert title="반복 주기 설정이 보이지 않는 경우">}}
-선택한 컬렉터의 **플러그인**이 무엇인지에 따라 반복 주기 설정 양식이 때로는 보이지 않거나, 그 시간 단위(시, 분, 초) 입력 양식이 다를 수 있습니다.
+{{<alert title="繰り返し周期設定が表示されない場合">}}
+選択したコレクターの**プラグイン**の種類によって、繰り返し周期方式は時に非表示だったり、その時間単位(時、分、秒)の入力方式が異なります。
 
-컬렉터의 데이터 수집은 철저히 컬렉터 플러그인에 의존합니다. 그런데 만약 해당 플러그인이 수집하는 데이터의 양이 방대하다면, 반복 주기 설정은 매우 위험할 수 있습니다. 이런 문제를 방지하기 위해 반복 주기 설정은 기본 값으로 제공되지 않습니다.
+コレクターのデータ収集は、どこまでもコレクタープラグインに依存します。そのため、当該プラグインが収集するデータ量が膨大な場合は、繰り返し周期を設定すると危険性が高いといえます。この問題を防止するため、繰り返し周期設定は基本値として提供されません。
 
-반면, 오히려 자주 데이터를 수집해야 하는 플러그인도 있습니다. 이 경우에는 플러그인이 지원하는 조건에 따라 반복 주기 설정 양식이 화면에 표시됩니다.
+反対に、頻繁にデータを収集する必要のあるプラグインもあります。この場合、プラグインがサポートする条件に従って、繰り返し周期の設定方式が画面に表示されます。
 
-플러그인에 대한 자세한 설명은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+プラグインに関する詳細については、[こちら](/jp/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
 
 {{</alert>}}
 
-(3) [확인] 버튼을 클릭하여 컬렉터를 생성합니다.
+(3) [確認]ボタンをクリックしてコレクターを作成します。
 
-### 스케줄 변경하기
+### スケジュールを変更する
 
-(1) 스케줄 목록에서 변경할 항목을 선택합니다.
+(1) スケジュール一覧で変更する項目を選択します。
 
-(2) [작업] 드롭다운에서 [변경]을 선택합니다.
+(2) [作業]ドロップダウンで[変更]を選択します。
 
-![collector-schedule-edit-menu](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-edit-menu.png)
+![collector-schedule-edit-menu](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-edit-menu.png)
 
-(2-1) [스케줄 변경] 모달에서 변경할 내용을 입력합니다. 스케줄 추가 양식과 동일하므로, 위의 스케줄 추가하기(링크)를 참고하세요.
+(2-1) [スケジュール変更]モダールウィンドウで変更する内容を入力します。スケジュール追加方法と同じなので、上記のスケジュールを追加する(リンク)をご参考にしてください。
 
-![collector-schedule-edit-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-edit-modal.png)
+![collector-schedule-edit-modal](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-edit-modal.png)
 
-(3) [확인] 버튼을 클릭하여 변경을 완료합니다.
+(3) [確認]ボタンをクリックして変更を完了します。
 
-### 스케줄 삭제하기
+### スケジュールを削除する
 
-(1) 스케줄 목록에서 변경할 항목을 선택합니다.
+(1) スケジュール一覧で変更する項目を選択します。
 
-(2) [작업] 드롭다운에서 [삭제] 메뉴를 선택합니다.
+(2) [作業]ドロップダウンで[削除]メニューを選択します。
 
-![collector-schedule-delete-menu](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-delete-menu.png)
+![collector-schedule-delete-menu](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-delete-menu.png)
 
-(3) [스케줄 삭제] 모달에서 삭제할 스케줄의 내용을 확인하고, [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) [スケジュール削除]モダールウィンドウで削除するスケジュールの内容を確認して[確認]ボタンをクリックすると、削除が完了します。
 
-![collector-schedule-delete-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-delete-modal.png)
+![collector-schedule-delete-modal](/jp/docs/guides/asset-inventory/collector-img/collector-schedule-delete-modal.png)
 
-## 데이터 수집 내역 확인하기
+## データ収集履歴を確認する
 
-**컬렉터 히스토리** 페이지에서 데이터 수집 내역을 확인할 수 있습니다.
+**コレクター履歴**ページでデータ収集履歴を確認できます。
 
-컬렉터 페이지 상단의 [컬렉터 히스토리] 버튼을 클릭하여 컬렉터 히스토리 페이지로 이동할 수 있습니다.
+コレクターページ画面上部の[コレクター履歴]ボタンをクリックすると、コレクター履歴ページへ移動します。
 
-특정 컬렉터의 데이터 수집 내역만을 확인하고 싶다면, 컬렉터 목록의 [상세 보기] 버튼을 클릭하여 이동할 수도 있습니다.
+特定コレクターのデータ収集履歴のみを確認したい場合は、コレクター一覧の[詳細を見る]ボタンをクリックします。
 
-![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+![collector-history-at-table](/jp/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
-### 데이터 수집 목록 조회하기
+### データ収集リストを照会する
 
-컬렉터 히스토레 페이지 상단의 차트를 통해, 날짜별 데이터 수집 현황을 빠르게 확인할 수 있습니다.
+コレクター履歴ページの画面上部にあるチャートから、日別データ収集状況を速やかに確認できます。
 
-하단의 목록에서는 고급 검색과 상태 필터 조건에 맞는 데이터 수집 목록이 표시됩니다. 고급 검색에 대한 자세한 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+画面下部には、詳細検索と状態フィルター条件と一致するデータ収集リストが表示されます。詳細検索に関する詳細については、[こちら](/jp/docs/guides/advanced/search/)をご参考にしてください。
 
-데이터 수집이 진행중인 항목의 경우, Job Progress 필드의 상태바를 통해 수집 현황을 확인할 수 있습니다.
+データを収集中の項目は、Job Progressフィールドのステータスバーで収集状況を確認できます。
 
-![collector-history-full-page](/ko/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
+![collector-history-full-page](/jp/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
 
-### 데이터 수집 내역 상세 정보 확인하기
+### データ収集履歴の詳細情報を確認する
 
-위의 데이터 수집 목록에서 수집 내역을 선택하면 수집 내역 상세 페이지로 이동합니다.
+上のデータ収集リストで収集履歴を選択すると、収集履歴詳細ページへ移動します。
 
-데이터 수집 상태와 기본 정보, 그리고 **서비스 계정 별 수집 내역**을 확인할 수 있습니다.
+データ収集状態、基本情報、そして**サービスアカウント別の収集履歴**を確認できます。
 
-![collector-history-detail-full-page](/ko/docs/guides/asset-inventory/collector-img/collector-history-detail-full-page.png)
+![collector-history-detail-full-page](/jp/docs/guides/asset-inventory/collector-img/collector-history-detail-full-page.png)
 
-#### 서비스 계정 별 수집 내역 확인하기
+#### サービスアカウント別の収集履歴を確認する
 
-컬렉터를 실행하면 연결된 서비스 계정 별로 수집이 각각 이뤄집니다.
+コレクターを実行すると、接続されたサービスアカウント別に収集が各々実行されます。
 
-여기에서는 서비스 계정 별로 수집 작업이 어떻게 이뤄졌는지에 대한 정보 확인할 수 있습니다.
+ここでは、サービスアカウント別の収集作業の進行状況を確認することができます。
 
 {{<alert title="">}}
-컬렉터는 데이터 수집 시 서비스 계정을 통해 클라우드 프로바이더의 계정에 접근하여 데이터를 가져옵니다.
+コレクターは、データ収集時にサービスアカウントを通じてクラウドプロバイダのアカウントにアクセスして、データを読み込みます。
 {{</alert>}}
 
-![collector-history-detail-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-detail-table.png)
+![collector-history-detail-table](/jp/docs/guides/asset-inventory/collector-img/collector-history-detail-table.png)
 
-###### 주요 필드 정보
-- Created Count: 새롭게 추가된 리소스의 개수
-- Updated Count: 가져온 리소스의 개수
-- Disconnected Count: 가져오지 못한 리소스의 개수
-- Deleted Count: 삭제된 리소스의 개수 (여러 번 가져오지 못하면 삭제된 것으로 간주됩니다.)
+###### 主なフィールド情報
+- Created Count: 新しく追加されたリソース数
+- Updated Count: 読み込んだリソース数
+- Disconnected Count: 読み込めなかったリソース数
+- Deleted Count: 削除されたリソース数 (何度も読み込めなかった場合は、削除したものとみなされます。)
 
-#### 수집 에러 내용 확인하기
+#### 収集エラーの内容を確認する
 
-(1) 계정 별 수집 목록에서 에러 내용을 확인하고자 하는 항목을 선택합니다.
+(1) アカウント別の収集リストで発生したエラーの内容を確認したい項目を選択します。
 
-(2) 아래의 [에러 목록] 탭에서 오류에 대한 자세한 내역을 확인할 수 있습니다.
+(2) 下にある[エラー一覧]タブでエラーに対する詳細履歴を確認できます。
 
-![collector-history-error-list](/ko/docs/guides/asset-inventory/collector-img/collector-history-error-list.png)
+![collector-history-error-list](/jp/docs/guides/asset-inventory/collector-img/collector-history-error-list.png)
 
-## 컬렉터 태그 관리하기
+## コレクターのタグを管理する
 
-컬렉터에 태그를 추가하여 관리할 수 있습니다.
+コレクターにタグを追加して管理することができます。
 
-(1) [태그] 탭 내부의 [편집] 버튼을 클릭합니다.
+(1) [タグ]タブ内の[編集]ボタンをクリックします。
 
-![collector-tag-edit](/ko/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
+![collector-tag-edit](/jp/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
 
-(2) 태그 페이지에서 `키: 값` 형태로 태그를 입력 후 [저장] 버튼을 클릭하여 완료합니다.
+(2) タグページで「キー: 値」形態でタグを入力して、[保存]ボタンをクリックすると完了します。
 
-![collector-tag-filled](/ko/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
+![collector-tag-filled](/jp/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
 

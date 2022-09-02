@@ -1,176 +1,176 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "はじめる"
+linkTitle: "はじめる"
 weight: 1
 date: 2022-06-07
 description: >
-    클라우드포레는 여러 클라우드 서비스 프로바이더에 분산된 리소스들을 통합하여 체계적으로 관리할 수 있는 서비스입니다.
+    クラウドフォレは、さまざまなクラウドサービスプロバイダに分散されたリソースを統合して、体系的に管理できるサービスです。
     <br>
     <br>
-    가이드를 통해 클라우드포레에 대한 모든 것을 알아보세요. 
+    本ガイドは、クラウドフォレのすべてをご紹介しています。 
 ---
 
-클라우드포레의 서비스를 이용하기 위해서는 다음 세 가지 작업이 선행되어야 합니다.
+クラウドフォレのサービスを利用するためには、先に次の3つの作業を行う必要があります。
 
-- 사용자 설정
-- 프로젝트 설정
-- 서비스 계정 설정
+- ユーザー設定
+- プロジェクト設定
+- サービスアカウント設定
 
-## 사용자 설정
+## ユーザー設定
 
-클라우드포레의 사용자는 **내부 사용자**, **외부 사용자**, **API 사용자**, 이렇게 세 가지 타입으로 분류됩니다.
+クラウドフォレのユーザーは、**内部ユーザー**、**外部ユーザー**、**APIユーザー**の3つのタイプに分けられます。
 
-여기에서는 내부 사용자를 추가하는 방법만을 소개하며, 외부 사용자와 API 사용자 추가 방식은 [[IAM] 사용자 가이드](/ko/docs/guides/administration/iam-user)에서 확인할 수 있습니다.
+ここでは、内部ユーザーを追加する方法のみをご紹介します。外部ユーザーとAPIユーザーの追加方法は、[[IAM] ユーザーガイド](/jp/docs/guides/administration/iam-user)でご確認ください。
 
-### 사용자 추가하기
+### ユーザーを追加する
 
-(1) [관리 > 사용자] 페이지에서 [생성] 버튼을 클릭합니다.
+(1) [管理 > ユーザー]ページで[作成]ボタンをクリックします。
 
-![user-page](/ko/docs/guides/getting-started/user-setup-img/user-page.png)
+![user-page](/jp/docs/guides/getting-started/user-setup-img/user-page.png)
 
-(2) [사용자 생성] 모달에서 [Local] 탭을 선택합니다.
+(2) [ユーザー作成]モダールウィンドウで[Local]タブを選択します。
 
-(2-1) 아이디를 입력 후 [아이디 확인] 버튼을 클릭하여, 유효한 아이디인지 확인합니다.
+(2-1) IDを入力後に[ID確認]ボタンをクリックして、IDの有効性確認を実行します。
 
-![user-create-modal-local-id](/ko/docs/guides/getting-started/user-setup-img/user-create-modal-local-id.png)
+![user-create-modal-local-id](/jp/docs/guides/getting-started/user-setup-img/user-create-modal-local-id.png)
 
-(2-2) 사용자를 식별할 이름, 이메일, 그리고 비밀번호를 입력한 후 [확인] 버튼을 클릭하여 사용자 생성을 완료합니다.
+(2-2) ユーザーを識別する名前、メールアドレス、パスワードを入力して[確認]ボタンをクリックすると、ユーザー作成が完了します。
 
-![user-create-modal-local-filed](/ko/docs/guides/getting-started/user-setup-img/user-create-modal-local-filed.png)
+![user-create-modal-local-filed](/jp/docs/guides/getting-started/user-setup-img/user-create-modal-local-filed.png)
 
-{{<alert title="어드민 권한 할당">}}
-사용자에게 어드민 권한을 부여하려면, [어드민 역할(Role) 할당] 드롭다운에서 선택하여 할당할 수 있습니다.
+{{<alert title="アドミン権限の割り当て">}}
+ユーザーへのアドミン権限付与は、[アドミンロール(Role)割り当て]ドロップダウンで選択すると割り当てることができます。
 
-만약 아무것도 선택하지 않으면, 해당 사용자에게는 아무런 권한이 부여되지 않습니다.
+何も選択しないと、当該ユーザーには権限が与えられません。
 
-권한에 대한 더 자세한 설명은 [여기](/ko/docs/guides/administration/iam-role)를 참고 하십시오.
+権限に関する詳細については、[こちら](/jp/docs/guides/administration/iam-role)をご参考にしてください。
 
-![user-create-role-assign](/ko/docs/guides/getting-started/user-setup-img/user-create-role-assign.png)
+![user-create-role-assign](/jp/docs/guides/getting-started/user-setup-img/user-create-role-assign.png)
 {{</alert>}}
 
 
-## 프로젝트 설정
+## プロジェクト設定
 
-체계적인 리소스 관리를 위해 [**프로젝트**](/ko/docs/guides/project/project)와 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)을 생성합니다.
+体系的にリソースを管理するため、[**プロジェクト**](/jp/docs/guides/project/project)と[**プロジェクトグループ**](/jp/docs/guides/project/project-group)を作成します。
 
-### 프로젝트 그룹 생성하기
+### プロジェクトグループを作成する
 
-프로젝트는 반드시 하나의 프로젝트 그룹에 속해있어야 하므로, 프로젝트를 생성하기 이전에 먼저 프로젝트 그룹을 생성해야 합니다.
+プロジェクトは、必ず一つのプロジェクトグループに属さなければならないため、プロジェクトを作成前に、先にプロジェクトグループを作成する必要があります。
 
-(1) [프로젝트] 페이지에서 [프로젝트 그룹 생성] 버튼을 클릭합니다.
+(1) [プロジェクト]ページで[プロジェクトグループ作成]ボタンをクリックします。
 
-![project-group-create-button](/ko/docs/guides/getting-started/project-setup-img/project-group-create-button.png)
+![project-group-create-button](/jp/docs/guides/getting-started/project-setup-img/project-group-create-button.png)
 
-(2) [프로젝트 그룹 생성] 모달에서 프로젝트 그룹 이름을 입력한 후, [확인] 버튼을 클릭하여 프로젝트 그룹을 생성합니다.
+(2) [プロジェクトグループ作成]モダールウィンドウでプロジェクトグループ名を入力して、[確認]ボタンをクリックしてプロジェクトグループを作成します。
 
-![project-group-create-modal](/ko/docs/guides/getting-started/project-setup-img/project-group-create-modal.png)
+![project-group-create-modal](/jp/docs/guides/getting-started/project-setup-img/project-group-create-modal.png)
 
-### 프로젝트 생성하기
+### プロジェクトを作成する
 
-프로젝트 그룹을 생성한 뒤, 그 하위에 속하게 될 프로젝트를 생성합니다.
+プロジェクトグループを作成後、その下位に属するプロジェクトを作成します。
 
-(1) 왼쪽의 프로젝트 그룹 목록에서 앞서 생성한 프로젝트 그룹을 선택한 뒤, 오른쪽 상단의 [프로젝트 생성] 버튼을 클릭합니다.
+(1) 左にあるプロジェクトグループ一覧で先に作成したプロジェクトグループを選択して、右上にある[プロジェクト作成]ボタンをクリックします。
 
-![project-group-select](/ko/docs/guides/getting-started/project-setup-img/project-group-select.png)
+![project-group-select](/jp/docs/guides/getting-started/project-setup-img/project-group-select.png)
 
-(2) [프로젝트 생성] 모달에서 프로젝트 이름을 입력한 후, [확인] 버튼을 클릭하여 프로젝트를 생성합니다.
+(2) [プロジェクト作成]モダールウィンドウでプロジェクト名を入力後に[確認]ボタンをクリックすると、プロジェクト作成が完了します。
 
-![project-create-modal](/ko/docs/guides/getting-started/project-setup-img/project-create-modal.png)
+![project-create-modal](/jp/docs/guides/getting-started/project-setup-img/project-create-modal.png)
 
 
-### 프로젝트 그룹 멤버 초대하기
+### プロジェクトグループのメンバーを招待する
 
-프로젝트 그룹에 사용자를 초대하여 프로젝트 그룹의 [**멤버**](/ko/docs/guides/project/member)로 등록할 수 있습니다.
+プロジェクトグループユーザーを招待してプロジェクトグループの[**メンバー**](/jp/docs/guides/project/member)として登録できます。
 
-{{<alert title="프로젝트 그룹 멤버 역할(Role)">}}
-초대된 멤버들은 해당 프로젝트 그룹에 대하여 반드시 하나의 역할(Role)을 가지게 됩니다.
-이 역할(Role)은 해당 프로젝트 그룹의 하위에 있는 모든 프로젝트 그룹 및 프로젝트에 대해서도 동일하게 적용됩니다.
+{{<alert title="プロジェクトグループメンバーのロール(Role)">}}
+招待されたメンバーは、当該プロジェクトグループに対して必ずロール(Role)を1つ持ちます。
+このロール(Role)は、当該プロジェクトグループの下位にあるすべてのプロジェクトグループとプロジェクトに対して同じように適用されます。
 
-상세한 내용은 [여기](/ko/docs/guides/administration/iam-role)를 참고 하십시오.
+詳細については、[こちら](/jp/docs/guides/administration/iam-role)をご参考にしてください。
 {{</alert>}}
 
-(1) 앞에서 생성한 프로젝트 그룹을 왼쪽의 [프로젝트 그룹] 목록에서 선택합니다.
+(1) 先に作成したプロジェクトグループを左にある[プロジェクトグループ]一覧で選択します。
 
-(2) 오른쪽 상단에 [프로젝트 그룹 멤버 관리] 아이콘 버튼을 클릭합니다.
+(2) 右上にある[プロジェクトグループメンバー管理]アイコンをクリックします。
 
-![project-member-icon-button](/ko/docs/guides/getting-started/project-setup-img/project-member-icon-button.png)
+![project-member-icon-button](/jp/docs/guides/getting-started/project-setup-img/project-member-icon-button.png)
 
 {{<alert title="">}}
-해당 프로젝트 그룹을 관리할 수 있는 권한이 있어야 오른쪽 상단의 버튼이 보입니다.
+当該プロジェクトグループの管理権限を持つユーザーにのみ、右上にボタンが表示されます。
 {{</alert>}}
 
-(3) [프로젝트 그룹 멤버 관리] 페이지에서 [초대] 버튼을 클릭하여 [멤버 초대] 모달을 엽니다.
+(3) [プロジェクトグループメンバー管理]ページで[招待]ボタンをクリックすると、[メンバー招待]モダールウィンドウが表示されます。
 
-![project-member-invite-button](/ko/docs/guides/getting-started/project-setup-img/project-member-invite-button.png)
+![project-member-invite-button](/jp/docs/guides/getting-started/project-setup-img/project-member-invite-button.png)
 
-(3-1) 초대하려는 멤버를 선택합니다. 한 번에 여러 멤버를 선택하여 초대할 수 있습니다.
+(3-1) 招待したいメンバーを選択します。一度に複数のメンバーを選択して招待できます。
 
-![project-member-invite-modal-member-added](/ko/docs/guides/getting-started/project-setup-img/project-member-invite-modal-member-added.png)
+![project-member-invite-modal-member-added](/jp/docs/guides/getting-started/project-setup-img/project-member-invite-modal-member-added.png)
 
-(3-2) 초대할 멤버들에게 부여할 역할(Role)을 선택합니다.
+(3-2) 招待するメンバーに付与するロール(Role)を選択します。
 
-![project-member-invite-modal-role-added](/ko/docs/guides/getting-started/project-setup-img/project-member-invite-modal-role-added.png)
+![project-member-invite-modal-role-added](/jp/docs/guides/getting-started/project-setup-img/project-member-invite-modal-role-added.png)
 
-{{<alert title="멤버 역할(Role)">}}
-프로젝트 멤버에게는 `User` 타입의 역할(Role)만 부여할 수 있습니다.
-역할(Role)의 타입에 대한 자세한 설명은 [여기](/ko/docs/guides/administration/iam-role/#역할role-타입)를 참고 하십시오.
+{{<alert title="メンバーのロール(Role)">}}
+プロジェクトメンバーには、「User」タイプのロール(Role)のみを付与することができます。
+ロール(Role)のタイプに関する詳細については、[こちら](/jp/docs/guides/administration/iam-role/#ロールrole-タイプ)をご参考にしてください。
 {{</alert>}}
 
-(3-3) 초대할 멤버들에 대한 라벨을 입력 후, 엔터 키를 눌러 추가합니다.
+(3-3) 招待するメンバーに対するラベルを入力して、Entelキーを押して追加します。
 
-(3-4) [확인] 버튼을 클릭하여 멤버 초대를 완료합니다.
+(3-4) [確認]ボタンをクリックすると、メンバー招待が完了します。
 
-![project-member-invited](/ko/docs/guides/getting-started/project-setup-img/project-member-invited.png)
+![project-member-invited](/jp/docs/guides/getting-started/project-setup-img/project-member-invited.png)
 
-## 서비스 계정 설정
+## サービスアカウント設定
 
-서비스 계정이란 클라우드 서비스의 리소스를 수집하기 위해 필요한 **클라우드 서비스 계정**을 의미합니다.
+サービスアカウントとは、クラウドサービスのリソースを収集するために必要な**クラウドサービスアカウント**を意味します。
 
-### 클라우드 서비스 계정 추가하기
+### クラウドサービスアカウントを追加する
 
-(1) [에셋 인벤토리 > 서비스 계정] 페이지에서 추가할 클라우드 서비스를 선택합니다.
+(1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/ko/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
+![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
 
-(2) [추가] 버튼을 클릭합니다.
+(2) [追加]ボタンをクリックします。
 
-![service-account-add-button](/ko/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
+![service-account-add-button](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
 
-(3) 서비스 계정 생성 폼을 작성합니다.
+(3) サービスアカウントの作成フォームを作成します。
 
-(3-1) 기본 정보를 입력합니다.
+(3-1) 基本情報を入力します。
 
-![service-account-add-base-info](/ko/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
+![service-account-add-base-info](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
 
-(3-2) 해당 서비스 계정에 따른 리소스를 수집할 프로젝트를 지정합니다.
+(3-2) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
-![service-account-connect-project](/ko/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
+![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-(3-3) 암호화 키 정보를 입력합니다.
+(3-3) 暗号化キーの情報を入力します。
 
-![service-account-add-key](/ko/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
+![service-account-add-key](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
 
-(4) [저장] 버튼을 클릭하여 완료합니다.
+(4) [保存]ボタンをクリックすると完了します。
 
 
-{{<alert title="클라우드 서비스 별 계정 추가">}}
-클라우드 서비스 별로 필요한 계정 정보가 다를 수 있습니다. 자세한 사항은 아래 링크를 참고 바랍니다.
+{{<alert title="クラウドサービス別のアカウント追加">}}
+クラウドサービス別に必要なアカウント情報は異なります。詳細については、下記のリンクをご参考にしてください。
 
-• AWS (링크)
+• AWS (リンク)
 
-• Azure (링크)
+• Azure (リンク)
 
-• GCP (링크)
+• GCP (リンク)
 
-• OCI (링크)
+• OCI (リンク)
 
-• Alibaba Cloud (링크)
+• Alibaba Cloud (リンク)
 {{</alert>}}
 
 ---
 
-위의 과정들을 완료한 뒤, 클라우드포레의 서비스를 좀 더 편리하고 다양하게 이용하고 싶다면 다음 가이드를 참고해주세요.
+上の過程を完了後、クラウドフォレのサービスをさらに便利かつさまざまにご利用になりたい場合は、以下のガイドをご参考にしてください。
 
-- [**에셋 인벤토리** 시작하기](/ko/docs/guides/asset-inventory/quick-start)
-- [**비용 분석** 시작하기](/ko/docs/guides/cost-explorer/cost-analysis)
-- [**얼럿 매니저** 시작하기](/ko/docs/guides/alert-manager/quick-start)
+- [**エセットインベントリー** 開始する](/jp/docs/guides/asset-inventory/quick-start)
+- [**コスト分析** 開始する](/jp/docs/guides/cost-explorer/cost-analysis)
+- [**アラートマネージャー** 開始する](/jp/docs/guides/alert-manager/quick-start)

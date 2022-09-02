@@ -1,40 +1,40 @@
 ---
-title: "Server"
-linkTitle: "Server"
+title: "サーバー"
+linkTitle: "サーバー"
 weight: 3
 date: 2022-06-07
 description: >
-    [컬렉터](/ko/docs/guides/asset-inventory/collector)를 통해 수집되는 여러 클라우드 서비스의 리소스들 중 서버 리소스를 확인할 수 있습니다.
+    [**コレクター](/jp/docs/guides/asset-inventory/collector)によって収集されるさまざまなクラウドリサービスのリソースのうち、サーバーリソースを確認できます。
 ---
 
-## 서버 리소스 목록 조회하기
+## サーバーリソース一覧を照会する
 
-[에셋 인벤토리 > 서버] 메뉴를 통해 서버 페이지에 진입하여 서버 리소스 목록을 확인할 수 있습니다.
+[アセットインベントリー > サーバー]メニューからサーバーページに移動すると、サーバーリソース一覧を確認できます。
 
-[고급 검색](/ko/docs/guides/advanced/search)을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다.
+[詳細検索](/jp/docs/guides/advanced/search)を利用すると、詳細条件で一覧をフィルタリングできます。
 
-[엑셀] 아이콘 버튼을 클릭하여 리소스 목록을 [엑셀 파일로 내보내기](/ko/docs/guides/advanced/excel-export) 하거나, [설정] 아이콘 버튼을 클릭하여 [테이블 필드 개인화](/ko/docs/guides/advanced/custom-table)를 할 수 있습니다.
+[Excel]アイコンをクリックしてリソース一覧を[Excelファイルでエクスポート](/jp/docs/guides/advanced/excel-export)、または[設定]アイコンをクリックして[テーブルフィールド個人化](/jp/docs/guides/advanced/custom-table)を実行できます。
 
-![server-full-page](/ko/docs/guides/asset-inventory/server-img/server-full-page.png)
+![server-full-page](/jp/docs/guides/asset-inventory/server-img/server-full-page.png)
 
-## 서버 리소스 콘솔 열기
+## サーバーリソースコンソールを開く
 
-때로는 서버 리소스의 프로바이더에서 제공하는 콘솔 사이트에서 작업을 해야 하는 경우가 있습니다.
+時に、サーバーリソースのプロバイダが提供するコンソールサイトで作業しなければならない場合があります。
 
-(1) 콘솔을 연결하려는 서버 리소스를 선택합니다.
+(1) コンソールに接続したいサーバーリソースを選択します。
 
-(2) [콘솔 연결] 버튼을 클릭합니다.
+(2) [コンソール接続]ボタンをクリックします。
 
-![server-console-connect](/ko/docs/guides/asset-inventory/server-img/server-console-connect.png)
+![server-console-connect](/jp/docs/guides/asset-inventory/server-img/server-console-connect.png)
 
-(3) 버튼을 클릭하면 해당 서버 리소스에 대한 작업을 이어나갈 수 있는 프로바이더의 콘솔이 새 탭으로 열립니다.
+(3) ボタンをクリックすると、サーバーリソースに対する作業を実行できるプロバイダのコンソールが新しいタブで表示されます。
 
-아래는 AWS의 EC2 Instance의 콘솔이 열린 예시입니다.
+下図は、AWSのEC2 Instanceコンソールを開いた例です。
 
-![server-console-opened](/ko/docs/guides/asset-inventory/server-img/server-console-opened.png)
+![server-console-opened](/jp/docs/guides/asset-inventory/server-img/server-console-opened.png)
 
-## 서버 리소스 살펴보기
+## サーバーリソースを確認する
 
-서버 리소스 목록에서 살펴보고자 하는 항목을 선택하면, 하단에서 해당 리소스에 대한 정보를 확인할 수 있습니다.
+サーバーリソース一覧で確認したい項目を選択すると、下に当該リソースに対する情報が表示されます。
 
-[에셋 인벤토리 > 클라우드 서비스] 메뉴의 [클라우드 서비스 리소스 살펴보기](/ko/docs/guides/asset-inventory/cloud-service/#클라우드-서비스의-리소스-살펴보기)와 동일합니다.
+[アセットインベントリー > クラウドサービス]メニューの[クラウドサービスのリソースを確認する](/jp/docs/guides/asset-inventory/cloud-service/#クラウド-サービスの-リソースを-確認する)と同じです。

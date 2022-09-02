@@ -1,26 +1,26 @@
 ---
-title: "[IAM] Authentication"
-linkTitle: "[IAM] Authentication"
+title: "[AIM]認証"
+linkTitle: "[AIM]認証"
 weight: 3
 date: 2022-07-05
 description: >
-
+    クラウドフォレは、**ユーザー認証のための手段**として他サービスのアカウントを使用する認証方式をプラグインで提供しています。
 ---
 
-## 개요
+## 概要
 
-클라우드포레는 사용자의 인증를 위한 수단으로 타 서비스의 계정을 사용하는 인증방식을 플러그인으로 제공하고 있습니다.   
-현재 클라우드포레에서 지원하는 인증 플러그인 목록은 **플러그인 지원 목록**을 참조하세요.
+クラウドフォレは、ユーザー認証のための手段として、他サービスのアカウントを使用する認証方法をプラグインで提供しています。   
+現在クラウドフォレがサポートを提供中の認証プラグインリストは、**プラグインサポートリスト**をご参照ください。
 
-구글의 계정을 통해 사용자 인증을 받는 **Google Oauth2** 플러그인과  
-표준 프로토콜을 통한 SSO(Single Sign-On)을 지원하는 **Keycloak** 플러그인을 사용할 수 있습니다.  
-보다 자세한 설정은 아래 **설정 가이드 링크**를 참조하세요.
+Googleアカウントを利用してユーザー認証を受ける**Google Oauth2**プラグインと、  
+標準プロトコルを利用したSSO(Single Sign-On)をサポートする**Keycloak**プラグインを使用できます。  
+設定に関する詳細については、下記の**設定ガイドリンク**をご参照ください。
 
 
 
-## 플러그인 지원 목록
+## プラグインサポートリスト
 
-| **플러그인** | **설정 가이드 링크** |
+| **プラグイン** | **設定ガイドリンク** |
 | --- | --- |
 | Google Oauth2 | https://github.com/spaceone-dev/plugin-googleoauth2-identity-auth/blob/master/docs/ko/GUIDE.md |
 | Keycloak | https://github.com/spaceone-dev/plugin-keycloak-identity-auth/blob/master/docs/ko/GUIDE.md |

@@ -1,8 +1,8 @@
 ---
-title: "Advanced"
-linkTitle: "Advanced"
+title: "詳細機能"
+linkTitle: "詳細機能"
 weight: 9
 date: 2022-06-07
 description: >
-    **고급 기능**에서는 클라우드포레를 더욱 편리하게 사용할 수 있는 기능들을 설명합니다. 
+    **詳細機能**では、クラウドフォレのより便利な機能をご紹介します。 
 ---

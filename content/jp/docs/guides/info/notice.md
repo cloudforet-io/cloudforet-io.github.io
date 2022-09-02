@@ -1,35 +1,35 @@
 ---
-title: "Notice"
-linkTitle: "Notice"
+title: "お知らせ"
+linkTitle: "お知らせ"
 weight: 1
 date: 2022-08-22
 description: >
-    클라우드포레 시스템 관리자 또는 이용중인 고객사의 관리자가 작성한 공지글을 확인할 수 있는 페이지입니다.
+    クラウドフォレのシステム管理者または利用中の顧客会社の管理者が作成したお知らせを確認できるページです。
 ---
 
-## 공지사항 확인하기 
+## お知らせを確認する 
 
-(1) 최근 공지사항 빠른 확인: 상단 메뉴의 알림 버튼 클릭 후 [공지사항] 탭 클릭시, 최근에 등록된 공지글을 확인할 수 있습니다. 
+(1) 最近のお知らせをすばやく確認: 上にあるメニューの通知ボタンをクリックして[お知らせ]タブをクリックすると、最近登録されたお知らせを確認できます。 
 
-![gnb-notice-tab](/ko/docs/guides/info/notice-img/gnb-notice-tab.png)
+![gnb-notice-tab](/jp/docs/guides/info/notice-img/gnb-notice-tab.png)
 
-(2) 전체 목록 확인: 상단 메뉴의 가장 오른쪽의 아이콘을 클릭했을 시 나오는 하위 메뉴를 통해 공지사항 전체 목록 페이지로 이동할 수 있습니다.
+(2) 全体リストの確認: 上にあるメニューの最も右側にあるアイコンをクリックすると表示されるサブメニューから、お知らせ全体リストページへ移動します。
 
-![gnb-profile-menu](/ko/docs/guides/info/notice-img/gnb-profile-menu.png)
+![gnb-profile-menu](/jp/docs/guides/info/notice-img/gnb-profile-menu.png)
 
-## 공지사항 등록하기
-Role Type이 [Admin]인 역할(Role)을 가진 사용자의 경우, 해당 도메인내 공지사항을 직접 작성할 수 있는 권한을 가집니다.
+## お知らせを登録する
+ロールタイプが[Admin]のロール(Role)を持つユーザーは、当該ドメイン内のお知らせを直接作成する権限を持っています。
 
 {{<alert>}}
-Role Type에 대한 세부내용은 [여기](https://spaceone.org/docs/guides/administration/iam-role/)를 참고 하십시오.
+ロールタイプに関する詳細については、[こちら](https://spaceone.org/docs/guides/administration/iam-role/)をご参考にしてください。
 {{</alert>}}
 
-(1) [공지사항] 페이지로 진입하여, [새 공지사항 등록] 버튼을 통해 새 글 작성이 가능합니다.
+(1) [お知らせ]ページへ移動して、[新しいお知らせ登録]ボタンをクリックすると新しい文章を作成できます。
 
-- 작성된 공지글은 해당 도메인내 특정 역할(Role)을 할당 받은 전체 사용자에게 공개 됩니다
+- 作成されたお知らせは、当該ドメイン内で特定のロール(Role)を割り当てられたすべてのユーザーに公開されます。
 
-![notice-list](/ko/docs/guides/info/notice-img/notice-list.png)
+![notice-list](/jp/docs/guides/info/notice-img/notice-list.png)
 
-![create-notice](/ko/docs/guides/info/notice-img/create-notice.png)
+![create-notice](/jp/docs/guides/info/notice-img/create-notice.png)
 
-(2) 작성된 공지글은 이후에 [수정] 또는 [삭제] 할 수 있습니다.
+(2) 作成されたお知らせは、後に[修正]または[削除]することができます。

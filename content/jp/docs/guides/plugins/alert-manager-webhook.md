@@ -1,25 +1,25 @@
 ---
-title: "[Alert Manager] Webhook"
-linkTitle: "[Alert Manager] Webhook"
+title: "アラートマネージャー ウェブフック"
+linkTitle: "アラートマネージャー ウェブフック"
 weight: 3 
 date: 2022-07-05 
 description: >
-
+    クラウドフォレは、**さまざまなモニタリングサービス**で発生するイベントメッセージを受信するため、プラグイン形態のウェブフックをサポートしています。
 ---
 
-## 개요
+## 概要
 
-클라우드포레는 **다양한 모니터링 서비스**로부터 발생하는 이벤트 메시지를 수신받기 위해 플러그인 형태의 웹훅을 지원하고 있습니다.  
-현재 클라우드포레에서 지원하는 웹훅 플러그인 목록은 **플러그인 지원 목록**을 참조하세요.
+クラウドフォレは、**多様なモニタリングサービス**で発生するイベントメッセージを受信するため、プラグイン形態のウェブフックをサポートしています。  
+現在クラウドフォレがサポートを提供中のウェブフックプラグインリストは、**プラグインサポートリスト**をご参照ください。
 
-특히, **AWS CloudWatch**와 **AWS PHD**(PersonalHealthDashboard)에서 발생하는 이벤트 메세지는   
-**AWS SNS**(Simple Notification Service) Webhook을 통해 클라우드포레로 수집됩니다.
+特に、**AWS CloudWatch**と**AWS PHD**(PersonalHealthDashboard)で発生するイベントメッセージは、   
+**AWS SNS**(Simple Notification Service)ウェブフックを通じてクラウドフォレに収集されます。
 
-모니터링 서비스 별 설정 가이드는 아래 플러그인 지원목록의 **설정 가이드 링크**를 참고 하십시오.
+モニタリングサービス別の設定ガイドは、下記のプラグインサポートリストの**設定ガイドリンク**をご参考にしてください。
 
-## 플러그인 지원 목록
+## プラグインサポートリスト
 
-| **플러그인** | **설정 가이드 링크** |
+| **プラグイン** | **設定ガイドリンク** |
 | --- | --- |
 | AWS SNS | https://github.com/spaceone-dev/plugin-aws-sns-mon-webhook/blob/master/docs/ko/GUIDE.md |
 | Grafana | https://github.com/spaceone-dev/plugin-grafana-mon-webhook/blob/master/docs/ko/GUIDE.md |

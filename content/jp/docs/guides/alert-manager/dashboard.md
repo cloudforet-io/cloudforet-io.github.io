@@ -1,41 +1,41 @@
 ---
-title: "Dashboard"
-linkTitle: "Dashboard"
+title: "ダッシュボード"
+linkTitle: "ダッシュボード"
 weight: 2
 date: 2022-06-07
 description: >
-    현재 로그인된 사용자에게 발생한 얼럿을 한눈에 조회 가능한 대시보드입니다.
+    現在ログインされたユーザーに発生したアラートをひと目で確認できるダッシュボードです。
 ---
 
-크게 3가지의 파트 별로 얼럿들을 확인할 수 있으며 아래와 같습니다.
+以下のとおり、大きく3つのパートでアラートを確認できます。
 
-## 상태별 얼럿 확인하기
+## 状態別にアラートを確認する
 
-대시보드의 최상단에서는 얼럿을 [상태별](/ko/docs/guides/alert-manager/alert/#상태)로 볼 수 있습니다.
+ダッシュボードの画面最上部では、アラートを[状態別](/jp/docs/guides/alert-manager/alert/#状態)に確認できます。
 <br>
-각 항목을 클릭하면 [얼럿 상세 페이지](/ko/docs/guides/alert-manager/alert/#얼럿-살펴보기)로 이동하여 상세 정보를 확인하거나 세부 설정을 할 수 있습니다.
+各項目をクリックすると、[アラート詳細ページ](/jp/docs/guides/alert-manager/alert/#アラート-確認する)へ移動して、詳細情報を確認したり詳細設定を実行することができます。
 
-![view-alert-by-status](/ko/docs/guides/alert-manager/dashboard-img/view-alert-by-status.png)
+![view-alert-by-status](/jp/docs/guides/alert-manager/dashboard-img/view-alert-by-status.png)
 
-## 얼럿 히스토리
+## アラートヒストリー
 
-[프로젝트](/ko/docs/guides/project/project/)에서 발생한 얼럿 히스토리를 보여줍니다.
+[プロジェクト](/jp/docs/guides/project/project/)で発生したアラート履歴が表示されます。.
 <br>
-차트에서 일별 데이터를 확인할 수 있으며, 카드에서는 전달 대비 얼럿의 증감량을 확인할 수 있습니다.
+チャートでは日別データを確認でき、カードでは前月比アラートの増減量を確認できます。
 
-![alert-history-1](/ko/docs/guides/alert-manager/dashboard-img/alert-history-1.png)
+![alert-history-1](/jp/docs/guides/alert-manager/dashboard-img/alert-history-1.png)
 
-## 프로젝트 상태 보드
+## プロジェクト状態ボード
 
-[프로젝트 상태 보드]에서는 사용자와 관련된 각각의 프로젝트들의 얼럿 정보를 보여줍니다.
+[プロジェクト状態ボード]には、ユーザーと関連する各プロジェクトのアラート情報が表示されます。
 
-[Top 5 프로젝트 활동]의 경우, [오픈] 상태의 얼럿이 많은 순서대로 프로젝트를 보여줍니다.
+[Top 5プロジェクト活動]では、[オープン]状態のアラートが多い順にプロジェクトを表示します。
 
-![project-board-1](/ko/docs/guides/alert-manager/dashboard-img/project-board-1.png)
+![project-board-1](/jp/docs/guides/alert-manager/dashboard-img/project-board-1.png)
 
-검색 창 아래에는 얼럿이 발생한 프로젝트가 활동이 높은 순서대로 보여집니다.
+検索ウィンドウの下には、アラートが発生したプロジェクトが活動の高い順に表示されます。
 <br>
-`이슈` 상태인 프로젝트만 보이며, 모든 얼럿이 `완료` 상태가 되면 `정상` 상태의 프로젝트로 변경되어 대시보드에서 보이지 않습니다.
+「イシュー」状態のプロジェクトのみ表示され、すべてのアラートが「完了」状態になると「正常」状態のプロジェクトに変更され、ダッシュボードで非表示になります。
 
-![project-board-2](/ko/docs/guides/alert-manager/dashboard-img/project-board-2.png)
+![project-board-2](/jp/docs/guides/alert-manager/dashboard-img/project-board-2.png)
 

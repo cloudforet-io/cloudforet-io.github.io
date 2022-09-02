@@ -1,68 +1,68 @@
 ---
-title: "[IAM] User"
-linkTitle: "[IAM] User"
+title: "[AIM]ユーザー"
+linkTitle: "[AIM]ユーザー"
 weight: 1
 date: 2022-06-23
 description: >
-    **사용자**에서는 클라우드포레의 사용자를 생성/삭제하거나 활성화/비활성화 할 수 있습니다.
+    **ユーザー**では、クラウドフォレのユーザーを作成・削除したり、有効化・無効化することができます。
     <br>
     <br>
-    또한 사용자에게 역할을 할당하여 도메인에 대한 권한을 부여할 수 있습니다.
+    また、ユーザーにロールを割り当てて、ドメインに対する権限を付与することができます。
 ---
 
 {{<alert>}}
-[관리 > 사용자] 페이지에서 사용자에게 할당할 수 있는 역할은 `Admin` 타입입니다. `User` 타입은 프로젝트의 멤버에게 할당할 수 있습니다.
-프로젝트 멤버에게 역할을 부여하는 방법은 [여기](/ko/docs/guides/project/project-group/#프로젝트-그룹-멤버-초대하기)를 참고 하십시오.
+[管理 > ユーザー]ページでユーザーに割り当てできるロールは、「アドミン」タイプです。「ユーザー」タイプは、プロジェクトのメンバーに割り当てることができます。
+プロジェクトメンバーにロールを付与する方法は、[こちら](/jp/docs/guides/project/project-group/#プロジェクト-グループ-メンバー-招待する)をご参考にしてください｡
 {{</alert>}}
 
-## 사용자 추가하기
-추가할 수 있는 사용자의 종류는 세 가지입니다.
-- **내부 사용자**: 로그인 페이지에서 아이디와 비밀번호를 사용해 로그인 할 수 있는 사용자
-- **외부 사용자**: 도메인이 가지고 있는 외부 사용자 인증을 따름
-- **API Only**: 오직 API만 사용 가능하며 클라우드포레 콘솔 접근이 불가함
+## ユーザーを追加する
+追加できるユーザーは3種類です。
+- **内部ユーザー**: ログインぺージでIDとパスワードを使用してログインできるユーザー
+- **外部ユーザー**: ドメインが持っている外部ユーザー認証に従う。
+- **API Only**: APIのみ使用でき、クラウドフォレコンソールへアクセスはできないユーザー
 
-### 내부 사용자 추가하기
-내부 사용자는 로그인 페이지에서 아이디와 비밀번호를 사용해 로그인 할 수 있는 사용자입니다.
+### 内部ユーザーを追加する
+内部ユーザーは、ログインページでIDとパスワードを使用してログインできるユーザーです。
 
-(1) [관리 > 사용자] 페이지에서 [생성] 버튼을 클릭합니다.
+(1) [管理 > ユーザー]ページで[作成]ボタンをクリックします。
 
-![user-create-button](/ko/docs/guides/administration/iam-user-img/user-create-button.png)
+![user-create-button](/jp/docs/guides/administration/iam-user-img/user-create-button.png)
 
-(2) [사용자 추가] 모달이 열린 뒤, 내부 사용자 추가를 위해 [Local] 탭을 선택합니다.
+(2) [ユーザー追加]モダールウィンドウが開いたら、内部ユーザーを追加する[Local]タブを選択します。
 
-![user-create-modal-local](/ko/docs/guides/administration/iam-user-img/user-create-modal-local.png)
+![user-create-modal-local](/jp/docs/guides/administration/iam-user-img/user-create-modal-local.png)
 
-(2-1) 내부 사용자의 아이디를 입력한 뒤, [아이디 확인] 버튼을 클릭합니다. 사용자 아이디는 이메일 형식이어야 하며, 기존 사용자 목록에 없는 아이디어야 합니다.
+(2-1) 内部ユーザーのIDを入力後、[ID確認]ボタンをクリックします。ユーザーIDはメールアドレス形式でなければならず、既存のユーザーリストに登録されていないIDでなければなりません。
 
-(2-2) 이름과 이메일을 선택적으로 입력합니다.
+(2-2) 名前とメールアドレスを選択して入力します。
 
-(2-3) 필요 시 [어드민 역할 할당] 메뉴에서 역할을 선택합니다.
+(2-3) 必要であれば、[アドミンロール割り当て]メニューでロールを選択します。
 {{<alert>}}
-사용자에게 할당된 역할에 따라, 페이지 접근 권한이나 API 정책이 상이하게 적용됩니다. 역할에 대한 자세한 사항은 [여기](/ko/docs/guides/administration/iam-role)를 참고 하십시오.
+ページへのアクセス権限またはAPIポリシーは、ユーザーに割り当てられたロールによって適用が異なります。ロールに関する詳細については、[こちら](/jp/docs/guides/administration/iam-role)をご参考にしてください｡
 {{</alert>}}
 
-(2-4) 사용자가 첫 로그인 시 사용할 비밀번호를 입력합니다.
+(2-4) ユーザーが初回ログイン時に使用したパスワードを入力します。
 
-(3) [확인] 버튼을 클릭합니다.
+(3) [確認]ボタンをクリックします。
 
 
-### 외부 사용자 추가하기
-외부 사용자 추가는 해당 도메인이 가지고 있는 외부 사용자 인증을 따릅니다. 만약 인증된 외부 사용자가 아닐 경우 사용자로 추가할 수 없습니다.
+### 外部ユーザーを追加する
+外部ユーザーの追加は、当該ドメインが持っている外部ユーザー認証に従います。未認証の外部ユーザーは、ユーザーとして追加できません。
 
-![user-create-modal-oauth](/ko/docs/guides/administration/iam-user-img/user-create-modal-oauth.png)
+![user-create-modal-oauth](/jp/docs/guides/administration/iam-user-img/user-create-modal-oauth.png)
 
 {{<alert>}}
-외부 사용자 인증에 대한 자세한 설명은 [여기](/ko/docs/guides/plugins/iam-authentication/)를 참고해 주십시오.
+外部ユーザーの認証に関する詳細については、[こちら](/jp/docs/guides/plugins/iam-authentication/)をご参考にしてください｡
 {{</alert>}}
 
 
-### API Only 사용자 추가하기
-API 사용자는 클라우드포레 콘솔 접근이 불가하며, 오직 API만 사용할 수 있습니다.
+### API Onlyユーザーを追加する
+APIユーザーは、クラウドフォレコンソールにアクセスできず、APIのみ使用することができます。
 
-![user-create-modal-apionly](/ko/docs/guides/administration/iam-user-img/user-create-modal-apionly.png)
+![user-create-modal-apionly](/jp/docs/guides/administration/iam-user-img/user-create-modal-apionly.png)
 
 
-## 사용자 상세 보기
-사용자 페이지의 테이블에서 특정 사용자를 선택하면, 해당 사용자에 대한 상세한 정보를 볼 수 있습니다.
+## ユーザーの詳細を見る
+ユーザーページのテーブルで特定ユーザーを選択すると、当該ユーザーに対する詳細情報を確認できます。
 
-![user-single-select](/ko/docs/guides/administration/iam-user-img/user-single-select.png)
+![user-single-select](/jp/docs/guides/administration/iam-user-img/user-single-select.png)

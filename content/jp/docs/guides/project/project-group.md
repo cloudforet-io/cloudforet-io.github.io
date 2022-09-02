@@ -1,165 +1,165 @@
 ---
-title: "Project Group"
-linkTitle: "Project Group"
+title: "プロジェクトグループ"
+linkTitle: "プロジェクトグループ"
 weight: 2
 date: 2022-06-07
 description: >
-    **프로젝트 그룹**은 여러 [**프로젝트**](/ko/docs/guides/project/project)를 묶어 관리하기 위한 개념입니다.
+    **プロジェクトグループ**は、さまざまな[**プロジェクト**](/jp/docs/guides/project/project)をまとめて管理するための概念です。
     <br>
     <br>
-    프로젝트 그룹 하위에는 프로젝트와 프로젝트 그룹 모두가 속할 수 있으며, 이러한 트리 계층 구조를 통해 조직의 규모와 구조에 맞는 프로젝트 계층 구조를 설계하여 관리할 수 있습니다.
+    プロジェクトグループの下位には、プロジェクトとプロジェクトグループが属すことができ、このツリー構造を利用して組織の規模と構造に適したプロジェクト階層構造を設計して管理することができます。
 ---
 
-[//]: # (프로젝트 그룹에 초대한 [**멤버**]&#40;/ko/docs/guides/project/member&#41;에게 [**역할&#40;Role&#41;**]&#40;/ko/docs/guides/administration/iam-user&#41;을 부여하면, 해당 멤버는 하위 프로젝트 그룹과 프로젝트에 대해 동일한 역할&#40;Role&#41;을 가지게 됩니다.)
+[//]: # (プロジェクトグループに招待した[**メンバー**]&#40;/ko/docs/guides/project/member&#41;に [**ロール&#40;Role&#41;**]&#40;/ko/docs/guides/administration/iam-user&#41;を付与すると、当該メンバーは下位プロジェクトグループとプロジェクトに対して同じロール&#40;Role&#41;が与えられます。.)
 
-## 프로젝트 그룹 생성하기
+## プロジェクトグループを作成する
 
-### 최상위 프로젝트 그룹 생성하기
+### 最上位プロジェクトグループを作成する
 
-(1) [프로젝트] 페이지 왼쪽의 [프로젝트 그룹] 목록에서 [모든 프로젝트]를 선택합니다.
+(1) [プロジェクト]ページの左にある[プロジェクトグル―プ]リストで、[すべてのプロジェクト]を選択します。
 
-![project-group-all-project-lnb](/ko/docs/guides/project/project-group-img/project-group-all-project-lnb.png)
+![project-group-all-project-lnb](/jp/docs/guides/project/project-group-img/project-group-all-project-lnb.png)
 
-(2) 오른쪽의 [프로젝트 그룹 생성] 버튼을 클릭합니다.
+(2) 右側にある[プロジェクトグループ作成]ボタンをクリックします。
 
-{{<alert title="[프로젝트 그룹 생성] 버튼이 보이지 않는 경우">}}
+{{<alert title="[プロジェクトグループ作成]ボタンが表示されない場合">}}
 
-관리자 역할(Role)을 가진 사용자 중에서도 프로젝트 페이지에 대하여 수정 권한을 가진 사용자만이 최상위 프로젝트 그룹을 생성/수정/삭제할 수 있습니다.
+管理者ロール(Role)を持つユーザーのうち、プロジェクトページに対して修正権限を持つユーザーのみが最上位プロジェクトグループを作成・修正・削除できます。
 
-최상위에 프로젝트 그룹을 생성할 수 있는 역할(Role)이 부여되지 않은 사용자에게는 해당 버튼이 보이지 않습니다.
+最上位にプロジェクトグループを作成できるロール(Role)が付与されていないユーザーには、当該ボタンは表示されません。
 
-![project-group-full-page](/ko/docs/guides/project/project-group-img/project-group-full-page.png)
-
-{{</alert>}}
-
-(3) [프로젝트 그룹 생성] 모달에서 원하는 이름을 입력한 후 [확인] 버튼을 클릭하여 프로젝트 그룹 생성을 완료합니다.
-
-![project-group-create-modal](/ko/docs/guides/project/project-group-img/project-group-create-modal.png)
-
-### 하위 프로젝트 그룹 생성하기
-
-특정 프로젝트 그룹 하위에 또 다른 프로젝트 그룹을 생성하려면 아래의 단계를 따릅니다.
-<br>
-<br>
-
-(1) 왼쪽의 [프로젝트 그룹] 목록에서 하위 프로젝트 그룹을 생성하려는 프로젝트 그룹에 마우스 커서를 올리면, 오른쪽에 표시되는  [+] 버튼을 클릭합니다.
-
-![project-group-create-button-from-lnb](/ko/docs/guides/project/project-group-img/project-group-create-button-from-lnb.png)
-
-{{<alert title="[+] 버튼이 비활성화된 경우">}}
-
-해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나, 해당 그룹을 생성할 수 있는 권한이 없는 경우 해당 버튼이 비활성화됩니다. 
-
-관리자에게 프로젝트 그룹 멤버로 초대를 요청하거나 역할(Role) 변경을 요청하세요.
+![project-group-full-page](/jp/docs/guides/project/project-group-img/project-group-full-page.png)
 
 {{</alert>}}
 
-(2) [프로젝트 그룹 생성] 모달에 그룹 이름을 작성한 후 [확인] 버튼을 클릭하여 프로젝트 그룹을 생성합니다.
+(3) [プロジェクトグループ作成]モダールウィンドウで希望する名前を入力して[確認]ボタンをクリックすると、プロジェクトグループ作成が完了します。
 
-![project-group-child-create-modal](/ko/docs/guides/project/project-group-img/project-group-child-create-modal.png)
+![project-group-create-modal](/jp/docs/guides/project/project-group-img/project-group-create-modal.png)
 
-(3) 선택한 프로젝트 그룹 하위에 새롭게 생성한 프로젝트 그룹이 표시됩니다.
+### 下位プロジェクトグループを作成する
 
-![project-group-child-tree](/ko/docs/guides/project/project-group-img/project-group-child-tree.png)
+特定のプロジェクトグループの下位に別のプロジェクトグループを作成する場合は、以下の段階を踏みます。
+<br>
+<br>
 
-## 프로젝트 그룹 & 프로젝트 검색하기
+(1) 左にある[プロジェクトグループ]リストで、下位プロジェクトグループを作成したいプロジェクトグループにマウスポインタを当てて、右に表示される[＋]ボタンをクリックします。
 
-왼쪽의 검색 창을 통해 프로젝트 그룹과 프로젝트를 검색할 수 있습니다.
+![project-group-create-button-from-lnb](/jp/docs/guides/project/project-group-img/project-group-create-button-from-lnb.png)
+
+{{<alert title="[+]ボタンが無効化状態の場合">}}
+
+当該プロジェクトグループのメンバーとして招待されていない場合や、当該グループを作成できる権限がない場合は、このボタンは無効化状態です。 
+
+管理者にプロジェクトグループメンバーとして招待、またはロール(Role)変更をリクエストしてください。
+
+{{</alert>}}
+
+(2) [プロジェクトグループ作成]モダールウィンドウでグループ名を作成後に[確認]ボタンをクリックして、プロジェクトグループを作成します。
+
+![project-group-child-create-modal](/jp/docs/guides/project/project-group-img/project-group-child-create-modal.png)
+
+(3) 選択したプロジェクトグループの下位に新しく作成されたプロジェクトグループが表示されます。
+
+![project-group-child-tree](/jp/docs/guides/project/project-group-img/project-group-child-tree.png)
+
+## プロジェクトグループ＆プロジェクトを検索する
+
+左側にある検索ウィンドウを利用すると、プロジェクトグループとプロジェクトを検索することができます。
  
-검색 결과에서 프로젝트 그룹을 선택할 경우 해당 프로젝트 그룹 페이지가 열리며, 프로젝트를 선택할 경우 해당 프로젝트의 상세 페이지가 새 탭으로 열립니다.
+検索結果でプロジェクトグループを選択すると、当該プロジェクトグループページが表示され、プロジェクトを選択すると、当該プロジェクトの詳細ページが新しいタブで表示されます。
 
-![project-group-search](/ko/docs/guides/project/project-group-img/project-group-search.png)
+![project-group-search](/jp/docs/guides/project/project-group-img/project-group-search.png)
 
-만약 프로젝트 그룹을 선택한 뒤 다시 검색 창을 열면, 해당 프로젝트 그룹의 하위 프로젝트를 볼 수 있습니다.
+プロジェクトグループを作成後に再び検索ウィンドウを開くと、当該プロジェクトグループの下位プロジェクトを確認できます。
 
-![project-group-search-project](/ko/docs/guides/project/project-group-img/project-group-search-project.png)
+![project-group-search-project](/jp/docs/guides/project/project-group-img/project-group-search-project.png)
 
 
-## 프로젝트 그룹 살펴보기
+## プロジェクトグループを確認する
 
-왼쪽의 [프로젝트 그룹] 목록에서 특정 프로젝트 그룹을 선택하면, 해당 그룹의 상세 정보를 확인할 수 있습니다.
+左にある[プロジェクトグループ]リストで特定のプロジェクトグループを選択すると、当該グループの詳細情報を確認できます。
 
-![project-group-single-select-from-lnb](/ko/docs/guides/project/project-group-img/project-group-single-select-from-lnb.png)
+![project-group-single-select-from-lnb](/jp/docs/guides/project/project-group-img/project-group-single-select-from-lnb.png)
 
-{{<alert title="프로젝트 목록 조회">}}
-프로젝트 그룹을 선택하면 해당 그룹에 속하는 프로젝트 목록을 확인할 수 있습니다. 자세한 내용은 [여기](/ko/docs/guides/project/project/#프로젝트-목록-조회하기)를 참고 하십시오.
+{{<alert title="プロジェクトリスト照会">}}
+プロジェクトグループを選択すると、当該グループに属するプロジェクトリストを確認できます。詳細については、[こちら](/jp/docs/guides/project/project/#プロジェクト-リスト-照会する)をご参考にしてください。
 {{</alert>}}
 
-## 프로젝트 그룹 편집하기
+## プロジェクトグループを編集する
 
-프로젝트 그룹의 이름을 변경하거나 그룹의 계층 구조를 변경할 수 있습니다.
+プロジェクトグループの名前を変更したり、グループの階層構造を変更できます。
 <br>
 <br>
-왼쪽의 [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환하여 편집할 수 있습니다.
+左にある[プロジェクトグループ]リストの上にある[編集]ボタンをクリックすると、編集モードに変換され、編集することができます。
 
-![project-group-edit-button](/ko/docs/guides/project/project-group-img/project-group-edit-button.png)
+![project-group-edit-button](/jp/docs/guides/project/project-group-img/project-group-edit-button.png)
 
-{{<alert title="[편집] 버튼이 비활성화된 경우">}}
-• 프로젝트 그룹을 선택하지 않은 상태에서 [편집] 버튼이 비활성화되어 있는 경우라면, 최상위 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다.
+{{<alert title="[編集]ボタンが無効化状態の場合">}}
+• プロジェクトグループを選択しない状態で[編集]ボタンが無効化状態の場合は、最上位プロジェクトグループを修正できる権限がありません。
 
-• 프로젝트 그룹을 선택한 상태에서도 버튼이 비활성화 되어있다면, 해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나 해당 그룹을 수정할 수 있는 권한이 없는 경우입니다. 
-관리자에게 [프로젝트 그룹 멤버로 초대](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-초대하기)를 요청하거나 [멤버 역할(Role) 변경](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-편집하기)을 요청하세요.
+• プロジェクトグループを選択した状態でボタンが無効化状態の場合は、当該プロジェクトグループのメンバーとして招待されていなかったり、当該グループを修正できる権限がありません。 
+管理者に[プロジェクトグループメンバーとして招待](/jp/docs/guides/project/member/#プロジェクト-グループ-メンバー-招待する)をリクエスト、または[メンバーロール(Role)変更](/jp/docs/guides/project/member/#プロジェクト-グループ-メンバー-編集する)をリクエストしてください。
 {{</alert>}}
 
-### 프로젝트 그룹 이름 변경하기
+### プロジェクトグループ名を変更する
 
-(1) 편집 모드로 전환한 뒤, 이름을 수정하려는 프로젝트 그룹을 클릭합니다.
+(1) 編集モードに変換後、名前を修正したいプロジェクトグループをクリックします。
 
-![project-group-name-change-at-lnb](/ko/docs/guides/project/project-group-img/project-group-name-change-at-lnb.png)
+![project-group-name-change-at-lnb](/jp/docs/guides/project/project-group-img/project-group-name-change-at-lnb.png)
 
-(2) 입력 창이 나타나면 변경하려는 이름을 입력합니다. 그리고 입력 창을 제외한 다른 곳을 마우스로 클릭하여, 읽기 모드로 전환합니다.
+(2) 入力ウィンドウが表示されたら、変更したい名前を入力します。入力ウィンドウ以外の場所でマウスをクリックすると、読み取りモードに変換されます。
 
-### 프로젝트 그룹 계층 구조 편집하기
+### プロジェクトグループの階層構造を編集する
 
-프로젝트 그룹 목록에서 드래그 앤 드롭을 통해 프로젝트 그룹의 계층 구조를 편리하게 편집할 수 있습니다.
+プロジェクトグループリストでドラッグアンドドロップすると、プロジェクトグループの階層構造を便利に編集できます。
 <br>
 <br>
 
-(1) 편집 모드로 전환한 뒤, 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(1) 編集モードに変換して、移動させたいプロジェクトグループをクリックしたまま移動して希望する位置でボタンを離します。
 
-(2) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(2) 移動させたいプロジェクトグループをクリックしたまま移動して、希望する位置で離します。
 
-![project-group-tree-change](/ko/docs/guides/project/project-group-img/project-group-tree-change.png)
+![project-group-tree-change](/jp/docs/guides/project/project-group-img/project-group-tree-change.png)
 
-{{<alert title="프로젝트 그룹 이동이 안되는 경우">}}
-• 선택한 프로젝트 그룹을 수정할 수 있는 권한이 없는 경우: 만약 편집 모드에서 프로젝트 그룹 선택이 안된다면, 해당 프로젝트 그룹을 이동할 수 있는 권한이 없는 것입니다.
+{{<alert title="プロジェクトグループが移動しない場合">}}
+• 選択したプロジェクトグループを修正できる権限がない場合: 編集モードでプロジェクトグループを選択できない場合は、当該プロジェクトグループを移動させる権限がありません。
 
-• 내려놓은 위치의 상위 프로젝트 그룹을 수정할 수 있는 권한이 없는 경우: 만약 선택한 프로젝트 그룹을 내려놓으려는 위치가 흐릿하게 표현되어 있다면, 이동하려는 프로젝트 그룹에 대하여 수정 권한이 없기 때문입니다.
+• 離す位置の上位プロジェクトグループを修正できる権限がない場合: 選択したプロジェクトグループを離そうとする位置が薄くぼやけて見える場合は、移動させたいプロジェクトグループに対する修正権限がありません。
 {{</alert>}}
 
-### 프로젝트 이동하기
+### プロジェクトを移動させる
 
-프로젝트 그룹 뿐만 아니라 그 하위에 존재하는 프로젝트 또한 다른 프로젝트 그룹으로 이동이 가능합니다.
+プロジェクトグループだけでなく、その下位に存在するプロジェクトも、他のプロジェクトグループへ移動させることができます。
 
-편집모드로 전환한 뒤, 프로젝트 그룹과 동일한 방법으로 프로젝트를 이동시킬 수 있습니다.
+編集モードに変換後、プロジェクトグループと同じ方法でプロジェクトを移動させることができます。
 
-![project-group-project-tree-change](/ko/docs/guides/project/project-group-img/project-group-project-tree-change.png)
+![project-group-project-tree-change](/jp/docs/guides/project/project-group-img/project-group-project-tree-change.png)
 
-{{<alert title="[편집] 버튼이 활성화되지 않는 경우">}}
-해당 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다. 
-해당하는 그룹의 하위 프로젝트에 대하여서는 수정 권한이 있더라도, 프로젝트 그룹에는 권한이 없을 수 있습니다. 
-프로젝트 그룹 관리자에게 [멤버 역할(Role) 변경](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-편집하기)을 요청하세요.
+{{<alert title="[編集]ボタンが無効化状態の場合">}}
+当該プロジェクトグループを修正できる権限がありません。 
+当該グループの下位プロジェクトに対する修正権限があっても、プロジェクトグループの権限は有していない場合があります。 
+プロジェクトグループ管理者に、[メンバーロール(Role)変更](/jp/docs/guides/project/member/#プロジェクト-グループ-メンバー-編集する)をリクエストしてください。
 {{</alert>}}
 
-## 프로젝트 그룹 삭제하기
+## プロジェクトグループを削除する
 
-(1) 왼쪽의 [프로젝트 그룹] 목록에서 삭제하려는 프로젝트 그룹을 선택합니다.
+(1) 左にある[プロジェクトグループ]リストで、削除したいプロジェクトグループを選択します。
 
-(2) 오른쪽 상단의 [설정] 버튼을 클릭한 후, 드롭다운에서 [선택한 그룹 삭제]를 선택합니다.
+(2) 右上にある[設定]ボタンをクリックして、ドロップダウンで[選択したグループ削除]を選択します。
 
-![project-group-delete-menu](/ko/docs/guides/project/project-group-img/project-group-delete-menu.png)
+![project-group-delete-menu](/jp/docs/guides/project/project-group-img/project-group-delete-menu.png)
 
-(2-1) [프로젝트 그룹 삭제] 모달에서 [확인] 버튼을 클릭하여 프로젝트 그룹을 영구히 삭제합니다.
+(2-1) [プロジェクトグループ削除]モダールウィンドウで[確認]ボタンをクリックすると、プロジェクトグループが完全削除されます。
 
-![project-group-delete-modal](/ko/docs/guides/project/project-group-img/project-group-delete-modal.png)
+![project-group-delete-modal](/jp/docs/guides/project/project-group-img/project-group-delete-modal.png)
 
-{{<alert title="프로젝트 그룹 삭제가 안되는 경우">}}
+{{<alert title="プロジェクトグループが削除されない場合">}}
 
-• 선택한 프로젝트 그룹에 속한 프로젝트가 있는 경우, 프로젝트 그룹이 삭제되지 않습니다.
+• 選択したプロジェクトグループに属するプロジェクトがある場合は、プロジェクトグループは削除されません。
 
-• 선택한 프로젝트 그룹에 속하지 않더라도, 그 하위의 그룹들에 프로젝트가 있는 경우, 프로젝트 그룹이 삭제되지 않습니다.
+• 選択したプロジェクトグループに属さなくても、その下位のグループにプロジェクトがある場合は、プロジェクトグループは削除されません。
 <br>
 <br>
-위의 두 가지 경우에는 프로젝트를 먼저 삭제해야 합니다. 프로젝트 삭제 방법은 [여기](/ko/docs/guides/project/project/#프로젝트-삭제하기)를 참고 하십시오.
+上記の2つの場合は、プロジェクトを先に削除する必要があります。プロジェクトの削除方法については、[こちら](/jp/docs/guides/project/project/#プロジェクト-削除する)をご参考にしてください。
 
 {{</alert>}}

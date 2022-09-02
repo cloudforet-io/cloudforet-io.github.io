@@ -1,25 +1,25 @@
 ---
-title: "[Asset Inventory] Collector"
-linkTitle: "[Asset Inventory] Collector"
+title: "[エセットインベントリー]コレクター"
+linkTitle: "[エセットインベントリー]コレクター"
 weight: 3
 date: 2022-07-05
-description: >
-
+description: > 
+    クラウドフォレは、コレクタープラグインを使用して各**クラウドプロバイダ**が使用中のクラウドリソースを収集します。
 ---
 
-## 개요
+## 概要
 
-클라우드포레는 컬렉터 플러그인을 사용해 각각의 [클라우드 프로바이더](/ko/docs/guides/asset-inventory)에서 사용중인 클라우드 리소스를 수집할 수 있습니다.  
-현재 클라우드포레에서 지원하는 컬렉터 목록은 아래 **플러그인 지원목록**을 참조하세요.
+クラウドフォレは、コレクタープラグインを利用して各々の[クラウドプロバイダ](/jp/docs/guides/asset-inventory)で使用中のクラウドリソースを収集します。  
+現在クラウドフォレがサポートを提供中のコレクターリストは、下記の**プラグインサポートリスト**をご参照ください。
 
 
-먼저, 컬렉터 플러그인을 사용하기 위해서 [서비스 계정](/ko/docs/guides/asset-inventory/service-account) 등록을 선행합니다.  
-그러나 AWS, Google Cloud, Azure 등 각 클라우드 프로바이더별 **서비스 계정 등록 방법이 상이**하기 때문에  
-상세한 설정은 아래 플러그인 지원 목록의 **설정 가이드 링크**를 참고 하십시오.
+コレクタープラグインを使用するためには、先に[サービスアカウント](/jp/docs/guides/asset-inventory/service-account)を登録する必要があります。  
+しかし、AWS、Google Cloud、Azureなどクラウドプロバイダによって**サービスアカウントの登録方法は異なる**ので、  
+設定の詳細については、下記のプラグインサポートリストの**設定ガイドリンク**をご参考にしてください。
 
-## 플러그인 지원 목록
+## プラグインサポートリスト
 
-| **플러그인** | **설정 가이드 링크** |
+| **プラグイン** | **設定ガイドリンク** |
 | --- | --- |
 | AWS Cloud Services collector | https://github.com/spaceone-dev/plugin-aws-cloud-service-inven-collector/blob/master/docs/ko/GUIDE.md |
 | AWS EC2 Compute collector | https://github.com/spaceone-dev/plugin-aws-ec2-inven-collector/blob/master/docs/ko/GUIDE.md |
