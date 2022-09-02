@@ -1,165 +1,165 @@
 ---
-title: "Project Group"
-linkTitle: "Project Group"
+title: "Project group"
+linkTitle: "Project group"
 weight: 2
 date: 2022-06-07
 description: >
-    **프로젝트 그룹**은 여러 [**프로젝트**](/ko/docs/guides/project/project)를 묶어 관리하기 위한 개념입니다.
+    **Project group** is a concept for grouping and managing multiple [**Projects**](/docs/guides/project/project).
     <br>
     <br>
-    프로젝트 그룹 하위에는 프로젝트와 프로젝트 그룹 모두가 속할 수 있으며, 이러한 트리 계층 구조를 통해 조직의 규모와 구조에 맞는 프로젝트 계층 구조를 설계하여 관리할 수 있습니다.
+    Both projects and project groups can belong to the subproject group, and you can design and manage a project hierarchy that suits the size and structure of your organization through this tree-shaped structure of hierarchies.
 ---
 
-[//]: # (프로젝트 그룹에 초대한 [**멤버**]&#40;/ko/docs/guides/project/member&#41;에게 [**역할&#40;Role&#41;**]&#40;/ko/docs/guides/administration/iam-user&#41;을 부여하면, 해당 멤버는 하위 프로젝트 그룹과 프로젝트에 대해 동일한 역할&#40;Role&#41;을 가지게 됩니다.)
+[//]: # (If you give a [**Role&#40;Role&#41;**]&#40;/ko/docs/guides/administration/iam-user&#41; to a [**Member**]&#40;/ko/docs/guides/project/member&#41; invited to a project group, that member will have the same role&#40;Role&#41; for subproject groups and projects.)
 
-## 프로젝트 그룹 생성하기
+## Creating a project group
 
-### 최상위 프로젝트 그룹 생성하기
+### Creating a top level project group
 
-(1) [프로젝트] 페이지 왼쪽의 [프로젝트 그룹] 목록에서 [모든 프로젝트]를 선택합니다.
+(1) Select [All projects] from the [Project group] list on the left side of the [Projects] page.
 
-![project-group-all-project-lnb](/ko/docs/guides/project/project-group-img/project-group-all-project-lnb.png)
+![project-group-all-project-lnb](/docs/guides/project/project-group-img/project-group-all-project-lnb.png)
 
-(2) 오른쪽의 [프로젝트 그룹 생성] 버튼을 클릭합니다.
+(2) Click the [Create project group] button on the right.
 
-{{<alert title="[프로젝트 그룹 생성] 버튼이 보이지 않는 경우">}}
+{{<alert title="If the [Create project group] button is not visible">}}
 
-관리자 역할(Role)을 가진 사용자 중에서도 프로젝트 페이지에 대하여 수정 권한을 가진 사용자만이 최상위 프로젝트 그룹을 생성/수정/삭제할 수 있습니다.
+Among users with an administrator’s role, only users with edit permission on the project page can create/modify/delete top level project groups.
 
-최상위에 프로젝트 그룹을 생성할 수 있는 역할(Role)이 부여되지 않은 사용자에게는 해당 버튼이 보이지 않습니다.
+Users who are not granted a role to create a project group at the top level do not see this button.
 
-![project-group-full-page](/ko/docs/guides/project/project-group-img/project-group-full-page.png)
-
-{{</alert>}}
-
-(3) [프로젝트 그룹 생성] 모달에서 원하는 이름을 입력한 후 [확인] 버튼을 클릭하여 프로젝트 그룹 생성을 완료합니다.
-
-![project-group-create-modal](/ko/docs/guides/project/project-group-img/project-group-create-modal.png)
-
-### 하위 프로젝트 그룹 생성하기
-
-특정 프로젝트 그룹 하위에 또 다른 프로젝트 그룹을 생성하려면 아래의 단계를 따릅니다.
-<br>
-<br>
-
-(1) 왼쪽의 [프로젝트 그룹] 목록에서 하위 프로젝트 그룹을 생성하려는 프로젝트 그룹에 마우스 커서를 올리면, 오른쪽에 표시되는  [+] 버튼을 클릭합니다.
-
-![project-group-create-button-from-lnb](/ko/docs/guides/project/project-group-img/project-group-create-button-from-lnb.png)
-
-{{<alert title="[+] 버튼이 비활성화된 경우">}}
-
-해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나, 해당 그룹을 생성할 수 있는 권한이 없는 경우 해당 버튼이 비활성화됩니다. 
-
-관리자에게 프로젝트 그룹 멤버로 초대를 요청하거나 역할(Role) 변경을 요청하세요.
+![project-group-full-page](/docs/guides/project/project-group-img/project-group-full-page.png)
 
 {{</alert>}}
 
-(2) [프로젝트 그룹 생성] 모달에 그룹 이름을 작성한 후 [확인] 버튼을 클릭하여 프로젝트 그룹을 생성합니다.
+(3) After entering the name you want in the [Create project group] modal dialog, click the [OK] button to complete the project group creation.
 
-![project-group-child-create-modal](/ko/docs/guides/project/project-group-img/project-group-child-create-modal.png)
+![project-group-create-modal](/docs/guides/project/project-group-img/project-group-create-modal.png)
 
-(3) 선택한 프로젝트 그룹 하위에 새롭게 생성한 프로젝트 그룹이 표시됩니다.
+### Creating a subproject group
 
-![project-group-child-tree](/ko/docs/guides/project/project-group-img/project-group-child-tree.png)
+Follow the steps below to create another project group under a specific project group.
+<br>
+<br>
 
-## 프로젝트 그룹 & 프로젝트 검색하기
+(1) In the [Project group] list on the left, place the mouse cursor on the project group to create a subproject group, and click the [+] button displayed on the right.
 
-왼쪽의 검색 창을 통해 프로젝트 그룹과 프로젝트를 검색할 수 있습니다.
+![project-group-create-button-from-lnb](/docs/guides/project/project-group-img/project-group-create-button-from-lnb.png)
+
+{{<alert title="If [+] button is disabled">}}
+
+If you are not invited to be a member of the project group, or if you do not have permission to create a group, the button is disabled. 
+
+Ask your manager to invite you to a project group member or change your role.
+
+{{</alert>}}
+
+(2) After creating a group name in the [Create project group] modal dialog, click the [OK] button to create a project group.
+
+![project-group-child-create-modal](/docs/guides/project/project-group-img/project-group-child-create-modal.png)
+
+(3) The newly created project group is displayed under the selected project group.
+
+![project-group-child-tree](/docs/guides/project/project-group-img/project-group-child-tree.png)
+
+## Searching for a project group and project
+
+You can search for project groups and projects through the search bar on the left.
  
-검색 결과에서 프로젝트 그룹을 선택할 경우 해당 프로젝트 그룹 페이지가 열리며, 프로젝트를 선택할 경우 해당 프로젝트의 상세 페이지가 새 탭으로 열립니다.
+If you select a project group from the search results, the corresponding project group page would open, and then if you choose a project, a detailed page about the project opens in a new tab.
 
-![project-group-search](/ko/docs/guides/project/project-group-img/project-group-search.png)
+![project-group-search](/docs/guides/project/project-group-img/project-group-search.png)
 
-만약 프로젝트 그룹을 선택한 뒤 다시 검색 창을 열면, 해당 프로젝트 그룹의 하위 프로젝트를 볼 수 있습니다.
+If you open the search bar again after selecting a project group, you can see the subprojects of that project group.
 
-![project-group-search-project](/ko/docs/guides/project/project-group-img/project-group-search-project.png)
+![project-group-search-project](/docs/guides/project/project-group-img/project-group-search-project.png)
 
 
-## 프로젝트 그룹 살펴보기
+## Exploring project groups
 
-왼쪽의 [프로젝트 그룹] 목록에서 특정 프로젝트 그룹을 선택하면, 해당 그룹의 상세 정보를 확인할 수 있습니다.
+If you select a specific project group from the [Project group] list on the left, you can check the detailed information of that group.
 
-![project-group-single-select-from-lnb](/ko/docs/guides/project/project-group-img/project-group-single-select-from-lnb.png)
+![project-group-single-select-from-lnb](/docs/guides/project/project-group-img/project-group-single-select-from-lnb.png)
 
-{{<alert title="프로젝트 목록 조회">}}
-프로젝트 그룹을 선택하면 해당 그룹에 속하는 프로젝트 목록을 확인할 수 있습니다. 자세한 내용은 [여기](/ko/docs/guides/project/project/#프로젝트-목록-조회하기)를 참고 하십시오.
+{{<alert title="Search project list">}}
+If you select a project group, you can see a list of projects belonging to that group. For detailed information, see [here](/docs/guides/project/project/#inquire-project-list).
 {{</alert>}}
 
-## 프로젝트 그룹 편집하기
+## Editing a project group
 
-프로젝트 그룹의 이름을 변경하거나 그룹의 계층 구조를 변경할 수 있습니다.
+You can rename project groups or change the groups' hierarchy.
 <br>
 <br>
-왼쪽의 [프로젝트 그룹] 목록 상단의 [편집] 버튼을 클릭하여 편집 모드로 전환하여 편집할 수 있습니다.
+You can edit by clicking the [Edit] button at the top of the [Project group] list on the left to switch to edit mode.
 
-![project-group-edit-button](/ko/docs/guides/project/project-group-img/project-group-edit-button.png)
+![project-group-edit-button](/docs/guides/project/project-group-img/project-group-edit-button.png)
 
-{{<alert title="[편집] 버튼이 비활성화된 경우">}}
-• 프로젝트 그룹을 선택하지 않은 상태에서 [편집] 버튼이 비활성화되어 있는 경우라면, 최상위 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다.
+{{<alert title="If [Edit] button is disabled">}}
+• If the [Edit] button is disabled when no project group is selected, it is because you do not have the permission to edit the top level project group.
 
-• 프로젝트 그룹을 선택한 상태에서도 버튼이 비활성화 되어있다면, 해당 프로젝트 그룹의 멤버로 초대되어 있지 않거나 해당 그룹을 수정할 수 있는 권한이 없는 경우입니다. 
-관리자에게 [프로젝트 그룹 멤버로 초대](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-초대하기)를 요청하거나 [멤버 역할(Role) 변경](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-편집하기)을 요청하세요.
+• If the button is disabled even when a project group is selected, it means that you are not invited as a member of the project group or that you do not have the permission to edit a group. 
+Ask your administrator to [Invite to project group member](/docs/guides/project/member/#invite-project-group-member), or [Change member role](/docs/guides/ project/member/#edit-project-group-member).
 {{</alert>}}
 
-### 프로젝트 그룹 이름 변경하기
+### Renaming a project group
 
-(1) 편집 모드로 전환한 뒤, 이름을 수정하려는 프로젝트 그룹을 클릭합니다.
+(1) After switching to edit mode, click the project group whose name you want to edit.
 
-![project-group-name-change-at-lnb](/ko/docs/guides/project/project-group-img/project-group-name-change-at-lnb.png)
+![project-group-name-change-at-lnb](/docs/guides/project/project-group-img/project-group-name-change-at-lnb.png)
 
-(2) 입력 창이 나타나면 변경하려는 이름을 입력합니다. 그리고 입력 창을 제외한 다른 곳을 마우스로 클릭하여, 읽기 모드로 전환합니다.
+(2) When the input window appears, enter the name to which you want to change. Then, click anywhere other than the input window with the mouse to switch to reading mode.
 
-### 프로젝트 그룹 계층 구조 편집하기
+### Editing the project group hierarchy
 
-프로젝트 그룹 목록에서 드래그 앤 드롭을 통해 프로젝트 그룹의 계층 구조를 편리하게 편집할 수 있습니다.
+You can conveniently edit the hierarchical structure of project groups by dragging and dropping items from the project group list.
 <br>
 <br>
 
-(1) 편집 모드로 전환한 뒤, 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(1) After switching to edit mode, click and drag the project group you want to move and drop it in the desired location.
 
-(2) 이동을 원하는 프로젝트 그룹을 클릭한 상태로 끌어서 원하는 위치에 내려놓습니다.
+(2) Click and drag the project group you want to move and drop it in the desired location.
 
-![project-group-tree-change](/ko/docs/guides/project/project-group-img/project-group-tree-change.png)
+![project-group-tree-change](/docs/guides/project/project-group-img/project-group-tree-change.png)
 
-{{<alert title="프로젝트 그룹 이동이 안되는 경우">}}
-• 선택한 프로젝트 그룹을 수정할 수 있는 권한이 없는 경우: 만약 편집 모드에서 프로젝트 그룹 선택이 안된다면, 해당 프로젝트 그룹을 이동할 수 있는 권한이 없는 것입니다.
+{{<alert title="If the project group cannot be moved">}}
+• If you do not have the permission to edit the selected project group: You can select a project group in edit mode only when you have the permission to move a project group.
 
-• 내려놓은 위치의 상위 프로젝트 그룹을 수정할 수 있는 권한이 없는 경우: 만약 선택한 프로젝트 그룹을 내려놓으려는 위치가 흐릿하게 표현되어 있다면, 이동하려는 프로젝트 그룹에 대하여 수정 권한이 없기 때문입니다.
+• If you do not have the permission to edit the parent project group of the dropdown location: The location where you want to drop the selected project group is blurred when you do not have edit permission for the project group you want to move.
 {{</alert>}}
 
-### 프로젝트 이동하기
+### Moving a project
 
-프로젝트 그룹 뿐만 아니라 그 하위에 존재하는 프로젝트 또한 다른 프로젝트 그룹으로 이동이 가능합니다.
+It is possible to move not only the project group but also the projects that exist under that project group to another project group.
 
-편집모드로 전환한 뒤, 프로젝트 그룹과 동일한 방법으로 프로젝트를 이동시킬 수 있습니다.
+After switching to edit mode, you can move a project in the same way as a project group.
 
-![project-group-project-tree-change](/ko/docs/guides/project/project-group-img/project-group-project-tree-change.png)
+![project-group-project-tree-change](/docs/guides/project/project-group-img/project-group-project-tree-change.png)
 
-{{<alert title="[편집] 버튼이 활성화되지 않는 경우">}}
-해당 프로젝트 그룹을 수정할 수 있는 권한이 없기 때문입니다. 
-해당하는 그룹의 하위 프로젝트에 대하여서는 수정 권한이 있더라도, 프로젝트 그룹에는 권한이 없을 수 있습니다. 
-프로젝트 그룹 관리자에게 [멤버 역할(Role) 변경](/ko/docs/guides/project/member/#프로젝트-그룹-멤버-편집하기)을 요청하세요.
+{{<alert title="If the [Edit] button is not active">}}
+This is because you do not have the permission to edit that project group. 
+Even if you have edit permission for subprojects of a project group, you may not have permission for the project group. 
+Ask the project group manager to [Change member role](/docs/guides/project/member/#project-group-member-edit).
 {{</alert>}}
 
-## 프로젝트 그룹 삭제하기
+## Deleting the project group
 
-(1) 왼쪽의 [프로젝트 그룹] 목록에서 삭제하려는 프로젝트 그룹을 선택합니다.
+(1) Select the project group you want to delete from the [Project group] list on the left.
 
-(2) 오른쪽 상단의 [설정] 버튼을 클릭한 후, 드롭다운에서 [선택한 그룹 삭제]를 선택합니다.
+(2) Click the [Settings] button in the upper right corner and select [Delete selected group] from the dropdown.
 
-![project-group-delete-menu](/ko/docs/guides/project/project-group-img/project-group-delete-menu.png)
+![project-group-delete-menu](/docs/guides/project/project-group-img/project-group-delete-menu.png)
 
-(2-1) [프로젝트 그룹 삭제] 모달에서 [확인] 버튼을 클릭하여 프로젝트 그룹을 영구히 삭제합니다.
+(2-1) Click the [OK] button in the [Delete project group] modal dialog to permanently delete the project group.
 
-![project-group-delete-modal](/ko/docs/guides/project/project-group-img/project-group-delete-modal.png)
+![project-group-delete-modal](/docs/guides/project/project-group-img/project-group-delete-modal.png)
 
-{{<alert title="프로젝트 그룹 삭제가 안되는 경우">}}
+{{<alert title="If the project group cannot be deleted">}}
 
-• 선택한 프로젝트 그룹에 속한 프로젝트가 있는 경우, 프로젝트 그룹이 삭제되지 않습니다.
+• If there is a project belonging to the selected project group, that project group is not deleted.
 
-• 선택한 프로젝트 그룹에 속하지 않더라도, 그 하위의 그룹들에 프로젝트가 있는 경우, 프로젝트 그룹이 삭제되지 않습니다.
+• Even when the selected project group does not have a project of its own, if there is a project in its subgroups, the project group would not be deleted.
 <br>
 <br>
-위의 두 가지 경우에는 프로젝트를 먼저 삭제해야 합니다. 프로젝트 삭제 방법은 [여기](/ko/docs/guides/project/project/#프로젝트-삭제하기)를 참고 하십시오.
+In the above two cases, the project must be deleted first. For ways to delete a project, see [here](/docs/guides/project/project/#project-delete).
 
 {{</alert>}}

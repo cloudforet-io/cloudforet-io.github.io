@@ -4,310 +4,310 @@ linkTitle: "Collector"
 weight: 4
 date: 2022-06-07
 description: >
-    클라우드포레는 **컬렉터**를 통해 [클라우드 리소스](/ko/docs/guides/asset-inventory)들을 수집하며, 스케줄링을 통해 수집 시기를 결정할 수 있습니다.
+    Cloudforet gathers [Cloud resources](/docs/guides/asset-inventory) through a **Collector**, and its schedule can be set up.   
 
 ---
 
-## 개요
+## Overview
 
-컬렉터로 데이터를 수집하기 위해서는 다음 두 가지 요소가 필요합니다.
+To collect data with a collector, you need two elements:
 
-### 컬렉터 플러그인
+### Collector plugin
 
-[클라우드 프로바이더](/ko/docs/guides/asset-inventory)로부터 어떤 리소스들을 수집할지, 수집한 데이터들을 어떻게 화면에 보여줄지에 대한 스펙이 정의된 요소입니다. 
+This is an element that defines the specifications of what resources to collect from the [Cloud provider](/docs/guides/asset-inventory), and how to display the collected data on the screen. 
 
-프로바이더 별로 가지고 있는 데이터의 구조와 내용이 상이하므로 컬렉터는 철저히 **컬렉터 플러그인**에 의존하여 리소스들을 수집합니다.
+Since each provider has a different structure and content of data, a collector completely relies on **Collector plugin** to collect resources.
 
-이에 대한 자세한 설명은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+For detailed information on this, see [here](/docs/guides/plugins/asset-inventory-collector).
  
-### 서비스 계정 
+### Service account 
 
-리소스를 수집하기 위해서는 [클라우드 프로바이더](/ko/docs/guides/asset-inventory)의 계정에 연결이 필요합니다.
+To collect resources, you need to connect to an account on the [Cloud provider](/docs/guides/asset-inventory).
 
-**서비스 계정**은 프로바이더의 계정에 연결하기 위한 계정 정보입니다. 
+**Service Account** is your account information to link to your provider's account. 
 
-컬렉터는 기존에 프로바이더 별로 만들어져 있는 서비스 계정을 통해 프로바이더 계정에 접근합니다. 
+A collector accesses the provider account through the service account created for each provider. 
 
-이에 대한 자세한 설명은 [여기](/ko/docs/guides/asset-inventory/service-account)를 참고 하십시오.
+For detailed information on this, see [here](/docs/guides/asset-inventory/service-account).
 
-## 컬렉터 생성하기
+## Creating a collector
 
-(1) 왼쪽 상단의 [생성] 버튼을 클릭합니다.
+(1) Click the [Create] button at the top left.
 
-![collector-create-button](/ko/docs/guides/asset-inventory/collector-img/collector-create-button.png)
+![collector-create-button](/docs/guides/asset-inventory/collector-img/collector-create-button.png)
 
-(2) 플러그인 목록 페이지에서 원하는 컬렉터 플러그인을 찾아 [생성] 버튼을 클릭합니다.
+(2) On the plugin list page, find the collector plugin you want and click the [Create] button.
 
-![collector-plugin-lists](/ko/docs/guides/asset-inventory/collector-img/collector-plugin-lists.png)
+![collector-plugin-lists](/docs/guides/asset-inventory/collector-img/collector-plugin-lists.png)
 
-(3) [컬렉터 생성] 페이지에서 아래 단계를 거칩니다.
+(3) On the [Create collector] page, follow the steps below:
 
-(3-1) [컬렉터 설정] 탭에서 이름과 플러그인의 버전을 선택합니다.
+(3-1) In the [Collector settings] tab, select the name and version of the plugin.
 
-![collector-create-base-info](/ko/docs/guides/asset-inventory/collector-img/collector-create-base-info.png)
+![collector-create-base-info](/docs/guides/asset-inventory/collector-img/collector-create-base-info.png)
 
-{{<alert title="버전 및 자동 업그레이드">}}
-버전은 앞에서 선택한 컬렉터 플러그인의 버전을 의미하며, 자동 업그레이드를 비활성화하면 선택할 수 있습니다. 이 경우에는 항상 지정한 버전의 플러그인으로 데이터가 수집됩니다.
+{{<alert title="Version and auto upgrade">}}
+Version refers to the version of the previously selected collector plugin, which can be chosen by disabling auto upgrade. In this case, the data is always collected with the specified version of the plugin.
 
-반면, 자동 업그레이드를 활성화하면 항상 최신 버전의 플러그인으로 데이터가 수집됩니다.
+On the other hand, if you enable auto upgrade, your data will always be collected with the latest version of the plugin.
 {{</alert>}}
 
-(3-2) 필요한 경우, [태그 추가] 탭에서 컬렉터에 대한 추가 정보를 입력합니다.
+(3-2) If necessary, enter additional information about the collector in the [Add tag] tab.
 
-![collector-create-tags](/ko/docs/guides/asset-inventory/collector-img/collector-create-tags.png)
+![collector-create-tags](/docs/guides/asset-inventory/collector-img/collector-create-tags.png)
 
-(4) [확인] 버튼을 클릭하여 컬렉터 생성을 완료합니다.
+(4) Click the [OK] button to complete collector creation.
 
-## 컬렉터 목록 조회하기
+## Get a list of collectors
 
-컬렉터 페이지에서 생성되어 있는 모든 컬렉터 목록을 조회할 수 있습니다.
+You can view a list of all collectors that have been created on the collector page.
 
-**고급 검색**을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다. 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+**Advanced search** allows you to filter the list by elaborate criteria. For a detailed explanation, see [here](/docs/guides/advanced/search/).
 
-![collector-list-inquiry](/ko/docs/guides/asset-inventory/collector-img/collector-list-inquiry.png)
+![collector-list-inquiry](/docs/guides/asset-inventory/collector-img/collector-list-inquiry.png)
 
-## 컬렉터 상세 정보 확인하기
+## Verifying collector details
 
-(1) 컬렉터 목록에서 상세 내용을 확인하고 싶은 컬렉터를 선택합니다.
+(1) Select a collector whose details you want to check from a list of collectors.
 
-(2) 목록 아래의 [상세 정보] 탭에서 컬렉터의 상세한 정보를 확인할 수 있습니다.
+(2) You can check the detailed information of the collector in the [Details] tab below the list.
 
-![collector-detail-info-tab](/ko/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
+![collector-detail-info-tab](/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
 
-## 컬렉터 수정하기
+## Modifying collector
 
-(1) 컬렉터 목록에서 수정하고자 하는 컬렉터를 선택합니다.
+(1) Select the collector you want to edit from a list of collectors.
 
-(2) [작업] 드롭다운에서 [수정] 메뉴를 선택합니다.
+(2) Select the [Modify] menu from the [Action] dropdown.
 
-![collector-edit-menu](/ko/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
+![collector-edit-menu](/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
 
-(3) [컬렉터 수정] 모달에서 값을 변경한 후 [확인] 버튼을 클릭하여 수정을 완료합니다.
+(3) After changing the value in the [Modify collector] modal dialog, click the [OK] button to complete the modification.
 
-![collector-edit-modal](/ko/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
+![collector-edit-modal](/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
 
-## 컬렉터 활성화/비활성화 하기
+## Enabling/disabling collector
 
-컬렉터를 활성화하거나 비활성화할 수 있습니다. 컬렉터를 비활성화하면 스케줄러에 의한 데이터 수집이 이뤄지지 않습니다.
+You can enable or disable collectors. Disabling collectors prevents data collection by the scheduler.
 
-(1) 컬렉터 목록에서 활성화 혹은 비활성화 하려는 컬렉터를 선택합니다. 여러 개를 선택하여 일괄 적용이 가능합니다.
+(1) Select the collector you want to activate or deactivate from a list of collectors. You can select several collectors and apply them in bulk.
 
-(2) [작업] 드롭다운에서 [활성화] 혹은 [비활성화] 항목을 선택합니다.
+(2) Select [Enable] or [Disable] from the [Action] dropdown.
 
-![collector-multi-select-for-disable](/ko/docs/guides/asset-inventory/collector-img/collector-multi-select-for-disable.png)
+![collector-multi-select-for-disable](/docs/guides/asset-inventory/collector-img/collector-multi-select-for-disable.png)
 
-(3) [컬렉터 활성화] 혹은 [컬렉터 비활성화] 모달에서 선택한 항목들을 확인한 후, [확인] 버튼을 클릭하여 활성화/비활성화를 완료합니다.
+(3) After the checking items selected in the [Activate collector] or [Disable collector] modal dialog, click the [OK] button to complete the activation/deactivation.
 
-![collector-disable-modal](/ko/docs/guides/asset-inventory/collector-img/collector-disable-modal.png)
+![collector-disable-modal](/docs/guides/asset-inventory/collector-img/collector-disable-modal.png)
 
-## 컬렉터 삭제하기
+## Deleting a collector
 
-컬렉터를 영구히 삭제할 수 있습니다.
+You can permanently delete a collector.
 
-(1) 컬렉터 목록에서 삭제하려는 컬렉터를 선택합니다. 여러 개를 선택하여 일괄 삭제가 가능합니다.
+(1) Select the collector you want to delete from a list of collectors. Batch deletion is possible by selecting multiple collectors.
 
-(2) [작업] 드롭다운에서 [삭제] 메뉴를 선택합니다.
+(2) Select the [Delete] menu from the [Action] dropdown.
 
-![collector-delete-menu](/ko/docs/guides/asset-inventory/collector-img/collector-delete-menu.png)
+![collector-delete-menu](/docs/guides/asset-inventory/collector-img/collector-delete-menu.png)
 
-(3) [컬렉터 삭제] 모달에서 선택한 항목들을 확인한 후, [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) After checking the selected items in the [Delete collector] modal dialog, click the [OK] button to complete the deletion.
 
-![collector-delete-modal](/ko/docs/guides/asset-inventory/collector-img/collector-delete-modal.png)
+![collector-delete-modal](/docs/guides/asset-inventory/collector-img/collector-delete-modal.png)
 
-## 일회성 데이터 수집하기
+## Collect one-time data
 
-스케줄링하지 않고 일회성으로 데이터를 수집할 수 있습니다.
+You can collect data on a one-time basis without scheduling.
 
-이 기능을 사용하면 컬렉터가 비활성화 상태여도 데이터 수집이 이뤄집니다.
+This feature allows data collection to occur even when the collector is inactive.
 
-데이터 수집은 두 가지 방식으로 동작합니다.
+Data collection works in two ways:
 
-- [모든 서비스 계정에 대하여 데이터 수집](/ko/docs/guides/asset-inventory/collector/#연결된-모든-서비스-계정에-대하여-데이터-수집하기)
-- [하나의 서비스 계정에 대하여 데이터 수집](/ko/docs/guides/asset-inventory/collector/#하나의-서비스-계정에-대하여-데이터-수집하기)
+- [Data collection for all service accounts](/docs/guides/asset-inventory/collector/#collect-data-on-all-connected-service-accounts)
+- [Data collection for a single service account](/docs/guides/asset-inventory/collector/#collect-data-on-single-service-account)
 
-### 연결된 모든 서비스 계정에 대하여 데이터 수집하기
+- [Data collection for one service account](/docs/guides/asset-inventory/collector/#single-service-account-data-collecting)
 
-컬렉터는 데이터 수집을 위해 [프로바이더](/ko/docs/guides/asset-inventory)의 계정 정보를 필요로 하며, 이는 [서비스 계정](/ko/docs/guides/asset-inventory/service-account)을 통해 등록됩니다.
+Collector needs account information from a [Provider](/docs/guides/asset-inventory) for data collection, which is registered through [Service account](/docs/guides/asset-inventory/service-account).
 
-컬렉터는 기본적으로 프로바이더의 모든 서비스 계정에 대하여 데이터를 수집합니다.
+The collector basically collects data for all service accounts of the provider.
 
-(1) 컬렉터 목록에서 데이터를 수집할 컬렉터를 선택합니다.
+(1) Select a collector to collect data from a list of collectors.
 
-(2) [작업] 드롭다운에서 [데이터 수집] 메뉴를 선택합니다.
+(2) Select the [Data collection] menu from the [Action] dropdown.
 
-![collector-collect-data-menu](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-menu.png)
+![collector-collect-data-menu](/docs/guides/asset-inventory/collector-img/collector-collect-data-menu.png)
 
-(3) [데이터 수집] 모달에서 [확인] 버튼을 클릭하여 데이터 수집을 시작합니다.
+(3) Click the [OK] button in the [Data collection] modal dialog to start data collection.
 
-![collector-collect-data-modal](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-modal.png)
+![collector-collect-data-modal](/docs/guides/asset-inventory/collector-img/collector-collect-data-modal.png)
 
-(4) 해당 컬렉터가 데이터 수집을 완료했는지 여부는 [컬렉터 히스토리](ko/docs/guides/asset-inventory/collector/#데이터-수집-내역-확인하기)에서 확인 가능합니다. 선택한 컬렉터의 [상세 보기] 링크를 클릭하여 해당 페이지로 이동할 수 있습니다.
+(4) Whether or not the collector has completed a data collection can be checked in [Collector history](ko/docs/guides/asset-inventory/collector/#check-data-collection-history). You can click the [View details] link of a selected collector to go to that page.
 
-![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+![collector-history-at-table](/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
-### 하나의 서비스 계정에 대하여 데이터 수집하기
+### Collect data for a single service account
 
-컬렉터로 데이터를 수집할 때에 특정한 클라우드 프로바이더 계정의 데이터만을 수집할 수도 있습니다.
+When collecting data with a collector, you may only collect data from a specific cloud provider’s account.
 
-(1) 컬렉터 목록에서 데이터를 수집할 컬렉터를 선택합니다.
+(1) Select a collector to collect data from a list of collectors.
 
-(2) 아래의 [서비스 계정] 탭을 선택합니다.
+(2) Select the [Service account] tab below.
 
-![collector-service-account-tab](/ko/docs/guides/asset-inventory/collector-img/collector-service-account-tab.png)
+![collector-service-account-tab](/docs/guides/asset-inventory/collector-img/collector-service-account-tab.png)
 
-여기에는 선택한 컬렉터를 통해 데이터 수집 시 사용되는 서비스 계정 목록이 표시됩니다.
+A list of service accounts used when collecting data through the selected collector is displayed here.
 
-{{<alert title="서비스 계정">}}
-[서비스 계정](/ko/docs/guides/asset-inventory/service-account)은 데이터 수집에 필요한 프로바이더 계정에 대한 접근 정보를 가지고 있습니다.
+{{<alert title="Service account">}}
+[Service account](/docs/guides/asset-inventory/service-account) has access information for the provider account required for data collection.
 
-만약 여기에서 아무런 정보를 확인할 수 없다면, 프로바이더에 접근할 수 있는 계정 정보가 없는 것이므로 컬렉터가 실행되더라도 데이터 수집이 일어나지 않습니다.
+If no information can be found here, this means there is no account information for accessing the provider, and as a result, no data collection occurs even when the collector is running.
 
-따라서 컬렉터로 데이터를 수집하려면 [서비스 계정] 메뉴에서 해당 프로바이더의 계정 정보를 먼저 등록해두어야 합니다.
+Therefore, to collect data with a collector, you must first register the account information of the provider in the [Service account] menu.
 
 {{</alert>}}
 
-(3) 데이터를 수집하고자 하는 서비스 계정의 오른쪽 [데이터 수집] 버튼을 클릭합니다.
+(3) Click the [Data collection] button on the right side of the service account for which you want to collect data.
 
-(4) [데이터 수집] 모달에서 [확인] 버튼을 클릭하여 데이터 수집을 시작합니다.
+(4) Click the [OK] button in the [Data collection] modal dialog to start data collection.
 
-![collector-data-collect-one-account-modal](/ko/docs/guides/asset-inventory/collector-img/collector-data-collect-one-account-modal.png)
+![collector-data-collect-one-account-modal](/docs/guides/asset-inventory/collector-img/collector-data-collect-one-account-modal.png)
 
-## 데이터 수집 스케줄 설정하기
+## Setting up a data collection schedule
 
-주기적으로 리소스들을 수집해오도록 컬렉터에 스케줄링을 할 수 있습니다.
+You can schedule the collector to collect resources periodically.
 
-(1) 컬렉터 목록에서 스케줄을 설정할 컬렉터를 선택합니다.
+(1) From a list of collectors, select a collector for which you want to set a schedule.
 
-(2) 아래의 [스케줄] 탭을 선택합니다.
+(2) Select the [Schedule] tab below.
 
-여기에서 스케줄 목록을 확인하거나 추가/변경/삭제할 수 있습니다.
+Here you can check a list of schedules or add/change/delete them.
 
-![collector-schedule-tab](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-tab.png)
+![collector-schedule-tab](/docs/guides/asset-inventory/collector-img/collector-schedule-tab.png)
 
-### 스케줄 추가하기
+### Adding a schedule
 
-(1) [추가] 버튼을 클릭합니다.
+(1) Click the [Add] button.
 
-(2) [스케줄 추가] 모달에서 값을 입력합니다.
+(2) Enter a value in the [Add schedule] modal dialog.
 
-![collector-schedule-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-modal.png)
+![collector-schedule-modal](/docs/guides/asset-inventory/collector-img/collector-schedule-modal.png)
 
-(2-1) 식별 가능한 이름과 설정한 스케줄이 동작할 시간대(타임존)를 선택합니다.
+(2-1) Select an identifiable name and time zone for the set schedule to operate.
 
-(2-2) 컬렉터가 데이터를 수집할 스케줄을 설정합니다. 
+(2-2) The collector sets the schedule to collect data. 
 
 <br>
 <br>
 
-스케줄을 설정할 때에는 두 가지 방식이 있습니다.
+There are two ways for schedule settings:
 
-![collector-schedule-type](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-type.png)
+![collector-schedule-type](/docs/guides/asset-inventory/collector-img/collector-schedule-type.png)
 
-- 시간으로 설정: 반복을 원하는 시간을 입력하면, 입력한 모든 시간마다 데이터를 수집합니다. 이를 매일 반복합니다.
-- 반복 주기로 설정: 입력한 시간 주기로 데이터를 수집합니다. 플러그인에서 지원하는 시간 단위(시, 분, 초)에 따라 입력 양식도 달라집니다.
+- Set by time: If you enter the time you want to repeat, data will be collected at the interval you enter. This would repeat every day.
+- Set by repeated cycle: Collect data by the time period you enter. The input time will also vary depending on the time units (hours, minutes, seconds) supported by the plugin.
 
-{{<alert title="반복 주기 설정이 보이지 않는 경우">}}
-선택한 컬렉터의 **플러그인**이 무엇인지에 따라 반복 주기 설정 양식이 때로는 보이지 않거나, 그 시간 단위(시, 분, 초) 입력 양식이 다를 수 있습니다.
+{{<alert title="If you do not see repeated cycle settings">}}
+Depending on what type of **Plugin** the selected collector is, the repeated cycle setting form may sometimes not be visible, or the time unit (hours, minutes, seconds) input form may be different.
 
-컬렉터의 데이터 수집은 철저히 컬렉터 플러그인에 의존합니다. 그런데 만약 해당 플러그인이 수집하는 데이터의 양이 방대하다면, 반복 주기 설정은 매우 위험할 수 있습니다. 이런 문제를 방지하기 위해 반복 주기 설정은 기본 값으로 제공되지 않습니다.
+The collector's data collection relies entirely on the collector plugin. Now, if there is a large amount of data the plugin collects, setting a repeated cycle can be highly dangerous. To avoid this problem, the repeated cycle setting is not provided by default.
 
-반면, 오히려 자주 데이터를 수집해야 하는 플러그인도 있습니다. 이 경우에는 플러그인이 지원하는 조건에 따라 반복 주기 설정 양식이 화면에 표시됩니다.
+Then, there are other plugins that need to collect data rather frequently. For such plugins, a form for setting the repeated cycle according to the conditions supported by the plugins can be displayed on the screen.
 
-플러그인에 대한 자세한 설명은 [여기](/ko/docs/guides/plugins/asset-inventory-collector)를 참고 하십시오.
+For a detailed description of the plugin, see [here](/docs/guides/plugins/asset-inventory-collector).
 
 {{</alert>}}
 
-(3) [확인] 버튼을 클릭하여 컬렉터를 생성합니다.
+(3) Click the [OK] button to create a collector.
 
-### 스케줄 변경하기
+### Changing a schedule
 
-(1) 스케줄 목록에서 변경할 항목을 선택합니다.
+(1) Select an item to change from a list of schedules.
 
-(2) [작업] 드롭다운에서 [변경]을 선택합니다.
+(2) Select [Change] from the [Action] dropdown.
 
-![collector-schedule-edit-menu](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-edit-menu.png)
+![collector-schedule-edit-menu](/docs/guides/asset-inventory/collector-img/collector-schedule-edit-menu.png)
 
-(2-1) [스케줄 변경] 모달에서 변경할 내용을 입력합니다. 스케줄 추가 양식과 동일하므로, 위의 스케줄 추가하기(링크)를 참고하세요.
+(2-1) Enter the content to be changed in the [Schedule change] modal dialog. Since it is the same as the schedule adding form, see the above "Add schedule" (link).
 
-![collector-schedule-edit-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-edit-modal.png)
+![collector-schedule-edit-modal](/docs/guides/asset-inventory/collector-img/collector-schedule-edit-modal.png)
 
-(3) [확인] 버튼을 클릭하여 변경을 완료합니다.
+(3) Click the [OK] button to complete the change.
 
-### 스케줄 삭제하기
+### Deleting a schedule
 
-(1) 스케줄 목록에서 변경할 항목을 선택합니다.
+(1) Select an item to change from a list of schedules.
 
-(2) [작업] 드롭다운에서 [삭제] 메뉴를 선택합니다.
+(2) Select the [Delete] menu from the [Action] dropdown.
 
-![collector-schedule-delete-menu](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-delete-menu.png)
+![collector-schedule-delete-menu](/docs/guides/asset-inventory/collector-img/collector-schedule-delete-menu.png)
 
-(3) [스케줄 삭제] 모달에서 삭제할 스케줄의 내용을 확인하고, [확인] 버튼을 클릭하여 삭제를 완료합니다.
+(3) In the [Delete schedule] modal dialog, check the content of the schedule to be deleted, and click the [OK] button to complete the deletion.
 
-![collector-schedule-delete-modal](/ko/docs/guides/asset-inventory/collector-img/collector-schedule-delete-modal.png)
+![collector-schedule-delete-modal](/docs/guides/asset-inventory/collector-img/collector-schedule-delete-modal.png)
 
-## 데이터 수집 내역 확인하기
+## Checking data collection history
 
-**컬렉터 히스토리** 페이지에서 데이터 수집 내역을 확인할 수 있습니다.
+You can check your data collection history on the **Collector history** page.
 
-컬렉터 페이지 상단의 [컬렉터 히스토리] 버튼을 클릭하여 컬렉터 히스토리 페이지로 이동할 수 있습니다.
+You can move to the collector history page by clicking the [Collector history] button at the top of the collector page.
 
-특정 컬렉터의 데이터 수집 내역만을 확인하고 싶다면, 컬렉터 목록의 [상세 보기] 버튼을 클릭하여 이동할 수도 있습니다.
+If you want to check only the data collection history of a specific collector, you can go to where you can check that information by clicking the [View details] button from a list of collectors.
 
-![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+![collector-history-at-table](/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
-### 데이터 수집 목록 조회하기
+### Viewing data collection list
 
-컬렉터 히스토레 페이지 상단의 차트를 통해, 날짜별 데이터 수집 현황을 빠르게 확인할 수 있습니다.
+Through the chart at the top of the collector history page, you can quickly check data collection status by date.
 
-하단의 목록에서는 고급 검색과 상태 필터 조건에 맞는 데이터 수집 목록이 표시됩니다. 고급 검색에 대한 자세한 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
+The list at the bottom displays a list of data collections that meet the criteria for an advanced search and status filter. For a detailed description of advanced search, see [here](/docs/guides/advanced/search/).
 
-데이터 수집이 진행중인 항목의 경우, Job Progress 필드의 상태바를 통해 수집 현황을 확인할 수 있습니다.
+For items in the process of data collection, you can check the collection status through the status bar of the job progress field.
 
-![collector-history-full-page](/ko/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
+![collector-history-full-page](/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
 
-### 데이터 수집 내역 상세 정보 확인하기
+### Checking the details of data collection history
 
-위의 데이터 수집 목록에서 수집 내역을 선택하면 수집 내역 상세 페이지로 이동합니다.
+If you select a collection history from the list of data collections above, you will be taken to the collection history details page.
 
-데이터 수집 상태와 기본 정보, 그리고 **서비스 계정 별 수집 내역**을 확인할 수 있습니다.
+You can check data collection status, basic information, and **Collection history by service account**.
 
-![collector-history-detail-full-page](/ko/docs/guides/asset-inventory/collector-img/collector-history-detail-full-page.png)
+![collector-history-detail-full-page](/docs/guides/asset-inventory/collector-img/collector-history-detail-full-page.png)
 
-#### 서비스 계정 별 수집 내역 확인하기
+#### Checking collection history for each service account
 
-컬렉터를 실행하면 연결된 서비스 계정 별로 수집이 각각 이뤄집니다.
+When you run the collector, each collection is performed for each associated service account.
 
-여기에서는 서비스 계정 별로 수집 작업이 어떻게 이뤄졌는지에 대한 정보 확인할 수 있습니다.
+Here you can find information about how the collection was performed by the service account.
 
 {{<alert title="">}}
-컬렉터는 데이터 수집 시 서비스 계정을 통해 클라우드 프로바이더의 계정에 접근하여 데이터를 가져옵니다.
+When collecting data, the collector accesses the cloud provider's account through the service account to get the data.
 {{</alert>}}
 
-![collector-history-detail-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-detail-table.png)
+![collector-history-detail-table](/docs/guides/asset-inventory/collector-img/collector-history-detail-table.png)
 
-###### 주요 필드 정보
-- Created Count: 새롭게 추가된 리소스의 개수
-- Updated Count: 가져온 리소스의 개수
-- Disconnected Count: 가져오지 못한 리소스의 개수
-- Deleted Count: 삭제된 리소스의 개수 (여러 번 가져오지 못하면 삭제된 것으로 간주됩니다.)
+###### Key field Information
+- Created Count: The number of newly added resources
+- Updated Count: The number of imported resources
+- Disconnected Count: The number of resources that were not fetched
+- Deleted Count: Number of deleted resources (in case of a resource failing to fetch multiple times, it is considered deleted.)
 
-#### 수집 에러 내용 확인하기
+#### Check the content of collection errors
 
-(1) 계정 별 수집 목록에서 에러 내용을 확인하고자 하는 항목을 선택합니다.
+(1) Select the item you want to check for error details from a list of collections for each account.
 
-(2) 아래의 [에러 목록] 탭에서 오류에 대한 자세한 내역을 확인할 수 있습니다.
+(2) You can check the details of errors in the [Error list] tab below.
 
-![collector-history-error-list](/ko/docs/guides/asset-inventory/collector-img/collector-history-error-list.png)
+![collector-history-error-list](/docs/guides/asset-inventory/collector-img/collector-history-error-list.png)
 
-## 컬렉터 태그 관리하기
+## Manage collector tag
 
-컬렉터에 태그를 추가하여 관리할 수 있습니다.
+You can manage it by adding tags to the collector.
 
-(1) [태그] 탭 내부의 [편집] 버튼을 클릭합니다.
+(1) Click the [Edit] button inside the [Tag] tab.
 
-![collector-tag-edit](/ko/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
+![collector-tag-edit](/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
 
-(2) 태그 페이지에서 `키: 값` 형태로 태그를 입력 후 [저장] 버튼을 클릭하여 완료합니다.
+(2) After entering the tag in the form of ‘key:value’ on the tag page, click the [Save] button to complete this process.
 
-![collector-tag-filled](/ko/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
+![collector-tag-filled](/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
 

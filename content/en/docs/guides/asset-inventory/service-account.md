@@ -1,93 +1,93 @@
 ---
-title: "Service Account"
-linkTitle: "Service Account"
+title: "Service account"
+linkTitle: "Service account"
 weight: 5
 date: 2022-06-07
 description: >
-    **서비스 계정**에서 각 클라우드 서비스의 계정들을 손쉽게 통합, 관리, 추적할 수 있습니다.
+    In the **Service account** page, you can easily integrate, manage, and track your accounts of each cloud service.
 ---
 
-## 서비스 계정 추가하기
+## Add service account
 
-(1) [에셋 인벤토리 > 서비스 계정] 페이지에서 추가할 클라우드 서비스를 선택합니다.
+(1) On the [Asset inventory > Service account] page, select the cloud service you want to add.
 
-![service-account-provider-menu](/ko/docs/guides/asset-inventory/service-account-img/service-account-provider-menu.png)
+![service-account-provider-menu](/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
 
-(2) [추가] 버튼을 클릭합니다.
+(2) Click the [Add] button.
 
-![service-account-add-button](/ko/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
+![service-account-add-button](/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
 
-(3) 서비스 계정 생성 폼을 작성합니다.
+(3) Fill out the service account creation form.
 
-(3-1) 기본 정보를 입력합니다.
+(3-1) Enter basic information.
 
-![service-account-add-base-info](/ko/docs/guides/asset-inventory/service-account-img/service-account-add-base-info.png)
+![service-account-add-base-info](/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
 
-(3-2) 해당 서비스 계정에 따른 리소스를 수집할 프로젝트를 지정합니다.
+(3-2) Specify the project to collect resources from according to the service account.
 
-![service-account-connect-project](/ko/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
+![service-account-connect-project](/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-(3-3) 암호화 키 정보를 입력합니다.
+(3-3) Enter encryption key information.
 
-![service-account-add-key](/ko/docs/guides/asset-inventory/service-account-img/service-account-add-key.png)
+![service-account-add-key](/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
 
-(4) [저장] 버튼을 클릭하여 완료합니다.
+(4) Click the [Save] button to complete.
 
-## 서비스 계정 관리하기
+## Managing service account
 
-### 프로젝트 변경하기
+### Changing a project
 
-프로젝트를 변경하고자 하는 서비스 계정을 선택한 뒤, 작업 메뉴에서 [프로젝트 변경] 버튼을 클릭합니다.
+After selecting the service account whose project you want to change, click the [Change project] button in the action menu.
 
-![service-account-project-change-menu](/ko/docs/guides/asset-inventory/service-account-img/service-account-project-change-menu.png)
+![service-account-project-change-menu](/docs/guides/asset-inventory/service-account-img/service-account-project-change-menu.png)
 
-생성된 모달에서 변경할 프로젝트를 선택한 후 [확인] 버튼을 클릭합니다.
+After selecting the project to change in the created modal dialog, click the [OK] button.
 
-![service-account-project-change-selected](/ko/docs/guides/asset-inventory/service-account-img/service-account-project-change-selected.png)
+![service-account-project-change-selected](/docs/guides/asset-inventory/service-account-img/service-account-project-change-selected.png)
 
-서비스 계정의 프로젝트를 선택 해제 하고 싶은 경우는, 모달 하단의 [프로젝트 선택 안 함] 항목을 선택한 후 [확인] 버튼을 클릭합니다.
+If you want to deselect the project for the service account, select the [Do not select a project] item at the bottom of the modal dialog and click the [OK] button.
 
-![service-account-project-unselect-selected](/ko/docs/guides/asset-inventory/service-account-img/service-account-project-unselect-selected.png)
+![service-account-project-unselect-selected](/docs/guides/asset-inventory/service-account-img/service-account-project-unselect-selected.png)
 
-### 콘솔 연결하기
+### Connecting a console
 
-콘솔에 연결하고자 하는 서비스 계정을 선택한 뒤, [작업] 드롭다운에서 [콘솔 연결] 메뉴를 클릭합니다.
+After selecting the service account you want to connect to the console, click the [Console connection] menu in the [Action] dropdown.
 
-![sevice-account-console-connect-menu](/ko/docs/guides/asset-inventory/service-account-img/sevice-account-console-connect-menu.png)
+![sevice-account-console-connect-menu](/docs/guides/asset-inventory/service-account-img/sevice-account-console-connect-menu.png)
 
-## 상세 정보 확인하기
+## Check details
 
-상세 정보를 확인하고자 하는 프로젝트를 선택하면 하단 테이블에 정보가 표시됩니다.
+If you select a project for which you want to check detailed information, the information is displayed in the table below.
 
-![service-account-single-select](/ko/docs/guides/asset-inventory/service-account-img/service-account-single-select.png)
+![service-account-single-select](/docs/guides/asset-inventory/service-account-img/service-account-single-select.png)
 
-- [상세 정보] 탭에서 다음과 같은 정보를 확인할 수 있습니다.
+- You can check the following information in the [Details] tab:
 <br />
-  • 아이디
+  • ID
 <br />
-  • 이름
+  • Name
 <br />
-  • 프로젝트
+  • Project
 <br />
-  • 생성날짜
+  • Creation date
 <br />
-- [태그] 탭에서 태그에 대해 조회, 편집 그리고 추가가 가능합니다.
-- [암호화 키] 탭에서 키를 조회 및 검색이 가능합니다.
-- [연관된 멤버] 탭에서 해당 서비스계정에 대해 조회 및 검색이 가능합니다.
+- You can view, edit, and add tags in the [Tags] tab.
+- Keys can be viewed and searched in the [Encryption key] tab.
+- You can view and search for the corresponding service account in the [Associated members] tab.
 <br />
-  • 연결되어 있는 프로젝트의 멤버 중 Project Admin 권한을 가진 사람이 연관된 멤버로 배정됩니다.
+  • A person with a project administrator’s privilege among members of the associated project will be assigned as an associated member.
 <br />
-  • 자세한 내용은 [멤버](/ko/docs/guides/project/member)에서 확인 가능합니다.
+  • For detailed information, see [Member](/docs/guides/project/member).
 
-## 서비스 계정 삭제하기
+## Deleting service account
 {{<alert>}}
-삭제한 서비스 계정은 복구가 불가능하니 유의해주시길 바랍니다.
+Please note that deleted service accounts cannot be recovered.
 {{</alert>}}
 
-삭제하고자 하는 서비스 계정을 선택한 뒤, [작업] 드롭다운에서 [삭제] 메뉴를 클릭합니다.
+Select the service account you want to delete and click the [Delete] menu in the [Action] dropdown.
 
-![service-account-delete-menu](/ko/docs/guides/asset-inventory/service-account-img/service-account-delete-menu.png)
+![service-account-delete-menu](/docs/guides/asset-inventory/service-account-img/service-account-delete-menu.png)
 
-[서비스 계정 삭제] 모달에서 삭제하고자 하는 서비스 계정의 이름을 입력한 후 [확인] 버튼을 클릭합니다.
+In the [Delete service account] modal dialog, enter the name of the service account you want to delete and click the [OK] button.
 
-![service-account-delete-modal2](/ko/docs/guides/asset-inventory/service-account-img/service-account-delete-modal2.png)
+![service-account-delete-modal2](/docs/guides/asset-inventory/service-account-img/service-account-delete-modal2.png)

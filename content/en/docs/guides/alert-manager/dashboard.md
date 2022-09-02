@@ -4,38 +4,38 @@ linkTitle: "Dashboard"
 weight: 2
 date: 2022-06-07
 description: >
-    현재 로그인된 사용자에게 발생한 얼럿을 한눈에 조회 가능한 대시보드입니다.
+    It is on dashboards that you can view alerts that have occurred to the currently logged-in users at a glance.
 ---
 
-크게 3가지의 파트 별로 얼럿들을 확인할 수 있으며 아래와 같습니다.
+You can check alerts for each of the three main parts, as follows:
 
-## 상태별 얼럿 확인하기
+## Check alerts by state
 
-대시보드의 최상단에서는 얼럿을 [상태별](/ko/docs/guides/alert-manager/alert/#상태)로 볼 수 있습니다.
+At the top of the dashboard, you can view alerts by [State](/docs/guides/alert-manager/alert/#state).
 <br>
-각 항목을 클릭하면 [얼럿 상세 페이지](/ko/docs/guides/alert-manager/alert/#얼럿-살펴보기)로 이동하여 상세 정보를 확인하거나 세부 설정을 할 수 있습니다.
+Click each item to go to the [Alert details page](/docs/guides/alert-manager/alert/#alert-explore), where you can check detailed information or implement detailed settings.
 
-![view-alert-by-status](/ko/docs/guides/alert-manager/dashboard-img/view-alert-by-status.png)
+![view-alert-by-status](/docs/guides/alert-manager/dashboard-img/view-alert-by-status.png)
 
-## 얼럿 히스토리
+## Alerts history
 
-[프로젝트](/ko/docs/guides/project/project/)에서 발생한 얼럿 히스토리를 보여줍니다.
+Alert history occurred in [Project](/docs/guides/project/project/) is displayed.
 <br>
-차트에서 일별 데이터를 확인할 수 있으며, 카드에서는 전달 대비 얼럿의 증감량을 확인할 수 있습니다.
+You can see the daily data on the chart, and the increase/decrease in alerts on the card compared to the previous month.
 
-![alert-history-1](/ko/docs/guides/alert-manager/dashboard-img/alert-history-1.png)
+![alert-history-1](/docs/guides/alert-manager/dashboard-img/alert-history-1.png)
 
-## 프로젝트 상태 보드
+## Project dashboard
 
-[프로젝트 상태 보드]에서는 사용자와 관련된 각각의 프로젝트들의 얼럿 정보를 보여줍니다.
+[Project dashboard] shows the alert information of each project related to a user.
 
-[Top 5 프로젝트 활동]의 경우, [오픈] 상태의 얼럿이 많은 순서대로 프로젝트를 보여줍니다.
+In the case of [Top 5 project activities], projects are displayed in the order of having the most alerts in the [Open] state.
 
-![project-board-1](/ko/docs/guides/alert-manager/dashboard-img/project-board-1.png)
+![project-board-1](/docs/guides/alert-manager/dashboard-img/project-board-1.png)
 
-검색 창 아래에는 얼럿이 발생한 프로젝트가 활동이 높은 순서대로 보여집니다.
+At the bottom of the search bar, the alerted projects are displayed in the order of highest activity.
 <br>
-`이슈` 상태인 프로젝트만 보이며, 모든 얼럿이 `완료` 상태가 되면 `정상` 상태의 프로젝트로 변경되어 대시보드에서 보이지 않습니다.
+Only projects marked with an `issue` status are visible, and when all the alerts reach a `cleared` status, they are changed to `normal` status and are no longer visible on the dashboard.
 
-![project-board-2](/ko/docs/guides/alert-manager/dashboard-img/project-board-2.png)
+![project-board-2](/docs/guides/alert-manager/dashboard-img/project-board-2.png)
 

@@ -4,51 +4,51 @@ linkTitle: "Project"
 weight: 3
 date: 2022-06-07
 description: >
-    **프로젝트**는 리소스를 관리하기 위한 묶음 단위입니다.
+    **Project** is a grouping unit for managing resources.
     <br>
     <br>
-    프로젝트는 반드시 특정한 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)에 속해야 하며, 프로젝트 아래에는 더 이상의 계층이 존재할 수 없습니다.
+    A project must belong to a specific [**Project group**](/docs/guides/project/project-group), and there can be no more hierarchies below the project.
     <br>
     <br>
-    프로젝트에 [**멤버**](/ko/docs/guides/project/member)를 초대하고 [**역할(Role)**](/ko/docs/guides/administration/iam-role)을 부여할 수 있으며, 부여된 역할(Role)에 따라 프로젝트 리소스에 대한 접근 권한이 달라집니다.
+    Invite a [**Member**](/docs/guides/project/member) to the project and assign a [**Role**](/docs/guides/administration/iam-role) that differentiates their access privilege to project resources.
 ---
 
-## 프로젝트 생성하기
+## Creating a project
 
 {{<alert>}}
-프로젝트는 프로젝트 그룹 하위에만 존재할 수 있으므로, 먼저 **프로젝트 그룹**이 있어야 합니다.
-프로젝트 그룹을 생성하는 방법은 [여기]((/ko/docs/guides/project/project-group/#프로젝트-그룹-생성하기))를 참고 하십시오.
+Since a project can only exist under a project group, you need to have a **project group** first.
+For ways to create a project group, see [here](/docs/guides/project/project-group/#create-project-group).
 {{</alert>}}
 
-(1) [프로젝트] 페이지 왼쪽의 [프로젝트 그룹] 목록에서 프로젝트를 생성할 프로젝트 그룹을 선택합니다.
+(1) From the [Project group] list on the left side of the [Project] page, select a project group for which you will create a project.
 
-![project-full-page](/ko/docs/guides/project/project-img/project-full-page.png)
+![project-full-page](/docs/guides/project/project-img/project-full-page.png)
 
-(2) 오른쪽 상단의 [프로젝트 생성] 버튼을 클릭합니다.
+(2) Click the [Create project] button at the top right.
 
-(3) [프로젝트 생성] 모달에서 프로젝트 이름을 입력한 후, [확인] 버튼을 클릭하여 프로젝트를 생성합니다.
+(3) After entering a project name in the [Create project] modal dialog, click the [OK] button to create the project.
 
-![project-create-modal](/ko/docs/guides/project/project-img/project-create-modal.png)
+![project-create-modal](/docs/guides/project/project-img/project-create-modal.png)
 
-## 프로젝트 목록 조회하기
+## Viewing the project list
 
-프로젝트 목록에서 각 프로젝트의 주요 카테고리에 대한 리소스 현황을 간편하게 확인할 수 있습니다.
+From the project list, you can easily check the resource status of the major categories of each project.
 <br>
-또한 검색어를 입력하여 조건에 부합하는 프로젝트 그룹과 프로젝트 목록을 확인할 수 있습니다.
+You can also enter a search word to see a list of project groups and projects that match your criteria.
 
-### 모든 프로젝트 목록 조회하기
+### Getting a list of all projects
 
-왼쪽의 [프로젝트 그룹]에서 [모든 프로젝트]를 선택하여 전체 프로젝트 목록을 조회할 수 있습니다.
+You can view a list of the entire projects by selecting [All projects] from [Project groups] on the left.
 
-![project-click-all-project](/ko/docs/guides/project/project-img/project-click-all-project.png)
+![project-click-all-project](/docs/guides/project/project-img/project-click-all-project.png)
 
-### 프로젝트 그룹 내 프로젝트 목록 조회하기
+### Viewing a list of projects in a project group
 
-왼쪽의 [프로젝트 그룹] 목록에서 원하는 프로젝트 그룹을 선택하여 해당 그룹에 속한 프로젝트만을 조회할 수 있습니다.
+You can select the project group you want from the [Project group] list on the left to view projects belonging to that group only.
 
-![project-click-single-project-group](/ko/docs/guides/project/project-img/project-click-single-project-group.png)
+![project-click-single-project-group](/docs/guides/project/project-img/project-click-single-project-group.png)
 
-만약 선택한 프로젝트 그룹 아래에 또다른 프로젝트 그룹들이 있다면, 다른 프로젝트 그룹에 속한 프로젝트들은 여기에 표시되지 않습니다.
+If there are other project groups under the selected project group, the projects belonging to such other project groups are not displayed here.
 
 ```
 - Project Group A
@@ -59,72 +59,72 @@ description: >
     - Project A-2
 ```
 
-위의 구조로 예를 들면, `Project Group A` 를 선택하면 `Project A-1`, `Project A-2` 만 목록에 표시됩니다.
+For example in the above structure, if you select `Project Group A,` only `Project A-1` and `Project A-2` would be displayed in the list.
 
-## 프로젝트 살펴보기
+## Exploring projects
 
-프로젝트 목록에서 프로젝트를 선택하여 프로젝트 상세 페이지로 이동합니다.
+Select a project from a list of projects to enter the project detail page.
 
-### 프로젝트 대시보드
+### Project Dashboard
 
-[요약 정보] 탭에서 프로젝트 대시보드를 통해 해당 프로젝트에 속한 리소스의 집약된 정보를 확인할 수 있습니다.
+In the [Summary information] tab, you can check the aggregated information of the resources belonging to the project through the project dashboard.
 
-![project-dashboard-full-page](/ko/docs/guides/project/project-img/project-dashboard-full-page.png)
+![project-dashboard-full-page](/docs/guides/project/project-img/project-dashboard-full-page.png)
 
 <br>
-프로젝트 대시보드에서는 카테고리 별, 지역 별 리소스 사용 현황과 트렌드를 보여줍니다.
+The project dashboard shows the status of resource usage and trends by category and region.
 
-그 밖에도 여러 위젯들을 통해 다양한 형태로 프로젝트에 대한 통계 정보를 제공함으로써, 리소스를 더욱 효율적으로 관리하고 비용을 최소화 할 수 있도록 돕습니다.
+In addition, statistical information about the project in diverse formats through multiple widgets helps to manage resources more efficiently and minimize costs.
 
-아래는 프로젝트 대시보드의 위젯 목록입니다.
+Below is a list of widgets on the project dashboard.
 
-| 프로젝트 대시보드 위젯 이름 | 설명 |
+| Project dashboard widget name | Description |
 | -- | -- |
-| 얼럿 | 해당 프로젝트에 발생한 얼럿 정보 |
-| 비용 | 해당 프로젝트의 비용 정보 |
-| 오늘의 리소스 업데이트 | 로컬 시간 기준으로 자정부터 현재까지 업데이트된 리소스 정보 |
-| 클라우드 서비스 | 서비스 중인 주요 클라우드 서비스 정보 |
-| AWS Personal Health Dashboard | AWS의 Personal Health Dashboard 정보 |
-| AWS Trusted Advisor | AWS의 Trusted Advisor 정보 |
+| Alert | Information on alerts that occurred in the project |
+| Cost | Cost information for the project |
+| Today's resource updates | Resource information updated from midnight local time to the present |
+| Cloud services | Information on major cloud services among the services |
+| AWS Personal Health Dashboard | Information on AWS Personal Health Dashboard |
+| AWS Trusted Advisor | Information on AWS Trusted Advisor |
 
-## 프로젝트 편집하기
+## Edit project
 
-### 프로젝트 이름 변경하기
+### Changing project name
 
-(1) 프로젝트 이름 우측의 [편집] 아이콘 버튼을 클릭합니다.
+(1) Click the [Edit] icon button to the right of the project name.
 
-![project-name-edit-icon-button](/ko/docs/guides/project/project-img/project-name-edit-icon-button.png)
+![project-name-edit-icon-button](/docs/guides/project/project-img/project-name-edit-icon-button.png)
 
-(2) [프로젝트 변경] 모달에서 변경할 이름을 입력한 후 [확인] 버튼을 클릭하여 프로젝트 이름을 변경합니다.
+(2) After entering the name to be changed in the [Change project] modal dialog, click the [OK] button to change the project name.
 
-![project-name-edit-modal](/ko/docs/guides/project/project-img/project-name-edit-modal.png)
+![project-name-edit-modal](/docs/guides/project/project-img/project-name-edit-modal.png)
 
-### 프로젝트 태그 관리하기
+### Managing project tags
 
-프로젝트에 태그를 추가하여 관리할 수 있습니다.
+You can manage it by adding tags to your project.
 <br>
 <br>
 
-(1) [태그] 탭 내부에서 [편집] 버튼을 클릭합니다.
+(1) Click the [Edit] button inside the [Tag] tab.
 
-![project-tag-table](/ko/docs/guides/project/project-img/project-tag-table.png)
+![project-tag-table](/docs/guides/project/project-img/project-tag-table.png)
 
-(2) [태그] 페이지에서 [태그 추가] 버튼을 클릭합니다.
+(2) Click the [Add Tag] button on the [Tag] page.
 
-(3) 추가하고자 하는 값을 `키: 값` 형태로 입력합니다.
+(3) Enter the value to be added in the form of ‘key:value.’
 
-![project-tag-add](/ko/docs/guides/project/project-img/project-tag-add.png)
+![project-tag-add](/docs/guides/project/project-img/project-tag-add.png)
 
-(3-1) 태그를 더 추가하고자 한다면, 원하는 개수만큼 [태그 추가] 버튼을 클릭합니다.
+(3-1) If you want to add more tags, click the [Add tag] button as many as the number of tags you want.
 
-(4) [저장] 버튼을 클릭하여 태그 추가를 완료합니다.
+(4) Click the [Save] button to finish adding tags.
 
-## 프로젝트 삭제하기
+## Deleting a project
 
-(1) 프로젝트 이름 우측의 [삭제] 아이콘 버튼을 클릭합니다.
+(1) Click the [Delete] icon button to the right of the project name.
 
-![project-delete-icon-button](/ko/docs/guides/project/project-img/project-delete-icon-button.png)
+![project-delete-icon-button](/docs/guides/project/project-img/project-delete-icon-button.png)
 
-(2) [프로젝트 삭제] 모달의 [확인] 버튼을 클릭하여 프로젝트를 삭제합니다.
+(2) Click the [OK] button in the [Delete project] modal dialog to delete the project.
 
-![project-delete-modal](/ko/docs/guides/project/project-img/project-delete-modal.png)
+![project-delete-modal](/docs/guides/project/project-img/project-delete-modal.png)
