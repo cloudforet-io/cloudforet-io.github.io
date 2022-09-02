@@ -1,6 +1,6 @@
 ---
-title: "[AIM]認証"
-linkTitle: "[AIM]認証"
+title: "[IAM]認証"
+linkTitle: "[IAM]認証"
 weight: 3
 date: 2022-07-05
 description: >

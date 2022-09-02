@@ -7,7 +7,7 @@ description: >
     You can generate an **API key**, an authentication key to connect to SpaceOne, and use it to develop programs or control Cloudforet with commands through **CLI**.
 ---
 
-**API key** is required to use the command line tool [**Spacectl**] (https://github.com/spaceone-dev/spacectl) provided by Cloudforet.
+**API key** is required to use the command line tool [**Spacectl**](https://github.com/spaceone-dev/spacectl) provided by Cloudforet.
 
 ## Generating an API key
 
