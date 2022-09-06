@@ -11,25 +11,25 @@ description: >
 
 (1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/jp/docs/guides/asset-inventory/service-account-img/service-account-provider-menu.png)
+![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
 
 (2) [追加]ボタンをクリックします。
 
-![service-account-add-button](/jp/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
+![service-account-add-button](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
 
 (3) サービスアカウントの作成フォームを作成します。
 
 (3-1) 基本情報を入力します。
 
-![service-account-add-base-info](/jp/docs/guides/asset-inventory/service-account-img/service-account-add-base-info.png)
+![service-account-add-base-info](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
 
 (3-2) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
-![service-account-connect-project](/jp/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
+![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
 (3-3) 暗号化キーの情報を入力します。
 
-![service-account-add-key](/jp/docs/guides/asset-inventory/service-account-img/service-account-add-key.png)
+![service-account-add-key](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
 
 (4) [保存]ボタンをクリックすると完了します。
 

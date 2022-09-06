@@ -104,7 +104,7 @@ description: >
 
 ![role-edit-base-info](/ko/docs/guides/administration/iam-role-img/role-edit-base-info.png)
 
-{{< alert title="주의" >}}
+{{< alert >}}
 
 기본정보의 [역할 타입]은 생성이후 수정이 불가능한 항목입니다.
 
@@ -125,7 +125,7 @@ description: >
 
 ![role-delete-modal](/ko/docs/guides/administration/iam-role-img/role-delete-modal.png)
 
-{{< alert title="주의" >}}
+{{< alert >}}
 사용자에게 할당되어있는 역할은 제거할 수 없습니다.
 
 ![role-cannot-delete-modal](/ko/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
