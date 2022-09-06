@@ -104,7 +104,7 @@ description: >
 
 ![role-edit-base-info](/jp/docs/guides/administration/iam-role-img/role-edit-base-info.png)
 
-{{< alert title="注意" >}}
+{{< alert >}}
 
 基本情報の[ロールタイプ]は､作成後に修正できない項目です｡
 
@@ -125,7 +125,7 @@ description: >
 
 ![role-delete-modal](/jp/docs/guides/administration/iam-role-img/role-delete-modal.png)
 
-{{< alert title="注意" >}}
+{{< alert >}}
 ユーザーに割り当てられたロールは削除できません｡
 
 ![role-cannot-delete-modal](/jp/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)

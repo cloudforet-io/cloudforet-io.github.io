@@ -104,7 +104,7 @@ When selecting a role in the table of contents, you can check information about 
 
 ![role-edit-base-info](/docs/guides/administration/iam-role-img/role-edit-base-info.png)
 
-{{< alert title="주의" >}}
+{{< alert >}}
 
 [Role Type] of basic information is an item that cannot be modified after you created the role.
 
@@ -125,7 +125,7 @@ You can delete multiple roles at once.
 
 ![role-delete-modal](/docs/guides/administration/iam-role-img/role-delete-modal.png)
 
-{{< alert title="주의" >}}
+{{< alert >}}
 Roles assigned to a user cannot be removed.
 
 ![role-cannot-delete-modal](/docs/guides/administration/iam-role-img/role-cannot-delete-modal.png)
