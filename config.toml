@@ -39,7 +39,7 @@ pygmentsStyle = "tango"
 [languages]
 [languages.en]
     languageName ="English"
-    title = "Cloudforet | Open Source Multi-cloud Management Platfrom"
+    title = "Cloudforet | Open Source Multi-cloud Management Platform"
     contentDir = "content/en"
     time_format_default = "02.01.2006"
 		time_format_blog = "02.01.2006"
