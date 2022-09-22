@@ -49,7 +49,7 @@ spaceone/supervisor           	1.1.4        	1.x.y      	SpaceONE supervisor Hel
 
 {{< alert title="Installation" >}}
 	SpaceONE can be easily deployed by single Helm chart with spaceone/spaceone.
-	See https://www.spaceone.org/docs/setup/
+	See https://cloudforet.io/docs/setup_operation/
 {{< /alert >}}
 
 

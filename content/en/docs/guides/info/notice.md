@@ -21,7 +21,7 @@ description: >
 A user with a role whose type is [Admin] is permitted to directly create announcements within a related domain.
 
 {{<alert>}}
-For details on role type, see [here] (https://spaceone.org/docs/guides/administration/iam-role/).
+For details on role type, see [here] (https://cloudforet.io/docs/guides/administration/iam-role/).
 {{</alert>}}
 
 (1) Enter the [Notice] page, and click the [Register new notice] button to write a new post.

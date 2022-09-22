@@ -1,4 +1,4 @@
-baseURL = "https://www.spaceone.org/"
+baseURL = "https://cloudforet.io/"
 languageCode = "en-us"
 title = "SpaceONE"
 theme = "docsy"
@@ -135,7 +135,7 @@ algolia_docsearch = false
 offlineSearch = true
 showedit = true
 docsbranch = "master"
-currentUrl = "https://www.spaceone.org/home/"
+currentUrl = "https://cloudforet.io/home/"
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 # Configure url of latest version

@@ -21,7 +21,7 @@ description: >
 ロールタイプが[Admin]のロール(Role)を持つユーザーは、当該ドメイン内のお知らせを直接作成する権限を持っています。
 
 {{<alert>}}
-ロールタイプに関する詳細については、[こちら](https://spaceone.org/docs/guides/administration/iam-role/)をご参考にしてください。
+ロールタイプに関する詳細については、[こちら](https://cloudforet.io/docs/guides/administration/iam-role/)をご参考にしてください。
 {{</alert>}}
 
 (1) [お知らせ]ページへ移動して、[新しいお知らせ登録]ボタンをクリックすると新しい文章を作成できます。
