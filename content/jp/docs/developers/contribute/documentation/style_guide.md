@@ -17,12 +17,12 @@ When you add `##` in the documentation, it makes a list of Table of Contents aut
 Code :
 ```go-html-template
 {{</* link-button background-color="navy500" url="/" text="Home" */>}}
-{{</* link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" */>}}
+{{</* link-button background-color="white" url="https://cloudforet.io/" text="cloudforet.io" */>}}
 ```
 
 Output : <br>
 {{< link-button background-color="navy500" url="/" text="Home" />}}
-{{< link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" />}}
+{{< link-button background-color="white" url="https://cloudforet.io/" text="cloudforet.io" />}}
 
 ## Video
 Code :

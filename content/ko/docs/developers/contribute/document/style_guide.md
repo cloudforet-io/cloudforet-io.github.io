@@ -17,12 +17,12 @@ description: >
 코드 :
 ```go-html-template
 {{</* link-button background-color="navy400" url="/" text="Home" */>}}
-{{</* link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" */>}}
+{{</* link-button background-color="white" url="https://cloudforet.io/" text="cloudforet.io" */>}}
 ```
 
 결과 : <br>
 {{< link-button background-color="navy500" url="/" text="Home" />}}
-{{< link-button background-color="white" url="https://www.spaceone.org/" text="spaceone.org" />}}
+{{< link-button background-color="white" url="https://cloudforet.io/" text="cloudforet.io" />}}
 
 ## Video
 코드 :

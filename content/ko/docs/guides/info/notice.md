@@ -21,7 +21,7 @@ description: >
 Role Type이 [Admin]인 역할(Role)을 가진 사용자의 경우, 해당 도메인내 공지사항을 직접 작성할 수 있는 권한을 가집니다.
 
 {{<alert>}}
-Role Type에 대한 세부내용은 [여기](https://spaceone.org/docs/guides/administration/iam-role/)를 참고 하십시오.
+Role Type에 대한 세부내용은 [여기](https://cloudforet.io/docs/guides/administration/iam-role/)를 참고 하십시오.
 {{</alert>}}
 
 (1) [공지사항] 페이지로 진입하여, [새 공지사항 등록] 버튼을 통해 새 글 작성이 가능합니다.
