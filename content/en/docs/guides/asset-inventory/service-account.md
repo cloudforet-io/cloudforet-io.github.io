@@ -2,12 +2,32 @@
 title: "Service account"
 linkTitle: "Service account"
 weight: 5
-date: 2022-06-07
+date: 2022-10-05
 description: >
     In the **Service account** page, you can easily integrate, manage, and track your accounts of each cloud service.
 ---
 
 ## Add service account
+
+There are two types of service accounts for different needs and better security.	
+
+{{<alert>}}
+• `General Account` :
+    
+  Option 1) You can create account with its own credentials.	
+    
+  Option 2) Create account using credentials from an existing `Trusted Account`.	
+    
+  Option 3) You can also create account without credentials.	
+    
+• `Trusted Account`:
+    
+  You can create an account that enables trusted access,
+  
+  then other general accounts can refer to its credential key by attaching it.
+{{</alert>}}
+
+### Create General Account 
 
 (1) On the [Asset inventory > Service account] page, select the cloud service you want to add.
 
@@ -19,75 +39,87 @@ description: >
 
 (3) Fill out the service account creation form.
 
-(3-1) Enter basic information.
+(3-1) Select `General Account`.	
+
+![service-account-select-general-accout](/docs/guides/asset-inventory/service-account-img/service-account-select-general-accout.png)
+
+(3-2) Enter basic information.
 
 ![service-account-add-base-info](/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
 
-(3-2) Specify the project to collect resources from according to the service account.
+(3-3) Specify the project to collect resources from according to the service account.
 
 ![service-account-connect-project](/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-(3-3) Enter encryption key information.
+(3-4) Enter encryption key information.
 
 ![service-account-add-key](/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
 
+- You can also create an account without credentials.	
+- In the case of AWS, you can easily create Assume Role by attaching an exisiting `Trusted Account`. If you select a certain `Trusted Account`, its credential key will automatically get inserted, then you will only need to enter the rest of information.	
+
 (4) Click the [Save] button to complete.
 
-## Managing service account
+### Create Trusted Account 
 
-### Changing a project
+(1) On the [Asset inventory > Service account] page, select the cloud service you want to add.
 
-After selecting the service account whose project you want to change, click the [Change project] button in the action menu.
+![service-account-provider-menu](/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
 
-![service-account-project-change-menu](/docs/guides/asset-inventory/service-account-img/service-account-project-change-menu.png)
+(2) Click the [Add] button.
 
-After selecting the project to change in the created modal dialog, click the [OK] button.
+![service-account-add-button](/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
 
-![service-account-project-change-selected](/docs/guides/asset-inventory/service-account-img/service-account-project-change-selected.png)
+(3) Fill out the service account creation form.
 
-If you want to deselect the project for the service account, select the [Do not select a project] item at the bottom of the modal dialog and click the [OK] button.
+(3-1) Select `Trusted Account`.	
 
-![service-account-project-unselect-selected](/docs/guides/asset-inventory/service-account-img/service-account-project-unselect-selected.png)
+![service-account-select-trusted-accout](/docs/guides/asset-inventory/service-account-img/service-account-select-trusted-accout.png)
 
-### Connecting a console
+(3-2) Enter basic information.
 
-After selecting the service account you want to connect to the console, click the [Console connection] menu in the [Action] dropdown.
+![service-account-add-base-info-2-2](/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info-2-2.png)
 
-![sevice-account-console-connect-menu](/docs/guides/asset-inventory/service-account-img/sevice-account-console-connect-menu.png)
+(3-3) Specify the project to collect resources from according to the service account.
 
-## Check details
+![service-account-connect-project](/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-If you select a project for which you want to check detailed information, the information is displayed in the table below.
+(3-4) Enter encryption key information.
 
-![service-account-single-select](/docs/guides/asset-inventory/service-account-img/service-account-single-select.png)
+![service-account-add-key-2-2](/docs/guides/getting-started/service-account-setup-img/service-account-add-key-2-2.png)
 
-- You can check the following information in the [Details] tab:
-<br />
-  • ID
-<br />
-  • Name
-<br />
-  • Project
-<br />
-  • Creation date
-<br />
-- You can view, edit, and add tags in the [Tags] tab.
-- Keys can be viewed and searched in the [Encryption key] tab.
-- You can view and search for the corresponding service account in the [Associated members] tab.
-<br />
-  • A person with a project administrator’s privilege among members of the associated project will be assigned as an associated member.
-<br />
-  • For detailed information, see [Member](/docs/guides/project/member).
+(4) Click the [Save] button to complete.
 
-## Deleting service account
-{{<alert>}}
-Please note that deleted service accounts cannot be recovered.
-{{</alert>}}
 
-Select the service account you want to delete and click the [Delete] menu in the [Action] dropdown.
+## Viewing service account	
 
-![service-account-delete-menu](/docs/guides/asset-inventory/service-account-img/service-account-delete-menu.png)
+You can view a list of service accounts that have been added, and when you click a certain account, you can check the detailed information.	
 
-In the [Delete service account] modal dialog, enter the name of the service account you want to delete and click the [OK] button.
+![service-account-view-list](/docs/guides/asset-inventory/service-account-img/service-account-view-list.png)
 
-![service-account-delete-modal2](/docs/guides/asset-inventory/service-account-img/service-account-delete-modal2.png)
+
+## Editing service account		
+
+Select a service account you want to edit from the list.	
+
+![service-account-detail-page](/docs/guides/asset-inventory/service-account-img/service-account-detail-page.png)
+
+### Editing each part
+
+You can edit each part of detail information by clicking [Edit] button.
+
+![service-account-edit-btn](/docs/guides/asset-inventory/service-account-img/service-account-edit-btn.png)
+![service-account-edit](/docs/guides/asset-inventory/service-account-img/service-account-edit.png)
+
+
+## Removing service account	
+
+Select a service account you want to remove from the list.
+
+You can delete it by clicking the delete icon button.
+
+![service-account-delete-btn](/docs/guides/asset-inventory/service-account-img/service-account-delete-btn.png)
+
+If the service account is `Trusted Account` type and currently attached to more than one `General Account`, it can't be removed.	
+
+![service-account-cannot-delete](/docs/guides/asset-inventory/service-account-img/service-account-cannot-delete.png)

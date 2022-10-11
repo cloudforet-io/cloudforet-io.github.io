@@ -2,12 +2,32 @@
 title: "サービスアカウント"
 linkTitle: "サービスアカウント"
 weight: 5
-date: 2022-06-07
+date: 2022-10-05
 description: >
     **サービスアカウント**では、各クラウドサービスのアカウントを手軽に統合・管理・追跡することができます。
 ---
 
 ## サービスアカウントを追加する
+
+`General Account`,`Trusted Account`2つのタイプのアカウントが作成できます。	
+
+{{<alert>}}
+• `General Account` :
+    
+  オプション1）個別暗号化キーでアカウントを直接登録することができます。	
+    
+  オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。	
+    
+  オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。	
+    
+• `Trusted Account`:
+    
+  `General Account`とアタッチできる`Trusted Account`を作成することができます。
+  
+  アタッチされたTrustedAccountの暗号化キーはGeneralAccountがリソースにアクセスするとき参照されます。
+{{</alert>}}
+
+### General Accountを作成する
 
 (1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
@@ -19,75 +39,85 @@ description: >
 
 (3) サービスアカウントの作成フォームを作成します。
 
-(3-1) 基本情報を入力します。
+(3-1) `General Account`を選択します。	
+
+![service-account-select-general-accout](/jp/docs/guides/asset-inventory/service-account-img/service-account-select-general-accout.png)
+
+(3-2) 基本情報を入力します。
 
 ![service-account-add-base-info](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
 
-(3-2) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
+(3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
 ![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-(3-3) 暗号化キーの情報を入力します。
+(3-4) 暗号化キーの情報を入力します。
 
 ![service-account-add-key](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
 
+- 暗号化キーなしでもサービスアカウントを作成することができます。	
+- AWSの場合、既存の`Trusted Account`をアタッチすることで簡単にAssume Roleを作成することができます。特定の`Trusted Account`を選択すると、その情報が自動的に適用されますので、残りの情報を入力するだけで良いです。	
+
 (4) [保存]ボタンをクリックすると完了します。
 
-## サービスアカウントを管理する
+### Trusted Accountを作成する
 
-### プロジェクトを変更する
+(1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-プロジェクトを変更したいサービスアカウントを選択して、作業メニューで[プロジェクト変更]ボタンをクリックします。
+![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
 
-![service-account-project-change-menu](/jp/docs/guides/asset-inventory/service-account-img/service-account-project-change-menu.png)
+(2) [追加]ボタンをクリックします。
 
-作成されたモダールウィンドウで変更するプロジェクトを選択して、[確認]ボタンをクリックします。
+![service-account-add-button](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
 
-![service-account-project-change-selected](/jp/docs/guides/asset-inventory/service-account-img/service-account-project-change-selected.png)
+(3) サービスアカウントの作成フォームを作成します。
 
-サービスアカウントのプロジェクト選択を解除したい場合は、モダールウィンドウの下にある[プロジェクトを選択しない]項目をチェックして、[確認]ボタンをクリックします。
+(3-1) `Trusted Account`を選択します。	
 
-![service-account-project-unselect-selected](/jp/docs/guides/asset-inventory/service-account-img/service-account-project-unselect-selected.png)
+![service-account-select-general-accout](/jp/docs/guides/asset-inventory/service-account-img/service-account-select-general-accout.png)
 
-### コンソールに接続する
+(3-2) 基本情報を入力します。
 
-コンソールに接続したいサービスアカウントを選択して、[作業]ドロップダウンで[コンソール接続]メニューをクリックします。
+![service-account-add-base-info-2-2](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info-2-2.png)
 
-![sevice-account-console-connect-menu](/jp/docs/guides/asset-inventory/service-account-img/sevice-account-console-connect-menu.png)
+(3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
-## 詳細情報を確認する
+![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
 
-詳細情報を確認したいプロジェクトを選択すると、下にあるテーブルに情報が表示されます。
+(3-4) 暗号化キーの情報を入力します。
 
-![service-account-single-select](/jp/docs/guides/asset-inventory/service-account-img/service-account-single-select.png)
+![service-account-add-key-2-2](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key-2-2.png)
 
-- [詳細情報]タブでは、次のような情報を確認できます。.
-<br />
-  • ID
-<br />
-  • 名前
-<br />
-  • プロジェクト
-<br />
-  • 作成日
-<br />
-- [タグ]タブでタグの照会、編集、追加することができます。
-- [暗号化キー]タブでキーを照会、検索することができます。
-- [関連メンバー]タブで当該サービスアカウントの照会と検索を実行できます。
-<br />
-  • 接続されたプロジェクトメンバーのうちProject Admin権限を有する者が関連メンバーに割り当てられます。
-l
-  • 詳細については、[メンバー](/jp/docs/guides/project/member)で確認できます。
+(4) [保存]ボタンをクリックすると完了します。
 
-## サービスアカウントを削除する
-{{<alert>}}
-削除したサービスアカウントは復旧できませんので、ご注意ください。
-{{</alert>}}
 
-削除したいサービスアカウントを選択して、[作業]ドロップダウンで[削除]メニューをクリックします。
+## サービスアカウントを照会	
 
-![service-account-delete-menu](/jp/docs/guides/asset-inventory/service-account-img/service-account-delete-menu.png)
+作成されたサービスアカウントの一覧表を照会することができ、特定アカウントをクリックすると詳細情報を確認することができます。	
 
-[サービスアカウント削除]モダールウィンドウで削除したいサービスアカウントの名前を入力して、[確認]ボタンをクリックします。
+![service-account-view-list](/jp/docs/guides/asset-inventory/service-account-img/service-account-view-list.png)
 
-![service-account-delete-modal2](/jp/docs/guides/asset-inventory/service-account-img/service-account-delete-modal2.png)
+
+## サービスアカウントを編集		
+
+![service-account-detail-page](/jp/docs/guides/asset-inventory/service-account-img/service-account-detail-page.png)
+
+### 各項目の内容を編集する
+
+「編集」ボタンを押して各項目の内容を編集することができます。
+
+![service-account-edit-btn](/jp/docs/guides/asset-inventory/service-account-img/service-account-edit-btn.png)
+![service-account-edit](/jp/docs/guides/asset-inventory/service-account-img/service-account-edit.png)
+
+
+## サービスアカウントを削除	
+
+リストから削除したいサービスアカウントを選択します。	
+
+削除アイコンボタンをクリックすると、該当するサービスアカウントを削除することができます。
+
+![service-account-delete-btn](/jp/docs/guides/asset-inventory/service-account-img/service-account-delete-btn.png)
+
+サービスアカウントが`Trusted Account`タイプで、複数の`General Account`にアタッチされている場合は削除することができません	。
+
+![service-account-cannot-delete](/jp/docs/guides/asset-inventory/service-account-img/service-account-cannot-delete.png)
