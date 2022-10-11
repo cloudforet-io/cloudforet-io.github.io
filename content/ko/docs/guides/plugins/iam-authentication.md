@@ -22,5 +22,5 @@ description: >
 
 | **플러그인** | **설정 가이드 링크** |
 | --- | --- |
-| Google Oauth2 | https://github.com/spaceone-dev/plugin-googleoauth2-identity-auth/blob/master/docs/ko/GUIDE.md |
-| Keycloak | https://github.com/spaceone-dev/plugin-keycloak-identity-auth/blob/master/docs/ko/GUIDE.md |
+| Google Oauth2 | https://github.com/cloudforet-io/plugin-googleoauth2-identity-auth/blob/master/docs/ko/GUIDE.md |
+| Keycloak | https://github.com/cloudforet-io/plugin-keycloak-identity-auth/blob/master/docs/ko/GUIDE.md |

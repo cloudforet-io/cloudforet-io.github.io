@@ -32,5 +32,5 @@ To check the details, go to the `.github/workflow` directory in each directory.
 
 </br>
 
-* console-core-lib repository : [spaceone-dev/console-core-lib GitHub workflow file link](https://github.com/spaceone-dev/console-core-lib/tree/master/.github/workflows)
-* spaceone-design-system repository : [spaceone-dev/spaceone-design-system GitHub workflow file link](https://github.com/spaceone-dev/spaceone-design-system/tree/beta/.github/workflows)
+* console-core-lib repository : [spaceone-dev/console-core-lib GitHub workflow file link](https://github.com/cloudforet-io/console-core-lib/tree/master/.github/workflows)
+* spaceone-design-system repository : [spaceone-dev/spaceone-design-system GitHub workflow file link](https://github.com/cloudforet-io/spaceone-design-system/tree/beta/.github/workflows)

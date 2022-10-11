@@ -64,5 +64,5 @@ For further details, you can check our GitHub `spaceone-dev/actions`.
 
 </br>
 
-* [SpaceONE github action workflow repository](https://github.com/spaceone-dev/actions)
+* [SpaceONE github action workflow repository](https://github.com/cloudforet-io/actions)
 

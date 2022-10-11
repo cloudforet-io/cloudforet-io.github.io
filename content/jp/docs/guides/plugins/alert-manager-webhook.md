@@ -21,7 +21,7 @@ description: >
 
 | **プラグイン** | **設定ガイドリンク** |
 | --- | --- |
-| AWS SNS | https://github.com/spaceone-dev/plugin-aws-sns-mon-webhook/blob/master/docs/ko/GUIDE.md |
-| Grafana | https://github.com/spaceone-dev/plugin-grafana-mon-webhook/blob/master/docs/ko/GUIDE.md |
-| Prometheus |https://github.com/spaceone-dev/plugin-prometheus-mon-webhook/blob/master/docs/ko/GUIDE.md|
-| Zabbix |https://github.com/spaceone-dev/plugin-zabbix-mon-webhook/blob/master/docs/ko/GUIDE.md|
+| AWS SNS | https://github.com/cloudforet-io/plugin-aws-sns-mon-webhook/blob/master/docs/ko/GUIDE.md |
+| Grafana | https://github.com/cloudforet-io/plugin-grafana-mon-webhook/blob/master/docs/ko/GUIDE.md |
+| Prometheus |https://github.com/cloudforet-io/plugin-prometheus-mon-webhook/blob/master/docs/ko/GUIDE.md|
+| Zabbix |https://github.com/cloudforet-io/plugin-zabbix-mon-webhook/blob/master/docs/ko/GUIDE.md|

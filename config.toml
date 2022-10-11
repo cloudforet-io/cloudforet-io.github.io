@@ -127,7 +127,7 @@ copyright = "Team CloudONE"
 latest = "v1.9.6"
 #archived_version = true
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/spaceone-dev/docs"
+github_repo = "https://github.com/cloudforet-io/docs"
 body_classes = "georgia bg-near-white"
 # Enable Algolia DocSearch
 algolia_docsearch = false

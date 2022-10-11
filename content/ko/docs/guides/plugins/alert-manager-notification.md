@@ -18,8 +18,8 @@ description: >
 
 | **플러그인** | **설정 가이드 링크** |
 | --- | --- |
-| Telegram | https://github.com/spaceone-dev/plugin-telegram-noti-protocol/blob/master/docs/ko/GUIDE.md |
-| Slack | https://github.com/spaceone-dev/plugin-slack-noti-protocol/blob/master/docs/ko/GUIDE.md |
+| Telegram | https://github.com/cloudforet-io/plugin-telegram-noti-protocol/blob/master/docs/ko/GUIDE.md |
+| Slack | https://github.com/cloudforet-io/plugin-slack-noti-protocol/blob/master/docs/ko/GUIDE.md |
 | Email | 별도 설정 없이 사용가능 |
 | SMS | 별도 설정 없이 사용가능 |
 | Voice Call | 별도 설정 없이 사용가능 |

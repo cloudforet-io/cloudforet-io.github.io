@@ -13,7 +13,7 @@ no_list: true
 This guide explains the new SpaceONE API specification which extends the spaceone-api.
 
 ~~~
-git clone https://github.com/spaceone-dev/api.git
+git clone https://github.com/cloudforet-io/api.git
 ~~~
 
 ## Create new API spec file

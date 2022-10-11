@@ -17,13 +17,13 @@ SpaceONE provides various EKS installation guides.
 | Option 2 | Create ***EKS Cluster*** in existing VPC |
 
 This example shows the Option 1.<br>
-https://github.com/spaceone-dev/launchpad.git
+https://github.com/cloudforet-io/launchpad.git
 
 ### Configure environments
 Prepare your AWS credentials. Put your ~/.aws/credentials
 
 ~~~bash
-git clone https://github.com/spaceone-dev/launchpad.git
+git clone https://github.com/cloudforet-io/launchpad.git
 cd launchpad/spaceone/eks/terraform
 ~~~
 
@@ -115,5 +115,5 @@ helm install spaceone -f values.yaml -f database.yaml -f frontend.yaml spaceone/
 * [How to install kubectl](https://kubernetes.io/docs/tasks/tools/)
 * [How to install aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
 * [How to install AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
-* [How to install External DNS](https://github.com/spaceone-dev/launchpad/tree/master/spaceone/external-dns)
+* [How to install External DNS](https://github.com/cloudforet-io/launchpad/tree/master/spaceone/external-dns)
 

@@ -25,7 +25,7 @@ Before contributing to this document, the following points are needed.
 Make sure that your `docs` fork is up-to-date with the `spaceone-dev/docs` 
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/spaceone-dev/docs
+git clone --recurse-submodules --depth 1 https://github.com/cloudforet-io/docs
 
 ```
 

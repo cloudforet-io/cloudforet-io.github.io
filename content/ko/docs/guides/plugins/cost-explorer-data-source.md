@@ -18,4 +18,4 @@ description: >
 
 | **플러그인** | **설정 가이드 링크** |
 | --- | --- |
-| AWS hyperbilling cost datasource | https://github.com/spaceone-dev/plugin-aws-hyperbilling-cost-datasource/blob/master/docs/ko/GUIDE.md |
+| AWS hyperbilling cost datasource | https://github.com/cloudforet-io/plugin-aws-hyperbilling-cost-datasource/blob/master/docs/ko/GUIDE.md |

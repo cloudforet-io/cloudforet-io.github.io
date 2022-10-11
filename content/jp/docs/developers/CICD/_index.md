@@ -29,7 +29,7 @@ no_list: true
 
 </br>
 
-* spaceone-dev/spaceone GitHub Repository : https://github.com/spaceone-dev/spaceone  
+* spaceone-dev/spaceone GitHub Repository : https://github.com/cloudforet-io/spaceone  
 
 </br>
 

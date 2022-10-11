@@ -28,6 +28,6 @@ To check the details, go to the `.github/workflow directory` in each directory.
 
 </br>
 
-* api repository : [spaceone-dev/api GitHub workflow file link](https://github.com/spaceone-dev/api/tree/master/.github/workflows)
-* python-core repository : [spaceone-dev/python-core GitHub workflow file link](https://github.com/spaceone-dev/python-core/tree/master/.github/workflows)
+* api repository : [spaceone-dev/api GitHub workflow file link](https://github.com/cloudforet-io/api/tree/master/.github/workflows)
+* python-core repository : [spaceone-dev/python-core GitHub workflow file link](https://github.com/cloudforet-io/python-core/tree/master/.github/workflows)
 

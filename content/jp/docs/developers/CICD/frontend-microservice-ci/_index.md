@@ -24,5 +24,5 @@ To check the details, go to the `.github/workflow` directory in each directory. 
 
 </br>
 
-* console repository : [spaceone-dev/console GitHub workflow file link](https://github.com/spaceone-dev/console/tree/master/.github/workflows)
+* console repository : [spaceone-dev/console GitHub workflow file link](https://github.com/cloudforet-io/console/tree/master/.github/workflows)
 

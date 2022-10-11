@@ -15,7 +15,7 @@ You need following installed locally
 Before we start, install the dependencies, Clone the repository and navigate to the directory. 
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/spaceone-dev/docs
+git clone --recurse-submodules --depth 1 https://github.com/cloudforet-io/docs
 
 cd docs
 

@@ -105,7 +105,7 @@ Based on micro service types like frontend, backend, or supervisor, the contents
 {{< alert title="Template Samples" >}}
 	Since every backend services has same templates files, spaceone provides sample of templates directory.
 	Template Sample URL:
-	https://github.com/spaceone-dev/spaceone/tree/master/helm_templates
+	https://github.com/cloudforet-io/spaceone/tree/master/helm_templates
 {{< /alert >}}
 
 ![](/docs/developers/architecture/deployment/img/spaceone_helm_deployment.png)

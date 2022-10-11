@@ -7,7 +7,7 @@ description: >
     스페이스원에 연결하기 위한 인증 키인 **API 키**를 생성하고, 이를 이용하여 프로그래밍을 하거나 **CLI**를 통해 커맨드로 클라우드포레를 제어할 수 있습니다.
 ---
 
-클라우드포레가 제공하는 커맨드라인 도구인 [**Spacectl**](https://github.com/spaceone-dev/spacectl)을 사용하기 위해서는 **API 키**가 필요합니다.
+클라우드포레가 제공하는 커맨드라인 도구인 [**Spacectl**](https://github.com/cloudforet-io/spacectl)을 사용하기 위해서는 **API 키**가 필요합니다.
 
 ## API 키 생성하기
 

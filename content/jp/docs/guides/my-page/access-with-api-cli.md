@@ -7,7 +7,7 @@ description: >
     Space  ONEに接続するための認証キーである**APIキー**を作成すると、これを利用してプログラミングしたり、**CLI**を利用してコマンドでクラウドフォレをコントロールできます。
 ---
 
-クラウドフォレが提供するコマンドラインツール[**Spacectl**](https://github.com/spaceone-dev/spacectl)を利用するためには、**APIキー**が必要です。
+クラウドフォレが提供するコマンドラインツール[**Spacectl**](https://github.com/cloudforet-io/spacectl)を利用するためには、**APIキー**が必要です。
 
 ## APIキーを作成する
 
