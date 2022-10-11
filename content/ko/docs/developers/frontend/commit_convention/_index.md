@@ -10,9 +10,9 @@ no_list: true
 
 
 프론트엔드 커밋 컨벤션에 대한 문서입니다.
-[Console](https://github.com/spaceone-dev/console),
-[Design System](https://github.com/spaceone-dev/spaceone-design-system),
-[Core Lib](https://github.com/spaceone-dev/console-core-lib)
+[Console](https://github.com/cloudforet-io/console),
+[Design System](https://github.com/cloudforet-io/spaceone-design-system),
+[Core Lib](https://github.com/cloudforet-io/console-core-lib)
 
 ## 커밋 메시지 구조
 

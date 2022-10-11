@@ -80,7 +80,7 @@ Register helm chart for SpaceONE.
 ### Install SpaceONE with helm chart
 
 {{% pageinfo color=“300” %}}
-**git clone https://github.com/spaceone-dev/charts.git**
+**git clone https://github.com/cloudforet-io/charts.git**
 
 **cd charts/examples/v1.8.1**
 
