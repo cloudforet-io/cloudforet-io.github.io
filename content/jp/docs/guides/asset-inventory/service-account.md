@@ -2,7 +2,7 @@
 title: "サービスアカウント"
 linkTitle: "サービスアカウント"
 weight: 5
-date: 2022-10-05
+date: 2022-10-12
 description: >
     **サービスアカウント**では、各クラウドサービスのアカウントを手軽に統合・管理・追跡することができます。
 ---
@@ -12,30 +12,31 @@ description: >
 `General Account`,`Trusted Account`2つのタイプのアカウントが作成できます。	
 
 {{<alert>}}
-• `General Account` :
+- __`General Account`__ :
     
-  オプション1）個別暗号化キーでアカウントを直接登録することができます。	
+  - オプション1）個別暗号化キーでアカウントを直接登録することができます。	
     
-  オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。	
+  - オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。	
     
-  オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。	
+  - オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。	
     
-• `Trusted Account`:
+- __`Trusted Account`__:
     
-  `General Account`とアタッチできる`Trusted Account`を作成することができます。
+  - `General Account`とアタッチできる`Trusted Account`を作成することができます。
   
-  アタッチされたTrustedAccountの暗号化キーはGeneralAccountがリソースにアクセスするとき参照されます。
+  - アタッチされたTrustedAccountの暗号化キーはGeneralAccountがリソースにアクセスするとき参照されます。
 {{</alert>}}
+
 
 ### General Accountを作成する
 
 (1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
+![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-img/service-account-provider-menu-2.png)
 
 (2) [追加]ボタンをクリックします。
 
-![service-account-add-button](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
+![service-account-add-button](/jp/docs/guides/getting-started/service-account-img/service-account-add-button.png)
 
 (3) サービスアカウントの作成フォームを作成します。
 
@@ -45,30 +46,38 @@ description: >
 
 (3-2) 基本情報を入力します。
 
-![service-account-add-base-info](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info.png)
+![service-account-add-base-info](/jp/docs/guides/getting-started/service-account-img/service-account-add-base-info.png)
 
 (3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
-![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
+![service-account-connect-project](/jp/docs/guides/getting-started/service-account-img/service-account-connect-project.png)
 
 (3-4) 暗号化キーの情報を入力します。
 
-![service-account-add-key](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key.png)
+- オプション1）個別暗号化キーでアカウントを直接登録することができます。	
+![service-account-add-key-1-1](/jp/docs/guides/getting-started/service-account-img/service-account-add-key-1-1.png)
+    
+- オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。
+ > AWSの場合、既存の`Trusted Account`をアタッチすることで簡単にAssume Roleを作成することができます。特定の`Trusted Account`を選択すると、その情報が自動的に適用されますので、残りの情報を入力するだけで良いです。
+![service-account-add-key-1-2](/jp/docs/guides/getting-started/service-account-img/service-account-add-key-1-2.png)	
+    
+- オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。
+![service-account-add-key-1-3](/jp/docs/guides/getting-started/service-account-img/service-account-add-key-1-3.png)	
 
-- 暗号化キーなしでもサービスアカウントを作成することができます。	
-- AWSの場合、既存の`Trusted Account`をアタッチすることで簡単にAssume Roleを作成することができます。特定の`Trusted Account`を選択すると、その情報が自動的に適用されますので、残りの情報を入力するだけで良いです。	
 
 (4) [保存]ボタンをクリックすると完了します。
+
+
 
 ### Trusted Accountを作成する
 
 (1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-setup-img/service-account-provider-menu.png)
+![service-account-provider-menu](/jp/docs/guides/getting-started/service-account-img/service-account-provider-menu.png)
 
 (2) [追加]ボタンをクリックします。
 
-![service-account-add-button](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-button.png)
+![service-account-add-button](/jp/docs/guides/getting-started/service-account-img/service-account-add-button.png)
 
 (3) サービスアカウントの作成フォームを作成します。
 
@@ -78,15 +87,15 @@ description: >
 
 (3-2) 基本情報を入力します。
 
-![service-account-add-base-info-2-2](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info-2-2.png)
+![service-account-add-base-info-2-2](/jp/docs/guides/getting-started/service-account-img/service-account-add-base-info-2-2.png)
 
 (3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
 
-![service-account-connect-project](/jp/docs/guides/getting-started/service-account-setup-img/service-account-connect-project.png)
+![service-account-connect-project](/jp/docs/guides/getting-started/service-account-img/service-account-connect-project.png)
 
 (3-4) 暗号化キーの情報を入力します。
 
-![service-account-add-key-2-2](/jp/docs/guides/getting-started/service-account-setup-img/service-account-add-key-2-2.png)
+![service-account-add-key-2-2](/jp/docs/guides/getting-started/service-account-img/service-account-add-key-2-2.png)
 
 (4) [保存]ボタンをクリックすると完了します。
 
