@@ -78,7 +78,7 @@ There are two types of service accounts for different needs and better security.
 
 (3-2) Enter basic information.
 
-![service-account-add-base-info-2-2](/docs/guides/getting-started/service-account-setup-img/service-account-add-base-info-2-2.png)
+![service-account-add-base-info-2-2](/docs/guides/asset-inventory/service-account-img/service-account-add-base-info-2-2.png)
 
 (3-3) Specify the project to collect resources from according to the service account.
 
@@ -86,7 +86,7 @@ There are two types of service accounts for different needs and better security.
 
 (3-4) Enter encryption key information.
 
-![service-account-add-key-2-2](/docs/guides/getting-started/service-account-setup-img/service-account-add-key-2-2.png)
+![service-account-add-key-2-2](/docs/guides/asset-inventory/service-account-img/service-account-add-key-2-2.png)
 
 (4) Click the [Save] button to complete.
 
