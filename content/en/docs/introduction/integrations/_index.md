@@ -15,25 +15,25 @@ SpaceONE은 Plugin Architecture 기반으로 개발되어, 각각의 Core Servic
 _**Inventory.Collector**_ Type의 Plugin은 SpaceONE의 Asset 관리 기능의 핵심 역할을 수행합니다.
 다양한 리전에 숨어있는 여러 Provider의 Cloud Resource를 자동으로 탐색하여 체계적으로 분류하여 줍니다.
 
-### [AWS Cloud Service Plugin](https://github.com/spaceone-dev/plugin-aws-ec2-inven-collector)
+### [AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)
 수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
-### [MS Azure Cloud Service Plugin](https://github.com/spaceone-dev/plugin-azure-cloud-service-inven-collector)
+### [MS Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)
 Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
 ### [Google Cloud Service Plugin](https://github.com/spaceone-dev/plugin-google-cloud-service-inven-collector)
 Google Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
-### [Oracle Cloud Service Plugin](https://github.com/spaceone-dev/plugin-oracle-cloud-service-inven-collector)
+### [Oracle Cloud Service Plugin](https://github.com/cloudforet-io/plugin-oracle-cloud-service-inven-collector)
 Oracle Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
 ### [Alibaba Cloud Service Plugin](https://github.com/spaceone-dev/plugin-alibaba-cloud-ecs-inven-collector)
 Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 <!-- {{< cardpane >}}
-{{< card header="**Amazon Web Service**" title="AWS Cloud Service Plugin" subtitle="수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See AWS Cloud Service Plugin](https://github.com/spaceone-dev/plugin-aws-ec2-inven-collector)">}}
+{{< card header="**Amazon Web Service**" title="AWS Cloud Service Plugin" subtitle="수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)">}}
 ![AWS](/docs/references/supported_technologies/supported_technologies_img/aws_img.png)
 {{< /card >}}
-{{< card header="**MS Azure**" title="MS Azure Cloud Service Plugin" subtitle="Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Azure Cloud Service Plugin](https://github.com/spaceone-dev/plugin-azure-cloud-service-inven-collector)" >}}
+{{< card header="**MS Azure**" title="MS Azure Cloud Service Plugin" subtitle="Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)" >}}
 ![Azure](/docs/references/supported_technologies/supported_technologies_img/azure_img.png)
 {{< /card >}}
 {{< card header="**Google Cloud**" title="Google Cloud Service Plugin" subtitle="Google Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Google Cloud Service Plugin]()" >}}
@@ -51,8 +51,8 @@ Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색�
 _**Identity.auth**_ Type의 Plugin은 SpaceONE User의 인증 관리 역할을 수행합니다.
 Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다.
 
-### [Google oAuth Identity Plugin](https://github.com/spaceone-dev/plugin-googleoauth2-identity-auth)
-### [KeyCloak Identity Plugin](https://github.com/spaceone-dev/plugin-keycloak-identity-auth)
+### [Google oAuth Identity Plugin](https://github.com/cloudforet-io/plugin-googleoauth2-identity-auth)
+### [KeyCloak Identity Plugin](https://github.com/cloudforet-io/plugin-keycloak-identity-auth)
 <!-- {{< cardpane >}}
 {{< card header="**Google oAuth2**" title="Google oAuth Identity Plugin" subtitle="" footer="[See Google Auth Plugin]()" >}}
 ![Google oAuth](/docs/references/supported_technologies/supported_technologies_img/google_img.png)
@@ -66,9 +66,9 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 
 ### DataSource
 
-### [AWS CloudWatch DataSource Plugin](https://github.com/spaceone-dev/plugin-aws-cloudwatch-mon-datasource)
-### [Azure Monitor DataSource Plugin](https://github.com/spaceone-dev/plugin-azure-monitor-mon-datasource)
-### [Google Cloud Monitor DataSource Plugin](https://github.com/spaceone-dev/plugin-google-stackdriver-mon-datasource)
+### [AWS CloudWatch DataSource Plugin](https://github.com/cloudforet-io/plugin-aws-cloudwatch-mon-datasource)
+### [Azure Monitor DataSource Plugin](https://github.com/cloudforet-io/plugin-azure-monitor-mon-datasource)
+### [Google Cloud Monitor DataSource Plugin](https://github.com/cloudforet-io/plugin-google-stackdriver-mon-datasource)
 <br>
 <!-- {{< cardpane >}}
 {{< card header="**AWS CloudWatch**" title="AWS CloudWatch DataSource Plugin" subtitle="" footer="[See AWS CloudWatch DataSource Plugin]()" >}}
@@ -84,9 +84,9 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 
 ### Webhook
 
-### [AWS Simple Notification Webhook Plugin](https://github.com/spaceone-dev/plugin-aws-sns-mon-webhook)
-### [Zabbix Webhook Plugin](https://github.com/spaceone-dev/plugin-zabbix-mon-webhook)
-### [Grafana Webhook Plugin](https://github.com/spaceone-dev/plugin-grafana-mon-webhook)
+### [AWS Simple Notification Webhook Plugin](https://github.com/cloudforet-io/plugin-aws-sns-mon-webhook)
+### [Zabbix Webhook Plugin](https://github.com/cloudforet-io/plugin-zabbix-mon-webhook)
+### [Grafana Webhook Plugin](https://github.com/cloudforet-io/plugin-grafana-mon-webhook)
 <br>
 <!-- {{< cardpane >}}
 {{< card header="**AWS SNS**" title="AWS Simple Notification Webhook Plugin" subtitle="" footer="[See AWS Simple Monitoring Webhook Plugin]()" >}}
@@ -102,11 +102,11 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 
 ### Notification
 
-### [API Direct Connect Protocol Plugin](https://github.com/spaceone-dev/plugin-api-direct-mon-webhook)
-### [AWS SNS Protocol Plugin](https://github.com/spaceone-dev/plugin-aws-sns-mon-webhook)
-### [Slack Protocol Plugin](https://github.com/spaceone-dev/plugin-slack-noti-protocol)
-### [Telegram Protocol Plugin](https://github.com/spaceone-dev/plugin-telegram-noti-protocol)
-### [Email Protocol Plugin](https://github.com/spaceone-dev/plugin-email-noti-protocol)
+### [API Direct Connect Protocol Plugin](https://github.com/cloudforet-io/plugin-api-direct-mon-webhook)
+### [AWS SNS Protocol Plugin](https://github.com/cloudforet-io/plugin-aws-sns-mon-webhook)
+### [Slack Protocol Plugin](https://github.com/cloudforet-io/plugin-slack-noti-protocol)
+### [Telegram Protocol Plugin](https://github.com/cloudforet-io/plugin-telegram-noti-protocol)
+### [Email Protocol Plugin](https://github.com/cloudforet-io/plugin-email-noti-protocol)
 <!-- {{< cardpane >}}
 {{< card header="AWS Direct Connect" title="AWS Direct Connect Protocol Plugin" subtitle="" footer="[See AWS Direct Connect Protocol Plugin]()" >}}
 ![AWS Direct Connect Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_direct_connect_img.png)
@@ -127,7 +127,7 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 
 ## Billing
 
-### [Megazone Hyperbilling Billing Service](https://github.com/spaceone-dev/plugin-aws-hyperbilling-bill-datasource)
+### [Megazone Hyperbilling Billing Service](https://github.com/cloudforet-io/plugin-aws-hyperbilling-bill-datasource)
 <!-- {{< cardpane >}}
 {{< card header="**Megazone Hyperbilling**" title="Megazone Hyperbilling Billing Service" subtitle="" footer="[See Hyperbilling DataSource Plugin]()" >}}
 ![Hyperbilling DataSource Plugin](/docs/references/supported_technologies/supported_technologies_img/megazone_img.png)
@@ -136,7 +136,7 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 
 ## Power Scheduler
 
-### [AWS Power Controller Plugin](https://github.com/spaceone-dev/plugin-aws-state-inven-collector)
+### [AWS Power Controller Plugin](https://github.com/cloudforet-io/plugin-aws-state-inven-collector)
 ### [Google Power Controller Plugin](https://github.com/spaceone-dev/plugin-google-cloud-ps-controller)
 <!-- {{< cardpane >}}
 {{< card header="**AWS Power Controller**" title="AWS Power Controller Plugin" subtitle="" footer="[See AWS Power Controller Plugin]()" >}}

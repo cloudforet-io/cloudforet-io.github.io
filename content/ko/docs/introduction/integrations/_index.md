@@ -22,13 +22,13 @@ _**Inventory.Collector**_ Type의 Plugin은 SpaceONE의 Asset 관리 기능의 �
 ### [MS Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)
 Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
-### [Google Cloud Service Plugin](https://github.com/cloudforet-io/plugin-google-cloud-service-inven-collector)
+### [Google Cloud Service Plugin](https://github.com/spaceone-dev/plugin-google-cloud-service-inven-collector)
 Google Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
 ### [Oracle Cloud Service Plugin](https://github.com/cloudforet-io/plugin-oracle-cloud-service-inven-collector)
 Oracle Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
-### [Alibaba Cloud Service Plugin](https://github.com/cloudforet-io/plugin-alibaba-cloud-ecs-inven-collector)
+### [Alibaba Cloud Service Plugin](https://github.com/spaceone-dev/plugin-alibaba-cloud-ecs-inven-collector)
 Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 <!-- {{< cardpane >}}
 {{< card header="**Amazon Web Service**" title="AWS Cloud Service Plugin" subtitle="수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)">}}
@@ -138,7 +138,7 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 ## Power Scheduler
 
 ### [AWS Power Controller Plugin](https://github.com/cloudforet-io/plugin-aws-state-inven-collector)
-### [Google Power Controller Plugin](https://github.com/cloudforet-io/plugin-google-cloud-ps-controller)
+### [Google Power Controller Plugin](https://github.com/spaceone-dev/plugin-google-cloud-ps-controller)
 <!-- {{< cardpane >}}
 {{< card header="**AWS Power Controller**" title="AWS Power Controller Plugin" subtitle="" footer="[See AWS Power Controller Plugin]()" >}}
 ![AWS Power Controller Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_autoscaling_img.png)

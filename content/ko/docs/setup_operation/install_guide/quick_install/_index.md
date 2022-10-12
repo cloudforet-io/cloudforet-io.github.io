@@ -70,7 +70,7 @@ I highly recommend changing kubenetes namespace to spaceone.
 Register helm chart for SpaceONE.
 
 {{% pageinfo color=“300” %}}
-**helm repo add spaceone https://spaceone-dev.github.io/charts**
+**helm repo add spaceone https://cloudforet-io.github.io/charts**
 
 **helm repo list**
 

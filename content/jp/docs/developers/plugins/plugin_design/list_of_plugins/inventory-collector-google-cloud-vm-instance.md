@@ -19,7 +19,7 @@ Google Cloud VM Instance
 
 ### Repository
 
-[plugin-google-cloud-compute-inven-collector](https://github.com/cloudforet-io/plugin-google-cloud-compute-inven-collector)
+[plugin-google-cloud-compute-inven-collector](https://github.com/spaceone-dev/plugin-google-cloud-compute-inven-collector)
 
 
 ## Operation Flow

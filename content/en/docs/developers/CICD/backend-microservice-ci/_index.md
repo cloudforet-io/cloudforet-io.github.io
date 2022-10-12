@@ -24,5 +24,5 @@ To check the details, go to the `.github/workflow` directory in each directory. 
 
 </br>
 
-* identity repository : [spaceone-dev/identity GitHub workflow file link](https://github.com/spaceone-dev/identity/tree/master/.github/workflows)
+* identity repository : [cloudforet-io/identity GitHub workflow file link](https://github.com/cloudforet-io/identity/tree/master/.github/workflows)
 

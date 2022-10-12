@@ -25,15 +25,15 @@ no_list: true
 
 </br>
 
-## Role of spaceone-dev/spaceone Repository
+## Role of cloudforet-io/spaceone Repository
 
 </br>
 
-* spaceone-dev/spaceone GitHub Repository : https://github.com/spaceone-dev/spaceone  
+* cloudforet-io/spaceone GitHub Repository : https://github.com/cloudforet-io/spaceone  
 
 </br>
 
-Before we discuss the CI process of each repository, we should check the `spaceone-dev/spaceone` repository (or ‘root’ repository). Root repository serves a role as a trigger of all repositories to start the CI process. Through manually starting one of the GitHub Action the root repository has, most of the repositories detect the action and their GitHub Action is triggered.   
+Before we discuss the CI process of each repository, we should check the `cloudforet-io/spaceone` repository (or ‘root’ repository). Root repository serves a role as a trigger of all repositories to start the CI process. Through manually starting one of the GitHub Action the root repository has, most of the repositories detect the action and their GitHub Action is triggered.   
 
 </br>
 
@@ -117,13 +117,13 @@ CI process of each repositories can be organized by 4 different kinds of trigger
 If the master branch in GitHub get pushed, GitHub Action occurs by `CI_master_push.yml` file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, SpaceONE team is notified through Slack.     
 
 2. **Create Release Branch** :     
-Each repository can create release branch manually or by `spaceone-dev/spaceone` repository’s event. After initialization, GitHub Action triggers branch tagging action.       
+Each repository can create release branch manually or by `cloudforet-io/spaceone` repository’s event. After initialization, GitHub Action triggers branch tagging action.       
 
 3. **Branch Tagging** :      
 By being triggered by the event above or getting pushed with version tags, each repository can tag branch with GitHub Action by updating the version in both local and master branch, building the software, and uploading the output to registries such as Docker or PyPi. After all process is done, Slack notification is automatically sent to SpaceONE team.      
 
 4. **Reflect Branch Update** :       
-The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or `spaceone-dev/spaceone` repository GitHub Action.         
+The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or `cloudforet-io/spaceone` repository GitHub Action.         
 
 </br>
 </br>

@@ -40,7 +40,7 @@ To check the details, go to the `.github/workflow` directory in each directory.
 
 </br>
 
-* spacectl repository : [spaceone-dev/spacectl GitHub workflow file link](https://github.com/spaceone-dev/spacectl/tree/master/.github/workflows)
-* spaceone-initializer repository : [spaceone-dev/spaceone-initializer GitHub workflow file link](https://github.com/spaceone-dev/spaceone-initializer/tree/master/.github/workflows)
-* tester repository : [spaceone-dev/tester GitHub workflow file link](https://github.com/spaceone-dev/tester/tree/master/.github/workflows)
+* spacectl repository : [cloudforet-io/spacectl GitHub workflow file link](https://github.com/cloudforet-io/spacectl/tree/master/.github/workflows)
+* spaceone-initializer repository : [cloudforet-io/spaceone-initializer GitHub workflow file link](https://github.com/cloudforet-io/spaceone-initializer/tree/master/.github/workflows)
+* tester repository : [cloudforet-io/tester GitHub workflow file link](https://github.com/cloudforet-io/tester/tree/master/.github/workflows)
 

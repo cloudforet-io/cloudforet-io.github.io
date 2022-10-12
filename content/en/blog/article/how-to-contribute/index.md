@@ -22,7 +22,7 @@ Before contributing to this document, the following points are needed.
 
 ### Clone the docs repository 
 
-Make sure that your `docs` fork is up-to-date with the `spaceone-dev/docs` 
+Make sure that your `docs` fork is up-to-date with the `cloudforet-io/docs` 
 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/cloudforet-io/docs

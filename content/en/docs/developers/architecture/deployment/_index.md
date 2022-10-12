@@ -12,10 +12,10 @@ description: >
 The SpaceONE can be deployed by Helm chart.
 Each micro services has its own Helm chart, and the top chart, spaceone/spaceone contains all sub charts like console, identity, inventory and plugin.
 
-SpaceONE provides own Helm chart repository. The repository URL is ***https://spaceone-dev.github.io/charts***
+SpaceONE provides own Helm chart repository. The repository URL is ***https://cloudforet-io.github.io/charts***
 
 ~~~
-helm repo add spaceone https://spaceone-dev.github.io/charts
+helm repo add spaceone https://cloudforet-io.github.io/charts
 helm repo list
 helm repo update
 
@@ -105,7 +105,7 @@ Based on micro service types like frontend, backend, or supervisor, the contents
 {{< alert title="Template Samples" >}}
 	Since every backend services has same templates files, spaceone provides sample of templates directory.
 	Template Sample URL:
-	https://github.com/spaceone-dev/spaceone/tree/master/helm_templates
+	https://github.com/cloudforet-io/spaceone/tree/master/helm_templates
 {{< /alert >}}
 
 ![](/docs/developers/architecture/deployment/img/spaceone_helm_deployment.png)

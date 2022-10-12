@@ -18,4 +18,4 @@ and use it in Cloudforet.
 
 | **Plugins** | **Setup guide link** |
 | --- | --- |
-| AWS hyperbilling cost datasource | https://github.com/spaceone-dev/plugin-aws-hyperbilling-cost-datasource/blob/master/docs/ko/GUIDE.md |
+| AWS hyperbilling cost datasource | https://github.com/cloudforet-io/plugin-aws-hyperbilling-cost-datasource/blob/master/docs/ko/GUIDE.md |

@@ -77,7 +77,7 @@ kcd spaceone
 ### Helm repo
 
 ~~~bash
-helm repo add spaceone https://spaceone-dev.github.io/charts
+helm repo add spaceone https://cloudforet-io.github.io/charts
 helm repo update
 helm search repo
 ~~~

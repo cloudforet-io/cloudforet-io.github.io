@@ -18,8 +18,8 @@ In addition, the **Email**, **SMS** and **Voice call** are available **Without a
 
 | **Plugins** | **Setup guide link** |
 | --- | --- |
-| Telegram | https://github.com/spaceone-dev/plugin-telegram-noti-protocol/blob/master/docs/ko/GUIDE.md |
-| Slack | https://github.com/spaceone-dev/plugin-slack-noti-protocol/blob/master/docs/ko/GUIDE.md |
+| Telegram | https://github.com/cloudforet-io/plugin-telegram-noti-protocol/blob/master/docs/ko/GUIDE.md |
+| Slack | https://github.com/cloudforet-io/plugin-slack-noti-protocol/blob/master/docs/ko/GUIDE.md |
 | Email | Can be used without additional settings |
 | SMS | Can be used without additional settings |
 | Voice call | Can be used without additional settings |

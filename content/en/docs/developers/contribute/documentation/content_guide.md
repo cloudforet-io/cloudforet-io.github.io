@@ -11,7 +11,7 @@ description: >
 Go to the parent page of the page creation location. Then, click the 'Create child page' button at the bottom right.<br><br>
 or:
 <br>
-You can also fork from [the repository](https://github.com/spaceone-dev/docs) and work locally.
+You can also fork from [the repository](https://github.com/cloudforet-io/docs) and work locally.
 
 ## Choosing a title and filename
 Create a filename that uses the words in your title separated by underscroe (_). For example, the topic with title Using [Project Management](/docs/guides_v1/project/project_management/) has filename project_management.md.

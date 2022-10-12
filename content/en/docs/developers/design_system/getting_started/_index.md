@@ -4,7 +4,7 @@ linkTitle: "Getting Started"
 weight: 3
 date: 2022-05-31
 description: >
-    이 페이지는 [SpaceOne Design System](https://github.com/spaceone-dev/spaceone-design-system) 개발을 시작하기 위한 안내문서입니다.
+    이 페이지는 [SpaceOne Design System](https://github.com/cloudforet-io/spaceone-design-system) 개발을 시작하기 위한 안내문서입니다.
 no_list: true
 ---
 
@@ -15,13 +15,13 @@ no_list: true
 
 현재 스페이스원의 콘솔은 오픈소스로 운영중에 있습니다.
 
-개발에 기여하기위해 먼저 [Design System 레포지토리](https://github.com/spaceone-dev/spaceone-design-system)를 개인 github 계정에 포크해 줍니다.
+개발에 기여하기위해 먼저 [Design System 레포지토리](https://github.com/cloudforet-io/spaceone-design-system)를 개인 github 계정에 포크해 줍니다.
 
 ### Clone
 
 이후 포크해온 레포지토리를 로컬로 클론해 줍니다.
 
-서브모듈로 [assets](https://github.com/spaceone-dev/console-assets)과 [번역 관련 레포지토리](https://github.com/spaceone-dev/design-system-translation.git)가 사용중이기 때문에 함께 초기화합니다.
+서브모듈로 [assets](https://github.com/cloudforet-io/console-assets)과 [번역 관련 레포지토리](https://github.com/cloudforet-io/design-system-translation.git)가 사용중이기 때문에 함께 초기화합니다.
 
 ```shell
 git clone --recurse-submodules https://github.com/[github username]/spaceone-design-system

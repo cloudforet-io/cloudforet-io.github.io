@@ -48,7 +48,7 @@ kubectl config set-context $(kubectl config current-context) --namespace spaceon
 
 Register helm chart for SpaceONE.
 ~~~bash
-helm repo add spaceone https://spaceone-dev.github.io/charts
+helm repo add spaceone https://cloudforet-io.github.io/charts
 helm repo list
 helm repo update
 ~~~

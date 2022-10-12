@@ -26,10 +26,10 @@ We can follow the plugin CI process, step by step.
 
 **Step 1.** `push_sync_ci.yaml` in each plugin repository is triggered by master branch push or in a manual way.
 
-**Step 2.** `push_sync_ci.yaml` runs `spaceone-dev/actions/.github/worflows/deploy.yaml`.   
+**Step 2.** `push_sync_ci.yaml` runs `cloudforet-io/actions/.github/worflows/deploy.yaml`.   
 
-**Step 2-1.** `spaceone/actions/.github/worflows/deploy.yaml` runs `spaceone-dev/actions/src/main.py`.     
-1. `spaceone-dev/actions/src/main.py` updates each plugin repository workflow files based on the repository characteristics distinguished by topics. Newest version files of all plugin repository workflows are managed in `spaceone-dev/actions`.  
+**Step 2-1.** `spaceone/actions/.github/worflows/deploy.yaml` runs `cloudforet-io/actions/src/main.py`.     
+1. `cloudforet-io/actions/src/main.py` updates each plugin repository workflow files based on the repository characteristics distinguished by topics. Newest version files of all plugin repository workflows are managed in `cloudforet-io/actions`.  
 
 **Step 2-2.** `spaceone/actions/.github/worflows/deploy.yaml` runs `push_build_dev.yaml` in each plugin repository   
 1. `push_build_dev.yaml` proceeds versioning based on current date.   
@@ -60,7 +60,7 @@ To build and release the docker image of plugin repositories, plugins use `dispa
 </br>
 
 
-For further details, you can check our GitHub `spaceone-dev/actions`. 
+For further details, you can check our GitHub `cloudforet-io/actions`. 
 
 </br>
 

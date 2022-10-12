@@ -36,7 +36,7 @@ no_list: true
 ## Resources
 
 ### GitHub
-{{< link-button background-color="white" url="https://github.com/spaceone-dev/spaceone-design-system" text="디자인 시스템 저장소" />}}
+{{< link-button background-color="white" url="https://github.com/cloudforet-io/spaceone-design-system" text="디자인 시스템 저장소" />}}
 
 <br>
 <br>
