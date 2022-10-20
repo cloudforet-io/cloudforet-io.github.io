@@ -41,11 +41,23 @@ When you select the exchange rate you want to apply from the [Exchange rate] dro
 ### Group statistics settings
 Data is grouped based on values that a user selects ​​in group statistics.
 
-![cost-analysis-groupby-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01.png)
+![cost-analysis-groupby-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01-en.png)
 
 You can select more than one result from group statistics. In the chart, only one selected result of group statistics is displayed, and in the table, you can see all the results from group statistics that you select.
 
-![cost-analysis-groupby-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02.png)
+![cost-analysis-groupby-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02-en.png)
+
+In addition to the groups shown by default, it is also possible to add other groups to categorize your cost in the way you want.
+
+(1) Click the [settings] icon and then click the [ + Add More ] button.
+![cost-analysis-groupby-03](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-03-en.png)
+
+(2) Search for the sepecific groups and add them.
+![cost-analysis-groupby-04](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-04-en.png)
+
+(3) By selecting the added groups, you can analyze your cost in better ways.
+![cost-analysis-groupby-05](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-05-en.png)
+
 
 ### Filter settings
 One or more filters can be selected as with the group statistics, and the value that is set by the user is filtered by the "and" condition.
@@ -56,11 +68,11 @@ One or more filters can be selected as with the group statistics, and the value 
 
 (2) When the [Filter settings] modal dialog opens, select the desired filter and click the [OK] button.
 
-![cost-analysis-filter-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02.png)
+![cost-analysis-filter-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02-en.png)
 
 
 ## Cost analysis query
-To eliminate the hassle of having to reset detailed criteria and period every time you enter the [Cost management > Cost analysis] page, we provide a feature of saving frequently used settings as a query.
+To eliminate the hassle of having to reset detailed criteria and period every time you enter the [Cost Explorer > Cost analysis] page, we provide a feature of saving frequently used settings as a query.
 {{<alert>}}
 Exchange rates are not stored in the query.
 {{</alert>}}

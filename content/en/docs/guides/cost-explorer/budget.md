@@ -8,7 +8,7 @@ description: >
 ---
 
 ## Creating a budget
-(1) Click the [Create budget] button at the top right of the [Cost management > Budget] page.
+(1) Click the [Create budget] button at the top right of the [Cost Explorer > Budget] page.
 
 ![budget-create-01](/docs/guides/cost-explorer/budget-img/budget-create-01.png)
 

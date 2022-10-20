@@ -22,7 +22,7 @@ This is a dashboard that charts data transfers and the status of costs that occu
 
 
 ## Creating a dashboard
-(1) Click the [Create dashboard] icon button in the left menu list on the [Cost management > Dashboard] page.
+(1) Click the [Create dashboard] icon button in the left menu list on the [Cost Explorer > Dashboard] page.
 
 ![cost-dashboard-create-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-01.png)
 
@@ -36,12 +36,12 @@ This is a dashboard that charts data transfers and the status of costs that occu
 
 ![cost-dashboard-create-03](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-03.png)
 
-(3) Select exposure method. `My dashboard` is visible only to a user, and `public` is visible to all users with `view` permission on the [Cost management > Dashboard] page.
+(3) Select exposure method. `My dashboard` is visible only to a user, and `public` is visible to all users with `view` permission on the [Cost Explorer > Dashboard] page.
 
 ![cost-dashboard-create-04](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-create-04.png)
 
 {{<alert title="If the public option is not visible">}}
-If you have `manage` permission on the [Cost management > Dashboard] page, you can create both public and my dashboards. However, if you have only `view` permission as a user, you can only create my dashboard.
+If you have `manage` permission on the [Cost Explorer > Dashboard] page, you can create both public and my dashboards. However, if you have only `view` permission as a user, you can only create my dashboard.
 
 For ways to set **Access permission**, see [here](/docs/guides/administration/iam-role/#create-role).
 {{</alert>}}
@@ -60,7 +60,7 @@ For ways to set **Access permission**, see [here](/docs/guides/administration/ia
 ![cost-dashboard-delete-02](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-delete-02.png)
 
 {{<alert title="If the [Delete] button is disabled">}}
-If you do not have `manage` permission on the [Cost management > Dashboard] page, or the dashboard you want to delete is set as your home dashboard, you cannot delete it.
+If you do not have `manage` permission on the [Cost Explorer > Dashboard] page, or the dashboard you want to delete is set as your home dashboard, you cannot delete it.
 {{</alert>}}
 
 (3) Click the [OK] button in the [Delete dashboard] modal dialog to delete the dashboard.
@@ -74,7 +74,7 @@ If you click the [Edit] button on the right side of the dashboard page, you can 
 ![cost-dashboard-edit-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-edit-01.png)
 
 {{<alert title="If the [Edit] button is disabled">}}
-If you do not have `manage` permission on the [Cost management > Dashboard] page, you cannot edit dashboards.
+If you do not have `manage` permission on the [Cost Explorer > Dashboard] page, you cannot edit dashboards.
 {{</alert>}}
 
 ### Editing the dashboard name
@@ -84,7 +84,7 @@ You can edit names of dashboards in the input form at the top.
 
 ### Adding widgets
 There are two widgets you can add: default and custom widgets.
-Default widgets are widgets that can be created with widget templates provided by Cloudforet, and custom widgets are widgets based on queries and created on the [Cost management > Cost analysis] page.
+Default widgets are widgets that can be created with widget templates provided by Cloudforet, and custom widgets are widgets based on queries and created on the [Cost Explorer > Cost analysis] page.
 
 #### Adding a default widget
 (1) Click the [Add widget] button on the right.
@@ -106,7 +106,7 @@ Default widgets are widgets that can be created with widget templates provided b
 #### Adding a custom widget
 {{<alert title="Cost analysis query">}}
 **Cost analysis query** is required to create custom widgets.
-Cost analysis queries can be created from the [Cost management > Cost analysis] page.
+Cost analysis queries can be created from the [Cost Explorer > Cost analysis] page.
 For detailed information, see [here](/docs/guides/cost-explorer/cost-analysis/#cost-analysis-query).
 {{</alert>}}
 
@@ -198,7 +198,7 @@ You can select the exchange rate from the [Exchange rate] dropdown at the top ri
 ![cost-dashboard-currency-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-currency-01.png)
 
 ### Home dashboard settings
-If you set a specific dashboard as your home dashboard, you will be taken directly to that dashboard page when you enter the [Cost management > Dashboard] page. Information at home dashboard settings is stored in your browser and not shared with other users.
+If you set a specific dashboard as your home dashboard, you will be taken directly to that dashboard page when you enter the [Cost Explorer > Dashboard] page. Information at home dashboard settings is stored in your browser and not shared with other users.
 
 ![cost-dashboard-home-dashboard-01](/docs/guides/cost-explorer/dashboard-img/cost-dashboard-home-dashboard-01.png)
 

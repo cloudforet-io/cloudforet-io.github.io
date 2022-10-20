@@ -111,15 +111,33 @@ description: >
 
 ### 클라우드 리소스 태그 관리하기
 
-클라우드 리소스에 태그를 추가하여 관리할 수 있습니다.
+클라우드 리소스에는 `Managed` , `Custom` 두가지 타입의 태그가 존재합니다. 
+개별 클라우드 리소스별로 해당 프로바이더로 부터 가져온 `Managed` 태그를 확인할 수 있으며, 별도로 `Custom` 태그를 추가하여 관리할 수 있습니다. 
+<br>
 
-(1) [태그] 탭 내부에서 [편집] 버튼을 클릭합니다.
+`키: 값` 의 형태로 구성된 각 태그는 리소스 검색시에 유용하게 이용할 수 있습니다. 
 
-![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-tab.png)
+![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-tag-search-ko.png)
 
-(2) 태그 페이지에서 `키: 값` 형태로 태그를 입력 후 [저장] 버튼을 클릭하여 완료합니다.
 
-![cloud-resource-tag-add](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-add.png)
+**[ Managed 태그 조회 하기 ]**
+
+- `Managed` 태그는 Cloudforet에서 직접 수정 및 삭제가 불가합니다.
+
+![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-view-managed-tag-ko.png)
+
+
+**[ Custom 태그 조회 하기 ]**
+
+(1) [Custom 태그 수정] 버튼을 클릭합니다.
+
+![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-btn-ko.png)
+
+(2) 커스텀 태그 수정 페이지에서 `키: 값` 형태로 태그를 입력 후 [저장] 버튼을 클릭하여 완료합니다.
+
+![cloud-resource-tag-tab](/ko/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-edit-ko.png)
+
+
 
 ### 클라우드 리소스에 연관된 멤버 확인하기
 

@@ -1,10 +1,10 @@
 ---
-title: "Cost management"
-linkTitle: "Cost management"
+title: "Cost Explorer"
+linkTitle: "Cost Explorer"
 weight: 4
 date: 2022-06-24
 description: >
-    **Cost management** feature traces all expenses incurred from service accounts registered in Cloudforet.
+    **Cost Explorer** feature traces all expenses incurred from service accounts registered in Cloudforet.
     Cost data, having been cleaned, can be found in [**Dashboard**](/docs/guides/cost-explorer/dashboard) or [**Cost analysis**](/docs/guides/cost-explorer/cost-analysis).
     <br>
     <br>

@@ -111,15 +111,33 @@ Except for the [Basic information] tab and [Original data] tabs, all other tabs 
 
 ### Managing cloud resources tags
 
-You can manage cloud resources by adding tags.
+There are two types of tags for cloud resources: `Managed` and `Custom`.
+For each cloud resource, you can either view the `Managed` tags added from the provider or add `Custom` tags.
+<br>
 
-(1) Click the [Edit] button inside the [Tag] tab.
+Each tag in the form of `key: value` can be useful when searching for specific resources.
 
-![cloud-resource-tag-tab](/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-tab.png)
+![cloud-resource-tag-tab](/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-tag-search-en.png)
 
-(2) After entering the tag in the form of ‘key:value’ on the tag page, click the [Save] button to complete this process.
 
-![cloud-resource-tag-add](/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-add.png)
+**[ Viewing Managed Tags ]**
+
+- The `Managed` tags can't be directly edited or removed in Cloudforet.
+
+![cloud-resource-tag-tab](/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-view-managed-tag-en.png)
+
+
+**[ Creating & Viewing Custom Tags ]**
+
+(1) Click the [Edit Custom Tags] button
+
+![cloud-resource-tag-tab](/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-btn-en.png)
+
+(2) After entering the tag in the form of `key:value` on the tag page, click the [Save] button to complete this process.
+
+![cloud-resource-tag-tab](/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-edit-en.png)
+
+
 
 ### Checking members associated with cloud resources
 

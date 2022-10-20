@@ -41,11 +41,23 @@ description: >
 ### 그룹별 통계 설정하기
 그룹별 통계에서 유저가 선택한 값을 기준으로 데이터를 그룹화합니다.
 
-![cost-analysis-groupby-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01.png)
+![cost-analysis-groupby-01](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01-ko.png)
 
 그룹별 통계는 한 개 이상 선택할 수 있습니다. 차트에서는 선택한 그룹별 통계 중 하나만이 보여지며, 테이블에서는 선택한 그룹별 통계를 모두 볼 수 있습니다.
 
-![cost-analysis-groupby-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02.png)
+![cost-analysis-groupby-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02-ko.png)
+
+기본으로 보여지는 그룹들외에도, 특정 프로바이더로 부터 가져온 태그 또는 추가 정보에 따라 분류할 수 있도록 그룹 추가 또한 가능합니다. 
+
+(1) 설정 아이콘을 클릭한 후 [ + 그룹 추가 ] 버튼을 클릭 합니다.
+![cost-analysis-groupby-03](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-03-ko.png)
+
+(2) 원하는 그룹을 검색하여 추가합니다.
+![cost-analysis-groupby-04](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-04-ko.png)
+
+(3) 추가된 그룹을 선택하여, 보다 세밀하게 비용을 분석해 볼 수 있습니다. 
+![cost-analysis-groupby-05](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-05-ko.png)
+
 
 ### 필터 설정
 필터는 그룹별 통계와 마찬가지로 한 개 이상 선택 가능하며, 유저가 설정한 값을 and 조건으로 필터링합니다.
@@ -56,7 +68,7 @@ description: >
 
 (2) [필터 세팅] 모달이 열리면 원하는 필터를 선택한 뒤 [확인] 버튼을 클릭합니다.
 
-![cost-analysis-filter-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02.png)
+![cost-analysis-filter-02](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02-ko.png)
 
 
 ## 비용 분석 쿼리
