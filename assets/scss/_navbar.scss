@@ -102,7 +102,7 @@
 @media only screen and (max-width: 1023px) {
   .td-navbar {
     position: fixed;
-    top: 0;
+    top: $banner-height;
     left: 0;
     width: 100%;
     padding: 0 1.875rem;

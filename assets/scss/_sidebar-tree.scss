@@ -9,7 +9,7 @@
   left: 0;
   width: $td-sidebar-width;
   height: 100vh;
-  padding-top: calc(#{$navbar-height} + 0.875rem);
+  padding-top: calc(#{$navbar-height} + #{$banner-height} + 0.875rem);
   padding-bottom: 3rem;
   background-color: rgba($navy000, 0.6);
   border-right: solid 1px $navy100;

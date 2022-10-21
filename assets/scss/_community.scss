@@ -1,5 +1,5 @@
 .community {
-  padding-top: $navbar-height;
+  padding-top: calc(#{$navbar-height} + #{$banner-height});
 
   .inner {
     max-width: 1060px;

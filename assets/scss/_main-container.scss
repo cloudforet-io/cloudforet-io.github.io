@@ -11,7 +11,7 @@
 
   main {
     width: 100%;
-    padding-top: $navbar-height;
+    padding-top: calc(#{$navbar-height} + #{$banner-height});
     padding-left: $td-sidebar-width;
     padding-right: $table-of-contents-with;
 
@@ -29,6 +29,6 @@
 
 @media only screen and (max-width: 767px) {
   .td-outer {
-    padding-top: calc(#{$navbar-height} + 2.25rem);
+    padding-top: calc(#{$navbar-height} + #{$banner-height} + 2.25rem);
   }
 }
