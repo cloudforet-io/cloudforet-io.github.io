@@ -91,7 +91,7 @@ html {
 }
 
 // color set (only for home)
-$dark-bg: rgba(220, 218, 233, 0.16) !important;
+$dark-bg: rgba(220, 218, 233, 0.1) !important;
 $gradient1: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
 $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 
@@ -464,7 +464,7 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
   .section-mission {
     text-align: center;
     .inner {
-      padding-top: 3.75rem;
+      padding-bottom: 2rem;
     }
     h4 {
       max-width: 40rem;
@@ -476,24 +476,39 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
       margin-left: auto;
       opacity: 0.8;
     }
-    .img-mission {
-      width: 6.875rem;
-      height: 6.875rem;
-    }
-    .description {
-      font-weight: 500;
-      font-size: 1.875rem;
-      background: $gradient1;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
     .btn-link {
       background: $navy600;
+      margin-top: 2rem;
       &:hover {
         background-color: transparent;
       }
     }
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      margin-top: auto;
+    }
+    .wonny-friends {
+      position: relative;
+      flex-shrink: 1;
+      margin-top: 3rem;
+      .img-wonny {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 60%;
+        max-width: 45rem;
+        transform: translateX(-50%);
+      }
+      .img-friends {
+        margin-top: 6.25rem;
+        width: 80%;
+        max-width: 63rem;
+      }
+    }
+    background: url("/images/home/bg_land.png") no-repeat 50% 100%/100%;
   }
 
   @keyframes scale_down {
@@ -504,6 +519,16 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
   @keyframes scale_up {
     0%   { transform: scale(0.6); }
     100% { transform: scale(1); }
+  }
+  .float {
+    display: inline-block;
+    animation: Floating 3s ease-in-out 200;
+    transform: translateX(-50%);
+  }
+  @keyframes Floating {
+    from {-webkit-transform: translate(-50%, 0px);}
+    35% {-webkit-transform: translate(-50%, 40px);}
+    to {-webkit-transform: translate(-50%, 0px);}
   }
 }
 
@@ -761,6 +786,12 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
       }
       .img-universe {
         width: 100vw;
+      }
+    }
+
+    .section-mission {
+      .inner {
+        padding-bottom: 3.2rem;
       }
     }
   }
