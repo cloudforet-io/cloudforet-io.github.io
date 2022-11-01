@@ -41,11 +41,23 @@ description: >
 ### グループ別に統計を設定する
 グループ別統計でユーザーの選択値を基準にデータをグループ化します。
 
-![cost-analysis-groupby-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01.png)
+![cost-analysis-groupby-01](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01-jp.png)
 
 グループ別統計は、1個以上選択できます。チャートで選択したグループ別統計のうち一つが表示され、テーブルでは選択したグループ別統計をすべて確認できます。
 
-![cost-analysis-groupby-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02.png)
+![cost-analysis-groupby-02](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02-jp.png)
+
+デフォルトで表示されているグループ以外にも、特定のプロバイダーから取得したタグ又は追加情報によって分類できるようにグループ追加も可能です。
+
+(1) [設定]アイコンをクリックし、[ + グループ追加 ] ボタンをクリックします。
+![cost-analysis-groupby-03](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-03-jp.png)
+
+(2) 特定のグループを検索し、追加します。
+![cost-analysis-groupby-04](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-04-jp.png)
+
+(3) 追加されたグループを選択して、より快適にコストを分析することができます。
+![cost-analysis-groupby-05](/jp/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-05-jp.png)
+
 
 ### フィルター設定
 フィルターは、グループ別統計と同じように1個以上選択でき、ユーザー設定値をand条件でフィルタリングします。

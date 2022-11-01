@@ -32,11 +32,11 @@ There are two types of service accounts for different needs and better security.
 
 (1) On the [Asset inventory > Service account] page, select the cloud service you want to add.
 
-![service-account-provider-menu](/docs/guides/getting-started/service-account-img/service-account-provider-menu-2.png)
+![service-account-provider-menu](/docs/guides/asset-inventory/service-account-img/service-account-provider-menu-2.png)
 
 (2) Click the [Add] button.
 
-![service-account-add-button](/docs/guides/getting-started/service-account-img/service-account-add-button.png)
+![service-account-add-button](/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
 
 (3) Fill out the service account creation form.
 
@@ -46,23 +46,23 @@ There are two types of service accounts for different needs and better security.
 
 (3-2) Enter basic information.
 
-![service-account-add-base-info](/docs/guides/getting-started/service-account-img/service-account-add-base-info.png)
+![service-account-add-base-info](/docs/guides/asset-inventory/service-account-img/service-account-add-base-info.png)
 
 (3-3) Specify the project to collect resources from according to the service account.
 
-![service-account-connect-project](/docs/guides/getting-started/service-account-img/service-account-connect-project.png)
+![service-account-connect-project](/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
 
 (3-4) Enter encryption key information.
 
 - Option 1) You can create account with its own credentials.	
-![service-account-add-key](/docs/guides/getting-started/service-account-img/service-account-add-key-1-1.png)
+![service-account-add-key](/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-1.png)
     
 - Option 2) Create account using credentials from an existing `Trusted Account`.	
  - In the case of AWS, you can easily create Assume Role by attaching an exisiting `Trusted Account`. If you select a certain `Trusted Account`, its credential key will automatically get inserted, then you will only need to enter the rest of information.	
-![service-account-add-key](/docs/guides/getting-started/service-account-img/service-account-add-key-1-2.png)
+![service-account-add-key](/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-2.png)
     
 - Option 3) You can also create account without credentials.	
-![service-account-add-key](/docs/guides/getting-started/service-account-img/service-account-add-key-1-3.png)
+![service-account-add-key](/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-3.png)
 
 
 (4) Click the [Save] button to complete.
@@ -73,11 +73,11 @@ There are two types of service accounts for different needs and better security.
 
 (1) On the [Asset inventory > Service account] page, select the cloud service you want to add.
 
-![service-account-provider-menu](/docs/guides/getting-started/service-account-img/service-account-provider-menu.png)
+![service-account-provider-menu](/docs/guides/asset-inventory/service-account-img/service-account-provider-menu.png)
 
 (2) Click the [Add] button.
 
-![service-account-add-button](/docs/guides/getting-started/service-account-img/service-account-add-button.png)
+![service-account-add-button](/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
 
 (3) Fill out the service account creation form.
 
@@ -87,15 +87,15 @@ There are two types of service accounts for different needs and better security.
 
 (3-2) Enter basic information.
 
-![service-account-add-base-info-2-2](/docs/guides/getting-started/service-account-img/service-account-add-base-info-2-2.png)
+![service-account-add-base-info-2-2](/docs/guides/asset-inventory/service-account-img/service-account-add-base-info-2-2.png)
 
 (3-3) Specify the project to collect resources from according to the service account.
 
-![service-account-connect-project](/docs/guides/getting-started/service-account-img/service-account-connect-project.png)
+![service-account-connect-project](/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
 
 (3-4) Enter encryption key information.
 
-![service-account-add-key-2-2](/docs/guides/getting-started/service-account-img/service-account-add-key-2-2.png)
+![service-account-add-key-2-2](/docs/guides/asset-inventory/service-account-img/service-account-add-key-2-2.png)
 
 (4) Click the [Save] button to complete.
 

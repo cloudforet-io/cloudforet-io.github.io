@@ -111,15 +111,33 @@ description: >
 
 ### クラウドリソースタグを管理する
 
-クラウドリソースにタグを追加して管理することができます。
+クラウドリソースには、`Managed`、`Custom`の2種類のタグが存在します。
+個々のクラウドリソースごとに、そのプロバイダーから取得した`Managed`タグを確認でき、`Custom`タグを追加して管理できます。
+<br>
 
-(1) [タブ]タブ内で[編集]ボタンをクリックします。
+各タグは`キー:値`の形式で構成されており、リソースを検索する際に有用に利用できます。
 
-![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-tab.png)
+![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-tag-search-jp.png)
 
-(2) タグページで「キー: 値」形態でタグを入力して、[保存]ボタンをクリックすると完了します。
 
-![cloud-resource-tag-add](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-resource-tag-add.png)
+**[ Managedタグを照会する ]**
+
+- `Managed`タグはCloudforetから直接編集および削除はできません。
+
+![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-view-managed-tag-jp.png)
+
+
+**[ Customタグ作成&照会 ]**
+
+(1) [Customタグの修正]ボタンをクリックします。
+
+![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-btn-jp.png)
+
+(2) タグページで、`キー:値`形式でタグを入力してから、[保存]ボタンをクリックして完了します。
+
+![cloud-resource-tag-tab](/jp/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-edit-jp.png)
+
+
 
 ### クラウドリソース関連メンバーを確認する
 
