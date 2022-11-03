@@ -15,7 +15,7 @@ menu:
         <h4>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h4>
         <ul class="channels-list">
             <li class="channel-item">
-                <a href="https://github.com/cloudforet-io/feedback/discussions" style="color:#004F99;" target="_blank" class="channel-link">
+                <a href="https://github.com/cloudforet-io/community/discussions" style="color:#004F99;" target="_blank" class="channel-link">
                     <figure class="channel-icon"><img src="/images/community/img_forum.png" alt=""></figure>
                     <strong class="channel-name">Discussion</strong>
                     <p class="channel-description">문의 & 피드백</p>
