@@ -6,6 +6,9 @@ theme = "docsy"
 # robots.txt
 enableRobotsTXT = true
 
+# google analytics
+googleAnalytics = "G-VGD2HRSKL3k"
+
 # sitemap
 [sitemap]
 changefreq = "monthly"
@@ -58,10 +61,6 @@ pygmentsStyle = "tango"
     languageName ="日本語"
     contentDir = "content/jp"
     weight = 3
-
-[services]
-[services.googleAnalytics]
-id = "G-VGD2HRSKL3k"
 
 [outputs]
 home = [ "HTML" ]
