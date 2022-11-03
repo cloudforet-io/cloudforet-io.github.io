@@ -59,6 +59,10 @@ pygmentsStyle = "tango"
     contentDir = "content/jp"
     weight = 3
 
+[services]
+[services.googleAnalytics]
+id = "G-VGD2HRSKL3k"
+
 [outputs]
 home = [ "HTML" ]
 page = [ "HTML" ]
