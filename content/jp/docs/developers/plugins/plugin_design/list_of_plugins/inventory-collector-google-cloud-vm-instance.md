@@ -4,7 +4,7 @@ linkTitle: "Google Cloud VM Instance"
 weight: 1
 date: 2022-01-21
 description: >
-    SpaceONE inventory plugin design specification about google cloud vm instance resource
+    Cloudforet inventory plugin design specification about google cloud vm instance resource
 
 _build:
     render: always

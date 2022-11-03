@@ -4,17 +4,17 @@ linkTitle: "Role Based Access Control"
 weight: 1
 date: 2021-12-21
 description: >
-    This page explores the basic concepts of User Role-Based Access Management (RBAC) in SpaceONE.
+    This page explores the basic concepts of User Role-Based Access Management (RBAC) in Cloudforet.
 listed_on_entry: true
 no_list: true
 ---
 
 ## How RBAC Works
 
-Defines who can access **what** to **who** and **what organization (project or domain)** through SpaceONE's RBAC (Role Based Access Control).
+Defines who can access **what** to **who** and **what organization (project or domain)** through Cloudforet's RBAC (Role Based Access Control).
 
 For example, the Project Admin Role can inquire (Read) and make several changes (Update/Delete) all resources within the specified Project. Domain Viewer Role can inquire (Read) all resources within the specified domain.
-Resources here include everything from users created within SpaceONE, Project/Project Groups, and individual cloud resources.
+Resources here include everything from users created within Cloudforet, Project/Project Groups, and individual cloud resources.
 
 Every user has one or more roles, which can be assigned directly or inherited within a project.
 This makes it easy to manage user role management in complex project relationships.
@@ -33,21 +33,21 @@ This role management model is divided into three main components.
 - _**Project**_. The project or project group to which the permission is applied.
 
 - _**User**_. Users include users who log in to the console and use UI, API users, and SYSTEM users.
-  Each user is connected to multiple Roles through the RoleBinding procedure. Through this, it is possible to access various resources of SpaceONE by receiving appropriate permissions.
+  Each user is connected to multiple Roles through the RoleBinding procedure. Through this, it is possible to access various resources of Cloudforet by receiving appropriate permissions.
 
 
 
 ## Basic Concepts
 
 When a user wants to access resources within the organization, the administrator grants each user a role of the target project or domain.
-SpaceONE Identity Service verifies the Role/Policy granted to each user so that each user can access resources.
+Cloudforet Identity Service verifies the Role/Policy granted to each user so that each user can access resources.
 
 ### Resource
 
-If a user wants to access a resource in a specific SpaceONE project, you can grant the user an appropriate role and then add it to the target project as a member to make it accessible.
+If a user wants to access a resource in a specific Cloudforet project, you can grant the user an appropriate role and then add it to the target project as a member to make it accessible.
 Examples of these resources are [Server](/docs/guides_v1/inventory/server/), [Project](/docs/guides_v1/project/project_management/), [Alert](/docs/guides_v1/alert_manager/alert/) .
 
-In order to conveniently use the resources managed within SpaceONE for each service, we publish the predefined Role/Policy.
+In order to conveniently use the resources managed within Cloudforet for each service, we publish the predefined Role/Policy.
 If you want to define your own access scope within the company, you can create a Custom Policy/Custom Role and apply it to the internal organization.
 
 For a detailed explanation of this, refer to [Understanding Role](/docs/concepts/identity/rbac/understanding-role/).

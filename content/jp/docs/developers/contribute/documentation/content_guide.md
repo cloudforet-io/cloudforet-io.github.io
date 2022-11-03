@@ -4,7 +4,7 @@ linkTitle: "content guide"
 weight: 1
 date: 2021-10-01
 description: >
-    This page contains guidelines for SpaceONE documentation.
+    This page contains guidelines for Cloudforet documentation.
 ---
 
 ## Create a new page

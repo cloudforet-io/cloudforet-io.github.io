@@ -1,6 +1,6 @@
 baseURL = "https://cloudforet.io/"
 languageCode = "en-us"
-title = "SpaceONE"
+title = "Cloudforet"
 theme = "docsy"
 
 # robots.txt

@@ -4,7 +4,7 @@ linkTitle: "style guide"
 weight: 2
 date: 2021-10-01
 description: >
-    This page explains the custom Hugo shortcodes that can be used in SpaceONE Markdown documentation.
+    This page explains the custom Hugo shortcodes that can be used in Cloudforet Markdown documentation.
 ---
 
 ## Heading tag

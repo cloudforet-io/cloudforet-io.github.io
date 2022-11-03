@@ -78,7 +78,7 @@ playground에 명시되는 props, slots, events와 같은 속성들은 가독성
 
 <br/>
 
-SpaceONE 디자인 시스템은 내부적으로 amCharts for Dynamic Chart를 사용합니다.
+Cloudforet 디자인 시스템은 내부적으로 amCharts for Dynamic Chart를 사용합니다.
 
 디자인 시스템을 사용하기 전에 amCharts의 라이선스를 확인해주십시오.
 

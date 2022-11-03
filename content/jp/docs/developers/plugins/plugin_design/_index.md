@@ -14,7 +14,7 @@ description: >
 Inventory Collector 플러그인을 통해 전문적인 개발지식이 없는 시스템 엔지니어부터, 전문 클라우드 개발자들까지 원하는 클라우드 자산정보를 편리하게 수집하여 체계적으로 관리할 수 있습니다. 
 그리고, 수집한 자산 정보를 사용자 UI에 손쉽게 표현할 수 있습니다. 
 
-Inventory Collector 플러그인은 SpaceONE의 grpc framework 기본 모듈을 기반으로(spaceone-core, spaceone-api) 개발할 수 있습니다. 
+Inventory Collector 플러그인은 Cloudforet의 grpc framework 기본 모듈을 기반으로(spaceone-core, spaceone-api) 개발할 수 있습니다. 
 아래의 문서는 각각의 Cloud Provider별 상세 스펙을 나타냅니다. 
 
 

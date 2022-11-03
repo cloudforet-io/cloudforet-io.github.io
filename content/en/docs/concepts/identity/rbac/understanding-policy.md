@@ -22,7 +22,7 @@ Once defined, the policy can be shared so that it can be used by roles in other 
 - CUSTOM: You can use a policy with self-defined permissions for each domain. It is useful to manage detailed permission for each domain.
 
 {{< alert title="Note" >}}
-*MANAGED Policy* is published on *Official Marketplace* and managed by the SpaceONE team.
+*MANAGED Policy* is published on *Official Marketplace* and managed by the CloudONE team.
 
 *Custom Policy* is published in the *Private Repository* and managed by the administrator of each domain.
 {{< /alert >}}
@@ -33,7 +33,7 @@ Policy can be classified as follows according to Permission Scope.
 
 ## Managed Policy
 
-The policy below is a full list of Managed Policies managed by the SpaceONE team.
+The policy below is a full list of Managed Policies managed by the CloudONE team.
 Detailed permission is automatically updated if necessary. Policy was created by classifying it according to the major roles within the organization.
 
 |    Policy Type     |        Policy Name        |                Policy Id                 | Permission Description                                                                                                                                                                                                                                                                                                                                                         |                                                                           Reference                                                                           |

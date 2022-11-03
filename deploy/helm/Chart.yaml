@@ -1,6 +1,6 @@
 apiVersion: v2
 name: docs
-description: SpaceONE Open-Source Project Site Helm chart for Kubernetes
+description: Cloudforet Open-Source Project Site Helm chart for Kubernetes
 
 type: application
 

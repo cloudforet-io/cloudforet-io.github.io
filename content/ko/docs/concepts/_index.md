@@ -4,6 +4,6 @@ linkTitle: "주요 컨셉"
 weight: 2
 date: 2021-08-05
 description: >
-    About SpaceONE Project
+    About Cloudforet Project
 no_list: true
 ---

@@ -114,13 +114,13 @@ CI process of each repositories can be organized by 4 different kinds of trigger
 </br>
 
 1. **Master Branch Push** :     
-If the master branch in GitHub get pushed, GitHub Action occurs by `CI_master_push.yml` file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, SpaceONE team is notified through Slack.     
+If the master branch in GitHub get pushed, GitHub Action occurs by `CI_master_push.yml` file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, CloudONE team is notified through Slack.     
 
 2. **Create Release Branch** :     
 Each repository can create release branch manually or by `cloudforet-io/spaceone` repository’s event. After initialization, GitHub Action triggers branch tagging action.       
 
 3. **Branch Tagging** :      
-By being triggered by the event above or getting pushed with version tags, each repository can tag branch with GitHub Action by updating the version in both local and master branch, building the software, and uploading the output to registries such as Docker or PyPi. After all process is done, Slack notification is automatically sent to SpaceONE team.      
+By being triggered by the event above or getting pushed with version tags, each repository can tag branch with GitHub Action by updating the version in both local and master branch, building the software, and uploading the output to registries such as Docker or PyPi. After all process is done, Slack notification is automatically sent to CloudONE team.      
 
 4. **Reflect Branch Update** :       
 The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or `cloudforet-io/spaceone` repository GitHub Action.         

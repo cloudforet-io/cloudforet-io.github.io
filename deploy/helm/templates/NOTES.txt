@@ -1,1 +1,1 @@
-Thank you for installing SpaceONE Helm Chart.
+Thank you for installing Cloudforet Helm Chart.

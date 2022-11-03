@@ -8,10 +8,10 @@ description: Plugin Register
 ---
 
 If plugin development is completed, you need to prepare plugin distribution.
-Since all plugins of SpaceONE are distributed as containers, the plugin code that has been developed must be built as an image for container distribution.
+Since all plugins of Cloudforet are distributed as containers, the plugin code that has been developed must be built as an image for container distribution.
 Container build is done after docker build using Dockerfile,
 The resulting Image is uploaded to an image repository such as Docker hub.
-At this time, the image storage is uploaded to the storage managed by the Repository service, which is a microservice of SpaceONE.
+At this time, the image storage is uploaded to the storage managed by the Repository service, which is a microservice of Cloudforet.
 
 <br>
 

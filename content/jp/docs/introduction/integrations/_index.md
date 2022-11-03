@@ -8,11 +8,11 @@ description: >
 ---
 
 ## Overview
-SpaceONE은 Plugin Architecture 기반으로 개발되어, 각각의 Core Service를 지원하는 수많은 Eco System을 가지고 있습니다.
+Cloudforet은 Plugin Architecture 기반으로 개발되어, 각각의 Core Service를 지원하는 수많은 Eco System을 가지고 있습니다.
 아래의 리스트에 포함되지 않은 기술들이 플러그인으로서 지원되야 할 경우, 문의 주세요.
 
 ## Inventory
-_**Inventory.Collector**_ Type의 Plugin은 SpaceONE의 Asset 관리 기능의 핵심 역할을 수행합니다.
+_**Inventory.Collector**_ Type의 Plugin은 Cloudforet의 Asset 관리 기능의 핵심 역할을 수행합니다.
 다양한 리전에 숨어있는 여러 Provider의 Cloud Resource를 자동으로 탐색하여 체계적으로 분류하여 줍니다.
 
 ### [AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)
@@ -48,7 +48,7 @@ Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색�
 {{< /cardpane >}}--> 
 
 ## Identity
-_**Identity.auth**_ Type의 Plugin은 SpaceONE User의 인증 관리 역할을 수행합니다.
+_**Identity.auth**_ Type의 Plugin은 Cloudforet User의 인증 관리 역할을 수행합니다.
 Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다.
 
 ### [Google oAuth Identity Plugin](https://github.com/cloudforet-io/plugin-googleoauth2-identity-auth)

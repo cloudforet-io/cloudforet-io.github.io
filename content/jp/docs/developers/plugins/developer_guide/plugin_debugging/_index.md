@@ -4,7 +4,7 @@ linkTitle: "Plugin Debugging"
 weight: 4
 date: 2021-08-04
 description: 
-    How To Debugging SpaceONE Plugins 
+    How To Debugging Cloudforet Plugins 
 
 ---
 

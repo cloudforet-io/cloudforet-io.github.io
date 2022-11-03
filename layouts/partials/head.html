@@ -9,12 +9,6 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
 
-{{ if and (eq (getenv "HUGO_ENV") "production") (ne $outputFormat "print") -}}
-<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-{{ else -}}
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-{{ end -}}
-
 {{ partialCached "favicons.html" . }}
 
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Params.Subtitle }}{{ end }}</title>

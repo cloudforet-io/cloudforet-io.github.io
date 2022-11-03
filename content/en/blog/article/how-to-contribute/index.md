@@ -1,12 +1,12 @@
 ---
 date: 2021-06-01
-title: "Contribute to SpaceONE Documentation"
-linkTitle: "Contribute SpaceONE Documentation"
+title: "Contribute to Cloudforet Documentation"
+linkTitle: "Contribute Cloudforet Documentation"
 description: "Find out how to contribute to and fill out the SpaceOne document."
 author: Seungho Jeong ([Linkedin](https://www.linkedin.com/in/seungho-jeong-79684b210/))
 ---
 
-This article shows how to contribute to SpaceONE Documentation. The CI/CD pipeline of this document is built with githubaction and Kubernetes. 
+This article shows how to contribute to Cloudforet Documentation. The CI/CD pipeline of this document is built with githubaction and Kubernetes. 
 
 
 # Pre-requisitions
@@ -29,7 +29,7 @@ git clone --recurse-submodules --depth 1 https://github.com/cloudforet-io/docs
 
 ```
 
-SpaceONE Documentation uses Docsy Hugo themes. So, we strongly recommend pulling in the submodule and other development dependencies by running the following. 
+Cloudforet Documentation uses Docsy Hugo themes. So, we strongly recommend pulling in the submodule and other development dependencies by running the following. 
 
 ```bash
 # pull in the Docsy submodule
@@ -39,7 +39,7 @@ git submodule update --init --recursive --depth 1
 ### Install PostCSS
 
 
-To build SpaceONE Docs, you need `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine so you can use npm. 
+To build Cloudforet Docs, you need `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine so you can use npm. 
 
 ```bash
 npm install --no-optional -D --save
@@ -47,7 +47,7 @@ npm install --no-optional -D --save
 ```
 ## Run docs locally 
 
-Once you've made your own working copy of SpaceONE Document repository, from the root folder, run: 
+Once you've made your own working copy of Cloudforet Document repository, from the root folder, run: 
 
 ```bash
 hugo server -D
@@ -55,7 +55,7 @@ hugo server -D
 
 # Adding Content
 
-This section tells you how to add contents on SpaceONE  Document
+This section tells you how to add contents on Cloudforet  Document
 
 ## Content root directory 
 
@@ -64,15 +64,15 @@ You add content for document under root directory - either `content/` or languag
 
  
 ## Content sections and templates 
-SpaceONE docs builds own site using the content files you provide  plus any templates provided by docsy theme. These templates include things like your page's headers, footers, navigations, and links to stylesheets. The templates in turn can be made up of partials: little reusable snippets of HTML for page elements like headers, search boxex, and more. 
+Cloudforet docs builds own site using the content files you provide  plus any templates provided by docsy theme. These templates include things like your page's headers, footers, navigations, and links to stylesheets. The templates in turn can be made up of partials: little reusable snippets of HTML for page elements like headers, search boxex, and more. 
 
 
-Because SpaceONE docs have different sections for different types of content, the Docsy theme comes with following templates for top-level site sections that might need:
+Because Cloudforet docs have different sections for different types of content, the Docsy theme comes with following templates for top-level site sections that might need:
 
 - docs is for pages in Documentation section.
 - blog is for pages in spaceONE Blog 
 
-Each top-level section in SpaceONE docs corresponds to a directory in content root. Hugo automatically applies the appropriate template for that section, depending on which folder the content is in. 
+Each top-level section in Cloudforet docs corresponds to a directory in content root. Hugo automatically applies the appropriate template for that section, depending on which folder the content is in. 
 
 ## Custom sections 
 
@@ -91,7 +91,7 @@ description: >
 
 # Page frontmatter 
 
-Each page file in SpaceONE docs has metadata frontmatter that tells Hugo about the page. You specify page frontmatter in TOML, YAML, JSON. Use the frontmatter to specify the page title, description, creation date, link title, template, menu weighting, ans even  any resources such as images used by the page. For example, here's the frontmatter example. 
+Each page file in Cloudforet docs has metadata frontmatter that tells Hugo about the page. You specify page frontmatter in TOML, YAML, JSON. Use the frontmatter to specify the page title, description, creation date, link title, template, menu weighting, ans even  any resources such as images used by the page. For example, here's the frontmatter example. 
 
 ```yaml
 ---
@@ -99,7 +99,7 @@ title: "Adding Content"
 linkTitle: "Adding Content"
 weight: 1
 description: >
-    Add different types of content to SpaceONE docs.
+    Add different types of content to Cloudforet docs.
 ---
 ```
 

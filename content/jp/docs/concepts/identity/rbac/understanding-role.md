@@ -11,7 +11,7 @@ description: >
 ## Role structure
 
 Role is a [Role Type](/docs/concepts/identity/rbac/understanding-role/#role-type) that specifies the scope of access to resources as shown below and the organization (project or project group) to which the authority is applied. is composed.
-Users can define access rights within each SpaceONE through RoleBinding. 
+Users can define access rights within each Cloudforet through RoleBinding. 
 
 ![](/docs/concepts/identity/rbac/rbac_img/understanding_role_img01.png)
 
@@ -59,7 +59,7 @@ Please refer to [Add as Project Member](/docs/guides_v1/project/project_manageme
 
 ### Add Member
 
-All resources in SpaceONE are hierarchically managed as follows.
+All resources in Cloudforet are hierarchically managed as follows.
 The administrator of the domain can manage so that users can access resources within the project by adding members to each project.
 Users who need access to multiple projects can access all projects belonging to the lower hierarchy by adding them to the parent project group as a member.
 For how to add as a member of the Project Group, refer to [Add as a Member of Project Group](/docs/guides_v1/project/project_group_management/).
