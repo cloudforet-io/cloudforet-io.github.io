@@ -7,7 +7,7 @@ theme = "docsy"
 enableRobotsTXT = true
 
 # google analytics
-googleAnalytics = "G-VGD2HRSKL3k"
+googleAnalytics = "G-VGD2HRSKL3"
 
 # sitemap
 [sitemap]

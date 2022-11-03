@@ -37,6 +37,6 @@
 {{ end }}
 {{ partial "hooks/head-end.html" . }}
 <!--To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled -->
-{{ if eq (getenv "HUGO_ENV") "production" }}
+{{ if eq hugo.Environment "production" }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
