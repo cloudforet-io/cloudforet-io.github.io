@@ -15,7 +15,7 @@ menu:
         <h4>Share any of your idea or feedback.</h4>
         <ul class="channels-list">
             <li class="channel-item">
-                <a href="https://github.com/cloudforet-io/feedback/discussions" style="color:#004F99;" target="_blank" class="channel-link">
+                <a href="https://github.com/cloudforet-io/community/discussions" style="color:#004F99;" target="_blank" class="channel-link">
                     <figure class="channel-icon"><img src="/images/community/img_forum.png" alt=""></figure>
                     <strong class="channel-name">Discussion</strong>
                     <p class="channel-description">Inquiry & Feedback</p>
