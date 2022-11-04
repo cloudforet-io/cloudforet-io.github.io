@@ -1,6 +1,6 @@
 FROM klakegg/hugo:0.83.1-ext-pandoc AS build
 
-LABEL maintainer="Seungho Jeong<platoon07@khu.ac.kr>"
+LABEL maintainer="Songyi Kim<sykim@mz.co.kr>"
 
 RUN apk add --update \
     wget
@@ -21,9 +21,8 @@ RUN apk add --no-cache \
 
 
 ARG HUGO_VERSION="0.83.1"
-ARG HUGO_ENV="production"
 
-RUN hugo --minify
+RUN hugo --minify --environment production
 
 FROM nginx:alpine
 COPY --from=build /site/public /usr/share/nginx/html
