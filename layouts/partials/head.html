@@ -9,6 +9,12 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
 
+{{ if eq hugo.Environment "production" }}
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+{{ else -}}
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+{{ end -}}
+
 {{ partialCached "favicons.html" . }}
 
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Params.Subtitle }}{{ end }}</title>
@@ -38,5 +44,5 @@
 {{ partial "hooks/head-end.html" . }}
 <!--To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled -->
 {{ if eq hugo.Environment "production" }}
-{{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
 {{ end }}
