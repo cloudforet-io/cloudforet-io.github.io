@@ -11,6 +11,15 @@ menu:
         <h3>Cloudforet 커뮤니티</h3>
         <p>멀티 클라우드부터 온프레미스까지,</span> 보다 나은 IT 인프라 운영을 위해 클라우드포레만의 생태계를 함께 만들고자 합니다</p>
     </section>
+    <section class="about-community">
+        <h3>The Cloudforet Foundation Member (TBD)</h3>
+    </section>
+     <section class="about-community">
+        <h3>Community Sponsors</h3>
+	<br>
+	<img src="/images/community/mzcloud-logo.png" alt="Megazone Cloud">
+        <p>2022 Website Sponsor</p>
+    </section>
     <section class="community-channels">
         <h4>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h4>
         <ul class="channels-list">
