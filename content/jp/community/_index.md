@@ -11,6 +11,15 @@ menu:
         <h3>The Cloudforet Community</h3>
         <p>Together, we make OUR UNIVERSE a better place that changes the way you operate IT <br />infrastructure across on-premises and multi-clouds.</p>
     </section>
+    <section class="about-community">
+        <h3>The Cloudforet Foundation Member (TBD)</h3>
+    </section>
+     <section class="about-community">
+        <h3>Community Sponsors</h3>
+	<br>
+	<img src="/images/community/mzcloud-logo.png" alt="Megazone Cloud">
+        <p>2022 Website Sponsor</p>
+    </section>
     <section class="community-channels">
         <h4>Share any of your idea or feedback.</h4>
         <ul class="channels-list">
