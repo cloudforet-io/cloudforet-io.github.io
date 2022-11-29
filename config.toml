@@ -161,9 +161,9 @@ navbar_logo = true
 footer_about_disable = true
 
 [[params.versions]]
-fullversion = "v1.9.6"
-version = "v1.9.6"
-githubbranch = "release-1.9.6"
+fullversion = "v1.10.4"
+version = "v1.10.4"
+githubbranch = "release-1.10.4"
 docsbranch = "master"
 # Set master version url
 url = "/"
