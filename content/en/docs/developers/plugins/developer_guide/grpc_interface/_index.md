@@ -1,9 +1,9 @@
 ---
-title: "gRPC Interface 확인"
-linkTitle: "gRPC Interface 확인"
+title: "Plugin Interface"
+linkTitle: "Plugin Interface"
 weight: 1
 date: 2021-08-04
-description: gRPC Interface 확인
+description: Check Plugin Interface
 
 ---
 
