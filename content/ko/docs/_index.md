@@ -8,3 +8,5 @@ menu:
     main:
         weight: 1
 ---
+
+![image](/images/documentation/flying-wonny_christmas-version.png)
