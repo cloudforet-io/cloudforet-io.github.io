@@ -1,6 +1,10 @@
 .community {
   padding-top: calc(#{$navbar-height} + #{$banner-height});
+  background-color: #1e1c36;
 
+  main {
+    background-color: #fff;
+  }
   .inner {
     max-width: 1060px;
     margin: 0 auto;
@@ -8,9 +12,43 @@
   }
 
   .top {
-    height: 33.75rem;
-    background: url("/images/home/wonny-and-friends.png") no-repeat 50% 0 / 100% auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background:#1e1c36 url("/images/home/bg_land.png") no-repeat 50% 100% / 100%;
     color: transparent;
+    padding: 0;
+    .wonny-friends {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 1;
+      margin: 4rem 0;
+      .img-wonny {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        max-width: 40rem;
+        transform: translateX(-50%);
+      }
+      .img-friends {
+        margin-top: 5.25rem;
+        width: 60%;
+        max-width: 60rem;
+      }
+    }
+    .float {
+      display: inline-block;
+      animation: Floating 3s ease-in-out 200;
+      transform: translateX(-50%);
+    }
+    @keyframes Floating {
+      from {-webkit-transform: translate(-50%, 0px);}
+      35% {-webkit-transform: translate(-50%, 40px);}
+      to {-webkit-transform: translate(-50%, 0px);}
+    }
   }
 
   section {
@@ -98,6 +136,18 @@
 
 @media only screen and (max-width: 767px) {
   .community {
+    padding-top: calc(#{$navbar-height} + 2.25rem + #{$banner-height});
+    .top {
+      .wonny-friends {
+        margin: 2rem 0;
+        .img-wonny {
+          width: 60%;
+        }
+        .img-friends {
+          width: 70%;
+        }
+      }
+    }
     .community-channels {
       .channel-item {
         width: 100%;
