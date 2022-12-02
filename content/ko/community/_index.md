@@ -19,6 +19,11 @@ menu:
 	<br>
 	<img src="/images/community/mzcloud-logo.png" alt="Megazone Cloud">
         <p>2022 Website Sponsor</p>
+	<br>
+        <a href="https://spaceone.megazone.io/try-demo" style="color:#415567;" target="_blank" class="channel-link">
+	<img src="/images/community/spaceone-logo.svg" alt="SpaceONE">
+        <p>Demo Trial by Megazone Cloud</p>
+	</a>
     </section>
     <section class="community-channels">
         <h4>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h4>
