@@ -92,6 +92,7 @@
     }
     ul {
       margin-top: 0.25rem;
+      padding-left: 0.375rem;
       > li::before {
         background-color: $white;
         border: solid 1px $black;
