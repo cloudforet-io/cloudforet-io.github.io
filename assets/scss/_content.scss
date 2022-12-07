@@ -73,18 +73,22 @@
     line-height: 1.5;
     margin: 0 0 1rem;
   }
-
   ul {
     padding-left: 1rem;
-    > li::before {
-      content:'';
-      display: inline-block;
-      width: 0.25rem;
-      height: 0.25rem;
-      margin-right: 0.375rem;
-      border-radius: 50%;
-      background-color: $black;
-      vertical-align: 0.25em;
+    > li {
+      position: relative;
+     &::before {
+       content:'';
+       position: absolute;
+       left: 0;
+       top: 0.625rem;
+       display: inline-block;
+       width: 0.25rem;
+       height: 0.25rem;
+       border-radius: 50%;
+       background-color: $black;
+       vertical-align: 0.25em;
+     }
     }
     ul {
       margin-top: 0.25rem;
@@ -102,6 +106,12 @@
     ol {
       margin-top: 0.25rem;
     }
+  }
+
+  ul li,
+  ol li {
+    margin-bottom: .25rem;
+    padding-left: 0.625rem;
   }
 
   figure {
@@ -130,10 +140,6 @@
     margin-bottom: $spacer;
     color: $gray-600;
     border-left: 6px solid $secondary;
-  }
-
-  > ul li, > ol li {
-    margin-bottom: .25rem;
   }
 
   strong {
