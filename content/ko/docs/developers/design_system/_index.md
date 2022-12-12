@@ -48,6 +48,6 @@ no_list: true
 <br>
 <br>
 
-### Figma UI Kit
+### Figma
 
 공개 준비중
