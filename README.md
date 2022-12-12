@@ -1,27 +1,27 @@
-# Cloudforet Document  
+# Cloudforet Document
 
-## How to use this repository 
+## How to use this repository
 
-### Prerequisities 
+### Prerequisities
 
 
-You need following installed locally 
+You need following installed locally
 
-- npm 
-- Go 
+- npm
+- Go
 - Hugo(Extended version)
-- Docker & Docker Compose 
+- Docker & Docker Compose
 
-Before we start, install the dependencies, Clone the repository and navigate to the directory. 
+Before we start, install the dependencies, Clone the repository and navigate to the directory.
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/cloudforet-io/docs
+git clone --recurse-submodules --depth 1 https://github.com/[username]/docs
 
 cd docs
 
 ```
 
-Cloudforet blog uses Docsy Hugo theme. So, we strongly recommend pulling in the submodule and other developmment dependencies by running the following. 
+Cloudforet blog uses Docsy Hugo theme. So, we strongly recommend pulling in the submodule and other developmment dependencies by running the following.
 
 ```bash
 # pull in the Docsy submodule
@@ -29,15 +29,15 @@ git submodule update --init --recursive --depth 1
 
 ```
 
-### Install PostCSS 
+### Install PostCSS
 
-To build Cloudforet blog, you also need  `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine so you can use npm. 
+To build Cloudforet blog, you also need  `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine so you can use npm.
 
 ```bash
 npm install --no-optional -D --save
 ```
 
-## Running Blog locally 
+## Running Blog locally
 
 ### Set MacOS max file limit
 
@@ -50,17 +50,17 @@ sudo sysctl -w kern.maxfiles=200000
 sudo sysctl -w kern.maxfilesperproc=65535
 ```
 
-Once you've made your own working copy of this repo, from the root folder, run: 
+Once you've made your own working copy of this repo, from the root folder, run:
 
 ```bash
 hugo server -D
 ```
 
 ## Running Docker container locally
-You can run Cloudforet blog by inside a Docker container. 
+You can run Cloudforet blog by inside a Docker container.
 
 
-```bash 
+```bash
 docker-compose up --build
 ```
 
@@ -71,6 +71,6 @@ To stop Docker Compose, on your terminal window, press Ctrl + C.
 
 To remove the produced images run:
 
-```bash 
+```bash
 docker-compose rm
 ```
