@@ -44,6 +44,7 @@ menu:
     </section>
     <section class="community-channels">
         <h4>Propose new ideas.</h4>
+	<a href="https://github.com/cloudforet-io/tsc/tree/master/proposals">Proposal Template</a>
         <ul class="channels-list">
             <li class="channel-item">
                 <a href="https://docs.google.com/presentation/d/1TAYh8YTiIJKfhn7d_XbtAGmyKkwEh-Xk/edit?usp=sharing&ouid=116730785145025907213&rtpof=true&sd=true" style="color:#004F99;" target="_blank" class="channel-link">
