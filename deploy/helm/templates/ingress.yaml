@@ -1,5 +1,5 @@
 {{- if .Values.enabled }}
-{{- if .Values.ingrass.enabled }}
+{{- if .Values.ingress.enabled }}
 apiVersion: extensions/v1
 kind: Ingress
 metadata:
