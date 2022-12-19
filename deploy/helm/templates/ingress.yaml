@@ -1,5 +1,5 @@
 {{- if .Values.enabled }}
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Ingress
 metadata:
   annotations:
@@ -15,28 +15,37 @@ metadata:
   namespace: {{ .Values.global.namespace | default .Release.Namespace }}
 
 spec:
+  ingressClassName: alb
   rules:
     - http:
         paths:
-          - path: /*
+          - path: /
+            pathType: Prefix
             backend:
-              serviceName: ssl-redirect
-              servicePort: use-annotation
+              service:
+                name: ssl-redirect
+                port:
+                  name: use-annotation
 
-    - host: {{ .Values.endpoint }}
+    - host: "{{ .Values.endpoint }}"
       http:
         paths:
-          - backend:
-              serviceName: docs
-              servicePort: 80
-            path: /*
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: docs
+                port:
+                  number: 80
 
-    - host: www.{{ .Values.endpoint }}
-      http:
+    - http:
         paths:
-          - backend:
-              serviceName: redirect-to-non-www
-              servicePort: use-annotation
-            path: /*
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: redirect-to-non-www
+                port:
+                  name: use-annotation
 
 {{- end }}
