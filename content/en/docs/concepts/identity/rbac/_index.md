@@ -11,9 +11,9 @@ no_list: true
 
 ## How RBAC Works
 
-Defines who can access **what** to **who** and **what organization (project or domain)** through SpaceONE's RBAC (Role Based Access Control).
+Define who can access **what** to **who** and **which organization (project or domain)** through SpaceONE's RBAC (Role Based Access Control).
 
-For example, the Project Admin Role can inquire (Read) and make several changes (Update/Delete) all resources within the specified Project. Domain Viewer Role can inquire (Read) all resources within the specified domain.
+For example, the Project Admin Role can inquire (Read) and make several changes (Update/Delete) on all resources within the specified Project. Domain Viewer Role can inquire (Read) all resources within the specified domain.
 Resources here include everything from users created within SpaceONE, Project/Project Groups, and individual cloud resources.
 
 Every user has one or more roles, which can be assigned directly or inherited within a project.
@@ -27,8 +27,8 @@ The diagram below shows the relationships between Users and Roles and Projects t
 
 This role management model is divided into three main components.
 
-- _**Role**_. It is a collection of access rights policies that can be granted for each user. All roles must have one policy.
-  For more detailed explanation, please refer to [Understanding Role](/docs/concepts/identity/rbac/understanding-role/)
+- _**Role**_. It is a collection of access right policies that can be granted for each user. All roles must have one policy.
+  For more detailed explanation, please refer to [Understanding Role](/docs/concepts/identity/rbac/understanding-role/).
 
 - _**Project**_. The project or project group to which the permission is applied.
 
@@ -39,15 +39,15 @@ This role management model is divided into three main components.
 
 ## Basic Concepts
 
-When a user wants to access resources within the organization, the administrator grants each user a role of the target project or domain.
-SpaceONE Identity Service verifies the Role/Policy granted to each user so that each user can access resources.
+When a user wants to access resources within an organization, the administrator grants each user a role of the target project or domain.
+SpaceONE Identity Service verifies the Role/Policy granted to each user to determine whether each user can access resources or not.
 
 ### Resource
 
 If a user wants to access a resource in a specific SpaceONE project, you can grant the user an appropriate role and then add it to the target project as a member to make it accessible.
 Examples of these resources are [Server](/docs/guides_v1/inventory/server/), [Project](/docs/guides_v1/project/project_management/), [Alert](/docs/guides_v1/alert_manager/alert/) .
 
-In order to conveniently use the resources managed within SpaceONE for each service, we publish the predefined Role/Policy.
+In order to conveniently use the resources managed within SpaceONE for each service, we provide predefined Role/Policy.
 If you want to define your own access scope within the company, you can create a Custom Policy/Custom Role and apply it to the internal organization.
 
 For a detailed explanation of this, refer to [Understanding Role](/docs/concepts/identity/rbac/understanding-role/).
@@ -56,16 +56,15 @@ For a detailed explanation of this, refer to [Understanding Role](/docs/concepts
 ### Policy
 
 A policy is a collection of permissions. In permission, the allowed access range for each resource of Space One is defined.
-A policy can be assigned to each user through a role. Policies can be posted on the Marketplace and used by other users, or can be posted privately for a specific domain.
+A policy can be assigned to each user through a role. Policies can be published on the Marketplace and be used by other users, or can be published privately for a specific domain.
 
 This permission is expressed in the form below. _**{service}.{resource}.{verb}**_
 For example, it has the form _**inventory.Server.list**_ .
 
-Permission also corresponds to SpaceONE API Method. This is because each microservice in each SpaceONE is closely related to each exposed API method.
-Therefore, when the user who calls the API calls the method, the corresponding permission is required.
+Permission also corresponds to SpaceONE API Method. This is because each microservice in SpaceONE is closely related to each exposed API method.
+Therefore, when the user calls SpaceONE API Method, corresponding permission is required.
 
-For example, if you want to call inventory.Server.list to see the server list of the Inventory service
-The user must include the corresponding _**inventory.Server.list**_ permission in the role.
+For example, if you want to call inventory.Server.list to see the server list of the Inventory service, you must have the corresponding _**inventory.Server.list**_ permission included in your role.
 
 Permission cannot be granted directly to a user. Instead, an appropriate set of permissions can be defined as a policy and assigned to a user through a role.
 For more information, refer to [Understanding Policy](/docs/concepts/identity/rbac/understanding-policy/).
@@ -90,13 +89,13 @@ Depending on the role type, the user can access all resources within the domain 
 - Domain: You can access all resources within the domain.
 - Project: You can access the resources within the specified Project.
 
-Project type users can access resources within the project by being specific [added as a member of the project](/docs/guides_v1/project/project_management/).
+Project type users can access resources within the project by specifically being [added as a member of the project](/docs/guides_v1/project/project_management/).
 
-If you [Add as member of Project Group](/docs/guides_v1/project/project_group_management/), the right to access all subordinate project resources is inherited.
+If you [add as member of Project Group](/docs/guides_v1/project/project_group_management/), the right to access all subordinate project resources is inherited.
 
 ### Organization
 
-All resources in SpaceONE can be hierarchically managed through the following organizational structure.
+All resources in SpaceONE can be managed hierarchically through the following organizational structure.
 
 All users can specify access targets in such a way that they are _**connected (RoleBinding)**_ to the organization.
 - _**Domain**_ : This is the highest level organization. Covers all projects and project groups.
