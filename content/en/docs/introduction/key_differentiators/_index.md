@@ -8,11 +8,11 @@ description: >
 ---
 
 ## Open Platform
-In order to provide effective and flexible support over various clouds, we aim for an open source based strategy cloud developer community.
+In order to provide effective and flexible support over various cloud platforms, we aim for an open source based strategy cloud developer community.
 ![Open Platform](/docs/concepts/img/2020-07-31-3.18.54.png)
 
 ## Plugin Interfaces
-Proto Buffer-based optimizes gRPC Framework as its own engine, enables effective processing of thousands of various cloud schemas based on MSA \(Micro Service Architecture\).
+Protocol-Buffer based gRPC Framework provides optimization on its own engine, enabling effective processing of thousands of various cloud schemas based on MSA \(Micro Service Architecture\).
 ![Plugin Architecture](/docs/concepts/img/2020-07-31-3.23.50.png)
 
 ## Dynamic Rendering
