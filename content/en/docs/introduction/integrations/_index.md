@@ -8,48 +8,24 @@ description: >
 ---
 
 ## Overview
-SpaceONE은 Plugin Architecture 기반으로 개발되어, 각각의 Core Service를 지원하는 수많은 Eco System을 가지고 있습니다.
-아래의 리스트에 포함되지 않은 기술들이 플러그인으로서 지원되야 할 경우, 문의 주세요.
+Cloudforet supports the Plugin Interfaces, which supports to extend Core Services.
+The supported plugins are below
 
 ## Inventory
-_**Inventory.Collector**_ Type의 Plugin은 SpaceONE의 Asset 관리 기능의 핵심 역할을 수행합니다.
-다양한 리전에 숨어있는 여러 Provider의 Cloud Resource를 자동으로 탐색하여 체계적으로 분류하여 줍니다.
+_**Inventory.Collector**_ supports Collection of Assets.
+Integrate all your cloud service accounts and scan all existing resources. All cloud resources are collected through 
+Cloudforet collector plugins based on the Plugin Interfaces.
 
 ### [AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)
-수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
 ### [MS Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)
-Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
 
 ### [Google Cloud Service Plugin](https://github.com/spaceone-dev/plugin-google-cloud-service-inven-collector)
-Google Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
-
-### [Oracle Cloud Service Plugin](https://github.com/cloudforet-io/plugin-oracle-cloud-service-inven-collector)
-Oracle Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
-
-### [Alibaba Cloud Service Plugin](https://github.com/spaceone-dev/plugin-alibaba-cloud-ecs-inven-collector)
-Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다.
-<!-- {{< cardpane >}}
-{{< card header="**Amazon Web Service**" title="AWS Cloud Service Plugin" subtitle="수백개 이상의 AWS 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)">}}
-![AWS](/docs/references/supported_technologies/supported_technologies_img/aws_img.png)
-{{< /card >}}
-{{< card header="**MS Azure**" title="MS Azure Cloud Service Plugin" subtitle="Azure에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)" >}}
-![Azure](/docs/references/supported_technologies/supported_technologies_img/azure_img.png)
-{{< /card >}}
-{{< card header="**Google Cloud**" title="Google Cloud Service Plugin" subtitle="Google Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Google Cloud Service Plugin]()" >}}
-![Google Cloud](/docs/references/supported_technologies/supported_technologies_img/google_cloud_img.png)
-{{< /card >}}
-{{< card header="**Oracle Cloud**" title="Oracle Cloud Service Plugin" subtitle="Oracle Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Oracle Cloud Service Plugin]()" >}}
-![Oracle Cloud](/docs/references/supported_technologies/supported_technologies_img/oracle_cloud_img.png)
-{{< /card >}}
-{{< card header="**Alibaba Cloud**" title="Alibaba Cloud Service Plugin" subtitle="Alibaba Cloud 에서 주로 사용되는 Cloud Resource를 자동으로 탐색하여 분류 합니다." footer="[See Alibaba Cloud Service Plugin]()" >}}
-![Alibaba Cloud](/docs/references/supported_technologies/supported_technologies_img/alibaba_cloud_img.png)
-{{< /card >}}
-{{< /cardpane >}}--> 
 
 ## Identity
-_**Identity.auth**_ Type의 Plugin은 SpaceONE User의 인증 관리 역할을 수행합니다.
-Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다.
+_**Identity.auth**_ supports user management.
+Choonho various authentication options. Cloudforet supports from local ID / password to external identity services
+including Google OAuth2, Active Directory and Keycloak.
 
 ### [Google oAuth Identity Plugin](https://github.com/cloudforet-io/plugin-googleoauth2-identity-auth)
 ### [KeyCloak Identity Plugin](https://github.com/cloudforet-io/plugin-keycloak-identity-auth)
@@ -134,16 +110,3 @@ Plugin을 통해 사용자의 회사 계정과 SSO를 유지할 수 있습니다
 {{< /card >}}
 {{< /cardpane >}} -->
 
-## Power Scheduler
-
-### [AWS Power Controller Plugin](https://github.com/cloudforet-io/plugin-aws-state-inven-collector)
-### [Google Power Controller Plugin](https://github.com/spaceone-dev/plugin-google-cloud-ps-controller)
-<!-- {{< cardpane >}}
-{{< card header="**AWS Power Controller**" title="AWS Power Controller Plugin" subtitle="" footer="[See AWS Power Controller Plugin]()" >}}
-![AWS Power Controller Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_autoscaling_img.png)
-![AWS Power Controller Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_rds_img.png)
-{{< /card >}}
-{{< card header="**Google Power Controller**" title="Google Power Controller Plugin" subtitle="" footer="[See Google Power Controller Plugin]()" >}}
-![Google Power Controller Plugin](/docs/references/supported_technologies/supported_technologies_img/google_cloud_compute_engine_img.jpg)
-{{< /card >}}
-{{< /cardpane >}} -->
