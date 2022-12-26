@@ -8,11 +8,11 @@ description: >
 
 ---
 
-## SpaceONE Deployment
-The SpaceONE can be deployed by Helm chart.
+## Cloudforet Deployment
+The Cloudforet can be deployed by Helm chart.
 Each micro services has its own Helm chart, and the top chart, spaceone/spaceone contains all sub charts like console, identity, inventory and plugin.
 
-SpaceONE provides own Helm chart repository. The repository URL is ***https://cloudforet-io.github.io/charts***
+Cloudforet provides own Helm chart repository. The repository URL is ***https://cloudforet-io.github.io/charts***
 
 ~~~
 helm repo add spaceone https://cloudforet-io.github.io/charts
@@ -21,34 +21,34 @@ helm repo update
 
 helm search repo -r spaceone
 NAME                          	CHART VERSION	APP VERSION	DESCRIPTION
-spaceone/spaceone             	1.8.6        	1.8.6      	A Helm chart for SpaceONE
-spaceone/spaceone-initializer 	1.2.8        	1.x.y      	SpaceONE domain initializer Helm chart for Kube...
-spaceone/billing              	1.3.6        	1.x.y      	SpaceONE billing Helm chart for Kubernetes
-spaceone/billing-v2           	1.3.6        	1.x.y      	SpaceONE billing v2 Helm chart for Kubernetes
-spaceone/config               	1.3.6        	1.x.y      	SpaceONE config Helm chart for Kubernetes
-spaceone/console              	1.2.5        	1.x.y      	SpaceONE console Helm chart for Kubernetes
-spaceone/console-api          	1.1.8        	1.x.y      	SpaceONE console-api Helm chart for Kubernetes
-spaceone/cost-analysis        	1.3.7        	1.x.y      	SpaceONE Cost Analysis Helm chart for Kubernetes
-spaceone/cost-saving          	1.3.6        	1.x.y      	SpaceONE cost_saving Helm chart for Kubernetes
-spaceone/docs                 	2.0.0        	1.0.0      	SpaceONE Open-Source Project Site Helm chart fo...
-spaceone/identity             	1.3.7        	1.x.y      	SpaceONE identity Helm chart for Kubernetes
-spaceone/inventory            	1.3.7        	1.x.y      	SpaceONE inventory Helm chart for Kubernetes
-spaceone/marketplace-assets   	1.1.3        	1.x.y      	SpaceONE marketplace-assets Helm chart for Kube...
-spaceone/monitoring           	1.3.15       	1.x.y      	SpaceONE monitoring Helm chart for Kubernetes
-spaceone/notification         	1.3.8        	1.x.y      	SpaceONE notification Helm chart for Kubernetes
-spaceone/plugin               	1.3.6        	1.x.y      	SpaceONE plugin Helm chart for Kubernetes
-spaceone/power-scheduler      	1.3.6        	1.x.y      	SpaceONE power_scheduler Helm chart for Kubernetes
-spaceone/project-site         	1.0.0        	0.1.0      	SpaceONE Open-Source Project Site Helm chart fo...
-spaceone/repository           	1.3.6        	1.x.y      	SpaceONE repository Helm chart for Kubernetes
-spaceone/secret               	1.3.9        	1.x.y      	SpaceONE secret Helm chart for Kubernetes
-spaceone/spot-automation      	1.3.6        	1.x.y      	SpaceONE spot_automation Helm chart for Kubernetes
-spaceone/spot-automation-proxy	1.0.0        	1.x.y      	SpaceONE Spot Automation Proxy Helm chart for K...
-spaceone/statistics           	1.3.6        	1.x.y      	SpaceONE statistics Helm chart for Kubernetes
-spaceone/supervisor           	1.1.4        	1.x.y      	SpaceONE supervisor Helm chart for Kubernetes
+spaceone/spaceone             	1.8.6        	1.8.6      	A Helm chart for Cloudforet
+spaceone/spaceone-initializer 	1.2.8        	1.x.y      	Cloudforet domain initializer Helm chart for Kube...
+spaceone/billing              	1.3.6        	1.x.y      	Cloudforet billing Helm chart for Kubernetes
+spaceone/billing-v2           	1.3.6        	1.x.y      	Cloudforet billing v2 Helm chart for Kubernetes
+spaceone/config               	1.3.6        	1.x.y      	Cloudforet config Helm chart for Kubernetes
+spaceone/console              	1.2.5        	1.x.y      	Cloudforet console Helm chart for Kubernetes
+spaceone/console-api          	1.1.8        	1.x.y      	Cloudforet console-api Helm chart for Kubernetes
+spaceone/cost-analysis        	1.3.7        	1.x.y      	Cloudforet Cost Analysis Helm chart for Kubernetes
+spaceone/cost-saving          	1.3.6        	1.x.y      	Cloudforet cost_saving Helm chart for Kubernetes
+spaceone/docs                 	2.0.0        	1.0.0      	Cloudforet Open-Source Project Site Helm chart fo...
+spaceone/identity             	1.3.7        	1.x.y      	Cloudforet identity Helm chart for Kubernetes
+spaceone/inventory            	1.3.7        	1.x.y      	Cloudforet inventory Helm chart for Kubernetes
+spaceone/marketplace-assets   	1.1.3        	1.x.y      	Cloudforet marketplace-assets Helm chart for Kube...
+spaceone/monitoring           	1.3.15       	1.x.y      	Cloudforet monitoring Helm chart for Kubernetes
+spaceone/notification         	1.3.8        	1.x.y      	Cloudforet notification Helm chart for Kubernetes
+spaceone/plugin               	1.3.6        	1.x.y      	Cloudforet plugin Helm chart for Kubernetes
+spaceone/power-scheduler      	1.3.6        	1.x.y      	Cloudforet power_scheduler Helm chart for Kubernetes
+spaceone/project-site         	1.0.0        	0.1.0      	Cloudforet Open-Source Project Site Helm chart fo...
+spaceone/repository           	1.3.6        	1.x.y      	Cloudforet repository Helm chart for Kubernetes
+spaceone/secret               	1.3.9        	1.x.y      	Cloudforet secret Helm chart for Kubernetes
+spaceone/spot-automation      	1.3.6        	1.x.y      	Cloudforet spot_automation Helm chart for Kubernetes
+spaceone/spot-automation-proxy	1.0.0        	1.x.y      	Cloudforet Spot Automation Proxy Helm chart for K...
+spaceone/statistics           	1.3.6        	1.x.y      	Cloudforet statistics Helm chart for Kubernetes
+spaceone/supervisor           	1.1.4        	1.x.y      	Cloudforet supervisor Helm chart for Kubernetes
 ~~~
 
 {{< alert title="Installation" >}}
-	SpaceONE can be easily deployed by single Helm chart with spaceone/spaceone.
+	Cloudforet can be easily deployed by single Helm chart with spaceone/spaceone.
 	See https://cloudforet.io/docs/setup_operation/
 {{< /alert >}}
 
