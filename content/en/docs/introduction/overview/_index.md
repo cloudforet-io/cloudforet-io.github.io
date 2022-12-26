@@ -10,9 +10,9 @@ description: >
 ## Main Features
 
 ### 1. Multi-Cloud Management
-* IaaS Infra-integration: Auto-discovery and sorting infrastructure information that scattered across various platform
-* Resource Search: Quick search that reflected on relevance over resources
-* Resource Monitoring: Instant connection for resources status that connected to infrastructure
+* IaaS Infra-integration: Auto-discovery and sorting infrastructure information scattered across various platforms
+* Resource Search: Quick search over resources reflected on relevance
+* Resource Monitoring: Instant connection to resource's status connected to infrastructure
 
 ### 2. Cloud Orchestration
 * Infrastructure as Code: Code-based infrastructure configuration management
