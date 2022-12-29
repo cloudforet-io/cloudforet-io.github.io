@@ -7,3 +7,4 @@ menu:
     main:
         weight: 1
 ---
+<img src="/images/documentation/cloudforet_ecosystem.jpeg" alt="cloudforet ecosystem">
