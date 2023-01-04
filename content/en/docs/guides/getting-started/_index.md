@@ -172,5 +172,5 @@ Account information required for each cloud service may differ. You can see deta
 After completing the above steps, if you want to use Cloudforet’s services more conveniently and in a variety of ways, please see the following guide:
 
 - [Start **Asset inventory**](/docs/guides/asset-inventory/quick-start)
-- [**Start cost analysis**](/docs/guides/cost-explorer/cost-analysis)
+- [Start **cost analysis**](/docs/guides/cost-explorer/cost-analysis)
 - [Start **Alert manager**](/docs/guides/alert-manager/quick-start)
