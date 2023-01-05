@@ -11,14 +11,14 @@ description: >
 
 ## Kubernetes(EKS) node groups
 
-Kubernetes(EKS) provides node groups for provisioning and lifecycle management of nodes.
+Kubernetes(EKS) provides **node groups**, which is used for provisioning and providing lifecycle management of nodes.
 
-SpaceONE recommends two seperate node groups for core services and plugins.
+SpaceONE recommends using two seperate node groups, one for **core service** and the other for **plugins**.
 
 | node group | Description |
 | ---        | ---         |
-| spaceone-core-nodegroup | Deploy core PODs like identity, console, inventory |
-| spaceone-supervisor-nodegroup | Deploy supervisor POD and plugins            |
+| spaceone-core-nodegroup | Deploy core pods like identity, console, inventory |
+| spaceone-supervisor-nodegroup | Deploy supervisor pods and plugins            |
 
 ![](/docs/setup_operation/advanced_installation/img/spaceone-node-groups.png)
 
@@ -38,39 +38,39 @@ Each node group has its own ***kubernetes labels***
 
 ## Helm chart value
 
-Based on ***kubernetes labels*** on node groups, helm chart support node selector options
+Based on ***kubernetes labels*** on node groups, SpaceONE helm chart supports node selector options.
 
 </br>
-SpaceONE helm chart supports ***pod.spec*** options, if you want specific options for pod.
+SpaceONE helm chart also supports ***pod.spec*** options, so that you can specific options for some pod.
 
-One example is ***nodeSelector*** which determine POD location based on kubernetes labels.
+One example is ***nodeSelector***, which determines pod's location based on labels.
 
 ### spaceone-core-nodegroup
 
-Include ***nodeSelector*** at every chart value like
+Include ***nodeSelector*** at every chart value like below.
 
-The vaule of nodeSelector is ***kubernetes labels*** above.
+The value of nodeSelector is the key and value of label that you have applied above.
 ~~~
 config:
-    enabled: true
-    replicas: 4
-    image:
-      name: public.ecr.aws/megazone/spaceone/config
-      version: 1.8.5
+  enabled: true
+  replicas: 4
+  image:
+    name: public.ecr.aws/megazone/spaceone/config
+    version: 1.8.5
 
 
-    pod:
-      spec:
-        nodeSelector:
-          Category: core
+  pod:
+    spec:
+      nodeSelector:
+        Category: core
 
 ~~~
 
 ### spaceone-supervisor-nodegroup
 
-Include ***nodeSelector*** at supervisor chart value.
+Include ***nodeSelector*** at supervisor chart value like below.
 
-In a supervisor value, you have to update two section.
+In a supervisor value, you have to update two sections.
 
 1. ***KubernetesConnector***
 2. ***pod***
@@ -83,7 +83,7 @@ KubernetesConnector
     Category: supervisor
 ~~~
 
-***pod*** indicates that supervisor POD itself is deployed with nodeSelector option.
+***pod*** indicates that supervisor pod itself is deployed with nodeSelector option.
 
 ~~~
 pod:
