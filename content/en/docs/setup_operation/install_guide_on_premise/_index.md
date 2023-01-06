@@ -142,7 +142,7 @@ $ helm install spacectl -f docs.yaml cloudforet/spacectl
 ```
 
 ### install ingress
-- (option) Generate TLS for HTTPS Connection
+- (option) Generate a TLS secret for HTTPS Connection
 ```shell
 $ kubectl create secret tls web-ssl --key web_ssl.pem --cert web_ssl.csr
 ```
