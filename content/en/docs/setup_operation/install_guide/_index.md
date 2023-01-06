@@ -1,7 +1,7 @@
 ---
 title: "Install Guide"
 linkTitle: "Install Guide"
-weight: 1
+weight: 2
 url_dash_board: "/docs/guides_v1/install_guide"
 date: 2021-07-31
 description: >
