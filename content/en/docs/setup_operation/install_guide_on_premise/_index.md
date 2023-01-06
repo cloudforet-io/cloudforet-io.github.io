@@ -16,7 +16,7 @@ description: >
 ```shell
 $ helm repo add cloudforet https://cloudforet-io.github.io/charts
 $ helm repo list
-$ helm repo update
+$ helm repo update cloudforet
 ```
 or
 - Download helm chart directly using wget to your workspace
