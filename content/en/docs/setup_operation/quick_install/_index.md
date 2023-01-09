@@ -12,11 +12,11 @@ description: >
 Quick install guide for SpaceONE with minikube.
 
 ## Preparation
-Before you install SpaceONE, you need minikube, helm. <br>
+Before installing SpaceONE, you need minikube and helm installed. <br>
 Refer to the link below and proceed with the installation.
 
-* [Minikube Install](https://minikube.sigs.k8s.io/docs/start/)
-* [Helm Install](https://helm.sh/docs/intro/install/)
+* [Minikube Installation](https://minikube.sigs.k8s.io/docs/start/)
+* [Helm Installation](https://helm.sh/docs/intro/install/)
 
 
 ## Start Minikube
@@ -28,7 +28,7 @@ minikube start --driver=docker --memory=4096mb
 ## Install SpaceONE
 
 ### Namespace
-Create namespace for SpaceONE.<br>
+Create namespace a for SpaceONE.<br>
 SpaceONE needs two namespaces, **spaceone** and **root-supervisor**.
 ~~~bash
 kubectl create ns spaceone
@@ -41,7 +41,7 @@ kubectl get ns
 ~~~
 
 ### Helm Chart
-I highly recommend changing kubenetes namespace to spaceone.
+It is highly recommended to change kubernetes namespace to spaceone.
 ~~~bash
 kubectl config set-context $(kubectl config current-context) --namespace spaceone
 ~~~
@@ -60,7 +60,7 @@ cd charts/examples/v1.9.4
 helm install spaceone -f minikube.yaml spaceone/spaceone
 ~~~
 
-If you use EC2 VM(not localhost), edit minikube.yaml file, ***localhost*** to EC2 public IP.
+If you are using Amazon EC2, change ***localhost*** to your Amazon EC2's public IP address at minikube.yaml.
 
 * ENDPOINT
 * DOMAIN_NAME_REF
@@ -80,23 +80,23 @@ kubectl get pod
 ~~~
 ![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_01.png)
 
-Check STATUS **Completed** or **Running**.
+Check if STATUS is **Completed** or **Running**.
 It will take some time, so please wait.
 
 ## Port-forwarding
-Since you have installed SpaceONE in your minikube, you don’t have any ingress like ALB or NGINX ingress controller.
-We use **kubectl port-forward**.
+Installing SpaceONE on minikube doesn't provide any Ingress objects such as Amazon ALB or NGINX ingress controller.
+We can use **kubectl port-forward** instead.
 
 ~~~bash
 kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0'
 kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0'
 ~~~
 
-Open two terminal then run at separate terminal.
+Open two terminals then run each command at separate terminal.
 ![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_02.png)
 
 ### Tips
-You can run in the background by adding & at the end.
+You can run **kubectl port-forward** in background by adding & at the end.
 
 ~~~bash
 kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
@@ -120,9 +120,8 @@ Open browser
 
 ## Reference
 
-If you use Amazon Linux(RedHat Linux).
+If you are using Amazon Linux(RedHat Linux), you have to install required dependencies.
 
-Install dependency libraries.
-~~~
+~~~bash
 yum install socat
 ~~~

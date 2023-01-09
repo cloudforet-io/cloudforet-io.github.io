@@ -11,11 +11,11 @@ description: >
 
 ## Title and Favicon
 
-SpaceONE has default Title and CI with Wanny Favicon like
+SpaceONE has default title and CI with Wanny favicon.
 
 ![](/docs/setup_operation/advanced_configuration/img/spaceone_default_favicon.png)
 
-But you can change your own Title and Favicon.
+But you can change them to your own title and favicon.
 
 ![](/docs/setup_operation/advanced_configuration/img/spaceone_custom_favicon.png)
 
@@ -27,11 +27,11 @@ But you can change your own Title and Favicon.
 | Favicon     | /var/www/favicon.ico | favicon file |
 
 
-Console supports the functionality of changing Title and Favicon.
-The default values are in source code, but you can overwrite them when deploying POD.
+Console supports the functionality of changing title and favicon.
+The default values are in source code, but you can overwrite them when deploying pods.
 
 </br>
-This is example value of console.yaml
+This is an example value of console.yaml file.
 
 ~~~
   # favicon
@@ -56,7 +56,7 @@ This is example value of console.yaml
             name: favicon-img
 ~~~
 
-The real values are used as ConfigMap in kubernetes. So you have to change the format as ConfigMap.
+The actual values are from Kubernetes ConfigMap object. So you might have to change the value at ConfigMap or create a new one and mount it in your pod.
 
 ### Title
 
@@ -85,7 +85,7 @@ binaryData:
 
 ~~~
 
-**_NOTE:_**  favicon.ico must be encoded to base64.
+**_NOTE:_**  favicon.ico must be base64 encoded.
 
 ~~~
 # cat favicon.ico | base64
@@ -114,7 +114,7 @@ keyword: ***DOMAIN_IMAGE***
 | CI_TEXT           	| CI Text Image On every page | Image (123 * 16 px)  |
 
 
-**_NOTE:_**  Recommended file format is SVG. But if you has PNG, use transparent background and twice larger than recommended size.
+**_NOTE:_**  Recommended file format is SVG. But if you would like to use a PNG file, use transparent background and double the size than recommended size.
 
 **_NOTE:_**  SpaceONE does not support uploading files, so upload CI files at your web server or S3.!
 

@@ -20,15 +20,15 @@ This example shows the Option 1.<br>
 https://github.com/cloudforet-io/launchpad.git
 
 ### Configure environments
-Prepare your AWS credentials. Put your ~/.aws/credentials
+Prepare your AWS credentials. Add them in your machine's ~/.aws/credentials file.
 
 ~~~bash
 git clone https://github.com/cloudforet-io/launchpad.git
 cd launchpad/spaceone/eks/terraform
 ~~~
 
-edit eks.auto.tfvars<br>
-This is your environment variables.
+Edit eks.auto.tfvars<br>
+This file keeps values of environment variables below.
 
 * ***region*** is aws region name for installation.
 * ***userarn*** is your IAM arn for installation.
@@ -46,7 +46,7 @@ map_users = [
 ~~~
 
 ### Execute terraform
-If you don't have terraform binary, see [Reference](#reference)
+If you don't have terraform binary, see [Reference](#reference).
 ~~~bash
 terraform init
 terraform plan
@@ -54,9 +54,9 @@ terraform apply
 ~~~
 
 ### Configure kubernetes
-After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This file is config of kubernetes. <br>
-If you don't have kubectl, see [Reference](#reference)
-You may also install aws-iam-authenticator, see [Reference](#reference)
+After installation, ***kubeconfig_spaceone-prd-eks*** file will be created. This is used as a configuration file of Kubernetes.<br>
+If you don't have kubectl installed, see [Reference](#reference).
+You may also have to install aws-iam-authenticator, see [Reference](#reference).
 
 ~~~bash
 cp kubecconfig_spaceone-prd-eks ~/.kube/config

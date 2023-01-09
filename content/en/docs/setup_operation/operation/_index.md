@@ -9,16 +9,16 @@ description: >
 
 ---
 
-## Default Language and Timezone
+## Default language and timezone
 
-When you create user, English and UTC-0 are default settings.
-You can change default language and timezone per domain.
+When you a create user, default language is English and timezone is UTC-0.
+You can change these default settings per domain.
 
-Each domain has its own config parameters. Update LANGUAGE and TIMEZONE value. You can update this value by spacectl or domain initializer.
+Each domain has its own config parameters. Update values of LANGUAGE and TIMEZONE. You can update this value using spacectl or domain initializer.
 
 ### Method 1. spacectl
 
-Save config.yaml file
+Save config.yaml file.
 
 ~~~
 config:
@@ -26,7 +26,7 @@ config:
     TIMEZONE: Asia/Seoul
 ~~~
 
-Update by spacectl
+Update using spacectl.
 
 ***command***
 
