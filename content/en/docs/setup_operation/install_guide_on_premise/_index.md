@@ -39,7 +39,7 @@ $ mv docs /move/to/your/workspace
 
 ### Pre-install
 - Create a ConfigMap for global configuration
-    - See the example files [here]().
+    - See the example files [here](https://github.com/cloudforet-io/charts/blob/master/examples/v1.10.5/on-premise/pre-install/shared.yaml).
 ```shell
 $ kubectl create -f shared.yaml
 ```
@@ -70,13 +70,13 @@ $ sh create_registry_type_secret.sh
 > NOTE: If you downloaded helm chart directly using wget, replace cloudforet/{chart} to workspace/{chart} in the guide below.
 
 ### 1. Install cloudforet
-- See the example files [here]().
+- See the example files [here](https://github.com/cloudforet-io/charts/tree/master/examples/v1.10.5/on-premise/spaceone).
 ```shell
 $ helm install cloudforet -f values.yaml -f frontend.yaml -f database.yaml cloudforet/spaceone
 ```
 
 ### 2. Create cloudforet domains
-- See the example files [here]().
+- See the example files [here](https://github.com/cloudforet-io/charts/blob/master/examples/v1.10.5/on-premise/spaceone-domain/domain.yaml).
 
 > NOTE: After running the command, Make sure that the initializer-spaceone pod status is completed 
 ```shell
@@ -104,7 +104,7 @@ FINISHED [ ok=62, skipped=0 ] **************************************************
 
 FINISH SPACEONE INITIALIZE
 ```
-- Replace `<replace_token>` to `<system_token>` in [values.yaml]()
+- Replace `<replace_token>` to `<system_token>` in [values.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/v1.10.5/on-premise/spaceone/values.yaml#L321)
 
 example)
 ```diff
@@ -130,13 +130,13 @@ $ helm upgrade cloudforet -f values.yaml -f frontend.yaml -f database.yaml cloud
 ## Additional installation
 
 ### install docs
-- See the example files [here]().
+- See the example files [here](https://github.com/cloudforet-io/charts/blob/master/examples/v1.10.5/on-premise/additional/eco/docs.yaml).
 ```shell
 $ helm install docs -f docs.yaml cloudforet/docs
 ```
 
 ### install spacectl
-- See the example files [here]().
+- See the example files [here](https://github.com/cloudforet-io/charts/blob/master/examples/v1.10.5/on-premise/additional/eco/spacectl.yaml).
 ```shell
 $ helm install spacectl -f docs.yaml cloudforet/spacectl
 ```
@@ -151,7 +151,7 @@ $ kubectl create secret tls api-ssl --key api_ssl.pem --cert api_ssl.csr
 ```
 
 - Create ingress
-    - See the example files [here]().
+    - See the example files [here](https://github.com/cloudforet-io/charts/tree/master/examples/v1.10.5/on-premise/additional/ingress).
 ```shell
 $ kubectl apply -f assets-ingress.yaml
 $ kubectl apply -f console-ingress.yaml
