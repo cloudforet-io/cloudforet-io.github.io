@@ -54,6 +54,10 @@ helm repo update
 ~~~
 
 ### Install SpaceONE with helm chart
+> Example versions are subject to change.<br>
+> Please refer to this [link](https://github.com/cloudforet-io/charts/tree/master/examples) to check the latest version.
+
+
 ~~~bash
 git clone https://github.com/cloudforet-io/charts.git
 cd charts/examples/v1.10.4
