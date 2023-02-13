@@ -1,6 +1,6 @@
 ---
 title: Commnunity | Cloudforet
-linkTitle: Community
+linkTitle: コミュニティ
 description: We've built together multi-cloud environments and change the way you operate IT infrastructure across on-premise and multi-clouds.
 menu:
     main:

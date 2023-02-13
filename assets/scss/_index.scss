@@ -86,10 +86,6 @@ html {
   display: none !important;
 }
 
-*:lang(en) .td-home {
-  font-family: "Work Sans";
-}
-
 // color set (only for home)
 $dark-bg: rgba(220, 218, 233, 0.1) !important;
 $gradient1: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
@@ -937,4 +933,60 @@ $gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
   }
 }
 
+// japanese version
+*:lang(jp) .td-home {
+  word-break: break-word;
+
+  .feature-management {
+    //border: solid 1px lightgreen;
+    .feature {
+      .contents {
+        h4 {
+          letter-spacing: -0.04rem;
+        }
+        .description {
+          letter-spacing: -0.03rem;
+        }
+      }
+    }
+  }
+
+  .feature-notification {
+    .contents {
+      width: 68%;
+    }
+  ;
+  }
+
+  .feature-analysis {
+   .feature {
+     .description {
+       letter-spacing: 0.04em;
+     }
+   }
+  }
+  .feature-by-project {
+    .feature {
+      .contents {
+        h4 {
+          letter-spacing: -0.1rem;
+        }
+      }
+    }
+  }
+
+  .section-strength {
+    .strength-1 {
+      h4 {
+        font-size: 1.6rem;
+        letter-spacing: -0.0625rem;
+      }
+    }
+    .strength-2 {
+      .description {
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+}
 

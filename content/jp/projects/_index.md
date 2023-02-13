@@ -1,6 +1,6 @@
 ---
 title: Projects | Cloudforet
-linkTitle: Projects
+linkTitle: プロジェクト
 description: Projects
 menu:
     main:
