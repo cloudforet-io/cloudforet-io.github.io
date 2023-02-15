@@ -1,0 +1,10 @@
+// japanese
+*:lang(jp) .td-home {
+    word-break: break-word;
+
+    .feature-notification {
+        .contents {
+            width: 68%;
+        };
+    }
+}

@@ -1,10 +1,19 @@
+/* This file is provided by Docsy as an entry point to styling.
+Add styles or override variables from the theme here. */
+
+@import "reboot";
+
+@import "functions";
+@import "mixins";
+
 @import "navbar";
-@import "index";
+@import "home";
+@import "home-laptop";
+@import "home-tablet";
+@import "home-mobile";
+@import "home-ko";
+@import "home-jp";
 @import "footer";
 @import "community";
 @import "box";
 @import "banner";
-
-.pageinfo {
-  margin: 2rem 0;
-}

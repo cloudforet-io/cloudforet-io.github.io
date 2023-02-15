@@ -1,104 +1,103 @@
 footer {
-  min-height: auto;
-  margin-top: auto;
-
-  .inner {
+    min-height: auto;
     margin-top: auto;
-  }
 
-  .contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
-    color: $navy400;
-    border-top: solid 1px $navy100
-  }
-
-  .copyright {
-    text-align: left;
-    img {
-      width: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  .license {
-    font-size: 0.875rem;
-    line-height: 1.6;
-    a {
-      color: inherit;
-    }
-  }
-
-  .external-link {
-    display: flex;
-    a {
-      display: inline-block;
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-      color: currentColor;
-    }
-    i {
-      color: currentColor;
-      font-size: 1.75rem;
-    }
-
-  }
-
-  .td-home & {
-    background-color: $dark-bg;
     .inner {
-      padding:0 1.875rem;
-      max-width: 112rem;
-      margin: 0 auto;
+        margin-top: auto;
     }
-    .contents {
-      border-top: none;
-      color: $navy300;
-    }
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  footer {
-    padding-left: 1rem;
-    padding-right: 1rem;
 
     .contents {
-      flex-direction: column;
-      justify-content: initial;
-      width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        color: $navy400;
+        border-top: solid 1px $navy100
     }
 
     .copyright {
-      align-self: flex-start;
+        text-align: left;
+        img {
+            width: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .license {
+        @include typography('text-sm');
+        a {
+            color: inherit;
+        }
     }
 
     .external-link {
-      margin-top: 1.5rem;
+        display: flex;
+        a {
+            display: inline-block;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: currentColor;
+        }
+        i {
+            color: currentColor;
+            font-size: 1.75rem; // for icon size
+        }
+
     }
-  }
+
+    .td-home & {
+        background-color: $dark-bg;
+        .inner {
+            padding:0 1.875rem;
+            max-width: 112rem;
+            margin: 0 auto;
+        }
+        .contents {
+            border-top: none;
+            color: $navy300;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .contents {
+            flex-direction: column;
+            justify-content: initial;
+            width: 100%;
+        }
+
+        .copyright {
+            align-self: flex-start;
+        }
+
+        .external-link {
+            margin-top: 1.5rem;
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-  .documentation footer {
-    padding-left: $td-sidebar-width;
-    padding-right: $table-of-contents-with;
+    .documentation footer {
+        padding-left: $td-sidebar-width;
+        padding-right: $table-of-contents-with;
 
-    .inner {
-      max-width: 60rem;
-      padding-right: 4rem;
-      padding-left: 4rem;
-      margin: 0 auto;
+        .inner {
+            max-width: 60rem;
+            padding-right: 4rem;
+            padding-left: 4rem;
+            margin: 0 auto;
+        }
     }
-  }
 
-  .community footer,
-  .projects footer{
-    width: 55rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .community footer,
+    .projects footer{
+        width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

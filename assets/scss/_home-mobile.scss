@@ -1,0 +1,95 @@
+@media screen and (max-width: 767px) {
+  html, body {
+    font-size: 62.5%; // 10px = 16px(browser default font size) * 0.625
+  }
+  .td-home {
+    h2 {
+      padding-top: 0;
+    }
+    .section {
+      .inner {
+        width: 36rem;
+        gap: 1.6rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+
+    .section-main {
+      height: 56rem;
+      background-size: 200% auto;
+
+      .inner {
+        padding-top: 12rem;
+        padding-bottom: 4.8rem;
+        gap: 4rem;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+
+    .feature-management {
+      &:before {
+        background-position-y: -51.4rem;
+      }
+    }
+
+    .section-feature {
+      .feature {
+        .contents {
+          width: 100%;
+          .description {
+            @include typography('text-lg');
+          }
+        }
+      }
+    }
+
+    .section-strength {
+      .strength {
+        .img-strength {
+          width: 8rem;
+          height: 8rem;
+        }
+        h4 {
+          margin: 1.6rem 0 1.2rem;
+        }
+        .description {
+          width: 100%;
+          @include typography('text-lg');
+        }
+      }
+    }
+
+    .section-universe {
+      .inner {
+        padding: 0;
+      }
+      .img-universe {
+        width: 100vw;
+      }
+    }
+
+    .section-mission {
+      .inner {
+        padding-bottom: 3.2rem;
+      }
+    }
+  }
+
+  .btn-link {
+    min-width: 14.4rem;
+    height: 4.1rem;
+  }
+
+  .btn-link-gradient {
+    &.link-github:before {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.6rem;
+    }
+  }
+}

@@ -1,34 +1,34 @@
 .td-outer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding-top: calc(#{$navbar-height} + #{$banner-height});
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: calc(#{$navbar-height} + #{$banner-height});
 }
 
 .td-main {
-  flex-grow: 1;
-  margin-bottom: 2rem;
-  background-color: $white;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+    background-color: $white;
 
-  main {
-    width: 100%;
-    padding-left: $td-sidebar-width;
-    padding-right: $table-of-contents-with;
+    main {
+        width: 100%;
+        padding-left: $td-sidebar-width;
+        padding-right: $table-of-contents-with;
 
-    @include media-breakpoint-down(md) {
-      padding: 1rem;
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+        }
     }
-  }
 }
 
 @media only screen and (max-width: 1023px) {
-  .td-outer {
-    padding-top: $navbar-height;
-  }
+    .td-outer {
+        padding-top: $navbar-height;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-  .td-outer {
-    padding-top: calc(#{$navbar-height} + #{$banner-height} + 2.25rem);
-  }
+    .td-outer {
+        padding-top: calc(#{$navbar-height} + #{$banner-height} + 2.25rem);
+    }
 }

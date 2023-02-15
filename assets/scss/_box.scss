@@ -1,41 +1,41 @@
 .box-wrap {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 2.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2.5rem;
 }
 
 h2 + .box-wrap {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .box {
-  padding: 1.5rem 1.25rem;
-  border:solid 1px $navy100;
-  background-color: $white;
+    padding: 1.5rem 1.25rem;
+    border:solid 1px $navy100;
+    background-color: $white;
 
-  > h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  a:not(.link-button) {
-    display: block;
-    font-size: 1rem;
-    line-height: 1.3;
-
-    &:first-of-type {
-      margin-top: 1.5rem;
+    > h2 {
+        margin-bottom: 0.5rem;
     }
-  }
 
-  .link-button {
-    margin-top: 1.5rem;
-  }
+    a:not(.link-button) {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.3;
+
+        &:first-of-type {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .link-button {
+        margin-top: 1.5rem;
+    }
 
 }
 
 @media only screen and (max-width: 767px) {
-  .box-wrap {
-    grid-template-columns: auto;
-  }
+    .box-wrap {
+        grid-template-columns: auto;
+    }
 }

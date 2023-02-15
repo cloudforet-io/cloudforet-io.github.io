@@ -1,0 +1,125 @@
+// korean
+*:lang(ko) .td-home {
+    font-family: $font-family-serif;
+
+    .section-feature {
+        .feature {
+            .contents {
+                width: 100%;
+                h4 {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .feature-notification {
+        .feature {
+            .contents {
+                .description {
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    .feature-by-project {
+        .feature {
+            .contents {
+                .description {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .section-mission {
+        h4 {
+            max-width: unset;
+            .lb {
+                display:block;
+            }
+        }
+    }
+
+    // korean tablet
+    @media screen and (max-width: 1023px) {
+        .section-feature {
+            .feature {
+                .contents {
+                    h4 {
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                    .description {
+                        width: 36rem;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
+        .feature-by-project {
+            .feature {
+                .contents {
+                    .description {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .section-strength {
+            .description {
+                width: 68%;
+            }
+        }
+
+        .section-mission {
+            h4 {
+                max-width: 36rem;
+            }
+        }
+    }
+
+    // korean mobile
+    @media screen and (max-width: 767px) {
+        .section-main {
+            h2 {
+                @include typography('home-heading1');
+                em {
+                    @include typography('home-slogan');
+                }
+            }
+        }
+        .section-feature {
+            .feature {
+                .contents {
+                    .description {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+
+        .section-strength {
+            .description {
+                width: 90%;
+            }
+        }
+
+        .section-mission {
+            .description {
+                .lb {
+                    display: block;
+                }
+            }
+        }
+    }
+}

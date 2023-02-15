@@ -1,25 +1,101 @@
 // Theme flags.
 $td-enable-google-fonts: true;
 
-// Fonts
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
-$td-fonts-serif: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-sans-serif: $td-fonts-serif;
+// Typography
+// See : https://www.figma.com/file/whECquPCFd6NTddaz3RZmP/Cloudforet-Site?node-id=5133%3A8909&t=o1EKFStZrZK9nlKP-1
+@font-face { font-family:"Pretendard";  src:url("/fonts/Pretendard-Regular.woff2") format("woff2");  font-display: block;  font-weight: 400;  font-style: normal; }
+@font-face { font-family:"Pretendard";  src:url("/fonts/Pretendard-Medium.woff2") format("woff2");  font-display: block;  font-weight: 500;  font-style: normal; }
+@font-face { font-family:"Pretendard";  src:url("/fonts/Pretendard-SemiBold.woff2") format("woff2");  font-display: block;  font-weight: 600;  font-style: normal; }
+@font-face { font-family:"Pretendard";  src:url("/fonts/Pretendard-Bold.woff2") format("woff2");  font-display: block;  font-weight: 700;  font-style: normal; }
 
-$enable-gradients: true;
-$enable-rounded: true;
-$enable-shadows: true;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=block'); // This font is applied only to the Home page
 
-$headings-font-weight: 400;
-$headings-line-height: 1.3;
-$h1-font-size: 2rem;
-$h2-font-size: 1.5rem;
-$h3-font-size: 1.124rem;
-$h4-font-size: 0.875rem;
-$h5-font-size: 0.875rem;
-$h6-font-size: 0.875rem;
+$font-family-sans-serif: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Work Sans", $font-family-sans-serif;
+$font-awesome: "Font Awesome 5 Free";
 
-$font-weight-semibold: 600 !default;
+$line-height-normal: 1.5;
+$line-height-tight: 1.25;
+$line-height-none: 1;
+
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$typography-size: (
+        "heading1": 48px,
+        "heading2": 30px,
+        "heading3": 24px,
+        "text-xl": 20px,
+        "text-lg": 18px,
+        "text-md": 16px,
+        "text-sm": 14px,
+        "button": 16px,
+        "link": 16px,
+        // home
+        "home-slogan": 64px,
+        "home-heading1": 36px,
+        "home-heading2": 28px,
+        "home-sub": 28px,
+        "home-eyebrow": 20px,
+);
+$typography-size-mobile: (
+        "heading1": 34px,
+        "heading2": 24px,
+        "heading3": 20px,
+        // home
+        "home-slogan": 40px,
+        "home-heading1": 28px,
+        "home-heading2": 18px,
+        "home-sub": 18px,
+        "home-eyebrow": 16px,
+);
+$typography-letter-spacing: (
+        "heading1": -0.04em,
+        "heading2": -0.04em,
+        "heading3": -0.04em,
+        "text-xl": 0,
+        "text-lg": 0,
+        "text-md": 0,
+        "text-sm": 0,
+        "button": 0,
+        "link": 0,
+        // home
+        "home-slogan": -0.01em,
+        "home-heading1": -0.04em,
+        "home-heading2": -0.04em,
+        "home-sub": -0.02em,
+        "home-eyebrow": 0,
+);
+$typography-letter-spacing-mobile: (
+        "heading1": -0.04em,
+        "heading2": -0.04em,
+        "heading3": -0.04em,
+        // home
+        "home-slogan": -0.01em,
+        "home-heading1": -0.04em,
+        "home-heading2": -0.04em,
+        "home-sub": -0.04em,
+        "home-eyebrow": 0,
+);
+$typography-line-height: (
+        "heading1": $line-height-tight,
+        "heading2": $line-height-tight,
+        "heading3": $line-height-tight,
+        "text-xl": $line-height-normal,
+        "text-lg": $line-height-normal,
+        "text-md": $line-height-normal,
+        "text-sm": $line-height-normal,
+        "button":  $line-height-tight,
+        "link":  $line-height-normal,
+        // home
+        "home-slogan": $line-height-none,
+        "home-heading1": $line-height-tight,
+        "home-heading2": $line-height-tight,
+        "home-sub": $line-height-tight,
+        "home-eyebrow": $line-height-none,
+);
 
 // Theme colors
 $primary: #8B33FF;
@@ -46,24 +122,22 @@ $purple300: #8B33FF;
 
 $link-color: $blue100;
 
-// Banner
+// Fixed height(width) of elements
 $banner-height: 24px;
-
-// Navbar
 $navbar-height: 3.75rem;
-
-// Sidebar
 $td-sidebar-width: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
-
-// TOC
 $table-of-contents-with: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
+$dropdown-link-active-bg: $purple200 !default;
 
-// Dropdown
-$dropdown-link-active-bg:           $purple200 !default;
-
-// chevron
+// Customized Chevron
 @function chevronIcon($color) {
-  $color: '%23'+$color;
-  $icon: "data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z' fill='#{$color}'/%3E%3C/svg%3E%0A";
-  @return url($icon);
+    $color: '%23'+$color;
+    $icon: "data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z' fill='#{$color}'/%3E%3C/svg%3E%0A";
+    @return url($icon);
 }
+
+// For the Home page only
+$dark-bg: rgba(220, 218, 233, 0.1) !important;
+$gradient1: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
+$gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
+

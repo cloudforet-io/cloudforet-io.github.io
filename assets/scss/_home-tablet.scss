@@ -1,0 +1,136 @@
+// tablet
+@media only screen and (max-width: 1023px) {
+  .td-home {
+    .section {
+      height: auto;
+      .inner {
+        max-width: 48rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .section-feature {
+      .feature {
+        .contents {
+          grid-column: unset;
+        }
+        .img-feature {
+          grid-column-end: unset;
+        }
+      }
+    }
+
+    .section-main {
+      height: 42rem;
+      .inner {
+        padding-top: 8.75rem;
+      }
+    }
+
+    .section-feature {
+      .feature {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+        justify-items: center;
+
+        .contents {
+          width: 80%;
+          text-align: center;
+          .description {
+            margin-top: 1.5rem;
+          }
+        }
+
+        h4 {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .feature-management {
+      &:before {
+        background-position-y: -42rem;
+      }
+      &:after {
+        background: unset;
+      }
+    }
+
+    .feature-notification {
+      .feature {
+        .contents {
+          width: 80%;
+        }
+        .img-feature {
+          width: 100%;
+        }
+      }
+    }
+
+    .feature-analysis {
+      .feature {
+        .contents {
+          order: initial;
+        }
+      }
+      .inner {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .section-strength {
+      .strength-box {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+      }
+      .strength {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        .img-strength {
+          width: 5rem;
+          height: 5rem;
+        }
+        h4 {
+          margin-top: 1rem;
+          margin-bottom: 0.75rem;
+        }
+        .description {
+          width: 80%;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .section-universe {
+      .inner {
+        max-width: unset;
+        padding: 0;
+      }
+      .img-universe {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .section-mission {
+      h4 {
+        max-width: 36rem;
+        .lb { // line-break
+          display: block;
+        }
+      }
+    }
+  }
+}

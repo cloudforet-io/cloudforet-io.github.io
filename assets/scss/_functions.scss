@@ -1,0 +1,24 @@
+// Typography
+//
+// @function
+// @argument {string} $name - Typography semantic style name
+// @return {string} The value that matches the semantic style name
+@function get-typography-size($name) {
+    @return map-get($typography-size, $name);
+}
+
+@function get-typography-size-mobile($name) {
+    @return map-get($typography-size-mobile, $name);
+}
+
+@function get-typography-letter-spacing($name) {
+    @return map-get($typography-letter-spacing, $name);
+}
+
+@function get-typography-letter-spacing-mobile($name) {
+    @return map-get($typography-letter-spacing-mobile, $name);
+}
+
+@function get-typography-line-height($name) {
+    @return map-get($typography-line-height, $name);
+}
