@@ -34,22 +34,22 @@ $typography-size: (
         "button": 16px,
         "link": 16px,
         // home
-        "home-slogan": 64px,
-        "home-heading1": 36px,
-        "home-heading2": 28px,
-        "home-sub": 28px,
-        "home-eyebrow": 20px,
+        "slogan": 64px,
+        "headline1": 36px,
+        "headline2": 28px,
+        "sub": 28px,
+        "eyebrow": 20px,
 );
 $typography-size-mobile: (
         "heading1": 34px,
         "heading2": 24px,
         "heading3": 20px,
         // home
-        "home-slogan": 40px,
-        "home-heading1": 28px,
-        "home-heading2": 18px,
-        "home-sub": 18px,
-        "home-eyebrow": 16px,
+        "slogan": 40px,
+        "headline1": 28px,
+        "headline2": 18px,
+        "sub": 18px,
+        "eyebrow": 16px,
 );
 $typography-letter-spacing: (
         "heading1": -0.04em,
@@ -62,22 +62,22 @@ $typography-letter-spacing: (
         "button": 0,
         "link": 0,
         // home
-        "home-slogan": -0.01em,
-        "home-heading1": -0.04em,
-        "home-heading2": -0.04em,
-        "home-sub": -0.02em,
-        "home-eyebrow": 0,
+        "slogan": -0.01em,
+        "headline1": -0.04em,
+        "headline2": -0.04em,
+        "sub": -0.02em,
+        "eyebrow": 0,
 );
 $typography-letter-spacing-mobile: (
         "heading1": -0.04em,
         "heading2": -0.04em,
         "heading3": -0.04em,
         // home
-        "home-slogan": -0.01em,
-        "home-heading1": -0.04em,
-        "home-heading2": -0.04em,
-        "home-sub": -0.04em,
-        "home-eyebrow": 0,
+        "slogan": -0.01em,
+        "headline1": -0.04em,
+        "headline2": -0.04em,
+        "sub": -0.04em,
+        "eyebrow": 0,
 );
 $typography-line-height: (
         "heading1": $line-height-tight,
@@ -90,11 +90,11 @@ $typography-line-height: (
         "button":  $line-height-tight,
         "link":  $line-height-normal,
         // home
-        "home-slogan": $line-height-none,
-        "home-heading1": $line-height-tight,
-        "home-heading2": $line-height-tight,
-        "home-sub": $line-height-tight,
-        "home-eyebrow": $line-height-none,
+        "slogan": $line-height-none,
+        "headline1": $line-height-tight,
+        "headline2": $line-height-tight,
+        "sub": $line-height-tight,
+        "eyebrow": $line-height-none,
 );
 
 // Theme colors

@@ -117,7 +117,7 @@
             color: $purple100;
         }
         h3 {
-            @include typography('home-eyebrow');
+            @include typography('eyebrow');
             width: 100%;
             color: $pink100;
             font-weight: $font-weight-medium;
@@ -132,7 +132,7 @@
         position: relative;
 
         h2 {
-            @include typography('home-slogan');
+            @include typography('slogan');
             font-weight: $font-weight-medium;
             color: $purple100;
             em {
@@ -144,7 +144,7 @@
             }
         }
         .sub-title {
-            @include typography('home-sub');
+            @include typography('sub');
             max-width: 43.75rem;
             margin: 0 auto 1.5rem;
             color: $navy100;
@@ -184,7 +184,7 @@
                 justify-content: center;
                 text-align: left;
                 h4 {
-                    @include typography('home-heading1');
+                    @include typography('headline1');
                     color: $purple200;
                     font-weight: $font-weight-medium;
                 }
@@ -312,7 +312,7 @@
                 margin: 0 auto;
             }
             h4 {
-                @include typography('home-heading2');
+                @include typography('headline2');
                 margin-top: 1.5625rem;
                 margin-bottom: 0.75rem;
                 font-weight: $font-weight-medium;
@@ -364,7 +364,7 @@
             padding-bottom: 2rem;
         }
         h4 {
-            @include typography('home-heading2');
+            @include typography('headline2');
             max-width: 45rem;
             color: $purple100;
             margin-bottom: 0;
