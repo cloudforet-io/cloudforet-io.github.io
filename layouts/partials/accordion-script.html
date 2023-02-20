@@ -1,0 +1,12 @@
+<script>
+    const buttons = document.querySelectorAll('.accordion-title');
+
+    buttons.forEach(function(button, index) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            this.parentNode.classList.toggle('on');
+        });
+    });
+
+</script>
