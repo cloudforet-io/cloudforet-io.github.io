@@ -11,6 +11,7 @@
     h2, h3 {
         @include typography('headline1');
         font-family: $font-family-serif;
+        word-break: keep-all;
     }
 
     .topic {
@@ -163,6 +164,10 @@
             min-height: 297px;
             padding-bottom: 188px;
             background: url("/images/community/img_dr-octos.png") no-repeat 0 84px / 274px auto;
+        }
+        .sub-title {
+            display: block;
+            @include typography('text-sm');
         }
     }
 
