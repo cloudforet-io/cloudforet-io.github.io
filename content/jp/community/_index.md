@@ -59,7 +59,7 @@ menu:
     </div>
     <div class="section expert">
         <div class="section-inner">
-            <h3>A Cloud Expert Dr. Octos</h3>
+            <h3><em>A Cloud Expert Dr.Octos</em></h3>
             <ul class="accordion-list">
                 <li class="accordion">
                     <button class="accordion-title">What is a Cloud Management Platform (CMP)?</button>

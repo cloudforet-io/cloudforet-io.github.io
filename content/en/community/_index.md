@@ -60,24 +60,24 @@ menu:
     </div>
     <div class="section expert">
         <div class="section-inner">
-            <h3>A Cloud Expert Dr. Octos</h3>
+            <h3><em>A Cloud Expert Dr.Octos</em></h3>
             <ul class="accordion-list">
                 <li class="accordion">
                     <button class="accordion-title">What is a Cloud Management Platform (CMP)?</button>
                     <div class="accordion-content">
-                        <p>In a simple definition, it is a suite of integrated software tools that businesses can use to monitor and control their cloud computing resources.</p>
+                        <p>In its simplest definition, it is a suite of integrated software tools that businesses can use to monitor and control their cloud computing resources.</p>
                         <ul>
                             <li>
-                                <strong>Cloud management & IT management for cloud environment</strong>
-                                <p>Cloud management is the centralized management of the “cloud,” which is corporate infrastructure such as servers, applications (software), data storage, and network platforms, via the Internet. IT management for cloud environments can include all types of business activities, including resource deployment, data integration, usage tracking, and disaster recovery.</p>
+                                <strong>Cloud management and IT management for cloud environments</strong>
+                                <p>Cloud management is the centralized management of the “cloud,” which is corporate infrastructure such as servers, applications (software), data storage, and network platforms, via the Internet.</p>
                             </li>
                             <li>
                                 <strong>Cloud management platform</strong>
-                                <p>It helps enterprises make better use of their infrastructure, especially heterogeneous infrastructure, for multiple purposes including enterprise workload management and orchestration, delegated administration and hybrid deployments. And it supports enterprise cloud computing so users get the simplicity of public cloud, and IT teams control operations and risks.</p>
+                                <p>It helps enterprises make better use of their infrastructure, especially heterogeneous infrastructure, for multiple purposes, including enterprise workload management and orchestration, delegated administration, and hybrid deployments. It also supports enterprise cloud computing, allowing users to benefit from the simplicity of public cloud while IT teams maintain control over operations and risks.</p>
                             </li>
                             <li>
                                 <strong>Cloud management platform adoption effect</strong>
-                                <p>Adopting CMP can help improve IT services and solve complex business challenges across the enterprise. And, it helps businesses accelerate service delivery, manage and control the security of various IT assets while improving overall system efficiency and strengthening communication between business units. Best of all, CMP offers significant advantages as it allows you to manage the complexity of virtual solutions and applications while maintaining control over your IT environment and reducing overall IT costs.</p>
+                                <p>Adopting CMP can help improve IT services and solve complex business challenges across the enterprise. Furthermore, it enables businesses to improve overall system efficiency, accelerate service delivery, manage and control the security of various IT assets, and strengthen communication between business units. Best of all, CMP offers significant advantages as it allows you to manage the complexity of virtual solutions and applications while maintaining control over your IT environment and reducing overall IT costs.</p>
                             </li>
                         </ul>
                     </div>
