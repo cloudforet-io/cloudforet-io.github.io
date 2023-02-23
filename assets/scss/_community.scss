@@ -4,7 +4,8 @@
     }
 
     .section-inner {
-        width: 1060px;
+        max-width: 1060px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -109,7 +110,7 @@
         }
         h3 {
             @include typography('heading2');
-            width: 320px;
+            width: 300px;
         }
         .channel-list {
             flex-grow: 1;
@@ -169,15 +170,17 @@
             display: block;
             @include typography('text-sm');
         }
+        em {
+            font-style: normal;
+        }
     }
 
     .accordion-list {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        row-gap: 13px;
-        max-width: 700px;
-
+        justify-content: space-between;
+        max-width: 66.6%;
         .accordion {
             display: flex;
             flex-direction: column;
@@ -185,7 +188,7 @@
             .accordion-title {
                 @include typography('text-lg');
                 display: block;
-                padding: 24px 32px;
+                padding: 24px 64px 24px 32px;
                 background-color: transparent;
                 border: solid 1px $navy100;
                 cursor: pointer;
@@ -295,32 +298,35 @@
         .expert {
             .section-inner {
                 flex-direction: column;
-                padding-top: 15px;
-                padding-bottom: 24px;
+                padding-top: 0;
+                padding-bottom: 88px;
             }
             h3 {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
                 width: 100%;
-                min-height: 180px;
-                padding-bottom: 0;
+                min-height: 150px;
+                padding-top: 72px;
+                padding-bottom: 40px;
                 background-position: 100% 100%;
-                background-size: 242px 181px;
+                background-size: auto 150px;
             }
         }
 
         .accordion-list {
             max-width: 100%;
-            margin-top: -30px;
         }
     }
 }
 
 @media only screen and (max-width: 767px) {
     .community {
-        .section-inner {
-            padding-right: 36px;
-            padding-left: 36px;
+        .section {
+            .section-inner {
+                padding-right: 36px;
+                padding-left: 36px;
+            }
         }
 
         .topic {
@@ -357,9 +363,11 @@
         }
 
         .expert {
-            .section-inner {
-                h3 {
-                    background-size: 146px 92px;
+            h3 {
+                background-size: auto 92px;
+                em {
+                    display: inline-block;
+                    width: 85%;
                 }
             }
         }
