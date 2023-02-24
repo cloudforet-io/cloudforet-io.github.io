@@ -1,0 +1,153 @@
+.projects {
+    text-align: center;
+
+    .section-inner {
+        max-width: 912px;
+        width: 100%;
+        padding: 56px 0 48px;
+        margin: 0 auto;
+        h3 {
+            @include typography('heading2');
+        }
+    }
+
+    h2, h3 {
+        font-family: $font-family-serif;
+    }
+
+    .topic {
+        padding-top: 90px;
+        padding-bottom: 96px;
+        background: url("/images/projects/img_bg_projects.jpg") no-repeat 50% 0 / 100% auto;
+        h2 {
+            @include typography('heading1');
+        }
+        .sub-title {
+            @include typography('text-lg');
+            padding-top: 20px;
+        }
+    }
+
+    .plugin {
+        .sub-title {
+            padding-top: 20px;
+            @include typography('text-md');
+        }
+    }
+
+    .propose {
+        .propose-template {
+            margin-top: 12px;
+            padding-right: 24px;
+            text-align: right;
+            //background: url("/images/ic_external-link.png") no-repeat 100% 50% / 20px auto;
+            background: externalIcon(397BEE) no-repeat 100% 50% / 20px auto;
+            @include typography('link');
+        }
+    }
+
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 40px;
+
+        .card-item {
+            position: relative;
+            display: flex;
+            flex-basis: 448px;
+            flex-grow: 1;
+            column-gap: 24px;
+            align-items: center;
+            padding: 24px 24px 24px 32px;
+            border-radius: 8px;
+            border: solid 1px lightgray;
+            text-align: left;
+            transition: box-shadow .2s;
+            .description {
+                display: flex;
+                flex-direction: column;
+                @include typography('text-lg');
+                .source {
+                    @include typography('text-sm');
+                    color: lightgray;
+                }
+            }
+            .thumbnail {
+                width: 56px;
+                height: 56px;
+                flex-shrink: 0;
+                background-position: 50% 50%;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                font-size: 0;
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+            &:hover {
+                box-shadow: 0px 6px 16px rgba(77, 66, 125, 0.2);
+            }
+
+            &.aws {
+                .thumbnail {
+                    background-image: url('/images/projects/ic_provider_aws v1.4.3.png');
+                }
+            }
+            &.google {
+                .thumbnail {
+                    background-image: url('/images/projects/ic_provider_gcp v1.4.3.png');
+                }
+            }
+            &.azure {
+                .thumbnail {
+                    background-image: url('/images/projects/ic_provider_azure v1.4.3.png');
+                }
+            }
+            &.cisco {
+                .thumbnail {
+                    background-image: url('/images/projects/ic_provider_cisco.png');
+                }
+            }
+            &.propose {
+                .thumbnail {
+                    background-image: url('/images/projects/ic_propossal.png');
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .projects {
+        .section-inner {
+            padding: 32px;
+        }
+
+        .topic {
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+
+        .card-list {
+            .card-item {
+                flex-basis: 344px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .projects {
+        .topic {
+            background-size: 200% auto;
+        }
+    }
+}

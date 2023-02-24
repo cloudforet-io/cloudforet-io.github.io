@@ -129,10 +129,15 @@ $td-sidebar-width: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 $table-of-contents-with: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 $dropdown-link-active-bg: $purple200 !default;
 
-// Customized Chevron
+// Customized Icon
 @function chevronIcon($color) {
     $color: '%23'+$color;
     $icon: "data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z' fill='#{$color}'/%3E%3C/svg%3E%0A";
+    @return url($icon);
+}
+@function externalIcon($color) {
+    $color: '%23'+$color;
+    $icon: "data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 29H5C4.46981 28.9992 3.96156 28.7882 3.58666 28.4133C3.21176 28.0384 3.00079 27.5302 3 27V7C3.00079 6.46981 3.21176 5.96156 3.58666 5.58666C3.96156 5.21176 4.46981 5.00079 5 5H15V7H5V27H25V17H27V27C26.9992 27.5302 26.7882 28.0384 26.4133 28.4133C26.0384 28.7882 25.5302 28.9992 25 29Z' fill='#{$color}'/%3E%3Cpath d='M19 3V5H25.586L17 13.586L18.414 15L27 6.414V13H29V3H19Z' fill='#{$color}'/%3E%3C/svg%3E%0A";
     @return url($icon);
 }
 
