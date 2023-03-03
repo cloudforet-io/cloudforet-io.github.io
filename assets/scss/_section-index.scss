@@ -12,10 +12,10 @@
         &-item {
             overflow: hidden;
             position: relative;
-            border: solid 1px $navy100;
+            border: solid 1px color-set(cool-gray,200);
             border-radius: 0.25rem;
             padding: 1.25rem;
-            color: $navy500;
+            color: color-set(cool-gray,600);
             &:before {
                 content: '';
                 display: block;
@@ -24,10 +24,10 @@
                 left: 0;
                 width: 100%;
                 height: 0;
-                background-color: $blue100;
+                background-color: color-set(blue,100);
             }
             &:hover {
-                background-color: $white;
+                background-color: color-set(white,100);
                 box-shadow: 0px 0px 1rem rgba(31, 27, 56, 0.1);
                 cursor: pointer;
                 &:before {

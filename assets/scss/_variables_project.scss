@@ -1,3 +1,4 @@
+@import "functions";
 // Theme flags.
 $td-enable-google-fonts: true;
 
@@ -97,37 +98,60 @@ $typography-line-height: (
         "eyebrow": $line-height-none,
 );
 
-// Theme colors
-$primary: #8B33FF;
-$black: #000;
-$white: #FFFFFF;
-$gray100: #A7A9B2;
-
-$navy000: #F2F4F5;
-$navy100: #D6DBDF;
-$navy200: #BFC5CB;
-$navy300: #A7ACBD;
-$navy400: #8A8C9F;
-$navy500: #53566E;
-$navy600: #1F1B38;
-
-$green100: #65CBA0;
-$pink100: #E8AAF2;
-$khaki100: #5CA2B1;
-$blue100: #007EE5;
-$blue200: #004F99;
-$purple100: #EBEAF6;
-$purple200: #B4B1E4;
-$purple300: #8B33FF;
-
-$link-color: $blue100;
+// Color Set
+$palettes: (
+    cool-gray: (
+        100: #F2F4F5,
+        200: #D6DBDF,
+        300: #BFC5CB,
+        400: #A7ACBD,
+        500: #8A8C9F,
+        600: #53566E,
+        700: #1F1B38,
+    ),
+    violet: (
+        100: #EBEAF6,
+        200: #B4B1E4,
+        300: #8B33FF,
+        400: #5906C6,
+    ),
+    blue: (
+        100: #397BEE,
+        200: #0F599F,
+    ),
+    pink: (
+        100: #E8AAF2,
+    ),
+    peacock: (
+        100: #65CBA0,
+        200: #5CA2B1,
+    ),
+    black: (
+        100: #000000,
+    ),
+    white: (
+        100: #FFFFFF,
+    ),
+    gray: (
+        100: #DCDAE9,
+        200: #A7A9B2,
+    ),
+    gradation: (
+        primary: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%),
+        secondary: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%),
+        tertiary: linear-gradient(45deg, #89c2ef, #c99eff),
+        base: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    ),
+);
+$link-color: color-set(blue,100);
+$dropdown-link-active-bg: color-set(violet,200) !default;
 
 // Fixed height(width) of elements
 $banner-height: 24px;
 $navbar-height: 3.75rem;
 $td-sidebar-width: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 $table-of-contents-with: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
-$dropdown-link-active-bg: $purple200 !default;
+
 
 // Customized Icon
 @function chevronIcon($color) {
@@ -143,6 +167,4 @@ $dropdown-link-active-bg: $purple200 !default;
 
 // For the Home page only
 $dark-bg: rgba(220, 218, 233, 0.1) !important;
-$gradient1: linear-gradient(90deg, #00E6E5 0%, #C8A6F4 51.04%, #61A2F5 76.3%, #009FF5 100%);
-$gradient2: linear-gradient(92.98deg, #00E0D9 3.49%, #009FF5 94.89%);
 

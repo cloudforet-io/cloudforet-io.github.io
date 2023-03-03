@@ -22,3 +22,30 @@
 @function get-typography-line-height($name) {
     @return map-get($typography-line-height, $name);
 }
+
+// Color Set
+//
+// @function
+// @argument {string} $color - color name
+// @argument {string} $tone - color specific name, default tone is 100
+// @return {string | null} The value that matches the color name
+@function color-set($color, $tone: 100){
+
+    @warn map-get($palettes, $color);
+
+    @if map-has-key($palettes, $color){
+        $color: map-get($palettes, $color);
+
+        @if map-has-key($color, $tone){
+            $tone: map-get($color, $tone);
+
+            @return $tone;
+        }
+        @warn "unknown tone `#{$tone}` in color";
+        @return null;
+    }
+
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+
+}

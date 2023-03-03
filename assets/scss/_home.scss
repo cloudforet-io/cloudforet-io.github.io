@@ -11,7 +11,7 @@
     min-width: 9rem;
     height: 2.5rem;
     padding: 0 1.5rem;
-    color: $white;
+    color: color-set(white,100);
     border-radius: 1.875rem;
     font-family: $font-family-serif;
     cursor: pointer;
@@ -22,16 +22,16 @@
         z-index: -1;
         width: 100%;
         height: 100%;
-        background: $gradient1;
+        background: color-set(gradation,primary);
         border-radius: 1.875rem;
     }
     &:hover {
         background-color: transparent;
-        color: $white;
+        color: color-set(white,100);
     }
 }
 .btn-link-green {
-    background: $gradient2;
+    background: color-set(gradation,secondary);
 }
 .btn-link-gradient {
     top: 0.125rem;
@@ -58,12 +58,12 @@
 }
 
 .td-home {
-    background-color: $navy600;
+    background-color: color-set(cool-gray,700);
     word-break: keep-all;
 
     .td-navbar {
         &.active {
-            background-color: $navy600;
+            background-color: color-set(cool-gray,700);
         }
     }
 
@@ -114,12 +114,12 @@
             padding-left: 1.5rem;
             margin: 0 auto;
             text-align: center;
-            color: $purple100;
+            color: color-set(violet,100);
         }
         h3 {
             @include typography('eyebrow');
             width: 100%;
-            color: $pink100;
+            color: color-set(pink,100);
             font-weight: $font-weight-medium;
             opacity: 0.8;
             text-transform: uppercase;
@@ -134,9 +134,9 @@
         h2 {
             @include typography('slogan');
             font-weight: $font-weight-medium;
-            color: $purple100;
+            color: color-set(violet,100);
             em {
-                background: $gradient1;
+                background: color-set(gradation,primary);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -147,7 +147,7 @@
             @include typography('sub');
             max-width: 43.75rem;
             margin: 0 auto 1.5rem;
-            color: $navy100;
+            color: color-set(cool-gray,200);
         }
         .btn-group {
             display: inline-flex;
@@ -185,14 +185,14 @@
                 text-align: left;
                 h4 {
                     @include typography('headline1');
-                    color: $purple200;
+                    color: color-set(violet,200);
                     font-weight: $font-weight-medium;
                 }
                 .description {
                     @include typography('text-xl');
                     display: inline-block;
                     margin-top: 3.33vh;
-                    color: $navy200;
+                    color: color-set(cool-gray,300);
                     font-family: $font-family-sans-serif;
                 }
             }
@@ -316,14 +316,14 @@
                 margin-top: 1.5625rem;
                 margin-bottom: 0.75rem;
                 font-weight: $font-weight-medium;
-                color: $purple200;
+                color: color-set(violet,200);
             }
             .description {
                 @include typography('text-xl');
                 margin-bottom: 0;
                 font-family: $font-family-sans-serif;
                 opacity: 0.8;
-                color: $purple100;
+                color: color-set(violet,100);
             }
             &::after {
                 content: '';
@@ -334,7 +334,7 @@
                 z-index: -1;
                 width: 100%;
                 height: 100%;
-                background: $dark-bg;
+                background-color: rgba(color-set(cool-gray,200), 0.1);
                 opacity: 0.3;
                 border-radius: 0.5rem;
             }
@@ -366,14 +366,14 @@
         h4 {
             @include typography('headline2');
             max-width: 45rem;
-            color: $purple100;
+            color: color-set(violet,100);
             margin-bottom: 0;
             margin-right: auto;
             margin-left: auto;
             opacity: 0.8;
         }
         .btn-link {
-            background: $navy600;
+            background: color-set(cool-gray,700);
             margin-top: 2rem;
             &:hover {
                 background-color: transparent;

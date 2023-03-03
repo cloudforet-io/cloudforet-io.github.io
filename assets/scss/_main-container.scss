@@ -8,7 +8,7 @@
 .td-main {
     flex-grow: 1;
     margin-bottom: 2rem;
-    background-color: $white;
+    background-color: color-set(white,100);
 
     main {
         width: 100%;

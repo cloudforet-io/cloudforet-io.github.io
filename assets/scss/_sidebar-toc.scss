@@ -25,7 +25,7 @@
     margin-bottom: 1.5rem;
 
     .label {
-        color: $navy500;
+        color: color-set(cool-gray,600);
         line-height: 1.5;
         font-weight: 700;
     }
@@ -37,7 +37,7 @@
         padding-left: 1rem;
         font-size: 0.875rem;
         font-weight: $font-weight-light;
-        color: $navy300;
+        color: color-set(cool-gray,400);
         word-break: keep-all;
     }
 
@@ -59,17 +59,17 @@
         }
 
         li {
-            border-left: solid 3px $navy100;
-            color: $navy400;
+            border-left: solid 3px color-set(cool-gray,200);
+            color: color-set(cool-gray,500);
             transition: color .2s, border-color .2s;
 
             &:hover {
-                color: $navy600;
+                color: color-set(cool-gray,700);
             }
 
             &.active {
                 border-color: currentColor;
-                color: $navy600;
+                color: color-set(cool-gray,700);
                 transition: color .2s, border-color .2s;
             }
         }
@@ -93,10 +93,10 @@
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.5;
-        color: $navy400;
+        color: color-set(cool-gray,500);
 
         &:hover {
-            color: $blue100;
+            color: color-set(blue,100);
         }
 
         .fa {

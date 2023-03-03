@@ -12,8 +12,8 @@ footer {
         align-items: flex-end;
         padding-top: 2rem;
         padding-bottom: 2.5rem;
-        color: $navy400;
-        border-top: solid 1px $navy100
+        color: color-set(cool-gray,500);
+        border-top: solid 1px color-set(cool-gray,200)
     }
 
     .copyright {
@@ -47,7 +47,7 @@ footer {
     }
 
     .td-home & {
-        background-color: $dark-bg;
+        background-color: rgba(color-set(cool-gray,200), 0.1);
         .inner {
             padding:0 1.875rem;
             max-width: 112rem;
@@ -55,7 +55,7 @@ footer {
         }
         .contents {
             border-top: none;
-            color: $navy300;
+            color: color-set(cool-gray,400);
         }
     }
 }
