@@ -186,7 +186,7 @@
         flex-direction: column;
         flex-grow: 1;
         justify-content: space-between;
-        max-width: 66.6%;
+        width: 66.6%;
         .accordion {
             display: flex;
             flex-direction: column;
@@ -196,7 +196,7 @@
                 display: block;
                 padding: 24px 64px 24px 32px;
                 background-color: transparent;
-                border: solid 1px color-set(cool-gray,400);
+                border: solid 1px color-set(cool-gray,200);
                 border-radius: 8px;
                 cursor: pointer;
                 font-weight: $font-weight-bold;
@@ -205,10 +205,9 @@
                 background-repeat: no-repeat;
                 background-position: calc(100% - 32px) center;
                 background-image: url("/images/ic_add.png");
+                transition: border-color .2s;
                 &:hover {
-                    border: solid 1px color-set(cool-gray,600);
-                    //color: red;
-                    color: color-set(blue, 200);
+                    border-color: color-set(cool-gray,400);
                 }
             }
             .accordion-content {
@@ -327,7 +326,7 @@
         }
 
         .accordion-list {
-            max-width: 100%;
+            width: 100%;
         }
     }
 }
