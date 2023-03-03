@@ -1,10 +1,26 @@
 // japanese
-*:lang(jp) .td-home {
+*:lang(ja) .td-home {
     word-break: break-word;
 
+    .section-feature {
+        .feature {
+            .contents  {
+                h4 {
+                    letter-spacing: -0.07em;
+                }
+            }
+        }
+    }
     .feature-notification {
         .contents {
             width: 68%;
         };
+    }
+    .section-strength {
+        .strength {
+            h4 {
+                font-size: 24px;
+            }
+        }
     }
 }
