@@ -1,3 +1,4 @@
+@import "functions";
 //
 // Left side navigation
 //
@@ -11,13 +12,13 @@
     height: 100vh;
     padding-top: calc(#{$navbar-height} + #{$banner-height} + 0.875rem);
     padding-bottom: 3rem;
-    background-color: rgba($navy000, 0.6);
-    border-right: solid 1px $navy100;
+    background-color: rgba(color-set(cool-gray,100), 0.6);
+    border-right: solid 1px color-set(cool-gray, 200);
     line-height: 1.25;
 
     &__search {
         padding: 1rem;
-        background-color: $navy600;
+        background-color: color-set(cool-gray,700);
     }
 
     #content-desktop {display: block;}
@@ -63,13 +64,13 @@
 
     .td-sidebar-link {
         display: block;
-        color: $navy500;
+        color: color-set(cool-gray, 600);
         padding-top: 0.625rem;
         padding-bottom: 0.625rem;
         padding-right: 1.75rem;
         transition: background-color 0.3s;
         :hover {
-            color: $navy400;
+            color: color-set(cool-gray, 500);
         }
 
         &.active {
@@ -116,7 +117,7 @@
         }
 
         > input:checked ~ label a {
-            background-color: rgba($navy100, 0.4);
+            background-color: rgba(color-set(cool-gray,100), 0.6);
             font-weight: $font-weight-bold;
         }
     }
@@ -140,7 +141,7 @@
         transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 
         .td-sidebar-nav__section-title {
-            border-left: solid 1px $navy100;
+            border-left: solid 1px color-set(cool-gray, 200);
 
             &:first-of-type {
                 margin-top: 0.75rem;

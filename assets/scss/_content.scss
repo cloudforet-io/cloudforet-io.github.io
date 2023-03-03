@@ -34,7 +34,7 @@
         max-width: 100%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        border-bottom: solid 1px $navy100;
+        border-bottom: solid 1px color-set(cool-gray,200);
         font-size: 1.625rem;
     }
 
@@ -57,7 +57,7 @@
     a {
         &:hover,
         &.active {
-            color: $blue200;
+            color: color-set(blue,200);
             text-decoration: underline;
         }
     }
@@ -86,7 +86,7 @@
                 width: 0.25rem;
                 height: 0.25rem;
                 border-radius: 50%;
-                background-color: $black;
+                background-color: color-set(black,100);
                 vertical-align: 0.25em;
             }
         }
@@ -94,8 +94,8 @@
             margin-top: 0.25rem;
             padding-left: 0.375rem;
             > li::before {
-                background-color: $white;
-                border: solid 1px $black;
+                background-color: color-set(white,100);
+                border: solid 1px color-set(black,100);
             }
         }
     }
@@ -122,7 +122,7 @@
     img {
         @extend .img-fluid;
         padding: 1rem;
-        border: solid 1px $navy100;
+        border: solid 1px color-set(cool-gray,200);
         border-radius: 0.5rem;
         margin-bottom: 1rem;
     }
@@ -139,7 +139,7 @@
     > blockquote {
         padding: 0 0 0 1rem;
         margin-bottom: $spacer;
-        color: $gray-600;
+        color: color-set(gray,200);
         border-left: 6px solid $secondary;
     }
 
@@ -154,7 +154,7 @@
     > pre, .highlight {
         max-width: 90%;
         margin: 1rem 0;
-        background-color: $navy100;
+        background-color: color-set(cool-gray,200);
         border-radius: 0;
     }
 
@@ -164,7 +164,7 @@
         margin-top: 1rem;
         word-break: keep-all;
         word-wrap: break-word;
-        background-color: $purple100;
+        background-color: color-set(violet,100);
 
         p {
             margin-bottom: 0.25rem;
@@ -179,7 +179,7 @@
     }
 
     .alert-heading {
-        color: $black;
+        color: color-set(black);
         font-weight: $font-weight-bold;
         margin-bottom: 0.5rem;
     }
@@ -188,7 +188,7 @@
         padding-top: 0.75rem;
         padding-bottom: 2.1875rem;
         line-height: 1.25;
-        color: $navy400;
+        color: color-set(cool-gray,500);
         word-break: keep-all;
     }
 
@@ -198,10 +198,10 @@
         font-size: 0.875rem;
         th, td {
             padding: 0.375rem 0.5rem;
-            border: solid 1px $navy100;
+            border: solid 1px color-set(cool-gray,200);
         }
         th {
-            background-color: $navy000;
+            background-color: color-set(cool-gray,100);
         }
         tbody {
             tr:nth-of-type(odd) {
@@ -248,7 +248,7 @@
     font-size: 2.2rem;
     border: 0;
     background-color: #F2F4F5;
-    color: $navy500;
+    color: color-set(cool-gray,600);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -261,7 +261,7 @@
         height: 0;
         width: 100%;
         padding-top: 56.25%; // 16:9
-        background-color: $navy500;
+        background-color: color-set(cool-gray,600);
     }
 
     iframe {
@@ -275,7 +275,7 @@
 
 .btn {
     &:focus {
-        box-shadow: 0 0 0 0.2rem rgba($blue100, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(color-set(blue,100), 0.25);
     }
 }
 
@@ -293,15 +293,15 @@
     line-height: 1.6;
 
     &.navy500 {
-        border-color: $navy500;
-        background-color: $navy500;
-        color: $white;
+        border-color: color-set(cool-gray,600);
+        background-color: color-set(cool-gray,600);
+        color: color-set(white,100);
     }
 
     &.white {
-        border-color: $navy300;
-        background-color: $white;
-        color: $navy400;
+        border-color: color-set(cool-gray,400);
+        background-color: color-set(white,100);
+        color: color-set(cool-gray,500);
     }
 
     .fas {

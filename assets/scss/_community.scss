@@ -91,7 +91,7 @@
                     width: 1px;
                     height: 60px;
                     content: '';
-                    background-color: rgba($gray100,0.3);
+                    background-color: color-set(cool-gray, 400);
                 }
                 &:first-child:after  {
                     display: none;
@@ -101,7 +101,7 @@
     }
 
     .feedback {
-        background-color: rgba($navy000, 0.6);
+        background-color: rgba(color-set(cool-gray,100), 0.6);
         .section-inner {
             display: flex;
             padding-top: 96px;
@@ -122,7 +122,10 @@
                 padding: 32px;
                 border: solid 1px transparent;
                 border-radius: 0.5rem;
-                background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #89C2EF, #C99EFF) border-box;
+                background-image: color-set(gradation,base), color-set(gradation,tertiary);
+                background-origin: padding-box, border-box;
+                background-clip: padding-box, border-box;
+                transition: box-shadow .2s;
                 .title {
                     @include typography('text-lg');
                 }
@@ -147,6 +150,9 @@
                     figure {
                         background-image: url("/images/community/img_github.png");
                     }
+                }
+                &:hover {
+                    box-shadow: 0px 6px 16px rgba(77, 66, 125, 0.2);
                 }
             }
         }
@@ -184,13 +190,14 @@
         .accordion {
             display: flex;
             flex-direction: column;
-            background-color: $white;
+            background-color: color-set(white,100);
             .accordion-title {
                 @include typography('text-lg');
                 display: block;
                 padding: 24px 64px 24px 32px;
                 background-color: transparent;
-                border: solid 1px $navy100;
+                border: solid 1px color-set(cool-gray,400);
+                border-radius: 8px;
                 cursor: pointer;
                 font-weight: $font-weight-bold;
                 text-align: left;
@@ -198,6 +205,11 @@
                 background-repeat: no-repeat;
                 background-position: calc(100% - 32px) center;
                 background-image: url("/images/ic_add.png");
+                &:hover {
+                    border: solid 1px color-set(cool-gray,600);
+                    //color: red;
+                    color: color-set(blue, 200);
+                }
             }
             .accordion-content {
                 overflow: hidden;
@@ -205,7 +217,7 @@
                 margin: 0;
                 padding: 32px;
                 @include typography('text-md');
-                color: $navy400;
+                color: color-set(cool-gray,800);
                 > ul li {
                     position: relative;
                     margin-top: 16px;
@@ -226,8 +238,8 @@
             }
             &.on {
                 .accordion-title {
-                    background-color: #fff;
-                    color: $purple300;
+                    background-color: color-set(white,100);
+                    color: color-set(violet,400);
                     background-image: url("/images/ic_minus.png");
                 }
                 .accordion-content {

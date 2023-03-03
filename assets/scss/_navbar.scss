@@ -1,9 +1,9 @@
 .td-navbar {
     min-height: $navbar-height;
     padding: 0 1.875rem;
-    background-color: $navy600;
+    background-color: color-set(cool-gray,700);
     font-family: $font-family-sans-serif;
-    color: $white;
+    color: color-set(white,100);
     flex-wrap: nowrap;
 
     .navbar-brand {
@@ -53,14 +53,14 @@
         position: relative;
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
-        color: $white;
+        color: color-set(white,100);
         font-weight: 500;
         transition: color .2s;
         border-radius: 0.375rem;
 
         &.active,
         &:hover {
-            background: rgba($white, 0.2);
+            background: rgba(color-set(white,100), 0.2);
             transition: background-color 0.2s;
         }
     }
@@ -128,14 +128,14 @@
             width: 100%;
             height: 100vh;
             padding: 25vh 1.875rem 0;
-            background-color: $navy600;
+            background-color: color-set(cool-gray,700);
         }
 
         .btn-menu {
             position: relative;
             z-index: 10;
             display: inline-block;
-            color: $white;
+            color: color-set(white,100);
             border-radius: 0;
             background-color: transparent;
             font-size: 1.125rem;
@@ -145,7 +145,7 @@
         }
 
         .btn-menu.on {
-            color: $navy300;
+            color: color-set(cool-gray,400);
         }
 
         .btn-menu.on + .nav-list-wrap {
@@ -183,7 +183,7 @@
             line-height: 1.3;
 
             &.active {
-                color: $green100;
+                color: color-set(peacock,100);
             }
 
             &:not(.active):hover {

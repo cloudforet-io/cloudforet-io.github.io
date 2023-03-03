@@ -5,12 +5,12 @@
     margin: 1.875rem auto 0;
 
     a {
-        color: $navy400;
+        color: color-set(cool-gray,500);
         font-size: 0.8125rem;
         line-height: 1.3;
 
         &:hover {
-            color: $navy500;
+            color: color-set(cool-gray,600);
         }
     }
 }
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     margin: 0 0.25rem;
-    color: $navy300;
+    color: color-set(cool-gray,400);
     font-size: 0.7rem;
     font-family: $font-awesome;
     font-weight: 300;

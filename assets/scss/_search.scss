@@ -8,14 +8,14 @@
 .td-search-input {
     max-width: 100%;
     height: 2rem;
-    background-color: rgba($white, 0.3);
-    border: solid 1px rgba($white, 0.3);
+    background-color: rgba(color-set(white,100), 0.3);
+    border: solid 1px rgba(color-set(white,100), 0.3);
     border-radius: 0.25rem;
     font-size: 1rem;
     font-family: "Font Awesome 5 Free";
 
     &::placeholder {
-        color: $navy100 !important;
+        color: color-set(cool-gray,200) !important;
     }
 }
 

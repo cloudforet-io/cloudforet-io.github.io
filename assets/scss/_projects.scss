@@ -1,6 +1,9 @@
 .projects {
     text-align: center;
 
+    a {
+        color: color-set(blue,100);
+    }
     .section-inner {
         max-width: 912px;
         width: 100%;
@@ -13,6 +16,7 @@
 
     h2, h3 {
         font-family: $font-family-serif;
+        color: color-set(cool-gray,900);
     }
 
     .topic {
@@ -24,6 +28,7 @@
         }
         .sub-title {
             @include typography('text-lg');
+            color: color-set(cool-gray,800);
             padding-top: 20px;
         }
     }
@@ -32,6 +37,7 @@
         .sub-title {
             padding-top: 20px;
             @include typography('text-md');
+            color: color-set(cool-gray,900);
         }
     }
 
@@ -40,7 +46,6 @@
             margin-top: 12px;
             padding-right: 24px;
             text-align: right;
-            //background: url("/images/ic_external-link.png") no-repeat 100% 50% / 20px auto;
             background: externalIcon(397BEE) no-repeat 100% 50% / 20px auto;
             @include typography('link');
         }
@@ -70,7 +75,7 @@
                 @include typography('text-lg');
                 .source {
                     @include typography('text-sm');
-                    color: lightgray;
+                    color: color-set(cool-gray,400);
                 }
             }
             .thumbnail {
