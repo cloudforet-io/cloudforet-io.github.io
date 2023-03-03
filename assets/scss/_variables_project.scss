@@ -143,15 +143,15 @@ $palettes: (
         base: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
     ),
 );
-
 $link-color: color-set(blue,100);
+$dropdown-link-active-bg: color-set(violet,200) !default;
 
 // Fixed height(width) of elements
 $banner-height: 24px;
 $navbar-height: 3.75rem;
 $td-sidebar-width: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
 $table-of-contents-with: calc((100% - (16 * 11px)) / 12 * 2 + 1rem);
-$dropdown-link-active-bg: color-set(violet,200) !default;
+
 
 // Customized Icon
 @function chevronIcon($color) {
