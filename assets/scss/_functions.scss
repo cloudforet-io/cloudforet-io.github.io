@@ -31,7 +31,7 @@
 // @return {string | null} The value that matches the color name
 @function color-set($color, $tone: 100){
 
-    @warn map-get($palettes, $color);
+    //@warn map-get($palettes, $color);
 
     @if map-has-key($palettes, $color){
         $color: map-get($palettes, $color);
