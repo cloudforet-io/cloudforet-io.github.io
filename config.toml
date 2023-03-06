@@ -163,9 +163,17 @@ navbar_logo = true
 footer_about_disable = true
 
 [[params.versions]]
+fullversion = "v1.11.0"
+version = "v1.11.0"
+githubbranch = "release-1.11.0"
+docsbranch = "master"
+# Set master version url
+url = "/"
+
+[[params.versions]]
 fullversion = "v1.10.4"
 version = "v1.10.4"
 githubbranch = "release-1.10.4"
-docsbranch = "master"
-# Set master version url
+docsbranch = "relase-1.10.4"
+# TODO DNS for old release
 url = "/"
