@@ -60,8 +60,8 @@ helm repo update
 
 ~~~bash
 git clone https://github.com/cloudforet-io/charts.git
-cd charts/examples/v1.10.4
-helm install spaceone -f minikube.yaml spaceone/spaceone --version 1.10.4
+cd charts/examples/v1.11.0
+helm install spaceone -f minikube.yaml spaceone/spaceone --version 1.11.0
 ~~~
 
 If you are using Amazon EC2, change ***localhost*** to your Amazon EC2's public IP address at minikube.yaml.
