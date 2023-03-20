@@ -9,10 +9,10 @@ description: >
 ---
 
 ## Overview
-Quick install guide for SpaceONE with minikube.
+Quick install guide for Cloudforet with minikube.
 
 ## Preparation
-Before installing SpaceONE, you need minikube and helm installed. <br>
+Before installing Cloudforet, you need minikube and helm installed. <br>
 Refer to the link below and proceed with the installation.
 
 * [Minikube Installation](https://minikube.sigs.k8s.io/docs/start/)
@@ -25,11 +25,11 @@ Refer to the link below and proceed with the installation.
 minikube start --driver=docker --memory=4096mb
 ~~~
 
-## Install SpaceONE
+## Install Cloudforet
 
 ### Namespace
-Create namespace a for SpaceONE.<br>
-SpaceONE needs two namespaces, **spaceone** and **root-supervisor**.
+Create namespace a for Cloudforet.<br>
+Cloudfoet needs two namespaces, **spaceone** and **root-supervisor**.
 ~~~bash
 kubectl create ns spaceone
 kubectl create ns root-supervisor
@@ -46,14 +46,14 @@ It is highly recommended to change kubernetes namespace to spaceone.
 kubectl config set-context $(kubectl config current-context) --namespace spaceone
 ~~~
 
-Register helm chart for SpaceONE.
+Register helm chart for Cloudforet.
 ~~~bash
 helm repo add spaceone https://cloudforet-io.github.io/charts
 helm repo list
 helm repo update
 ~~~
 
-### Install SpaceONE with helm chart
+### Install Cloudforet with helm chart
 > Example versions are subject to change.<br>
 > Please refer to this [link](https://github.com/cloudforet-io/charts/tree/master/examples) to check the latest version.
 
@@ -88,7 +88,7 @@ Check if STATUS is **Completed** or **Running**.
 It will take some time, so please wait.
 
 ## Port-forwarding
-Installing SpaceONE on minikube doesn't provide any Ingress objects such as Amazon ALB or NGINX ingress controller.
+Installing Cloudforet on minikube doesn't provide any Ingress objects such as Amazon ALB or NGINX ingress controller.
 We can use **kubectl port-forward** instead.
 
 ~~~bash
@@ -107,7 +107,7 @@ kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
 kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0' &
 ~~~
 
-## Start SpaceONE
+## Start Cloudforet
 
 ### Log-In (Sign in for Root Account)
 Open browser
