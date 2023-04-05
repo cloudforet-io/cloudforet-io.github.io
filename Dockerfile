@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.83.1-ext-pandoc AS build
+FROM klakegg/hugo:0.107.0-ext-pandoc AS build
 
 LABEL maintainer="Songyi Kim<sykim@mz.co.kr>"
 
@@ -20,7 +20,7 @@ RUN apk add --no-cache \
     git submodule update --init --recursive --depth 1
 
 
-ARG HUGO_VERSION="0.83.1"
+ARG HUGO_VERSION="0.107.0"
 
 RUN hugo --minify --environment production
 
