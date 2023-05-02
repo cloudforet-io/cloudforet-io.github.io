@@ -37,7 +37,7 @@ menu:
             <h3>Share Any of Your Idea or Feedback.</h3>
             <ul class="channel-list">
                 <li class="discussion">
-                    <a href="https://github.com/cloudforet-io/community/discussions" target="_blank">
+                    <a href="https://github.com/cloudforet-io/cloudforet/discussions" target="_blank">
                         <figure>Discussion icon</figure>
                         <div>
                             <strong class="title">Discussion</strong>
