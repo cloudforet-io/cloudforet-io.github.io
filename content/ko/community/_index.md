@@ -37,7 +37,7 @@ menu:
             <h3>여러분들의 다양한 의견 또는 피드백을 공유해주세요.</h3>
             <ul class="channel-list">
                 <li class="discussion">
-                    <a href="https://github.com/cloudforet-io/community/discussions" target="_blank">
+                    <a href="https://github.com/cloudforet-io/cloudforet/discussions" target="_blank">
                         <figure>Discussion icon</figure>
                         <div>
                             <strong class="title">Discussion</strong>
