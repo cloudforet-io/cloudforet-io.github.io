@@ -11,8 +11,11 @@ description: >
 This is Quick Installation guide with minikube.
 This Guide is not for production, but for developer only.
 
+## Not Support
+- ARM64 architecture (We donot support minikube with ARM64 CPU, like MacBook M2, use AMD64 CPU)
+
 ## Prerequisites
-- AWS EC2 VM
+- AWS EC2 VM (Intel/AMD CPU)
 - Kubernetes 1.21+ (minikube, https://minikube.sigs.k8s.io/docs/start/)
 - Helm 3.2.0+ (https://helm.sh/docs/intro/install/)
 
