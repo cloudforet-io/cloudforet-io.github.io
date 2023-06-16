@@ -8,6 +8,8 @@ description: >
 no_list: true
 ---
 
+![set_proxy](/ko/docs/setup_operation/configuration/set_http_proxy_img/set_proxy.png)
+
 http_proxy https_proxy 환경변수 선언을 통해 pod들이 프록시 서버를 통해 외부로 통신할 수 있도록 할 수 있습니다.<br>
 이러한 설정은 각 Container의 환경변수에 http_proxy https_proxy를 선언하는 것으로 이루어집니다.
 
