@@ -32,7 +32,7 @@ global:
 
 core 서비스 뿐만 아니라, supervisor의 plugin 서비스의 namespace도 변경할 수 있습니다. plugin 서비스는 supervisor에 의해 life-cycle이 관리되며 plugin의 namespace 설정도 supervisor에 설정합니다.
 
-아래는 `values.yaml` 파일에서 plugin 서비스의 namespace를 변경히가 위해 supervisor를 설정한 부분입니다. `supervisor.application_scheduler.CONNECTORS.KubernetesConnector.namespace`에 `plugin-namespace `값을 추가합니다.
+아래는 `values.yaml` 파일에서 plugin 서비스의 namespace를 변경히가 위해 supervisor를 설정한 부분입니다. `supervisor.application_scheduler.CONNECTORS.KubernetesConnector.namespace`에 `plugin-namespace` 값을 추가합니다.
 ``` yaml
 #console:
 supervisor:

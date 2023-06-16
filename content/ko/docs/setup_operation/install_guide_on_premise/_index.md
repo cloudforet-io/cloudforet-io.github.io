@@ -423,11 +423,11 @@ ___
 다음과 같은 특이사항에 대해서는 추가적인 설정이 필요합니다. 다음은 상황에 따른 예시와 해결 방법을 위한 내용입니다.
 |Name|Description|
 |:---:|---|
-|[Set HTTP Proxy](../configuration/set_http_proxy.md)|인터넷 연결이 되지 않는 on-premise 환경인 경우 외부와 통신하기 위해서는 proxy 설정이 필요합니다. 다음은 HTTP Proxy를 설정하기 위한 방법입니다.|
-|[Set Plugin Certificate](../configuration/set_plugin_certificate.md)|사설 인증서를 사용하는 경우 plugin별 인증서를 설정하는 방법입니다.|
-|[Support Private Image Registry](../configuration/support_private_image_registry.md)|조직의 보안 등의 이유로 외부와의 통신이 차단된 환경에서는 자체적인 Private Image Registry를 운용할 수 있습니다. 이런 경우 Container Image Sync 작업이 필요한데, Cloudforet에서는 dregsy tool을 이용한 방법을 제안합니다.|
-|[Change K8S Namespace](../configuration/change_k8s_namespace.md)|환경별로 Namespace 사용이 제한적이거나, 자신만의 Namespace 이름을 사용할 수 있습니다. 다음은 Cloudforet에서 Namespace를 변경하는 방법입니다.|
-|[Set K8S ImagePullSecrets](../configuration/set_k8s_imagepullsecrets.md)|Private Image Registry를 이용하는 경우 사용자 인증 설정이 되어 자격증명이 필요할 수 있습니다. Kubernetes에서는 secret을 이용하여 자격증명을 pod에 등록할 수 있습니다. 다음은 ImagePullSecrets를 설정하는 방법입니다.
+|[Set HTTP Proxy](../configuration/set_http_proxy)|인터넷 연결이 되지 않는 on-premise 환경인 경우 외부와 통신하기 위해서는 proxy 설정이 필요합니다. 다음은 HTTP Proxy를 설정하기 위한 방법입니다.|
+|[Set Plugin Certificate](../configuration/set_plugin_certificate)|사설 인증서를 사용하는 경우 plugin별 인증서를 설정하는 방법입니다.|
+|[Support Private Image Registry](../configuration/support_private_image_registry)|조직의 보안 등의 이유로 외부와의 통신이 차단된 환경에서는 자체적인 Private Image Registry를 운용할 수 있습니다. 이런 경우 Container Image Sync 작업이 필요한데, Cloudforet에서는 dregsy tool을 이용한 방법을 제안합니다.|
+|[Change K8S Namespace](../configuration/change_k8s_namespace)|환경별로 Namespace 사용이 제한적이거나, 자신만의 Namespace 이름을 사용할 수 있습니다. 다음은 Cloudforet에서 Namespace를 변경하는 방법입니다.|
+|[Set K8S ImagePullSecrets](../configuration/set_k8s_imagepullsecrets)|Private Image Registry를 이용하는 경우 사용자 인증 설정이 되어 자격증명이 필요할 수 있습니다. Kubernetes에서는 secret을 이용하여 자격증명을 pod에 등록할 수 있습니다. 다음은 ImagePullSecrets를 설정하는 방법입니다.
 ___
 
 ## Uninstall
