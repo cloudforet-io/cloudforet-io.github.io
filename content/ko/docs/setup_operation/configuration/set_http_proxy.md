@@ -1,6 +1,6 @@
 ---
-title: "Proxy_http를 통한 http(s) 연결 설정"
-linkTitle: "Proxy_http를 통한 http(s) 연결 설정"
+title: "HTTP Proxy 설정"
+linkTitle: "HTTP Proxy 설정"
 weight: 1
 date: 2022-06-14
 description: >
@@ -21,25 +21,32 @@ http_proxy https_proxy 환경변수 선언을 통해 pod들이 프록시 서버�
 
 ### Core service를 위한 proxy 설정
 
-- `global.common_env`
-  - 모든 micro-service들에게 적용
+|Parameter|description|Default|
+|:---:|---|:---:|
+|global.common_env[]|Environment Variable for all micro services|[]|
+|global.common_env[].name|Name of environment variable|""|
+|global.common_env[].value|Value of environment variable|""|
 
 ```yaml
 global:
-+   common_env:
-+     - name: HTTP_PROXY
-+       value: http://{proxy_server_address}:{proxy_port}
-+     - name: HTTPS_PROXY
-+       value: http://{proxy_server_address}:{proxy_port}
-+     - name: no_proxy
-+       value: .svc.cluster.local,localhost,{cluster_ip},board,config,console,console-api,console-api-v2,cost-analysis,dashboard,docs,file-manager,identity,inventory,marketplace-assets,monitoring,notification,plugin,repository,secret,statistics,supervisor
+  common_env:
+    - name: HTTP_PROXY
+      value: http://{proxy_server_address}:{proxy_port}
+    - name: HTTPS_PROXY
+      value: http://{proxy_server_address}:{proxy_port}
+    - name: no_proxy
+      value: .svc.cluster.local,localhost,{cluster_ip},board,config,console,console-api,console-api-v2,cost-analysis,dashboard,docs,file-manager,identity,inventory,marketplace-assets,monitoring,notification,plugin,repository,secret,statistics,supervisor
 ```
 
 
 ### plugin을 위한 proxy 설정
 
-- `supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env`
-  - supervisor가 만들어내는 plugin들에 적용
+|Parameter|description|Default|
+|:---:|---|:---:|
+|supervisor.application_scheduler|Configuration of supervisor schduler|{...}|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[]|Environment Variable for plugin|[]|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].name|Name of environment variable|""|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].value|Name of environment variable|""|
 
 ```yaml
 supervisor:
@@ -52,18 +59,15 @@ supervisor:
       - name: my-credential
 
     application_scheduler:
-        (omit...)
-        CONNECTORS:
-            (omit...)
-            KubernetesConnector:
-                (omit...)
-+               env:
-+                 - name: HTTP_PROXY
-+                   value: http://{proxy_server_address}:{proxy_port}
-+                 - name: HTTPS_PROXY
-+                   value: http://{proxy_server_address}:{proxy_port}
-+                 - name: no_proxy
-+                   value: .svc.cluster.local,localhost,{cluster_ip},board,config,console,console-api,console-api-v2,cost-analysis,dashboard,docs,file-manager,identity,inventory,marketplace-assets,monitoring,notification,plugin,repository,secret,statistics,supervisor
+      CONNECTORS:
+        KubernetesConnector:
+          env:
+            - name: HTTP_PROXY
+              value: http://{proxy_server_address}:{proxy_port}
+            - name: HTTPS_PROXY
+              value: http://{proxy_server_address}:{proxy_port}
+            - name: no_proxy
+              value: .svc.cluster.local,localhost,{cluster_ip},board,config,console,console-api,console-api-v2,cost-analysis,dashboard,docs,file-manager,identity,inventory,marketplace-assets,monitoring,notification,plugin,repository,secret,statistics,supervisor
 ```
 
 
