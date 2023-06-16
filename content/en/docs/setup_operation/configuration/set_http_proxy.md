@@ -1,6 +1,6 @@
 ---
-title: "Setting up HTTP(S) connection through a http_proxy."
-linkTitle: "Setting up HTTP(S) connection through a http_proxy."
+title: "Setting up HTTP(S) connection through a http_proxy"
+linkTitle: "Setting up HTTP(S) connection through a http_proxy"
 weight: 1
 date: 2022-06-14
 description: >
