@@ -34,27 +34,29 @@ Cloudforet의 helm chart value에 imagePullSecrets 을 명시하여 pod들이 �
 
 ### Core service를 위한 imagePullSecrets 설정
 
-- `[모든 micro-service].imagePullSecrets`
-  - 모든 micro-service들에게 적용
+|Parameter|description|Default|
+|:---:|---|:---:|
+|[services].imagePullSecrets[]]|`imagePullSecrets` configuration(* Each micro service section)|[]|
+|[services].imagePullSecrets[].name|Name of secret type of `kubernetes.io/dockerconfigjson`|""|
 
 ```yaml
 console:
     enable: true
     image:
-        name: spaceone/console
-        version: x.y.z
+      name: spaceone/console
+      version: x.y.z
 
-+   imagePullSecrets:
-+     - name: my-credential
+    imagePullSecrets:
+      - name: my-credential
 
 console-api:
     enable: true
     image:
-        name: spaceone/console-api
-        version: x.y.z
+      name: spaceone/console-api
+      version: x.y.z
 
-+   imagePullSecrets:
-+     - name: my-credential
+    imagePullSecrets:
+      - name: my-credential
 
 (이하 동일)
 ```
@@ -62,8 +64,11 @@ console-api:
 
 ### Plugin를 위한 imagePullSecrets 설정
 
-- `supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets`
-    - supervisor가 만들어내는 plugin들에 적용
+|Parameter|description|Default|
+|:---:|---|:---:|
+|supervisor.application_scheduler|Configuration of supervisor scheduler|{...}|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets[]|`imagePullSecrets` configuration for plugin|[]|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets[].name|Name of secret type of `kubernetes.io/dockerconfigjson` for plugin|""|
 
 ```yaml
 supervisor:
@@ -76,13 +81,10 @@ supervisor:
       - name: my-credential
 
     application_scheduler:
-        (omit...)
-        CONNECTORS:
-            (omit...)
-            KubernetesConnector:
-                (omit...)
-+               imagePullSecrets: 
-+                 - name: my-credential
+      CONNECTORS:
+          KubernetesConnector:
+              imagePullSecrets: 
+                - name: my-credential
 ```
 
 

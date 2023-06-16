@@ -34,27 +34,29 @@ You can specify imagePullSecrets in the helm chart values of Cloudforet to mount
 
 ### Set imagePullSecrets configuration for the core service
 
-- `[all micro service].imagePullSecrets`
-  - for all micro services
+|Parameter|description|Default|
+|:---:|---|:---:|
+|[services].imagePullSecrets[]]|`imagePullSecrets` configuration(* Each micro service section)|[]|
+|[services].imagePullSecrets[].name|Name of secret type of `kubernetes.io/dockerconfigjson`|""|
 
 ```yaml
 console:
     enable: true
     image:
-        name: spaceone/console
-        version: x.y.z
+      name: spaceone/console
+      version: x.y.z
 
-+   imagePullSecrets:
-+     - name: my-credential
+    imagePullSecrets:
+      - name: my-credential
 
 console-api:
     enable: true
     image:
-        name: spaceone/console-api
-        version: x.y.z
+      name: spaceone/console-api
+      version: x.y.z
 
-+   imagePullSecrets:
-+     - name: my-credential
+    imagePullSecrets:
+      - name: my-credential
 
 (...)
 ```
@@ -62,8 +64,11 @@ console-api:
 
 ### Set imagePullSecrets configuration for the plugin
 
-- `supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets`
-    - for all plugin
+|Parameter|description|Default|
+|:---:|---|:---:|
+|supervisor.application_scheduler|Configuration of supervisor scheduler|{...}|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets[]|`imagePullSecrets` configuration for plugin|[]|
+|supervisor.application_scheduler.CONNECTORS.KubernetesConnector.imagePullSecrets[].name|Name of secret type of `kubernetes.io/dockerconfigjson` for plugin|""|
 
 ```yaml
 supervisor:
@@ -76,13 +81,10 @@ supervisor:
       - name: my-credential
 
     application_scheduler:
-        (omit...)
-        CONNECTORS:
-            (omit...)
-            KubernetesConnector:
-                (omit...)
-+               imagePullSecrets: 
-+                 - name: my-credential
+      CONNECTORS:
+          KubernetesConnector:
+              imagePullSecrets: 
+                - name: my-credential
 ```
 
 
