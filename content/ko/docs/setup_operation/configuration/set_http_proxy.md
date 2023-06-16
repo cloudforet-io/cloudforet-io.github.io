@@ -11,8 +11,9 @@ no_list: true
 http_proxy https_proxy 환경변수 선언을 통해 pod들이 프록시 서버를 통해 외부로 통신할 수 있도록 할 수 있습니다.<br>
 이러한 설정은 각 Container의 환경변수에 http_proxy https_proxy를 선언하는 것으로 이루어집니다.
 
->http_proxy https_proxy 이외에 no_proxy 라는 환경변수는 proxy 통신을 적용하지 않는 목적지에 대한 설정입니다.<br><br>
-cloudforet의 경우, 각 Micro-service들과의 통신을 위해 cluster 내부의 통신을 위한 도메인은 제외하도록 설정하는 것을 추천합니다.
+> no_proxy 환경변수는 proxy 통신을 적용하지 않는 목적지에 대한 설정입니다.
+
+> cloudforet의 경우 Micro service간 통신을 위해 cluster 내부의 service 도메인은 제외하도록 설정하는 것을 추천합니다.
 
 ## 예제
 
