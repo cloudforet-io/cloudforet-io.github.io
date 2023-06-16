@@ -12,45 +12,11 @@ This is Quick Installation guide with minikube.
 This Guide is not for production, but for developer only.
 
 ## Overview
-**이 이미지는 Port Forwarding (No Ingress) Architecture 에서 이미지를 따와서 replace.**
 
-### Cloudforet Architecture
-![Cloudforet Architecture](images/cloudforet_architecture.png)
+### Cloudforet-Minikube Architecture
+![Cloudforet-Minikube Architecture](images/port_forwarding_architecture.png)
 
 ---
-
-### Docker Images For Cloudforet
-> This information is here for reference. Refer to this only if your Kubernetes cluster can't access the internet. You need to download the docker images and push them to your private docker registry.
-
-**이 부분은 일단은 지우자**
-
-You can download the docker images from [Docker Hub](https://hub.docker.com/u/spaceone).
-
-| Image Name                  | Version             | Required |
-|:----------------------------|:--------------------|:--------:|
-| spaceone/console            | 1.11.0.27           |    O     |
-| spaceone/console-api        | 1.11.0.4            |    O     |
-| spaceone/identity           | 1.11.0              |    O     |
-| spaceone/secret             | 1.11.0              |    O     |
-| spaceone/repository         | 1.11.0.2            |    O     |
-| spaceone/plugin             | 1.11.0              |    O     |
-| spaceone/config             | 1.11.0              |    O     |
-| spaceone/inventory          | 1.11.0.3            |    O     |
-| spaceone/monitoring         | 1.11.0.3            |    O     |
-| spaceone/statistics         | 1.11.0              |    O     |
-| spaceone/cost-analysis      | 1.11.0.3            |    O     |
-| spaceone/notification       | 1.11.0              |    O     |
-| spaceone/board              | 1.11.0              |    O     |
-| spaceone/file-manager       | 1.11.0              |    O     |
-| spaceone/dashboard          | 1.11.0.4            |    O     |
-| spaceone/console-api-v2     | 1.11.0.2            |    O     |
-| spaceone/supervisor         | 1.11.0.4            |    O     |
-| spaceone/spacectl           | 1.11.0.12           |    O     |
-| spaceone/marketplace-assets | 1.11.0.1            |    X     |
-| spaceone/docs               | 0.1.20230502.153847 |    X     |
-| mongo                       | latest              |    X     |
-| redis                       | latest              |    X     |
-
 
 
 ## Not Support
@@ -101,6 +67,8 @@ helm search repo
 > If you want to use only one namespace, you don't have to create the `spaceone-plugin` namespace.
 ```bash
 kubectl create ns spaceone
+```
+```bash
 kubectl create ns spaceone-plugin
 ```
 
@@ -217,10 +185,14 @@ global:
 
 After editing the `values.yaml` file, upgrade the helm chart.
 
-**여기도 줄마다 나누기**
 
 ```bash
 helm upgrade cloudforet cloudforet/spaceone -n spaceone -f values.yaml
+```
+
+After upgrading, delete the pods related to the namespace named spaceone.
+After upgrading, delete the pods in spaceone namespace that have the label app.kubernetes.io/instance and value cloudforet. 
+```bash
 kubectl delete po -n spaceone -l app.kubernetes.io/instance=cloudforet
 ```
 
@@ -235,10 +207,15 @@ If all pods are in `Running` state, the setup is complete.
 Installing Cloudforet on minikube doesn't provide any Ingress objects such as Amazon ALB or NGINX ingress controller.
 We can use **kubectl port-forward** instead.
 
+Run the following commands for port forwarding.
 ~~~bash
 # CLI commands
 kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
+~~~
+~~~bash
 kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0' &
+~~~
+~~~bash
 kubectl port-forward -n spaceone svc/console-api-v2 8082:80 --address='0.0.0.0' &
 ~~~
 
@@ -254,7 +231,7 @@ Open browser (http://127.0.0.1:8080)
 ![](/docs/setup_operation/quick_install/quick_install_img/quick_install_image_03.png)
 
 ### Initial Setup for Cloudforet
-> For your reference, Cloudforet is an open source project for SpaceOne. For additional information, refer to our official website [here](spaceone website link 넣기).
+> For your reference, Cloudforet is an open source project for SpaceOne. For additional information, refer to our official website [here](https://spaceone.megazone.io/open-source).
 
 
 {{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="spaceONE Basci Setup in 10 minutes">}}
