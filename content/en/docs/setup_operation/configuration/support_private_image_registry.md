@@ -13,7 +13,7 @@ In such environments, when installing Cloudforet, access to external networks is
 
 To automate the synchronization of container images in such scenarios, Cloudforet proposes using a Container Registry Sync tool called 'dregsy' to periodically sync container images.
 
-![dregsy_for_image_sync](/ko/docs/setup_operation/configuration/support_private_image_registry_img/dregsy_for_image_sync.png)
+![dregsy_for_image_sync](/docs/setup_operation/configuration/support_private_image_registry_img/dregsy_for_image_sync.png)
 
 In an environment situated between an external network and an internal network, dregsy is executed. 
 

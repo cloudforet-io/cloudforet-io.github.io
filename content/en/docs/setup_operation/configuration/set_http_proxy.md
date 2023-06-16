@@ -8,6 +8,8 @@ description: >
 no_list: true
 ---
 
+![set_proxy](/docs/setup_operation/configuration/set_http_proxy_img/set_proxy.png)
+
 You can enable communication from pods to the external world through a proxy server by declaring the http_proxy and https_proxy environment variables.
 
 This configuration is done by declaring http_proxy and https_proxy in the environment variables of each container.
