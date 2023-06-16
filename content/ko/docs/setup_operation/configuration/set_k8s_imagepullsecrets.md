@@ -1,6 +1,6 @@
 ---
-title: "kubernetes imagePullSecrets 설정"
-linkTitle: "kubernetes imagePullSecrets 설정"
+title: "Kubernetes imagePullSecrets 설정"
+linkTitle: "Kubernetes imagePullSecrets 설정"
 weight: 1
 date: 2022-06-14
 description: >
