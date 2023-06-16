@@ -52,7 +52,7 @@ You can download the docker images from [Docker Hub](https://hub.docker.com/u/sp
 | spaceone/supervisor         | 1.11.0.4            |    O     |
 | spaceone/spacectl           | 1.11.0.12           |    O     |
 | spaceone/marketplace-assets | 1.11.0.1            |    X     |
-| spaceone/docs               | 0.1.20230502.153847 |    X     |
+| spaceone/docs               | 1.11.0              |    X     |
 | mongo                       | latest              |    X     |
 | redis                       | latest              |    X     |
 
