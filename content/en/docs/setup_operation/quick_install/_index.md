@@ -63,7 +63,6 @@ helm search repo
 ```
 
 ### 2) Create Namespaces
-**이 부분도 각 줄마다 블록으로 나누기**
 > If you want to use only one namespace, you don't have to create the `spaceone-plugin` namespace.
 ```bash
 kubectl create ns spaceone
