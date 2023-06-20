@@ -8,7 +8,7 @@ description: >
 no_list: true
 ---
 
-![set_plugin_certificate](/en/docs/setup_operation/configuration/set_plugin_certificate_img/set_plugin_certificate.png)
+![set_plugin_certificate](/docs/setup_operation/configuration/set_plugin_certificate_img/set_plugin_certificate.png)
 
 If Cloudforet is built in an on-premise environment, it can be accessed through a proxy server without direct communication with the Internet.  
 At this time, a private certificate is required when communicating with the proxy server.  
