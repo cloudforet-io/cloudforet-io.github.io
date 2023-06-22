@@ -34,128 +34,139 @@ description: >
 
 (1) 画面左上の[作成]ボタンをクリックします。
 
-![collector-create-button](/ja/docs/guides/asset-inventory/collector-img/collector-create-button.png)
+![collector-create-button](/ja/docs/guides/asset-inventory/collector-img/collector-create-button_ja.png)
 
-(2) プラグイン一覧ページで作成したいコレクタープラグインを選択して[作成]ボタンをクリックします。
+(2) 「新しいコレクターを作成する‌」ページの手順に従ってください。
+(2-1) 「プラグインリスト」ページで必要なコレクタープラグインを見つけ、[選択]ボタンをクリックしてください。
 
-![collector-plugin-lists](/ja/docs/guides/asset-inventory/collector-img/collector-plugin-lists.png)
+![collector-plugin-lists](/ja/docs/guides/asset-inventory/collector-img/collector-create-step1_ja.png)
 
-(3) [コレクター作成]ページで以下の段階を実行します。
+(2-2) コレクターの名前とバージョンを入力し、[次へ]ボタンをクリックしてください。
+(コレクターによっては、特定のクラウドプロバイダーを選択する必要がある場合があります。)
 
-(3-1) [コレクター設定]タブで名前とプラグインのバージョンを選択します。
-
-![collector-create-base-info](/ja/docs/guides/asset-inventory/collector-img/collector-create-base-info.png)
+![collector-plugin-create](/ja/docs/guides/asset-inventory/collector-img/collector-create-step2_ja.png)
 
 {{<alert title="バージョンと自動アップグレード">}}
-バージョンは先に選択したコレクタープラグインのバージョンを意味し、自動アップグレードを無効化すると選択できます。この場合、常に指定したバージョンのプラグインでデータが収集されます。
+"バージョン"とは、以前に選択したコレクタープラグインのバージョンを指します。これは自動アップグレードを無効にして選択することができます。この場合、データは常に指定されたプラグインのバージョンで収集されます。
 
-自動アップグレードを有効化すると、常に最新バージョンのプラグインでデータが収集されます。
+一方、自動アップグレードを有効にすると、データは常にプラグインの最新バージョンで収集されます。
 {{</alert>}}
 
-(3-2) 必要であれば、[タグ追加]タブでコレクターに対する追加情報を入力します。
+<br>
 
-![collector-create-tags](/ja/docs/guides/asset-inventory/collector-img/collector-create-tags.png)
+(2-3) コレクターの追加オプションを選択し、[次へ]ボタンをクリックしてください。
 
-(4) [確認]ボタンをクリックすると、コレクターの作成が完了します。
+(2-3-1) 関連するサービスアカウント：「全体」または「特定のサービスアカウント」のいずれかを選択してください。 「全体」を選択すると、コレクターに関連するプロバイダーのサービスアカウントが自動的にデータ収集の対象となります。
 
-## コレクター一覧を照会する
+(2-3-2) 追加オプション：コレクターによっては、選択する追加オプションがある場合とない場合があります。
 
-コレクターページで作成中のすべてのコレクター一覧を照会できます。
+![collector-plugin-create](/ja/docs/guides/asset-inventory/collector-img/collector-create-step3_ja.png)
+
+(2-4) データ収集を自動的に行うためのスケジュールを設定することができます（オプション）。
+すべての手順を完了したら、[新しいコレクターを作成]ボタンをクリックして、コレクターの作成を確定してください。
+
+![collector-plugin-create](/ja/docs/guides/asset-inventory/collector-img/collector-create-step4_ja.png)
+
+(2-5) コレクターが作成されると、すぐにデータを収集することができます。
+
+![collector-plugin-create](/ja/docs/guides/asset-inventory/collector-img/collector-create-step5_ja.png)
+
+<br>
+
+
+## コレクターのリストを取得する
+
+コレクターページで作成されたすべてのコレクターのリストを表示できます。
 
 **詳細検索**を利用すると、詳細条件で一覧をフィルタリングできます。これに関する詳細については、[こちら](/ja/docs/guides/advanced/search/)をご参考にしてください｡
 
-![collector-list-inquiry](/ja/docs/guides/asset-inventory/collector-img/collector-list-inquiry.png)
+![collector-list-inquiry](/ja/docs/guides/asset-inventory/collector-img/collector-list_ja.png)
 
-## コレクターの詳細情報を確認する
+<br>
 
-(1) コレクター一覧で詳細内容を確認したいコレクターを選択します。
+## コレクターを表示/編集/削除できます
 
-(2) 一覧の下にある[詳細情報]タブで、コレクターの詳細情報を確認できます。
+### (1) 詳細を表示する
 
-![collector-detail-info-tab](/ja/docs/guides/asset-inventory/collector-img/collector-detail-info-tab.png)
+(1-1) リストから特定のコレクターカードを選択し、そのコレクターの詳細ページに移動します。
 
-## コレクターを修正する
+![collector-list-select](/ja/docs/guides/asset-inventory/collector-img/collector-list-select_ja.png)
 
-(1) コレクター一覧で修正したいコレクターを選択します。
+(1-2) 基本情報、スケジュール、追加オプション、関連サービスアカウントを表示できます。
 
-(2) [作業]ドロップダウンで[修正]メニューを選択します。
+![collector-detail-info-tab](/ja/docs/guides/asset-inventory/collector-img/collector-detail_ja.png)
 
-![collector-edit-menu](/ja/docs/guides/asset-inventory/collector-img/collector-edit-menu.png)
+<br>
 
-(3) [コレクター修正]モダールウィンドウで値を変更後に[確認]ボタンを押すと、修正が完了します。
+### (2) Edit or Delete
 
-![collector-edit-modal](/ja/docs/guides/asset-inventory/collector-img/collector-edit-modal.png)
+(2-1) 上部の[編集]アイコンをクリックしてコレクター名を変更します。
 
-## コレクターを有効化・無効化する
+![collector-detail-edit](/ja/docs/guides/asset-inventory/collector-img/collector-detail-name-edit_ja.png)
 
-コレクターを有効化または無効化することができます。コレクターを無効化すると、スケジューラによるデータ収集が停止します。
+(2-2) 基本情報、スケジュール、追加オプション、サービスアカウントなどの詳細を編集する 경우、各領域の[編集]ボタンをクリックしてください。
 
-(1) コレクター一覧で有効化または無効化したいコレクターを選択します。複数を選択すると、一括適用されます。
+![collector-detail-edit](/ja/docs/guides/asset-inventory/collector-img/collector-detail-edit_01_ja.png)
 
-(2) [作業]ドロップダウンで[有効化]または[無効化]項目を選択します。
+(2-3) After making the changes, click the [Save Changes] button to complete the modification.
 
-![collector-multi-select-for-disable](/ja/docs/guides/asset-inventory/collector-img/collector-multi-select-for-disable.png)
+![collector-detail-edit](/ja/docs/guides/asset-inventory/collector-img/collector-detail-edit_02_ja.png)
 
-(3) [コレクター有効化]または[コレクター無効化]のモダールウィンドウで選択した項目を確認後に[確認]ボタンをクリックすると、有効化・無効化が完了します。
+(2-4) 変更を行った後、変更を完了するために[変更を保存]ボタンをクリックしてください。
 
-![collector-disable-modal](/ja/docs/guides/asset-inventory/collector-img/collector-disable-modal.png)
+![collector-detail-delete](/ja/docs/guides/asset-inventory/collector-img/collector-detail-name-delete_ja.png)
 
-## コレクターを削除する
+<br>
 
-コレクターを完全削除することができます。
+## 自動データ収集を設定してください
 
-(1) コレクター一覧で削除したいコレクターを選択します。複数を選択すると、一括削除することができます。
+コレクターを作成한後も、個別のコレクターの自動データ収集スケジュールを変更することができます。
 
-(2) [作業]ドロップダウンで[削除]メニューを選択します。
+(1) コレクターリストページでは、各コレクターの自動データ収集をコレクターカードセクションのスケジュール切り替えボタン(オン/オフ)を使用して有効化または無効化できます。[編集]ボタンをクリックして頻度を迅速に設定および変更することもできます。
 
-![collector-delete-menu](/ja/docs/guides/asset-inventory/collector-img/collector-delete-menu.png)
+![collector-edit-schedule](/ja/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_ja.png)
 
-(3) [コレクター削除]モダールウィンドウで選択した項目を確認して[確認]ボタンをクリックすると、削除が完了します。
+![collector-edit-schedule](/ja/docs/guides/asset-inventory/collector-img/collector-edit-schedule_02_ja.png)
 
-![collector-delete-modal](/ja/docs/guides/asset-inventory/collector-img/collector-delete-modal.png)
+(2) また、各コレクターの詳細ページに移動してスケジュールを変更することもできます。
 
-## 一回性データを収集する
+![collector-edit-schedule](/ja/docs/guides/asset-inventory/collector-img/collector-detail-schedule_ja.png)
 
-スケジューリングせずに一度だけデータを収集できます。
+<br>
 
-この機能を利用すると、コレクターが無効化状態でもデータが収集されます。
+## データ収集を即座に開始してください
 
-データ収集は、2つの方法で作動します。
+自動データ収集の設定をせずに、一度だけデータを収集することができます。
 
-- [すべてのサービスアカウントに対してデータ収集](/ja/docs/guides/asset-inventory/collector/#接続した-すべての-サービス-アカウントに-対して-データを-収集する)
-- [1つのサービスアカウントに対してデータ収集](/ja/docs/guides/asset-inventory/collector/#1つの-サービス-アカウントに-対して-データを-収集する)
+コレクターに自動データ収集スケジュールがなくても、データ収集が行われます。
 
-### 接続したすべてのサービスアカウントに対してデータを収集する
+データ収集には2つの方法があります:
+
+- [全ての関連サービスアカウントに対するデータ収集](/ja/docs/guides/asset-inventory/collector/#全ての関連サービスアカウントに対するデータ収集)
+- [単一のサービスアカウントに対するデータ収集](/ja/docs/guides/asset-inventory/collector/#単一のサービスアカウントに対するデータ収集)
+
+
+### 全ての関連サービスアカウントに対するデータ収集
 
 コレクターはがデータを収集するためには、[プロバイダ](/ja/docs/guides/asset-inventory)のアカウント情報を必要です。アカウント情報は、[サービスアカウント](/ja/docs/guides/asset-inventory/service-account)を通じて登録されます。
 
-コレクターは、基本的にプロバイダのすべてのサービスアカウントに対してデータを収集します。
+(1) コレクターリストページで、データを収集したいコレクターカードの上にマウスカーソルを移動してください。
 
-(1) コレクター一覧でデータを収集するコレクターを選択します。
+![collector-collect-data](/ja/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_ja.png)
 
-(2) [作業]ドロップダウンで[データ収集]メニューを選択します。
+(2) 当該コレクターのデータ収集の完了状況は、[コレクター履歴](/ja/docs/guides/asset-inventory/collector/#データ収集スケジュールを設定する)で確認できます。選択したコレクターの[詳細を見る]リンクをクリックすると、当該ページへ移動します。
 
-![collector-collect-data-menu](/ja/docs/guides/asset-inventory/collector-img/collector-collect-data-menu.png)
+<br>
 
-(3) [データ収集]モダールウィンドウで[確認]ボタンをクリックすると、データ収集を開始します。
+### 単一のサービスアカウントに対するデータ収集
 
-![collector-collect-data-modal](/ja/docs/guides/asset-inventory/collector-img/collector-collect-data-modal.png)
+コレクターを使用してデータを収集する場合、特定のクラウドプロバイダーのアカウントからのみデータを収集できます。
 
-(4) 当該コレクターのデータ収集の完了状況は、[コレクター履歴](ko/docs/guides/asset-inventory/collector/#データ-収集-履歴-確認する)で確認できます。選択したコレクターの[詳細を見る]リンクをクリックすると、当該ページへ移動します。
+(1) コレクターリストページからコレクターを選択し、詳細ページに移動してください。 
 
-![collector-history-at-table](/ja/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+(2) 詳細ページの一番下に、関連付けられたサービスアカウントの一覧が表示されます。
 
-### 1つのサービスアカウントに対してデータを収集する
-
-コレクターでデータを収集時に、特定のクラウドプロバイダのアカウントデータのみを収集することもできます。
-
-(1) コレクター一覧でデータを収集するコレクターを選択します。
-
-(2) 下にある[サービスアカウント]タブを選択します。
-
-![collector-service-account-tab](/ja/docs/guides/asset-inventory/collector-img/collector-service-account-tab.png)
-
-ここには、選択したコレクターを通じてデータを収集時に使用されるサービスアカウント一覧が表示されます。
+![collector-service-account](/ja/docs/guides/asset-inventory/collector-img/collector-detail-service-account_ja.png)
 
 {{<alert title="サービスアカウント">}}
 [サービスアカウント](/ja/docs/guides/asset-inventory/service-account)は、データ収集に必要なプロバイダアカウントに対するアクセス情報を持っています。
@@ -163,14 +174,11 @@ description: >
 ここで情報が確認できない場合、プロバイダにアクセスできるアカウント情報がないものと見做され、コレクターが実行されてもデータは収集されません。
 
 そのため、コレクターでデータ収集するためには、先に[サービスアカウント]メニューで当該プロバイダのアカウント情報を登録しなければなりません。
-
 {{</alert>}}
 
-(3) データ収集するサービスアカウントの右にある[データ収集]ボタンをクリックします。
+(3) データを収集するためには、データを収集したいサービスアカウントの右側にある[データ収集]ボタンをクリックしてください。
 
-(4) [データ収集]モダールウィンドウで[確認]ボタンをクリックすると、データ収集を開始します。
-
-![collector-data-collect-one-account-modal](/ja/docs/guides/asset-inventory/collector-img/collector-data-collect-one-account-modal.png)
+<br>
 
 ## データ収集スケジュールを設定する
 
@@ -184,76 +192,7 @@ description: >
 
 ![collector-schedule-tab](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-tab.png)
 
-### スケジュールを追加する
-
-(1) [追加]ボタンをクリックします。
-
-(2) [スケジュール追加]モダールウィンドウに値を入力します。
-
-![collector-schedule-modal](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-modal.png)
-
-(2-1) 識別可能な名前と設定したスケジュールが作動する時間帯(タイムゾーン)を選択します。
-
-(2-2) コレクターがデータを収集するスケジュールを設定します。 
-
 <br>
-<br>
-
-スケジュールの設定方法は2つのあります。
-
-![collector-schedule-type](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-type.png)
-
-- 時間で設定: 繰り返したい時間を入力すると、入力したすべての時間毎にデータを収集します。これを毎日繰り返します。
-- 繰り返し周期で設定: 入力した周期でデータを収集します。プラグインでサポートする時間単位(時、分、秒)によって入力方式が異なります。
-
-{{<alert title="繰り返し周期設定が表示されない場合">}}
-選択したコレクターの**プラグイン**の種類によって、繰り返し周期方式は時に非表示だったり、その時間単位(時、分、秒)の入力方式が異なります。
-
-コレクターのデータ収集は、どこまでもコレクタープラグインに依存します。そのため、当該プラグインが収集するデータ量が膨大な場合は、繰り返し周期を設定すると危険性が高いといえます。この問題を防止するため、繰り返し周期設定は基本値として提供されません。
-
-反対に、頻繁にデータを収集する必要のあるプラグインもあります。この場合、プラグインがサポートする条件に従って、繰り返し周期の設定方式が画面に表示されます。
-
-プラグインに関する詳細については、[こちら](/ja/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
-
-{{</alert>}}
-
-(3) [確認]ボタンをクリックしてコレクターを作成します。
-
-### スケジュールを変更する
-
-(1) スケジュール一覧で変更する項目を選択します。
-
-(2) [作業]ドロップダウンで[変更]を選択します。
-
-![collector-schedule-edit-menu](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-edit-menu.png)
-
-(2-1) [スケジュール変更]モダールウィンドウで変更する内容を入力します。スケジュール追加方法と同じなので、上記のスケジュールを追加する(リンク)をご参考にしてください。
-
-![collector-schedule-edit-modal](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-edit-modal.png)
-
-(3) [確認]ボタンをクリックして変更を完了します。
-
-### スケジュールを削除する
-
-(1) スケジュール一覧で変更する項目を選択します。
-
-(2) [作業]ドロップダウンで[削除]メニューを選択します。
-
-![collector-schedule-delete-menu](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-delete-menu.png)
-
-(3) [スケジュール削除]モダールウィンドウで削除するスケジュールの内容を確認して[確認]ボタンをクリックすると、削除が完了します。
-
-![collector-schedule-delete-modal](/ja/docs/guides/asset-inventory/collector-img/collector-schedule-delete-modal.png)
-
-## データ収集履歴を確認する
-
-**コレクター履歴**ページでデータ収集履歴を確認できます。
-
-コレクターページ画面上部の[コレクター履歴]ボタンをクリックすると、コレクター履歴ページへ移動します。
-
-特定コレクターのデータ収集履歴のみを確認したい場合は、コレクター一覧の[詳細を見る]ボタンをクリックします。
-
-![collector-history-at-table](/ja/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
 ### データ収集リストを照会する
 
@@ -298,16 +237,3 @@ description: >
 (2) 下にある[エラー一覧]タブでエラーに対する詳細履歴を確認できます。
 
 ![collector-history-error-list](/ja/docs/guides/asset-inventory/collector-img/collector-history-error-list.png)
-
-## コレクターのタグを管理する
-
-コレクターにタグを追加して管理することができます。
-
-(1) [タグ]タブ内の[編集]ボタンをクリックします。
-
-![collector-tag-edit](/ja/docs/guides/asset-inventory/collector-img/collector-tag-edit.png)
-
-(2) タグページで「キー: 値」形態でタグを入力して、[保存]ボタンをクリックすると完了します。
-
-![collector-tag-filled](/ja/docs/guides/asset-inventory/collector-img/collector-tag-filled.png)
-
