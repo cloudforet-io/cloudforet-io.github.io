@@ -1,7 +1,7 @@
 ---
 title: "프라이빗 이미지 저장소 지원"
 linkTitle: "프라이빗 이미지 저장소 지원"
-weight: 1
+weight: 5
 date: 2022-06-14
 description: >
     Cloudforet은 자체 Private Container Registry에 Container Image를 동기화 하기위한 방법을 제안합니다.

@@ -1,7 +1,7 @@
 ---
 title: "Support private image registry"
 linkTitle: "Support private image registry"
-weight: 1
+weight: 5
 date: 2022-06-14
 description: >    
     Cloudforet proposes a way to sync container images between private and public image registries.

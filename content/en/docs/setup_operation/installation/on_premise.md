@@ -1,14 +1,14 @@
 ---
-title: "Install Guide - On Premise"
-linkTitle: "Install Guide - On Premise"
-weight: 3
-url_dash_board: "/docs/guides_v1/on_premise_install_guide"
+title: "On Premise"
+linkTitle: "On Premise"
+weight: 2
+url_dash_board: "/docs/guides_v1/installation/on_premise"
 date: 2023-06-16
 description: >
     This section describes how to install CloudForet in an On-Premise environment.
 ---
 
-![on_premise](./on_premise_img/on_premise.png)
+![on_premise](../on_premise_img/on_premise.png)
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ kubectl create ns spaceone-plugin
 
 > **Cautions of creation namespace**  
 If you need to use only one namespace, you do not need to create the `spaceone-plugin` namespace.  
-If changing the Cloudforet namespace, please refer to the following link. [Change K8S Namespace](../configufation/change_k8s_namespace)
+If changing the Cloudforet namespace, please refer to the following link. [Change K8S Namespace](../../configuration/change_k8s_namespace)
 
 ### 3. Create Role and RoleBinding
 
@@ -423,11 +423,11 @@ ___
 Additional settings are required for the following special features. Below are examples and solutions for each situation.
 |Name|Description|
 |:---:|---|
-|[Set HTTP Proxy](../configuration/set_http_proxy)|In the on-premise environment with no Internet connection, proxy settings are required to communicate with the external world. Here's how to set up HTTP Proxy.|
-|[Set Plugin Certificate](../configuration/set_plugin_certificate)|This is how to set a certificate for each plugin when using a private certificate.|
-|[Support Private Image Registry](../configuration/support_private_image_registry)|In an environment where communication with the outside is blocked for organization's security reasons, you can operate your own Private Image Registry. In this case, Container Image Sync operation is required, and Cloudforet suggests a method using the dregsy tool.|
-|[Change K8S Namespace](../configuration/change_k8s_namespace)|Namespace usage is limited by each environment, or you can use your own namespace name. Here is how to change Namespace in Cloudforet.|
-|[Set K8S ImagePullSecrets](../configuration/set_k8s_imagepullsecrets)|If you are using Private Image Registry, you may need credentials because user authentication is set. In Kubernetes, you can use secrets to register credentials with pods. Here's how to set ImagePullSecrets.|
+|[Set Plugin Certificate](../../configuration/set_plugin_certificate)|This is how to set a certificate for each plugin when using a private certificate.|
+|[Support Private Image Registry](../../configuration/support_private_image_registry)|In an environment where communication with the outside is blocked for organization's security reasons, you can operate your own Private Image Registry. In this case, Container Image Sync operation is required, and Cloudforet suggests a method using the dregsy tool.|
+|[Change K8S Namespace](../../configuration/change_k8s_namespace)|Namespace usage is limited by each environment, or you can use your own namespace name. Here is how to change Namespace in Cloudforet.|
+|[Set HTTP Proxy](../../configuration/set_http_proxy)|In the on-premise environment with no Internet connection, proxy settings are required to communicate with the external world. Here's how to set up HTTP Proxy.|
+|[Set K8S ImagePullSecrets](../../configuration/set_k8s_imagepullsecrets)|If you are using Private Image Registry, you may need credentials because user authentication is set. In Kubernetes, you can use secrets to register credentials with pods. Here's how to set ImagePullSecrets.|
 ___
 
 ## Uninstall

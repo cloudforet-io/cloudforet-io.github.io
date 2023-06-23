@@ -1,7 +1,7 @@
 ---
 title: "HTTP Proxy 설정"
 linkTitle: "HTTP Proxy 설정"
-weight: 1
+weight: 4
 date: 2022-06-14
 description: >
     proxy 연결을 위한 kubernetes pod의 http_proxy 설정을 설명합니다.

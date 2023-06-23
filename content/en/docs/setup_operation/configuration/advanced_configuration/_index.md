@@ -1,7 +1,7 @@
 ---
 title: "Advanced Configuration Guide"
 linkTitle: "Advanced Configuration"
-weight: 4
+weight: 6
 url_dash_board: "/docs/guides_v1/advanced_configuration"
 date: 2021-07-31
 description: >
@@ -13,11 +13,11 @@ description: >
 
 SpaceONE has default title and CI with Wanny favicon.
 
-![](/docs/setup_operation/advanced_configuration/img/spaceone_default_favicon.png)
+![](./img/spaceone_default_favicon.png)
 
 But you can change them to your own title and favicon.
 
-![](/docs/setup_operation/advanced_configuration/img/spaceone_custom_favicon.png)
+![](./img/spaceone_custom_favicon.png)
 
 </br>
 

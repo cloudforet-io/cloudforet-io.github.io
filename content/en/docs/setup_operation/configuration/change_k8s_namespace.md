@@ -1,7 +1,7 @@
 ---
 title: "change k8s namespace"
 linkTitle: "change k8s namespace"
-weight: 1
+weight: 2
 date: 2022-06-19
 description: >
     This section describes how to change a core service or plugin service to a namespace with a different name.
