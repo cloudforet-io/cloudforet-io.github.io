@@ -1,14 +1,14 @@
 ---
-title: "Quick Install Guide"
-linkTitle: "Quick Install Guide"
+title: "Getting Started"
+linkTitle: "Getting Started"
 weight: 1
-url_dash_board: "/docs/guides_v1/install_guide/quick_install_guide"
+url_dash_board: "/docs/guides_v1/install_guide/getting_started"
 date: 2021-08-10
 description: >
 
 ---
 
-This is Quick Installation guide with minikube.
+This is Getting Started Installation guide with minikube.
 This Guide is not for production, but for developer only.
 
 ## Overview
