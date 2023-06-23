@@ -13,14 +13,13 @@ description: >
 시작하기에 앞서 spacectl 사용을 위한 [**API 키**](https://cloudforet.io/ko/docs/guides/my-page/access-with-api-cli/)를 발급합니다.
 
 설정을 진행하는 방법은 2가지가 존재합니다.
-- Kubernetes Cluster의 Pod 접속 후 진행하는 방법
-- Local 환경에서의 진행 방법
+- Kubernetes Cluster의 Pod의 spacectl로 설정하는 방법
+- Local 환경에서의 spacectl로 설정하는 방법
 
 이후 DataSource 등록 진행 후 비용 동기화를 시작합니다.
 
-<br>
 
-### Kubernetes Cluster의 Pod 접속 후 진행하는 방법
+### Kubernetes Cluster의 Pod의 spacectl로 설정하기
 
 (1) 접속할 spacectl pod의 이름을 확인합니다.
 ```
@@ -42,25 +41,22 @@ $ spacectl config init -f dufault.yaml
 $ spacectl config set api_key {api_key}
 ```
 
-<br>
 
-### Local 환경에서의 진행 방법
+### Local 환경에서의 spacectl로 설정하기
 
 (1) [**API 키**](https://cloudforet.io/ko/docs/guides/my-page/access-with-api-cli/) 발급시 다운 받은 spacectl_config.yml 파일로 environment 설정을 진행합니다. 
 ```commandline
 $ spacectl config init -f spacectl_config.yml
 ```
 
-<br>
+이후 진행 방법은 동일 합니다.
 
-## Plugin 설정 방법
+## Plugin 설정하기
 (1-1) 바용 분석을 위한 플러그인 별 설정 가이드는 [링크](https://cloudforet.io/ko/docs/guides/plugins/cost-explorer-data-source/)를 참고해 주세요.
 (1-2) Plugin 설정 진행 과정에서 반환되는 `plugin_id` 정보를 메모해 둡니다.
 
 
-<br>
-
-## DataSource 등록
+## DataSource 등록하기
 (1) DataSource를 등록 합니다. 
 
 DataSource를 등록하기 위해서 아래와 같은 정보가 필요합니다.
@@ -94,11 +90,11 @@ template: {}
 $ spacectl exec register cost_analysis.DataSource -f register_datasource.yaml
 ```
 
-<br>
 
-## DataSource 동기화
+## DataSource 동기화하기
 
 (1) 비용 동기화 과정입니다.
+
 DataSource 등록 과정에서 반환된 `data_source_id`를 사용합니다.
 이전에 동기화된 데이터가 없는 경우, 아래 명령어를 실행시 1년간의 데이터를 동기화합니다.
 ```commandline
