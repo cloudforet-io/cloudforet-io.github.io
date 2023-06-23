@@ -61,6 +61,9 @@ touch /path/to/your/dregsy-spaceone-plugin.yaml
 > If authentication to the registry is configured with `username:password`,<br> the information is encoded and set in the 'auth' field as shown below (example - lines 19 and 22 of the configuration).<br><br>
 `echo '{"username": "...", "password": "..."}' | base64`
 
+> In the case of Harbor, Robot Token is not supported for authentication.<br> 
+Please authenticate by encoding the username:password
+
 ```yaml
 relay: skopeo
 watch: true
@@ -360,7 +363,7 @@ docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceon
 - view log
 
 ```shell
-docker logs {container_id|container_name}
+docker logs -f {container_id|container_name}
 ```
 
 - delete docker container
