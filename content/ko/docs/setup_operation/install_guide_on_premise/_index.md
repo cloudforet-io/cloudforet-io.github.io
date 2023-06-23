@@ -8,7 +8,7 @@ description: >
     On Premise 환경에서 CloudForet를 설치하는 방법을 설명합니다.
 ---
 
-![on_premise](./on_premise_img/on_premise_img/on_premise.png)
+![on_premise](./on_premise_img/on_premise.png)
 
 ## Prerequisites
 
