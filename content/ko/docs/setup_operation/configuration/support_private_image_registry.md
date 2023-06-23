@@ -58,9 +58,10 @@ touch /path/to/your/dregsy-spaceone-plugin.yaml
 ```
 
 - 설정 추가 (dregsy-spaceone-core.yaml)
-
 > 만약, username:password 구성으로 Registry 인증을 하는 경우,<br> 아래와 같이 정보를 encode하여 auth에  설정합니다. (예시 - 설정 19,22번째 라인)<br>
 `echo '{"username": "...", "password": "..."}' | base64`
+
+> Harbor의 경우 Robot Token 인증은 지원이 어렵습니다. username:password를 encoding하여 인증해주세요.
 
 ```yaml
 relay: skopeo
@@ -361,7 +362,7 @@ docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceon
 - view log
 
 ```shell
-docker logs {container_id|container_name}
+docker logs -f {container_id|container_name}
 ```
 
 - delete docker container
