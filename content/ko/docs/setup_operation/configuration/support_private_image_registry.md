@@ -348,12 +348,14 @@ tasks:
 ```
 
 ### Run
+> Docker image를 별도로 download 받을 필요가 없습니다.<br>
+아래의 command가 docker image를 확인 후 없다면 가져옵니다.
 
 ```shell
-docker run -d --rm --name dregsy_spaceone_core -v /path/to/your/dregsy-spaceone-core.yaml:/config.yaml xelalex/dregsy
+docker run -d --rm --name dregsy_spaceone_core -v /path/to/your/dregsy-spaceone-core.yaml:/config.yaml xelalex/dregsy:0.5.0
 ```
 ```shell
-docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceone-plugin.yaml:/config.yaml xelalex/dregsy
+docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceone-plugin.yaml:/config.yaml xelalex/dregsy:0.5.0
 ```
 
 

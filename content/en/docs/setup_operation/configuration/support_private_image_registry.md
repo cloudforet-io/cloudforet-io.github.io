@@ -349,12 +349,14 @@ tasks:
 ```
 
 ### Run
+> No need to pull docker images separately.<br>
+The command below will get the image if there is no image locally
 
 ```shell
-docker run -d --rm --name dregsy_spaceone_core -v /path/to/your/dregsy-spaceone-core.yaml:/config.yaml xelalex/dregsy
+docker run -d --rm --name dregsy_spaceone_core -v /path/to/your/dregsy-spaceone-core.yaml:/config.yaml xelalex/dregsy:0.5.0
 ```
 ```shell
-docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceone-plugin.yaml:/config.yaml xelalex/dregsy
+docker run -d --rm --name dregsy_spaceone_plugin -v /path/to/your/dregsy-spaceone-plugin.yaml:/config.yaml xelalex/dregsy:0.5.0
 ```
 
 
