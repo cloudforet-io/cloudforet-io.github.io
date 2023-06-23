@@ -41,7 +41,7 @@ kubectl create ns spaceone-plugin
 
 > **namespace 생성 시 주의사항**  
 하나의 namespace에서만 사용해야할 경우 `spaceone-plugin` namespace는 생성하지 않아도 됩니다.  
-Cloudforet의 namespace를 변경하는 경우 다음의 링크를 참고하시기 바랍니다. [Change K8S Namespace](../configufation/change_k8s_namespace.md)
+Cloudforet의 namespace를 변경하는 경우 다음의 링크를 참고하시기 바랍니다. [Change K8S Namespace](../configufation/change_k8s_namespace)
 
 ### 3. Create Role and RoleBinding
 
