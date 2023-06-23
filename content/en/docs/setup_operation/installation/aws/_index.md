@@ -1,11 +1,11 @@
 ---
-title: "Install Guide"
-linkTitle: "Install Guide"
-weight: 2
-url_dash_board: "/docs/guides_v1/install_guide"
+title: "AWS"
+linkTitle: "AWS"
+weight: 1
+url_dash_board: "/docs/guides_v1/install_guide/aws"
 date: 2021-07-31
 description: >
-    Install Guide of SpaceONE
+    Install Guide of SpaceONE on AWS
 ---
 
 ## Install Kubernetes

@@ -1,7 +1,7 @@
 ---
 title: "Setting up HTTP proxy"
 linkTitle: "Setting up HTTP proxy"
-weight: 1
+weight: 4
 date: 2022-06-14
 description: >
     We will explain the http_proxy configuration for a Kubernetes pod to establish a proxy connection.

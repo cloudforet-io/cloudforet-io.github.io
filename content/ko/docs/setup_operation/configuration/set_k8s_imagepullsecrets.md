@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes imagePullSecrets 설정"
 linkTitle: "Kubernetes imagePullSecrets 설정"
-weight: 1
+weight: 3
 date: 2022-06-14
 description: >
     Cloudforet의 Pod들이 imagePullSecrets을 이용해 Private Container Image를 가져올 수 있도록 하는 방법에 대해 설명합니다.

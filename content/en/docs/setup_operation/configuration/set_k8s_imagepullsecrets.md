@@ -1,7 +1,7 @@
 ---
 title: "Creating and applying Kubernetes imagePullSecrets"
 linkTitle: "Creating and applying Kubernetes imagePullSecrets"
-weight: 1
+weight: 3
 date: 2022-06-14
 description: >
     We will explain the process of enabling Cloudforet pods to get private container images using imagePullSecrets.
