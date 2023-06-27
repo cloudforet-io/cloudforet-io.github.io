@@ -1,6 +1,6 @@
 ---
-title: "change k8s namespace"
-linkTitle: "change k8s namespace"
+title: "Change kubernetes namespace"
+linkTitle: "Change kubernetes namespace"
 weight: 2
 date: 2022-06-19
 description: >

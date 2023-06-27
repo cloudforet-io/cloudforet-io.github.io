@@ -1,6 +1,6 @@
 ---
-title: "Setting up HTTP proxy"
-linkTitle: "Setting up HTTP proxy"
+title: "Setting up http proxy"
+linkTitle: "Setting up http proxy"
 weight: 4
 date: 2022-06-14
 description: >
