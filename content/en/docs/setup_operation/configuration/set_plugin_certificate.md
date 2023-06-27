@@ -1,6 +1,6 @@
 ---
-title: "set plugin certificate"
-linkTitle: "set plugin certificate"
+title: "Set plugin certificate"
+linkTitle: "Set plugin certificate"
 weight: 1
 date: 2023-06-20
 description: >

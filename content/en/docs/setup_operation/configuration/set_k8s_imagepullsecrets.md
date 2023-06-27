@@ -1,6 +1,6 @@
 ---
-title: "Creating and applying Kubernetes imagePullSecrets"
-linkTitle: "Creating and applying Kubernetes imagePullSecrets"
+title: "Creating and applying kubernetes imagePullSecrets"
+linkTitle: "Creating and applying kubernetes imagePullSecrets"
 weight: 3
 date: 2022-06-14
 description: >

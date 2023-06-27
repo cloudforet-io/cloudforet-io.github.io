@@ -1,6 +1,6 @@
 ---
-title: "Advanced Configuration Guide"
-linkTitle: "Advanced Configuration"
+title: "Advanced configuration guide"
+linkTitle: "Advanced configuration"
 weight: 6
 url_dash_board: "/docs/guides_v1/advanced_configuration"
 date: 2021-07-31
