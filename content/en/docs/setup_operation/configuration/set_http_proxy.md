@@ -49,6 +49,9 @@ global:
 |supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].name|Name of environment variable|""|
 |supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].value|Name of environment variable|""|
 
+> WRAN: <br>
+Depending on your the installation environment, the default local domain may differ, so you need to change the default local domain such as `.svc.cluster.local` to match your environment. You can check the current cluster DNS settings with the following command.<br><br>
+`kubectl run -it --rm busybox --image=busybox --restart=Never -- cat /etc/resolv.conf`
 ```yaml
 supervisor:
     enabled: true
