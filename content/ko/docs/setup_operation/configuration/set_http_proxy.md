@@ -48,6 +48,12 @@ global:
 |supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].name|Name of environment variable|""|
 |supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].value|Name of environment variable|""|
 
+> WRAN: <br>
+설치 환경에 따라 default local domain이 다른 경우가 있으니, <br>
+`.svc.cluster.local` 등의 default local domain을 자신의 환경에 맞게 변경해야합니다.<br>
+아래의 command로 현재 cluster의 dns 설정을 확인할 수 있습니다.<br><br>
+`kubectl run -it --rm busybox --image=busybox --restart=Never -- cat /etc/resolv.conf`
+
 ```yaml
 supervisor:
     enabled: true
