@@ -57,7 +57,7 @@ type: kubernetes.io/tls
 |:--------------------------------------------------------------------------------------------|---------------------------------------|:--------------------------------------------------------|
 | supervisor.application_scheduler                                                            | Configuration of supervisor scheduler | {...}                                                   |
 | supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[]                       | Environment variables for plugin      | [...]                                                   |
-| supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].name                  | Name of environment variable          | REQUESTS_CA_BUNDLE, AWS_CA_BUNDLE, CLOUDFORET_CERT_PATH |
+| supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].name                  | Name of environment variable          | REQUESTS_CA_BUNDLE, AWS_CA_BUNDLE, CLOUDFORET_CA_BUNDLE |
 | supervisor.application_scheduler.CONNECTORS.KubernetesConnector.env[].value                 | Value of environment variable         | /opt/ssl/cert/tls.crt                                   |
 | supervisor.application_scheduler.CONNECTORS.KubernetesConnector.volumes[]                   | Volumes for plugin                    | [...]                                                   |
 | supervisor.application_scheduler.CONNECTORS.KubernetesConnector.volumes[].name              | Name of volumes                       | private-tls                                             |
@@ -85,7 +85,7 @@ supervisor:
             value: /opt/ssl/cert/tls.crt
           - name: AWS_CA_BUNDLE
             value: /opt/ssl/cert/tls.crt
-          - name: CLOUDFORET_CERT_PATH
+          - name: CLOUDFORET_CA_BUNDLE
             value: /opt/ssl/cert/tls.crt
         volumes:
           - name: private-tls
