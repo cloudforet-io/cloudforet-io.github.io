@@ -224,9 +224,9 @@ Create the `values.yaml` file and edit the values. There is only one item that n
 console:
   production_json:
     CONSOLE_API:
-      ENDPOINT: http://127.0.0.1:8081  # http://public_ip:8081 for EC2 users
+      ENDPOINT: http://127.0.0.1:8081  # http://ec2_public_ip:8081 for EC2 users
     CONSOLE_API_V2:
-      ENDPOINT: http://127.0.0.1:8082  # http://public_ip:8082 for EC2 users
+      ENDPOINT: http://127.0.0.1:8082  # http://ec2_public_ip:8082 for EC2 users
 
 global:
   shared_conf:
@@ -272,6 +272,8 @@ kubectl port-forward -n spaceone svc/console-api-v2-rest 8082:80 --address='0.0.
 ## Start Cloudforet
 
 ### Log-In (Sign in for Root Account)
+> For EC2 users: open browser with http://your_ec2_server_ip:8080
+
 Open browser (http://127.0.0.1:8080)
 
 | ID | PASSWORD |
