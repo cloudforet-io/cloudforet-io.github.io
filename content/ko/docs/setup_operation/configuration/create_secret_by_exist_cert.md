@@ -4,7 +4,7 @@ linkTitle: "기존 인증서로 Secret 만들기"
 weight: 7
 date: 2023-07-12
 description: >
-    공인(사설) 인증서를 발급 받은 경우, 해당 인증서를 이용한 secret 생성 및 적용 방법을 설명합니다.
+    공인 혹은 사설 인증서를 발급 받은 경우, 발급된 인증서를 이용한 secret 생성 및 적용 방법을 설명합니다.
 no_list: true
 ---
 
