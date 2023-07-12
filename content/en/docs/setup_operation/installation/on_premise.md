@@ -256,7 +256,7 @@ An ingress controller is required to use ingress in an on-premise environment. H
 
 #### Generate self-managed SSL
 
-Create a private ssl certificate using the openssl command below. (If you have a prepared certificate, you can skip creating a private certificate.)
+Create a private ssl certificate using the openssl command below. (If an already issued certificate exists, you can create a Secret using the issued certificate. For detailed instructions, please refer to the following link. [Create secret by exist cert](../../configuration/create_secret_by_exist_cert))
 
 -   console
     
@@ -284,30 +284,6 @@ kubectl create secret tls console-ssl --key console_ssl.pem --cert console_ssl.c
 
 ```shell
 kubectl create secret tls api-ssl --key api_ssl.pem --cert api_ssl.csr
-```
-
-#### Create Secret from certificate_secret.yaml file
-
-If the certificate is ready, edit the `certificate_secert.yaml` file. The file can be downloaded from the link below. In addition, the downloaded content is edited and used as follows. [https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/certificate_secret.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/certificate_secret.yaml)
-
-```shell 
-cat <<EOF> certificate_secret.yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: spaceone-tls
-  namespace: spaceone           # Change the namespace
-data:
-  tls.crt: base64 encoded cert  # openssl base64 -in cert.pem -out cert.base64
-  tls.key: base64 encoded key   # openssl base64 -in key.pem -out key.base64
-type: kubernetes.io/tls
-EOF
-```
-
-Apply the `certificate_secret.yaml` file to the `spaceone` namespace through the following command.
-
-```shell 
-kubectl apply -f certificate_secret.yaml -n spaceone
 ```
 
 #### Create Ingress
