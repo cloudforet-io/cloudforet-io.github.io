@@ -37,16 +37,14 @@ For detailed information on this, see [here](/docs/guides/asset-inventory/servic
 ![collector-create-button](/docs/guides/asset-inventory/collector-img/collector-create-button_en.png)
 
 (2) Follow the steps on the "Create New Collector" page.
-
 (2-1) On the Plugin List page, find a required collector plugin and click the [Select] button.
 
-![collector-plugin-lists](/docs/guides/asset-inventory/collector-img/collector-create-step1_2_en.png)
+![collector-plugin-lists](/docs/guides/asset-inventory/collector-img/collector-create-step1_en.png)
 
 (2-2) Enter the name and version of the collector and click the [Continue] button.
-
 (Depending on the collector, it can be required to select a specific cloud provider.)
 
-![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step2_2_en.png)
+![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step2_en.png)
 
 {{<alert title="Version and auto upgrade">}}
 Version refers to the version of the previously selected collector plugin, which can be chosen by disabling auto upgrade. In this case, the data is always collected with the specified version of the plugin.
@@ -62,12 +60,12 @@ On the other hand, if you enable auto upgrade, your data will always be collecte
 
 (2-3-2) Additional Options: Depending on the collector, there may or may not be additional options to select.
 
-![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step3_2_en.png)
+![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step3_en.png)
 
 (2-4) You can set up a schedule to automatically perform data collection (optional).
 Once you have completed all the steps, click the [Create New Collector] button to finalize the collector creation.
 
-![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step4_2_en.png)
+![collector-plugin-create](/docs/guides/asset-inventory/collector-img/collector-create-step4_en.png)
 
 (2-5) Once collector is created, you can collect data immediately.
 
@@ -81,7 +79,7 @@ You can view a list of all collectors that have been created on the collector pa
 
 **Advanced search** allows you to filter the list by elaborate criteria. For a detailed explanation, see [here](/docs/guides/advanced/search/).
 
-![collector-list-inquiry](/docs/guides/asset-inventory/collector-img/collector-list_2_en.png)
+![collector-list-inquiry](/docs/guides/asset-inventory/collector-img/collector-list_en.png)
 
 <br>
 
@@ -91,11 +89,11 @@ You can view a list of all collectors that have been created on the collector pa
 
 (1-1) Select a specific collector card from the list to navigate to its detailed page.
 
-![collector-list-select](/docs/guides/asset-inventory/collector-img/collector-list-select2_en.png)
+![collector-list-select](/docs/guides/asset-inventory/collector-img/collector-list-select_en.png)
 
 (1-2) You can view the basic information, schedule, additional options, and attached service accounts.
 
-![collector-detail-info-tab](/docs/guides/asset-inventory/collector-img/collector-detail2_en.png)
+![collector-detail-info-tab](/docs/guides/asset-inventory/collector-img/collector-detail_en.png)
 
 <br>
 
@@ -103,19 +101,19 @@ You can view a list of all collectors that have been created on the collector pa
 
 (2-1) Click on the [Edit] icon at the top and modify the collector name.
 
-![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-name-edit2_en.png)
+![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-name-edit_en.png)
 
 (2-2) If you need to edit details such as base information, schedule, additional options or service accounts, click the [Edit] button in each area.  
 
-![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-edit_01_2_en.png)
+![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-edit_01_en.png)
 
 (2-3) After making the changes, click the [Save Changes] button to complete the modification.
 
-![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-edit_02_2_en.png)
+![collector-detail-edit](/docs/guides/asset-inventory/collector-img/collector-detail-edit_02_en.png)
 
 (2-4) If you need to delete a collector, click the [Trash] icon on the top. 
 
-![collector-detail-delete](/docs/guides/asset-inventory/collector-img/collector-detail-name-delete_2_en.png)
+![collector-detail-delete](/docs/guides/asset-inventory/collector-img/collector-detail-name-delete_en.png)
 
 <br>
 
@@ -125,15 +123,13 @@ After creating a collector, you can still modify the automated data collection s
 
 (1) In the collector list page, you can enable or disable automated data collection for each collector by using the schedule toggle button(Switch On/Off) in the collector card section. You can quickly set and modify the frequency by clicking the [Edit] button.  
 
-![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_2_en.png)
+![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_en.png)
 
-![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_02_2_en.png)
-
-![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_03_2_en.png)
+![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_02_en.png)
 
 (2) You can also navigate to the detailed page of each collector and change the schedule.
 
-![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-detail-schedule_2_en.png)
+![collector-edit-schedule](/docs/guides/asset-inventory/collector-img/collector-detail-schedule_en.png)
 
 <br>
 
@@ -153,23 +149,9 @@ Data collection works in two ways:
 
 Collector needs account information from a [Provider](/docs/guides/asset-inventory) for data collection, which is registered through [Service account](/docs/guides/asset-inventory/service-account).
 
-(1) Click on [Collect Data]
+(1) On the collector list page, move the mouse cursor over the collector card for which you want to collect data.
 
-(Collector list Page) 
-Hover over the collector card area for data collection, and then click the [Collect Data] button.
-
-![collector-collect-data](/docs/guides/asset-inventory/collector-img/collector-collect-data-01_en.png)
-
-(Collector Detail Page)
-Click the [Collect Data] button located in the top right corner of the detailed page.
-
-![collector-collect-data](/docs/guides/asset-inventory/collector-img/collector-collect-data-02_en.png)
-
-![collector-collect-data](/docs/guides/asset-inventory/collector-img/collector-collect-data-03_en.png)
-
-<br>
-
-(2) Proceed with data collection.
+![collector-collect-data](/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_en.png)
 
 (2) Whether or not the collector has completed a data collection can be checked in [Collector history](/docs/guides/asset-inventory/collector/#check-data-collection-history). You can click the [View details] link of a selected collector to go to that page.
 
@@ -183,7 +165,7 @@ When collecting data with a collector, you may only collect data from a specific
 
 (2) You can find the list of attached service accounts on the bottom of detail page. 
 
-![collector-service-account](/docs/guides/asset-inventory/collector-img/collector-detail-service-account2_en.png)
+![collector-service-account](/docs/guides/asset-inventory/collector-img/collector-detail-service-account_en.png)
 
 {{<alert title="Service account">}}
 [Service account](/docs/guides/asset-inventory/service-account) has access information for the provider account required for data collection.
@@ -204,10 +186,19 @@ You can check your data collection history on the **Collector history** page.
 
 You can go to the collector history page by clicking the [Collector history] button at the top of the collector page.
 
-![collector-history-at-table](/docs/guides/asset-inventory/collector-img/collector-collect-history01_en.png)
+If you want to check only the data collection history of a specific collector, you can go to where you can check that information by clicking the [View details] button from a list of collectors.
 
-![collector-history-at-table](/docs/guides/asset-inventory/collector-img/collector-collect-history02_en.png)
+![collector-history-at-table](/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
 
+### Viewing data collection list
+
+Through the chart at the top of the collector history page, you can quickly check data collection status by date.
+
+The list at the bottom displays a list of data collections that meet the criteria for an advanced search and status filter. For a detailed description of advanced search, see [here](/docs/guides/advanced/search/).
+
+For items in the process of data collection, you can check the collection status through the status bar of the job progress field.
+
+![collector-history-full-page](/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
 
 ### Checking the details of data collection history
 
