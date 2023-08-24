@@ -38,14 +38,16 @@ description: >
 ![collector-create-button](/ko/docs/guides/asset-inventory/collector-img/collector-create-button_ko.png)
 
 (2) [신규 컬렉터 생성‌] 페이지에서 아래 단계를 거칩니다.
+
 (2-1) 플러그인 목록 페이지에서 원하는 컬렉터 플러그인을 찾아 [선택] 버튼을 클릭합니다.
 
-![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step1_ko.png)
+![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step1_2_ko.png)
 
 (2-2) 컬렉터의 이름 작성 및 버전을 선택한 후 [계속하기] 버튼을 클릭합니다. 
+
 (컬렉터에 따라 특정 클라우드 프로바이더 선택이 필요할 수도 있습니다.)
 
-![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step2_ko.png)
+![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step2_2_ko.png)
 
 {{<alert title="버전 및 자동 업그레이드">}}
 버전은 앞에서 선택한 컬렉터 플러그인의 버전을 의미하며, 자동 업그레이드를 비활성화하면 선택할 수 있습니다. 이 경우에는 항상 지정한 버전의 플러그인으로 데이터가 수집됩니다.
@@ -61,12 +63,12 @@ description: >
 
 (2-3-2) 추가 옵션: 컬렉터별 추가 옵션은 상이하기 때문에 경우에 따라 없을 수도 있습니다. 
 
-![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step3_ko.png)
+![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step3_2_ko.png)
 
 (2-4) 매일 자동으로 데이터 수집을 진행할 수 있도록 스케줄링을 설정할 수 있습니다.(선택사항)   
 모든 단계를 거쳤다면, [신규 컬렉터 생성] 버튼을 클릭하여 컬렉터 생성을 완료합니다.
 
-![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step4_ko.png)
+![collector-plugin-create](/ko/docs/guides/asset-inventory/collector-img/collector-create-step4_2_ko.png)
 
 (2-5) 컬렉터 생성이 완료되었다면, 즉시 데이터 수집을 시작할 수 있습니다. 
 
@@ -80,7 +82,7 @@ description: >
 
 **고급 검색**을 통해 세밀한 조건으로 목록을 필터링할 수 있습니다. 상세 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
 
-![collector-list-inquiry](/ko/docs/guides/asset-inventory/collector-img/collector-list_ko.png)
+![collector-list-inquiry](/ko/docs/guides/asset-inventory/collector-img/collector-list_2_ko.png)
 
 <br>
 
@@ -90,11 +92,11 @@ description: >
 
 (1-1) 컬렉터 목록에서 특정 컬렉터 카드 영역을 선택하여 상세 페이지로 이동합니다.
 
-![collector-list-select](/ko/docs/guides/asset-inventory/collector-img/collector-list-select_ko.png)
+![collector-list-select](/ko/docs/guides/asset-inventory/collector-img/collector-list-select2_ko.png)
 
 (1-2) 기본 정보, 스케줄, 컬렉터 옵션 및 연결된 서비스 어카운트를 확인할 수 있습니다.
 
-![collector-detail-info-tab](/ko/docs/guides/asset-inventory/collector-img/collector-detail_ko.png)
+![collector-detail-info-tab](/ko/docs/guides/asset-inventory/collector-img/collector-detail2_ko.png)
 
 <br>
 
@@ -102,20 +104,20 @@ description: >
 
 (2-1) 상단의 [편집] 아이콘을 클릭하여 컬렉터 이름을 수정할 수 있습니다.
 
-![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-name-edit_ko.png)
+![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-name-edit2_ko.png)
 
 (2-2) 기본 정보, 스케줄, 컬렉터 옵션, 서비스 어카운트와 같은 세부 수정 필요시, 해당 영역의 [수정] 버튼을 클릭합니다.
 
-![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-edit_01_ko.png)
+![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-edit_01_2_ko.png)
 
 (2-3) 값을 변경한 후 [변경 저장] 버튼을 클릭하여 수정을 완료합니다.
 
-![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-edit_02_ko.png)
+![collector-detail-edit](/ko/docs/guides/asset-inventory/collector-img/collector-detail-edit_02_2_ko.png)
 
 (2-4) 컬렉터 삭제하기
 상단의 [삭제] 아이콘을 클릭하여 컬렉터를 삭제할 수 있습니다.
 
-![collector-detail-delete](/ko/docs/guides/asset-inventory/collector-img/collector-detail-name-delete_ko.png)
+![collector-detail-delete](/ko/docs/guides/asset-inventory/collector-img/collector-detail-name-delete_2_ko.png)
 
 <br>
 
@@ -125,13 +127,15 @@ description: >
 
 (1) 컬렉터 목록 페이지의 각 컬렉터 카드 영역에 스케줄 토글 버튼을 통해 자동 수집 활성화/비활성화가 가능하며, [수정] 버튼을 클릭하여 빠르게 시간 주기를 설정하고 변경할 수 있습니다.   
 
-![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_ko.png)
+![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_2_ko.png)
 
-![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_02_ko.png)
+![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_02_2_ko.png)
 
-(2) 각 컬렉터의 상세 페이지를 이동해서 스케줄을 변경할 수도 있습니다. 
+![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_03_2_ko.png)
 
-![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-detail-schedule_ko.png)
+(2) 각 컬렉터의 상세 페이지로 이동해서 스케줄을 변경할 수도 있습니다. 
+
+![collector-edit-schedule](/ko/docs/guides/asset-inventory/collector-img/collector-detail-schedule_2_ko.png)
 
 <br>
 
@@ -150,11 +154,25 @@ description: >
 
 컬렉터는 데이터 수집을 위해 [프로바이더](/ko/docs/guides/asset-inventory)의 계정 정보를 필요로 하며, 이는 [서비스 어카운트](/ko/docs/guides/asset-inventory/service-account)을 통해 등록됩니다.
 
-(1) 컬렉터 목록 페이지에서 데이터를 수집할 컬렉터 카드 영역에 마우스 오버 후, [데이터 수집] 버튼을 클릭합니다.
+(1) 데이터 수집 
 
-![collector-collect-data](/ko/docs/guides/asset-inventory/collector-img/collector-edit-schedule_01_ko.png)
+(컬렉터 목록 페이지)
+데이터를 수집할 컬렉터 카드 영역에 마우스 오버 후, [데이터 수집] 버튼을 클릭합니다.
 
-(2) 해당 컬렉터에 연결된 서비스 어카운트들에 대하여 데이터 수집을 시작합니다. 데이터 수집을 완료했는지 여부는 [컬렉터 히스토리](ko/docs/guides/asset-inventory/collector/#데이터-수집-내역-확인하기)에서 확인 가능합니다. 
+![collector-collect-data](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-01_ko.png)
+
+(컬렉터 상세 페이지)
+상세 페이지 우측 상단에 [데이터 수집] 버튼을 클릭합니다.
+
+![collector-collect-data](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-02_ko.png)
+
+![collector-collect-data](/ko/docs/guides/asset-inventory/collector-img/collector-collect-data-03_ko.png)
+
+<br>
+
+(2) 데이터 수집 진행
+
+해당 컬렉터에 연결된 서비스 어카운트들에 대하여 데이터 수집을 시작합니다. 데이터 수집을 완료했는지 여부는 [컬렉터 히스토리](ko/docs/guides/asset-inventory/collector/#데이터-수집-내역-확인하기)에서 확인 가능합니다. 
 해당 컬렉터 카드 영역 아랫부분의 [컬렉터 히스토리 전체보기] 버튼 또는 페이지 우측 상단의 [컬렉터 히스토리] 버튼을 클릭하여 컬렉터 수집 기록 페이지로 이동할 수 있습니다. 
 
 <br>
@@ -167,7 +185,7 @@ description: >
 
 (2) 페이지 하단의 [연결된 서비스 어카운트‌] 영역에서 데이터 수집 시 사용되는 서비스 어카운트 목록 확인이 가능합니다.
 
-![collector-service-account](/ko/docs/guides/asset-inventory/collector-img/collector-detail-service-account_ko.png)
+![collector-service-account](/ko/docs/guides/asset-inventory/collector-img/collector-detail-service-account2_ko.png)
 
 {{<alert title="서비스 어카운트">}}
 [서비스 어카운트](/ko/docs/guides/asset-inventory/service-account)은 데이터 수집에 필요한 프로바이더 계정에 대한 접근 정보를 가지고 있습니다.
@@ -188,19 +206,10 @@ description: >
 
 컬렉터 페이지 상단의 [컬렉터 히스토리] 버튼을 클릭하여 컬렉터 히스토리 페이지로 이동할 수 있습니다.
 
-특정 컬렉터의 데이터 수집 내역만을 확인하고 싶다면, 컬렉터 목록의 [상세 보기] 버튼을 클릭하여 이동할 수도 있습니다.
+![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-collect-history01_ko.png)
 
-![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-history-at-table.png)
+![collector-history-at-table](/ko/docs/guides/asset-inventory/collector-img/collector-collect-history02_ko.png)
 
-### 데이터 수집 목록 조회하기
-
-컬렉터 히스토리 페이지 상단의 차트를 통해, 날짜별 데이터 수집 현황을 빠르게 확인할 수 있습니다.
-
-하단의 목록에서는 고급 검색과 상태 필터 조건에 맞는 데이터 수집 목록이 표시됩니다. 고급 검색에 대한 자세한 설명은 [여기](/ko/docs/guides/advanced/search/)를 참고 하십시오.
-
-데이터 수집이 진행중인 항목의 경우, Job Progress 필드의 상태바를 통해 수집 현황을 확인할 수 있습니다.
-
-![collector-history-full-page](/ko/docs/guides/asset-inventory/collector-img/collector-history-full-page.png)
 
 ### 데이터 수집 내역 상세 정보 확인하기
 
