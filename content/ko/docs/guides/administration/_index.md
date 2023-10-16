@@ -1,7 +1,7 @@
 ---
 title: "관리"
 linkTitle: "관리"
-weight: 6
+weight: 7
 date: 2022-06-27
 description: >
     **관리**에서는 도메인 사용자들의 정보나 역할, 정책 등을 관리하고 편집할 수 있습니다.
