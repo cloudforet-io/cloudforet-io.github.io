@@ -20,6 +20,8 @@ description: >
 
 ### 이름 편집하기
 
+대시보드 제목 옆의 [편집] 아이콘 버튼을 클릭해서 변경할 수 있습니다.
+
 ![dashboard-edit-name-01](/ko/docs/guides/dashboards/dashboard-img/dashboard-edit-name-01.png)
 
 <br>
@@ -66,9 +68,12 @@ description: >
 
 (2) 좌측 위젯 목록 중 특정 위젯을 선택하여 추가합니다. 
 
-(2-1) [비용], [에셋], [얼럿] 목록에 따라 다양한 위젯을 선택할 수 있습니다. (위젯은 지속적인 업데이트가 진행될 예정입니다.)
-
 ![dashboard-edit-add-widget-02](/ko/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-02.png)
+
+{{<alert>}}
+[비용], [에셋], [얼럿] 목록에 따라 다양한 위젯을 선택할 수 있습니다. (위젯은 지속적인 업데이트가 진행될 예정입니다.)
+{{</alert>}}
+
 
 (2-2) 특정 위젯을 선택했다면, [이름] 입력 후 세부 옵션을 설정합니다. 
 
@@ -84,11 +89,13 @@ e.g. Cost Map 위젯에 `Project` 옵션이 ‘상속받기’로 설정되어 �
 **초기 설정으로 돌아가기:** 위젯 별로 해당 대시보드의 Variable(변수)와 상응하는 기본 옵션 값들이 기본적으로 설정되어 있습니다. 대시보드를 구성하는 과정에서 위젯에 옵션 값을 여러 번 변경했더라도, [초기 설정으로 돌아가기] 버튼을 클릭하면 초기에 설정된 기본 옵션 값으로 쉽게 되돌릴 수 있습니다. 
 {{</alert>}}
 
+
 (2-3) 추가하고자 하는 옵션이 없을 경우, [+옵션 추가] 버튼을 클릭하여 추가할 수 있습니다.
 
 ![dashboard-edit-add-widget-04](/ko/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-04.png)
 
 (2-4) 설정이 마무리되었다면, [확인] 버튼을 클릭하여 대시보드에 위젯 추가를 완료합니다.
+
 
 <br>
 
@@ -97,6 +104,7 @@ e.g. Cost Map 위젯에 `Project` 옵션이 ‘상속받기’로 설정되어 �
 우측 패널의 위젯 목록에서 위젯 이름 버튼을 드래그 & 드롭하여 순서를 변경할 수 있습니다.
 
 ![dashboard-edit-change-widget-01](/ko/docs/guides/dashboards/dashboard-img/dashboard-edit-change-widget-01.png)
+
 
 <br>
 

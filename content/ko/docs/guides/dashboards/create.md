@@ -26,8 +26,8 @@ description: >
 
 ![dashboard-create-03](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-03.png)
 
-- 전체 워크스페이스 : 워크스페이스 내 전체 프로젝트에 대한 데이터가 보여집니다.
-- 개별 프로젝트 : 특정 프로젝트를 선택하여 범위 설정 시, 해당 프로젝트의 데이터로만 구성이 됩니다.
+- **전체 워크스페이스** : 워크스페이스 내 전체 프로젝트에 대한 데이터가 보여집니다.
+- **개별 프로젝트** : 특정 프로젝트를 선택하여 범위 설정 시, 해당 프로젝트의 데이터로만 구성이 됩니다.
 
 <br>
 
@@ -48,6 +48,7 @@ description: >
 ![dashboard-create-06](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-06.png)
 
 <br>
+
 생성된 대시보드 확인 및 빠른 설정은 [**여기**](/ko/docs/guides/dashboards/view)을 참고하십시오. 
 
 

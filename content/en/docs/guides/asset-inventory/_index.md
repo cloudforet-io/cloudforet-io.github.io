@@ -1,7 +1,7 @@
 ---
 title: "Asset inventory"
 linkTitle: "Asset inventory"
-weight: 3
+weight: 4
 date: 2022-06-07
 description: >
     **Asset inventory** allows a user to collect resources based on the registered user cloud service account, and view the collected resources.

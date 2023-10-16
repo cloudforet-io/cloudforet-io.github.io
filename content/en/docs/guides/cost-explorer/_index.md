@@ -1,7 +1,7 @@
 ---
 title: "Cost Explorer"
 linkTitle: "Cost Explorer"
-weight: 4
+weight: 5
 date: 2022-06-24
 description: >
     **Cost Explorer** feature traces all expenses incurred from service accounts registered in Cloudforet.

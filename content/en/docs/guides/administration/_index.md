@@ -1,7 +1,7 @@
 ---
 title: "Administration"
 linkTitle: "Administration"
-weight: 6
+weight: 7
 date: 2022-06-27
 description: >
     In the **Administration** page, you can manage and edit information, roles, policies, etc. of domain users.
