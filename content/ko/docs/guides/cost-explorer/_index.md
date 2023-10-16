@@ -1,7 +1,7 @@
 ---
 title: "비용 관리"
 linkTitle: "비용 관리"
-weight: 4
+weight: 5
 date: 2022-06-24
 description: >
     **비용 관리**는 클라우드포레에 등록된 서비스 계정으로부터 발생한 모든 비용을 추적합니다.
