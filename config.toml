@@ -127,7 +127,7 @@ date = ["date", ":filename", "publishDate", "lastmod"]
 
 [params]
 version_menu = "Versions"
-copyright = "Team CloudONE"
+copyright = "Cloudforet Foundation"
 #privacy_policy = "https://policies.google.com/privacy"
 latest = "v1.12"
 #archived_version = true
@@ -164,16 +164,8 @@ footer_about_disable = true
 
 [[params.versions]]
 fullversion = "v1.12"
-version = "v1.12 (dev)"
+version = "v1.12 (stable)"
 githubbranch = "release-1.12.0"
-docsbranch = "master"
-# Set master version url
-url = "/"
-
-[[params.versions]]
-fullversion = "v1.11"
-version = "v1.11 (stable)"
-githubbranch = "release-1.11.0"
 docsbranch = "master"
 # Set master version url
 url = "/"
