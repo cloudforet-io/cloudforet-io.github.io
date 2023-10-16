@@ -33,7 +33,7 @@ description: >
 
 ### 복제하기
 
-(1) 대시보드 이름 옆의 [복제] 아이콘 버튼을 클릭합니다.
+(1) 대시보드 이름 옆의 [복제] 버튼을 클릭합니다.
 
 ![dashboard-setup-duplicate-01](/ko/docs/guides/dashboards/dashboard-img/dashboard-setup-duplicate-01.png)
 
@@ -41,8 +41,8 @@ description: >
 
 ![dashboard-setup-duplicate-02](/ko/docs/guides/dashboards/dashboard-img/dashboard-setup-duplicate-02.png)
 
-- 대시보드 이름
-- 공개 여부: `비공개`와 `공개` 중 하나를 선택합니다.
+- **대시보드 이름**
+- **공개 여부**: `비공개`와 `공개` 중 하나를 선택합니다.
 
 <br>
 
@@ -126,7 +126,12 @@ description: >
 ![dashboard-setup-full-screen-01](/ko/docs/guides/dashboards/dashboard-img/dashboard-setup-full-screen-01.png)
 
 
-(2) 전체화면에서는 상세한 위젯 데이터 확인이 가능합니다. 상단 필터 항목은 대시보드 Variable(변수)와 동일한 항목으로, 각 옵션들을 변경해보며, 해당 위젯의 데이터를 자세히 확인해 볼 수 있습니다. (단, [전체화면] 모드에서 대시보드 변수를 변경한 내역은 저장되지 않습니다.) 
+(2) 전체화면에서는 상세한 위젯 데이터 확인이 가능합니다. 상단 필터 항목은 대시보드 Variable(변수)와 동일한 항목으로, 각 옵션들을 변경해보며, 해당 위젯의 데이터를 자세히 확인해 볼 수 있습니다. 
+
+{{<alert>}}
+단, [전체화면] 모드에서 대시보드 변수를 변경한 내역은 저장되지 않습니다.
+{{</alert>}}
+
 
 ![dashboard-setup-full-screen-02](/ko/docs/guides/dashboards/dashboard-img/dashboard-setup-full-screen-02.png)
 
