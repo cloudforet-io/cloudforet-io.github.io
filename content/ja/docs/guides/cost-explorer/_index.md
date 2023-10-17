@@ -9,4 +9,9 @@ description: >
     <br>
     <br>
     また、ユーザーが設定した[**予算**](/ja/docs/guides/cost-explorer/budget)を基準に期間別の使用量を確認でき、[**予算通知**](/ja/docs/guides/cost-explorer/budget/#予算-使用-通知-設定)を設定することもできます。
+    <br>
+    <br>
+    {{<alert>}}
+    v1.12以前のバージョンで提供されていた[**費用管理 > ダッシュボード**]機能は、新しい統合型の独立サービスメニュー[**ダッシュボード**](/ja/docs/guides/dashboards/)として新たに生まれ変わりました。したがって、以前のダッシュボードはサポートされなくなりました。
+    {{</alert>}}
 ---
