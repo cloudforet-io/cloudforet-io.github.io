@@ -14,7 +14,7 @@ description: >
 <br>
 <br>
 
-(1) 상단 메뉴의 [대시보드 > 새 대시보드 생성] 클릭 또는 [대시보드] 서비스 내 좌측 메뉴 상단의 [+] 버튼 클릭하여 생성하기 페이지로 이동합니다. 
+(1) 상단 메뉴의 **[대시보드 > 새 대시보드 생성]** 클릭 또는 [대시보드] 서비스 내 좌측 메뉴 상단의 **[+]** 버튼 클릭하여 생성하기 페이지로 이동합니다. 
 
 ![dashboard-create-01](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-01.png)
 

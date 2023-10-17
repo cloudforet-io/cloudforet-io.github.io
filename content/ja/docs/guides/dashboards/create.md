@@ -1,39 +1,39 @@
 ---
-title: "Create Dashboard"
-linkTitle: "Create Dashboard"
+title: "ダッシュボードを作成"
+linkTitle: "ダッシュボードを作成"
 weight: 4
 date: 2023-10-16
 description: >
-    You can create and manage custom dashboards by utilizing various widgets based on the importance and characteristics of your data, in addition to the provided default dashboards.
+    提供されたデフォルトのダッシュボードに加えて、データの重要性や特性に基づいてさまざまなウィジェットを活用してカスタムダッシュボードを作成し、管理できます。
 
 ---
 
-## Creating a new dashboard
+## 新しいダッシュボードを作成中です
 
-You can create a dashboard following the steps below.
+以下の手順に従ってダッシュボードを作成できます。
 <br>
 <br>
 
-(1) To create a new dashboard, you can either click on **[Dashboard > Create New Dashboard]** in the top menu or click the [+] button at the top of the left-hand menu within the dashboard service to go to the creation page.
+(1) 新しいダッシュボードを作成するには、トップメニューで **[ダッシュボード > 新規ダッシュボード作成]** をクリックするか、ダッシュボードサービス内の左側メニューの上部にある **[+]** ボタンをクリックして作成ページに移動できます。
 
-![dashboard-create-01](/docs/guides/dashboards/dashboard-img/dashboard-create-01.png)
+![dashboard-create-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-create-01.png)
 
-![dashboard-create-02](/docs/guides/dashboards/dashboard-img/dashboard-create-02.png)
-
-<br>
-
-(2) On the "Create New Dashboard" page, select the dashboard scope and choose whether it should be public or not.
-
-![dashboard-create-03](/docs/guides/dashboards/dashboard-img/dashboard-create-03.png)
-
-- **Entire Workspace** : The data for the entire workspace's projects will be displayed.
-- **Single Project** : The dashboard will be configured using only the data from a chosen project.
+![dashboard-create-02](/ja/docs/guides/dashboards/dashboard-img/dashboard-create-02.png)
 
 <br>
 
-(3) You can select from the default templates provided by Cloudforet or choose to duplicate an existing dashboard. After selecting your preferred options, click the [Continue] button.
+(2) 「新規ダッシュボード作成」ページで、ダッシュボードのスコープを選択し、それが一般公開されるかどうかを選択します。
 
-![dashboard-create-04](/docs/guides/dashboards/dashboard-img/dashboard-create-04.png)
+![dashboard-create-03](/ja/docs/guides/dashboards/dashboard-img/dashboard-create-03.png)
+
+- **ワークスペース全体** : ワークスペース全体のプロジェクトに関するデータが表示されます。
+- **個別プロジェクト** : 選択したプロジェクトのデータのみを使用して、ダッシュボードを構成します。
+
+<br>
+
+(3) Cloudforetが提供するデフォルトのテンプレートから選択するか、既存のダッシュボードを複製するオプションを選択できます。選択したオプションを選んだ後、[次へ] ボタンをクリックします。
+
+![dashboard-create-04](/ja/docs/guides/dashboards/dashboard-img/dashboard-create-04.png)
 
 <br>
 
@@ -43,13 +43,14 @@ You can create a dashboard following the steps below.
 
 <br>
 
-(5) The created dashboard can be found on the [View All Dashboards] page, categorized based on [viewers] and [scope].
+(5) 作成したダッシュボードは、「ダッシュボード」ページで、[公開可否]と[ダッシュボードの範囲]に基づいてカテゴリ別に見つけることができます。
 
-![dashboard-create-06](/docs/guides/dashboards/dashboard-img/dashboard-create-06.png)
+![dashboard-create-06](/ja/docs/guides/dashboards/dashboard-img/dashboard-create-06.png)
 
 <br>
 
-To review the created dashboard and make quick adjustments, please refer to [**here**](/docs/guides/dashboards/view). 
+作成したダッシュボードを確認し、迅速な調整を行うには、[**こちら**](/ja/docs/guides/dashboards/view)を参照してください。
+
 
 
 

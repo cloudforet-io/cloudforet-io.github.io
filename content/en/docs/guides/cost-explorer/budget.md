@@ -1,7 +1,7 @@
 ---
 title: "Budget"
 linkTitle: "Budget"
-weight: 4
+weight: 3
 date: 2022-06-23
 description: >
     **Budget** is a service that helps manage your budget by setting standards on costs incurred by each project.
@@ -18,9 +18,11 @@ description: >
 
 (2-1) Enter the name of the budget.
 
-(2-2) Select the project to be the target of budget management in the target item.
+(2-2) Select a billing data source.
 
-(2-3) Select the cost incurring criteria. If you select `all` as the cost type, all cost data related to the corresponding project will be imported. On the other hand, if you select `account` or `region,` only costs incurred by specific resources are imported.
+(2-3) Select the project to be the target of budget management in the target item.
+
+(2-4) Select the cost incurring criteria. If you select `all` as the cost type, all cost data related to the corresponding project will be imported. 
 
 (3) Enter the budget plan
 

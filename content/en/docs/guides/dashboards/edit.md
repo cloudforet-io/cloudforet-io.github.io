@@ -127,6 +127,6 @@ If you want to view a widget in full-screen, click the [Full Screen] icon button
 
 (2) You can edit the widget name and options, then click the [Confirm] button to save your changes. However, if you don't [Save] the dashboard in [Customize] mode, the edited widget won't be reflected in the final version.
 
-- For information on widget option settings, please refer to [**here**](/docs/guides/dashboards/edit/#위젯-추가하기). 
+- For information on widget option settings, please refer to [**here**](/docs/guides/dashboards/edit/#Add-widgets). 
 
 ![dashboard-update-widget-02](/docs/guides/dashboards/dashboard-img/dashboard-update-widget-02.png)
