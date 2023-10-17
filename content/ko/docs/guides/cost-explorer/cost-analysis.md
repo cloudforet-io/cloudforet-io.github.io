@@ -20,14 +20,14 @@ description: >
 비용 데이터 왜곡을 방지하기 위하여, 각각의 데이터 소스 별로 가진 original(원본) 통화는 고정됩니다.   
 {{</alert>}}
 
-![cost-analysis-data-source](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-data-source_ko.png)
+![cost-analysis-data-source](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-data-source_ko.png)
 
 
 ### 세부기준 선택하기
 
 **세부 기준**은 데이터를 어떤 방식으로 보여줄 것인가에 대한 기준입니다. 세부 기준에 따라 제공되는 차트나 테이블의 형태가 달라집니다.
 
-![cost-analysis-granularity](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-granularity_ko.png)
+![cost-analysis-granularity](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity_ko.png)
 
 - `일별 데이터`: 특정 월 기준으로 일별 누적 데이터를 확인할 수 있습니다. 
 - `월별 데이터`: 특정 기간(최대 12개월)동안의 월별 데이터를 확인할 수 있습니다.
@@ -38,7 +38,7 @@ description: >
 ### 기간 설정하기
 세부 기준에 따라 선택할 수 있는 기간 메뉴가 다르게 나타납니다. [기간] 드롭다운에서 메뉴를 선택하거나, [기간 선택] 메뉴를 통해 직접 설정합니다.
 
-![cost-analysis-period](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-period_ko.png)
+![cost-analysis-period](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period_ko.png)
 
 
 <br>
@@ -50,9 +50,9 @@ description: >
 그룹별 통계는 최대 3개 까지만 선택이 가능합니다. 
 {{</alert>}}
 
-![cost-analysis-groupby](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-groupby_ko.png)
+![cost-analysis-groupby](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby_ko.png)
 
-![cost-analysis-groupby](/docs/guides/dashboards/cost-analysis-img/cost-analysis-cost_usage.png)
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-cost_usage.png)
 
 <br>
 
@@ -64,7 +64,7 @@ description: >
 
 (2) [필터 세팅]창이 열리면 원하는 필터를 선택할 수 있으며, 선택시 바로 차트와 테이블에 반영됩니다.
 
-![cost-analysis-filter](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-filter_ko.png)
+![cost-analysis-filter](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter_ko.png)
 
 <br>
 
@@ -81,17 +81,17 @@ description: >
 
 (1) 특정 비용 분석 페이지의 우측 상단 [다른 이름으로 저장] 버튼 클릭합니다. 
 
-![cost-analysis-save_as](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_as_ko.png)
+![cost-analysis-save_as](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_as_ko.png)
 
 (2) 이름 입력후 [확인]버튼 클릭시, 새로운 분석 페이지가 생성됩니다. 
 
-![cost-analysis-save_to](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_to_ko.png)
+![cost-analysis-save_to](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_to_ko.png)
 
-![cost-analysis-saved](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-saved_ko.png)
+![cost-analysis-saved](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-saved_ko.png)
 
 (3) 커스텀 비용 분석 페이지는 이름/필터/그룹별 통계등의 설정을 바로 [저장]할 수 있으며, 기본으로 제공되는 분석 페이지와 마찬가지로 [다른 이름으로 저장]을 통해 새로운 페이지로 생성할 수도 있습니다. 
 
-![cost-analysis-save_saveas](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_saveas_ko.png)
+![cost-analysis-save_saveas](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_saveas_ko.png)
 
 <br>
 
@@ -99,9 +99,9 @@ description: >
 
 페이지 상단 [편집] 버튼을 클릭하여 이름을 변경할 수 있습니다.
 
-![cost-analysis-edit](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-edit_ko.png)
+![cost-analysis-edit](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_ko.png)
 
-![cost-analysis-edit_name](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-edit_name_ko.png)
+![cost-analysis-edit_name](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_name_ko.png)
 
 <br>
 
@@ -109,5 +109,5 @@ description: >
 
 페이지 상단 [삭제] 버튼을 클릭하여 삭제할 수 있습니다.
 
-![cost-analysis-delete](/ko/docs/guides/dashboards/cost-analysis-img/cost-analysis-delete_ko.png)
+![cost-analysis-delete](/ko/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-delete_ko.png)
 
