@@ -1,7 +1,7 @@
 ---
 title: "管理"
 linkTitle: "管理"
-weight: 6
+weight: 7
 date: 2022-06-27
 description: >
     **管理**では、ドメインユーザーの情報、ロール、ポリシーなどを管理・編集できます。

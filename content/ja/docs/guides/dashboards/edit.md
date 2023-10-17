@@ -1,132 +1,132 @@
 ---
-title: "Customize Dashboard"
-linkTitle: "Customize Dashboard"
+title: "ダッシュボードをカスタマイズします"
+linkTitle: "ダッシュボードをカスタマイズします"
 weight: 5
 date: 2023-10-16
 description: >
-    In the dashboard [Customize] mode, you can modify the dashboard name, layout, widgets, and more.
+    ダッシュボードの[カスタマイズ]モードでは、ダッシュボードの名前、レイアウト、ウィジェットなどを変更できます。
 
 ---
 
-## Customizing your dashboard
+## ダッシュボードのカスタマイズを行います
 
-### Switch to 'Customize' mode
+### 「カスタマイズ」モードに切り替えます
 
-Clicking the [Customize] button on the right side of a dashboard page will take you to the dashboard editing page.
+ダッシュボードページの右側にある[カスタマイズ]ボタンをクリックすると、ダッシュボードの編集ページに移動します。
 
-![dashboard-edit-intro-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-intro-01.png)
-
-<br>
-
-### Rename the dashboard
-
-You can click the [Edit] icon button next to the dashboard title to make changes.
-
-![dashboard-edit-name-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-name-01.png)
+![dashboard-edit-intro-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-intro-01.png)
 
 <br>
 
-### Manage labels
+### ダッシュボードの名前を変更します
 
-You can add or remove labels just below the dashboard title at the top. Labels are used to categorize and differentiate dashboard-related categories and features, making them useful for dashboard searches.
+変更を加えるには、ダッシュボードのタイトルの隣にある[編集]アイコンボタンをクリックできます。
 
-![dashboard-edit-label-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-label-01.png)
+![dashboard-edit-name-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-name-01.png)
 
 <br>
 
-### Apply a period range
+### ラベルを管理します
 
-(1) When you activate the [Date Range Selector] option from the right side panel, a dropdown button for setting the period will be displayed on the dashboard.
+ラベルを追加または削除することができます。ラベルは、ダッシュボード関連のカテゴリや機能を区別し、ダッシュボードの検索に役立ちます。ラベルは、ページの上部にあるダッシュボードのタイトルのすぐ下に配置されています。
 
-![dashboard-edit-duration-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-duration-01.png)
+![dashboard-edit-label-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-label-01.png)
 
-(2) You can select a specific month from the drop-down or choose a specific month within the last 3 years using the [Custom] menu.
+<br>
 
-![dashboard-edit-duration-02](/docs/guides/dashboards/dashboard-img/dashboard-edit-duration-02.png)
+### 期間範囲を適用します
+
+(1) 右側のパネルから[期間適用オプション]を有効にすると、ダッシュボード上に期間設定のためのドロップダウンボタンが表示されます。
+
+![dashboard-edit-duration-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-duration-01.png)
+
+(2) ドロップダウンメニューから特定の月を選択するか、[カスタム]メニューを使用して過去3年間から特定の月を選択できます。
+
+![dashboard-edit-duration-02](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-duration-02.png)
 
 {{<alert>}}
-Even when you activate the date range selector option, it doesn't apply to all widgets. Depending on the widget's characteristics, some widgets allow applying the date range, while others do not.
+日付範囲セレクターオプションを有効にしても、すべてのウィジェットに適用されるわけではありません。ウィジェットの特性に応じて、一部のウィジェットでは日付範囲を適用できますが、他のウィジェットでは適用できないことがあります。
 {{</alert>}}
 
 <br>
 
-### Configure auto data refresh
+### 自動データの更新を構成します
 
-You can choose the data refresh interval from the [Refresh] dropdown in the upper right corner of the dashboard.
+データの自動更新間隔は、ダッシュボードの右上隅にある[更新]のドロップダウンから選択できます。
 
-![dashboard-edit-refresh-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-refresh-01.png)
-
-<br>
-
-### Add widgets
-
-(1) Click the [+ Add Widget] button on the right-hand dashboard editing page.
-
-![dashboard-edit-add-widget-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-01.png)
+![dashboard-edit-refresh-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-refresh-01.png)
 
 <br>
 
-(2) Select a specific widget from the list on the left and add it.
+### ウィジェットを追加します
 
-![dashboard-edit-add-widget-02](/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-02.png)
+(1) ダッシュボードの編集ページの右側にある[+ ウィジェットを追加する]ボタンをクリックします。
+
+![dashboard-edit-add-widget-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-01.png)
+
+<br>
+
+(2) 左側のリストから特定のウィジェットを選択し、追加します。
+
+![dashboard-edit-add-widget-02](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-02.png)
 
 {{<alert>}}
-You can choose from a variety of widgets based on the [Cost], [Assets], and [Alert] categories. (More widgets will be continuously updated)
+[費用]、[アセット]、および[アラート]のカテゴリに基づいて、さまざまなウィジェットを選択できます。 (新しいウィジェットは継続的に更新されます)
 {{</alert>}}
 
 
-(2-2) If you have selected a specific widget, you can enter the [Name] and set the detailed options.
+(2-2) 特定のウィジェットを選択した場合、[名前]を入力し、詳細なオプションを設定できます。
 
-![dashboard-edit-add-widget-03](/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-03.png)
+![dashboard-edit-add-widget-03](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-03.png)
 
 {{<alert>}}
-**[Inherit] On/Off:** Options provided for each widget are, for the most part, initially set to inherit the dashboard's variables as the default. 'Inheriting from the dashboard' means that when you change the options of a variable at the dashboard level, those changes are automatically applied to the widgets that have options that inherit from it. Conversely, when a specific option is set to non-inherited, changes to the variable at the dashboard level won't affect that widget.
+**[継承] On/Off:** ほとんどのウィジェットに対して、初期設定ではオプションはデフォルトでダッシュボードの変数を継承するように設定されています。 'ダッシュボードから継承' とは、ダッシュボードレベルで変数のオプションを変更すると、それらの変更はそれを継承するオプションを持つウィジェットに自動的に適用されるということです。逆に、特定のオプションが継承されないように設定されている場合、ダッシュボードレベルで変数を変更しても、そのウィジェットには影響を与えません。
 <br>
-e.g. In the Cost Map widget, the `Project` option is set to 'Inherit' and if you filter `Project` to 'Project A' at the dashboard level, the widget will now display data relevant to 'Project A' only.
+e.g. 費用マップウィジェットでは、`プロジェクト`オプションが '継承' に設定されており、ダッシュボードレベルで `プロジェクト`` を 'プロジェクトA' にフィルタリングすると、ウィジェットは 'プロジェクトA' に関連するデータのみを表示します。
 {{</alert>}}
 
 {{<alert>}}
-**Return to initial settings:** Each widget comes with default option values corresponding to the dashboard's variables by default. Even if you've made multiple changes to widget options during the dashboard configuration process, clicking the [Return to initial settings] button will easily revert to the initially set default option values.
+**初期設定に戻る:** 各ウィジェットには、デフォルトでダッシュボードの変数に対応するデフォルトオプション値が付属しています。ダッシュボードの設定プロセス中にウィジェットオプションを複数回変更した場合でも、[初期設定に戻す]ボタンをクリックすることで、簡単に最初に設定されたデフォルトオプション値に戻すことができます。
 {{</alert>}}
 
 
-(2-3) If there are no additional options you want, you can click the [+Add Option] button to add them.
+(2-3) 必要な追加オプションがない場合、[+オプションの追加]ボタンをクリックして追加できます。
 
-![dashboard-edit-add-widget-04](/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-04.png)
+![dashboard-edit-add-widget-04](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-add-widget-04.png)
 
-(2-4) When you've finished the configuration, click the [Confirm] button to complete adding widgets to the dashboard.
-
-
-<br>
-
-### Rearrange the widget order
-
-You can change the order by drag & drop the widget name button from the widget list in the right panel.
-
-![dashboard-edit-change-widget-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-change-widget-01.png)
+(2-4) 設定が完了したら、ウィジェットをダッシュボードに追加するために[確認]ボタンをクリックしてください。
 
 
 <br>
 
-### Enlarge widget size
+### ウィジェットの順序を並べ替えます
 
-If you want to view a widget in full-screen, click the [Full Screen] icon button in the top right corner of the widget.
+ウィジェットの順序は、右側パネルのウィジェットリストからウィジェット名ボタンをドラッグアンドドロップして変更できます。
 
-![dashboard-edit-full-screen-01](/docs/guides/dashboards/dashboard-img/dashboard-edit-full-screen-01.png)
-
-![dashboard-edit-full-screen-02](/docs/guides/dashboards/dashboard-img/dashboard-edit-full-screen-02.png)
+![dashboard-edit-change-widget-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-change-widget-01.png)
 
 
 <br>
 
-### Edit a widget
+### ウィジェットのサイズを拡大します
 
-(1) Click the [Edit] icon button in the top right corner of the widget to edit it.
+ウィジェットをフルスクリーンで表示したい場合、ウィジェットの右上隅にある[フルスクリーン]アイコンボタンをクリックします。
 
-![dashboard-update-widget-01](/docs/guides/dashboards/dashboard-img/dashboard-update-widget-01.png)
+![dashboard-edit-full-screen-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-full-screen-01.png)
 
-(2) You can edit the widget name and options, then click the [Confirm] button to save your changes. However, if you don't [Save] the dashboard in [Customize] mode, the edited widget won't be reflected in the final version.
+![dashboard-edit-full-screen-02](/ja/docs/guides/dashboards/dashboard-img/dashboard-edit-full-screen-02.png)
 
-- For information on widget option settings, please refer to [**here**](/docs/guides/dashboards/edit/#위젯-추가하기). 
 
-![dashboard-update-widget-02](/docs/guides/dashboards/dashboard-img/dashboard-update-widget-02.png)
+<br>
+
+### ウィジェットを編集します
+
+(1) ウィジェットを編集するには、ウィジェットの右上隅にある[編集]アイコンボタンをクリックします。
+
+![dashboard-update-widget-01](/ja/docs/guides/dashboards/dashboard-img/dashboard-update-widget-01.png)
+
+(2) ウィジェットの名前とオプションを編集し、変更を保存するには[確認]ボタンをクリックします。ただし、[カスタマイズ]モードでダッシュボードを[保存]しない場合、編集したウィジェットは最終バージョンに反映されません。
+
+- ウィジェットオプション設定の詳細については、[**こちら**](/ja/docs/guides/dashboards/edit/#ウィジェットを追加します)を参照してください。
+
+![dashboard-update-widget-02](/ja/docs/guides/dashboards/dashboard-img/dashboard-update-widget-02.png)
