@@ -12,6 +12,6 @@ description: >
     <br>
     <br>
     {{<alert>}}
-    The [**Cost Explorer > Dashboard**] feature that was available in versions prior to v1.12 has been reborn as a new integrated standalone service menu called [**Dashboards**](/docs/guides/dashboards/). Consequently, the previous dashboards are no longer supported.
+    The [Cost Explorer > Dashboard] feature that was available in versions prior to v1.12 has been reborn as a new integrated standalone service menu called [Dashboards]. Consequently, the previous dashboards are no longer supported.
     {{</alert>}}
 ---
