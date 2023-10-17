@@ -20,14 +20,14 @@ If you have more than one billing data source connected, you can perform a detai
 To prevent cost data distortion, the original currency for each data source remains fixed.
 {{</alert>}}
 
-![cost-analysis-data-source](/docs/guides/dashboards/cost-analysis-img/cost-analysis-data-source_en.png)
+![cost-analysis-data-source](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-data-source_en.png)
 
 
 ### Selecting the granularity 
 
 **Granularity** is criteria set for how data will be displayed. The form of the provided chart or table varies depending on the detailed criteria.
 
-![cost-analysis-granularity](/docs/guides/dashboards/cost-analysis-img/cost-analysis-granularity_en.png)
+![cost-analysis-granularity](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity_en.png)
 
 - `Daily`: You can review daily accumulated data for a specific month.
 - `Monthly`: You can check monthly data for a specific period (up to 12 months).
@@ -40,7 +40,7 @@ To prevent cost data distortion, the original currency for each data source rema
 The available options in the "Period" menu vary depending on a granularity you choose. You can select a menu from the [Period] dropdown or configure it directly through the "Custom" menu.
 
 
-![cost-analysis-period](/docs/guides/dashboards/cost-analysis-img/cost-analysis-period_en.png)
+![cost-analysis-period](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period_en.png)
 
 <br>
 
@@ -53,9 +53,9 @@ You can select more than one result from group statistics. In the chart, only on
 Group-by can be selected for up to a maximum of three.
 {{</alert>}}
 
-![cost-analysis-groupby](/docs/guides/dashboards/cost-analysis-img/cost-analysis-groupby_en.png)
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby_en.png)
 
-![cost-analysis-groupby](/docs/guides/dashboards/cost-analysis-img/cost-analysis-cost_usage.png)
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-cost_usage.png)
 
 
 <br>
@@ -69,7 +69,7 @@ Filters, similar to group-by, can be selected one or more at a time, and your co
 
 (2) When the "Filter Settings" window opens, you can choose the desired filters, and the selections will be immediately reflected in the chart and table.
 
-![cost-analysis-filter](/docs/guides/dashboards/cost-analysis-img/cost-analysis-filter_en.png)
+![cost-analysis-filter](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter_en.png)
 
 <br>
 
@@ -86,18 +86,18 @@ In addition to the three default analysis pages provided for each data source, y
 
 (1) Click the [**Save As**] button in the upper-right corner of a specific cost analysis page.
 
-![cost-analysis-save_as](/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_as_en.png)
+![cost-analysis-save_as](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_as_en.png)
 
 (2) After entering a name and clicking the [**Confirm**] button, a new analysis page is created.
 
-![cost-analysis-save_to](/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_to_en.png)
+![cost-analysis-save_to](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_to_en.png)
 
-![cost-analysis-saved](/docs/guides/dashboards/cost-analysis-img/cost-analysis-saved_en.png)
+![cost-analysis-saved](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-saved_en.png)
 
 
 (3) Custom cost analysis pages can be saved with settings like name, filters, group-by, etc., directly using the [**Save**] option, and just like the default analysis pages, you can also create new pages by using [**Save As**].
 
-[cost-analysis-save_saveas](/docs/guides/dashboards/cost-analysis-img/cost-analysis-save_saveas_en.png)
+[cost-analysis-save_saveas](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_saveas_en.png)
 
 <br>
 
@@ -105,9 +105,9 @@ In addition to the three default analysis pages provided for each data source, y
 
 You can edit the name by clicking the [**Edit**] button at the top of the page.
 
-![cost-analysis-edit](/docs/guides/dashboards/cost-analysis-img/cost-analysis-edit_en.png)
+![cost-analysis-edit](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_en.png)
 
-![cost-analysis-edit_name](/docs/guides/dashboards/cost-analysis-img/cost-analysis-edit_name_en.png)
+![cost-analysis-edit_name](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_name_en.png)
 
 <br>
 
@@ -115,6 +115,6 @@ You can edit the name by clicking the [**Edit**] button at the top of the page.
 
 You can delete the page by clicking the [**Delete**] button at the top of the page.
 
-![cost-analysis-delete](/docs/guides/dashboards/cost-analysis-img/cost-analysis-delete_en.png)
+![cost-analysis-delete](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-delete_en.png)
 
 
