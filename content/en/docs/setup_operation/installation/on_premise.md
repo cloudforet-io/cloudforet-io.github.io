@@ -128,7 +128,6 @@ identity-6fc984459d-zk8r9                 1/1     Running            0          
 inventory-67498999d6-722bw                1/1     Running            0             57s
 inventory-scheduler-5dc6856d44-4spvm      0/1     CrashLoopBackOff   3 (18s ago)   59s
 inventory-worker-68d9fcf5fb-x6knb         1/1     Running            0             55s
-marketplace-assets-8675d44557-ssm92       1/1     Running            0             59s
 mongodb-7c9794854-cdmwj                   1/1     Running            0             59s
 monitoring-fdd44bdbf-pcgln                1/1     Running            0             59s
 notification-5b477f6c49-gzfl8             1/1     Running            0             59s
@@ -140,7 +139,6 @@ plugin-worker-57986dfdd6-v9vqg            1/1     Running            0          
 redis-75df77f7d4-lwvvw                    1/1     Running            0             59s
 repository-5f5b7b5cdc-lnjkl               1/1     Running            0             57s
 secret-77ffdf8c9d-48k46                   1/1     Running            0             55s
-spacectl-5664788d5d-dtwpr                 1/1     Running            0             59s
 statistics-67b77b6654-p9wcb               1/1     Running            0             56s
 statistics-scheduler-586875947c-8zfqg     0/1     Error              3 (30s ago)   56s
 statistics-worker-68d646fc7-knbdr         1/1     Running            0             58s
@@ -166,7 +164,7 @@ You can change the domain name, domain_owner.id/password, etc. in the initialize
     main:
     import:
         - /root/spacectl/apply/root_domain.yaml
-        - /root/spacectl/apply/register_marketplace.yaml
+        - /root/spacectl/apply/create_managed_repository.yaml
         - /root/spacectl/apply/user_domain.yaml
         - /root/spacectl/apply/create_role.yaml
         - /root/spacectl/apply/add_statistics_schedule.yaml
@@ -182,7 +180,6 @@ You can change the domain name, domain_owner.id/password, etc. in the initialize
         password: Admin123!@#   # Change your password
         user:
         id: system_api_key
-        marketplace_endpoint: grpc://repository.portal.spaceone.dev:50051
     EOF
     ```
 
