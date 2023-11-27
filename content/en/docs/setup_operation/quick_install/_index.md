@@ -32,7 +32,7 @@ This Guide is not for production, but for developer only.
   - Requires minimum **Kubernetes version of 1.21+**.  
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/)
 - [Helm](https://helm.sh/docs/intro/install/) 
-  - Requires minimum **Helm version of 3.2.0+**.
+  - Requires minimum **Helm version of 3.11.0+**.
   - If you want to learn more about Helm, refer to [this](https://helm.sh/).
 
 
