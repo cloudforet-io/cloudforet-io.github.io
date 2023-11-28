@@ -291,5 +291,5 @@ Open browser (http://127.0.0.1:8080)
 ## Reference
 
 * [Full Installation Guide](https://github.com/cloudforet-io/charts)
-* [Discuss channel](https://github.com/orgs/cloudforet-io/discussions/124)
+* [Discuss channel](https://github.com/orgs/cloudforet-io/discussions/134)
 
