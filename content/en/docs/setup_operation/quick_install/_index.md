@@ -200,6 +200,7 @@ statistics-scheduler-65cc75fbfd-rsvz7      1/1     Running     0          24m
 statistics-worker-7b6b7b9898-lmj7x         1/1     Running     0          24m
 supervisor-scheduler-555d644969-95jxj      2/2     Running     0          24m
 ```
+> To execute the below kubectl logs command, the status of POD(Ex: here initialize-spaceone-fsqen-74x7v) should be Completed . Proceeding with this while the POD is INITIALIZING will give errors
 
 Get the token by getting the log information of the pod with the name you found above.
 ```bash
