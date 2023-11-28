@@ -1,7 +1,7 @@
 ---
 title: "コスト分析"
 linkTitle: "コスト分析"
-weight: 3
+weight: 2
 date: 2022-06-23
 description: >
     **コスト分析**は、クラウド提供者から受信したコストデータを詳細に分析します。
@@ -10,101 +10,112 @@ description: >
     多様な条件でデータをグループ化またはフィルタリングするため、確認したいコストデータがひと目で把握することができます。
 ---
 
-## コスト分析を確認する
 
-### 細部基準を選択する
+## コスト分析の確認
 
-**細部基準**は、データの表示方法に対する基準です。細部基準によって表示されるチャートやテーブルの形態が異なります。
+### データソースの選択
 
-![cost-analysis-granularity-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-01.png)
+複数の請求データソースを接続している場合、左側のメニューの「コスト分析」セクションから各データソースを選択することで詳細な費用分析を実行できます。
 
-- 「累積データ」: テーブルで選択した期間の総合データは円グラフで表示されます。
-- 「日別データ」または「月別データ」: テーブルで選択した期間が日別・月別に棒グラフで表示されます。
-  日別データ・月別データチャートで[累積]トグルボタンを有効化すると、現在までの累積コストデータを確認できます。
-    ![cost-analysis-granularity-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-02.png)
+{{<alert>}}
+費用データの歪みを防ぐために、各データソースの元の通貨は固定されています。
+{{</alert>}}
 
-### 期間を設定する
-細部基準によって選択できる期間のメニューは異なります。[期間]ドロップダウンでメニューを選択、または[期間選択]メニューで直接設定します。
+![cost-analysis-data-source](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-data-source_ja.png)
 
-![cost-analysis-period-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-01.png)
 
-「累積データ」と「月別データ」は月単位でカスタムでき、期間は最大12カ月まで指定できます。
-「日別データ」は日単位でカスタムでき、期間は最大1カ月です。
+### 細部基準を選択する 
 
-![cost-analysis-period-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-02.png)
+**細部基準**はデータの表示方法を設定する基準です。提供されるチャートやテーブルの形式は、詳細な基準に応じて異なります。
 
-### 為替レートを設定する
-[為替レート]ドロップダウンで適用したいレートを選択すると、チャートとテーブルのコストデータにレートが適用されます。
+![cost-analysis-granularity](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity_ja.png)
 
-![cost-analysis-currency-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-currency-01.png)
+- `日別データ`: 特定の月の日毎の累積データを確認できます。
+- `月別データ`: 特定の期間の月次データを確認できます（最大12か月まで）。
+- `年間`: 最新の3年間の年次データを調査できます。
 
-### グループ別に統計を設定する
-グループ別統計でユーザーの選択値を基準にデータをグループ化します。
+<br>
 
-![cost-analysis-groupby-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01-jp.png)
+### 期間を選択する
 
-グループ別統計は、1個以上選択できます。チャートで選択したグループ別統計のうち一つが表示され、テーブルでは選択したグループ別統計をすべて確認できます。
+期間メニューで利用可能なオプションは、選択した粒度によって異なります。[期間] ドロップダウンからメニューを選択するか、"カスタム" メニューを直接設定することができます。
 
-![cost-analysis-groupby-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02-jp.png)
 
-デフォルトで表示されているグループ以外にも、特定のプロバイダーから取得したタグ又は追加情報によって分類できるようにグループ追加も可能です。
+![cost-analysis-period](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period_ja.png)
 
-(1) [設定]アイコンをクリックし、[ + グループ追加 ] ボタンをクリックします。
-![cost-analysis-groupby-03](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-03-jp.png)
+<br>
 
-(2) 特定のグループを検索し、追加します。
-![cost-analysis-groupby-04](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-04-jp.png)
+### グループ別の設定
 
-(3) 追加されたグループを選択して、より快適にコストを分析することができます。
-![cost-analysis-groupby-05](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-05-jp.png)
+`グループ別統計`から1つ以上の結果を選択できます。チャートでは、グループ統計の選択された1つの結果のみが表示され、テーブルでは選択したグループ統計のすべての結果を見ることができます。
+
+
+{{<alert>}}
+グループ別は最大で3つまで選択できます。
+{{</alert>}}
+
+![cost-analysis-groupby](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby_ja.png)
+
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-cost_usage.png)
+
+
+<br>
 
 
 ### フィルター設定
-フィルターは、グループ別統計と同じように1個以上選択でき、ユーザー設定値をand条件でフィルタリングします。
 
-(1) [フィルター追加]ボタンをクリックします。
+「フィルター」は、グループ別と同様に、1つまたは複数選択でき、設定した値は「AND」条件でフィルタリングに使用されます。
 
-![cost-analysis-filter-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-01.png)
+(1) ページの上部にある [**フィルター**] ボタンをクリックします。
 
-(2) [フィルター設定]モダールウィンドウが表示されたら、フィルターを選択して[確認]ボタンをクリックします。
+(2) 『フィルター設定』ウィンドウが開くと、希望のフィルタを選択し、選択内容がすぐにグラフとテーブルに反映されます。
 
-![cost-analysis-filter-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02.png)
+![cost-analysis-filter](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter_ja.png)
+
+<br>
 
 
-## コスト分析クエリ
-[コスト管理 > コスト分析]ページに移動するたびに細部基準と期間などを再設定する煩わしさを解消するため、頻繁に使用する設定をクエリで保存できる機能を提供します。
-{{<alert>}}
-為替レートはクエリに保存されません。
-{{</alert>}}
+## カスタムコスト分析の作成/管理
 
-### クエリを保存する
-(1) 細部基準とグループ別統計、フィルターなどを設定します。
+### カスタム分析ページの作成"
 
-(2) 画面右上の[名前を付けて保存]ボタンをクリックします。
-
-![cost-analysis-query-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-01.png)
+"コスト分析"ページに入るたびに細部基準と期間を設定し直す手間を軽減するために、頻繁に使用する設定をカスタム分析ページとして保存できる機能が提供されています。
 
 {{<alert>}}
-defaultクエリは[名前を付けて保存]ボタンが表示され、既存のクエリを修正する場合は、[保存]ボタンと[名前を付けて保存]ボタンがどちらも表示されます。
+各データソースごとに提供される3つのデフォルト分析ページに加えて、直接カスタムコスト分析ページを作成することもできます。
 {{</alert>}}
 
-(3) [クエリ保存]モダールウィンドウでクエリ名を入力後、[確認]ボタンをクリックします。
+(1) 特定のコスト分析ページの右上にある [名前を付けて保存] ボタンをクリックします。
 
-![cost-analysis-query-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-02.png)
+![cost-analysis-save_as](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_as_ja.png)
 
-### クエリを読み込む
-[コスト分析]ページで画面左上の[クエリ一覧]アイコンをクリックして、保存されたクエリ一覧のうち一つを選択すると、当該クエリを読み込むことができます。
+(2) 名前を入力し、[**確認**] ボタンをクリックすると、新しい分析ページが作成されます。
 
-![cost-analysis-query-03](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-03.png)
+![cost-analysis-save_to](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_to_ja.png)
 
-### クエリ名を編集する
-保存されたクエリ名は、[コスト分析]ページで当該クエリを読み込んで[編集]ボタンをクリック、または保存されたクエリ一覧で[編集]ボタンをクリックすると編集できます。
+![cost-analysis-saved](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-saved_ja.png)
 
-![cost-analysis-query-edit-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-01.png)
-![cost-analysis-query-edit-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-02.png)
 
-### クエリを削除する
-保存された[コスト分析]ページで当該クエリを読み込んでから[削除]ボタンをクリック、または保存されたクエリ一覧で[削除]ボタンをクリックすると削除できます。
+(3) カスタムコスト分析ページは名前、フィルタ、グループ別などの設定を含めて、[**保存**] オプションを使用して直接保存できます。デフォルトの分析ページと同様に、[**名前を付けて保存**] を使用して新しいページを作成することもできます。!
 
-![cost-analysis-query-delete-01](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-01.png)
-![cost-analysis-query-delete-02](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-02.png)
+![cost-analysis-save_saveas](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_saveas_ja.png)
+
+<br>
+
+### カスタム分析名の編集
+
+ページの上部にある [**編集**] ボタンをクリックして名前を編集できます。
+
+![cost-analysis-edit](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_ja.png)
+
+![cost-analysis-edit_name](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_name_ja.png)
+
+<br>
+
+### カスタム分析名を削除する
+
+ページの上部にある [**削除**] ボタンをクリックすることで、ページを削除できます。
+
+![cost-analysis-delete](/ja/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-delete_ja.png)
+
+

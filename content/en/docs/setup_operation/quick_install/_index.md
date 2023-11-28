@@ -11,6 +11,17 @@ description: >
 This is Getting Started Installation guide with minikube.
 This Guide is not for production, but for developer only.
 
+**Verified Environments**
+
+| Distro     | Status       |
+| ---        | ---           |
+| Ubuntu 20.04    |  Not Tested   |
+| Ubuntu 22.04    |  Not Tested   |
+| Amazon Linux 2  |  Not Tested      |
+| Amazon Linux 2023  | Not Tested    |
+| macOS (Apple Silicon, M1) | Not Tested |
+| macOS (Apple Silicon, M2) | Verified   |
+
 ## Overview
 
 ### Cloudforet-Minikube Architecture
@@ -19,11 +30,8 @@ This Guide is not for production, but for developer only.
 ---
 
 
-## Not Support
-- ARM64 architecture (We do not support minikube with ARM64 CPU, such as MacBook M2)
-
 ## Prerequisites
-- AWS EC2 VM (Intel/AMD CPU)[WIP]
+- AWS EC2 VM (Intel/AMD/ARM CPU)
 - [Docker/Docker Desktop](https://docs.docker.com/engine/install/) 
   - If you don't have Docker installed, minikube won't run properly.
   - Highly recommend installing **Docker Desktop** based on your OS.
@@ -31,7 +39,7 @@ This Guide is not for production, but for developer only.
   - Requires minimum **Kubernetes version of 1.21+**.  
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/)
 - [Helm](https://helm.sh/docs/intro/install/) 
-  - Requires minimum **Helm version of 3.2.0+**.
+  - Requires minimum **Helm version of 3.11.0+**.
   - If you want to learn more about Helm, refer to [this](https://helm.sh/).
 
 
@@ -143,6 +151,7 @@ First, download the [initializer.yaml](examples/initializer.yaml) file.
 
 For more information about the initializer, please refer to the [spaceone-initializer](https://github.com/cloudforet-io/spaceone-initializer).
 
+If you are used to downloading files via command-line, run this command to download the file.
 ```bash
 wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/initializer.yaml -O initializer.yaml
 ```
@@ -153,12 +162,60 @@ helm install initializer cloudforet/spaceone-initializer -n spaceone -f initiali
 
 ### 6) Set the Helm Values and Upgrade the Chart
 Complete the initialization, you can get the system token from the initializer pod logs.
+
+To figure out the pod name for the initializer, run this command first to show all pod names for namespace spaceone.
 ```bash
-kubectl logs initializer-5f5b7b5cdc-lnjkl -n spaceone
+kubectl get pods -n spaceone 
+```
+Then, among the pods shown copy the name of the pod that starts with **initialize-spaceone**.
+
+```bash
+NAME                                       READY   STATUS      RESTARTS   AGE
+board-5997d5688-kq4tx                      1/1     Running     0          24m
+config-5947d845b5-4ncvn                    1/1     Running     0          24m
+console-7fcfddbd8b-lbk94                   1/1     Running     0          24m
+console-api-599b86b699-2kl7l               2/2     Running     0          24m
+console-api-v2-rest-cb886d687-d7n8t        2/2     Running     0          24m
+cost-analysis-8658c96f8f-88bmh             1/1     Running     0          24m
+cost-analysis-scheduler-67c9dc6599-k8lgx   1/1     Running     0          24m
+cost-analysis-worker-6df98df444-5sjpm      1/1     Running     0          24m
+cost-analysis-worker-6df98df444-77vm7      1/1     Running     0          24m
+cost-analysis-worker-6df98df444-v7wtv      1/1     Running     0          24m
+cost-analysis-worker-6df98df444-wsnw6      1/1     Running     0          24m
+dashboard-84d8969d79-vqhr9                 1/1     Running     0          24m
+docs-6b9479b5c4-jc2f8                      1/1     Running     0          24m
+identity-6d7bbb678f-b5ptf                  1/1     Running     0          24m
+initialize-spaceone-fsqen-74x7v            0/1     Completed   0          98m
+inventory-64d6558bf9-v5ltj                 1/1     Running     0          24m
+inventory-scheduler-69869cc5dc-k6fpg       1/1     Running     0          24m
+inventory-worker-5649876687-zjxnn          1/1     Running     0          24m
+marketplace-assets-5fcc55fb56-wj54m        1/1     Running     0          24m
+mongodb-b7f445749-2sr68                    1/1     Running     0          101m
+monitoring-799cdb8846-25w78                1/1     Running     0          24m
+notification-c9988d548-gxw2c               1/1     Running     0          24m
+notification-scheduler-7d4785fd88-j8zbn    1/1     Running     0          24m
+notification-worker-586bc9987c-kdfn6       1/1     Running     0          24m
+plugin-79976f5747-9snmh                    1/1     Running     0          24m
+plugin-scheduler-584df5d649-cflrb          1/1     Running     0          24m
+plugin-worker-58d5cdbff9-qk5cp             1/1     Running     0          24m
+redis-b684c5bbc-528q9                      1/1     Running     0          24m
+repository-64fc657d4f-cbr7v                1/1     Running     0          24m
+secret-74578c99d5-rk55t                    1/1     Running     0          24m
+spacectl-8cd55f46c-xw59j                   1/1     Running     0          24m
+statistics-767d84bb8f-rrvrv                1/1     Running     0          24m
+statistics-scheduler-65cc75fbfd-rsvz7      1/1     Running     0          24m
+statistics-worker-7b6b7b9898-lmj7x         1/1     Running     0          24m
+supervisor-scheduler-555d644969-95jxj      2/2     Running     0          24m
+```
+> To execute the below kubectl logs command, the status of POD(Ex: here initialize-spaceone-fsqen-74x7v) should be Completed . Proceeding with this while the POD is INITIALIZING will give errors
+
+Get the token by getting the log information of the pod with the name you found above.
+```bash
+kubectl logs initialize-spaceone-fsqen-74x7v -n spaceone
 
 ...
 TASK [Print Admin API Key] *********************************************************************************************
-"{TOKEN}"
+"TOKEN_SHOWN_HERE"
 
 FINISHED [ ok=23, skipped=0 ] ******************************************************************************************
 
@@ -167,19 +224,21 @@ FINISH SPACEONE INITIALIZE
 
 Create the `values.yaml` file and edit the values. There is only one item that need to be updated.
 
-* {TOKEN}
+> For EC2 users: put in your EC2 server's public IP instead of 127.0.0.1 for both CONSOLE_API and CONSOLE_API_V2 ENDPOINT.
+
+* TOKEN
 
 ```yaml
 console:
   production_json:
     CONSOLE_API:
-      ENDPOINT: http://127.0.0.1:8081
+      ENDPOINT: http://127.0.0.1:8081  # http://ec2_public_ip:8081 for EC2 users
     CONSOLE_API_V2:
-      ENDPOINT: http://127.0.0.1:8082
+      ENDPOINT: http://127.0.0.1:8082  # http://ec2_public_ip:8082 for EC2 users
 
 global:
   shared_conf:
-    TOKEN: '{TOKEN}'   # Change the system token
+    TOKEN: 'TOKEN_VALUE_FROM_ABOVE'   # Change the system token
 ```
 
 After editing the `values.yaml` file, upgrade the helm chart.
@@ -215,12 +274,14 @@ kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
 kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0' &
 ~~~
 ~~~bash
-kubectl port-forward -n spaceone svc/console-api-v2 8082:80 --address='0.0.0.0' &
+kubectl port-forward -n spaceone svc/console-api-v2-rest 8082:80 --address='0.0.0.0' &
 ~~~
 
 ## Start Cloudforet
 
 ### Log-In (Sign in for Root Account)
+> For EC2 users: open browser with http://your_ec2_server_ip:8080
+
 Open browser (http://127.0.0.1:8080)
 
 | ID | PASSWORD |
@@ -238,5 +299,5 @@ Open browser (http://127.0.0.1:8080)
 ## Reference
 
 * [Full Installation Guide](https://github.com/cloudforet-io/charts)
-* [Discuss channel](https://github.com/orgs/cloudforet-io/discussions/124)
+* [Discuss channel](https://github.com/orgs/cloudforet-io/discussions/134)
 

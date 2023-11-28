@@ -1,7 +1,7 @@
 ---
 title: "Cost Explorer"
 linkTitle: "Cost Explorer"
-weight: 4
+weight: 5
 date: 2022-06-24
 description: >
     **Cost Explorer** feature traces all expenses incurred from service accounts registered in Cloudforet.
@@ -9,4 +9,9 @@ description: >
     <br>
     <br>
     The amount used by period can be checked based on a [**Budget**](/docs/guides/cost-explorer/budget) set by a user and [**Budget use notification**](/docs/guides/cost-explorer/budget/#budget-use-notification-settings) can also be set up.
+    <br>
+    <br>
+    {{<alert>}}
+    The [Cost Explorer > Dashboard] feature that was available in versions prior to v1.12 has been reborn as a new integrated standalone service menu called [Dashboards]. Consequently, the previous dashboards are no longer supported.
+    {{</alert>}}
 ---

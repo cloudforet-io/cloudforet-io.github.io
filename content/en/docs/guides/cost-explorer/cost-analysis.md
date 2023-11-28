@@ -1,7 +1,7 @@
 ---
 title: "Cost analysis"
 linkTitle: "Cost analysis"
-weight: 3
+weight: 2
 date: 2022-06-23
 description: >
     **Cost analysis** provides detailed analyses of cost data received from cloud providers.
@@ -12,99 +12,109 @@ description: >
 
 ## Verifying cost analysis
 
-### Selecting detailed criteria
+### Selecting a data source
 
-**Detailed criteria** are criteria set for how data will be displayed. The form of the provided chart or table varies depending on the detailed criteria.
+If you have more than one billing data source connected, you can perform a detailed cost analysis by selecting each data source from the "Cost Analysis" section in the left menu. 
 
-![cost-analysis-granularity-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-01.png)
+{{<alert>}}
+To prevent cost data distortion, the original currency for each data source remains fixed.
+{{</alert>}}
 
-- `Accumulated data`: A pie chart is provided, and the table shows the total data for the selected period.
-- `Daily data` or `monthly data`: A column chart is provided, and the table shows the selected period by day or month.
-  If you activate the [Accumulated] toggle button in the daily data and monthly data charts, you can see the accumulated cost data to date.
-    ![cost-analysis-granularity-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity-02.png)
+![cost-analysis-data-source](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-data-source_en.png)
 
-### Setting up duration
-Period menus that you can choose may appear differently depending on the detailed criteria. Select a menu from the [Duration] dropdown, or set it directly through the [Select duration] menu.
 
-![cost-analysis-period-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-01.png)
+### Selecting the granularity 
 
-`Accumulated data` and `monthly data` can be customized on a monthly basis, and the period can be set up to the length of 12 months.
-`Daily data` can be customized per day as a unit, and the period can be set up to 1 month maximum.
+**Granularity** is criteria set for how data will be displayed. The form of the provided chart or table varies depending on the detailed criteria.
 
-![cost-analysis-period-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period-02.png)
+![cost-analysis-granularity](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-granularity_en.png)
 
-### Exchange rate settings
-When you select the exchange rate you want to apply from the [Exchange rate] dropdown, the exchange rate is applied to the cost data in charts and tables.
+- `Daily`: You can review daily accumulated data for a specific month.
+- `Monthly`: You can check monthly data for a specific period (up to 12 months).
+- `Yearly`: You can examine yearly data for the most recent three years.
 
-![cost-analysis-currency-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-currency-01.png)
+<br>
 
-### Group statistics settings
-Data is grouped based on values that a user selects ​​in group statistics.
+### Selecting the period
 
-![cost-analysis-groupby-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-01-en.png)
+The available options in the "Period" menu vary depending on a granularity you choose. You can select a menu from the [Period] dropdown or configure it directly through the "Custom" menu.
+
+
+![cost-analysis-period](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-period_en.png)
+
+<br>
+
+### Group-by settings
 
 You can select more than one result from group statistics. In the chart, only one selected result of group statistics is displayed, and in the table, you can see all the results from group statistics that you select.
 
-![cost-analysis-groupby-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-02-en.png)
 
-In addition to the groups shown by default, it is also possible to add other groups to categorize your cost in the way you want.
+{{<alert>}}
+Group-by can be selected for up to a maximum of three.
+{{</alert>}}
 
-(1) Click the [settings] icon and then click the [ + Add More ] button.
-![cost-analysis-groupby-03](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-03-en.png)
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby_en.png)
 
-(2) Search for the sepecific groups and add them.
-![cost-analysis-groupby-04](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-04-en.png)
+![cost-analysis-groupby](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-cost_usage.png)
 
-(3) By selecting the added groups, you can analyze your cost in better ways.
-![cost-analysis-groupby-05](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-groupby-05-en.png)
+
+<br>
 
 
 ### Filter settings
-One or more filters can be selected as with the group statistics, and the value that is set by the user is filtered by the "and" condition.
 
-(1) Click the [Add filter] icon button.
+Filters, similar to group-by, can be selected one or more at a time, and your configured values are used for filtering with an "AND" condition.
 
-![cost-analysis-filter-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-01.png)
+(1) Click the [**Filter**] button at the top of the page.
 
-(2) When the [Filter settings] modal dialog opens, select the desired filter and click the [OK] button.
+(2) When the "Filter Settings" window opens, you can choose the desired filters, and the selections will be immediately reflected in the chart and table.
 
-![cost-analysis-filter-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter-02-en.png)
+![cost-analysis-filter](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-filter_en.png)
+
+<br>
 
 
-## Cost analysis query
-To eliminate the hassle of having to reset detailed criteria and period every time you enter the [Cost Explorer > Cost analysis] page, we provide a feature of saving frequently used settings as a query.
-{{<alert>}}
-Exchange rates are not stored in the query.
-{{</alert>}}
+## Creating/managing custom cost analysis
 
-### Saving a query
-(1) Set detailed criteria, group statistics, filters, etc.
+### Creating a custom analysis page
 
-(2) Click the [Save As] button in the upper right corner.
-
-![cost-analysis-query-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-01.png)
+To alleviate the inconvenience of having to reset granularity and period every time you enter the "Cost Analysis" page, a feature is provided that allows you to save frequently used settings as custom analysis pages.
 
 {{<alert>}}
-The [Save As] button appears for the default query, and the [Save] button and the [Save As] button appear together when an existing query is modified.
+In addition to the three default analysis pages provided for each data source, you can also create custom cost analysis pages directly.
 {{</alert>}}
 
-(3) After entering the query name in the [Save Query] modal, click the [OK] button.
+(1) Click the [**Save As**] button in the upper-right corner of a specific cost analysis page.
 
-![cost-analysis-query-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-02.png)
+![cost-analysis-save_as](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_as_en.png)
 
-### Loading a query
-On the [Cost Analysis] page, click the [Query List] icon button in the upper left corner, and then select one of the saved query lists to call the corresponding query.
+(2) After entering a name and clicking the [**Confirm**] button, a new analysis page is created.
 
-![cost-analysis-query-03](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-03.png)
+![cost-analysis-save_to](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_to_en.png)
 
-### Editing a query name
-You can edit the name of a saved query by clicking the [Edit] button after calling the query on the [Cost Analysis] page or by clicking the [Edit] button in the saved query list.
+![cost-analysis-saved](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-saved_en.png)
 
-![cost-analysis-query-edit-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-01.png)
-![cost-analysis-query-edit-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-edit-02.png)
 
-### Deleting a query
-A saved query can be deleted by calling the query on the [Cost Analysis] page and clicking the [Delete] button or by clicking the [Delete] button in the saved query list.
+(3) Custom cost analysis pages can be saved with settings like name, filters, group-by, etc., directly using the [**Save**] option, and just like the default analysis pages, you can also create new pages by using [**Save As**].
 
-![cost-analysis-query-delete-01](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-01.png)
-![cost-analysis-query-delete-02](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-query-delete-02.png)
+[cost-analysis-save_saveas](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-save_saveas_en.png)
+
+<br>
+
+### Editing the custom analysis name
+
+You can edit the name by clicking the [**Edit**] button at the top of the page.
+
+![cost-analysis-edit](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_en.png)
+
+![cost-analysis-edit_name](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-edit_name_en.png)
+
+<br>
+
+### Deleting the custom analysis name
+
+You can delete the page by clicking the [**Delete**] button at the top of the page.
+
+![cost-analysis-delete](/docs/guides/cost-explorer/cost-analysis-img/cost-analysis-delete_en.png)
+
+

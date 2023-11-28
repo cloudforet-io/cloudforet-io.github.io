@@ -1,7 +1,7 @@
 ---
 title: "Project"
 linkTitle: "Project"
-weight: 2
+weight: 3
 date: 2022-06-07
 description: >
     Design and manage a hierarchical structure according to the size and structure of your organization, where you can systematically manage the collected cloud resources.
