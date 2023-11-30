@@ -182,7 +182,7 @@ You can change the domain name, domain_owner.id/password, etc. in the initialize
                 id: admin
                 password: Admin123!@# # Change your password
             user:
-                id: system_api_key            
+                id: system_api_key
     EOF
     ```
 
