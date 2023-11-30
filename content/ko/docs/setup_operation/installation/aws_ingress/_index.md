@@ -1,7 +1,7 @@
 ---
-title: "AWS"
-linkTitle: "AWS"
-weight: 1
+title: "AWS Ingress"
+linkTitle: "AWS Ingress"
+weight: 2
 url_dash_board: "/docs/guides_v1/install_guide/aws"
 date: 2023-11-08
 description: >
@@ -25,8 +25,8 @@ AWS EKS에서는 ingress를 생성할 때 애플리케이션 트래픽을 로드
 Cloudforet에서는 총 2개의 파일을 통해서 3개의 ingress를 프로비저닝 합니다.
 - Console : 도메인에 접속하기 위한 ingress
 - REST API : API 서비스를 위한 ingress
-- - console-api
-- - console-api-v2
+  - console-api
+  - console-api-v2
 
 ### 2) Console ingress
 Console에 접속하기 위한 ingress를 아래와 같이 설정합니다.
@@ -125,9 +125,9 @@ DNS 이름은 `http://{ingress-name}-{random}.{region-code}.elb.amazoneaws.com` 
 kubectl get ingress -n spaceone
 
 NAME                     CLASS   HOSTS   ADDRESS                                                                      PORTS   AGE
-console-api-ingress      alb     *       spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com     80      15h
+console-api-ingress      alb     *       spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com      80      15h
 console-api-v2-ingress   alb     *       spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com   80      15h
-console-ingress          alb     *       spaceone-console-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com         80      15h
+console-ingress          alb     *       spaceone-console-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com          80      15h
 
  ```
 또는, AWS Console에서 확인 가능합니다. EC2 > Load balancer에서 아래 이미지와 같이 확인 할 수 있습니다.
@@ -144,7 +144,7 @@ console:
     CONSOLE_API:
       ENDPOINT: http://spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
     CONSOLE_API_V2:
-      ENDPOINT: http:spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
+      ENDPOINT: http://spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
 ```
 
 준비된 `values.yaml` 파일을 적용 후 pods를 재시작 합니다.
@@ -322,28 +322,28 @@ kubectl apply -f spaceone-rest-ingress.yaml
 
 SSL/TLS 인증서를 Kubernetes secret으로 생성합니다. 방법은 2가지로 아래와 같습니다.
 
-1. **yaml file을 이용한 방법**  
-아래 명령어를 통해서 yaml file로 secret을 추가할 수 있습니다.
-    ```yaml
-    kubectl apply -f <<EOF> tls-secret.yaml
-    apiVersion: v1
-    data:
-      tls.crt: {your crt}   # crt
-      tls.key: {your key}   # key
-    kind: Secret
-    metadata:
-      name: tls-secret
-      namespace: spaceone
-    type: kubernetes.io/tls
-    EOF
-    ```
+**1. yaml file을 이용한 방법**  
+아래 명령어를 통해서 yaml file로 secret을 추가할 수 있습니다.  
+```yaml
+kubectl apply -f <<EOF> tls-secret.yaml
+apiVersion: v1
+data:
+  tls.crt: {your crt}   # crt
+  tls.key: {your key}   # key
+kind: Secret
+metadata:
+  name: tls-secret
+  namespace: spaceone
+type: kubernetes.io/tls
+EOF
+```
 
-2. **파일이 있을 경우 명령어를 이용한 방법**  
+**2. 파일이 있을 경우 명령어를 이용한 방법**  
 crt와 key file이 있는 경우 다음의 명령어를 이용하여 secret을 생성할 수 있습니다.
 
-    ```yaml
-    kubectl create secret tls tlssecret --key tls.key --cert tls.crt
-    ```
+```yaml
+kubectl create secret tls tlssecret --key tls.key --cert tls.crt
+```
 
 ### Ingress에 tls secret을 추가
 등록된 secret 정보를 이용하여 ingress를 수정합니다.  

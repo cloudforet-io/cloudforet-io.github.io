@@ -1,7 +1,7 @@
 ---
-title: "AWS"
-linkTitle: "AWS"
-weight: 1
+title: "AWS Ingress"
+linkTitle: "AWS Ingress"
+weight: 2
 url_dash_board: "/docs/guides_v1/install_guide/aws"
 date: 2023-11-08
 description: >
@@ -25,8 +25,8 @@ Installation methods may vary depending on the environment, so please refer to t
 Cloudforet provisions a total of 3 ingresses through 2 files.
 - Console : Ingress to access the domain
 - REST API : Ingress for API service
-- - console-api
-- - console-api-v2
+  - console-api
+  - console-api-v2
 
 ### 2) Console ingress
 Setting the ingress to accerss the console is as follows.
@@ -124,9 +124,9 @@ The DNS name will be generated as `http://{ingress-name}-{random}.{region-code}.
 kubectl get ingress -n spaceone
 
 NAME                     CLASS   HOSTS   ADDRESS                                                                      PORTS   AGE
-console-api-ingress      alb     *       spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com     80      15h
+console-api-ingress      alb     *       spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com      80      15h
 console-api-v2-ingress   alb     *       spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com   80      15h
-console-ingress          alb     *       spaceone-console-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com         80      15h
+console-ingress          alb     *       spaceone-console-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com          80      15h
 
  ```
 Or, you can check it in AWS Console. You can check it in EC2 > Load balancer as shown in the image below.
@@ -143,7 +143,7 @@ console:
     CONSOLE_API:
       ENDPOINT: http://spaceone-console-api-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
     CONSOLE_API_V2:
-      ENDPOINT: http:spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
+      ENDPOINT: http://spaceone-console-api-v2-ingress-xxxxxxxxxx.{region-code}.elb.amazonaws.com
 ```
 
 After applying the prepared `values.yaml` file, restart the pods.
@@ -321,28 +321,28 @@ Certificate registration is possible even if you have an external certificate th
 
 Create SSL/TLS certificates as Kubernetes secrets. There are two ways:
 
-1. **Using yaml file**  
-You can add a secret to a yaml file using the command below.
-    ```yaml
-    kubectl apply -f <<EOF> tls-secret.yaml
-    apiVersion: v1
-    data:
-      tls.crt: {your crt}   # crt
-      tls.key: {your key}   # key
-    kind: Secret
-    metadata:
-      name: tls-secret
-      namespace: spaceone
-    type: kubernetes.io/tls
-    EOF
-    ```
+**1. Using yaml file**  
+You can add a secret to a yaml file using the command below.  
+```yaml
+kubectl apply -f <<EOF> tls-secret.yaml
+apiVersion: v1
+data:
+  tls.crt: {your crt}   # crt
+  tls.key: {your key}   # key
+kind: Secret
+metadata:
+  name: tls-secret
+  namespace: spaceone
+type: kubernetes.io/tls
+EOF
+```
 
-2. **How to use the command if a file exists**  
+**2. How to use the command if a file exists**  
 If you have a crt and key file, you can create a secret using the following command.
 
-    ```yaml
-    kubectl create secret tls tlssecret --key tls.key --cert tls.crt
-    ```
+```yaml
+kubectl create secret tls tlssecret --key tls.key --cert tls.crt
+```
 
 ### Add tls secret to Ingress
 Modify ingress using registered secret information.
