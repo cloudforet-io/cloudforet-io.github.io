@@ -9,7 +9,7 @@ description: >
 ---
 
 This is Getting Started Installation guide with minikube.
-This Guide is not for production, but for developer only.
+Note :- This Guide is not for production, but for developer only.
 
 **Verified Environments**
 
@@ -33,7 +33,7 @@ This Guide is not for production, but for developer only.
 ## Prerequisites
 - AWS EC2 VM (Intel/AMD/ARM CPU)
 - [Docker/Docker Desktop](https://docs.docker.com/engine/install/) 
-  - If you don't have Docker installed, minikube won't run properly.
+  - If you don't have Docker installed, minikube will return an error as minikube uses docker as the driver.
   - Highly recommend installing **Docker Desktop** based on your OS.
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/)
   - Requires minimum **Kubernetes version of 1.21+**.  
@@ -49,6 +49,7 @@ Before diving into the Cloudforet Installation process, start minikube by runnin
 ~~~
 minikube start --driver=docker --memory=4096mb
 ~~~
+> If you encounter ```Unable to resolve the current Docker CLI context "default"``` error, check if the docker daemon is running.
 
 
 ## Installation
