@@ -16,7 +16,7 @@ description: >
     
 -   Kubectl command-line tool : [https://kubernetes.io/docs/tasks/tools/](https://kubernetes.io/docs/tasks/tools/)
     
--   Helm 3.2.0+ : [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/ )
+-   Helm 3.11.0+ : [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/ )
     
 -   Nginx Ingress Controller : [https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/)
     
@@ -165,24 +165,24 @@ You can change the domain name, domain_owner.id/password, etc. in the initialize
     ```shell
     cat <<EOF> filename.yaml
     main:
-    import:
-        - /root/spacectl/apply/root_domain.yaml
-        - /root/spacectl/apply/create_managed_repository.yaml
-        - /root/spacectl/apply/user_domain.yaml
-        - /root/spacectl/apply/create_role.yaml
-        - /root/spacectl/apply/add_statistics_schedule.yaml
-        - /root/spacectl/apply/print_api_key.yaml
-    var:
-        domain:
-        root: root                      # root domain name to create : root.example.com
-        user: spaceone                  # user domain name to create : spaceone.example.com
-        default_language: ko
-        default_timezone: Asia/Seoul
-        domain_owner:
-        id: admin               # login user name
-        password: Admin123!@#   # Change your password
-        user:
-        id: system_api_key
+        import:
+            - /root/spacectl/apply/root_domain.yaml
+            - /root/spacectl/apply/create_managed_repository.yaml
+            - /root/spacectl/apply/user_domain.yaml
+            - /root/spacectl/apply/create_role.yaml
+            - /root/spacectl/apply/add_statistics_schedule.yaml
+            - /root/spacectl/apply/print_api_key.yaml
+        var:
+            domain:
+                root: root
+                user: spaceone
+            default_language: ko
+            default_timezone: Asia/Seoul
+            domain_owner:
+                id: admin
+                password: Admin123!@# # Change your password
+            user:
+                id: system_api_key
     EOF
     ```
 
