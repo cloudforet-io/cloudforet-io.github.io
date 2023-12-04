@@ -13,14 +13,15 @@ Note :- This Guide is not for production, but for developer only.
 
 **Verified Environments**
 
-| Distro     | Status       |
-| ---        | ---           |
-| Ubuntu 20.04    |  Not Tested   |
-| Ubuntu 22.04    |  Not Tested   |
-| Amazon Linux 2  |  Not Tested      |
-| Amazon Linux 2023  | Not Tested    |
-| macOS (Apple Silicon, M1) | Not Tested |
-| macOS (Apple Silicon, M2) | Verified   |
+| Distro     | Status             | Link(ex. Blog)   |
+| ---        | ---                | ---    |
+| Ubuntu 20.04    |  Not Tested   |    |
+| Ubuntu 22.04    |  Not Tested   |    |
+| Amazon Linux 2  |  Not Tested      |    |
+| Amazon Linux 2023  | Not Tested    |    |
+| macOS (Apple Silicon, M1) | Verified |   |
+| macOS (Apple Silicon, M2) | Verified   |   |
+| Windows         |  Not Tested   |       |
 
 ## Overview
 
