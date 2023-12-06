@@ -148,6 +148,8 @@ statistics-scheduler-586875947c-8zfqg     0/1     Error              3 (30s ago)
 statistics-worker-68d646fc7-knbdr         1/1     Running            0             58s
 supervisor-scheduler-6744657cb6-tpf78     2/2     Running            0             59s
 ```
+> To execute the commands below, every POD except xxxx-scheduler-yyyy must have a Running status.
+
 ### 5) Initialize the Configuration  
 First, download the [initializer.yaml](examples/initializer.yaml) file.
 
