@@ -2,7 +2,7 @@
 title: "On Premise"
 linkTitle: "On Premise"
 weight: 3
-url_dash_board: "/docs/guides_v1/on_premise"
+url_dash_board: "/docs/guides_v1/installation/on_premise"
 date: 2023-06-16
 description: >
     On Premise 환경에서 CloudForet를 설치하는 방법을 설명합니다.
@@ -405,34 +405,3 @@ ___
 |[Set HTTP Proxy](../../configuration/set_http_proxy)|인터넷 연결이 되지 않는 on-premise 환경인 경우 외부와 통신하기 위해서는 proxy 설정이 필요합니다. 다음은 HTTP Proxy를 설정하기 위한 방법입니다.|
 |[Support Private Image Registry](../../configuration/support_private_image_registry)|조직의 보안 등의 이유로 외부와의 통신이 차단된 환경에서는 자체적인 Private Image Registry를 운용할 수 있습니다. 이런 경우 Container Image Sync 작업이 필요한데, Cloudforet에서는 dregsy tool을 이용한 방법을 제안합니다.|
 ___
-
-## Uninstall
-
-다음의 명령어를 순서대로 처리해서 Cloudforet을 uninstall 할 수 있습니다.
-
-### 1. Delete the Helm Chart
-
-```shell
-helm delete cloudforet -n spaceone
-helm delete cloudforet-initializer -n spaceone
-```
-
-### 2. Delete the Ingress
-
-```shell
-kubectl delete ingress --all -n spaceone
-```
-
-### 4. Delete all plugins
-
-```shell
-kubectl delete deployment --all -n spaceone-plugin
-kubectl delete service --all -n spaceone-plugin
-```
-
-### 5. Delete cloudforet namespaces
-
-```shell
-kubectl delete namespace spaceone
-kubectl delete namespace spaceone-plugin
-```

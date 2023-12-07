@@ -405,34 +405,3 @@ Additional settings are required for the following special features. Below are e
 |[Set HTTP Proxy](../../configuration/set_http_proxy)|In the on-premise environment with no Internet connection, proxy settings are required to communicate with the external world. Here's how to set up HTTP Proxy.|
 |[Set K8S ImagePullSecrets](../../configuration/set_k8s_imagepullsecrets)|If you are using Private Image Registry, you may need credentials because user authentication is set. In Kubernetes, you can use secrets to register credentials with pods. Here's how to set ImagePullSecrets.|
 ___
-
-## Uninstall
-
-You can uninstall Cloudforet by executing the following commands in order.
-
-### 1. Delete the Helm Chart
-
-```shell
-helm delete cloudforet -n spaceone
-helm delete cloudforet-initializer -n spaceone
-```
-
-### 2. Delete the Ingress
-
-```shell
-kubectl delete ingress --all -n spaceone
-```
-
-### 4. Delete all plugins
-
-```shell
-kubectl delete deployment --all -n spaceone-plugin
-kubectl delete service --all -n spaceone-plugin
-```
-
-### 5. Delete cloudforet namespaces
-
-```shell
-kubectl delete namespace spaceone
-kubectl delete namespace spaceone-plugin
-```
