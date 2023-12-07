@@ -16,7 +16,7 @@ Note :- This Guide is not for production, but for developer only.
 | Distro     | Status             | Link(ex. Blog)   |
 | ---        | ---                | ---    |
 | Ubuntu 20.04    |  Not Tested   |    |
-| Ubuntu 22.04    |  Not Tested   |    |
+| Ubuntu 22.04    |  Verified   |    |
 | Amazon Linux 2  |  Not Tested      |    |
 | Amazon Linux 2023  | Not Tested    |    |
 | macOS (Apple Silicon, M1) | Verified |   |
@@ -33,6 +33,7 @@ Note :- This Guide is not for production, but for developer only.
 
 ## Prerequisites
 - AWS EC2 VM (Intel/AMD/ARM CPU)
+ > Recommended instance type: t3.large (2 cores, 4 GB Memory, 30GB EBS)
 - [Docker/Docker Desktop](https://docs.docker.com/engine/install/) 
   - If you don't have Docker installed, minikube will return an error as minikube uses docker as the driver.
   - Highly recommend installing **Docker Desktop** based on your OS.
