@@ -33,7 +33,7 @@ Note :- This Guide is not for production, but for developer only.
 
 ## Prerequisites
 - AWS EC2 VM (Intel/AMD/ARM CPU)
- > Recommended instance type: t3.large (2 cores, 4 GB Memory, 30GB EBS)
+ > Recommended instance type: t3.medium (2 cores, 4 GB Memory, **30GB EBS**)
 - [Docker/Docker Desktop](https://docs.docker.com/engine/install/) 
   - If you don't have Docker installed, minikube will return an error as minikube uses docker as the driver.
   - Highly recommend installing **Docker Desktop** based on your OS.
@@ -103,7 +103,7 @@ kubectl apply -f rbac.yaml -n spaceone-plugin
 
 This command basically let Helm search for the chart named cloudforet in the repository named spaceone. For more information about what chart is, refer to [this](https://helm.sh/docs/topics/charts/).
 ```bash
-helm install cloudforet cloudforet/spaceone -n spaceone
+helm install cloudforet cloudforet/spaceone -n spaceone --version 1.12.10
 ```
 
 After executing the above command, check the status of the pod.
