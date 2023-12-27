@@ -21,7 +21,7 @@ Note :- This Guide is not for production, but for developer only.
 | Amazon Linux 2023  | Not Tested    |    |
 | macOS (Apple Silicon, M1) | Verified |   |
 | macOS (Apple Silicon, M2) | Verified   |   |
-| Windows         |  Not Tested   |       |
+| Windows         |  Verified   |  https://medium.com/@ayushsharma2267410/installation-of-cloudforet-in-windows-8c4a10c9a65f     |
 
 ## Overview
 
