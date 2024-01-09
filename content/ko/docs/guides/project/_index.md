@@ -1,14 +1,10 @@
 ---
-title: "프로젝트"
-linkTitle: "프로젝트"
+linkTitle: 프로젝트
 weight: 3
-date: 2022-06-07
-description: >
-    수집되는 클라우드 리소스를 체계적으로 관리할 수 있도록, 조직의 규모와 구조에 맞게 계층 구조를 설계하여 관리하세요.
-    <br>
-    <br>
-    클라우드포레의 프로젝트 페이지에서 [**프로젝트 그룹**](/ko/docs/guides/project/project-group)과 [**프로젝트**](/ko/docs/guides/project/project)를 만들고, [**멤버**](/ko/docs/guides/project/member)를 초대할 수 있습니다.
-    <br>
-    <br>
-    ![project-full-page](/ko/docs/guides/project/project-img/project-click-all-project.png)
+date: '2022-06-07T00:00:00.000Z'
+description: |
+  프로젝트를 생성하여, 워크스페이스별로 수집되는 클라우드 리소스 또는 비용 등을 체계적으로 관리할 수 있습니다. <br> <br>아래와 같이 특정 워크스페이스 환경에 프로젝트 그룹 > 프로젝트 구조로 생성할 수 있습니다. <br><br> ![](/guides/project/project-main-ko.png)
+title: 프로젝트
 ---
+
+
