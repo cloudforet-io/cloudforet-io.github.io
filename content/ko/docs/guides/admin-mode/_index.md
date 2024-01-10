@@ -5,7 +5,7 @@ date: '2024-01-08T00:00:00.000Z'
 description: >
   Admin의 역할(Role) 타입을 가진 사용자의 경우, 도메인 내에 최고 관리자 권한을 행사할 수 있습니다.   <br> <br>  해당
   사용자(들)은 도메인 설정을 포함하여 모든 워크스페이스에 접근하고, 세부 설정을 조정할 수 있는 권한을 가지고 있습니다. <br> <br>
-  [**역할(Role)에 대해 알아보기**](/ko/docs/guides/admin-mode/administration/iam/role)
+  [**역할(Role)에 대해 알아보기**](/ko/docs/guides/admin-mode/role/)
 title: 관리자 가이드
 ---
 
