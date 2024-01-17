@@ -41,17 +41,17 @@ menu:
                     <a href="https://github.com/cloudforet-io/cloudforet/discussions" target="_blank">
                         <figure>Discussion icon</figure>
                         <div>
-                            <strong class="title">Discussion</strong>
+                            <strong class="title">Github Discussion</strong>
                             <p class="description">Inquiry & Feedback</p>
                         </div>
                     </a>    
                 </li>
-                <li class="github">
-                    <a href="https://github.com/cloudforet-io/" target="_blank">
-                    <figure>Github icon</figure>
+                <li class="discord">
+                    <a href="https://discord.gg/7ExpTmA6TE" target="_blank">
+                    <figure>Discord icon</figure>
                         <div>
-                            <strong class="title">Github</strong>
-                            <p class="description">All the project</p>
+                            <strong class="title">Discord</strong>
+                            <p class="description">Community Channels</p>
                         </div>
                     </a>
                 </li>

@@ -151,6 +151,11 @@
                         background-image: url("/images/community/img_github.png");
                     }
                 }
+                &.discord {
+                    figure {
+                        background-image: url("/images/community/img_discord.png");
+                    }
+                }
                 &:hover {
                     box-shadow: 0px 6px 16px rgba(77, 66, 125, 0.2);
                 }
