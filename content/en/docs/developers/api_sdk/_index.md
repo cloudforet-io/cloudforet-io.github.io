@@ -7,3 +7,5 @@ description: >
     API & SDK Guide
 no_list: true
 ---
+
+https://cloudforet-io.github.io/api-doc/
