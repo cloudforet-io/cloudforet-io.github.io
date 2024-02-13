@@ -84,7 +84,7 @@ kubectl create ns spaceone-plugin
 
 
 ### 3) Create Role and RoleBinding
-First, download the [rbac.yaml](examples/rbac.yaml) file.
+First, download the [rbac.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/rbac.yaml) file.
 
 
 The rbac.yaml file basically serves as a means to regulate access to computer or network resources based on the roles of individual users. For more information about RBAC Authorization in Kubernetes, refer to [this](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
@@ -152,7 +152,7 @@ supervisor-scheduler-6744657cb6-tpf78     2/2     Running            0          
 > To execute the commands below, every POD except xxxx-scheduler-yyyy must have a Running status.
 
 ### 5) Initialize the Configuration  
-First, download the [initializer.yaml](examples/initializer.yaml) file.
+First, download the [initializer.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/initializer.yaml) file.
 
 For more information about the initializer, please refer to the [spaceone-initializer](https://github.com/cloudforet-io/spaceone-initializer).
 
