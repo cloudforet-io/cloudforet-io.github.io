@@ -2,7 +2,7 @@
 
 ## How to use this repository
 
-### Prerequisities
+### Prerequisites
 
 
 You need following installed locally
@@ -15,13 +15,12 @@ You need following installed locally
 Before we start, install the dependencies, Clone the repository and navigate to the directory.
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/[username]/docs
+git clone --recurse-submodules --depth 1 https://github.com/[username]/cloudforet-io.github.io
 
-cd docs
-
+cd cloudforet-io.github.io
 ```
 
-Cloudforet blog uses Docsy Hugo theme. So, we strongly recommend pulling in the submodule and other developmment dependencies by running the following.
+Cloudforet blog uses Docsy Hugo theme. So, we strongly recommend pulling in the submodule and other development dependencies by running the following.
 
 ```bash
 # pull in the Docsy submodule
@@ -31,7 +30,7 @@ git submodule update --init --recursive --depth 1
 
 ### Install PostCSS
 
-To build Cloudforet blog, you also need  `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine so you can use npm.
+To build Cloudforet blog, you also need  `PostCSS` to create the final asset. If you need install it, you must have recent version of NodeJS installed on your machine, so you can use npm.
 
 ```bash
 npm install --no-optional -D --save
