@@ -4,7 +4,7 @@ linkTitle: "style guide"
 weight: 2
 date: 2021-10-01
 description: >
-    This page explains the custom Hugo shortcodes that can be used in SpaceONE Markdown documentation.
+    This page explains the custom Hugo shortcodes that can be used in Cloudforet Markdown documentation.
 ---
 
 ## Heading tag
@@ -27,11 +27,11 @@ Output : <br>
 ## Video
 Code :
 ```go-html-template
-{{</* video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="SpaceONE Setup" */>}}
+{{</* video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="Cloudforet Setup" */>}}
 ```
 
 Output: <br><br>
-{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="SpaceONE Setup">}}
+{{< video src="https://www.youtube.com/embed/zSoEg2v_JrE" title="Cloudforet Setup">}}
 
 ## Alert
 Code :
