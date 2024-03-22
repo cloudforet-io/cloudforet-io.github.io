@@ -163,9 +163,18 @@ navbar_logo = true
 footer_about_disable = true
 
 [[params.versions]]
+fullversion = "latest"
+version = "v2.x (development)"
+githubbranch = "master"
+docsbranch = "master"
+# Set master version url
+url = "/"
+
+[[params.versions]]
 fullversion = "v1.12"
 version = "v1.12 (stable)"
 githubbranch = "release-1.12.0"
 docsbranch = "master"
 # Set master version url
-url = "/"
+url = "https://cloudforet-io.github.io/v1-12"
+
