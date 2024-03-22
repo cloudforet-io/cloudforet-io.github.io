@@ -1,4 +1,4 @@
-baseURL = "https://cloudforet.io/"
+baseURL = "https://cloudforet-io.github.io"
 languageCode = "en-us"
 title = "Cloudforet"
 theme = "docsy"
@@ -132,7 +132,7 @@ copyright = "Cloudforet Foundation"
 latest = "v1.12"
 #archived_version = true
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/cloudforet-io/docs"
+github_repo = "https://github.com/cloudforet-io/cloudforet-io.github.io"
 body_classes = "georgia bg-near-white"
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -140,7 +140,7 @@ algolia_docsearch = false
 offlineSearch = true
 showedit = true
 docsbranch = "master"
-currentUrl = "https://cloudforet.io/home/"
+currentUrl = "https://cloudforet-io.github.io/home/"
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 # Configure url of latest version
