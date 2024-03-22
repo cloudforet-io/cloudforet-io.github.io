@@ -4,7 +4,7 @@ linkTitle: "content guide"
 weight: 1
 date: 2021-10-01
 description: >
-    This page contains guidelines for SpaceONE documentation.
+    This page contains guidelines for Cloudforet documentation.
 ---
 
 ## Create a new page
@@ -14,7 +14,7 @@ or:
 You can also fork from [the repository](https://github.com/cloudforet-io/docs) and work locally.
 
 ## Choosing a title and filename
-Create a filename that uses the words in your title separated by underscroe (_). For example, the topic with title Using [Project Management](/docs/guides_v1/project/project_management/) has filename project_management.md.
+Create a filename that uses the words in your title separated by underscore (_). For example, the topic with title Using [Project Management](/docs/guides_v1/project/project_management/) has filename project_management.md.
 
 ## Adding fields to the front matter
 In your document, put fields in the front matter. The front matter is the YAML block that is between the triple-dashed lines at the top of the page. Here's an example:
