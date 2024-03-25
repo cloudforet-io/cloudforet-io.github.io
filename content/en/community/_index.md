@@ -18,13 +18,13 @@ menu:
         <div class="section-inner">
             <h3>Community Sponsors</h3>
             <ul class="sponsors-list">
-                <li class="mzcloud">
-                    <figure>MZCloud</figure>
-                    <p class="description">2022 Website Sponsor</p>
+                <li class="linuxfoundation">
+                    <figure>linuxfoundation</figure>
+                    <p class="description">Project Sponsor</p>
                 </li>
-                <li class="spaceone">
-                    <figure>SpaceONE</figure>
-                    <p class="description"><a href="https://spaceone.megazone.io/try-demo" target="_blank">Demo Trial by Megazone Cloud</a></p>
+                <li class="github">
+                    <figure>github</figure>
+                    <p class="description">Project Hosting</p>
                 </li>
                 <li class="dockerhub">
                     <figure>dockerhub</figure>

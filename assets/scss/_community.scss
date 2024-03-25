@@ -65,6 +65,18 @@
                     padding-right: 24px;
                     background: externalIcon(1F1B38) no-repeat 100% 50% / 20px auto;
                 }
+                &.linuxfoundation {
+                    figure {
+                        background-image: url("/images/community/logo-linuxfoundation.png");
+                        color: transparent;
+                    }
+                }
+                &.github {
+                    figure {
+                        background-image: url("/images/community/logo-github.png");
+                        color: transparent;
+                    }
+                }
                 &.mzcloud {
                     figure {
                         background-image: url("/images/community/logo-mzcloud.png");
