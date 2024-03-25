@@ -4,139 +4,46 @@ linkTitle: "CICD"
 weight: 8
 date: 2022-03-14
 description: >
-    Detailed Explanation of SpaceONE CI CD Pipeline and Architecture
+    Detailed Explanation of Cloudforet CICD Pipeline and Architecture
 no_list: true
 ---
 
-## SpaceONE CICD Architecture
 
-</br>
+## Actions
+Cloudforet has 100+ repositories, **70 of which are for applications** and these repositories have github action workflows.
 
-![](/docs/developers/CICD/img/cicd_flow_chart.png)
+Because of that, it's very difficult to handle one by one when you need to update or run a workflow.
 
-</br>
+To solve this problem, we created `Actions`.<br>
 
-**CI process is mainly processed by GitHub Actions** described in `.github/workflows` directory of each repository.  The process can be triggered automatically through events such as pull requests or push, or manually. Continuous integration includes software building, uploading image in docker, and releasing package in NPM or PyPi. Docker Image is built with all dependency packages to include.   
+The diagram below shows the relationship between Actions and repositories.
 
-</br>
+<img width="736" src="https://github.com/cloudforet-io/actions/assets/19552819/a8d490dd-2a6b-41ab-beb8-3dbf67c9a9d5">
 
-**CD process is mainly processed by Spinnaker**. Spinnaker deployment is triggered by detecting image upload in docker hub. After the triggering event, Spinnaker automatically deploys the microservice to Kubernetes, with Helm chart prepared for each repository to prepare the infrastructure for the deployment.   
+### What does actions actually do?
+
+`Actions` is a control tower that manages and deploys github action workflows for Cloudforet's core services.<br>
+It can also bulk trigger these workflows when a new version of Cloudforet's core services needs to be released.
+
+### 1. Manage and deploy github action workflows for Cloudforet's core services.
+**All workflows for Cloudforet's core services are managed and deployed in this repository.**<br>
+
+We write the workflow according to our workflow policy and put it in the [workflows](https://github.com/cloudforet-io/actions/tree/master/workflows/) directory of `Actions`.<br>
+Then these workflows can be deployed into the repository of Cloudforet's core services
+
+Our devops engineers can modify workflows according to our policy and deploy them in batches using this feature.
+
+The diagram below shows the process for this feature.
+
+<img width="935" src="https://github.com/cloudforet-io/actions/assets/19552819/755e8c71-42f8-4bf2-8a93-b83e13a839b3">
 
 
-</br>
+*) If you want to see the `Actions` script that appears  in the diagram, see [here](https://github.com/cloudforet-io/actions/tree/master/src).
 
-## Role of cloudforet-io/spaceone Repository
+### 2. trigger workflows when a new version of Cloudforet's core services needs to be released.
+When a new version of Cloudforet's core services is released, we need to trigger the workflow of each repository.<br>
+To do this, we made workflow that can trigger workflows of each repository in `Actions`.<br>
 
-</br>
+## Reference
 
-* cloudforet-io/spaceone GitHub Repository : https://github.com/cloudforet-io/spaceone  
-
-</br>
-
-Before we discuss the CI process of each repository, we should check the `cloudforet-io/spaceone` repository (or ‘root’ repository). Root repository serves a role as a trigger of all repositories to start the CI process. Through manually starting one of the GitHub Action the root repository has, most of the repositories detect the action and their GitHub Action is triggered.   
-
-</br>
-
-## Repository Categories
-
-</br>
-
-**SpaceONE repositories can be divided into 5 different categories based on their characteristics in CI/CD process.**    
-
-</br>
-
-1. Frontend microservice
-2. Backend microservice
-3. Backend Core microservice 
-4. Frontend Core microservice
-5. Plugin
-6. Tools
-
-</br>
-
-Core microservices are differentiated with ordinary microservices, since they support the other services by serving various functions such as framework, library or system.   
-
-</br>
-
-| **Categories**                 | **Repository**                                                 |
-| ---                            | ---                                                            |
-| **Frontend microservice**      | console, console-api, console-assets, marketplace-assets       |
-| **Backend microservice**       | billing, config, cost-analysis, cost-saving, identity, inventory, monitoring, notification, plugin, power-scheduler, secret, spot-automation, statistics, supervisor        |
-| **Backend Core microservice**  | api, python-core                                               |
-| **Frontend Core microservice** | console-core-lib, spaceone-design-system                       |
-| **Plugin**                     | plugin module repositories (excluding ‘plugin’ repository)     |
-| **Tools**                      | spacectl, spaceone-initializer, tester                         |
-
-</br>
-
-** Some repositories might not fit in the categories and standards. To check more details in CI/CD, check our GitHub repositories' `.github/workflow` files.     
-
-</br>
-
-## Versioning System
-
-</br>
-
-SpaceONE uses 3 digit versioning system in the format of ‘x.y.z’.
-The version scheme is displayed in the table below.     
-
-| Category    | Format          | Description   | Example   |
-| ---         |  ---            | ---           | ---       |
-| Development | x.y.zdev[0-9]+  | api, python-core only | 1.2.3dev1 |
-| Release Candidate | x.y.zrc[0-9]+ | Every release has RC during QA | 1.2.3rc1 |
-| Final Release | x.y.z         | Official Release version | 1.2.3 |
-| Hotfix      | x.y.z.[0-9]+    | Hotfix of Final Release  | 1.2.3.1 |
-
-</br>
-
-## Released Packages & Images
-
-</br>
-
-* NPM : https://www.npmjs.com/search?q=spaceone 
-* PyPi : https://pypi.org/search/?q=spaceone-  
-* Docker : https://hub.docker.com/orgs/spaceone/repositories  
-
-Packages and images released in CI process can be found in the links above.      
-
-</br>
-
-## Continuous Integration Process
-
-</br>
-
-![](/docs/developers/CICD/img/continuous_integration_process.png)
-
-</br>     
-
-CI process of each repositories can be organized by 4 different kinds of triggering events.   
-
-</br>
-
-1. **Master Branch Push** :     
-If the master branch in GitHub get pushed, GitHub Action occurs by `CI_master_push.yml` file, which builds the software and uploads to the registry such as Docker or NPM.  After the process, CloudONE team is notified through Slack.     
-
-2. **Create Release Branch** :     
-Each repository can create release branch manually or by `cloudforet-io/spaceone` repository’s event. After initialization, GitHub Action triggers branch tagging action.       
-
-3. **Branch Tagging** :      
-By being triggered by the event above or getting pushed with version tags, each repository can tag branch with GitHub Action by updating the version in both local and master branch, building the software, and uploading the output to registries such as Docker or PyPi. After all process is done, Slack notification is automatically sent to CloudONE team.      
-
-4. **Reflect Branch Update** :       
-The last CI process to be described is updating the version file in the master branch of each repository. This process is triggered by the branch tagging action or `cloudforet-io/spaceone` repository GitHub Action.         
-
-</br>
-</br>
-
-While most of the process can be explained with the description above, Continuous Integration processes differ by the repository categories described above. 
-To learn about CI of each repository type, visit the document linked below.         
-
-</br>
-
-* Frontend : [Frontend Microservice CI](/docs/developers/cicd/frontend-microservice-ci/)
-* Backend : [Backend Microservice CI](/docs/developers/cicd/backend-microservice-ci/)
-* Frontend Core : [Frontend Core Microservice CI](/docs/developers/cicd/frontend-core-microservice-ci/)
-* Backend Core : [Backend Core Microservice CI](/docs/developers/cicd/backend-core-microservice-ci/)
-* Plugin : [Plugin CI](/docs/developers/cicd/plugin-ci/)
-* Tools : [Tools CI](/docs/developers/cicd/tools-ci/)
-
+[Cloudforet CICD Project, Actions](https://github.com/cloudforet-io/actions)
