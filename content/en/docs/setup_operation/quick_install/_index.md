@@ -5,11 +5,12 @@ weight: 1
 url_dash_board: "/docs/guides_v1/install_guide/getting_started"
 date: 2021-08-10
 description: >
-
+  How to install Cloudforet for developer
 ---
 
 This is Getting Started Installation guide with minikube.
-Note :- This Guide is not for production, but for developer only.
+
+> Note :- This Guide is not for production, but for developer only.
 
 **Verified Environments**
 
