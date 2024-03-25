@@ -7,7 +7,7 @@ description: >
     Core technology of Cloudforet.
 ---
 
-## Open Platform
+## Open Source Project
 In order to provide effective and flexible support over various cloud platforms, we aim for an open source based strategy cloud developer community.
 ![Open Platform](/docs/concepts/img/2020-07-31-3.18.54.png)
 
