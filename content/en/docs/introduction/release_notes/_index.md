@@ -4,12 +4,18 @@ linkTitle: "Release Notes"
 weight: 4
 date: 2023-03-06
 description: >
-    SpaceONE Release Notes
+    Cloudforet Release Notes
 ---
 
+## Development Version
+
+Active Development Version: 2.x
+
+## Stable Version
 
 | Date       | Version | See Details                                            |
 |------------|---------|--------------------------------------------------------|
+| 2023-10-06 | 1.12.0  | [Version 1.12.0-english](./release_note_list/v1.11.0/) |
 | 2023-03-06 | 1.11.0  | [Version 1.11.0-english](./release_note_list/v1.11.0/) |
 | 2022-11-28 | 1.10.4  | [Version 1.10.4-english](./release_note_list/v1.10.4/) |
 | 2022-11-07 | 1.10.3  | [Version 1.10.3-english](./release_note_list/v1.10.3/) |

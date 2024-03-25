@@ -9,104 +9,40 @@ description: >
 
 ## Overview
 Cloudforet supports the Plugin Interfaces, which supports to extend Core Services.
-The supported plugins are below
+The supported plugins are listed in
 
-## Inventory
-_**Inventory.Collector**_ supports Collection of Assets.
-Integrate all your cloud service accounts and scan all existing resources. All cloud resources are collected through 
-Cloudforet collector plugins based on the Plugin Interfaces.
+### Managed Plugins (Compatible with Cloudforet Version 1.x)
 
-### [AWS Cloud Service Plugin](https://github.com/cloudforet-io/plugin-aws-ec2-inven-collector)
+Managed Plugins are pre-registed plugins that are compatible with Cloudforet Version 1.x.
 
-### [MS Azure Cloud Service Plugin](https://github.com/cloudforet-io/plugin-azure-cloud-service-inven-collector)
+| name                                      | plugin_id                                | service_type             | provider |
+|-------------------------------------------| ----------------------------------------- | ----------------------- | -------------- |
+| API Direct                                | plugin-api-direct-mon-webhook            | monitoring.Webhook       | |
+| AWS Cloud Service Collector               | plugin-aws-cloud-service-inven-collector | inventory.Collector      | aws |
+| AWS CloudTail Log DataSource              | plugin-aws-cloudtrail-mon-datasource     | monitoring.DataSource    | aws |
+| AWS CloudWatch Metric DataSource          | plugin-aws-cloudwatch-mon-datasource     | monitoring.DataSource    | aws |
+| AWS Cost Explorer Data Source             | plugin-aws-cost-explorer-cost-datasource | cost_analysis.DataSource | aws |
+| AWS EC2 Collector                         | plugin-aws-ec2-inven-collector           | inventory.Collector      | aws |
+| AWS Personal Health Dashboard Collector   | plugin-aws-phd-inven-collector           | inventory.Collector      | aws |
+| AWS SNS                                   | plugin-aws-sns-monitoring-webhook        | monitoring.Webhook       | aws |
+| AWS Trusted Advisor Collector             | plugin-aws-ta-inven-collector            | inventory.Collector      | aws |
+| Azure Activity Log DataSource             | plugin-azure-activity-log-mon-datasource | monitoring.DataSource    | azure |
+| Azure Cost Management Data Source         | plugin-azure-cost-mgmt-cost-datasource   | cost_analysis.DataSource | azure |
+| Azure Collector                           | plugin-azure-inven-collector             | inventory.Collector      | azure |
+| Azure Monitoring Metric DataSource        | plugin-azure-monitor-mon-datasource      | monitoring.DataSource    | azure |
+| Email Notification Protocol               | plugin-email-noti-protocol               | notification.Protocol    | email |
+| Google Cloud Collector                    | plugin-google-cloud-inven-collector      | inventory.Collector      | google_cloud |
+| Google Cloud Log DataSource               | plugin-google-cloud-log-mon-datasource   | monitoring.DataSource    | google_cloud |
+| Google Cloud Monitoring                   | plugin-google-monitoring-mon-webhook     | monitoring.Webhook       | google_cloud |
+| Google Cloud Monitoring Metric DataSource | plugin-google-stackdriver-mon-datasource | monitoring.DataSource    | google_cloud |
+| Grafana                                   | plugin-grafana-mon-webhook               | monitoring.Webhook       | |
+| Keycloak OIDC                             | plugin-keycloak-identity-auth            | identity.Domain          | |
+| MS Teams Notification Protocol            | plugin-ms-teams-noti-protocol            | notification.Protocol    | microsoft |
+| Prometheus                                | plugin-prometheus-mon-webhook            | monitoring.Webhook       | |
+| Slack Notification Protocol               | plugin-slack-noti-protocol               | notification.Protocol    | slack |
+|  Telegram Notification Protocol           | plugin-telegram-noti-protocol            | notification.Protocol    | telegram |
 
-### [Google Cloud Service Plugin](https://github.com/spaceone-dev/plugin-google-cloud-service-inven-collector)
+### Additional Plugins
 
-## Identity
-_**Identity.auth**_ supports user management.
-Choonho various authentication options. Cloudforet supports from local ID / password to external identity services
-including Google OAuth2, Active Directory and Keycloak.
-
-### [Google oAuth Identity Plugin](https://github.com/cloudforet-io/plugin-googleoauth2-identity-auth)
-### [KeyCloak Identity Plugin](https://github.com/cloudforet-io/plugin-keycloak-identity-auth)
-<!-- {{< cardpane >}}
-{{< card header="**Google oAuth2**" title="Google oAuth Identity Plugin" subtitle="" footer="[See Google Auth Plugin]()" >}}
-![Google oAuth](/docs/references/supported_technologies/supported_technologies_img/google_img.png)
-{{< /card >}}
-{{< card header="**KeyCloak**" title="KeyCloak Identity Plugin" subtitle="" footer="[See KeyCloak Auth Plugin]()" >}}
-![Keycloak](/docs/references/supported_technologies/supported_technologies_img/keycloak_img.png)
-{{< /card >}}
-{{< /cardpane >}} -->
-
-## Monitoring
-
-### DataSource
-
-### [AWS CloudWatch DataSource Plugin](https://github.com/cloudforet-io/plugin-aws-cloudwatch-mon-datasource)
-### [Azure Monitor DataSource Plugin](https://github.com/cloudforet-io/plugin-azure-monitor-mon-datasource)
-### [Google Cloud Monitor DataSource Plugin](https://github.com/cloudforet-io/plugin-google-stackdriver-mon-datasource)
-<br>
-<!-- {{< cardpane >}}
-{{< card header="**AWS CloudWatch**" title="AWS CloudWatch DataSource Plugin" subtitle="" footer="[See AWS CloudWatch DataSource Plugin]()" >}}
-![AWS CloudWatch DataSource](/docs/references/supported_technologies/supported_technologies_img/aws_cloudwatch_img.png)
-{{< /card >}}
-{{< card header="**Azure Monitor**" title="Azure Monitor DataSource Plugin" subtitle="" footer="[See Azure Monitor DataSource Plugin]()" >}}
-![Azure Monitor DataSource](/docs/references/supported_technologies/supported_technologies_img/azure_monitor_img.png)
-{{< /card >}}
-{{< card header="**Google StackDriver**" title="Google Cloud Monitor DataSource Plugin" subtitle="" footer="[See Google Monitor DataSource Plugin]()" >}}
-![Google Cloud Monitor DataSource](/docs/references/supported_technologies/supported_technologies_img/google_cloud_monitor_img.jpg)
-{{< /card >}}
-{{< /cardpane >}} -->
-
-### Webhook
-
-### [AWS Simple Notification Webhook Plugin](https://github.com/cloudforet-io/plugin-aws-sns-mon-webhook)
-### [Zabbix Webhook Plugin](https://github.com/cloudforet-io/plugin-zabbix-mon-webhook)
-### [Grafana Webhook Plugin](https://github.com/cloudforet-io/plugin-grafana-mon-webhook)
-<br>
-<!-- {{< cardpane >}}
-{{< card header="**AWS SNS**" title="AWS Simple Notification Webhook Plugin" subtitle="" footer="[See AWS Simple Monitoring Webhook Plugin]()" >}}
-![AWS Simple Notification Webhook Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_sns_img.png)
-{{< /card >}}
-{{< card header="**Zabbix**" title="Zabbix Webhook Plugin" subtitle="" footer="[See Zabbix Monitoring Webhook Plugin]()" >}}
-![Zabbix Webhook Plugin](/docs/references/supported_technologies/supported_technologies_img/zabbix_img.png)
-{{< /card >}}
-{{< card header="**Grafana**" title="Grafana Webhook Plugin" subtitle="" footer="[See Grafana Monitoring Webhook Plugin]()" >}}
-![Grafana Webhook Plugin](/docs/references/supported_technologies/supported_technologies_img/grafana_img.png)
-{{< /card >}}
-{{< /cardpane >}} -->
-
-### Notification
-
-### [API Direct Connect Protocol Plugin](https://github.com/cloudforet-io/plugin-api-direct-mon-webhook)
-### [AWS SNS Protocol Plugin](https://github.com/cloudforet-io/plugin-aws-sns-mon-webhook)
-### [Slack Protocol Plugin](https://github.com/cloudforet-io/plugin-slack-noti-protocol)
-### [Telegram Protocol Plugin](https://github.com/cloudforet-io/plugin-telegram-noti-protocol)
-### [Email Protocol Plugin](https://github.com/cloudforet-io/plugin-email-noti-protocol)
-<!-- {{< cardpane >}}
-{{< card header="AWS Direct Connect" title="AWS Direct Connect Protocol Plugin" subtitle="" footer="[See AWS Direct Connect Protocol Plugin]()" >}}
-![AWS Direct Connect Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_direct_connect_img.png)
-{{< /card >}}
-{{< card header="AWS SES" title="AWS SES Protocol Plugin" subtitle="" footer="[See AWS SES Protocol Plugin]()" >}}
-![AWS SES Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_simple_email_service_img.png)
-{{< /card >}}
-{{< card header="AWS SNS" title="AWS SNS Protocol Plugin" subtitle="" footer="[See AWS SNS Protocol Plugin]()" >}}
-![AWS SNS Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/aws_simple_notification_service_img.png)
-{{< /card >}}
-{{< card header="Slack" title="Slack Protocol Plugin" subtitle="" footer="[See Slack Protocol Plugin]()" >}}
-![Slack Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/slack_img.png)
-{{< /card >}}
-{{< card header="Telegram" title="Telegram Protocol Plugin" subtitle="" footer="[See Telegram Protocol Plugin]()" >}}
-![Telegram Protocol Plugin](/docs/references/supported_technologies/supported_technologies_img/telegram_img.png)
-{{< /card >}}
-{{< /cardpane >}} -->
-
-## Billing
-
-### [Megazone Hyperbilling Billing Service](https://github.com/cloudforet-io/plugin-aws-hyperbilling-bill-datasource)
-<!-- {{< cardpane >}}
-{{< card header="**Megazone Hyperbilling**" title="Megazone Hyperbilling Billing Service" subtitle="" footer="[See Hyperbilling DataSource Plugin]()" >}}
-![Hyperbilling DataSource Plugin](/docs/references/supported_technologies/supported_technologies_img/megazone_img.png)
-{{< /card >}}
-{{< /cardpane >}} -->
-
+There are more plugins in the 
+[Github Plugin Project](https://github.com/orgs/cloudforet-io/projects/5)
