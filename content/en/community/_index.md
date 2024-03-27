@@ -28,10 +28,26 @@ menu:
                 </li>
                 <li class="dockerhub">
                     <figure>dockerhub</figure>
-                    <p class="description">Developer’s Tools Sponsor</p>
+                    <p class="description">Docker-Sponsored Open Source Program</p>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="section sponsors">
+        <div class="section-inner">
+            <h3>Trusted by</h3>
+            <ul class="sponsors-list">
+                <li class="samsung">
+                    <figure>samsung</figure>
+                </li>
+                <li class="mzcloud">
+                    <figure>megazone</figure>
+                </li>
+                <li class="kren">
+                    <figure>kren</figure>
+                </li>
+            </ul>
+       </div>
     </div>
     <div class="section feedback">
         <div class="section-inner">

@@ -95,6 +95,18 @@
                         color: transparent;
                     }
                 }
+                 &.samsung {
+                    figure {
+                        background-image: url("/images/community/logo-samsung.png");
+                        color: transparent;
+                    }
+                }
+                &.kren {
+                    figure {
+                        background-image: url("/images/community/logo-kren.png");
+                        color: transparent;
+                    }
+                }
                 &:after {
                     position: absolute;
                     top: 0;
