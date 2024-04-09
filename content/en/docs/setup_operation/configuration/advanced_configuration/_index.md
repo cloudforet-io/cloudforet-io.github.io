@@ -130,7 +130,7 @@ You can change the default Cloudforet CI with your company CI.
 ![](./img/cloudforet_custom_ci.png)
 
 ### Every Page
-![](./img/spaceone_custom_ci2.png)
+![](./img/cloudforet_custom_ci2.png)
 
 Update helm value of console (console -> production_json -> DOMAIN_IMAGE)
 
