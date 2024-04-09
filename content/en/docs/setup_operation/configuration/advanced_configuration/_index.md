@@ -5,19 +5,19 @@ weight: 6
 url_dash_board: "/docs/guides_v1/advanced_configuration"
 date: 2021-07-31
 description: >
-    Advanced Configuration Guide of SpaceONE
+    Advanced Configuration Guide of Cloudforet
 
 ---
 
 ## Title and Favicon
 
-SpaceONE has default title and CI with Wanny favicon.
+Cloudforet has default title and CI with Wanny favicon.
 
 ![](./img/spaceone_default_favicon.png)
 
 But you can change them to your own title and favicon.
 
-![](./img/spaceone_custom_favicon.png)
+![](./img/cloudforet_custom_favicon.png)
 
 </br>
 
@@ -30,35 +30,53 @@ But you can change them to your own title and favicon.
 Console supports the functionality of changing title and favicon.
 The default values are in source code, but you can overwrite them when deploying pods.
 
+**_NOTE:_**  Both Title and Favicon should be exist together, even though you want to configure one of them!
+
 </br>
 This is an example value of console.yaml file.
 
 ~~~
-  # favicon
+console:
+  production_json:
+    DOMAIN_NAME_REF: hostname
+    CONSOLE_API:
+      ENDPOINT: https://console-v1.api.example.com
+    CONSOLE_API_V2:
+      ENDPOINT: https://console-v2.api.example.com
+    DOMAIN_IMAGE:
+      CI_LOGO: https://raw.githubusercontent.com/cloudforet-io/artwork/main/logo/symbol/Cloudforet_symbol--dark-navy.svg
+      CI_TEXT_WITH_TYPE: https://raw.githubusercontent.com/kren-ucloud/artwork/main/logo/KREN-logo.png
+      SIGN_IN: https://raw.githubusercontent.com/cloudforet-io/artwork/main/illustrations/happy-new-year-2024.png
+      CI_TEXT: https://raw.githubusercontent.com/cloudforet-io/artwork/main/logo/wordmark/Cloudforet_wordmark--primary.svg
   volumeMounts:
-      application:
-          - name: favicon
-            mountPath: /var/www/title.txt
-            subPath: title.txt
-            readOnly: true
-          - name: favicon-img
-            mountPath: /var/www/favicon.ico
-            subPath: favicon.ico
-            readOnly: true
-
+    application:
+      - name: favicon
+        mountPath: /var/www/title.txt
+        subPath: title.txt
+        readOnly: true
+      - name: favicon-img
+        mountPath: /var/www/favicon.ico
+        subPath: favicon.ico
+        readOnly: true
 
   volumes:
-      - name: favicon
-        configMap:
-            name: favicon
-      - name: favicon-img
-        configMap:
-            name: favicon-img
+    - name: favicon
+      configMap:
+        name: favicon
+    - name: favicon-img
+      configMap:
+        name: favicon-img
+    - name: timezone
+      hostPath:
+        path: /usr/share/zoneinfo/Asia/Seoul
+    - name: log-volume
+      emptyDir: {}
+      
 ~~~
 
 The actual values are from Kubernetes ConfigMap object. So you might have to change the value at ConfigMap or create a new one and mount it in your pod.
 
-### Title
+### Title(title.yaml)
 
 ~~~
 apiVersion: v1
@@ -68,12 +86,18 @@ metadata:
   namespace: spaceone
 data:
   title.txt: |
-    KB One Cloud
-
+    KREN UCLOUD
 ~~~
 
-### Favicon
+Apply at your Kubernetes cluster.
 
+```bash
+kubectl apply -f title.yaml -n spaceone
+```
+### Favicon (favicon.yaml)
+
+Cloudforet new Favicon file is
+[favicon.yaml](./img/favicon.yaml)
 ~~~
 apiVersion: v1
 kind: ConfigMap
@@ -82,25 +106,31 @@ metadata:
   namespace: spaceone
 binaryData:
   favicon.ico: AAABAAEAAAAAAAEAIADxxxxxxx...
-
 ~~~
 
 **_NOTE:_**  favicon.ico must be base64 encoded.
 
+~~~bash
+# prepare your favicon.ico file, and encode it to base64 (shell command)
+cat favicon.ico | base64
 ~~~
-# cat favicon.ico | base64
-~~~
+
+Apply at your Kubernetes cluster.
+
+```bash
+kubectl apply -f favicon.yaml -n spaceone
+```
 
 ## Corporate Identity
 
-When you open SpaceONE page, you can see the default SpaceONE CI, logo and text.
-You can change the default SpaceONE CI with your company CI.
+When you open Cloudforet page, you can see the default Cloudforet CI, logo and text.
+You can change the default Cloudforet CI with your company CI.
 
 ### Login Page
-![](/docs/setup_operation/advanced_configuration/img/spaceone_custom_ci.png)
+![](./img/cloudforet_custom_ci.png)
 
 ### Every Page
-![](/docs/setup_operation/advanced_configuration/img/spaceone_custom_ci2.png)
+![](./img/spaceone_custom_ci2.png)
 
 Update helm value of console (console -> production_json -> DOMAIN_IMAGE)
 
@@ -116,39 +146,50 @@ keyword: ***DOMAIN_IMAGE***
 
 **_NOTE:_**  Recommended file format is SVG. But if you would like to use a PNG file, use transparent background and double the size than recommended size.
 
-**_NOTE:_**  SpaceONE does not support uploading files, so upload CI files at your web server or S3.!
-
+**_NOTE:_**  Cloudforet does not support uploading files, so upload CI files at your web server or S3.!
 
 ~~~
 console:
-  enabled: true
-  developer: false
-  name: console
-  replicas: 2
-  image:
-      name: spaceone/console
-      version: 1.8.7
-  imagePullPolicy: IfNotPresent
-
-#######################
-# TODO: Update value
-#  - ENDPOINT
-#  - GTAG_ID (if you have google analytics ID)
-#  - AMCHARTS_LICENSE (for commercial use only)
-#######################
   production_json:
-      CONSOLE_API:
-          ENDPOINT: http://console-api.example.com
-      DOMAIN_IMAGE:
-          CI_LOGO: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-logo.svg
-          CI_TEXT_WITH_TYPE: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text1.svg
-          SIGN_IN: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/login-img.png
-          CI_TEXT: https://spaceone-custom-assets.s3.ap-northeast-2.amazonaws.com/console-assets/domain/example/ci-text2.svg
+    DOMAIN_NAME_REF: hostname
+    CONSOLE_API:
+      ENDPOINT: https://console-v1.api.example.com
+    CONSOLE_API_V2:
+      ENDPOINT: https://console-v2.api.example.com
+    DOMAIN_IMAGE:
+      CI_LOGO: https://raw.githubusercontent.com/cloudforet-io/artwork/main/logo/symbol/Cloudforet_symbol--dark-navy.svg
+      CI_TEXT_WITH_TYPE: https://raw.githubusercontent.com/kren-ucloud/artwork/main/logo/KREN-logo.png
+      SIGN_IN: https://raw.githubusercontent.com/cloudforet-io/artwork/main/illustrations/happy-new-year-2024.png
+      CI_TEXT: https://raw.githubusercontent.com/cloudforet-io/artwork/main/logo/wordmark/Cloudforet_wordmark--primary.svg
+  volumeMounts:
+    application:
+      - name: favicon
+        mountPath: /var/www/title.txt
+        subPath: title.txt
+        readOnly: true
+      - name: favicon-img
+        mountPath: /var/www/favicon.ico
+        subPath: favicon.ico
+        readOnly: true
+
+  volumes:
+    - name: favicon
+      configMap:
+        name: favicon
+    - name: favicon-img
+      configMap:
+        name: favicon-img
+    - name: timezone
+      hostPath:
+        path: /usr/share/zoneinfo/Asia/Seoul
+    - name: log-volume
+      emptyDir: {}
 ~~~
+
 
 ## Google Analytics
 
-You can apply [Google Analytics](https://analytics.google.com/analytics) to SpaceONE Console by following the steps below.
+You can apply [Google Analytics](https://analytics.google.com/analytics) to Cloudforet Console by following the steps below.
 
 ### Create accounts and properties
 
@@ -182,7 +223,7 @@ You can apply [Google Analytics](https://analytics.google.com/analytics) to Spac
 
     ![ga_data_stream_01](https://user-images.githubusercontent.com/26986739/151507586-f3cc05ba-7508-4ab2-862b-b9bc3ebcd34e.png)
 
-2. Enter your **SpaceONE Console website URL** and **stream name** and click the **Create Stream** button.
+2. Enter your **Cloudforet Console website URL** and **stream name** and click the **Create Stream** button.
 
     ![ga_data_stream_02](https://user-images.githubusercontent.com/26986739/151507597-7142a9f8-87a8-40ce-989e-667b1ad833c3.png)
 
@@ -193,7 +234,7 @@ You can apply [Google Analytics](https://analytics.google.com/analytics) to Spac
 
 
 
-### Set up the SpaceONE Helm Chart
+### Set up the Cloudforet Helm Chart
 
 Paste the copied **measurement ID** as the value for the `GTAG_ID` key in the helm chart settings as shown below.
 
