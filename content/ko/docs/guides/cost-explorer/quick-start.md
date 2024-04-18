@@ -52,7 +52,7 @@ $ spacectl config init -f spacectl_config.yml
 이후 진행 방법은 동일 합니다.
 
 ## Plugin 설정하기
-(1-1) 바용 분석을 위한 플러그인 별 설정 가이드는 [링크](https://cloudforet.io/ko/docs/guides/plugins/cost-explorer-data-source/)를 참고해 주세요.
+(1-1) 비용 분석을 위한 플러그인 별 설정 가이드는 [링크](https://cloudforet.io/ko/docs/guides/plugins/cost-explorer-data-source/)를 참고해 주세요.
 (1-2) Plugin 설정 진행 과정에서 반환되는 `plugin_id` 정보를 메모해 둡니다.
 
 
