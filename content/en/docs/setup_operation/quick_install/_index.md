@@ -24,6 +24,8 @@ This is Getting Started Installation guide with minikube.
 | macOS (Apple Silicon, M2) | Verified   |   |
 | Windows         |  Verified   |  https://medium.com/@ayushsharma2267410/installation-of-cloudforet-in-windows-8c4a10c9a65f     |
 
+{{< video src="https://www.youtube.com/embed/HYvSNcKMypM" title="Cloudforet Installation with Minikube">}}
+
 ## Overview
 
 ### Cloudforet-Minikube Architecture
@@ -34,7 +36,7 @@ This is Getting Started Installation guide with minikube.
 
 ## Prerequisites
 - AWS EC2 VM (Intel/AMD/ARM CPU)
- > Recommended instance type: t3.medium (2 cores, 4 GB Memory, **30GB EBS**)
+ > Recommended instance type: t3.large (2 cores, 8 GB Memory, **30GB EBS**)
 - [Docker/Docker Desktop](https://docs.docker.com/engine/install/) 
   - If you don't have Docker installed, minikube will return an error as minikube uses docker as the driver.
   - Highly recommend installing **Docker Desktop** based on your OS.
@@ -50,7 +52,7 @@ Before diving into the Cloudforet Installation process, start minikube by runnin
 
 
 ~~~
-minikube start --driver=docker --memory=4096mb
+minikube start --driver=docker --memory=5000mb
 ~~~
 > If you encounter ```Unable to resolve the current Docker CLI context "default"``` error, check if the docker daemon is running.
 
@@ -58,29 +60,26 @@ minikube start --driver=docker --memory=4096mb
 ## Installation
 You can install the Cloudforet by the following the steps below.
 
-### 1) Setting up Helm Chart Repository
-This command adds Helm repository.
-```bash
-helm repo add cloudforet https://cloudforet-io.github.io/charts 
-```
+> For Cloudforet v1.12.x, we DONOT provide helm charts online. You can download the helm chart from the Cloudforet Github
 
-This command updates repositories basd on latest version of chart repository.
-```bash
-helm repo update
-```
+### 1) Download Helm Chart Repository
+This command wll download Helm repository.
 
-This command list contents of the repository.
 ```bash
-helm search repo
+# Set working directory
+mkdir cloudforet-deployment
+cd cloudforet-deployment
+wget https://github.com/cloudforet-io/charts/releases/download/spaceone-1.12.12/spaceone-1.12.12.tgz
+tar zxvf spaceone-1.12.12.tgz
 ```
 
 ### 2) Create Namespaces
-> If you want to use only one namespace, you don't have to create the `spaceone-plugin` namespace.
+
 ```bash
-kubectl create ns spaceone
+kubectl create ns cloudforet
 ```
 ```bash
-kubectl create ns spaceone-plugin
+kubectl create ns cloudforet-plugin
 ```
 
 
@@ -97,14 +96,15 @@ wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/rbac
 
 Next, execute the following command.
 ```bash
-kubectl apply -f rbac.yaml -n spaceone-plugin
+kubectl apply -f rbac.yaml -n cloudforet-plugin
 ```
 
 ### 4) Install Cloudforet Chart
 
 This command basically let Helm search for the chart named cloudforet in the repository named spaceone. For more information about what chart is, refer to [this](https://helm.sh/docs/topics/charts/).
 ```bash
-helm install cloudforet cloudforet/spaceone -n spaceone --version 1.12.10
+wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/values/release-1-12.yaml -O release-1-12.yaml
+helm install cloudforet spaceone -n cloudforet -f release-1-12.yaml
 ```
 
 After executing the above command, check the status of the pod.
@@ -123,9 +123,6 @@ console-api-v2-rest-7d64bc85dd-987zn      2/2     Running            0          
 cost-analysis-7b9d64b944-xw9qg            1/1     Running            0             59s
 cost-analysis-scheduler-ff8cc758d-lfx4n   0/1     Error              3 (37s ago)   55s
 cost-analysis-worker-559b4799b9-fxmxj     1/1     Running            0             58s
-cost-analysis-worker-559b4799b9-nf5vs     1/1     Running            0             58s
-cost-analysis-worker-559b4799b9-swzw8     1/1     Running            0             58s
-cost-analysis-worker-559b4799b9-x8f4j     1/1     Running            0             58s
 dashboard-b4cc996-mgwj9                   1/1     Running            0             56s
 docs-5fb4cc56c7-68qbk                     1/1     Running            0             59s
 identity-6fc984459d-zk8r9                 1/1     Running            0             56s
@@ -153,7 +150,7 @@ supervisor-scheduler-6744657cb6-tpf78     2/2     Running            0          
 > To execute the commands below, every POD except xxxx-scheduler-yyyy must have a Running status.
 
 ### 5) Initialize the Configuration  
-First, download the [initializer.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/initializer.yaml) file.
+First, download the [initializer.yaml](https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/initializer.yaml) file.
 
 For more information about the initializer, please refer to the [spaceone-initializer](https://github.com/cloudforet-io/spaceone-initializer).
 
@@ -163,7 +160,9 @@ wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/init
 ```
 And execute the following command.
 ```bash
-helm install initializer cloudforet/spaceone-initializer -n spaceone -f initializer.yaml
+wget https://github.com/cloudforet-io/charts/releases/download/spaceone-initializer-1.3.3/spaceone-initializer-1.3.3.tgz
+tar zxvf spaceone-initializer-1.3.3.tgz
+helm install initializer spaceone-initializer -n cloudforet -f initializer.yaml
 ```
 
 ### 6) Set the Helm Values and Upgrade the Chart
@@ -171,7 +170,7 @@ Complete the initialization, you can get the system token from the initializer p
 
 To figure out the pod name for the initializer, run this command first to show all pod names for namespace spaceone.
 ```bash
-kubectl get pods -n spaceone 
+kubectl get pods -n cloudforet 
 ```
 Then, among the pods shown copy the name of the pod that starts with **initialize-spaceone**.
 
@@ -185,9 +184,6 @@ console-api-v2-rest-cb886d687-d7n8t        2/2     Running     0          24m
 cost-analysis-8658c96f8f-88bmh             1/1     Running     0          24m
 cost-analysis-scheduler-67c9dc6599-k8lgx   1/1     Running     0          24m
 cost-analysis-worker-6df98df444-5sjpm      1/1     Running     0          24m
-cost-analysis-worker-6df98df444-77vm7      1/1     Running     0          24m
-cost-analysis-worker-6df98df444-v7wtv      1/1     Running     0          24m
-cost-analysis-worker-6df98df444-wsnw6      1/1     Running     0          24m
 dashboard-84d8969d79-vqhr9                 1/1     Running     0          24m
 docs-6b9479b5c4-jc2f8                      1/1     Running     0          24m
 identity-6d7bbb678f-b5ptf                  1/1     Running     0          24m
@@ -217,7 +213,7 @@ supervisor-scheduler-555d644969-95jxj      2/2     Running     0          24m
 
 Get the token by getting the log information of the pod with the name you found above.
 ```bash
-kubectl logs initialize-spaceone-fsqen-74x7v -n spaceone
+kubectl logs initialize-spaceone-fsqen-74x7v -n cloudforet
 
 ...
 TASK [Print Admin API Key] *********************************************************************************************
@@ -228,7 +224,7 @@ FINISHED [ ok=23, skipped=0 ] **************************************************
 FINISH SPACEONE INITIALIZE
 ```
 
-Create the `values.yaml` file and edit the values. There is only one item that need to be updated.
+Update your helm values file (ex. release-1-12.yaml) and edit the values. There is only one item that need to be updated.
 
 > For EC2 users: put in your EC2 server's public IP instead of 127.0.0.1 for both CONSOLE_API and CONSOLE_API_V2 ENDPOINT.
 
@@ -238,31 +234,30 @@ Create the `values.yaml` file and edit the values. There is only one item that n
 console:
   production_json:
     CONSOLE_API:
-      ENDPOINT: http://127.0.0.1:8081  # http://ec2_public_ip:8081 for EC2 users
+      ENDPOINT: http://localhost:8081  # http://ec2_public_ip:8081 for EC2 users
     CONSOLE_API_V2:
-      ENDPOINT: http://127.0.0.1:8082  # http://ec2_public_ip:8082 for EC2 users
+      ENDPOINT: http://localhost:8082  # http://ec2_public_ip:8082 for EC2 users
 
 global:
   shared_conf:
     TOKEN: 'TOKEN_VALUE_FROM_ABOVE'   # Change the system token
 ```
 
-After editing the `values.yaml` file, upgrade the helm chart.
+After editing the helm values file(ex. release-1-12.yaml), upgrade the helm chart.
 
 
 ```bash
-helm upgrade cloudforet cloudforet/spaceone -n spaceone -f values.yaml
+helm upgrade cloudforet spaceone -n cloudforet -f release-1-12.yaml
 ```
 
-After upgrading, delete the pods related to the namespace named spaceone.
-After upgrading, delete the pods in spaceone namespace that have the label app.kubernetes.io/instance and value cloudforet. 
+After upgrading, delete the pods in cloudforet namespace that have the label app.kubernetes.io/instance and value cloudforet. 
 ```bash
-kubectl delete po -n spaceone -l app.kubernetes.io/instance=cloudforet
+kubectl delete po -n cloudforet -l app.kubernetes.io/instance=cloudforet
 ```
 
 ### 7) Check the status of the pods
 ```bash
-kubectl get pod -n spaceone
+kubectl get pod -n cloudforet
 ```
 
 If all pods are in `Running` state, the setup is complete.
@@ -274,13 +269,13 @@ We can use **kubectl port-forward** instead.
 Run the following commands for port forwarding.
 ~~~bash
 # CLI commands
-kubectl port-forward -n spaceone svc/console 8080:80 --address='0.0.0.0' &
+kubectl port-forward -n cloudforet svc/console 8080:80 --address='0.0.0.0' &
 ~~~
 ~~~bash
-kubectl port-forward -n spaceone svc/console-api 8081:80 --address='0.0.0.0' &
+kubectl port-forward -n cloudforet svc/console-api 8081:80 --address='0.0.0.0' &
 ~~~
 ~~~bash
-kubectl port-forward -n spaceone svc/console-api-v2-rest 8082:80 --address='0.0.0.0' &
+kubectl port-forward -n cloudforet svc/console-api-v2-rest 8082:80 --address='0.0.0.0' &
 ~~~
 
 ## Start Cloudforet
