@@ -95,7 +95,7 @@ Workspace Member의 경우 '워크스페이스 내 모든 사용자 접근 가�
 
 ## 프로젝트 세부 관리하기
 
-* [멤버 초대/관리](ko/docs/guides/project/member/)
+* [멤버 초대/관리](/ko/docs/guides/project/member/)
 * 얼럿 생성/관리
   * [얼럿](/ko/docs/guides/alert-manager/alert/)
   * [웹훅](/ko/docs/guides/alert-manager/webhook/)

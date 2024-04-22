@@ -12,9 +12,9 @@ title: 권한 체계
 
 총 세 개의 타입을 기준으로 역할이 구성됩니다.
 
-* Admin: 도메인 설정을 포함하여 모든 워크스페이스에 대한 접근 권한이 있으며, Admin 모드를 포함합니다.
-* Workspace Owner: 워크스페이스 내의 모든 프로젝트에 대한 접근 권한이 있습니다.
-* Workspace Member: 워크스페이스 내의 초대받은 프로젝트에만 접근 권한이 있습니다.
+* `Admin`: 도메인 설정을 포함하여 모든 워크스페이스에 대한 접근 권한이 있으며, Admin 모드를 포함합니다.
+* `Workspace Owner`: 워크스페이스 내의 모든 프로젝트에 대한 접근 권한이 있습니다.
+* `Workspace Member`: 워크스페이스 내의 초대받은 프로젝트에만 접근 권한이 있습니다.
 
 ![](/guides/admin/iam_role/role-type-ko.png)
 
