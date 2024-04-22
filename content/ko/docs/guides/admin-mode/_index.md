@@ -13,7 +13,7 @@ title: 관리자 가이드
 
 상단 맨 우측 'Admin' 토글을 클릭하여 Admin 모드로 전환할 수 있습니다.
 
-![](/guides/admin/admin_mode/admin-mode-01-ko.png)![](/guides/admin/admin_mode/admin-mode-02-ko.png)
+![](/guides/admin/admin_mode/admin-mode-01-ko.png)![](/guides/admin/admin_mode/admin-mode-03-ko.png)
 
 {{<alert>}}
 ※ Admin모드는 Admin의 역할(Role) 타입을 가진 사용자만 접근할 수 있으며,

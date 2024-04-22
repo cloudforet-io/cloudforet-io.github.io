@@ -23,3 +23,7 @@ title: 멤버
 * `초대된 사용자만 접근 가능`한 프로젝트의 경우, 해당 워크스페이스에 있는 사용자 중에서 초대하여 접근 권한을 부여할 수 있습니다.
 
 ![](/guides/project/project-member-02-ko.png)![](/guides/project/project-member-invite-ko.png)
+
+{{<alert>}}
+워크스페이스의 전체 사용자 관리에 대한 내용은 [이곳](/ko/docs/guides/iam/iam-user/)에서 확인할 수 있습니다.
+{{</alert>}}
