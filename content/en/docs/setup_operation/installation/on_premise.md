@@ -28,87 +28,56 @@ It guides you on how to install Cloudforet using Helm chart. Related information
 ### 1. Add Helm Repository
 
 ```shell
-helm repo add cloudforet https://cloudforet-io.github.io/charts 
-helm repo update 
-helm search repo
+# Set working directory
+mkdir cloudforet-deployment
+cd cloudforet-deployment
+wget https://github.com/cloudforet-io/charts/releases/download/spaceone-1.12.12/spaceone-1.12.12.tgz
+tar zxvf spaceone-1.12.12.tgz
 ```
 
 ### 2. Create Namespaces
 ```shell
-kubectl create ns spaceone 
-kubectl create ns spaceone-plugin
+kubectl create ns cloudforet 
+kubectl create ns cloudforet-plugin
 ```
 
 > **Cautions of creation namespace**  
-If you need to use only one namespace, you do not need to create the `spaceone-plugin` namespace.  
-If changing the Cloudforet namespace, please refer to the following link. [Change K8S Namespace](../../configuration/change_k8s_namespace)
+If you need to use only one namespace, you do not need to create the `cloudforet-plugin` namespace.  
+After changing the Cloudforet namespace, please refer to the following link. [Change K8S Namespace](../../configuration/change_k8s_namespace)
 
 ### 3. Create Role and RoleBinding
 
-In a general situation where namespaces are not merged, supervisor distributes plugins from `spaceone` namespace to `spaceone-plugin` namespace, so roles and rolebindings are required as follows. Check the contents at the following link. [https://github.com/cloudforet-io/charts/blob/master/examples/rbac.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/rbac.yaml)
+First, download the [rbac.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/rbac.yaml) file.
 
-Details of the authority are as follows. You can edit the file to specify permissions if needed.
 
--   Create file
-    
-    ``` shell
-    cat <<EOF> rbac.yaml
-    ---
-    apiVersion: rbac.authorization.k8s.io/v1
-    kind: Role
-    metadata:
-      name: supervisor-plugin-control-role
-      namespace: spaceone-plugin 
-    rules:
-    - apiGroups:
-      - "*"
-      resources:
-      - replicaSets
-      - pods
-      - deployments
-      - services
-      - endpoints
-      verbs:
-      - get
-      - list
-      - watch
-      - create
-      - delete
-    ---
-    apiVersion: rbac.authorization.k8s.io/v1
-    kind: RoleBinding
-    metadata:
-      name: supervisor-role-binding
-      namespace: spaceone-plugin 
-    roleRef:
-      apiGroup: rbac.authorization.k8s.io
-      kind: Role
-      name: supervisor-plugin-control-role
-    subjects:
-    - kind: ServiceAccount
-      name: default
-      namespace: spaceone
-    EOF
-    ```
-    
+The rbac.yaml file basically serves as a means to regulate access to computer or network resources based on the roles of individual users. For more information about RBAC Authorization in Kubernetes, refer to [this](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-To apply the permission, you can reflect it with the command below. If you have changed the namespace, enter the changed namespace. (Be careful with the namespace.)
+If you are used to downloading files via command-line, run this command to download the file. 
+```bash
+wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/rbac.yaml -O rbac.yaml
+```
 
-```shell
-kubectl apply -f rbac.yaml -n spaceone-plugin
+Next, execute the following command.
+```bash
+kubectl apply -f rbac.yaml -n cloudforet-plugin
 ```
 
 ### 4. Install
 
-Proceed with the installation using the helm command below.
+Download default YAML file for helm chart.
 
-```shell
-helm install cloudforet cloudforet/spaceone -n spaceone
+```bash
+wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/values/release-1-12.yaml -O release-1-12.yaml
+helm install cloudforet spaceone -n cloudforet -f release-1-12.yaml
 ```
 
-After entering the command, you can see that pods are uploaded in the `spaceone` namespace as shown below.
+After executing the above command, check the status of the pod.
+
+> Scheduler pods are in `CrashLoopBackOff` or `Error` state. This is because the setup is not complete.
+
+
 ```shell
-kubectl get pod -n spaceone
+kubectl get pod -n cloudforet
 
 NAME                                       READY   STATUS             RESTARTS      AGE
 board-64f468ccd6-v8wx4                     1/1     Running            0             4m16s
@@ -148,94 +117,112 @@ statistics-worker-5f9994d85d-ftpwf         1/1     Running            0         
 supervisor-scheduler-74c84646f5-rw4zf      2/2     Running            0             4m16s
 ```
 
-If some of the scheduler pods are having problems and the rest of the pods are up, you're in the right state for now. The scheduler problem requires an upgrade operation using the `values.yaml` file after issuing a token through the initializer.
+> To execute the commands below, every POD except xxxx-scheduler-yyyy must have a Running status.
 
-### 5. Initialize the configuration
+### 5) Initialize the Configuration  
+First, download the [initializer.yaml](https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/initializer.yaml) file.
 
-This is a task for Cloudforet's domain creation. A root domain is created and a root token is issued through the initializer.
+For more information about the initializer, please refer to the [spaceone-initializer](https://github.com/cloudforet-io/spaceone-initializer).
 
-spaceone-initializer can be found on the following cloudforet-io github site. [https://github.com/cloudforet-io/spaceone-initializer](https://github.com/cloudforet-io/spaceone-initializer)
-
-The initializer.yaml file to be used here can be found at the following link. [https://github.com/cloudforet-io/charts/blob/master/examples/initializer.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/initializer.yaml)
-
-You can change the domain name, domain_owner.id/password, etc. in the initializer.yaml file.
-
--   Create file
-    
-    ```shell
-    cat <<EOF> filename.yaml
-    main:
-        import:
-            - /root/spacectl/apply/root_domain.yaml
-            - /root/spacectl/apply/create_managed_repository.yaml
-            - /root/spacectl/apply/user_domain.yaml
-            - /root/spacectl/apply/create_role.yaml
-            - /root/spacectl/apply/add_statistics_schedule.yaml
-            - /root/spacectl/apply/print_api_key.yaml
-        var:
-            domain:
-                root: root
-                user: spaceone
-            default_language: ko
-            default_timezone: Asia/Seoul
-            domain_owner:
-                id: admin
-                password: Admin123!@# # Change your password
-            user:
-                id: system_api_key
-    EOF
-    ```
-
-After editing the file, execute the initializer with the command below.
-```shell
-helm install initializer cloudforet/spaceone-initializer -n spaceone -f initializer.yaml
+If you are used to downloading files via command-line, run this command to download the file.
+```bash
+wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/initializer.yaml -O initializer.yaml
+```
+And execute the following command.
+```bash
+wget https://github.com/cloudforet-io/charts/releases/download/spaceone-initializer-1.3.3/spaceone-initializer-1.3.3.tgz
+tar zxvf spaceone-initializer-1.3.3.tgz
+helm install initializer spaceone-initializer -n cloudforet -f initializer.yaml
 ```
 
-After execution, an initializer pod is created in the specified `spaceone` namespace and domain creation is performed. You can check the log when the pod is in `Completed` state.
+### 6) Set the Helm Values and Upgrade the Chart
+Complete the initialization, you can get the system token from the initializer pod logs.
 
-### 6. Set the Helm Values and Upgrade the chart
+To figure out the pod name for the initializer, run this command first to show all pod names for namespace spaceone.
+```bash
+kubectl get pods -n cloudforet 
+```
+Then, among the pods shown copy the name of the pod that starts with **initialize-spaceone**.
 
-To customize the default installed helm chart, the `values.yaml` file is required.
+```bash
+NAME                                       READY   STATUS      RESTARTS   AGE
+board-5997d5688-kq4tx                      1/1     Running     0          24m
+config-5947d845b5-4ncvn                    1/1     Running     0          24m
+console-7fcfddbd8b-lbk94                   1/1     Running     0          24m
+console-api-599b86b699-2kl7l               2/2     Running     0          24m
+console-api-v2-rest-cb886d687-d7n8t        2/2     Running     0          24m
+cost-analysis-8658c96f8f-88bmh             1/1     Running     0          24m
+cost-analysis-scheduler-67c9dc6599-k8lgx   1/1     Running     0          24m
+cost-analysis-worker-6df98df444-5sjpm      1/1     Running     0          24m
+dashboard-84d8969d79-vqhr9                 1/1     Running     0          24m
+docs-6b9479b5c4-jc2f8                      1/1     Running     0          24m
+identity-6d7bbb678f-b5ptf                  1/1     Running     0          24m
+initialize-spaceone-fsqen-74x7v            0/1     Completed   0          98m
+inventory-64d6558bf9-v5ltj                 1/1     Running     0          24m
+inventory-scheduler-69869cc5dc-k6fpg       1/1     Running     0          24m
+inventory-worker-5649876687-zjxnn          1/1     Running     0          24m
+marketplace-assets-5fcc55fb56-wj54m        1/1     Running     0          24m
+mongodb-b7f445749-2sr68                    1/1     Running     0          101m
+monitoring-799cdb8846-25w78                1/1     Running     0          24m
+notification-c9988d548-gxw2c               1/1     Running     0          24m
+notification-scheduler-7d4785fd88-j8zbn    1/1     Running     0          24m
+notification-worker-586bc9987c-kdfn6       1/1     Running     0          24m
+plugin-79976f5747-9snmh                    1/1     Running     0          24m
+plugin-scheduler-584df5d649-cflrb          1/1     Running     0          24m
+plugin-worker-58d5cdbff9-qk5cp             1/1     Running     0          24m
+redis-b684c5bbc-528q9                      1/1     Running     0          24m
+repository-64fc657d4f-cbr7v                1/1     Running     0          24m
+secret-74578c99d5-rk55t                    1/1     Running     0          24m
+spacectl-8cd55f46c-xw59j                   1/1     Running     0          24m
+statistics-767d84bb8f-rrvrv                1/1     Running     0          24m
+statistics-scheduler-65cc75fbfd-rsvz7      1/1     Running     0          24m
+statistics-worker-7b6b7b9898-lmj7x         1/1     Running     0          24m
+supervisor-scheduler-555d644969-95jxj      2/2     Running     0          24m
+```
+> To execute the below kubectl logs command, the status of POD(Ex: here initialize-spaceone-fsqen-74x7v) should be Completed . Proceeding with this while the POD is INITIALIZING will give errors
 
-A typical example of a `values.yaml` file can be found at the following link. [https://github.com/cloudforet-io/charts/blob/master/examples/values/all.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/values/all.yaml)
+Get the token by getting the log information of the pod with the name you found above.
+```bash
+kubectl logs initialize-spaceone-fsqen-74x7v -n cloudforet
 
-To solve the scheduler problem, check the pod log in Completed status as shown below to obtain an admin token.
-
-```shell
-kubectl logs initializer-5f5b7b5cdc-abcd1 -n spaceone
-
-(omit)
+...
 TASK [Print Admin API Key] *********************************************************************************************
-"{TOKEN}"
+"TOKEN_SHOWN_HERE"
 
 FINISHED [ ok=23, skipped=0 ] ******************************************************************************************
 
 FINISH SPACEONE INITIALIZE
 ```
 
-Create a `values.yaml` file using the token value obtained from the initializer pod log. Inside the file, you can declare app settings, namespace changes, kubernetes options changes, etc.
+Update your helm values file (ex. release-1-12.yaml) and edit the values. There is only one item that need to be updated.
 
-The following describes how to configure the console domain in the `values.yaml` file and how to use the issued token as a global config.
+> For EC2 users: put in your EC2 server's public IP instead of 127.0.0.1 for both CONSOLE_API and CONSOLE_API_V2 ENDPOINT.
+
+* TOKEN
 
 ```yaml
 console:
   production_json:
-    # If you don't have a service domain, you refer to the following 'No Domain & IP Access' example.
     CONSOLE_API:
-      ENDPOINT: https://console.api.example.com       # Change the endpoint
+      ENDPOINT: https://console-v1.api.example.com  # Change to your domain (example.com)
     CONSOLE_API_V2:
-      ENDPOINT: https://console-v2.api.example.com    # Change the endpoint
+      ENDPOINT: https://console-v2.api.example.com  # Change to your domain (example.com)
 
 global:
   shared_conf:
-    TOKEN: '{TOKEN}'                                  # Change the system token
+    TOKEN: 'TOKEN_VALUE_FROM_ABOVE'   # Change the system token
 ```
 
-After setting the `values.yaml` file as above, execute the helm upgrade operation with the command below. After the upgrade is finished, delete all app instances related to cloudforet so that all pods are restarted.
+After editing the helm values file(ex. release-1-12.yaml), upgrade the helm chart.
 
-```shell
-helm upgrade cloudforet cloudforet/spaceone -n spaceone -f values.yaml
-kubectl delete po -n spaceone -l app.kubernetes.io/instance=cloudforet
+
+```bash
+helm upgrade cloudforet spaceone -n cloudforet -f release-1-12.yaml
+```
+
+After upgrading, delete the pods in cloudforet namespace that have the label app.kubernetes.io/instance and value cloudforet. 
+```bash
+kubectl delete po -n cloudforet -l app.kubernetes.io/instance=cloudforet
 ```
 
 ### 7. Check the status of the pods
@@ -243,7 +230,7 @@ kubectl delete po -n spaceone -l app.kubernetes.io/instance=cloudforet
 Check the status of the pod with the following command. If all pods are in `Running` state, the installation is complete.
 
 ```shell
-kubectl get pod -n spaceone
+kubectl get pod -n cloudforet
 ```
 
 ### 8. Configuration Ingress
@@ -254,135 +241,167 @@ Kubernetes Ingress is a resource that manages connections between services in a 
 An ingress controller is required to use ingress in an on-premise environment. Here is a link to the installation guide for Nginx Ingress Controller supported by Kubernetes.  
 > - Nginx Ingress Controller : [https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/)
 
-#### Generate self-managed SSL
+#### Case 1) cert-manager with Letsencrypt
+
+If you want to use a free SSL certificate, you can use cert-manager with Letsencrypt.
+
+> - Cert-manager & Letsencrypt : [https://dev.to/choonho/install-cert-manager-lets-encrypt-443b](https://dev.to/choonho/install-cert-manager-lets-encrypt-443b)
+
+* file: cloudforet-ingress.yaml
+ 
+```yaml
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: console-ingress
+  namespace: cloudforet
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+  - hosts:
+    - console.example.com
+    - console-v1.api.example.com
+    - console-v2.api.example.com
+    - webhook.api.example.com
+    secretName: console-tls
+  rules:
+    - host: "console.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console
+                port:
+                  number: 80
+    - host: "console-v1.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console-api
+                port:
+                  number: 80
+    - host: "console-v2.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console-api-v2-rest
+                port:
+                  number: 80
+    - host: "webhook.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: monitoring-rest
+                port:
+                  number: 80
+```
+
+Crete the prepared ingress in the `cloudforet` namespace with the command below.
+
+```shell
+kubectl apply -f cloudforet-ingress.yaml -n cloudforet
+```
+
+#### Case 2) Generate self-managed SSL
 
 Create a private ssl certificate using the openssl command below. (If an already issued certificate exists, you can create a Secret using the issued certificate. For detailed instructions, please refer to the following link. [Create secret by exist cert](../../configuration/create_secret_by_exist_cert))
 
--   console
-    
-    -   *.{domain}
-        
+       
 ```shell
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout console_ssl.pem -out console_ssl.csr -subj "/CN=*.{domain}/O=spaceone" -addext "subjectAltName = DNS:*.{domain}"
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout console_ssl.pem -out console_ssl.csr -subj "/CN=console.example.com/O=cloudforet" -addext "subjectAltName = DNS:*.api.example.com"
 ```
-
--   api
-    
-    -   *.api.{domain}
-
-```shell
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout api_ssl.pem -out api_ssl.csr -subj "/CN=*.api.{domain}/O=spaceone" -addext "subjectAltName = DNS:*.api.{domain}"
-```        
 
 #### Create secret for ssl
 
 If the certificate is ready, create a secret using the certificate file.
 
 ```shell
-kubectl create secret tls console-ssl --key console_ssl.pem --cert console_ssl.csr
-```
-
-```shell
-kubectl create secret tls api-ssl --key api_ssl.pem --cert api_ssl.csr
+kubectl create secret tls console-tls --key console_ssl.pem --cert console_ssl.csr
 ```
 
 #### Create Ingress
 
-Prepare the two ingress files below. These ingress files can be downloaded from the following link.
-
--   console_ingress.yaml : [https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/console_ingress.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/console_ingress.yaml)
-    
--   rest_api_ingress.yaml : [https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/rest_api_ingress.yaml](https://github.com/cloudforet-io/charts/blob/master/examples/ingress/on_premise/rest_api_ingress.yaml)
-    
 
 Each file is as follows. Change the hostname inside the file to match the domain of the certificate you created.
 
--   console
-    ```shell 
-    cat <<EOF> console_ingress.yaml
-    ---
-    apiVersion: networking.k8s.io/v1
-    kind: Ingress
-    metadata:
-    name: console-ingress
-    namespace: spaceone
-    spec:
-    ingressClassName: nginx
-    tls:
-        - hosts:
-            - "console.example.com"  # Change the hostname
-        secretName: spaceone-tls
-    rules:
-        - host: "console.example.com"  # Change the hostname
-        http:
-            paths:
-            - path: /
-                pathType: Prefix
-                backend:
-                service:
-                    name: console 
-                    port:
-                    number: 80
-    EOF
-    ```      
-    
--   rest_api
-
-    ```shell
-    cat <<EOF> rest_api_ingress.yaml
-    ---
-    apiVersion: networking.k8s.io/v1
-    kind: Ingress
-    metadata:
-    name: console-api-ingress
-    namespace: spaceone
-    spec:
-    ingressClassName: nginx
-    tls:
-        - hosts:
-            - "*.api.example.com"  # Change the hostname
-        secretName: spaceone-tls
-    rules:
-        - host: "console.api.example.com"  # Change the hostname
-        http:
-            paths:
-            - path: /
-                pathType: Prefix
-                backend:
-                service:
-                    name: console-api
-                    port:
-                    number: 80
-    ---
-    apiVersion: networking.k8s.io/v1
-    kind: Ingress
-    metadata:
-    name: console-api-v2-ingress
-    namespace: spaceone
-    spec:
-    ingressClassName: nginx
-    tls:
-        - hosts:
-            - "*.api.example.com"  # Change the hostname
-        secretName: spaceone-tls
-    rules:
-        - host: "console-v2.api.example.com"  # Change the hostname
-        http:
-            paths:
-            - path: /
-                pathType: Prefix
-                backend:
-                service:
-                    name: console-api-v2-rest
-                    port:
-                    number: 80
-    EOF
-    
-Create the prepared ingress in the `spaceone` namespace with the command below.
+```yaml
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: console-ingress
+  namespace: cloudforet
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+  - hosts:
+    - console.example.com
+    - console-v1.api.example.com
+    - console-v2.api.example.com
+    - webhook.api.example.com
+    secretName: console-tls
+  rules:
+    - host: "console.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console
+                port:
+                  number: 80
+    - host: "console-v1.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console-api
+                port:
+                  number: 80
+    - host: "console-v2.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: console-api-v2-rest
+                port:
+                  number: 80
+    - host: "webhook.api.example.com"  # Change the hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: monitoring-rest
+                port:
+                  number: 80
+```
+   
+Create the prepared ingress in the `cloudforet` namespace with the command below.
 
 ```shell 
-kubectl apply -f console_ingress.yaml -n spaceone
-kubectl apply -f rest_api_ingress.yaml -n spaceone
+kubectl apply -f cloudforet-ingress.yaml -n cloudforet
 ```
 
 #### Connect to the Console
