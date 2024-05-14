@@ -101,7 +101,8 @@ kubectl apply -f rbac.yaml -n cloudforet-plugin
 
 ### 4) Install Cloudforet Chart
 
-This command basically let Helm search for the chart named cloudforet in the repository named spaceone. For more information about what chart is, refer to [this](https://helm.sh/docs/topics/charts/).
+Download default YAML file for helm chart.
+
 ```bash
 wget https://raw.githubusercontent.com/cloudforet-io/charts/master/examples/values/release-1-12.yaml -O release-1-12.yaml
 helm install cloudforet spaceone -n cloudforet -f release-1-12.yaml
@@ -112,7 +113,7 @@ After executing the above command, check the status of the pod.
 > Scheduler pods are in `CrashLoopBackOff` or `Error` state. This is because the setup is not complete.
 
 ```bash
-kubectl get pod -n spaceone
+kubectl get pod -n cloudforet
 
 NAME                                      READY   STATUS             RESTARTS      AGE
 board-5746fd9657-vtd45                    1/1     Running            0             57s
