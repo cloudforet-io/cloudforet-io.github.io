@@ -31,6 +31,12 @@ menu:
                     <p class="description">Docker-Sponsored Open Source Program</p>
                 </li>
             </ul>
+            <ul class="sponsors-list">
+                <li class="openup">
+                    <figure>openup</figure>
+                    <p class="description">Offline Community in South Korea</p>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="section sponsors">
