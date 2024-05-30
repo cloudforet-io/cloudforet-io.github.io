@@ -95,7 +95,13 @@
                         color: transparent;
                     }
                 }
-                 &.samsung {
+                &.openup {
+                    figure {
+                        background-image: url("/images/community/logo-openup.png");
+                        color: transparent;
+                    }
+                }
+                &.samsung {
                     figure {
                         background-image: url("/images/community/logo-samsung.png");
                         color: transparent;
