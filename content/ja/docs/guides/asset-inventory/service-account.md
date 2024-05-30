@@ -1,132 +1,117 @@
 ---
-title: "サービスアカウント"
-linkTitle: "サービスアカウント"
+linkTitle: サービスアカウント
 weight: 5
-date: 2022-10-12
-description: >
-    **サービスアカウント**では、各クラウドサービスのアカウントを手軽に統合・管理・追跡することができます。
+date: '2022-10-12T00:00:00.000Z'
+description: |
+  **サービスアカウント**では、各クラウドサービスのアカウントを手軽に統合・管理・追跡することができます。
+title: サービスアカウント
 ---
 
 ## サービスアカウントを追加する
 
-`General Account`,`Trusted Account`2つのタイプのアカウントが作成できます。	
+`General Account`,`Trusted Account`2つのタイプのアカウントが作成できます。
 
 {{<alert>}}
-- __`General Account`__ :
-    
-  - オプション1）個別暗号化キーでアカウントを直接登録することができます。	
-    
-  - オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。	
-    
-  - オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。	
-    
-- __`Trusted Account`__:
-    
-  - `General Account`とアタッチできる`Trusted Account`を作成することができます。
-  
-  - アタッチされたTrustedAccountの暗号化キーはGeneralAccountがリソースにアクセスするとき参照されます。
-{{</alert>}}
 
+* **`General Account`** :
+  * オプション1）個別暗号化キーでアカウントを直接登録することができます。
+  * オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。
+  * オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。
+* **`Trusted Account`**:
+  * `General Account`とアタッチできる`Trusted Account`を作成することができます。
+  * アタッチされたTrustedAccountの暗号化キーはGeneralAccountがリソースにアクセスするとき参照されます。
+    {{</alert>}}
+
+<br><br>
 
 ### General Accountを作成する
 
-(1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
+(1) \[アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/ja/docs/guides/asset-inventory/service-account-img/service-account-provider-menu-2.png)
+(1-1) General Accountを選択します。
 
-(2) [追加]ボタンをクリックします。
+![](/guides/asset_inventory/quick-start/create-service-account-01-jp.png)
 
-![service-account-add-button](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
+(2) \[作成]ボタンをクリックします。
+
+![](/guides/asset_inventory/quick-start/create-collector-01-jp.png)
 
 (3) サービスアカウントの作成フォームを作成します。
 
-(3-1) `General Account`を選択します。	
+![](/guides/asset_inventory/quick-start/create-service-account-03-jp.png)
 
-![service-account-select-general-accout](/ja/docs/guides/asset-inventory/service-account-img/service-account-select-general-accout.png)
+(3-1) 暗号化キーの情報を入力します。
 
-(3-2) 基本情報を入力します。
+* オプション1）個別暗号化キーでアカウントを直接登録することができます。![](/guides/asset_inventory/quick-start/create-service-account-04-jp.png)
+* オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。
 
-![service-account-add-base-info](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-base-info.png)
+> AWSの場合、既存の`Trusted Account`をアタッチすることで簡単にAssume Roleを作成することができます。特定の`Trusted Account`を選択すると、その情報が自動的に適用されますので、残りの情報を入力するだけで良いです。![](/guides/asset_inventory/service-account/create-general-account-01-jp.png)
 
-(3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
+* オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。![](/guides/asset_inventory/service-account/create-general-account-02-jp.png)
 
-![service-account-connect-project](/ja/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
+(4) \[保存]ボタンをクリックすると完了します。
 
-(3-4) 暗号化キーの情報を入力します。
-
-- オプション1）個別暗号化キーでアカウントを直接登録することができます。	
-![service-account-add-key-1-1](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-1.png)
-    
-- オプション2) 既存の`Trusted Account`の暗号化キーを接続して登録することができます。
- > AWSの場合、既存の`Trusted Account`をアタッチすることで簡単にAssume Roleを作成することができます。特定の`Trusted Account`を選択すると、その情報が自動的に適用されますので、残りの情報を入力するだけで良いです。
-![service-account-add-key-1-2](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-2.png)	
-    
-- オプション3）状況によって、別途の暗号化キーなしでも新規アカウントを作成することができます。
-![service-account-add-key-1-3](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-key-1-3.png)	
-
-
-(4) [保存]ボタンをクリックすると完了します。
-
-
+<br>
 
 ### Trusted Accountを作成する
 
-(1) [アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
+(1) \[アセットインベントリー > サービスアカウント]ページで追加するクラウドサービスを選択します。
 
-![service-account-provider-menu](/ja/docs/guides/asset-inventory/service-account-img/service-account-provider-menu.png)
+(1-1) `Trusted Account`を選択します。
 
-(2) [追加]ボタンをクリックします。
+![](/guides/asset_inventory/service-account/create-trusted-account-01-jp.png)
 
-![service-account-add-button](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-button.png)
+(2) \[作成]ボタンをクリックします。
+
+![](/guides/asset_inventory/service-account/create-trusted-account-02-en.png)
 
 (3) サービスアカウントの作成フォームを作成します。
 
-(3-1) `Trusted Account`を選択します。	
+(3-1) 基本情報を入力します。
 
-![service-account-select-general-accout](/ja/docs/guides/asset-inventory/service-account-img/service-account-select-general-accout.png)
+![](/guides/asset_inventory/service-account/create-trusted-account-03-jp.png)
 
-(3-2) 基本情報を入力します。
+(3-2) 暗号化キーの情報を入力します。
 
-![service-account-add-base-info-2-2](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-base-info-2-2.png)
+![](/guides/asset_inventory/service-account/create-trusted-account-04-jp.png)
 
-(3-3) 当該サービスアカウントに従ってリソースを収集するプロジェクトを指定します。
+(4) \[保存]ボタンをクリックすると完了します。
 
-![service-account-connect-project](/ja/docs/guides/asset-inventory/service-account-img/service-account-connect-project.png)
+<br><br>
 
-(3-4) 暗号化キーの情報を入力します。
+## サービスアカウントを照会
 
-![service-account-add-key-2-2](/ja/docs/guides/asset-inventory/service-account-img/service-account-add-key-2-2.png)
+作成されたサービスアカウントの一覧表を照会することができ、特定アカウントをクリックすると詳細情報を確認することができます。
 
-(4) [保存]ボタンをクリックすると完了します。
+![](/guides/asset_inventory/service-account/viewing-service-account-01-jp.png)
 
+<br><br>
 
-## サービスアカウントを照会	
+## サービスアカウントを編集
 
-作成されたサービスアカウントの一覧表を照会することができ、特定アカウントをクリックすると詳細情報を確認することができます。	
+編集したいサービスアカウントページに入ります。
 
-![service-account-view-list](/ja/docs/guides/asset-inventory/service-account-img/service-account-view-list.png)
+![](/guides/asset_inventory/service-account/edit-service-account-01-jp.png)
 
-
-## サービスアカウントを編集		
-
-![service-account-detail-page](/ja/docs/guides/asset-inventory/service-account-img/service-account-detail-page.png)
+<br>
 
 ### 各項目の内容を編集する
 
 「編集」ボタンを押して各項目の内容を編集することができます。
 
-![service-account-edit-btn](/ja/docs/guides/asset-inventory/service-account-img/service-account-edit-btn.png)
-![service-account-edit](/ja/docs/guides/asset-inventory/service-account-img/service-account-edit.png)
+![](/guides/asset_inventory/service-account/edit-service-account-02-jp.png)![](/guides/asset_inventory/service-account/edit-service-account-03-jp.png)
 
 
-## サービスアカウントを削除	
+<br><br>
 
-リストから削除したいサービスアカウントを選択します。	
+## サービスアカウントを削除
+
+リストから削除したいサービスアカウントを選択します。
 
 削除アイコンボタンをクリックすると、該当するサービスアカウントを削除することができます。
 
-![service-account-delete-btn](/ja/docs/guides/asset-inventory/service-account-img/service-account-delete-btn.png)
+![](/guides/asset_inventory/service-account/removing-service-account-01-jp.png)
 
 サービスアカウントが`Trusted Account`タイプで、複数の`General Account`にアタッチされている場合は削除することができません	。
 
-![service-account-cannot-delete](/ja/docs/guides/asset-inventory/service-account-img/service-account-cannot-delete.png)
+![](/guides/asset_inventory/service-account/removing-service-account-02-jp.png)

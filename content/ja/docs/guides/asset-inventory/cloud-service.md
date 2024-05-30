@@ -1,10 +1,10 @@
 ---
-title: "クラウドサービス"
-linkTitle: "クラウドサービス"
+linkTitle: クラウドサービス
 weight: 2
-date: 2022-06-07
+date: '2022-06-07T00:00:00.000Z'
 description: >
-    [**コレクター**](/ja/docs/guides/asset-inventory/collector)によって収集されたさまざまなクラウドリソースを統合的に照会して、利用状況を把握することができます。
+  [**コレクター**](/ja/docs/guides/asset-inventory/collector)によって収集されたさまざまなクラウドリソースを統合的に照会して、利用状況を把握することができます。
+title: クラウドサービス
 ---
 
 ## クラウドサービス一覧を照会する
@@ -23,14 +23,13 @@ description: >
 
 サービス分類とリージョンフィルターを設定すると、さらに詳細な条件検索が可能です。
 
-(1) [設定]ボタンをクリックすると、[フィルター設定]モダールウィンドウが表示されます。
+(1) \[設定]ボタンをクリックすると、\[フィルター設定]モダールウィンドウが表示されます。
 
 ![cloud-service-filter-button](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-button.png)
 
-(2) 設定したいフィルターを選択して[確認]ボタンをクリックすると、適用されます。
+(2) 設定したいフィルターを選択して\[確認]ボタンをクリックすると、適用されます。
 
 ![cloud-service-filter-modal](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-filter-modal.png)
-
 
 ## クラウドサービスを確認する
 
@@ -50,7 +49,7 @@ description: >
 
 **詳細検索**に関する詳細については、[こちら](/ja/docs/guides/advanced/search)をご参考にしてください｡
 
-[Excel]アイコンをクリックしてリソース一覧を[Excelファイルでエクスポート](/ja/docs/guides/advanced/excel-export)、または[設定]アイコンをクリックして[テーブルフィールド個人化](/ja/docs/guides/advanced/custom-table)を実行できます。
+\[Excel]アイコンをクリックしてリソース一覧を[Excelファイルでエクスポート](/ja/docs/guides/advanced/excel-export)、または\[設定]アイコンをクリックして[テーブルフィールド個人化](/ja/docs/guides/advanced/custom-table)を実行できます。
 
 ![cloud-sevice-detail-full-page](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-sevice-detail-full-page.png)
 
@@ -60,7 +59,7 @@ description: >
 
 ![cloud-service-single-select](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-single-select.png)
 
-さらに詳細な情報は、右側の[チャートを見る]ボタンをクリックすると確認できます。
+さらに詳細な情報は、右側の\[チャートを見る]ボタンをクリックすると確認できます。
 
 ![cloud-service-chart-modal](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-chart-modal.png)
 
@@ -70,7 +69,7 @@ description: >
 
 (1) コンソールに接続するクラウドリソースを選択します。
 
-(2) [コンソール接続]ボタンをクリックします。
+(2) \[コンソール接続]ボタンをクリックします。
 
 ![cloud-service-connect-console](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-connect-console.png)
 
@@ -84,11 +83,11 @@ description: >
 
 クラウドリソース一覧で確認したい項目を選択すると、その下に当該リソースに対する情報が表示されます。
 
-- [詳細情報](#クラウド-リソース-詳細-情報-確認する)
-- [タグ](#クラウド-リソース-タグ-管理する)
-- [関連メンバー](#クラウド-リソース-関連-メンバー-確認する)
-- [変更記録](#クラウド-リソース-関連-メンバー-確認する)
-- [モニタリング](#クラウド-リソース-モニタリング-情報-確認する)
+* [詳細情報](#クラウド-リソース-詳細-情報-確認する)
+* [タグ](#クラウド-リソース-タグ-管理する)
+* [関連メンバー](#クラウド-リソース-関連-メンバー-確認する)
+* [変更記録](#クラウド-リソース-関連-メンバー-確認する)
+* [モニタリング](#クラウド-リソース-モニタリング-情報-確認する)
 
 ![cloud-resource-single-select](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-resource-single-select.png)
 
@@ -98,8 +97,8 @@ description: >
 
 ここに表示される情報は、**基本タブ**と**追加情報タブ**に分けられます。
 
-- **基本タブ**: クラウドリソース詳細情報に基本的に提供さり[基本情報]、[ソースデータ]タブです。
-- **追加情報タブ**: 基本タブを除いたすべてのタブは、当該リソースを収集したコレクターのプラグインによって決定されます。これについての詳細については、[こちら](/ja/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
+* **基本タブ**: クラウドリソース詳細情報に基本的に提供さり\[基本情報]、\[ソースデータ]タブです。
+* **追加情報タブ**: 基本タブを除いたすべてのタブは、当該リソースを収集したコレクターのプラグインによって決定されます。これについての詳細については、[こちら](/ja/docs/guides/plugins/asset-inventory-collector)をご参考にしてください｡
 
 <br>
 
@@ -107,49 +106,44 @@ description: >
 
 上図は、クラウドリソースの詳細情報の例です。
 
-[基本情報]タブと[ソースデータ]タブを除いた残りのタブ(AMI、Permission、Tags)は、すべてコレクターのプラグインによって追加された情報です。
+\[基本情報]タブと\[ソースデータ]タブを除いた残りのタブ(AMI、Permission、Tags)は、すべてコレクターのプラグインによって追加された情報です。
 
 ### クラウドリソースタグを管理する
 
 クラウドリソースには、`Managed`、`Custom`の2種類のタグが存在します。
-個々のクラウドリソースごとに、そのプロバイダーから取得した`Managed`タグを確認でき、`Custom`タグを追加して管理できます。
-<br>
+個々のクラウドリソースごとに、そのプロバイダーから取得した`Managed`タグを確認でき、`Custom`タグを追加して管理できます。 <br>
 
 各タグは`キー:値`の形式で構成されており、リソースを検索する際に有用に利用できます。
 
 ![cloud-resource-tag-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-tag-search-jp.png)
 
+**\[ Managedタグを照会する ]**
 
-**[ Managedタグを照会する ]**
-
-- `Managed`タグはCloudforetから直接編集および削除はできません。
+* `Managed`タグはCloudforetから直接編集および削除はできません。
 
 ![cloud-resource-tag-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-view-managed-tag-jp.png)
 
+**\[ Customタグ作成&照会 ]**
 
-**[ Customタグ作成&照会 ]**
-
-(1) [Customタグの修正]ボタンをクリックします。
+(1) \[Customタグの修正]ボタンをクリックします。
 
 ![cloud-resource-tag-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-btn-jp.png)
 
-(2) タグページで、`キー:値`形式でタグを入力してから、[保存]ボタンをクリックして完了します。
+(2) タグページで、`キー:値`形式でタグを入力してから、\[保存]ボタンをクリックして完了します。
 
 ![cloud-resource-tag-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-service-list-custom-tag-edit-jp.png)
 
-
-
 ### クラウドリソース関連メンバーを確認する
 
-[関連メンバー]タブでは、以下の条件と一致するユーザー情報を確認できます。
+\[関連メンバー]タブでは、以下の条件と一致するユーザー情報を確認できます。
 
-- [プロジェクトメンバー](/ja/docs/guides/project/member)として当該クラウドリソースへのアクセス権限を有するユーザー
+* [プロジェクトメンバー](/ja/docs/guides/project/member)として当該クラウドリソースへのアクセス権限を有するユーザー
 
 ![cloud-resource-member-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-resource-member-tab.png)
 
 ### クラウドリソースの変更記録を確認する
 
-[変更履歴]タブでは、選択したクラウドリソースの日付・時間別に変更事項を速やかに把握できます。
+\[変更履歴]タブでは、選択したクラウドリソースの日付・時間別に変更事項を速やかに把握できます。
 
 (1) 特定の日付を選択または検索すると、確認したい詳細履歴を抽出することができます。
 
@@ -175,11 +169,11 @@ description: >
 
 ### クラウドリソースのモニタリング情報を確認する
 
-[モニタリング]タブには、クラウドリソースに対するさまざまなメトリクスが表示されます。
+\[モニタリング]タブには、クラウドリソースに対するさまざまなメトリクスが表示されます。
 
 ![cloud-resource-monitoring-tab](/ja/docs/guides/asset-inventory/cloud-service-img/cloud-resource-monitoring-tab.png)
 
-[時間範囲]フィルターの変更、または[統計]ドロップダウンで他の統計方法を選択して、別の基準に対するメトリクスを確認することもできます。
+\[時間範囲]フィルターの変更、または\[統計]ドロップダウンで他の統計方法を選択して、別の基準に対するメトリクスを確認することもできます。
 
 画面上部のクラウドリソース一覧の左横にあるチェックボックスで複数のリソースを選択すると、複数のリソースに対するメトリクス情報を比較して確認することができます。
 

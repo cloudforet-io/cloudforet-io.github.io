@@ -4,7 +4,7 @@ linkTitle: "サーバー"
 weight: 3
 date: 2022-06-07
 description: >
-    [**コレクター](/ja/docs/guides/asset-inventory/collector)によって収集されるさまざまなクラウドリサービスのリソースのうち、サーバーリソースを確認できます。
+    [コレクター](/ja/docs/guides/asset-inventory/collector)によって収集されるさまざまなクラウドリサービスのリソースのうち、サーバーリソースを確認できます。
 ---
 
 ## サーバーリソース一覧を照会する
