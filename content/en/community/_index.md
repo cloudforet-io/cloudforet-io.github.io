@@ -36,6 +36,10 @@ menu:
                     <figure>openup</figure>
                     <p class="description">Offline Community in South Korea</p>
                 </li>
+                <li class="kren">
+                    <figure>kren</figure>
+                    <p class="description">Live Demo & DNS</p>
+                </li>
             </ul>
         </div>
     </div>
