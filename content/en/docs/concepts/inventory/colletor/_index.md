@@ -14,3 +14,7 @@ no_list: true
 When user create a collect API call, the collecting task is created, then pushed the queue. Inventory Worker patches the task then execute the task, which is collecting the resources from the plugin.
 
 ![collect](collector_step01.png)
+
+## Collecting Manager
+
+![collect](collector_step02.png)
