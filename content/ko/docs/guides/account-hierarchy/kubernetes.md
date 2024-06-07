@@ -41,12 +41,9 @@ title: Kubernetes 계정 연동
 
 ![](/guides/account-hierarchy/connect-cluster-02-ko.png)
 
-(2-2) `kube-state-metrics`, `prometheus-node-exporter` 두 가지 항목이 클러스터에 설치되었는지 확인이 필요합니다.\
-만약, 하나의 항목이라도 설치되어 있지 않다면 SpaceONE 에이전트에서 대신 설치됩니다.
+(2-2) `kube-state-metrics`, `prometheus-node-exporter` 두 가지 항목이 클러스터에 설치되었는지 확인이 필요합니다.
 
-{{<alert title="">}}
-사용자의 시스템에 이미 설치된 경우 문제가 발생할 수 있으니 주의하시기 바랍니다.
-{{</alert>}}
+만약, 하나의 항목이라도 설치되어 있지 않다면 SpaceONE 에이전트에서 대신 설치됩니다.
 
 ![](/guides/account-hierarchy/connect-cluster-03-ko.png)
 
@@ -80,16 +77,18 @@ title: Kubernetes 계정 연동
 
 <br>
 
-## 연결된 쿠버네티스 클러스터 편집/삭제하기
+## 연결된 쿠버네티스 클러스터 편집하기
 
 편집하고자 하는 서비스 어카운트 페이지에 진입합니다.
 
-![](/guides/account-hierarchy/edit-general-account-01-ko.png)
+### 연결된 쿠버네티스 클러스터 비활성화하기
 
-✔️ 연결된 쿠버네티스 클러스터 비활성화 :  \[비활성화] 버튼을 눌러 클러스터 연결을 일시적으로 해제할 수 있습니다.
+\[비활성화] 버튼을 눌러 클러스터 연결을 일시적으로 해제할 수 있습니다.
 
-✔️ 연결된 쿠버네티스 클러스터 재연결 :  \[재연결] 버튼을 눌러 클러스터를 다시 연결할 수 있습니다.
+### 연결된 쿠버네티스 클러스터 재연결하기
 
-✔️ 연결된 쿠버네티스 클러스터 삭제 :  \[삭제] 버튼을 클릭하여 연결된 클러스터 정보를 삭제할 수 있습니다.
+\[재연결] 버튼을 눌러 클러스터를 다시 연결할 수 있습니다.
 
-![](/guides/account-hierarchy/edit-general-account-02-ko.png)
+### 연결된 쿠버네티스 클러스터 삭제하기
+
+\[삭제] 버튼을 클릭하여 연결된 클러스터 정보를 삭제할 수 있습니다.
