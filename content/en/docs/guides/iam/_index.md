@@ -1,11 +1,9 @@
 ---
-title: "Administration"
-linkTitle: "Administration"
+title: "IAM"
+linkTitle: "IAM"
 weight: 7
-date: 2022-06-27
+date: 2024-06-18
 description: >
-    In the **Administration** page, you can manage and edit information, roles, policies, etc. of domain users.
-    <br>
-    <br>
-    You can create a [**User**](/docs/guides/administration/iam-user) and designate a [**Role**](/docs/guides/administration/iam-role) that is connected to an [**API policy**](/docs/guides/administration/iam-policy).
+    You can invite/manage users and configure API/CLI access through app settings within a specific workspace.
+
 ---

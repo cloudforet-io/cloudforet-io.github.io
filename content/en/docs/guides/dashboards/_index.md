@@ -1,7 +1,7 @@
 ---
 title: "Dashboards"
 linkTitle: "Dashboards"
-weight: 2
+weight: 4
 date: 2023-10-16
 description: >
     Dashboard service that visually represents (multi) cloud data, such as billing and assets, making complex data easy to understand at a glance. With support for various chart types and graphic elements, you can quickly grasp the essentials of your critical data.

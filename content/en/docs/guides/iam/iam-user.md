@@ -1,107 +1,84 @@
 ---
-title: "[IAM] User"
-linkTitle: "[IAM] User"
+linkTitle: User
 weight: 1
-date: 2022-06-23
-description: >
-    In the **User** page, you can create / delete Cloudforet users or enable / disable them.
-    <br>
-    <br>
-    You can also grant permissions to users by assigning them roles.
+date: '2022-06-23T00:00:00.000Z'
+description: |
+  You can invite and manage users for a workspace.
+title: User
 ---
 
-{{<alert>}}
-On the [Admin > Users] page, the role that can be assigned to a user is an the `admin` type. A `user` type can be assigned to a member of a project.
-For how to assign roles to project members, see [here](/docs/guides/project/project-group/#invite-project-group-members).
-{{</alert>}}
-<br>
+## Accessing the Menu
 
-## Adding users
-Click the [+ Add] button on the [Administration > IAM > User] page.
+(1) Select a specific workspace
 
-![user-create-button](/docs/guides/administration/iam-user-img/user-create-button.png)
-<br>
+![](/guides/admin/workspaces/move-to-workspace-en.png)
 
-There are three types of users that can be added as follows:
-- **Internal user**: users who can sign in by using their ID and password on the login page
-- **External user**: users added by following the external user authentication that the domain has
-- **API Only**: users who are only able to use API, and for whom the Cloudforet console is not accessible
-<br>
+(2) Go to \[IAM > User]
 
-### 1. Adding internal users
-Internal users are users who can sign in by using their IDs and passwords on the login page.
-
-(1-1) After the [Add user] modal dialog opens, select the [Local] tab to add an internal user.
-
-![user-create-modal-local](/docs/guides/administration/iam-user-img/user-create-modal-local_en.png)
-
-(1-2) After entering the ID of an internal user, click the [Check ID] button. The user ID must be in an email form, and not on the list of existing users.
-
-(1-3) Optionally enter user name and notification email(for receiving important system-related announcements or password reset link).
-
-(1-4) Either send user a password reset link or, set the password on user's behalf. (※ If you set the password manually, you will need to directly inform the user of the password)
-
-(1-5) To assign admin role to the user, you can activate the 'Admin Role' section at the bottom of the modal window and grant a specific role.
-
-![user-create-local-admin-role](/docs/guides/administration/iam-user-img/user-create-local-admin-role_en.png)
 
 {{<alert>}}
-Page access permissions or API policies are differently applied depending on the role assigned to the user . For detailed information on roles, see [here](/docs/guides/administration/iam-role).
+Inviting users with `Admin` role type is only available in 'Admin Center'.
+For detailed instructions, refer to [here](/docs/guides/admin-mode/app/).
 {{</alert>}}
 
-(1-6) Click the [Confirm] button to complete the user addition.
-<br>
+<br> <br>
 
-### 2. Adding external users
-Adding an external user follows the external user authentication that the domain has. Without authentication as an external user, one cannot be added as a user.
+## Inviting Users
 
-(2-1) After opening the [Add User] modal, select a specific SSO tab for adding external users. ex. Google OAuth
+(1) Click the \[Invite] button at the top
 
-![user-create-modal-oauth](/docs/guides/administration/iam-user-img/user-create-modal-oauth_en.png)
+![](/guides/iam_user/user-invite-00-en.png)
 
-(2-2) Enter an existing authenticated external user account.
+(2) Add user accounts and assign workspace roles
+
+![](/guides/iam_user/user-invite-01-en.png)
+
+(2-1) Enter & Search user accounts
+
+You can invite both existing users within the domain and external users to the workspace.
+
+* Local: Enter the email format.
+* If SSO such as Google, Keycloak, etc., is added to the domain, enter according to the corresponding format.
+
+(2-2) Select a workspace access role
+
+(2-3) Click the \[Confirm] button to complete the user invitation
 
 {{<alert>}}
-For a detailed description on external user authentication, see [here](/docs/guides/plugins/iam-authentication/).
+For detailed information on roles, please refer to [here](/docs/guides/admin-mode/role/).
 {{</alert>}}
 
-(2-3) Optionally enter user name and notification email(for receiving important system-related announcements or password reset link).
-
-(2-4) To assign admin role to the user, you can activate the 'Admin Role' section at the bottom of the modal window and grant a specific role.
-
-(2-5) Click the [Confirm] button to complete the user addition.
 <br>
 
+(3) Check the invited user list
 
-### 3. Adding API only users
-API users cannot access the Cloudforet console and can only use the API.
+![](/guides/iam_user/user-invite-02-en.png)
 
-(3-1) After the [Add user] modal dialog opens, select the [API Only] tab.
+By clicking on a specific user, you can view detailed user information as well as the list of `projects` the user belongs to.
 
-![user-create-modal-apionly](/docs/guides/administration/iam-user-img/user-create-modal-apionly_en.png)
+{{<alert>}}
+If the invited user has not logged in yet, their state will be displayed as 'Pending'.
+{{</alert>}}
 
-(3-2) After entering the ID, click the [Check ID] button. The user ID must not be on the list of existing users.
+<br><br>
 
-(3-3) Optionally enter user name.
+## Editing Users
 
-(3-4) To assign admin role to the user, you can activate the 'Admin Role' section at the bottom of the modal window and grant a specific role.
+Workspace Owners can only modify or remove user roles, and cannot edit other user information.
 
-(3-5) Click the [Confirm] button to complete the user addition.
-<br>
-<br>
+(1) Change roles
 
-## Viewing user details
-By selecting a specific user from the table on the user page, you can view detailed information on that user.
+* Click the dropdown button in the user's Role display to change the role. 
 
-![user-single-select](/docs/guides/administration/iam-user-img/user-single-select.png)
-<br>
-<br>
+![](/guides/iam_user/user-edit-01-en.png)
 
-## Updating users
-By selecting a specific user in the table and clicking on [Actions > Edit], you can modify the user's information.
+(2) Remove users from the workspace
 
-![user-update-modal](/docs/guides/administration/iam-user-img/user-update-modal_en.png)
+* Click the \[Remove] button to remove the user.
 
-- You can modify the user's ID, name, notification email, password, admin role (role), and tags. 
-- If the user encounters difficulties with verification for the notification email, you can directly verify it without sending verification code.  
-- For local users, you can either change the password on their behalf or send them a password reset link for the user to reset it themselves.
+{{<alert>}}
+
+When a user is removed, they are removed from the workspace but remain in the domain as a user.
+
+
+{{</alert>}}
