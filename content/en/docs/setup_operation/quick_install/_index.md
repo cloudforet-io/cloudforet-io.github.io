@@ -151,7 +151,7 @@ To use Cloudforet, you have to initialize the root domain, which creates a ***SY
 Login to the spacectl POD and execute the command below.
 
 ```bash
-kubectl exec -it spacectl-xxxxx -- /bin/sh
+kubectl exec -it -n cloudforet spacectl-xxxxx -- /bin/sh
 spacectl config init -f default.yaml
 ```
 
@@ -226,7 +226,7 @@ execute the command below to create the user domain.
 
 ```bash
 spacectl config init -f default.yaml
-spacectl config set_api_key {SYSTEM_TOKEN} 
+spacectl config set api_key {SYSTEM_TOKEN} 
 spacectl exec create identity.Domain -f domain.yaml
 ```
 
