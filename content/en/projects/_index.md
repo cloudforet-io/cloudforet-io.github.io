@@ -41,31 +41,15 @@ menu:
                     </div>
                     <a href="https://github.com/cloudforet-io/plugin-azure-inven-collector" target="_blank"></a>
                 </li>
-                <li class="card-item plugin cisco">
-                    <span class="thumbnail">Cisco icon</span>
+                <li class="card-item plugin nhncloud">
+                    <span class="thumbnail">NHN Cloud icon</span>
                     <div class="description">
-                        <strong class="name">Cisco</strong>
-                        <span class="source">Supported by Community</span>
+                        <strong class="name">NHN Cloud</strong>
+                        <span class="source">Supported by NHN Cloud & LFX</span>
                     </div>
-                    <a href="https://github.com/cloudforet-io/plugin-cisco-appdynamics-mon-webhook" target="_blank"></a>
+                    <a href="https://github.com/cloudforet-io/plugin-nhncloud-inven-collector" target="_blank"></a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="section propose">
-        <div class="section-inner">
-            <h3>Propose New Ideas</h3>
-            <ul class="card-list propose-list">
-                <li class ="card-item propose">
-                    <span class="thumbnail">Cisco icon</span>
-                    <div class="description">
-                        <strong class="name">Anomaly Detection with AIOps</strong>
-                        <span class="source">Soonsil University</span>
-                    </div>
-                    <a href="https://docs.google.com/presentation/d/1TAYh8YTiIJKfhn7d_XbtAGmyKkwEh-Xk/edit" target="_blank"></a>
-                </li>
-            </ul>
-            <p class="propose-template"><a href="https://github.com/cloudforet-io/tsc/tree/master/proposals" target="_blank">Proposal Template</a></p>
         </div>
     </div>
 </div>
