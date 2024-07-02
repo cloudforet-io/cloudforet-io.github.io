@@ -86,7 +86,7 @@ title: 권한 체계
 Workspace Owner, Workspace Member는 본인이 속한 Workspace에 대한 접근만 가능합니다.
 {{</alert>}}
 
-![](/guides/admin/iam_role/role-type-comparison-ko.png)
+![](/guides/admin/iam_role/role-type-comparison-02-ko.png)
 
 <br> <br>
 

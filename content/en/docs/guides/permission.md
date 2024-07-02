@@ -91,7 +91,7 @@ You can find detailed information about the permissions for each role type below
 Workspace Owners and Workspace Members have access only to the workspaces they belong to.
 {{</alert>}}
 
-![](/guides/admin/iam_role/role-type-comparison-en.png)
+![](/guides/admin/iam_role/role-type-comparison-02-en.png)
 
 <br> <br>
 
