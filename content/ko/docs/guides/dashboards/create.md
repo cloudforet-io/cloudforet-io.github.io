@@ -1,62 +1,40 @@
 ---
 linkTitle: 대시보드 생성
-weight: 4
+weight: 1
 date: '2023-10-16T00:00:00.000Z'
 description: |
   기본으로 제공하는 대시보드 외에 데이터 중요도, 특성에 따라 다양한 위젯을 활용하여 커스텀 대시보드를 생성하고 관리할 수 있습니다. 
 title: 대시보드 생성
 ---
 
-## 특정 워크스페이스로 전환
-
-* 관리하고자 하는 워크스페이스를 선택하여 환경 전환
-
-![](/guides/admin/workspaces/move-to-workspace-ko.png)
-
-<br> 
-
 ## 대시보드 생성하기
 
-아래 순서에 따라 대시보드를 만들 수 있습니다. <br> <br>
+(1) 대시보드 페이지의 좌측 메뉴바에 있는 \[ + ] 버튼, 또는 '모든 대시보드 보기' 페이지에서 \[ + 생성 ] 버튼을 클릭하여 대시보드를 생성을 시작합니다.
 
-(1) 상단 메뉴의 **\[대시보드 > 새 대시보드 생성]** 클릭 또는 \[대시보드] 서비스 내 좌측 메뉴 상단의 **\[+]** 버튼 클릭하여 생성하기 페이지로 이동합니다.
+![](/guides/dashboards_v2/create-dashboard-01-ko.png)
 
-![](/guides/dashboards/dashboard-create-01-ko.png)
-
-![](/guides/dashboards/dashboard-create-01-02-ko.png)
+![](/guides/dashboards_v2/create-dashboard-02-ko.png)
 
 <br>
 
-(2) \[대시보드 생성] 페이지에서 대시보드 범위와 공개 여부를 선택합니다.
+(2) 빈 대시보드로 처음부터 시작하거나,
 
-![](/guides/dashboards/dashboard-create-02-ko.png)
+기본 제공 템플릿 또는 저장된 대시보드 중 선택하여 빠르게 대시보드를 생성할 수 있습니다.
 
-* **전체 워크스페이스** : 워크스페이스 내 전체 프로젝트에 대한 데이터로 구성 됩니다.
-* **개별 프로젝트** : 특정 프로젝트를 선택하여 범위 설정 시, 해당 프로젝트의 데이터로만 구성 됩니다.
-* **비공개** : 생성한 사용자만 볼 수 있는 대시보드입니다.
+![](/guides/dashboards_v2/create-dashboard-03-ko.png)
 
 <br>
 
-(3) 제공하는 기본 템플릿을 선택하거나, 기존 대시보드를 복제할 수 있습니다. 
+(3) 대시보드 이름, 레이블, 그리고 대시보드 공개 범위를 선택 후 \[대시보드 생성] 버튼을 클릭합니다.
 
-* 원하는 옵션을 선택한 후 \[계속하기] 버튼을 클릭합니다.
-
-![dashboard-create-04](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-04.png)
+![](/guides/dashboards_v2/create-dashboard-04-ko.png)
 
 <br>
 
-(4) 대시보드 이름을 입력한 후, 기본 위젯을 활용하여 대시보드를 생성할 수 있습니다. 
+(4) 대시보드 이름 수정, 복제, 삭제 등의 추가 기능은 대시보드 타이틀 옆 \[· · ·] 버튼 클릭시 찾아볼 수 있습니다.
 
-* 편집 관련 상세 설명은 [여기](/ko/docs/guides/dashboards/edit)를 참고하십시오.
+![](/guides/dashboards_v2/create-dashboard-05-ko.png)
 
-![dashboard-create-05](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-05.png)
+<br><br>
 
-<br>
-
-(5) 생성 완료된 대시보드는 \[모든 대시보드 보기] 페이지에서 \[공개 여부], \[범위]에 따라 구분하여 확인 가능합니다.
-
-![dashboard-create-06](/ko/docs/guides/dashboards/dashboard-img/dashboard-create-06.png)
-
-<br>
-
-생성된 대시보드 확인 및 빠른 설정은 [여기](/ko/docs/guides/dashboards/view)을 참고하십시오.
+### 대시보드 생성이 완료 되었다면, [이 곳](</ko/docs/guides/dashboards/data-settings/>)을 참고하여 위젯 추가 및 세부 설정을 시작하세요.
