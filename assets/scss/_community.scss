@@ -113,6 +113,13 @@
                         color: transparent;
                     }
                 }
+                &.nhncloud {
+                    figure {
+                        background-image: url("/images/community/logo-nhncloud.png");
+                        color: transparent;
+                        height: 35px;
+                    }
+                }
                 &:after {
                     position: absolute;
                     top: 0;
