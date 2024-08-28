@@ -40,6 +40,10 @@ menu:
                     <figure>kren</figure>
                     <p class="description">Live Demo & DNS</p>
                 </li>
+                <li class="nhncloud">
+                    <figure>NHN Cloud</figure>
+                    <p class="description">NHN Cloud Plugins</p>
+                </li>
             </ul>
         </div>
     </div>
