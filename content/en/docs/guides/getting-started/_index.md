@@ -20,7 +20,7 @@ To use Cloudforet's services, the following three prerequisites must be met:
 
 Cloudforet users are classified into three types: **internal users**, **external users**, and **API users**.
 
-This section only introduces how to add internal users, and how to add external users and API users can be found in [[IAM] user guide](/docs/guides/administration/iam-user).
+This section only introduces how to add internal users, and how to add external users and API users can be found in [[IAM] user guide](/docs/guides/iam/iam-user).
 
 ### Adding a user
 
